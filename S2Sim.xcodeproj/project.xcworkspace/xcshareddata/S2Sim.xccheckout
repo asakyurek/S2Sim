@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6AC12B4A-3C76-488F-8EEE-35BE7D60CBA7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>S2Sim</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>057C4284-4375-4006-B7F1-AFFA8710CD59</key>
+		<string>https://github.com/asakyurek/S2Sim.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>S2Sim.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>057C4284-4375-4006-B7F1-AFFA8710CD59</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/asakyurek/S2Sim.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>057C4284-4375-4006-B7F1-AFFA8710CD59</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>057C4284-4375-4006-B7F1-AFFA8710CD59</string>
+			<key>IDESourceControlWCCName</key>
+			<string>S2Sim</string>
+		</dict>
+	</array>
+</dict>
+</plist>
