@@ -1,8 +1,8 @@
-/*
- * ThreadBase.h
- *
- *  Created on: Dec 21, 2013
- *      Author: asakyurek
+/**
+ * @file ThreadBase.h
+ * This file selects the right implementation according to the current OS.
+ *  @date Dec 21, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #ifndef THREADBASE_H_

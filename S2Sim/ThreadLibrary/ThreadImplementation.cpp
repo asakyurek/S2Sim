@@ -1,8 +1,8 @@
-/*
- * ThreadImplementation.cpp
- *
- *  Created on: Dec 21, 2013
- *      Author: asakyurek
+/**
+ * @file ThreadImplementation.cpp
+ * Implements the Thread Wrapper functions.
+ *  @date Dec 21, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ThreadBase.h"
