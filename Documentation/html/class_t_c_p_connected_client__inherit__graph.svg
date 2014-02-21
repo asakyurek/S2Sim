@@ -18,7 +18,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_threaded_t_c_p_connected_client.html" target="_top" xlink:title="ThreadedTCPConnectedClient">
+<a xlink:href="class_threaded_t_c_p_connected_client.html" target="_top" xlink:title="Manages the connection to an accepted client on the server side and receives data in a separate threa...">
 <polygon style="fill:white;stroke:black;" points="0,-0 0,-21 182,-21 182,-0 0,-0"/>
 <text text-anchor="middle" x="91" y="-7" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
-<a xlink:href="class_socket_base.html" target="_top" xlink:title="SocketBase\&lt; SocketType \&gt;">
+<a xlink:href="class_socket_base.html" target="_top" xlink:title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi...">
 <polygon style="fill:white;stroke:black;" points="8,-192 8,-213 174,-213 174,-192 8,-192"/>
 <text text-anchor="middle" x="91" y="-199" style="font-family:Arial;font-size:10.00;">SocketBase&lt; SocketType &gt;</text>
 </a>

@@ -3,6 +3,11 @@
 }
 
 
+Set Current Price message sent for the Controller to the clients to set the current price and advance the time frame.  
+
+
+
+
 {\ttfamily \#include $<$Set\-Current\-Price.\-h$>$}
 
 \subsection*{Public Types}
@@ -11,73 +16,73 @@
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827}{Success} = ( T\-Check\-Result )true, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b}{Fail} = ( T\-Check\-Result )false
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for T\-Check\-Result. \end{DoxyCompactList}\item 
 typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aeed4ef4c867719626ede15e2f8718436}{T\-Check\-Result}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the message check result type. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{T\-Price}
-\item 
+\begin{DoxyCompactList}\small\item\em Type for price signal. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Type for time interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ab9188b1b4eeed0a333ec879acac1cc30}{$\sim$\-Set\-Current\-Price} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Deallocates the memory for the message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aeed4ef4c867719626ede15e2f8718436}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a01c2cf6549b92e8066d2f57b753ce8b2}{Check\-Message} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Checks whether the current memory contains a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{T\-Price} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aafd75de81420798be1243a02cd8ab7a2}{Get\-Price} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the price form the current message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a35a5775c7987c4b1882edfa730f36e7b}{Get\-Interval\-Begin} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the Interval\-Begin field in the message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a267e167ab05f6dd602a202fcc5d7efdf}{Get\-Interval\-End} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Reads the Interval\-End field in the message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a4f796519e90280eb712adabec444493e}{Get\-New\-Set\-Current\-Price} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{T\-Price} price, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} interval\-Begin, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} interval\-End)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} message and allocates memory for it. \end{DoxyCompactList}\item 
 static \hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{T\-Data\-Size} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a32e1cebec60aa525dbb32025b4201b43}{Get\-Size} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the size of a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9b}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9ba465058dd25ba7ae05bc5285a2d3708b1}{Message\-Type} = 0x0003, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9baa56dbab91fc6a488f2a629b3278a7580}{Message\-Id} = 0x0002
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Message header values. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5d}{Field\-Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75}{Price\-Size} = sizeof( T\-Price ), 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5}{Interval\-Begin\-Size} = sizeof( T\-Interval ), 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691}{Interval\-End\-Size} = sizeof( T\-Interval ), 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6e935dcdc8159878532d28b745c005c8}{Total\-Size} = ( Price\-Size + Interval\-Begin\-Size + Interval\-End\-Size )
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Size values for the data fields. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58}{Field\-Index\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c}{Price\-Index} = Message\-Header\-:\-:Message\-Header\-Size, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d}{Interval\-Begin\-Index} = Price\-Index + Price\-Size, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c}{Interval\-End\-Index} = Interval\-Begin\-Index + Interval\-Begin\-Size
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Index values for the fata fields. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c}{Price\-Index}, \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75}{Price\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a950c013f39e20f890173e81a716e3b6b}{T\-Price\-Accessor}
-\item 
+\begin{DoxyCompactList}\small\item\em Accessor helper for the Price field. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d}{Interval\-Begin\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5}{Interval\-Begin\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2d095e9cd5341bca06b121f115875bcc}{T\-Interval\-Begin\-Accessor}
-\item 
+\begin{DoxyCompactList}\small\item\em Accessor helper for the Interval\-Begin field. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c}{Interval\-End\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691}{Interval\-End\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ada50db521ec8f4351b11c9e7a55191f6}{T\-Interval\-End\-Accessor}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Accessor helper for the Interval\-End field. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1d8f82415c6d84a85176ee9f233288dd}{Set\-Current\-Price} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em No use. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Set Current Price message sent for the Controller to the clients to set the current price and advance the time frame. 
 
-
-Definition at line 19 of file Set\-Current\-Price.\-h.
+Definition at line 22 of file Set\-Current\-Price.\-h.
 
 
 
@@ -87,42 +92,66 @@ Definition at line 19 of file Set\-Current\-Price.\-h.
 \subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aeed4ef4c867719626ede15e2f8718436}
 
 
-Definition at line 29 of file Set\-Current\-Price.\-h.
+Defines the message check result type. 
+
+
+
+Definition at line 38 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Interval@{T\-Interval}}
 \index{T\-Interval@{T\-Interval}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{T\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}
 
 
-Definition at line 37 of file Set\-Current\-Price.\-h.
+Type for time interval. 
+
+
+
+Definition at line 57 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2d095e9cd5341bca06b121f115875bcc}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Interval\-Begin\-Accessor@{T\-Interval\-Begin\-Accessor}}
 \index{T\-Interval\-Begin\-Accessor@{T\-Interval\-Begin\-Accessor}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{T\-Interval\-Begin\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Interval\-Begin\-Index}, {\bf Interval\-Begin\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval\-Begin\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2d095e9cd5341bca06b121f115875bcc}
 
 
-Definition at line 56 of file Set\-Current\-Price.\-h.
+Accessor helper for the Interval\-Begin field. 
+
+
+
+Definition at line 89 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ada50db521ec8f4351b11c9e7a55191f6}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Interval\-End\-Accessor@{T\-Interval\-End\-Accessor}}
 \index{T\-Interval\-End\-Accessor@{T\-Interval\-End\-Accessor}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{T\-Interval\-End\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Interval\-End\-Index}, {\bf Interval\-End\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval\-End\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ada50db521ec8f4351b11c9e7a55191f6}
 
 
-Definition at line 57 of file Set\-Current\-Price.\-h.
+Accessor helper for the Interval\-End field. 
+
+
+
+Definition at line 94 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Price@{T\-Price}}
 \index{T\-Price@{T\-Price}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{T\-Price}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}
 
 
-Definition at line 36 of file Set\-Current\-Price.\-h.
+Type for price signal. 
+
+
+
+Definition at line 52 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a950c013f39e20f890173e81a716e3b6b}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Price\-Accessor@{T\-Price\-Accessor}}
 \index{T\-Price\-Accessor@{T\-Price\-Accessor}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{T\-Price\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Price\-Index}, {\bf Price\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a950c013f39e20f890173e81a716e3b6b}
 
 
-Definition at line 55 of file Set\-Current\-Price.\-h.
+Accessor helper for the Price field. 
+
+
+
+Definition at line 84 of file Set\-Current\-Price.\-h.
 
 
 
@@ -130,22 +159,30 @@ Definition at line 55 of file Set\-Current\-Price.\-h.
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Check\-Result\-Values@{Check\-Result\-Values}}
 \index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909}
+
+
+Defines the values for T\-Check\-Result. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Success@{Success}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827}
-}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Fail@{Fail}}\item[{\em 
+}]Message is of correct type and id. \index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Fail@{Fail}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b}
-}]\end{description}
+}]Message has incorrect type or id. \end{description}
 \end{Desc}
 
 
-Definition at line 30 of file Set\-Current\-Price.\-h.
+Definition at line 43 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Field\-Index\-Values@{Field\-Index\-Values}}
 \index{Field\-Index\-Values@{Field\-Index\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58}
+
+
+Index values for the fata fields. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -159,11 +196,15 @@ Definition at line 30 of file Set\-Current\-Price.\-h.
 \end{Desc}
 
 
-Definition at line 48 of file Set\-Current\-Price.\-h.
+Definition at line 74 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Field\-Size\-Values@{Field\-Size\-Values}}
 \index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5d}
+
+
+Size values for the data fields. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -179,11 +220,15 @@ Definition at line 48 of file Set\-Current\-Price.\-h.
 \end{Desc}
 
 
-Definition at line 40 of file Set\-Current\-Price.\-h.
+Definition at line 63 of file Set\-Current\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9b}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Header\-Values@{Header\-Values}}
 \index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
 \subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9b}
+
+
+Message header values. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -195,7 +240,7 @@ Definition at line 40 of file Set\-Current\-Price.\-h.
 \end{Desc}
 
 
-Definition at line 22 of file Set\-Current\-Price.\-h.
+Definition at line 28 of file Set\-Current\-Price.\-h.
 
 
 
@@ -209,6 +254,10 @@ Definition at line 22 of file Set\-Current\-Price.\-h.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1d8f82415c6d84a85176ee9f233288dd}
 
 
+No use. 
+
+Private constructor to force usage of the static creation method. 
+
 Definition at line 14 of file Set\-Current\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ab9188b1b4eeed0a333ec879acac1cc30}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!$\sim$\-Set\-Current\-Price@{$\sim$\-Set\-Current\-Price}}
@@ -218,6 +267,10 @@ Definition at line 14 of file Set\-Current\-Price.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ab9188b1b4eeed0a333ec879acac1cc30}
+
+
+Deallocates the memory for the message. 
+
 
 
 Definition at line 18 of file Set\-Current\-Price.\-cpp.
@@ -234,6 +287,13 @@ Definition at line 18 of file Set\-Current\-Price.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a01c2cf6549b92e8066d2f57b753ce8b2}
 
 
+Checks whether the current memory contains a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} message. 
+
+\begin{DoxyReturn}{Returns}
+Result of the check. 
+\end{DoxyReturn}
+
+
 Definition at line 41 of file Set\-Current\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a35a5775c7987c4b1882edfa730f36e7b}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Interval\-Begin@{Get\-Interval\-Begin}}
@@ -245,6 +305,13 @@ Definition at line 41 of file Set\-Current\-Price.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a35a5775c7987c4b1882edfa730f36e7b}
 
 
+Reads the Interval\-Begin field in the message. 
+
+\begin{DoxyReturn}{Returns}
+Value of Interval\-Begin in the message. 
+\end{DoxyReturn}
+
+
 Definition at line 60 of file Set\-Current\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a267e167ab05f6dd602a202fcc5d7efdf}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Interval\-End@{Get\-Interval\-End}}
@@ -254,6 +321,13 @@ Definition at line 60 of file Set\-Current\-Price.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a267e167ab05f6dd602a202fcc5d7efdf}
+
+
+Reads the Interval\-End field in the message. 
+
+\begin{DoxyReturn}{Returns}
+Value of Interval\-End in the message. 
+\end{DoxyReturn}
 
 
 Definition at line 68 of file Set\-Current\-Price.\-cpp.
@@ -271,6 +345,29 @@ Definition at line 68 of file Set\-Current\-Price.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a4f796519e90280eb712adabec444493e}
 
 
+Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} message and allocates memory for it. 
+
+\begin{DoxyWarning}{Warning}
+Deallocation is the responsibility of the user.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em sender\-Id} & Id of the sender. \\
+\hline
+{\em receiver\-Id} & Id of the receiver. \\
+\hline
+{\em price} & Price signal to be set. \\
+\hline
+{\em interval\-Begin} & Beginning of the price interval. \\
+\hline
+{\em interval\-End} & Ending of the price interval.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a new allocated message. 
+\end{DoxyReturn}
+
+
 Definition at line 24 of file Set\-Current\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aafd75de81420798be1243a02cd8ab7a2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Price@{Get\-Price}}
@@ -282,6 +379,13 @@ Definition at line 24 of file Set\-Current\-Price.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aafd75de81420798be1243a02cd8ab7a2}
 
 
+Reads the price form the current message. 
+
+\begin{DoxyReturn}{Returns}
+Price value in the message. 
+\end{DoxyReturn}
+
+
 Definition at line 52 of file Set\-Current\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a32e1cebec60aa525dbb32025b4201b43}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Size@{Get\-Size}}
@@ -291,6 +395,13 @@ Definition at line 52 of file Set\-Current\-Price.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a32e1cebec60aa525dbb32025b4201b43}
+
+
+Returns the size of a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} message. 
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
 
 
 Definition at line 76 of file Set\-Current\-Price.\-cpp.

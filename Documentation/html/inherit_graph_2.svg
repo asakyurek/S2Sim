@@ -13,7 +13,7 @@
 <polygon style="fill:white;stroke:white;" points="-4,4 -4,-38 142,-38 142,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<a xlink:href="class_compile_check_3_01false_00_01_reason_01_4.html" target="_top" xlink:title="CompileCheck\&lt; false,\l Reason \&gt;">
+<a xlink:href="class_compile_check_3_01false_00_01_reason_01_4.html" target="_top" xlink:title="Second specialization of the class, when the expression is not true. ">
 <polygon style="fill:white;stroke:black;" points="1,-0 1,-34 138,-34 138,-0 1,-0"/>
 <text text-anchor="start" x="9" y="-20" style="font-family:Arial;font-size:10.00;">CompileCheck&lt; false,</text>
 <text text-anchor="middle" x="69" y="-7" style="font-family:Arial;font-size:10.00;"> Reason &gt;</text>

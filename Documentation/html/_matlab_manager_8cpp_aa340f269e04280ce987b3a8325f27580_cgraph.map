@@ -1,10 +1,10 @@
 <map id="MatlabNotificationHandler" name="MatlabNotificationHandler">
-<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="1113,191,1193,217"/>
-<area shape="rect" href="$_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" title="GetMatlabManager" alt="" coords="852,131,1012,157"/>
-<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="MatlabManager::SetClient" alt="" coords="268,181,476,208"/>
-<area shape="rect" href="$class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" title="ThreadedTCPConnectedClient\l::SetNotificationCallback" alt="" coords="525,172,768,217"/>
-<area shape="rect" href="$_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" title="MatlabReceiveHandler" alt="" coords="555,241,739,268"/>
-<area shape="rect" href="$class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" title="MatlabManager::ProcessData" alt="" coords="817,241,1047,268"/>
-<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="1097,241,1209,268"/>
-<area shape="rect" href="$_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" title="ErrorPrint" alt="" coords="1111,292,1196,319"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="8 parameter log message " alt="" coords="1113,191,1193,217"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" title="This function returns the only instance of MatlabManager. " alt="" coords="852,131,1012,157"/>
+<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="Sets the OpenDSS controller connection information. " alt="" coords="268,181,476,208"/>
+<area shape="rect" href="$class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" title="Sets the notification callback function. " alt="" coords="525,172,768,217"/>
+<area shape="rect" href="$_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" title="Wrapper callback function that forwards the received data to MatlabManager. " alt="" coords="555,241,739,268"/>
+<area shape="rect" href="$class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" title="Processes the received message from OpenDSS controller. " alt="" coords="817,241,1047,268"/>
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="6 parameter warning message " alt="" coords="1097,241,1209,268"/>
+<area shape="rect" href="$_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" title="6 parameter error message " alt="" coords="1111,292,1196,319"/>
 </map>

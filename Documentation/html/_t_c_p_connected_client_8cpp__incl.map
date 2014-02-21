@@ -1,5 +1,5 @@
 <map id="S2Sim/SocketLibrary/TCPConnectedClient.cpp" name="S2Sim/SocketLibrary/TCPConnectedClient.cpp">
-<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="TCPConnectedClient.h" alt="" coords="39,100,223,127"/>
-<area shape="rect" href="$_socket_base_8h.html" title="SocketBase.h" alt="" coords="5,177,123,204"/>
-<area shape="rect" href="$_i_p_address_8h.html" title="IPAddress.h" alt="" coords="147,177,248,204"/>
+<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="Defines the TCPConnectedClient class. " alt="" coords="39,100,223,127"/>
+<area shape="rect" href="$_socket_base_8h.html" title="Defines the SocketBase template class. " alt="" coords="5,177,123,204"/>
+<area shape="rect" href="$_i_p_address_8h.html" title="Defines the IPAddress class. " alt="" coords="147,177,248,204"/>
 </map>

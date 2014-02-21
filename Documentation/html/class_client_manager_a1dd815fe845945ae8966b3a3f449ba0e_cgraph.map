@@ -1,10 +1,10 @@
 <map id="ClientManager::ProcessClientData" name="ClientManager::ProcessClientData">
-<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="728,88,808,115"/>
-<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#af78cac737c5197ad17205bab73421b60" title="TerraSwarm::Asynchronous\l::ClientData::GetStartTime" alt="" coords="339,69,555,115"/>
-<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a6e3ca8aab58e0b40867eee3e3ec281e6" title="TerraSwarm::Asynchronous\l::ClientData::GetTimeResolution" alt="" coords="320,139,573,184"/>
-<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#aba73075c35dd912dad8f99dd026b0785" title="TerraSwarm::Asynchronous\l::ClientData::GetNumberOfDataPoints" alt="" coords="621,340,915,385"/>
-<area shape="rect" href="$_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" title="GetSystemManager" alt="" coords="365,259,528,285"/>
-<area shape="rect" href="$class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" title="SystemManager::RegisterData" alt="" coords="327,208,567,235"/>
-<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" title="TerraSwarm::Asynchronous\l::ClientData::GetDataPoints" alt="" coords="339,309,555,355"/>
-<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="712,208,824,235"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="8 parameter log message " alt="" coords="728,88,808,115"/>
+<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#af78cac737c5197ad17205bab73421b60" title="Reads the StartTime field. " alt="" coords="339,69,555,115"/>
+<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a6e3ca8aab58e0b40867eee3e3ec281e6" title="Reads the TimeResolution field. " alt="" coords="320,139,573,184"/>
+<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#aba73075c35dd912dad8f99dd026b0785" title="Reads the NumberOfDataPoints field. " alt="" coords="621,340,915,385"/>
+<area shape="rect" href="$_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" title="Singleton function that returns the only instance of SystemManager. " alt="" coords="365,259,528,285"/>
+<area shape="rect" href="$class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" title="Used to register multiple consumption information. " alt="" coords="327,208,567,235"/>
+<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" title="Gets the pointer to the data points in the message. " alt="" coords="339,309,555,355"/>
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="6 parameter warning message " alt="" coords="712,208,824,235"/>
 </map>

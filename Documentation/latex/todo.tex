@@ -3,7 +3,16 @@
 \item[\label{todo__todo000001}%
 \hypertarget{todo__todo000001}{}%
 Member \hyperlink{class_client_manager_abac29dfed67c8b8354cf07267fd5515b}{Client\-Manager\-:\-:$\sim$\-Client\-Manager} (void)]This should be replaced by a reference counting memory manager.  
+\item[\label{todo__todo000005}%
+\hypertarget{todo__todo000005}{}%
+Member \hyperlink{class_control_manager_a927449c3a4ba8a5bdc23e3747d5bb077}{Control\-Manager\-:\-:Get\-Client\-Name} (const T\-Client\-Id client\-Id)]Let's make this not inline for debugging. 
 \item[\label{todo__todo000002}%
 \hypertarget{todo__todo000002}{}%
-Member \hyperlink{class_control_manager_a2dc55da1b01fd175b3d885c68b8a7524}{Control\-Manager\-:\-:Process\-Data} (void $\ast$data, const size\-\_\-t size)]Divide the function into multiple functions, processing each message separately.
+Member \hyperlink{class_control_manager_a2dc55da1b01fd175b3d885c68b8a7524}{Control\-Manager\-:\-:Process\-Data} (void $\ast$data, const size\-\_\-t size)]Divide the function into multiple functions, processing each message separately. 
+\item[\label{todo__todo000004}%
+\hypertarget{todo__todo000004}{}%
+Member \hyperlink{class_control_manager_a56df538a5380c9091123a5a8a5e0fe86}{Control\-Manager\-:\-:Register\-Client} (const T\-Client\-Id client\-Id, const T\-Client\-Name \&client\-Name, \hyperlink{class_client_manager}{Client\-Manager} $\ast$client\-Manager)]This shouldn't be inline. 
+\item[\label{todo__todo000003}%
+\hypertarget{todo__todo000003}{}%
+Member \hyperlink{class_control_manager_a4e23ffb481554c26cf99c411dd16ae36}{Control\-Manager\-:\-:Wait\-Until\-Ready} (void)]This doesn't need to be inline. 
 \end{DoxyRefList}

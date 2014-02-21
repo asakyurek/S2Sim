@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('_matlab_manager_8h.html','');});
 <div class="title">MatlabManager.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines the <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a> class.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
 <code>#include &quot;<a class="el" href="_semaphore_8h_source.html">Semaphore.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_threaded_t_c_p_server_8h_source.html">ThreadedTCPServer.h</a>&quot;</code><br/>
@@ -124,7 +127,7 @@ Include dependency graph for MatlabManager.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_matlab_manager_8h__dep__incl.svg" width="1023" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_matlab_manager_8h__dep__incl.svg" width="1008" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="_matlab_manager_8h_source.html">Go to the source code of this file.</a></p>
@@ -132,16 +135,25 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matlab_manager.html">MatlabManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the connection to the OpenDSS-Matlab controller.  <a href="class_matlab_manager.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adf11a697c41ba15207a66f8d2b567b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matlab_manager.html">MatlabManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matlab_manager_8h.html#adf11a697c41ba15207a66f8d2b567b75">GetMatlabManager</a> (void)</td></tr>
+<tr class="memdesc:adf11a697c41ba15207a66f8d2b567b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the only instance of <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a>.  <a href="#adf11a697c41ba15207a66f8d2b567b75">More...</a><br/></td></tr>
 <tr class="separator:adf11a697c41ba15207a66f8d2b567b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde5ef25c1ac7d9ccf067e4bc4894675"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675">MatlabReceiveHandler</a> (<a class="el" href="class_threaded_t_c_p_connected_client.html">ThreadedTCPConnectedClient</a> *client, <a class="el" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">ThreadedTCPConnectedClient::TBuffer</a> buffer, <a class="el" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">ThreadedTCPConnectedClient::TNumberOfBytes</a> size)</td></tr>
+<tr class="memdesc:adde5ef25c1ac7d9ccf067e4bc4894675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper callback function that forwards the received data to <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a>.  <a href="#adde5ef25c1ac7d9ccf067e4bc4894675">More...</a><br/></td></tr>
 <tr class="separator:adde5ef25c1ac7d9ccf067e4bc4894675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines the <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a> class. </p>
+<dl class="section date"><dt>Date</dt><dd>Oct 13, 2013 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>: Alper Sinan Akyurek </dd></dl>
+
+<p>Definition in file <a class="el" href="_matlab_manager_8h_source.html">MatlabManager.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="adf11a697c41ba15207a66f8d2b567b75"></a>
 <div class="memitem">
 <div class="memproto">
@@ -156,13 +168,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function returns the only instance of <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a>. </p>
+<p>Friend method to implement the singleton for <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The only instance of <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a>.</dd>
+<dd>
+Returns the only instance of <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a>. </dd></dl>
+
 <p>Definition at line <a class="el" href="_matlab_manager_8cpp_source.html#l00013">13</a> of file <a class="el" href="_matlab_manager_8cpp_source.html">MatlabManager.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_matlab_manager_8h_adf11a697c41ba15207a66f8d2b567b75_icgraph.svg" width="1360" height="310"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_matlab_manager_8h_adf11a697c41ba15207a66f8d2b567b75_icgraph.svg" width="1360" height="310"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -198,6 +215,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Wrapper callback function that forwards the received data to <a class="el" href="class_matlab_manager.html" title="Manages the connection to the OpenDSS-Matlab controller. ">MatlabManager</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>Connection information of OpenDSS-Matlab controller. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Buffer containing the received data. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the received data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="_matlab_manager_8cpp_source.html#l00029">29</a> of file <a class="el" href="_matlab_manager_8cpp_source.html">MatlabManager.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -222,7 +249,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="_matlab_manager_8h.html">MatlabManager.h</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

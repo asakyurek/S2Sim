@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -119,6 +119,9 @@ $(document).ready(function(){initNavTree('class_system_manager.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Manages the various components of the system and timing.  
+ <a href="class_system_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -126,71 +129,94 @@ Public Types</h2></td></tr>
 <tr class="memitem:a073873362e7861f8a0368bb62144d4ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a073873362e7861f8a0368bb62144d4ca">SystemModeValues</a> { <a class="el" href="class_system_manager.html#a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e">SimulationMode</a> = ( TSystemMode )0x0001, 
 <a class="el" href="class_system_manager.html#a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357">RealTimeMode</a> = ( TSystemMode )0x0002
  }</td></tr>
+<tr class="memdesc:a073873362e7861f8a0368bb62144d4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the values for the TSystemMode type.  <a href="class_system_manager.html#a073873362e7861f8a0368bb62144d4ca">More...</a><br/></td></tr>
 <tr class="separator:a073873362e7861f8a0368bb62144d4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9743ff4f23e7d957f5932780d8070099"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a9743ff4f23e7d957f5932780d8070099">TSystemTime</a></td></tr>
+<tr class="memdesc:a9743ff4f23e7d957f5932780d8070099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the type for System Time in epoch format.  <a href="#a9743ff4f23e7d957f5932780d8070099">More...</a><br/></td></tr>
 <tr class="separator:a9743ff4f23e7d957f5932780d8070099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa32b3f50b8882c8aa7a9ca88ab7a43dd"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#aa32b3f50b8882c8aa7a9ca88ab7a43dd">TSystemMode</a></td></tr>
+<tr class="memdesc:aa32b3f50b8882c8aa7a9ca88ab7a43dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the working mode of the system.  <a href="#aa32b3f50b8882c8aa7a9ca88ab7a43dd">More...</a><br/></td></tr>
 <tr class="separator:aa32b3f50b8882c8aa7a9ca88ab7a43dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af957fc0ff78c4c38085c26ac0d81064e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_message_header.html#ab55de822fadad758edcd8f36bd07676e">MessageHeader::TId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#af957fc0ff78c4c38085c26ac0d81064e">TClientId</a></td></tr>
+<tr class="memdesc:af957fc0ff78c4c38085c26ac0d81064e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefines the unique client id type for rapid development.  <a href="#af957fc0ff78c4c38085c26ac0d81064e">More...</a><br/></td></tr>
 <tr class="separator:af957fc0ff78c4c38085c26ac0d81064e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2818eaeb5787ef4f4d009ff343d195"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_asynchronous_1_1_client_connection_request.html#a50a16fcfef8eb10d5191b6eaf0723a92">Asynchronous::ClientConnectionRequest::TClientName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a2d2818eaeb5787ef4f4d009ff343d195">TClientName</a></td></tr>
+<tr class="memdesc:a2d2818eaeb5787ef4f4d009ff343d195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefines the object name for rapid development.  <a href="#a2d2818eaeb5787ef4f4d009ff343d195">More...</a><br/></td></tr>
 <tr class="separator:a2d2818eaeb5787ef4f4d009ff343d195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177b09f79bd2cef44160fb4d8ea77996"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#ac733720fed15e940f991de44f1bb514e">Asynchronous::ClientData::TDataPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a177b09f79bd2cef44160fb4d8ea77996">TDataPoint</a></td></tr>
+<tr class="memdesc:a177b09f79bd2cef44160fb4d8ea77996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefines the data point type for rapid development.  <a href="#a177b09f79bd2cef44160fb4d8ea77996">More...</a><br/></td></tr>
 <tr class="separator:a177b09f79bd2cef44160fb4d8ea77996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb6753ad6cd26b6ad46c194f38bee77"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a690994afd0ba9b8eeb56ae679a5c64e8">Asynchronous::ClientData::TNumberOfDataPoints</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a9cb6753ad6cd26b6ad46c194f38bee77">TNumberOfDataPoints</a></td></tr>
+<tr class="memdesc:a9cb6753ad6cd26b6ad46c194f38bee77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefines the number of data points type for rapid development.  <a href="#a9cb6753ad6cd26b6ad46c194f38bee77">More...</a><br/></td></tr>
 <tr class="separator:a9cb6753ad6cd26b6ad46c194f38bee77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c10914fe99b3f09350a10028f25300"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#ad7c10914fe99b3f09350a10028f25300">TVoltage</a></td></tr>
-<tr class="separator:ad7c10914fe99b3f09350a10028f25300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4194454c8c982c9e4d450e16625dd19c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_system_manager.html#a177b09f79bd2cef44160fb4d8ea77996">TDataPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a4194454c8c982c9e4d450e16625dd19c">TVoltage</a></td></tr>
+<tr class="memdesc:a4194454c8c982c9e4d450e16625dd19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the voltage information type.  <a href="#a4194454c8c982c9e4d450e16625dd19c">More...</a><br/></td></tr>
+<tr class="separator:a4194454c8c982c9e4d450e16625dd19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a924f6502f78c31bbf5f462f9554d4fc5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_system_manager.html#a177b09f79bd2cef44160fb4d8ea77996">TDataPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a924f6502f78c31bbf5f462f9554d4fc5">TWattage</a></td></tr>
+<tr class="memdesc:a924f6502f78c31bbf5f462f9554d4fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the wattage consumption type.  <a href="#a924f6502f78c31bbf5f462f9554d4fc5">More...</a><br/></td></tr>
 <tr class="separator:a924f6502f78c31bbf5f462f9554d4fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aebfc7fab136f01836e07228474e4326f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_manager.html#a9743ff4f23e7d957f5932780d8070099">TSystemTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#aebfc7fab136f01836e07228474e4326f">GetSystemTime</a> (void) const </td></tr>
+<tr class="memdesc:aebfc7fab136f01836e07228474e4326f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current system time.  <a href="#aebfc7fab136f01836e07228474e4326f">More...</a><br/></td></tr>
 <tr class="separator:aebfc7fab136f01836e07228474e4326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9f52e613fdbdc4690be79179b7357e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_manager.html#aa32b3f50b8882c8aa7a9ca88ab7a43dd">TSystemMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#ab9f52e613fdbdc4690be79179b7357e6">GetSystemMode</a> (void) const </td></tr>
+<tr class="memdesc:ab9f52e613fdbdc4690be79179b7357e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current system working mode.  <a href="#ab9f52e613fdbdc4690be79179b7357e6">More...</a><br/></td></tr>
 <tr class="separator:ab9f52e613fdbdc4690be79179b7357e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaf36dbd2e75a773f2ddc40ac82e5f3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b">RegisterData</a> (const <a class="el" href="class_system_manager.html#af957fc0ff78c4c38085c26ac0d81064e">TClientId</a> clientId, const <a class="el" href="class_system_manager.html#a9743ff4f23e7d957f5932780d8070099">TSystemTime</a> startTime, const <a class="el" href="class_system_manager.html#a9743ff4f23e7d957f5932780d8070099">TSystemTime</a> resolution, const <a class="el" href="class_system_manager.html#a9cb6753ad6cd26b6ad46c194f38bee77">TNumberOfDataPoints</a> numberOfDataPoints, <a class="el" href="class_system_manager.html#a177b09f79bd2cef44160fb4d8ea77996">TDataPoint</a> *dataPoints)</td></tr>
+<tr class="memdesc:abaf36dbd2e75a773f2ddc40ac82e5f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to register multiple consumption information.  <a href="#abaf36dbd2e75a773f2ddc40ac82e5f3b">More...</a><br/></td></tr>
 <tr class="separator:abaf36dbd2e75a773f2ddc40ac82e5f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96634f0635ad6c5e98620eb70ef7fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#ae96634f0635ad6c5e98620eb70ef7fbe">RegisterData</a> (const <a class="el" href="class_system_manager.html#af957fc0ff78c4c38085c26ac0d81064e">TClientId</a> clientId, <a class="el" href="class_system_manager.html#a177b09f79bd2cef44160fb4d8ea77996">TDataPoint</a> dataPoint)</td></tr>
+<tr class="memdesc:ae96634f0635ad6c5e98620eb70ef7fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to register a single consumption information for the next time step.  <a href="#ae96634f0635ad6c5e98620eb70ef7fbe">More...</a><br/></td></tr>
 <tr class="separator:ae96634f0635ad6c5e98620eb70ef7fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87443d7e75b0f170535d315c27237253"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a87443d7e75b0f170535d315c27237253">AdvanceTimeStep</a> (void)</td></tr>
+<tr class="memdesc:a87443d7e75b0f170535d315c27237253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main time iteration of the system.  <a href="#a87443d7e75b0f170535d315c27237253">More...</a><br/></td></tr>
 <tr class="separator:a87443d7e75b0f170535d315c27237253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:ac003793cd03c1af317bf30b11e8c0a5a"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="class_system_manager.html#af957fc0ff78c4c38085c26ac0d81064e">TClientId</a>, <br class="typebreak"/>
 <a class="el" href="class_system_manager.html#a177b09f79bd2cef44160fb4d8ea77996">TDataPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#ac003793cd03c1af317bf30b11e8c0a5a">TDataMap</a></td></tr>
+<tr class="memdesc:ac003793cd03c1af317bf30b11e8c0a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the mapping from ClientId-&gt;Consumption.  <a href="#ac003793cd03c1af317bf30b11e8c0a5a">More...</a><br/></td></tr>
 <tr class="separator:ac003793cd03c1af317bf30b11e8c0a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae66953e62823ae14519c7e9b3925864"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="class_system_manager.html#a9743ff4f23e7d957f5932780d8070099">TSystemTime</a>, <br class="typebreak"/>
 <a class="el" href="class_system_manager.html#ac003793cd03c1af317bf30b11e8c0a5a">TDataMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#aae66953e62823ae14519c7e9b3925864">TSystemMap</a></td></tr>
+<tr class="memdesc:aae66953e62823ae14519c7e9b3925864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the mappting from Time-&gt;(ClientId-&gt;Consumption).  <a href="#aae66953e62823ae14519c7e9b3925864">More...</a><br/></td></tr>
 <tr class="separator:aae66953e62823ae14519c7e9b3925864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a7654b10e671b56945ff0958781e07a6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a7654b10e671b56945ff0958781e07a6f">SystemManager</a> (void)</td></tr>
+<tr class="memdesc:a7654b10e671b56945ff0958781e07a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor for singleton implementation.  <a href="#a7654b10e671b56945ff0958781e07a6f">More...</a><br/></td></tr>
 <tr class="separator:a7654b10e671b56945ff0958781e07a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af5a7fec3622669af269cbcf7b1b2af22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_manager.html#a9743ff4f23e7d957f5932780d8070099">TSystemTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#af5a7fec3622669af269cbcf7b1b2af22">m_systemTime</a></td></tr>
+<tr class="memdesc:af5a7fec3622669af269cbcf7b1b2af22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current system time, incremented at each time step.  <a href="#af5a7fec3622669af269cbcf7b1b2af22">More...</a><br/></td></tr>
 <tr class="separator:af5a7fec3622669af269cbcf7b1b2af22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25bf998fe8f48168e2ad4c3dfd3bad91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_manager.html#aa32b3f50b8882c8aa7a9ca88ab7a43dd">TSystemMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a25bf998fe8f48168e2ad4c3dfd3bad91">m_systemMode</a></td></tr>
+<tr class="memdesc:a25bf998fe8f48168e2ad4c3dfd3bad91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current working mode of the system.  <a href="#a25bf998fe8f48168e2ad4c3dfd3bad91">More...</a><br/></td></tr>
 <tr class="separator:a25bf998fe8f48168e2ad4c3dfd3bad91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a1b7e836ad95da039de9eb367544c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_manager.html#aae66953e62823ae14519c7e9b3925864">TSystemMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a74a1b7e836ad95da039de9eb367544c3">m_systemMap</a></td></tr>
+<tr class="memdesc:a74a1b7e836ad95da039de9eb367544c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This variable contains the consumption information for all clients for the future.  <a href="#a74a1b7e836ad95da039de9eb367544c3">More...</a><br/></td></tr>
 <tr class="separator:a74a1b7e836ad95da039de9eb367544c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a97e64f74d188d41051488578800d20cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_manager.html">SystemManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_manager.html#a97e64f74d188d41051488578800d20cd">GetSystemManager</a> (void)</td></tr>
+<tr class="memdesc:a97e64f74d188d41051488578800d20cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Friend function to implement the singleton.  <a href="#a97e64f74d188d41051488578800d20cd">More...</a><br/></td></tr>
 <tr class="separator:a97e64f74d188d41051488578800d20cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00028">28</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<div class="textblock"><p>Manages the various components of the system and timing. </p>
+<p>This class coordinates the other components within S2Sim and manages the timing of consumption information from both async and synchronous clients. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00037">37</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="af957fc0ff78c4c38085c26ac0d81064e"></a>
 <div class="memitem">
@@ -202,7 +228,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00040">40</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Redefines the unique client id type for rapid development. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00069">69</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +244,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00041">41</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Redefines the object name for rapid development. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00074">74</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +268,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00049">49</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Defines the mapping from ClientId-&gt;Consumption. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00100">100</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +284,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00042">42</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Redefines the data point type for rapid development. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00079">79</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +300,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00043">43</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Redefines the number of data points type for rapid development. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00084">84</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +324,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00050">50</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Defines the mappting from Time-&gt;(ClientId-&gt;Consumption). </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00105">105</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +340,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00033">33</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Defines the working mode of the system. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00055">55</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -316,21 +356,25 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00032">32</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Defines the type for System Time in epoch format. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00050">50</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad7c10914fe99b3f09350a10028f25300"></a>
+<a class="anchor" id="a4194454c8c982c9e4d450e16625dd19c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned int <a class="el" href="class_system_manager.html#ad7c10914fe99b3f09350a10028f25300">SystemManager::TVoltage</a></td>
+          <td class="memname">typedef <a class="el" href="class_system_manager.html#a177b09f79bd2cef44160fb4d8ea77996">TDataPoint</a> <a class="el" href="class_system_manager.html#a4194454c8c982c9e4d450e16625dd19c">SystemManager::TVoltage</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00045">45</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Defines the voltage information type. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00089">89</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +388,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00046">46</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Defines the wattage consumption type. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00094">94</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -358,14 +404,19 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines the values for the TSystemMode type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e"></a>SimulationMode</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the system expects an external signal to start. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357"></a>RealTimeMode</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the system is working in real-time, even without external signaling. </p>
+<p>Not implemented. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00034">34</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00060">60</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -392,6 +443,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Private constructor for singleton implementation. </p>
+
 <p>Definition at line <a class="el" href="_system_manager_8cpp_source.html#l00019">19</a> of file <a class="el" href="_system_manager_8cpp_source.html">SystemManager.cpp</a>.</p>
 
 </div>
@@ -411,13 +464,23 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Main time iteration of the system. </p>
+<p>This method is the main time iteration of the whole system. The workflow is as follows:</p>
+<ul>
+<li>Delete the previous time step information.</li>
+<li>Get the current time consumption information.</li>
+<li>Set the consumption information in OpenDSS.</li>
+<li>Advance the time in OpenDSS.</li>
+<li>Invoke the External Controller for a decision.</li>
+<li>Wait for the External Controller to finish its decision. </li>
+</ul>
+
 <p>Definition at line <a class="el" href="_system_manager_8cpp_source.html#l00063">63</a> of file <a class="el" href="_system_manager_8cpp_source.html">SystemManager.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_system_manager_a87443d7e75b0f170535d315c27237253_cgraph.svg" width="838" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_system_manager_a87443d7e75b0f170535d315c27237253_cgraph.svg" width="838" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -452,7 +515,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00069">69</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Returns the current system working mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current system working mode. </dd></dl>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00147">147</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -485,7 +551,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00063">63</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>Returns the current system time. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current system time. </dd></dl>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00136">136</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -538,6 +607,19 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Used to register multiple consumption information. </p>
+<p>This method is mostly used for asynchronous consumption registration. Multiple consumption data points are fed into the <a class="el" href="class_system_manager.html#a74a1b7e836ad95da039de9eb367544c3" title="This variable contains the consumption information for all clients for the future. ">SystemManager::m_systemMap</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientId</td><td>Unique client id for the consumer. </td></tr>
+    <tr><td class="paramname">startTime</td><td>Starting time of the consumption map. </td></tr>
+    <tr><td class="paramname">resolution</td><td>Time resolution between consecutive consumptions. </td></tr>
+    <tr><td class="paramname">numberOfDataPoints</td><td>Number of consumption data points. </td></tr>
+    <tr><td class="paramname">dataPoints</td><td>Buffer containing consumption data points. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="_system_manager_8cpp_source.html#l00027">27</a> of file <a class="el" href="_system_manager_8cpp_source.html">SystemManager.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -580,6 +662,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Used to register a single consumption information for the next time step. </p>
+<p>The method is mostly used for synchronous consumption registration. The consumption for the next time interval is registered.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientId</td><td>Unique client id of the consumer. </td></tr>
+    <tr><td class="paramname">dataPoint</td><td>Consumption for the next time interval. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="_system_manager_8cpp_source.html#l00053">53</a> of file <a class="el" href="_system_manager_8cpp_source.html">SystemManager.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -614,6 +706,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Friend function to implement the singleton. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the only instance of <a class="el" href="class_system_manager.html" title="Manages the various components of the system and timing. ">SystemManager</a>.</dd>
+<dd>
+The only instance of <a class="el" href="class_system_manager.html" title="Manages the various components of the system and timing. ">SystemManager</a>. </dd></dl>
+
 <p>Definition at line <a class="el" href="_system_manager_8cpp_source.html#l00013">13</a> of file <a class="el" href="_system_manager_8cpp_source.html">SystemManager.cpp</a>.</p>
 
 </div>
@@ -637,7 +734,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00056">56</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>This variable contains the consumption information for all clients for the future. </p>
+<p>It is a mapping from time-&gt;Client/Data. This allows us to get the consumption of any client at any time. This simplifies the asynchronous client consumption drastically. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00121">121</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -659,7 +759,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00054">54</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>The current working mode of the system. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00116">116</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +783,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00053">53</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
+<p>The current system time, incremented at each time step. </p>
+
+<p>Definition at line <a class="el" href="_system_manager_8h_source.html#l00111">111</a> of file <a class="el" href="_system_manager_8h_source.html">SystemManager.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +799,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_system_manager.html">SystemManager</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

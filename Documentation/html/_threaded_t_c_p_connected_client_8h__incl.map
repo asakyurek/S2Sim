@@ -1,7 +1,7 @@
 <map id="S2Sim/SocketLibrary/ThreadedTCPConnectedClient.h" name="S2Sim/SocketLibrary/ThreadedTCPConnectedClient.h">
-<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="TCPConnectedClient.h" alt="" coords="5,100,189,127"/>
-<area shape="rect" href="$_thread_base_8h.html" title="ThreadBase.h" alt="" coords="213,100,333,127"/>
-<area shape="rect" href="$_semaphore_8h.html" title="Semaphore.h" alt="" coords="311,177,431,204"/>
-<area shape="rect" href="$_socket_base_8h.html" title="SocketBase.h" alt="" coords="169,177,287,204"/>
-<area shape="rect" href="$_i_p_address_8h.html" title="IPAddress.h" alt="" coords="44,177,145,204"/>
+<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="Defines the TCPConnectedClient class. " alt="" coords="5,100,189,127"/>
+<area shape="rect" href="$_thread_base_8h.html" title="This file selects the right implementation according to the current OS. " alt="" coords="213,100,333,127"/>
+<area shape="rect" href="$_semaphore_8h.html" title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. " alt="" coords="311,177,431,204"/>
+<area shape="rect" href="$_socket_base_8h.html" title="Defines the SocketBase template class. " alt="" coords="169,177,287,204"/>
+<area shape="rect" href="$_i_p_address_8h.html" title="Defines the IPAddress class. " alt="" coords="44,177,145,204"/>
 </map>

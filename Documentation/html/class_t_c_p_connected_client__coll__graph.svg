@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
-<a xlink:href="class_socket_base.html" target="_top" xlink:title="SocketBase\&lt; SocketType \&gt;">
+<a xlink:href="class_socket_base.html" target="_top" xlink:title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi...">
 <polygon style="fill:white;stroke:black;" points="8,-144 8,-165 174,-165 174,-144 8,-144"/>
 <text text-anchor="middle" x="91" y="-151" style="font-family:Arial;font-size:10.00;">SocketBase&lt; SocketType &gt;</text>
 </a>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node4 -->
 <g id="node6" class="node"><title>Node4</title>
-<a xlink:href="class_i_p_address.html" target="_top" xlink:title="IPAddress">
+<a xlink:href="class_i_p_address.html" target="_top" xlink:title="This class is an abstraction of the OS IP Address structure. ">
 <polygon style="fill:white;stroke:black;" points="200,-72 200,-93 267,-93 267,-72 200,-72"/>
 <text text-anchor="middle" x="233" y="-79" style="font-family:Arial;font-size:10.00;">IPAddress</text>
 </a>

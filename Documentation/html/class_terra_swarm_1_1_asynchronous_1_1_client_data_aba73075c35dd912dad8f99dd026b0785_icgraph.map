@@ -1,5 +1,5 @@
 <map id="TerraSwarm::Asynchronous::ClientData::GetNumberOfDataPoints" name="TerraSwarm::Asynchronous::ClientData::GetNumberOfDataPoints">
 <area shape="rect" href="$class_client_manager.html#a1dd815fe845945ae8966b3a3f449ba0e" title="Processes the consumption information. " alt="" coords="613,15,880,41"/>
-<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" title="TerraSwarm::Asynchronous\l::ClientData::GetDataPoints" alt="" coords="348,35,564,80"/>
+<area shape="rect" href="$class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" title="Gets the pointer to the data points in the message. " alt="" coords="348,35,564,80"/>
 <area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="929,15,1193,41"/>
 </map>

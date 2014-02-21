@@ -1,3 +1,3 @@
 <map id="TerraSwarm::MessageHeader::GetNextSequenceNumber" name="TerraSwarm::MessageHeader::GetNextSequenceNumber">
-<area shape="rect" href="$class_terra_swarm_1_1_message_header.html#a6328694eb125adbac38c7e50d5fd40e1" title="TerraSwarm::MessageHeader\l::PrepareOutgoingMessage" alt="" coords="285,5,517,51"/>
+<area shape="rect" href="$class_terra_swarm_1_1_message_header.html#a6328694eb125adbac38c7e50d5fd40e1" title="Sets all the fields of the message header and prepares it. " alt="" coords="285,5,517,51"/>
 </map>

@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="243,-127 243,-148 303,-148 303,-127 243,-127"/>
 <text text-anchor="middle" x="273" y="-134" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="ErrorPrint">
+<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="6 parameter error message ">
 <polygon style="fill:white;stroke:black;" points="241,-89 241,-110 306,-110 306,-89 241,-89"/>
 <text text-anchor="middle" x="273" y="-96" style="font-family:Arial;font-size:10.00;">ErrorPrint</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="TCPConnectedClient\l::SendData">
+<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="Sends data to the connected client. ">
 <polygon style="fill:white;stroke:black;" points="209,-38 209,-72 338,-72 338,-38 209,-38"/>
 <text text-anchor="start" x="217" y="-58" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 <text text-anchor="middle" x="273" y="-45" style="font-family:Arial;font-size:10.00;">::SendData</text>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="231,1 231,-20 316,-20 316,1 231,1"/>
 <text text-anchor="middle" x="273" y="-6" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>

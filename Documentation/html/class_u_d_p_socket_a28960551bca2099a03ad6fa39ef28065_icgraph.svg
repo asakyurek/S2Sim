@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" target="_top" xlink:title="UDPSocket::SetPort">
+<a xlink:href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" target="_top" xlink:title="Sets the port of the UDP Socket. ">
 <polygon style="fill:white;stroke:black;" points="186,1 186,-20 306,-20 306,1 186,1"/>
 <text text-anchor="middle" x="246" y="-6" style="font-family:Arial;font-size:10.00;">UDPSocket::SetPort</text>
 </a>

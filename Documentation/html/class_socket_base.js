@@ -2,12 +2,8 @@ var class_socket_base =
 [
     [ "SOCKET", "class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829", null ],
     [ "TBuffer", "class_socket_base.html#a1557d64029a25c20b4c306b80efcc143", null ],
-    [ "TErrorCode", "class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11", null ],
     [ "TNumberOfBytes", "class_socket_base.html#ac414903631491453b96e71c06c2c2e72", null ],
     [ "TSocketId", "class_socket_base.html#aad53265037e46768af4d6a0c2ebed277", null ],
-    [ "ErrorCodeValues", "class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30", [
-      [ "NoError", "class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc", null ]
-    ] ],
     [ "SocketIdValues", "class_socket_base.html#a1441f12307a40913930ccbb8baf953bb", [
       [ "InvalidSocketId", "class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0", null ]
     ] ],

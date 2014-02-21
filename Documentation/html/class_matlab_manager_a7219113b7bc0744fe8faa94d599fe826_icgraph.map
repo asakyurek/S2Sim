@@ -1,6 +1,6 @@
 <map id="MatlabManager::ProcessData" name="MatlabManager::ProcessData">
-<area shape="rect" href="$_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" title="MatlabReceiveHandler" alt="" coords="287,5,471,32"/>
-<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="MatlabManager::SetClient" alt="" coords="521,5,729,32"/>
+<area shape="rect" href="$_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" title="Wrapper callback function that forwards the received data to MatlabManager. " alt="" coords="287,5,471,32"/>
+<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="Sets the OpenDSS controller connection information. " alt="" coords="521,5,729,32"/>
 <area shape="rect" href="$_matlab_manager_8cpp.html#aa340f269e04280ce987b3a8325f27580" title="MatlabNotificationHandler" alt="" coords="780,5,991,32"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="1040,5,1296,32"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="1040,5,1296,32"/>
 </map>

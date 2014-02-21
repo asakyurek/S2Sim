@@ -1,7 +1,7 @@
 <map id="IPAddress::SetAddress" name="IPAddress::SetAddress">
-<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="TCPServer::SetPort" alt="" coords="235,75,389,101"/>
-<area shape="rect" href="$class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" title="UDPSocket::SetPort" alt="" coords="232,125,392,152"/>
-<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="484,5,660,51"/>
-<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="ControlManager::ControlManager" alt="" coords="440,75,704,101"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="444,125,700,152"/>
+<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="Sets the listening port of the server. " alt="" coords="235,75,389,101"/>
+<area shape="rect" href="$class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" title="Sets the port of the UDP Socket. " alt="" coords="232,125,392,152"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="Private constructor for singleton implementation. " alt="" coords="484,5,660,51"/>
+<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="Private constructor for singleton implementation. " alt="" coords="440,75,704,101"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="444,125,700,152"/>
 </map>

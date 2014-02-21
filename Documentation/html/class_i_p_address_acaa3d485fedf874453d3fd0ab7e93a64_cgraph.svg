@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="IPAddress::GetPort">
+<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="Return a reference to the port value. ">
 <polygon style="fill:white;stroke:black;" points="183,-37 183,-58 296,-58 296,-37 183,-37"/>
 <text text-anchor="middle" x="239" y="-44" style="font-family:Arial;font-size:10.00;">IPAddress::GetPort</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="IPAddress::GetAddress">
+<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="Returns a reference to the address value. ">
 <polygon style="fill:white;stroke:black;" points="172,1 172,-20 306,-20 306,1 172,1"/>
 <text text-anchor="middle" x="239" y="-6" style="font-family:Arial;font-size:10.00;">IPAddress::GetAddress</text>
 </a>

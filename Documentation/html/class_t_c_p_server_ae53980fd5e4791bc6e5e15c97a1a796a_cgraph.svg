@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="IPAddress::GetSocketSize">
+<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="Returns the size of the socket structure. ">
 <polygon style="fill:white;stroke:black;" points="152,1 152,-20 304,-20 304,1 152,1"/>
 <text text-anchor="middle" x="228" y="-6" style="font-family:Arial;font-size:10.00;">IPAddress::GetSocketSize</text>
 </a>

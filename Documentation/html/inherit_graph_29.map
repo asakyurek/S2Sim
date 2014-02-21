@@ -1,11 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SOCK_STREAM \&gt;" alt="" coords="5,56,248,83"/>
-<area shape="rect" href="$class_t_c_p_client.html" title="TCPClient" alt="" coords="337,5,428,32"/>
-<area shape="rect" href="$class_t_c_p_connected_client.html" title="TCPConnectedClient" alt="" coords="297,56,468,83"/>
-<area shape="rect" href="$class_t_c_p_server.html" title="TCPServer" alt="" coords="335,157,431,184"/>
-<area shape="rect" href="$class_threaded_t_c_p_client.html" title="ThreadedTCPClient" alt="" coords="557,5,720,32"/>
-<area shape="rect" href="$class_threaded_t_c_p_connected_client.html" title="ThreadedTCPConnectedClient" alt="" coords="517,56,760,83"/>
-<area shape="rect" href="$class_threaded_t_c_p_server.html" title="ThreadedTCPServer" alt="" coords="556,157,721,184"/>
-<area shape="rect" href="$class_thread_base.html" title="ThreadBase" alt="" coords="329,107,436,133"/>
-<area shape="rect" href="$class_my_thread.html" title="MyThread" alt="" coords="592,107,685,133"/>
+<area shape="rect" href="$struct_thread_base_1_1_input_structure.html" title="Special Input structure sent to the wrapper function: PosixThreadCover(). " alt="" coords="7,5,225,32"/>
 </map>

@@ -24,10 +24,10 @@ Collaboration diagram for Client\-Manager\-:\nopagebreak
 \item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price} \hyperlink{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{T\-Price}
-\item 
+\begin{DoxyCompactList}\small\item\em Type used to represent a price signal. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval} \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Type used to represent a time interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -46,24 +46,24 @@ void \hyperlink{class_client_manager_a4fa8fc5731587276f5e6be92563474fa}{Connecti
 void \hyperlink{class_client_manager_abf05d2ac88337dfd02e0b7986ee1e18c}{Message\-Received} (void $\ast$data, const size\-\_\-t data\-Size)
 \begin{DoxyCompactList}\small\item\em Called when a message is received. \end{DoxyCompactList}\item 
 void \hyperlink{class_client_manager_adb64a2ee5d0eb7b1a4bdedcd0e3b92f5}{Set\-Current\-Price} (const \hyperlink{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{T\-Price} price, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} begin\-Interval, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} end\-Interval)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends a price signal to the client. \end{DoxyCompactList}\item 
 void \hyperlink{class_client_manager_ae297765312b5f2f93f7b8ec700ad2fbb}{Price\-Proposal} (const \hyperlink{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{T\-Price} price, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} begin\-Interval, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} end\-Interval)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends a price proposal to the client. \end{DoxyCompactList}\item 
 bool \hyperlink{class_client_manager_a626b9383b2b2b7924a1f1e183800fe72}{Is\-Synchronous} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Method to check for Synchronous Client type. \end{DoxyCompactList}\item 
 bool \hyperlink{class_client_manager_ab3f0c2bb301ba8d1218d703e5446baf3}{Is\-Asynchronous} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Method to check for Asynchronous Client type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40b}{Client\-Type\-Values} \{ \hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40ba5efa5897435cfd442d637beea251c85a}{Asynchronous\-Client} = ( T\-Client\-Type )0x01, 
 \hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40bada4fe5ba56979f1deaf93b69d0a8fcae}{Synchronous\-Client} = ( T\-Client\-Type )0x02
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em There are two client types. \end{DoxyCompactList}\item 
 typedef unsigned char \hyperlink{class_client_manager_a223aecacabe855f08e4675b12403dfa4}{T\-Client\-Type}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the client type. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{Message\-Header\-::\-T\-Id} \hyperlink{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{T\-Id}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Type of the Unique I\-D of the client in the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -83,16 +83,16 @@ void \hyperlink{class_client_manager_ad8841acd386513f41ab0872c67593ff4}{Process\
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$ \hyperlink{class_client_manager_a86ae04f2ac9f2988559a023d877f78e4}{m\-\_\-client}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointer to the T\-C\-P Client connection managing class instance. \end{DoxyCompactList}\item 
 \hyperlink{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{T\-Id} \hyperlink{class_client_manager_a1216ffa88107c33825adafe63fea2263}{m\-\_\-client\-Id}
-\item 
+\begin{DoxyCompactList}\small\item\em Actual assigned Unique I\-D of the managed client. \end{DoxyCompactList}\item 
 \hyperlink{class_client_manager_a223aecacabe855f08e4675b12403dfa4}{T\-Client\-Type} \hyperlink{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{m\-\_\-client\-Type}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Type of the managed client. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{T\-Id} \hyperlink{class_client_manager_a4f044df4d9f43367135f9d01841ec326}{next\-Client\-Id} = 1
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Static variable that holds the next Unique I\-D. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -108,28 +108,44 @@ Definition at line 33 of file Client\-Manager.\-h.
 \hypertarget{class_client_manager_a223aecacabe855f08e4675b12403dfa4}{\index{Client\-Manager@{Client\-Manager}!T\-Client\-Type@{T\-Client\-Type}}
 \index{T\-Client\-Type@{T\-Client\-Type}!ClientManager@{Client\-Manager}}
 \subsubsection[{T\-Client\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf Client\-Manager\-::\-T\-Client\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a223aecacabe855f08e4675b12403dfa4}
-Defines the client type 
+
+
+Defines the client type. 
+
+
 
 Definition at line 39 of file Client\-Manager.\-h.
 
 \hypertarget{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{\index{Client\-Manager@{Client\-Manager}!T\-Id@{T\-Id}}
 \index{T\-Id@{T\-Id}!ClientManager@{Client\-Manager}}
 \subsubsection[{T\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Message\-Header\-::\-T\-Id} {\bf Client\-Manager\-::\-T\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}
+
+
 Type of the Unique I\-D of the client in the system. 
+
+
 
 Definition at line 55 of file Client\-Manager.\-h.
 
 \hypertarget{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{\index{Client\-Manager@{Client\-Manager}!T\-Interval@{T\-Interval}}
 \index{T\-Interval@{T\-Interval}!ClientManager@{Client\-Manager}}
 \subsubsection[{T\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval} {\bf Client\-Manager\-::\-T\-Interval}}}\label{class_client_manager_a429cc3229a8121c83655945ebaec18a6}
+
+
 Type used to represent a time interval. 
+
+
 
 Definition at line 65 of file Client\-Manager.\-h.
 
 \hypertarget{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{\index{Client\-Manager@{Client\-Manager}!T\-Price@{T\-Price}}
 \index{T\-Price@{T\-Price}!ClientManager@{Client\-Manager}}
 \subsubsection[{T\-Price}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price} {\bf Client\-Manager\-::\-T\-Price}}}\label{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}
+
+
 Type used to represent a price signal. 
+
+
 
 Definition at line 61 of file Client\-Manager.\-h.
 
@@ -139,7 +155,11 @@ Definition at line 61 of file Client\-Manager.\-h.
 \hypertarget{class_client_manager_ac12239be9a30847f677a32910822d40b}{\index{Client\-Manager@{Client\-Manager}!Client\-Type\-Values@{Client\-Type\-Values}}
 \index{Client\-Type\-Values@{Client\-Type\-Values}!ClientManager@{Client\-Manager}}
 \subsubsection[{Client\-Type\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Client\-Manager\-::\-Client\-Type\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_ac12239be9a30847f677a32910822d40b}
-There are two client types.
+
+
+There are two client types. 
+
+
 \begin{DoxyItemize}
 \item Asynchronous client that connects, delivers its data and disconnects.
 \item Synchronous client that connects and delivers data in a time synchronous way. 
@@ -251,8 +271,7 @@ Definition at line 58 of file Client\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -268,7 +287,11 @@ Here is the call graph for this function\-:
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_client_manager_ab3f0c2bb301ba8d1218d703e5446baf3}
-Method to check for Asynchronous Client type. \begin{DoxySeeAlso}{See Also}
+
+
+Method to check for Asynchronous Client type. 
+
+\begin{DoxySeeAlso}{See Also}
 \hyperlink{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{m\-\_\-client\-Type}
 \end{DoxySeeAlso}
 \begin{DoxyReturn}{Returns}
@@ -285,7 +308,11 @@ Definition at line 252 of file Client\-Manager.\-h.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_client_manager_a626b9383b2b2b7924a1f1e183800fe72}
-Method to check for Synchronous Client type. \begin{DoxySeeAlso}{See Also}
+
+
+Method to check for Synchronous Client type. 
+
+\begin{DoxySeeAlso}{See Also}
 \hyperlink{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{m\-\_\-client\-Type}
 \end{DoxySeeAlso}
 \begin{DoxyReturn}{Returns}
@@ -322,8 +349,7 @@ Definition at line 70 of file Client\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -366,7 +392,9 @@ Definition at line 42 of file Client\-Manager.\-cpp.
 \item[{const {\bf T\-Interval}}]{end\-Interval}
 \end{DoxyParamCaption}
 )}}\label{class_client_manager_ae297765312b5f2f93f7b8ec700ad2fbb}
-Sends a price proposal to the client.
+
+
+Sends a price proposal to the client. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -422,8 +450,7 @@ Definition at line 108 of file Client\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -473,8 +500,7 @@ Definition at line 163 of file Client\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -584,8 +610,7 @@ Definition at line 223 of file Client\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -627,8 +652,7 @@ Definition at line 214 of file Client\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -657,7 +681,9 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{const {\bf T\-Interval}}]{end\-Interval}
 \end{DoxyParamCaption}
 )}}\label{class_client_manager_adb64a2ee5d0eb7b1a4bdedcd0e3b92f5}
-Sends a price signal to the client.
+
+
+Sends a price signal to the client. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -689,21 +715,33 @@ Here is the call graph for this function\-:\nopagebreak
 \hypertarget{class_client_manager_a86ae04f2ac9f2988559a023d877f78e4}{\index{Client\-Manager@{Client\-Manager}!m\-\_\-client@{m\-\_\-client}}
 \index{m\-\_\-client@{m\-\_\-client}!ClientManager@{Client\-Manager}}
 \subsubsection[{m\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Connected\-Client}$\ast$ Client\-Manager\-::m\-\_\-client\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a86ae04f2ac9f2988559a023d877f78e4}
-Pointer to the T\-C\-P Client connection managing class instance. This variable is used for all communication purposes. 
+
+
+Pointer to the T\-C\-P Client connection managing class instance. 
+
+This variable is used for all communication purposes. 
 
 Definition at line 75 of file Client\-Manager.\-h.
 
 \hypertarget{class_client_manager_a1216ffa88107c33825adafe63fea2263}{\index{Client\-Manager@{Client\-Manager}!m\-\_\-client\-Id@{m\-\_\-client\-Id}}
 \index{m\-\_\-client\-Id@{m\-\_\-client\-Id}!ClientManager@{Client\-Manager}}
 \subsubsection[{m\-\_\-client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Id} Client\-Manager\-::m\-\_\-client\-Id\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a1216ffa88107c33825adafe63fea2263}
+
+
 Actual assigned Unique I\-D of the managed client. 
+
+
 
 Definition at line 79 of file Client\-Manager.\-h.
 
 \hypertarget{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{\index{Client\-Manager@{Client\-Manager}!m\-\_\-client\-Type@{m\-\_\-client\-Type}}
 \index{m\-\_\-client\-Type@{m\-\_\-client\-Type}!ClientManager@{Client\-Manager}}
 \subsubsection[{m\-\_\-client\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Client\-Type} Client\-Manager\-::m\-\_\-client\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}
-Type of the managed client. \begin{DoxySeeAlso}{See Also}
+
+
+Type of the managed client. 
+
+\begin{DoxySeeAlso}{See Also}
 \{\hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40b}{Client\-Manager\-::\-Client\-Type\-Values}\} 
 \end{DoxySeeAlso}
 
@@ -713,7 +751,11 @@ Definition at line 83 of file Client\-Manager.\-h.
 \hypertarget{class_client_manager_a4f044df4d9f43367135f9d01841ec326}{\index{Client\-Manager@{Client\-Manager}!next\-Client\-Id@{next\-Client\-Id}}
 \index{next\-Client\-Id@{next\-Client\-Id}!ClientManager@{Client\-Manager}}
 \subsubsection[{next\-Client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\-Manager\-::\-T\-Id} Client\-Manager\-::next\-Client\-Id = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_client_manager_a4f044df4d9f43367135f9d01841ec326}
-Static variable that holds the next Unique I\-D. Incremented at each new connection. Returns to 0 if all values have been used. 
+
+
+Static variable that holds the next Unique I\-D. 
+
+Incremented at each new connection. Returns to 0 if all values have been used. 
 
 Definition at line 71 of file Client\-Manager.\-h.
 

@@ -1,8 +1,8 @@
 <map id="S2Sim/SocketLibrary/ThreadedTCPClient.cpp" name="S2Sim/SocketLibrary/ThreadedTCPClient.cpp">
-<area shape="rect" href="$_threaded_t_c_p_client_8h.html" title="ThreadedTCPClient.h" alt="" coords="147,100,323,127"/>
-<area shape="rect" href="$_t_c_p_client_8h.html" title="TCPClient.h" alt="" coords="47,177,151,204"/>
-<area shape="rect" href="$_thread_base_8h.html" title="ThreadBase.h" alt="" coords="175,177,295,204"/>
-<area shape="rect" href="$_semaphore_8h.html" title="Semaphore.h" alt="" coords="272,255,392,281"/>
-<area shape="rect" href="$_socket_base_8h.html" title="SocketBase.h" alt="" coords="131,255,248,281"/>
-<area shape="rect" href="$_i_p_address_8h.html" title="IPAddress.h" alt="" coords="5,255,107,281"/>
+<area shape="rect" href="$_threaded_t_c_p_client_8h.html" title="Defines the ThreadedTCPClient class. " alt="" coords="147,100,323,127"/>
+<area shape="rect" href="$_t_c_p_client_8h.html" title="Defines the TCPClient class. " alt="" coords="47,177,151,204"/>
+<area shape="rect" href="$_thread_base_8h.html" title="This file selects the right implementation according to the current OS. " alt="" coords="175,177,295,204"/>
+<area shape="rect" href="$_semaphore_8h.html" title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. " alt="" coords="272,255,392,281"/>
+<area shape="rect" href="$_socket_base_8h.html" title="Defines the SocketBase template class. " alt="" coords="131,255,248,281"/>
+<area shape="rect" href="$_i_p_address_8h.html" title="Defines the IPAddress class. " alt="" coords="5,255,107,281"/>
 </map>

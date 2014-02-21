@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<a xlink:href="class_thread_base.html" target="_top" xlink:title="ThreadBase">
+<a xlink:href="class_thread_base.html" target="_top" xlink:title="Provides a base class that can be inherited from to gain threading capabilities. ">
 <polygon style="fill:white;stroke:black;" points="42,-72 42,-93 123,-93 123,-72 42,-72"/>
 <text text-anchor="middle" x="82" y="-79" style="font-family:Arial;font-size:10.00;">ThreadBase</text>
 </a>

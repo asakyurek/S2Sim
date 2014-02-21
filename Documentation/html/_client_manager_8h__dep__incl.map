@@ -1,12 +1,12 @@
 <map id="S2Sim/ClientManager.h" name="S2Sim/ClientManager.h">
-<area shape="rect" href="$_client_manager_8cpp.html" title="S2Sim/ClientManager.cpp" alt="" coords="199,84,407,111"/>
-<area shape="rect" href="$_connection_manager_8h.html" title="S2Sim/ConnectionManager.h" alt="" coords="431,84,663,111"/>
-<area shape="rect" href="$_control_manager_8h.html" title="S2Sim/ControlManager.h" alt="" coords="447,161,647,188"/>
-<area shape="rect" href="$_system_manager_8h.html" title="S2Sim/SystemManager.h" alt="" coords="672,239,872,265"/>
-<area shape="rect" href="$main_8cpp.html" title="S2Sim/main.cpp" alt="" coords="272,393,411,420"/>
-<area shape="rect" href="$_connection_manager_8cpp.html" title="S2Sim/ConnectionManager.cpp" alt="" coords="5,161,253,188"/>
-<area shape="rect" href="$_control_manager_8cpp.html" title="S2Sim/ControlManager.cpp" alt="" coords="429,239,648,265"/>
-<area shape="rect" href="$_matlab_manager_8h.html" title="S2Sim/MatlabManager.h" alt="" coords="673,316,871,343"/>
-<area shape="rect" href="$_system_manager_8cpp.html" title="S2Sim/SystemManager.cpp" alt="" coords="431,316,649,343"/>
-<area shape="rect" href="$_matlab_manager_8cpp.html" title="S2Sim/MatlabManager.cpp" alt="" coords="665,393,879,420"/>
+<area shape="rect" href="$_client_manager_8cpp.html" title="Source file for the ClientManager class. " alt="" coords="208,84,416,111"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="This file defines the ConnectionManager class. " alt="" coords="440,84,672,111"/>
+<area shape="rect" href="$_control_manager_8h.html" title="This file defines the ControlManager class. " alt="" coords="523,161,723,188"/>
+<area shape="rect" href="$_system_manager_8h.html" title="Defines the SystemManager class. " alt="" coords="672,239,872,265"/>
+<area shape="rect" href="$main_8cpp.html" title="Main file that starts an infinite running loop on the SystemManager::AdvanceTimeStep method..." alt="" coords="352,393,491,420"/>
+<area shape="rect" href="$_connection_manager_8cpp.html" title="This file implements the ConnectionManager class. " alt="" coords="5,161,253,188"/>
+<area shape="rect" href="$_control_manager_8cpp.html" title="This file implements the ControlManager class. " alt="" coords="379,239,597,265"/>
+<area shape="rect" href="$_matlab_manager_8h.html" title="Defines the MatlabManager class. " alt="" coords="604,316,801,343"/>
+<area shape="rect" href="$_system_manager_8cpp.html" title="Implements the SystemManager class. " alt="" coords="825,316,1044,343"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html" title="Implements the MatlabManager class. " alt="" coords="596,393,809,420"/>
 </map>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -108,13 +108,7 @@ $(document).ready(function(){initNavTree('_thread_implementation_8cpp_source.htm
 <div class="title">ThreadImplementation.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_thread_implementation_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ThreadImplementation.cpp</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: Dec 21, 2013</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: asakyurek</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<a href="_thread_implementation_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_thread_base_8h.html">ThreadBase.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#if defined( __APPLE__ ) || defined ( __linux__ )</span></div>
@@ -126,7 +120,7 @@ $(document).ready(function(){initNavTree('_thread_implementation_8cpp_source.htm
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_thread_base.html">ThreadBase</a>* classPointer = input-&gt;<a class="code" href="struct_thread_base_1_1_input_structure.html#af522f05c6feb189c62b450a7eb344986">m_classPointer</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span>* mainInput = input-&gt;<a class="code" href="struct_thread_base_1_1_input_structure.html#ab91961eacdcce8b1628f46a1a116fa1e">m_mainInput</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">delete</span> input;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> ( classPointer-&gt;<a class="code" href="class_thread_base.html#a2cbbb5fb63f5e92d32085b6e874b6f29">ExecutionBody</a>( mainInput ) );</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> ( classPointer-&gt;<a class="code" href="class_thread_base.html#a9904309fcfb4dce33130ef1f1a1c227e">ExecutionBody</a>( mainInput ) );</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -140,25 +134,25 @@ $(document).ready(function(){initNavTree('_thread_implementation_8cpp_source.htm
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_thread_base.html">ThreadBase</a>* classPointer = input-&gt;<a class="code" href="struct_thread_base_1_1_input_structure.html#af522f05c6feb189c62b450a7eb344986">m_classPointer</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span>* mainInput = input-&gt;<a class="code" href="struct_thread_base_1_1_input_structure.html#ab91961eacdcce8b1628f46a1a116fa1e">m_mainInput</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">delete</span> input;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> ( ( DWORD )classPointer-&gt;<a class="code" href="class_thread_base.html#a2cbbb5fb63f5e92d32085b6e874b6f29">ExecutionBody</a>( mainInput ) );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> ( ( DWORD )classPointer-&gt;<a class="code" href="class_thread_base.html#a9904309fcfb4dce33130ef1f1a1c227e">ExecutionBody</a>( mainInput ) );</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_thread_base_html"><div class="ttname"><a href="class_thread_base.html">ThreadBase</a></div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00018">PosixThreadBase.h:18</a></div></div>
-<div class="ttc" id="_windows_thread_base_8h_html_a790b21ad102d0b813d14e54f4fbf4460"><div class="ttname"><a href="_windows_thread_base_8h.html#a790b21ad102d0b813d14e54f4fbf4460">WindowsThreadCover</a></div><div class="ttdeci">DWORD WINAPI WindowsThreadCover(LPVOID)</div></div>
-<div class="ttc" id="_thread_base_8h_html"><div class="ttname"><a href="_thread_base_8h.html">ThreadBase.h</a></div></div>
-<div class="ttc" id="struct_thread_base_1_1_input_structure_html_af522f05c6feb189c62b450a7eb344986"><div class="ttname"><a href="struct_thread_base_1_1_input_structure.html#af522f05c6feb189c62b450a7eb344986">ThreadBase::InputStructure::m_classPointer</a></div><div class="ttdeci">ThreadBase * m_classPointer</div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00027">PosixThreadBase.h:27</a></div></div>
-<div class="ttc" id="struct_thread_base_1_1_input_structure_html_ab91961eacdcce8b1628f46a1a116fa1e"><div class="ttname"><a href="struct_thread_base_1_1_input_structure.html#ab91961eacdcce8b1628f46a1a116fa1e">ThreadBase::InputStructure::m_mainInput</a></div><div class="ttdeci">void * m_mainInput</div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00026">PosixThreadBase.h:26</a></div></div>
-<div class="ttc" id="struct_thread_base_1_1_input_structure_html"><div class="ttname"><a href="struct_thread_base_1_1_input_structure.html">ThreadBase::InputStructure</a></div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00024">PosixThreadBase.h:24</a></div></div>
-<div class="ttc" id="class_thread_base_html_a2cbbb5fb63f5e92d32085b6e874b6f29"><div class="ttname"><a href="class_thread_base.html#a2cbbb5fb63f5e92d32085b6e874b6f29">ThreadBase::ExecutionBody</a></div><div class="ttdeci">virtual void * ExecutionBody(void *)=0</div></div>
-<div class="ttc" id="_posix_thread_base_8h_html_a2567acd55e8bbdbf8ac90a8f77bb4943"><div class="ttname"><a href="_posix_thread_base_8h.html#a2567acd55e8bbdbf8ac90a8f77bb4943">PosixThreadCover</a></div><div class="ttdeci">void * PosixThreadCover(void *)</div></div>
+<div class="ttc" id="class_thread_base_html"><div class="ttname"><a href="class_thread_base.html">ThreadBase</a></div><div class="ttdoc">Provides a base class that can be inherited from to gain threading capabilities. </div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00030">PosixThreadBase.h:30</a></div></div>
+<div class="ttc" id="_windows_thread_base_8h_html_a790b21ad102d0b813d14e54f4fbf4460"><div class="ttname"><a href="_windows_thread_base_8h.html#a790b21ad102d0b813d14e54f4fbf4460">WindowsThreadCover</a></div><div class="ttdeci">DWORD WINAPI WindowsThreadCover(LPVOID)</div><div class="ttdoc">Wrapper function called by the operating system a the thread body. </div></div>
+<div class="ttc" id="class_thread_base_html_a9904309fcfb4dce33130ef1f1a1c227e"><div class="ttname"><a href="class_thread_base.html#a9904309fcfb4dce33130ef1f1a1c227e">ThreadBase::ExecutionBody</a></div><div class="ttdeci">virtual void * ExecutionBody(void *input)=0</div><div class="ttdoc">Purely virtual method to be overridden by the inheriting class to implement its own thread body...</div></div>
+<div class="ttc" id="_thread_base_8h_html"><div class="ttname"><a href="_thread_base_8h.html">ThreadBase.h</a></div><div class="ttdoc">This file selects the right implementation according to the current OS. </div></div>
+<div class="ttc" id="struct_thread_base_1_1_input_structure_html_af522f05c6feb189c62b450a7eb344986"><div class="ttname"><a href="struct_thread_base_1_1_input_structure.html#af522f05c6feb189c62b450a7eb344986">ThreadBase::InputStructure::m_classPointer</a></div><div class="ttdeci">ThreadBase * m_classPointer</div><div class="ttdoc">Pointer to the ThreadBase class to gain access to the real thread body. </div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00063">PosixThreadBase.h:63</a></div></div>
+<div class="ttc" id="struct_thread_base_1_1_input_structure_html_ab91961eacdcce8b1628f46a1a116fa1e"><div class="ttname"><a href="struct_thread_base_1_1_input_structure.html#ab91961eacdcce8b1628f46a1a116fa1e">ThreadBase::InputStructure::m_mainInput</a></div><div class="ttdeci">void * m_mainInput</div><div class="ttdoc">Actual input to the thread body. </div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00058">PosixThreadBase.h:58</a></div></div>
+<div class="ttc" id="struct_thread_base_1_1_input_structure_html"><div class="ttname"><a href="struct_thread_base_1_1_input_structure.html">ThreadBase::InputStructure</a></div><div class="ttdoc">Special Input structure sent to the wrapper function: PosixThreadCover(). </div><div class="ttdef"><b>Definition:</b> <a href="_posix_thread_base_8h_source.html#l00053">PosixThreadBase.h:53</a></div></div>
+<div class="ttc" id="_posix_thread_base_8h_html_a2567acd55e8bbdbf8ac90a8f77bb4943"><div class="ttname"><a href="_posix_thread_base_8h.html#a2567acd55e8bbdbf8ac90a8f77bb4943">PosixThreadCover</a></div><div class="ttdeci">void * PosixThreadCover(void *)</div><div class="ttdoc">Wrapper function called by the operating system a the thread body. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="dir_a7af9107ec02fcfb2ee8d3bbd2609d89.html">ThreadLibrary</a></li><li class="navelem"><a class="el" href="_thread_implementation_8cpp.html">ThreadImplementation.cpp</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

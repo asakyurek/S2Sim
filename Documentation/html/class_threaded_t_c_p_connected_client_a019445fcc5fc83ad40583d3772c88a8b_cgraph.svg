@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_connected_client.html#a6bfa3ec7dc46c17dbccde8383c3253da" target="_top" xlink:title="TCPConnectedClient\l::ReceiveData">
+<a xlink:href="class_t_c_p_connected_client.html#a6bfa3ec7dc46c17dbccde8383c3253da" target="_top" xlink:title="Receives data from the connected client. ">
 <polygon style="fill:white;stroke:black;" points="219,-0 219,-34 348,-34 348,-0 219,-0"/>
 <text text-anchor="start" x="227" y="-20" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 <text text-anchor="middle" x="283" y="-7" style="font-family:Arial;font-size:10.00;">::ReceiveData</text>

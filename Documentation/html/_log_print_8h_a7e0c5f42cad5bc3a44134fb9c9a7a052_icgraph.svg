@@ -81,7 +81,7 @@
 </g>
 <!-- Node7 -->
 <g id="node17" class="node"><title>Node7</title>
-<a xlink:href="class_client_manager.html#adb64a2ee5d0eb7b1a4bdedcd0e3b92f5" target="_top" xlink:title="ClientManager::SetCurrent\lPrice">
+<a xlink:href="class_client_manager.html#adb64a2ee5d0eb7b1a4bdedcd0e3b92f5" target="_top" xlink:title="Sends a price signal to the client. ">
 <polygon style="fill:white;stroke:black;" points="120,-1173 120,-1207 281,-1207 281,-1173 120,-1173"/>
 <text text-anchor="start" x="128" y="-1193" style="font-family:Arial;font-size:10.00;">ClientManager::SetCurrent</text>
 <text text-anchor="middle" x="200" y="-1180" style="font-family:Arial;font-size:10.00;">Price</text>
@@ -94,7 +94,7 @@
 </g>
 <!-- Node8 -->
 <g id="node19" class="node"><title>Node8</title>
-<a xlink:href="class_client_manager.html#ae297765312b5f2f93f7b8ec700ad2fbb" target="_top" xlink:title="ClientManager::PriceProposal">
+<a xlink:href="class_client_manager.html#ae297765312b5f2f93f7b8ec700ad2fbb" target="_top" xlink:title="Sends a price proposal to the client. ">
 <polygon style="fill:white;stroke:black;" points="113,-1134 113,-1155 287,-1155 287,-1134 113,-1134"/>
 <text text-anchor="middle" x="200" y="-1141" style="font-family:Arial;font-size:10.00;">ClientManager::PriceProposal</text>
 </a>
@@ -156,7 +156,7 @@
 </g>
 <!-- Node14 -->
 <g id="node34" class="node"><title>Node14</title>
-<a xlink:href="class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863" target="_top" xlink:title="ConnectionManager::\lDeleteClient">
+<a xlink:href="class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863" target="_top" xlink:title="Deletes the ClientManager from all lists and finally deletes itself. ">
 <polygon style="fill:white;stroke:black;" points="134,-1083 134,-1117 267,-1117 267,-1083 134,-1083"/>
 <text text-anchor="start" x="142" y="-1103" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="200" y="-1090" style="font-family:Arial;font-size:10.00;">DeleteClient</text>
@@ -217,7 +217,7 @@
 </g>
 <!-- Node22 -->
 <g id="node53" class="node"><title>Node22</title>
-<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="SystemManager::AdvanceTimeStep">
+<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="Main time iteration of the system. ">
 <polygon style="fill:white;stroke:black;" points="340,-418 340,-439 550,-439 550,-418 340,-418"/>
 <text text-anchor="middle" x="445" y="-425" style="font-family:Arial;font-size:10.00;">SystemManager::AdvanceTimeStep</text>
 </a>
@@ -241,7 +241,7 @@
 </g>
 <!-- Node24 -->
 <g id="node57" class="node"><title>Node24</title>
-<a xlink:href="class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" target="_top" xlink:title="ControlManager::ClientPrice\lRequest">
+<a xlink:href="class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" target="_top" xlink:title="Relays the price request of a client to the External Controller. ">
 <polygon style="fill:white;stroke:black;" points="116,-941 116,-975 284,-975 284,-941 116,-941"/>
 <text text-anchor="start" x="124" y="-961" style="font-family:Arial;font-size:10.00;">ControlManager::ClientPrice</text>
 <text text-anchor="middle" x="200" y="-948" style="font-family:Arial;font-size:10.00;">Request</text>
@@ -254,7 +254,7 @@
 </g>
 <!-- Node25 -->
 <g id="node60" class="node"><title>Node25</title>
-<a xlink:href="class_control_manager.html#a5b551f560431d0bb0bcf6c338bac8eb3" target="_top" xlink:title="ControlManager::ClientDemand\lNegotiation">
+<a xlink:href="class_control_manager.html#a5b551f560431d0bb0bcf6c338bac8eb3" target="_top" xlink:title="Relays the demand negotiation response of the client to the External Controller. ">
 <polygon style="fill:white;stroke:black;" points="106,-889 106,-923 295,-923 295,-889 106,-889"/>
 <text text-anchor="start" x="114" y="-909" style="font-family:Arial;font-size:10.00;">ControlManager::ClientDemand</text>
 <text text-anchor="middle" x="200" y="-896" style="font-family:Arial;font-size:10.00;">Negotiation</text>
@@ -267,7 +267,7 @@
 </g>
 <!-- Node26 -->
 <g id="node63" class="node"><title>Node26</title>
-<a xlink:href="class_control_manager.html#a56df538a5380c9091123a5a8a5e0fe86" target="_top" xlink:title="ControlManager::Register\lClient">
+<a xlink:href="class_control_manager.html#a56df538a5380c9091123a5a8a5e0fe86" target="_top" xlink:title="Registers a new client to its maps for later referencing. ">
 <polygon style="fill:white;stroke:black;" points="123,-1263 123,-1297 277,-1297 277,-1263 123,-1263"/>
 <text text-anchor="start" x="131" y="-1283" style="font-family:Arial;font-size:10.00;">ControlManager::Register</text>
 <text text-anchor="middle" x="200" y="-1270" style="font-family:Arial;font-size:10.00;">Client</text>
@@ -280,7 +280,7 @@
 </g>
 <!-- Node27 -->
 <g id="node66" class="node"><title>Node27</title>
-<a xlink:href="class_control_manager.html#ac3c913a01fe2e5e5467ad3d140c8e9a2" target="_top" xlink:title="ControlManager::UnRegister\lClient">
+<a xlink:href="class_control_manager.html#ac3c913a01fe2e5e5467ad3d140c8e9a2" target="_top" xlink:title="Deletes a client from the maps when connection is broken. ">
 <polygon style="fill:white;stroke:black;" points="116,-1031 116,-1065 285,-1065 285,-1031 116,-1031"/>
 <text text-anchor="start" x="124" y="-1051" style="font-family:Arial;font-size:10.00;">ControlManager::UnRegister</text>
 <text text-anchor="middle" x="200" y="-1038" style="font-family:Arial;font-size:10.00;">Client</text>
@@ -293,7 +293,7 @@
 </g>
 <!-- Node28 -->
 <g id="node69" class="node"><title>Node28</title>
-<a xlink:href="_log_print_8h.html#ad42404ba6013340b27b37b0aea79b658" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#ad42404ba6013340b27b37b0aea79b658" target="_top" xlink:title="7 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="170,-456 170,-477 230,-477 230,-456 170,-456"/>
 <text text-anchor="middle" x="200" y="-463" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -317,7 +317,7 @@
 </g>
 <!-- Node30 -->
 <g id="node74" class="node"><title>Node30</title>
-<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="MatlabManager::MatlabManager">
+<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="Private constructor to implement the singleton. ">
 <polygon style="fill:white;stroke:black;" points="1023,-124 1023,-145 1215,-145 1215,-124 1023,-124"/>
 <text text-anchor="middle" x="1119" y="-131" style="font-family:Arial;font-size:10.00;">MatlabManager::MatlabManager</text>
 </a>
@@ -329,7 +329,7 @@
 </g>
 <!-- Node31 -->
 <g id="node76" class="node"><title>Node31</title>
-<a xlink:href="_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" target="_top" xlink:title="MatlabReceiveHandler">
+<a xlink:href="_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" target="_top" xlink:title="Wrapper callback function that forwards the received data to MatlabManager. ">
 <polygon style="fill:white;stroke:black;" points="376,-171 376,-192 515,-192 515,-171 376,-171"/>
 <text text-anchor="middle" x="445" y="-178" style="font-family:Arial;font-size:10.00;">MatlabReceiveHandler</text>
 </a>
@@ -341,7 +341,7 @@
 </g>
 <!-- Node33 -->
 <g id="node82" class="node"><title>Node33</title>
-<a xlink:href="class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" target="_top" xlink:title="MatlabManager::ProcessData">
+<a xlink:href="class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" target="_top" xlink:title="Processes the received message from OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="114,-114 114,-135 287,-135 287,-114 114,-114"/>
 <text text-anchor="middle" x="200" y="-121" style="font-family:Arial;font-size:10.00;">MatlabManager::ProcessData</text>
 </a>
@@ -353,7 +353,7 @@
 </g>
 <!-- Node34 -->
 <g id="node85" class="node"><title>Node34</title>
-<a xlink:href="class_matlab_manager.html#a1c967acc77ef8db3113e83a5325b5729" target="_top" xlink:title="MatlabManager::IsClientPresent">
+<a xlink:href="class_matlab_manager.html#a1c967acc77ef8db3113e83a5325b5729" target="_top" xlink:title="Checks for the presence of a client by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="107,-266 107,-287 294,-287 294,-266 107,-266"/>
 <text text-anchor="middle" x="200" y="-273" style="font-family:Arial;font-size:10.00;">MatlabManager::IsClientPresent</text>
 </a>
@@ -365,7 +365,7 @@
 </g>
 <!-- Node35 -->
 <g id="node87" class="node"><title>Node35</title>
-<a xlink:href="class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" target="_top" xlink:title="MatlabManager::SetWattage">
+<a xlink:href="class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" target="_top" xlink:title="Sets the consumption of a client by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="115,-380 115,-401 286,-401 286,-380 115,-380"/>
 <text text-anchor="middle" x="200" y="-387" style="font-family:Arial;font-size:10.00;">MatlabManager::SetWattage</text>
 </a>
@@ -377,7 +377,7 @@
 </g>
 <!-- Node36 -->
 <g id="node90" class="node"><title>Node36</title>
-<a xlink:href="class_matlab_manager.html#afc7fd3eb3469eb7be2af5b857e6f45e1" target="_top" xlink:title="MatlabManager::GetWattage">
+<a xlink:href="class_matlab_manager.html#afc7fd3eb3469eb7be2af5b857e6f45e1" target="_top" xlink:title="Gets the consumption of an object by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="114,-190 114,-211 286,-211 286,-190 114,-190"/>
 <text text-anchor="middle" x="200" y="-197" style="font-family:Arial;font-size:10.00;">MatlabManager::GetWattage</text>
 </a>
@@ -389,7 +389,7 @@
 </g>
 <!-- Node37 -->
 <g id="node92" class="node"><title>Node37</title>
-<a xlink:href="class_matlab_manager.html#ab741bd4f6545e11dd7dd28548c5229dd" target="_top" xlink:title="MatlabManager::GetVoltage">
+<a xlink:href="class_matlab_manager.html#ab741bd4f6545e11dd7dd28548c5229dd" target="_top" xlink:title="Gets the terminal voltage of an object by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="116,-152 116,-173 284,-173 284,-152 116,-152"/>
 <text text-anchor="middle" x="200" y="-159" style="font-family:Arial;font-size:10.00;">MatlabManager::GetVoltage</text>
 </a>
@@ -401,7 +401,7 @@
 </g>
 <!-- Node38 -->
 <g id="node94" class="node"><title>Node38</title>
-<a xlink:href="class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" target="_top" xlink:title="MatlabManager::AdvanceTimeStep">
+<a xlink:href="class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" target="_top" xlink:title="Sends a signal to OpenDSS controller to indicate the end of a time step. ">
 <polygon style="fill:white;stroke:black;" points="97,-342 97,-363 304,-363 304,-342 97,-342"/>
 <text text-anchor="middle" x="200" y="-349" style="font-family:Arial;font-size:10.00;">MatlabManager::AdvanceTimeStep</text>
 </a>
@@ -413,7 +413,7 @@
 </g>
 <!-- Node39 -->
 <g id="node97" class="node"><title>Node39</title>
-<a xlink:href="class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" target="_top" xlink:title="SystemManager::RegisterData">
+<a xlink:href="class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" target="_top" xlink:title="Used to register multiple consumption information. ">
 <polygon style="fill:white;stroke:black;" points="110,-1390 110,-1411 290,-1411 290,-1390 110,-1390"/>
 <text text-anchor="middle" x="200" y="-1397" style="font-family:Arial;font-size:10.00;">SystemManager::RegisterData</text>
 </a>
@@ -445,7 +445,7 @@
 </g>
 <!-- Node10 -->
 <g id="node23" class="node"><title>Node10</title>
-<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="ConnectionManager::\lConnectionManager">
+<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="837,-753 837,-787 970,-787 970,-753 837,-753"/>
 <text text-anchor="start" x="845" y="-773" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="903" y="-760" style="font-family:Arial;font-size:10.00;">ConnectionManager</text>
@@ -491,7 +491,7 @@
 </g>
 <!-- Node17 -->
 <g id="node41" class="node"><title>Node17</title>
-<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="ControlManager::ControlManager">
+<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="1020,-627 1020,-648 1218,-648 1218,-627 1020,-627"/>
 <text text-anchor="middle" x="1119" y="-634" style="font-family:Arial;font-size:10.00;">ControlManager::ControlManager</text>
 </a>
@@ -503,7 +503,7 @@
 </g>
 <!-- Node19 -->
 <g id="node45" class="node"><title>Node19</title>
-<a xlink:href="class_control_manager.html#a67d548535b36a78e315a0aa5f9f8e6c8" target="_top" xlink:title="ControlManager::SetClient">
+<a xlink:href="class_control_manager.html#a67d548535b36a78e315a0aa5f9f8e6c8" target="_top" xlink:title="Sets the connection information to the accepted External Controller. ">
 <polygon style="fill:white;stroke:black;" points="606,-608 606,-629 766,-629 766,-608 606,-608"/>
 <text text-anchor="middle" x="686" y="-615" style="font-family:Arial;font-size:10.00;">ControlManager::SetClient</text>
 </a>
@@ -560,7 +560,7 @@
 </g>
 <!-- Node32 -->
 <g id="node78" class="node"><title>Node32</title>
-<a xlink:href="class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" target="_top" xlink:title="MatlabManager::SetClient">
+<a xlink:href="class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" target="_top" xlink:title="Sets the OpenDSS controller connection information. ">
 <polygon style="fill:white;stroke:black;" points="608,-171 608,-192 765,-192 765,-171 608,-171"/>
 <text text-anchor="middle" x="686" y="-178" style="font-family:Arial;font-size:10.00;">MatlabManager::SetClient</text>
 </a>

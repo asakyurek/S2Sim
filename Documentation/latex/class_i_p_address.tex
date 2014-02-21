@@ -3,68 +3,75 @@
 }
 
 
+This class is an abstraction of the O\-S I\-P Address structure.  
+
+
+
+
 {\ttfamily \#include $<$I\-P\-Address.\-h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef unsigned int \hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address}
-\item 
+\begin{DoxyCompactList}\small\item\em I\-P Address value. \end{DoxyCompactList}\item 
 typedef unsigned short \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port}
-\item 
+\begin{DoxyCompactList}\small\item\em Port value. \end{DoxyCompactList}\item 
 typedef socklen\-\_\-t \hyperlink{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}{T\-Socket\-Size}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Size of the socket structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_i_p_address_a1333231aa0a638d7d730a5c89ae868c9}{I\-P\-Address} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the address family and clears the structure. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address_a9b64b50f64853fd06487c77e0baaaf4a}{I\-P\-Address} (const \hyperlink{class_i_p_address}{I\-P\-Address} \&copy)
-\item 
+\begin{DoxyCompactList}\small\item\em Binary copy of the structure. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address_a877ef12fd67c5064b7188a95e570a28b}{$\sim$\-I\-P\-Address} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em No use. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address}{I\-P\-Address} \& \hyperlink{class_i_p_address_adebc20befea4d99f6ffd058d999480b2}{operator=} (const \hyperlink{class_i_p_address}{I\-P\-Address} \&rhs)
-\item 
+\begin{DoxyCompactList}\small\item\em Assignment operator for binary copy. \end{DoxyCompactList}\item 
 bool \hyperlink{class_i_p_address_acaa3d485fedf874453d3fd0ab7e93a64}{operator==} (const \hyperlink{class_i_p_address}{I\-P\-Address} \&rhs) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Checks whether the addresses and ports are the same. \end{DoxyCompactList}\item 
 void \hyperlink{class_i_p_address_ade47d25d834bfb952fcf7fb2867db21e}{Set\-Address} (const \hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address} address)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the address field of the structure. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address} \hyperlink{class_i_p_address_a00ed9d09c9ec8f1d9568466683606e55}{Get\-Address} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the address field of the structure. \end{DoxyCompactList}\item 
 void \hyperlink{class_i_p_address_a5908d6242879f0e45685f8b0734dafa7}{Set\-Port} (const \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port} port)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the port field of the structure. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port} \hyperlink{class_i_p_address_a92d27804d27e1fef93afd0137fe4eb08}{Get\-Port} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the port field of the structure. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address_ac7a02f2b922b3b3c929ae3ad079ac8e9}{operator sockaddr $\ast$} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the cast version of the address structure to be used in O\-S utilities. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}{T\-Socket\-Size} \hyperlink{class_i_p_address_abdbc7cc25dc15d9e85ceb2e1d3125e22}{Get\-Socket\-Size} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the size of the socket structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef sockaddr\-\_\-in \hyperlink{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}{T\-Address\-Struct}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em B\-S\-D Socket structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address} \& \hyperlink{class_i_p_address_a0c90b37a86811781d4422c0dd2d5b6b5}{Get\-Address} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Returns a reference to the address value. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port} \& \hyperlink{class_i_p_address_a5c8a6aeae1105603538c2661c68fd6bb}{Get\-Port} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return a reference to the port value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}{T\-Address\-Struct} \hyperlink{class_i_p_address_aaafe20f26b2569a5ac9cd3b61b5c0c50}{m\-\_\-address}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em O\-S Address structure to be abstracted. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+This class is an abstraction of the O\-S I\-P Address structure. 
 
+Byte order conversion is handled automatically. 
 
-Definition at line 27 of file I\-P\-Address.\-h.
+Definition at line 30 of file I\-P\-Address.\-h.
 
 
 
@@ -74,28 +81,44 @@ Definition at line 27 of file I\-P\-Address.\-h.
 \subsubsection[{T\-Address}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf I\-P\-Address\-::\-T\-Address}}}\label{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}
 
 
-Definition at line 33 of file I\-P\-Address.\-h.
+I\-P Address value. 
+
+
+
+Definition at line 42 of file I\-P\-Address.\-h.
 
 \hypertarget{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}{\index{I\-P\-Address@{I\-P\-Address}!T\-Address\-Struct@{T\-Address\-Struct}}
 \index{T\-Address\-Struct@{T\-Address\-Struct}!IPAddress@{I\-P\-Address}}
 \subsubsection[{T\-Address\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}typedef sockaddr\-\_\-in {\bf I\-P\-Address\-::\-T\-Address\-Struct}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}
 
 
-Definition at line 30 of file I\-P\-Address.\-h.
+B\-S\-D Socket structure. 
+
+
+
+Definition at line 36 of file I\-P\-Address.\-h.
 
 \hypertarget{class_i_p_address_a51188195685c31d4258c0a078cc37154}{\index{I\-P\-Address@{I\-P\-Address}!T\-Port@{T\-Port}}
 \index{T\-Port@{T\-Port}!IPAddress@{I\-P\-Address}}
 \subsubsection[{T\-Port}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf I\-P\-Address\-::\-T\-Port}}}\label{class_i_p_address_a51188195685c31d4258c0a078cc37154}
 
 
-Definition at line 34 of file I\-P\-Address.\-h.
+Port value. 
+
+
+
+Definition at line 47 of file I\-P\-Address.\-h.
 
 \hypertarget{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}{\index{I\-P\-Address@{I\-P\-Address}!T\-Socket\-Size@{T\-Socket\-Size}}
 \index{T\-Socket\-Size@{T\-Socket\-Size}!IPAddress@{I\-P\-Address}}
 \subsubsection[{T\-Socket\-Size}]{\setlength{\rightskip}{0pt plus 5cm}typedef socklen\-\_\-t {\bf I\-P\-Address\-::\-T\-Socket\-Size}}}\label{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}
 
 
-Definition at line 35 of file I\-P\-Address.\-h.
+Size of the socket structure. 
+
+
+
+Definition at line 52 of file I\-P\-Address.\-h.
 
 
 
@@ -109,6 +132,10 @@ Definition at line 35 of file I\-P\-Address.\-h.
 )}}\label{class_i_p_address_a1333231aa0a638d7d730a5c89ae868c9}
 
 
+Sets the address family and clears the structure. 
+
+
+
 Definition at line 10 of file I\-P\-Address.\-cpp.
 
 \hypertarget{class_i_p_address_a9b64b50f64853fd06487c77e0baaaf4a}{\index{I\-P\-Address@{I\-P\-Address}!I\-P\-Address@{I\-P\-Address}}
@@ -120,6 +147,15 @@ Definition at line 10 of file I\-P\-Address.\-cpp.
 )}}\label{class_i_p_address_a9b64b50f64853fd06487c77e0baaaf4a}
 
 
+Binary copy of the structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Address to be copied. \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line 16 of file I\-P\-Address.\-cpp.
 
 \hypertarget{class_i_p_address_a877ef12fd67c5064b7188a95e570a28b}{\index{I\-P\-Address@{I\-P\-Address}!$\sim$\-I\-P\-Address@{$\sim$\-I\-P\-Address}}
@@ -129,6 +165,10 @@ Definition at line 16 of file I\-P\-Address.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_i_p_address_a877ef12fd67c5064b7188a95e570a28b}
+
+
+No use. 
+
 
 
 Definition at line 21 of file I\-P\-Address.\-cpp.
@@ -143,6 +183,13 @@ Definition at line 21 of file I\-P\-Address.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_a0c90b37a86811781d4422c0dd2d5b6b5}
+
+
+Returns a reference to the address value. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the address field. 
+\end{DoxyReturn}
 
 
 Definition at line 53 of file I\-P\-Address.\-cpp.
@@ -167,6 +214,13 @@ Here is the caller graph for this function\-:\nopagebreak
 ) const}}\label{class_i_p_address_a00ed9d09c9ec8f1d9568466683606e55}
 
 
+Reads the address field of the structure. 
+
+\begin{DoxyReturn}{Returns}
+4 byte I\-P Address. 
+\end{DoxyReturn}
+
+
 Definition at line 63 of file I\-P\-Address.\-cpp.
 
 \hypertarget{class_i_p_address_a5c8a6aeae1105603538c2661c68fd6bb}{\index{I\-P\-Address@{I\-P\-Address}!Get\-Port@{Get\-Port}}
@@ -176,6 +230,13 @@ Definition at line 63 of file I\-P\-Address.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_a5c8a6aeae1105603538c2661c68fd6bb}
+
+
+Return a reference to the port value. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the port field. 
+\end{DoxyReturn}
 
 
 Definition at line 85 of file I\-P\-Address.\-cpp.
@@ -200,6 +261,13 @@ Here is the caller graph for this function\-:\nopagebreak
 ) const}}\label{class_i_p_address_a92d27804d27e1fef93afd0137fe4eb08}
 
 
+Reads the port field of the structure. 
+
+\begin{DoxyReturn}{Returns}
+2 byte port value. 
+\end{DoxyReturn}
+
+
 Definition at line 79 of file I\-P\-Address.\-cpp.
 
 \hypertarget{class_i_p_address_abdbc7cc25dc15d9e85ceb2e1d3125e22}{\index{I\-P\-Address@{I\-P\-Address}!Get\-Socket\-Size@{Get\-Socket\-Size}}
@@ -211,7 +279,14 @@ Definition at line 79 of file I\-P\-Address.\-cpp.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_i_p_address_abdbc7cc25dc15d9e85ceb2e1d3125e22}
 
 
-Definition at line 73 of file I\-P\-Address.\-h.
+Returns the size of the socket structure. 
+
+\begin{DoxyReturn}{Returns}
+Size of the socket structure. 
+\end{DoxyReturn}
+
+
+Definition at line 160 of file I\-P\-Address.\-h.
 
 
 
@@ -233,6 +308,13 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_i_p_address_ac7a02f2b922b3b3c929ae3ad079ac8e9}
 
 
+Returns the cast version of the address structure to be used in O\-S utilities. 
+
+\begin{DoxyReturn}{Returns}
+Address of the internal structure. 
+\end{DoxyReturn}
+
+
 Definition at line 90 of file I\-P\-Address.\-cpp.
 
 \hypertarget{class_i_p_address_adebc20befea4d99f6ffd058d999480b2}{\index{I\-P\-Address@{I\-P\-Address}!operator=@{operator=}}
@@ -244,6 +326,18 @@ Definition at line 90 of file I\-P\-Address.\-cpp.
 )}}\label{class_i_p_address_adebc20befea4d99f6ffd058d999480b2}
 
 
+Assignment operator for binary copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Right hand side of (=).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a reference to itself. 
+\end{DoxyReturn}
+
+
 Definition at line 26 of file I\-P\-Address.\-cpp.
 
 \hypertarget{class_i_p_address_acaa3d485fedf874453d3fd0ab7e93a64}{\index{I\-P\-Address@{I\-P\-Address}!operator==@{operator==}}
@@ -253,6 +347,18 @@ Definition at line 26 of file I\-P\-Address.\-cpp.
 \item[{const {\bf I\-P\-Address} \&}]{rhs}
 \end{DoxyParamCaption}
 ) const}}\label{class_i_p_address_acaa3d485fedf874453d3fd0ab7e93a64}
+
+
+Checks whether the addresses and ports are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Right hand size of (==).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the equality between the classes. 
+\end{DoxyReturn}
 
 
 Definition at line 37 of file I\-P\-Address.\-cpp.
@@ -275,6 +381,15 @@ Here is the call graph for this function\-:\nopagebreak
 \item[{const {\bf T\-Address}}]{address}
 \end{DoxyParamCaption}
 )}}\label{class_i_p_address_ade47d25d834bfb952fcf7fb2867db21e}
+
+
+Sets the address field of the structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & 4 byte I\-P Address. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 47 of file I\-P\-Address.\-cpp.
@@ -310,6 +425,15 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_i_p_address_a5908d6242879f0e45685f8b0734dafa7}
 
 
+Sets the port field of the structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & 2 byte port value. \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line 73 of file I\-P\-Address.\-cpp.
 
 
@@ -342,7 +466,11 @@ Here is the caller graph for this function\-:\nopagebreak
 \subsubsection[{m\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Address\-Struct} I\-P\-Address\-::m\-\_\-address\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_aaafe20f26b2569a5ac9cd3b61b5c0c50}
 
 
-Definition at line 38 of file I\-P\-Address.\-h.
+O\-S Address structure to be abstracted. 
+
+
+
+Definition at line 58 of file I\-P\-Address.\-h.
 
 
 

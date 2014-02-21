@@ -1,5 +1,5 @@
 <map id="MatlabManager::ProcessData" name="MatlabManager::ProcessData">
-<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="303,5,383,32"/>
-<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="287,56,399,83"/>
-<area shape="rect" href="$_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" title="ErrorPrint" alt="" coords="300,107,385,133"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="8 parameter log message " alt="" coords="303,5,383,32"/>
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="6 parameter warning message " alt="" coords="287,56,399,83"/>
+<area shape="rect" href="$_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" title="6 parameter error message " alt="" coords="300,107,385,133"/>
 </map>

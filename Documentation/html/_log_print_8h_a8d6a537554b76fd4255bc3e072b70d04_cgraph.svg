@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="ErrorPrint">
+<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="6 parameter error message ">
 <polygon style="fill:white;stroke:black;" points="103,1 103,-20 168,-20 168,1 103,1"/>
 <text text-anchor="middle" x="135" y="-6" style="font-family:Arial;font-size:10.00;">ErrorPrint</text>
 </a>

@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="831,-75 831,-96 891,-96 891,-75 831,-75"/>
 <text text-anchor="middle" x="861" y="-82" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="GetMatlabManager">
+<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="This function returns the only instance of MatlabManager. ">
 <polygon style="fill:white;stroke:black;" points="635,-120 635,-141 755,-141 755,-120 635,-120"/>
 <text text-anchor="middle" x="695" y="-127" style="font-family:Arial;font-size:10.00;">GetMatlabManager</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" target="_top" xlink:title="MatlabManager::SetClient">
+<a xlink:href="class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" target="_top" xlink:title="Sets the OpenDSS controller connection information. ">
 <polygon style="fill:white;stroke:black;" points="197,-82 197,-103 354,-103 354,-82 197,-82"/>
 <text text-anchor="middle" x="275" y="-89" style="font-family:Arial;font-size:10.00;">MatlabManager::SetClient</text>
 </a>
@@ -54,7 +54,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" target="_top" xlink:title="ThreadedTCPConnectedClient\l::SetNotificationCallback">
+<a xlink:href="class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" target="_top" xlink:title="Sets the notification callback function. ">
 <polygon style="fill:white;stroke:black;" points="390,-76 390,-110 572,-110 572,-76 390,-76"/>
 <text text-anchor="start" x="398" y="-96" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient</text>
 <text text-anchor="middle" x="481" y="-83" style="font-family:Arial;font-size:10.00;">::SetNotificationCallback</text>
@@ -67,7 +67,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" target="_top" xlink:title="MatlabReceiveHandler">
+<a xlink:href="_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" target="_top" xlink:title="Wrapper callback function that forwards the received data to MatlabManager. ">
 <polygon style="fill:white;stroke:black;" points="412,-37 412,-58 551,-58 551,-37 412,-37"/>
 <text text-anchor="middle" x="481" y="-44" style="font-family:Arial;font-size:10.00;">MatlabReceiveHandler</text>
 </a>
@@ -89,7 +89,7 @@
 </g>
 <!-- Node7 -->
 <g id="node15" class="node"><title>Node7</title>
-<a xlink:href="class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" target="_top" xlink:title="MatlabManager::ProcessData">
+<a xlink:href="class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" target="_top" xlink:title="Processes the received message from OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="609,-37 609,-58 782,-58 782,-37 609,-37"/>
 <text text-anchor="middle" x="695" y="-44" style="font-family:Arial;font-size:10.00;">MatlabManager::ProcessData</text>
 </a>
@@ -106,7 +106,7 @@
 </g>
 <!-- Node8 -->
 <g id="node18" class="node"><title>Node8</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="819,-37 819,-58 904,-58 904,-37 819,-37"/>
 <text text-anchor="middle" x="861" y="-44" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>
@@ -118,7 +118,7 @@
 </g>
 <!-- Node9 -->
 <g id="node20" class="node"><title>Node9</title>
-<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="ErrorPrint">
+<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="6 parameter error message ">
 <polygon style="fill:white;stroke:black;" points="829,1 829,-20 894,-20 894,1 829,1"/>
 <text text-anchor="middle" x="861" y="-6" style="font-family:Arial;font-size:10.00;">ErrorPrint</text>
 </a>

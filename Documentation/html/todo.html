@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -105,15 +105,21 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <div class="textblock"><dl class="reflist">
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_client_manager.html#abac29dfed67c8b8354cf07267fd5515b">ClientManager::~ClientManager</a>  (void)</dt>
 <dd>This should be replaced by a reference counting memory manager.  </dd>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_control_manager.html#a927449c3a4ba8a5bdc23e3747d5bb077">ControlManager::GetClientName</a>  (const TClientId clientId)</dt>
+<dd>Let's make this not inline for debugging. </dd>
 <dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_control_manager.html#a2dc55da1b01fd175b3d885c68b8a7524">ControlManager::ProcessData</a>  (void *data, const size_t size)</dt>
-<dd>Divide the function into multiple functions, processing each message separately.</dd>
+<dd>Divide the function into multiple functions, processing each message separately. </dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_control_manager.html#a56df538a5380c9091123a5a8a5e0fe86">ControlManager::RegisterClient</a>  (const TClientId clientId, const TClientName &amp;clientName, <a class="el" href="class_client_manager.html" title="Manages the connection with a client. ">ClientManager</a> *clientManager)</dt>
+<dd>This shouldn't be inline. </dd>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_control_manager.html#a4e23ffb481554c26cf99c411dd16ae36">ControlManager::WaitUntilReady</a>  (void)</dt>
+<dd>This doesn't need to be inline. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -3,6 +3,11 @@
 }
 
 
+Manages the connection to the Open\-D\-S\-S-\/\-Matlab controller.  
+
+
+
+
 {\ttfamily \#include $<$Matlab\-Manager.\-h$>$}
 
 
@@ -18,29 +23,30 @@ Collaboration diagram for Matlab\-Manager\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 typedef std\-::string \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type for an object name. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage}
-\item 
-typedef unsigned int \hyperlink{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{T\-Voltage}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the consumption information type. \end{DoxyCompactList}\item 
+typedef \\*
+\hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_matlab_manager_a716643f4f29af3225aedf52d61fd0abe}{T\-Voltage}
+\begin{DoxyCompactList}\small\item\em Defines the voltage information type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{class_matlab_manager_ad5ff9f0aacdecada53a107e83b9e3712}{Set\-Client} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the Open\-D\-S\-S controller connection information. \end{DoxyCompactList}\item 
 bool \hyperlink{class_matlab_manager_a1c967acc77ef8db3113e83a5325b5729}{Is\-Client\-Present} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Checks for the presence of a client by communicating with Open\-D\-S\-S controller. \end{DoxyCompactList}\item 
 void \hyperlink{class_matlab_manager_a2967a226a9c6a9ed22998cad67afed3c}{Set\-Wattage} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name, const \hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage} wattage)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the consumption of a client by communicating with Open\-D\-S\-S controller. \end{DoxyCompactList}\item 
 \hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage} \hyperlink{class_matlab_manager_afc7fd3eb3469eb7be2af5b857e6f45e1}{Get\-Wattage} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name)
-\item 
-\hyperlink{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{T\-Voltage} \hyperlink{class_matlab_manager_ab741bd4f6545e11dd7dd28548c5229dd}{Get\-Voltage} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the consumption of an object by communicating with Open\-D\-S\-S controller. \end{DoxyCompactList}\item 
+\hyperlink{class_matlab_manager_a716643f4f29af3225aedf52d61fd0abe}{T\-Voltage} \hyperlink{class_matlab_manager_ab741bd4f6545e11dd7dd28548c5229dd}{Get\-Voltage} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name)
+\begin{DoxyCompactList}\small\item\em Gets the terminal voltage of an object by communicating with Open\-D\-S\-S controller. \end{DoxyCompactList}\item 
 void \hyperlink{class_matlab_manager_a55151e4e7f68cad7a8b18c93e9f0e0b1}{Advance\-Time\-Step} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends a signal to Open\-D\-S\-S controller to indicate the end of a time step. \end{DoxyCompactList}\item 
 void \hyperlink{class_matlab_manager_a7219113b7bc0744fe8faa94d599fe826}{Process\-Data} (void $\ast$buffer, size\-\_\-t size)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Processes the received message from Open\-D\-S\-S controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -55,50 +61,52 @@ enum \hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667}{Message\
 \hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a665fee7de60985960737ee5508d8c3ca}{Client\-Get\-Voltage\-Type} = ( T\-Message\-Type )0x00000007, 
 \hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aaead7562933ee6468343ba41654b2c18}{Client\-Voltage\-Result\-Type} = ( T\-Message\-Type )0x00000008
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values that can be used for T\-Message\-Type. \end{DoxyCompactList}\item 
 enum \hyperlink{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bd}{Client\-Check\-Result\-Values} \{ \hyperlink{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bdaee007d7e72b359f645f0f48f11270826}{Client\-Exists} = ( T\-Client\-Check\-Result )0x00000001, 
 \hyperlink{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bda55075a8cc68c810028c410f20517f381}{Client\-Does\-Not\-Exist} = ( T\-Client\-Check\-Result )0x00000002
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for T\-Client\-Check\-Result. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_matlab_manager_a36ad68398613c0d0ede6077af22d830c}{T\-Message\-Type}
-\item 
+\begin{DoxyCompactList}\small\item\em This type defines the message type used for message processing. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_matlab_manager_ac04dd0e7a4ab2efafe9604da5d44b318}{T\-Client\-Check\-Result}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the type that is received from the client existence check. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_matlab_manager_a319d996a8872d9cdba8cf335520af258}{Matlab\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor to implement the singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_threaded_t_c_p_server}{Threaded\-T\-C\-P\-Server} \hyperlink{class_matlab_manager_a2eea12132471953cf6cdb6effb7233f9}{m\-\_\-server}
-\item 
+\begin{DoxyCompactList}\small\item\em Implements the T\-C\-P server managing the connection to Open\-D\-S\-S controller. \end{DoxyCompactList}\item 
 \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$ \hyperlink{class_matlab_manager_a216ee97a37b033d6a02893206e1793e0}{m\-\_\-client}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointer to the connection management with the Open\-D\-S\-S controller. \end{DoxyCompactList}\item 
 Semaphore \hyperlink{class_matlab_manager_a97e67367dd6bf4b6976bcd2237277d46}{m\-\_\-client\-Presence\-Semaphore}
-\item 
+\begin{DoxyCompactList}\small\item\em Semaphore used to signal that the presence check result is received. \end{DoxyCompactList}\item 
 Semaphore \hyperlink{class_matlab_manager_a476eb9e68029520e9032f58672b7829e}{m\-\_\-client\-Wattage\-Semaphore}
-\item 
+\begin{DoxyCompactList}\small\item\em Semaphore used to signal that the wattage get result is received. \end{DoxyCompactList}\item 
 Semaphore \hyperlink{class_matlab_manager_a18a1ab2e178279313daf7a0790b91f04}{m\-\_\-client\-Voltage\-Semaphore}
-\item 
+\begin{DoxyCompactList}\small\item\em Semaphore used to signal that the voltage get result is received. \end{DoxyCompactList}\item 
 bool \hyperlink{class_matlab_manager_acf28415517fd10ff8105e5ac80280a63}{m\-\_\-client\-Present\-Information}
-\item 
+\begin{DoxyCompactList}\small\item\em Temporary storage for the client presence information. \end{DoxyCompactList}\item 
 \hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage} \hyperlink{class_matlab_manager_af4c255ddf41fda74a77367a17520d21f}{m\-\_\-client\-Wattage\-Information}
-\item 
-\hyperlink{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{T\-Voltage} \hyperlink{class_matlab_manager_abf48a413742f5d98d4a13c68b60d9e83}{m\-\_\-client\-Voltage\-Information}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Temporary storage for the client wattage information. \end{DoxyCompactList}\item 
+\hyperlink{class_matlab_manager_a716643f4f29af3225aedf52d61fd0abe}{T\-Voltage} \hyperlink{class_matlab_manager_abf48a413742f5d98d4a13c68b60d9e83}{m\-\_\-client\-Voltage\-Information}
+\begin{DoxyCompactList}\small\item\em Temporary storage for the client voltage information. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_matlab_manager}{Matlab\-Manager} \& \hyperlink{class_matlab_manager_adf11a697c41ba15207a66f8d2b567b75}{Get\-Matlab\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Friend method to implement the singleton for \hyperlink{class_matlab_manager}{Matlab\-Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Manages the connection to the Open\-D\-S\-S-\/\-Matlab controller. 
 
+This class manages the communication to the M\-A\-T\-L\-A\-B controller, that controls the Open\-D\-S\-S related information processing through the D\-L\-L interface. 
 
-Definition at line 31 of file Matlab\-Manager.\-h.
+Definition at line 48 of file Matlab\-Manager.\-h.
 
 
 
@@ -108,35 +116,55 @@ Definition at line 31 of file Matlab\-Manager.\-h.
 \subsubsection[{T\-Client\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Matlab\-Manager\-::\-T\-Client\-Check\-Result}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_ac04dd0e7a4ab2efafe9604da5d44b318}
 
 
-Definition at line 50 of file Matlab\-Manager.\-h.
+Defines the type that is received from the client existence check. 
+
+
+
+Definition at line 82 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Client\-Name@{T\-Client\-Name}}
 \index{T\-Client\-Name@{T\-Client\-Name}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{T\-Client\-Name}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::string {\bf Matlab\-Manager\-::\-T\-Client\-Name}}}\label{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}
 
 
-Definition at line 58 of file Matlab\-Manager.\-h.
+Defines the type for an object name. 
+
+
+
+Definition at line 97 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_a36ad68398613c0d0ede6077af22d830c}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Message\-Type@{T\-Message\-Type}}
 \index{T\-Message\-Type@{T\-Message\-Type}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{T\-Message\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Matlab\-Manager\-::\-T\-Message\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a36ad68398613c0d0ede6077af22d830c}
 
 
-Definition at line 37 of file Matlab\-Manager.\-h.
+This type defines the message type used for message processing. 
 
-\hypertarget{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Voltage@{T\-Voltage}}
+
+
+Definition at line 62 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a716643f4f29af3225aedf52d61fd0abe}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Voltage@{T\-Voltage}}
 \index{T\-Voltage@{T\-Voltage}!MatlabManager@{Matlab\-Manager}}
-\subsubsection[{T\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Matlab\-Manager\-::\-T\-Voltage}}}\label{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}
+\subsubsection[{T\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf Matlab\-Manager\-::\-T\-Voltage}}}\label{class_matlab_manager_a716643f4f29af3225aedf52d61fd0abe}
 
 
-Definition at line 60 of file Matlab\-Manager.\-h.
+Defines the voltage information type. 
+
+
+
+Definition at line 107 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Wattage@{T\-Wattage}}
 \index{T\-Wattage@{T\-Wattage}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{T\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf Matlab\-Manager\-::\-T\-Wattage}}}\label{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}
 
 
-Definition at line 59 of file Matlab\-Manager.\-h.
+Defines the consumption information type. 
+
+
+
+Definition at line 102 of file Matlab\-Manager.\-h.
 
 
 
@@ -144,46 +172,54 @@ Definition at line 59 of file Matlab\-Manager.\-h.
 \hypertarget{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bd}{\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Check\-Result\-Values@{Client\-Check\-Result\-Values}}
 \index{Client\-Check\-Result\-Values@{Client\-Check\-Result\-Values}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{Client\-Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Matlab\-Manager\-::\-Client\-Check\-Result\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bd}
+
+
+Defines the values for T\-Client\-Check\-Result. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Client\-Exists@{Client\-Exists}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Exists@{Client\-Exists}}\item[{\em 
 \hypertarget{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bdaee007d7e72b359f645f0f48f11270826}{Client\-Exists}\label{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bdaee007d7e72b359f645f0f48f11270826}
-}]\index{Client\-Does\-Not\-Exist@{Client\-Does\-Not\-Exist}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Does\-Not\-Exist@{Client\-Does\-Not\-Exist}}\item[{\em 
+}]Indicates that the object exists. \index{Client\-Does\-Not\-Exist@{Client\-Does\-Not\-Exist}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Does\-Not\-Exist@{Client\-Does\-Not\-Exist}}\item[{\em 
 \hypertarget{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bda55075a8cc68c810028c410f20517f381}{Client\-Does\-Not\-Exist}\label{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bda55075a8cc68c810028c410f20517f381}
-}]\end{description}
+}]Indicates that the object does not exist. \end{description}
 \end{Desc}
 
 
-Definition at line 51 of file Matlab\-Manager.\-h.
+Definition at line 87 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667}{\index{Matlab\-Manager@{Matlab\-Manager}!Message\-Type\-Values@{Message\-Type\-Values}}
 \index{Message\-Type\-Values@{Message\-Type\-Values}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{Message\-Type\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Matlab\-Manager\-::\-Message\-Type\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667}
+
+
+Defines the values that can be used for T\-Message\-Type. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Client\-Check\-Request\-Type@{Client\-Check\-Request\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Check\-Request\-Type@{Client\-Check\-Request\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667adcbf0e0a9cff329e02fee0497abfa0ad}{Client\-Check\-Request\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667adcbf0e0a9cff329e02fee0497abfa0ad}
-}]\index{Client\-Check\-Result\-Type@{Client\-Check\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Check\-Result\-Type@{Client\-Check\-Result\-Type}}\item[{\em 
+}]Sent to the Open\-D\-S\-S controller to check whether a client exists. \index{Client\-Check\-Result\-Type@{Client\-Check\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Check\-Result\-Type@{Client\-Check\-Result\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a6de37f5f7bc415439f9bfac3d388134e}{Client\-Check\-Result\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a6de37f5f7bc415439f9bfac3d388134e}
-}]\index{Client\-Set\-Wattage\-Type@{Client\-Set\-Wattage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Set\-Wattage\-Type@{Client\-Set\-Wattage\-Type}}\item[{\em 
+}]Response of the Open\-D\-S\-S controller to the client existence check. \index{Client\-Set\-Wattage\-Type@{Client\-Set\-Wattage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Set\-Wattage\-Type@{Client\-Set\-Wattage\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667acb00c176bba6ee9a2fba061b06b66d51}{Client\-Set\-Wattage\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667acb00c176bba6ee9a2fba061b06b66d51}
-}]\index{Client\-Get\-Wattage\-Type@{Client\-Get\-Wattage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Get\-Wattage\-Type@{Client\-Get\-Wattage\-Type}}\item[{\em 
+}]Sent to the Open\-D\-S\-S controller to set the consumption of an object. \index{Client\-Get\-Wattage\-Type@{Client\-Get\-Wattage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Get\-Wattage\-Type@{Client\-Get\-Wattage\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a48753b1473148776d411382a2a691da3}{Client\-Get\-Wattage\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a48753b1473148776d411382a2a691da3}
-}]\index{Client\-Wattage\-Result\-Type@{Client\-Wattage\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Wattage\-Result\-Type@{Client\-Wattage\-Result\-Type}}\item[{\em 
+}]Sent to the Open\-D\-S\-S controller to get the consumption of an object. \index{Client\-Wattage\-Result\-Type@{Client\-Wattage\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Wattage\-Result\-Type@{Client\-Wattage\-Result\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667abc777d9922513b94f1cf1541a83ada1a}{Client\-Wattage\-Result\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667abc777d9922513b94f1cf1541a83ada1a}
-}]\index{Advance\-Time\-Step\-Type@{Advance\-Time\-Step\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Advance\-Time\-Step\-Type@{Advance\-Time\-Step\-Type}}\item[{\em 
+}]Response of the Open\-D\-S\-S controller to the client consumption get request. \index{Advance\-Time\-Step\-Type@{Advance\-Time\-Step\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Advance\-Time\-Step\-Type@{Advance\-Time\-Step\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aa4d88f91b01fbcea0365103defc963f2}{Advance\-Time\-Step\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aa4d88f91b01fbcea0365103defc963f2}
-}]\index{Client\-Get\-Voltage\-Type@{Client\-Get\-Voltage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Get\-Voltage\-Type@{Client\-Get\-Voltage\-Type}}\item[{\em 
+}]Sent to the Open\-D\-S\-S controller to indicate the end of a time step. \index{Client\-Get\-Voltage\-Type@{Client\-Get\-Voltage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Get\-Voltage\-Type@{Client\-Get\-Voltage\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a665fee7de60985960737ee5508d8c3ca}{Client\-Get\-Voltage\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a665fee7de60985960737ee5508d8c3ca}
-}]\index{Client\-Voltage\-Result\-Type@{Client\-Voltage\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Voltage\-Result\-Type@{Client\-Voltage\-Result\-Type}}\item[{\em 
+}]Sent to the Open\-D\-S\-S controller to get the terminal voltage of an object. \index{Client\-Voltage\-Result\-Type@{Client\-Voltage\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Voltage\-Result\-Type@{Client\-Voltage\-Result\-Type}}\item[{\em 
 \hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aaead7562933ee6468343ba41654b2c18}{Client\-Voltage\-Result\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aaead7562933ee6468343ba41654b2c18}
-}]\end{description}
+}]Response of the Open\-D\-S\-S controller to the voltage get request. \end{description}
 \end{Desc}
 
 
-Definition at line 38 of file Matlab\-Manager.\-h.
+Definition at line 67 of file Matlab\-Manager.\-h.
 
 
 
@@ -195,6 +231,10 @@ Definition at line 38 of file Matlab\-Manager.\-h.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a319d996a8872d9cdba8cf335520af258}
+
+
+Private constructor to implement the singleton. 
+
 
 
 Definition at line 40 of file Matlab\-Manager.\-cpp.
@@ -222,7 +262,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{class_matlab_manager_a55151e4e7f68cad7a8b18c93e9f0e0b1}
 
 
-Definition at line 340 of file Matlab\-Manager.\-cpp.
+Sends a signal to Open\-D\-S\-S controller to indicate the end of a time step. 
+
+
+
+Definition at line 341 of file Matlab\-Manager.\-cpp.
 
 
 
@@ -255,7 +299,21 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_matlab_manager_ab741bd4f6545e11dd7dd28548c5229dd}
 
 
-Definition at line 290 of file Matlab\-Manager.\-cpp.
+Gets the terminal voltage of an object by communicating with Open\-D\-S\-S controller. 
+
+It may block the function call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Name} & Name of the object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Terminal voltage of the client. 
+\end{DoxyReturn}
+
+
+Definition at line 291 of file Matlab\-Manager.\-cpp.
 
 
 
@@ -277,7 +335,21 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{class_matlab_manager_afc7fd3eb3469eb7be2af5b857e6f45e1}
 
 
-Definition at line 240 of file Matlab\-Manager.\-cpp.
+Gets the consumption of an object by communicating with Open\-D\-S\-S controller. 
+
+It may block the function call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Name} & Name of the object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Consumption of the selected object. 
+\end{DoxyReturn}
+
+
+Definition at line 241 of file Matlab\-Manager.\-cpp.
 
 
 
@@ -299,7 +371,21 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{class_matlab_manager_a1c967acc77ef8db3113e83a5325b5729}
 
 
-Definition at line 144 of file Matlab\-Manager.\-cpp.
+Checks for the presence of a client by communicating with Open\-D\-S\-S controller. 
+
+It may block the function call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Name} & Name of the object to be checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Indicates the presence of the client. 
+\end{DoxyReturn}
+
+
+Definition at line 145 of file Matlab\-Manager.\-cpp.
 
 
 
@@ -320,6 +406,19 @@ Here is the call graph for this function\-:\nopagebreak
 \item[{size\-\_\-t}]{size}
 \end{DoxyParamCaption}
 )}}\label{class_matlab_manager_a7219113b7bc0744fe8faa94d599fe826}
+
+
+Processes the received message from Open\-D\-S\-S controller. 
+
+This function processes all received messages from the Open\-D\-S\-S controller. Note that, it is not guaranteed that the received buffer contains only a single message. This function uses a while loop to process all the messages to avoid data loss.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer containing the received data. \\
+\hline
+{\em size} & Size of the received data. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 56 of file Matlab\-Manager.\-cpp.
@@ -355,7 +454,16 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_matlab_manager_ad5ff9f0aacdecada53a107e83b9e3712}
 
 
-Definition at line 79 of file Matlab\-Manager.\-h.
+Sets the Open\-D\-S\-S controller connection information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & $<$\#client description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 163 of file Matlab\-Manager.\-h.
 
 
 
@@ -389,7 +497,18 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_matlab_manager_a2967a226a9c6a9ed22998cad67afed3c}
 
 
-Definition at line 194 of file Matlab\-Manager.\-cpp.
+Sets the consumption of a client by communicating with Open\-D\-S\-S controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Name} & Name of the object. \\
+\hline
+{\em wattage} & Consumption of the selected object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 195 of file Matlab\-Manager.\-cpp.
 
 
 
@@ -425,6 +544,15 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_matlab_manager_adf11a697c41ba15207a66f8d2b567b75}
 
 
+Friend method to implement the singleton for \hyperlink{class_matlab_manager}{Matlab\-Manager}. 
+
+\begin{DoxyReturn}{Returns}
+Returns the only instance of \hyperlink{class_matlab_manager}{Matlab\-Manager}.
+
+The only instance of \hyperlink{class_matlab_manager}{Matlab\-Manager}. 
+\end{DoxyReturn}
+
+
 Definition at line 13 of file Matlab\-Manager.\-cpp.
 
 
@@ -435,56 +563,88 @@ Definition at line 13 of file Matlab\-Manager.\-cpp.
 \subsubsection[{m\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Connected\-Client}$\ast$ Matlab\-Manager\-::m\-\_\-client\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a216ee97a37b033d6a02893206e1793e0}
 
 
-Definition at line 64 of file Matlab\-Manager.\-h.
+Pointer to the connection management with the Open\-D\-S\-S controller. 
+
+
+
+Definition at line 118 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_a97e67367dd6bf4b6976bcd2237277d46}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Presence\-Semaphore@{m\-\_\-client\-Presence\-Semaphore}}
 \index{m\-\_\-client\-Presence\-Semaphore@{m\-\_\-client\-Presence\-Semaphore}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{m\-\_\-client\-Presence\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Matlab\-Manager\-::m\-\_\-client\-Presence\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a97e67367dd6bf4b6976bcd2237277d46}
 
 
-Definition at line 66 of file Matlab\-Manager.\-h.
+Semaphore used to signal that the presence check result is received. 
+
+
+
+Definition at line 123 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_acf28415517fd10ff8105e5ac80280a63}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Present\-Information@{m\-\_\-client\-Present\-Information}}
 \index{m\-\_\-client\-Present\-Information@{m\-\_\-client\-Present\-Information}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{m\-\_\-client\-Present\-Information}]{\setlength{\rightskip}{0pt plus 5cm}bool Matlab\-Manager\-::m\-\_\-client\-Present\-Information\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_acf28415517fd10ff8105e5ac80280a63}
 
 
-Definition at line 70 of file Matlab\-Manager.\-h.
+Temporary storage for the client presence information. 
+
+
+
+Definition at line 138 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_abf48a413742f5d98d4a13c68b60d9e83}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Voltage\-Information@{m\-\_\-client\-Voltage\-Information}}
 \index{m\-\_\-client\-Voltage\-Information@{m\-\_\-client\-Voltage\-Information}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{m\-\_\-client\-Voltage\-Information}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Voltage} Matlab\-Manager\-::m\-\_\-client\-Voltage\-Information\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_abf48a413742f5d98d4a13c68b60d9e83}
 
 
-Definition at line 72 of file Matlab\-Manager.\-h.
+Temporary storage for the client voltage information. 
+
+
+
+Definition at line 148 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_a18a1ab2e178279313daf7a0790b91f04}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Voltage\-Semaphore@{m\-\_\-client\-Voltage\-Semaphore}}
 \index{m\-\_\-client\-Voltage\-Semaphore@{m\-\_\-client\-Voltage\-Semaphore}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{m\-\_\-client\-Voltage\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Matlab\-Manager\-::m\-\_\-client\-Voltage\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a18a1ab2e178279313daf7a0790b91f04}
 
 
-Definition at line 68 of file Matlab\-Manager.\-h.
+Semaphore used to signal that the voltage get result is received. 
+
+
+
+Definition at line 133 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_af4c255ddf41fda74a77367a17520d21f}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Wattage\-Information@{m\-\_\-client\-Wattage\-Information}}
 \index{m\-\_\-client\-Wattage\-Information@{m\-\_\-client\-Wattage\-Information}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{m\-\_\-client\-Wattage\-Information}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Wattage} Matlab\-Manager\-::m\-\_\-client\-Wattage\-Information\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_af4c255ddf41fda74a77367a17520d21f}
 
 
-Definition at line 71 of file Matlab\-Manager.\-h.
+Temporary storage for the client wattage information. 
+
+
+
+Definition at line 143 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_a476eb9e68029520e9032f58672b7829e}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Wattage\-Semaphore@{m\-\_\-client\-Wattage\-Semaphore}}
 \index{m\-\_\-client\-Wattage\-Semaphore@{m\-\_\-client\-Wattage\-Semaphore}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{m\-\_\-client\-Wattage\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Matlab\-Manager\-::m\-\_\-client\-Wattage\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a476eb9e68029520e9032f58672b7829e}
 
 
-Definition at line 67 of file Matlab\-Manager.\-h.
+Semaphore used to signal that the wattage get result is received. 
+
+
+
+Definition at line 128 of file Matlab\-Manager.\-h.
 
 \hypertarget{class_matlab_manager_a2eea12132471953cf6cdb6effb7233f9}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-server@{m\-\_\-server}}
 \index{m\-\_\-server@{m\-\_\-server}!MatlabManager@{Matlab\-Manager}}
 \subsubsection[{m\-\_\-server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Server} Matlab\-Manager\-::m\-\_\-server\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a2eea12132471953cf6cdb6effb7233f9}
 
 
-Definition at line 63 of file Matlab\-Manager.\-h.
+Implements the T\-C\-P server managing the connection to Open\-D\-S\-S controller. 
+
+
+
+Definition at line 113 of file Matlab\-Manager.\-h.
 
 
 

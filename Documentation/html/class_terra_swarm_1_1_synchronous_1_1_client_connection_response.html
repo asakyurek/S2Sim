@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -118,6 +118,9 @@ $(document).ready(function(){initNavTree('class_terra_swarm_1_1_synchronous_1_1_
 </div><!--header-->
 <div class="contents">
 
+<p>This class implements the Response message of the controller to the clients connection request.  
+ <a href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -125,46 +128,62 @@ Public Types</h2></td></tr>
 <tr class="memitem:a915e4d4af1f35e3de466d27d42c57d78"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a915e4d4af1f35e3de466d27d42c57d78">CheckResultValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a915e4d4af1f35e3de466d27d42c57d78a3a4dbed8f44a1f0abc1efe7a4ad3d5b0">Success</a> = ( TCheckResult )true, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a915e4d4af1f35e3de466d27d42c57d78a085c06501e85345b78e415907a88203b">Fail</a> = ( TCheckResult )false
  }</td></tr>
+<tr class="memdesc:a915e4d4af1f35e3de466d27d42c57d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the values for TCheckResult.  <a href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a915e4d4af1f35e3de466d27d42c57d78">More...</a><br/></td></tr>
 <tr class="separator:a915e4d4af1f35e3de466d27d42c57d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8ffc2f078549c994416633d0aa8fb8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#aab8ffc2f078549c994416633d0aa8fb8">RequestResultValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#aab8ffc2f078549c994416633d0aa8fb8a25dc7f6bdc925becc175d30660c1f6ec">RequestAccepted</a> = ( TRequestResult )0x00000000, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#aab8ffc2f078549c994416633d0aa8fb8a25a21c0a3a3a6d792215b28d1b566fb2">RequestObjectIdNotFound</a> = ( TRequestResult )0x00000001
  }</td></tr>
+<tr class="memdesc:aab8ffc2f078549c994416633d0aa8fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines values for the TRequestResult type.  <a href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#aab8ffc2f078549c994416633d0aa8fb8">More...</a><br/></td></tr>
 <tr class="separator:aab8ffc2f078549c994416633d0aa8fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aacecf0e8e3829b1de3197919a1e60a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4aacecf0e8e3829b1de3197919a1e60a">SystemModeValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4aacecf0e8e3829b1de3197919a1e60aaa5129160fa9b512de957c03f99faa3f9">SimulationMode</a> = ( TSystemMode )0x0001, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4aacecf0e8e3829b1de3197919a1e60aaa62f96af700b98db3f35ea6885a541a3">RealTimeMode</a> = ( TSystemMode )0x0002
  }</td></tr>
+<tr class="memdesc:a4aacecf0e8e3829b1de3197919a1e60a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the values for the TSystemMode type.  <a href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4aacecf0e8e3829b1de3197919a1e60a">More...</a><br/></td></tr>
 <tr class="separator:a4aacecf0e8e3829b1de3197919a1e60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33254e9e1216ca2dde89b8a66f7ad18e"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a33254e9e1216ca2dde89b8a66f7ad18e">TCheckResult</a></td></tr>
+<tr class="memdesc:a33254e9e1216ca2dde89b8a66f7ad18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the message check result type.  <a href="#a33254e9e1216ca2dde89b8a66f7ad18e">More...</a><br/></td></tr>
 <tr class="separator:a33254e9e1216ca2dde89b8a66f7ad18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b55c1f852e288564e5aa00e882f80d5"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4b55c1f852e288564e5aa00e882f80d5">TRequestResult</a></td></tr>
+<tr class="memdesc:a4b55c1f852e288564e5aa00e882f80d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the result of the request type.  <a href="#a4b55c1f852e288564e5aa00e882f80d5">More...</a><br/></td></tr>
 <tr class="separator:a4b55c1f852e288564e5aa00e882f80d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b389f7e89631ce7c758c3a26c46c303"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a7b389f7e89631ce7c758c3a26c46c303">TSystemTime</a></td></tr>
+<tr class="memdesc:a7b389f7e89631ce7c758c3a26c46c303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the time of the system in epoch format.  <a href="#a7b389f7e89631ce7c758c3a26c46c303">More...</a><br/></td></tr>
 <tr class="separator:a7b389f7e89631ce7c758c3a26c46c303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc391c9557f0acfdb0763043058cdf83"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#adc391c9557f0acfdb0763043058cdf83">TNumberOfClients</a></td></tr>
+<tr class="memdesc:adc391c9557f0acfdb0763043058cdf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the number of clients type.  <a href="#adc391c9557f0acfdb0763043058cdf83">More...</a><br/></td></tr>
 <tr class="separator:adc391c9557f0acfdb0763043058cdf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828bc4f350b4f661c541d988c79f05e9"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a828bc4f350b4f661c541d988c79f05e9">TSystemMode</a></td></tr>
+<tr class="memdesc:a828bc4f350b4f661c541d988c79f05e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the current system working mode.  <a href="#a828bc4f350b4f661c541d988c79f05e9">More...</a><br/></td></tr>
 <tr class="separator:a828bc4f350b4f661c541d988c79f05e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7724857b04c7711aa3d197313b629b74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a7724857b04c7711aa3d197313b629b74">~ClientConnectionResponse</a> (void)</td></tr>
+<tr class="memdesc:a7724857b04c7711aa3d197313b629b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates the memory.  <a href="#a7724857b04c7711aa3d197313b629b74">More...</a><br/></td></tr>
 <tr class="separator:a7724857b04c7711aa3d197313b629b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad15e893416857bab01902838eee36af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a33254e9e1216ca2dde89b8a66f7ad18e">TCheckResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ad15e893416857bab01902838eee36af4">CheckMessage</a> (void) const </td></tr>
+<tr class="memdesc:ad15e893416857bab01902838eee36af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the current memory holds a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html" title="This class implements the Response message of the controller to the clients connection request...">ClientConnectionResponse</a> message.  <a href="#ad15e893416857bab01902838eee36af4">More...</a><br/></td></tr>
 <tr class="separator:ad15e893416857bab01902838eee36af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68294b87ea430db689b58bb56d73c969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4b55c1f852e288564e5aa00e882f80d5">TRequestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a68294b87ea430db689b58bb56d73c969">GetRequestResult</a> (void) const </td></tr>
+<tr class="memdesc:a68294b87ea430db689b58bb56d73c969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the RequestResult field.  <a href="#a68294b87ea430db689b58bb56d73c969">More...</a><br/></td></tr>
 <tr class="separator:a68294b87ea430db689b58bb56d73c969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f309c374b8e5197a65d0248cbdcf5d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a7b389f7e89631ce7c758c3a26c46c303">TSystemTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a1f309c374b8e5197a65d0248cbdcf5d2">GetSystemTime</a> (void) const </td></tr>
+<tr class="memdesc:a1f309c374b8e5197a65d0248cbdcf5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the SystemTime field.  <a href="#a1f309c374b8e5197a65d0248cbdcf5d2">More...</a><br/></td></tr>
 <tr class="separator:a1f309c374b8e5197a65d0248cbdcf5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae66d7183246c6eac58aa961bff7f293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#adc391c9557f0acfdb0763043058cdf83">TNumberOfClients</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#aae66d7183246c6eac58aa961bff7f293">GetNumberOfClients</a> (void) const </td></tr>
+<tr class="memdesc:aae66d7183246c6eac58aa961bff7f293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the NumberOfClients field.  <a href="#aae66d7183246c6eac58aa961bff7f293">More...</a><br/></td></tr>
 <tr class="separator:aae66d7183246c6eac58aa961bff7f293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a462cfecc85eac135682b2fe3ea971526"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a828bc4f350b4f661c541d988c79f05e9">TSystemMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a462cfecc85eac135682b2fe3ea971526">GetSystemMode</a> (void) const </td></tr>
+<tr class="memdesc:a462cfecc85eac135682b2fe3ea971526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the SystemMode field.  <a href="#a462cfecc85eac135682b2fe3ea971526">More...</a><br/></td></tr>
 <tr class="separator:a462cfecc85eac135682b2fe3ea971526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae38339e5fc2703a0ddb58da353722ea8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html">ClientConnectionResponse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ae38339e5fc2703a0ddb58da353722ea8">GetNewClientConnectionResponse</a> (const <a class="el" href="class_terra_swarm_1_1_message_header.html#a516b36855e2aad7cfbf8770f1b42784f">MessageHeader::TSenderId</a> senderId, const <a class="el" href="class_terra_swarm_1_1_message_header.html#aa3260702b182b6f88ddbdd3416e98df0">MessageHeader::TReceiverId</a> receiverId, const <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4b55c1f852e288564e5aa00e882f80d5">TRequestResult</a> requestResult, const <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a7b389f7e89631ce7c758c3a26c46c303">TSystemTime</a> systemTime, const <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#adc391c9557f0acfdb0763043058cdf83">TNumberOfClients</a> numberOfClients, const <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a828bc4f350b4f661c541d988c79f05e9">TSystemMode</a> systemMode)</td></tr>
+<tr class="memdesc:ae38339e5fc2703a0ddb58da353722ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html" title="This class implements the Response message of the controller to the clients connection request...">ClientConnectionResponse</a> message and allocates memory for it.  <a href="#ae38339e5fc2703a0ddb58da353722ea8">More...</a><br/></td></tr>
 <tr class="separator:ae38339e5fc2703a0ddb58da353722ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af665b5c5ef472eddc40f46ad185b2d90"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_terra_swarm.html#a092e6ec9739175076ae3106783f5c1b6">TDataSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#af665b5c5ef472eddc40f46ad185b2d90">GetSize</a> (void)</td></tr>
+<tr class="memdesc:af665b5c5ef472eddc40f46ad185b2d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html" title="This class implements the Response message of the controller to the clients connection request...">ClientConnectionResponse</a> message.  <a href="#af665b5c5ef472eddc40f46ad185b2d90">More...</a><br/></td></tr>
 <tr class="separator:af665b5c5ef472eddc40f46ad185b2d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
@@ -172,6 +191,7 @@ Private Types</h2></td></tr>
 <tr class="memitem:ae5b6f6ce8e9057779e6115b9d10f9f27"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ae5b6f6ce8e9057779e6115b9d10f9f27">HeaderValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ae5b6f6ce8e9057779e6115b9d10f9f27a3d9f125f956d841cb53726088daf9f4d">MessageType</a> = 0x0001, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ae5b6f6ce8e9057779e6115b9d10f9f27a6a76dfe62910631da6f001cf65d1ab73">MessageId</a> = 0x0005
  }</td></tr>
+<tr class="memdesc:ae5b6f6ce8e9057779e6115b9d10f9f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message Header values.  <a href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ae5b6f6ce8e9057779e6115b9d10f9f27">More...</a><br/></td></tr>
 <tr class="separator:ae5b6f6ce8e9057779e6115b9d10f9f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3933c56d09c6ccf4f1b533024d9d4b08"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08">FieldSizeValues</a> { <br/>
 &#160;&#160;<a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08aec725d8333b75b6c1cf36a1703d8712f">RequestResultSize</a> = sizeof( TRequestResult ), 
@@ -182,38 +202,46 @@ Private Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08a99f73dfa527e590c0f7cb12fe47e495a">TotalSize</a> = ( RequestResultSize + SystemTimeSize + NumberOfClientsSize + SystemModeSize )
 <br/>
  }</td></tr>
+<tr class="memdesc:a3933c56d09c6ccf4f1b533024d9d4b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the message fields.  <a href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08">More...</a><br/></td></tr>
 <tr class="separator:a3933c56d09c6ccf4f1b533024d9d4b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbf4ea0e840420400a931390a8acfbd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbd">FieldIndexValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbda71c63341170df807c76e11e47c8cb62e">RequestResultIndex</a> = MessageHeader::MessageHeaderSize, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbda2a8e1ab11473138d8b95056ea19323ac">SystemTimeIndex</a> = RequestResultIndex + RequestResultSize, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbdacfa0a3412da8705ea266357cfda4b3e5">NumberOfClientsIndex</a> = SystemTimeIndex + SystemTimeSize, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbda0554d9a00a3e896e87549ad13eafa1ed">SystemModeIndex</a> = NumberOfClientsIndex + NumberOfClientsSize
  }</td></tr>
+<tr class="memdesc:a4cbf4ea0e840420400a931390a8acfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the message fields.  <a href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbd">More...</a><br/></td></tr>
 <tr class="separator:a4cbf4ea0e840420400a931390a8acfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c0b39e843f05dcadd4e2b39c65bcee"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbda71c63341170df807c76e11e47c8cb62e">RequestResultIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08aec725d8333b75b6c1cf36a1703d8712f">RequestResultSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#af1c0b39e843f05dcadd4e2b39c65bcee">TRequestResultAccessor</a></td></tr>
+<tr class="memdesc:af1c0b39e843f05dcadd4e2b39c65bcee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor helper for the RequestResult field.  <a href="#af1c0b39e843f05dcadd4e2b39c65bcee">More...</a><br/></td></tr>
 <tr class="separator:af1c0b39e843f05dcadd4e2b39c65bcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b8d0ca4f4c2bbb9cfc704e6b250e57"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbda2a8e1ab11473138d8b95056ea19323ac">SystemTimeIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08ace1096317246657c7174cc95e7ae42fd">SystemTimeSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ad4b8d0ca4f4c2bbb9cfc704e6b250e57">TSystemTimeAccessor</a></td></tr>
+<tr class="memdesc:ad4b8d0ca4f4c2bbb9cfc704e6b250e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor helper for the SystemTime field.  <a href="#ad4b8d0ca4f4c2bbb9cfc704e6b250e57">More...</a><br/></td></tr>
 <tr class="separator:ad4b8d0ca4f4c2bbb9cfc704e6b250e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac029cc8910297215aa037106589ec9c2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbdacfa0a3412da8705ea266357cfda4b3e5">NumberOfClientsIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08ad751beae96e2b6b6d55e322c762772c1">NumberOfClientsSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ac029cc8910297215aa037106589ec9c2">TNumberOfClientsAccessor</a></td></tr>
+<tr class="memdesc:ac029cc8910297215aa037106589ec9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor helper for the NumberOfClients field.  <a href="#ac029cc8910297215aa037106589ec9c2">More...</a><br/></td></tr>
 <tr class="separator:ac029cc8910297215aa037106589ec9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a241ee2024d2b124e89185884213650c2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a4cbf4ea0e840420400a931390a8acfbda0554d9a00a3e896e87549ad13eafa1ed">SystemModeIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a3933c56d09c6ccf4f1b533024d9d4b08a967e285d0517d9d1920b562699ed8080">SystemModeSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a241ee2024d2b124e89185884213650c2">TSystemModeAccessor</a></td></tr>
+<tr class="memdesc:a241ee2024d2b124e89185884213650c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor helper for the SystemMode field.  <a href="#a241ee2024d2b124e89185884213650c2">More...</a><br/></td></tr>
 <tr class="separator:a241ee2024d2b124e89185884213650c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a478ac409364847fc12eada42064b79e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#a478ac409364847fc12eada42064b79e3">ClientConnectionResponse</a> (void)</td></tr>
+<tr class="memdesc:a478ac409364847fc12eada42064b79e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor to force the usage of the static construction method.  <a href="#a478ac409364847fc12eada42064b79e3">More...</a><br/></td></tr>
 <tr class="separator:a478ac409364847fc12eada42064b79e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00113">113</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<div class="textblock"><p>This class implements the Response message of the controller to the clients connection request. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00220">220</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a33254e9e1216ca2dde89b8a66f7ad18e"></a>
 <div class="memitem">
@@ -225,7 +253,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00123">123</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Defines the message check result type. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00236">236</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +269,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00138">138</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Defines the number of clients type. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00269">269</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +293,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00166">166</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Accessor helper for the NumberOfClients field. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00322">322</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +309,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00130">130</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Defines the result of the request type. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00250">250</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +333,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00164">164</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Accessor helper for the RequestResult field. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00312">312</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +349,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00139">139</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Defines the current system working mode. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00274">274</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +373,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00167">167</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Accessor helper for the SystemMode field. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00327">327</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +389,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00137">137</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Defines the time of the system in epoch format. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00264">264</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +413,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00165">165</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Accessor helper for the SystemTime field. </p>
+
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00317">317</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -383,14 +429,18 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines the values for TCheckResult. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a915e4d4af1f35e3de466d27d42c57d78a3a4dbed8f44a1f0abc1efe7a4ad3d5b0"></a>Success</em>&#160;</td><td class="fielddoc">
+<p>Message is of correct type and id. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a915e4d4af1f35e3de466d27d42c57d78a085c06501e85345b78e415907a88203b"></a>Fail</em>&#160;</td><td class="fielddoc">
+<p>Message has incorrect type or id. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00124">124</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00241">241</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -411,6 +461,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Index of the message fields. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a4cbf4ea0e840420400a931390a8acfbda71c63341170df807c76e11e47c8cb62e"></a>RequestResultIndex</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -422,7 +474,7 @@ Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00156">156</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00301">301</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -443,6 +495,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Size of the message fields. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a3933c56d09c6ccf4f1b533024d9d4b08aec725d8333b75b6c1cf36a1703d8712f"></a>RequestResultSize</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -456,7 +510,7 @@ Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00147">147</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00289">289</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -477,6 +531,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Message Header values. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae5b6f6ce8e9057779e6115b9d10f9f27a3d9f125f956d841cb53726088daf9f4d"></a>MessageType</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -484,7 +540,7 @@ Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00116">116</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00226">226</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -497,14 +553,18 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines values for the TRequestResult type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aab8ffc2f078549c994416633d0aa8fb8a25dc7f6bdc925becc175d30660c1f6ec"></a>RequestAccepted</em>&#160;</td><td class="fielddoc">
+<p>The request is accepted. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="aab8ffc2f078549c994416633d0aa8fb8a25a21c0a3a3a6d792215b28d1b566fb2"></a>RequestObjectIdNotFound</em>&#160;</td><td class="fielddoc">
+<p>The requested object name is not found and rejected. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00131">131</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00255">255</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -517,14 +577,19 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines the values for the TSystemMode type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a4aacecf0e8e3829b1de3197919a1e60aaa5129160fa9b512de957c03f99faa3f9"></a>SimulationMode</em>&#160;</td><td class="fielddoc">
+<p>Simulation working mode where the system is started artificially. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a4aacecf0e8e3829b1de3197919a1e60aaa62f96af700b98db3f35ea6885a541a3"></a>RealTimeMode</em>&#160;</td><td class="fielddoc">
+<p>Real time working mode where the system is working in real time. </p>
+<p>Not implemented yet. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00140">140</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
+<p>Definition at line <a class="el" href="_client_connection_response_8h_source.html#l00279">279</a> of file <a class="el" href="_client_connection_response_8h_source.html">ClientConnectionResponse.h</a>.</p>
 
 </div>
 </div>
@@ -551,6 +616,8 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Private constructor to force the usage of the static construction method. </p>
+
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00097">97</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
 </div>
@@ -568,6 +635,8 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deallocates the memory. </p>
 
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00101">101</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
@@ -587,6 +656,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Checks whether the current memory holds a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html" title="This class implements the Response message of the controller to the clients connection request...">ClientConnectionResponse</a> message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Result of the check. </dd></dl>
 
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00126">126</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
@@ -648,6 +720,21 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a new <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html" title="This class implements the Response message of the controller to the clients connection request...">ClientConnectionResponse</a> message and allocates memory for it. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Deallocation is the responsibility of the user.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderId</td><td>Id of the sender. </td></tr>
+    <tr><td class="paramname">receiverId</td><td>Id of the receiver. </td></tr>
+    <tr><td class="paramname">requestResult</td><td>Result of the connection request. </td></tr>
+    <tr><td class="paramname">systemTime</td><td>Current system time. </td></tr>
+    <tr><td class="paramname">numberOfClients</td><td>Current number of clients. </td></tr>
+    <tr><td class="paramname">systemMode</td><td>Current system working mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Newly allocated message pointer. </dd></dl>
+
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00107">107</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
 </div>
@@ -666,6 +753,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Reads the NumberOfClients field. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of clients in the system. </dd></dl>
+
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00153">153</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
 </div>
@@ -683,6 +773,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads the RequestResult field. </p>
+<dl class="section return"><dt>Returns</dt><dd>Result of the connection request. </dd></dl>
 
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00137">137</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
@@ -710,6 +803,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the size of a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html" title="This class implements the Response message of the controller to the clients connection request...">ClientConnectionResponse</a> message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Size of the <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html" title="This class implements the Response message of the controller to the clients connection request...">ClientConnectionResponse</a> message. </dd></dl>
+
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00169">169</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
 </div>
@@ -727,6 +823,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads the SystemMode field. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current system working mode. </dd></dl>
 
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00161">161</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
@@ -746,6 +845,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Reads the SystemTime field. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current system time. </dd></dl>
+
 <p>Definition at line <a class="el" href="_client_connection_response_8cpp_source.html#l00145">145</a> of file <a class="el" href="_client_connection_response_8cpp_source.html">ClientConnectionResponse.cpp</a>.</p>
 
 </div>
@@ -760,7 +862,7 @@ Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_terra_swarm.html">TerraSwarm</a></li><li class="navelem"><a class="el" href="namespace_terra_swarm_1_1_synchronous.html">Synchronous</a></li><li class="navelem"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html">ClientConnectionResponse</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:35 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

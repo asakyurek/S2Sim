@@ -1,8 +1,8 @@
 <map id="ClientManager" name="ClientManager">
-<area shape="rect" href="$class_threaded_t_c_p_connected_client.html" title="ThreadedTCPConnectedClient" alt="" coords="268,279,511,305"/>
-<area shape="rect" href="$class_t_c_p_connected_client.html" title="TCPConnectedClient" alt="" coords="183,199,353,225"/>
+<area shape="rect" href="$class_threaded_t_c_p_connected_client.html" title="Manages the connection to an accepted client on the server side and receives data in a separate threa..." alt="" coords="268,279,511,305"/>
+<area shape="rect" href="$class_t_c_p_connected_client.html" title="Manages the connection to a connected client on the server side. " alt="" coords="183,199,353,225"/>
 <area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SOCK_STREAM \&gt;" alt="" coords="5,103,248,129"/>
-<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SocketType \&gt;" alt="" coords="16,7,237,33"/>
-<area shape="rect" href="$class_i_p_address.html" title="IPAddress" alt="" coords="272,103,360,129"/>
-<area shape="rect" href="$class_thread_base.html" title="ThreadBase" alt="" coords="377,199,484,225"/>
+<area shape="rect" href="$class_socket_base.html" title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi..." alt="" coords="16,7,237,33"/>
+<area shape="rect" href="$class_i_p_address.html" title="This class is an abstraction of the OS IP Address structure. " alt="" coords="272,103,360,129"/>
+<area shape="rect" href="$class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. " alt="" coords="377,199,484,225"/>
 </map>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -119,65 +119,88 @@ $(document).ready(function(){initNavTree('class_i_p_address.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This class is an abstraction of the OS IP Address structure.  
+ <a href="class_i_p_address.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a36831f63346275f44e8747d77a2a5d51"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a></td></tr>
+<tr class="memdesc:a36831f63346275f44e8747d77a2a5d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP Address value.  <a href="#a36831f63346275f44e8747d77a2a5d51">More...</a><br/></td></tr>
 <tr class="separator:a36831f63346275f44e8747d77a2a5d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51188195685c31d4258c0a078cc37154"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a></td></tr>
+<tr class="memdesc:a51188195685c31d4258c0a078cc37154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port value.  <a href="#a51188195685c31d4258c0a078cc37154">More...</a><br/></td></tr>
 <tr class="separator:a51188195685c31d4258c0a078cc37154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c76ca7e5d4aa86d2caf0b742a23cdb"><td class="memItemLeft" align="right" valign="top">typedef socklen_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">TSocketSize</a></td></tr>
+<tr class="memdesc:a28c76ca7e5d4aa86d2caf0b742a23cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the socket structure.  <a href="#a28c76ca7e5d4aa86d2caf0b742a23cdb">More...</a><br/></td></tr>
 <tr class="separator:a28c76ca7e5d4aa86d2caf0b742a23cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1333231aa0a638d7d730a5c89ae868c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a1333231aa0a638d7d730a5c89ae868c9">IPAddress</a> (void)</td></tr>
+<tr class="memdesc:a1333231aa0a638d7d730a5c89ae868c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the address family and clears the structure.  <a href="#a1333231aa0a638d7d730a5c89ae868c9">More...</a><br/></td></tr>
 <tr class="separator:a1333231aa0a638d7d730a5c89ae868c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b64b50f64853fd06487c77e0baaaf4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a9b64b50f64853fd06487c77e0baaaf4a">IPAddress</a> (const <a class="el" href="class_i_p_address.html">IPAddress</a> &amp;copy)</td></tr>
+<tr class="memdesc:a9b64b50f64853fd06487c77e0baaaf4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary copy of the structure.  <a href="#a9b64b50f64853fd06487c77e0baaaf4a">More...</a><br/></td></tr>
 <tr class="separator:a9b64b50f64853fd06487c77e0baaaf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877ef12fd67c5064b7188a95e570a28b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a877ef12fd67c5064b7188a95e570a28b">~IPAddress</a> (void)</td></tr>
+<tr class="memdesc:a877ef12fd67c5064b7188a95e570a28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">No use.  <a href="#a877ef12fd67c5064b7188a95e570a28b">More...</a><br/></td></tr>
 <tr class="separator:a877ef12fd67c5064b7188a95e570a28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebc20befea4d99f6ffd058d999480b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_p_address.html">IPAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#adebc20befea4d99f6ffd058d999480b2">operator=</a> (const <a class="el" href="class_i_p_address.html">IPAddress</a> &amp;rhs)</td></tr>
+<tr class="memdesc:adebc20befea4d99f6ffd058d999480b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator for binary copy.  <a href="#adebc20befea4d99f6ffd058d999480b2">More...</a><br/></td></tr>
 <tr class="separator:adebc20befea4d99f6ffd058d999480b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa3d485fedf874453d3fd0ab7e93a64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#acaa3d485fedf874453d3fd0ab7e93a64">operator==</a> (const <a class="el" href="class_i_p_address.html">IPAddress</a> &amp;rhs) const </td></tr>
+<tr class="memdesc:acaa3d485fedf874453d3fd0ab7e93a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the addresses and ports are the same.  <a href="#acaa3d485fedf874453d3fd0ab7e93a64">More...</a><br/></td></tr>
 <tr class="separator:acaa3d485fedf874453d3fd0ab7e93a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade47d25d834bfb952fcf7fb2867db21e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e">SetAddress</a> (const <a class="el" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a> address)</td></tr>
+<tr class="memdesc:ade47d25d834bfb952fcf7fb2867db21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the address field of the structure.  <a href="#ade47d25d834bfb952fcf7fb2867db21e">More...</a><br/></td></tr>
 <tr class="separator:ade47d25d834bfb952fcf7fb2867db21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ed9d09c9ec8f1d9568466683606e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a00ed9d09c9ec8f1d9568466683606e55">GetAddress</a> (void) const </td></tr>
+<tr class="memdesc:a00ed9d09c9ec8f1d9568466683606e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the address field of the structure.  <a href="#a00ed9d09c9ec8f1d9568466683606e55">More...</a><br/></td></tr>
 <tr class="separator:a00ed9d09c9ec8f1d9568466683606e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5908d6242879f0e45685f8b0734dafa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7">SetPort</a> (const <a class="el" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a> port)</td></tr>
+<tr class="memdesc:a5908d6242879f0e45685f8b0734dafa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the port field of the structure.  <a href="#a5908d6242879f0e45685f8b0734dafa7">More...</a><br/></td></tr>
 <tr class="separator:a5908d6242879f0e45685f8b0734dafa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d27804d27e1fef93afd0137fe4eb08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a92d27804d27e1fef93afd0137fe4eb08">GetPort</a> (void) const </td></tr>
+<tr class="memdesc:a92d27804d27e1fef93afd0137fe4eb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the port field of the structure.  <a href="#a92d27804d27e1fef93afd0137fe4eb08">More...</a><br/></td></tr>
 <tr class="separator:a92d27804d27e1fef93afd0137fe4eb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a02f2b922b3b3c929ae3ad079ac8e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#ac7a02f2b922b3b3c929ae3ad079ac8e9">operator sockaddr *</a> (void)</td></tr>
+<tr class="memdesc:ac7a02f2b922b3b3c929ae3ad079ac8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cast version of the address structure to be used in OS utilities.  <a href="#ac7a02f2b922b3b3c929ae3ad079ac8e9">More...</a><br/></td></tr>
 <tr class="separator:ac7a02f2b922b3b3c929ae3ad079ac8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abdbc7cc25dc15d9e85ceb2e1d3125e22"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">TSocketSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22">GetSocketSize</a> (void)</td></tr>
+<tr class="memdesc:abdbc7cc25dc15d9e85ceb2e1d3125e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the socket structure.  <a href="#abdbc7cc25dc15d9e85ceb2e1d3125e22">More...</a><br/></td></tr>
 <tr class="separator:abdbc7cc25dc15d9e85ceb2e1d3125e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a45062a631f57459b18c10c1c8fe310bf"><td class="memItemLeft" align="right" valign="top">typedef sockaddr_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">TAddressStruct</a></td></tr>
+<tr class="memdesc:a45062a631f57459b18c10c1c8fe310bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">BSD Socket structure.  <a href="#a45062a631f57459b18c10c1c8fe310bf">More...</a><br/></td></tr>
 <tr class="separator:a45062a631f57459b18c10c1c8fe310bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a0c90b37a86811781d4422c0dd2d5b6b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5">GetAddress</a> (void)</td></tr>
+<tr class="memdesc:a0c90b37a86811781d4422c0dd2d5b6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the address value.  <a href="#a0c90b37a86811781d4422c0dd2d5b6b5">More...</a><br/></td></tr>
 <tr class="separator:a0c90b37a86811781d4422c0dd2d5b6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8a6aeae1105603538c2661c68fd6bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb">GetPort</a> (void)</td></tr>
+<tr class="memdesc:a5c8a6aeae1105603538c2661c68fd6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the port value.  <a href="#a5c8a6aeae1105603538c2661c68fd6bb">More...</a><br/></td></tr>
 <tr class="separator:a5c8a6aeae1105603538c2661c68fd6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aaafe20f26b2569a5ac9cd3b61b5c0c50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">TAddressStruct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_p_address.html#aaafe20f26b2569a5ac9cd3b61b5c0c50">m_address</a></td></tr>
+<tr class="memdesc:aaafe20f26b2569a5ac9cd3b61b5c0c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS Address structure to be abstracted.  <a href="#aaafe20f26b2569a5ac9cd3b61b5c0c50">More...</a><br/></td></tr>
 <tr class="separator:aaafe20f26b2569a5ac9cd3b61b5c0c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00027">27</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
+<div class="textblock"><p>This class is an abstraction of the OS IP Address structure. </p>
+<p>Byte order conversion is handled automatically. </p>
+
+<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00030">30</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a36831f63346275f44e8747d77a2a5d51"></a>
 <div class="memitem">
@@ -189,7 +212,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00033">33</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
+<p>IP Address value. </p>
+
+<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00042">42</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +236,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00030">30</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
+<p>BSD Socket structure. </p>
+
+<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00036">36</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +252,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00034">34</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
+<p>Port value. </p>
+
+<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00047">47</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +268,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00035">35</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
+<p>Size of the socket structure. </p>
+
+<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00052">52</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
 
 </div>
 </div>
@@ -257,6 +288,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the address family and clears the structure. </p>
 
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00010">10</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
@@ -276,6 +309,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Binary copy of the structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copy</td><td>Address to be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00016">16</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
 </div>
@@ -293,6 +334,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>No use. </p>
 
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00021">21</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
@@ -321,6 +364,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns a reference to the address value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the address field. </dd></dl>
+
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00053">53</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -345,6 +391,9 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads the address field of the structure. </p>
+<dl class="section return"><dt>Returns</dt><dd>4 byte IP Address. </dd></dl>
 
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00063">63</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
@@ -372,6 +421,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Return a reference to the port value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the port field. </dd></dl>
+
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00085">85</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -396,6 +448,9 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads the port field of the structure. </p>
+<dl class="section return"><dt>Returns</dt><dd>2 byte port value. </dd></dl>
 
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00079">79</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
@@ -423,7 +478,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00073">73</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
+<p>Returns the size of the socket structure. </p>
+<dl class="section return"><dt>Returns</dt><dd>Size of the socket structure. </dd></dl>
+
+<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00160">160</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -448,6 +506,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the cast version of the address structure to be used in OS utilities. </p>
+<dl class="section return"><dt>Returns</dt><dd>Address of the internal structure. </dd></dl>
+
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00090">90</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
 </div>
@@ -466,6 +527,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Assignment operator for binary copy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>Right hand side of (=).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a reference to itself. </dd></dl>
+
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00026">26</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
 </div>
@@ -483,6 +553,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Checks whether the addresses and ports are the same. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>Right hand size of (==).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the equality between the classes. </dd></dl>
 
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00037">37</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
@@ -508,6 +587,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the address field of the structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>4 byte IP Address. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00047">47</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
@@ -540,6 +627,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the port field of the structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>2 byte port value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="_i_p_address_8cpp_source.html#l00073">73</a> of file <a class="el" href="_i_p_address_8cpp_source.html">IPAddress.cpp</a>.</p>
 
@@ -578,7 +673,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00038">38</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
+<p>OS Address structure to be abstracted. </p>
+
+<p>Definition at line <a class="el" href="_i_p_address_8h_source.html#l00058">58</a> of file <a class="el" href="_i_p_address_8h_source.html">IPAddress.h</a>.</p>
 
 </div>
 </div>
@@ -592,7 +689,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_i_p_address.html">IPAddress</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

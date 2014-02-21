@@ -23,7 +23,7 @@ Collaboration diagram for Connection\-Manager\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 typedef \hyperlink{class_connection_manager_a0c3634c02b95af84a477b253fcf2b29a}{T\-Client\-Id} \hyperlink{class_connection_manager_a0f5f5b25b063cfebfac54b25cda131f7}{T\-Number\-Of\-Clients}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Represents the type for number of clients. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,45 +34,45 @@ void \hyperlink{class_connection_manager_a64473b0369ab91daf3a2da6b8ef576d0}{Brok
 void \hyperlink{class_connection_manager_a4657b51054ad28143f1bddd1f5cc282c}{Incoming\-Message} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$sender\-Client, void $\ast$buffer, size\-\_\-t size)
 \begin{DoxyCompactList}\small\item\em New message processor. \end{DoxyCompactList}\item 
 void \hyperlink{class_connection_manager_afc67553cf1eff6ab251a5dd2a313e863}{Delete\-Client} (\hyperlink{class_client_manager}{Client\-Manager} $\ast$client\-Manager)
-\item 
+\begin{DoxyCompactList}\small\item\em Deletes the \hyperlink{class_client_manager}{Client\-Manager} from all lists and finally deletes itself. \end{DoxyCompactList}\item 
 \hyperlink{class_connection_manager_a0f5f5b25b063cfebfac54b25cda131f7}{T\-Number\-Of\-Clients} \hyperlink{class_connection_manager_adf13721cde7ae4615aadbb5262f67274}{Get\-Number\-Of\-Clients} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the current number of clients connected. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{Terra\-Swarm\-::\-Message\-Header\-::\-T\-Id} \hyperlink{class_connection_manager_a0c3634c02b95af84a477b253fcf2b29a}{T\-Client\-Id}
-\item 
+\begin{DoxyCompactList}\small\item\em Type representing the Unique Id of the client. \end{DoxyCompactList}\item 
 typedef std\-::map\\*
 $<$ \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} \\*
 $\ast$, \hyperlink{class_client_manager}{Client\-Manager} $\ast$ $>$ \hyperlink{class_connection_manager_a7b6865543285e3b27b981a739fd0db18}{T\-Client\-List}
-\item 
+\begin{DoxyCompactList}\small\item\em Type mapping T\-C\-P client connection pointers to their respective managers. \end{DoxyCompactList}\item 
 typedef std\-::map\\*
 $<$ \hyperlink{class_client_manager}{Client\-Manager} \\*
 $\ast$, \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$ $>$ \hyperlink{class_connection_manager_aa35cf836145608197dbe4201b115991c}{T\-Reversed\-Client\-List}
-\item 
+\begin{DoxyCompactList}\small\item\em Type mapping the client managers to their respective T\-C\-P client connections. \end{DoxyCompactList}\item 
 typedef std\-::map$<$ \hyperlink{class_connection_manager_a0c3634c02b95af84a477b253fcf2b29a}{T\-Client\-Id}, \\*
 \hyperlink{class_client_manager}{Client\-Manager} $\ast$ $>$ \hyperlink{class_connection_manager_a78c371deff0ac4add801b3c64216a467}{T\-Client\-Id\-List}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Type mapping the client unique id's to respective managers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_connection_manager_a7928f3e95b4e88b01c11eaf3e8089ee7}{Connection\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor for singleton implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_connection_manager_a7b6865543285e3b27b981a739fd0db18}{T\-Client\-List} \hyperlink{class_connection_manager_ad9da7334bc0a1ed0f152f5998b46268a}{m\-\_\-client\-List}
-\item 
+\begin{DoxyCompactList}\small\item\em Holds the Connection-\/$>$Manager based list. \end{DoxyCompactList}\item 
 \hyperlink{class_connection_manager_aa35cf836145608197dbe4201b115991c}{T\-Reversed\-Client\-List} \hyperlink{class_connection_manager_aae27a14334d4b84076231534196e75eb}{m\-\_\-reversed\-Client\-List}
-\item 
+\begin{DoxyCompactList}\small\item\em Holds the Manager-\/$>$Connection based list for speed. \end{DoxyCompactList}\item 
 \hyperlink{class_threaded_t_c_p_server}{Threaded\-T\-C\-P\-Server} \hyperlink{class_connection_manager_a8858415ddb04364d4697f7ea00aa2977}{m\-\_\-server}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Instance of the T\-C\-P server. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_connection_manager}{Connection\-Manager} \& \hyperlink{class_connection_manager_ab88124ce7a3bf1d2892d0e9763d1af30}{Get\-Connection\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Friend method for singleton implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -88,35 +88,55 @@ Definition at line 48 of file Connection\-Manager.\-h.
 \hypertarget{class_connection_manager_a0c3634c02b95af84a477b253fcf2b29a}{\index{Connection\-Manager@{Connection\-Manager}!T\-Client\-Id@{T\-Client\-Id}}
 \index{T\-Client\-Id@{T\-Client\-Id}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{T\-Client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Id} {\bf Connection\-Manager\-::\-T\-Client\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_a0c3634c02b95af84a477b253fcf2b29a}
+
+
 Type representing the Unique Id of the client. 
+
+
 
 Definition at line 62 of file Connection\-Manager.\-h.
 
 \hypertarget{class_connection_manager_a78c371deff0ac4add801b3c64216a467}{\index{Connection\-Manager@{Connection\-Manager}!T\-Client\-Id\-List@{T\-Client\-Id\-List}}
 \index{T\-Client\-Id\-List@{T\-Client\-Id\-List}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{T\-Client\-Id\-List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf T\-Client\-Id}, {\bf Client\-Manager}$\ast$$>$ {\bf Connection\-Manager\-::\-T\-Client\-Id\-List}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_a78c371deff0ac4add801b3c64216a467}
+
+
 Type mapping the client unique id's to respective managers. 
+
+
 
 Definition at line 77 of file Connection\-Manager.\-h.
 
 \hypertarget{class_connection_manager_a7b6865543285e3b27b981a739fd0db18}{\index{Connection\-Manager@{Connection\-Manager}!T\-Client\-List@{T\-Client\-List}}
 \index{T\-Client\-List@{T\-Client\-List}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{T\-Client\-List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf Threaded\-T\-C\-P\-Connected\-Client}$\ast$,{\bf Client\-Manager}$\ast$$>$ {\bf Connection\-Manager\-::\-T\-Client\-List}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_a7b6865543285e3b27b981a739fd0db18}
+
+
 Type mapping T\-C\-P client connection pointers to their respective managers. 
+
+
 
 Definition at line 67 of file Connection\-Manager.\-h.
 
 \hypertarget{class_connection_manager_a0f5f5b25b063cfebfac54b25cda131f7}{\index{Connection\-Manager@{Connection\-Manager}!T\-Number\-Of\-Clients@{T\-Number\-Of\-Clients}}
 \index{T\-Number\-Of\-Clients@{T\-Number\-Of\-Clients}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{T\-Number\-Of\-Clients}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Client\-Id} {\bf Connection\-Manager\-::\-T\-Number\-Of\-Clients}}}\label{class_connection_manager_a0f5f5b25b063cfebfac54b25cda131f7}
+
+
 Represents the type for number of clients. 
+
+
 
 Definition at line 83 of file Connection\-Manager.\-h.
 
 \hypertarget{class_connection_manager_aa35cf836145608197dbe4201b115991c}{\index{Connection\-Manager@{Connection\-Manager}!T\-Reversed\-Client\-List@{T\-Reversed\-Client\-List}}
 \index{T\-Reversed\-Client\-List@{T\-Reversed\-Client\-List}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{T\-Reversed\-Client\-List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf Client\-Manager}$\ast$,{\bf Threaded\-T\-C\-P\-Connected\-Client}$\ast$$>$ {\bf Connection\-Manager\-::\-T\-Reversed\-Client\-List}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_aa35cf836145608197dbe4201b115991c}
+
+
 Type mapping the client managers to their respective T\-C\-P client connections. 
+
+
 
 Definition at line 72 of file Connection\-Manager.\-h.
 
@@ -130,7 +150,11 @@ Definition at line 72 of file Connection\-Manager.\-h.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_a7928f3e95b4e88b01c11eaf3e8089ee7}
+
+
 Private constructor for singleton implementation. 
+
+
 
 Definition at line 45 of file Connection\-Manager.\-cpp.
 
@@ -199,7 +223,9 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{{\bf Client\-Manager} $\ast$}]{client\-Manager}
 \end{DoxyParamCaption}
 )}}\label{class_connection_manager_afc67553cf1eff6ab251a5dd2a313e863}
-Deletes the \hyperlink{class_client_manager}{Client\-Manager} from all lists and finally deletes itself.
+
+
+Deletes the \hyperlink{class_client_manager}{Client\-Manager} from all lists and finally deletes itself. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -239,7 +265,9 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_connection_manager_adf13721cde7ae4615aadbb5262f67274}
-Returns the current number of clients connected.
+
+
+Returns the current number of clients connected. 
 
 \begin{DoxyReturn}{Returns}
 Number of connected clients. 
@@ -363,7 +391,9 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_connection_manager_ab88124ce7a3bf1d2892d0e9763d1af30}
-Friend method for singleton implementation.
+
+
+Friend method for singleton implementation. 
 
 \begin{DoxyReturn}{Returns}
 Returns the reference to the \hyperlink{class_connection_manager}{Connection\-Manager}. 
@@ -378,21 +408,33 @@ Definition at line 11 of file Connection\-Manager.\-cpp.
 \hypertarget{class_connection_manager_ad9da7334bc0a1ed0f152f5998b46268a}{\index{Connection\-Manager@{Connection\-Manager}!m\-\_\-client\-List@{m\-\_\-client\-List}}
 \index{m\-\_\-client\-List@{m\-\_\-client\-List}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{m\-\_\-client\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Client\-List} Connection\-Manager\-::m\-\_\-client\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_ad9da7334bc0a1ed0f152f5998b46268a}
+
+
 Holds the Connection-\/$>$Manager based list. 
+
+
 
 Definition at line 89 of file Connection\-Manager.\-h.
 
 \hypertarget{class_connection_manager_aae27a14334d4b84076231534196e75eb}{\index{Connection\-Manager@{Connection\-Manager}!m\-\_\-reversed\-Client\-List@{m\-\_\-reversed\-Client\-List}}
 \index{m\-\_\-reversed\-Client\-List@{m\-\_\-reversed\-Client\-List}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{m\-\_\-reversed\-Client\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Reversed\-Client\-List} Connection\-Manager\-::m\-\_\-reversed\-Client\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_aae27a14334d4b84076231534196e75eb}
+
+
 Holds the Manager-\/$>$Connection based list for speed. 
+
+
 
 Definition at line 94 of file Connection\-Manager.\-h.
 
 \hypertarget{class_connection_manager_a8858415ddb04364d4697f7ea00aa2977}{\index{Connection\-Manager@{Connection\-Manager}!m\-\_\-server@{m\-\_\-server}}
 \index{m\-\_\-server@{m\-\_\-server}!ConnectionManager@{Connection\-Manager}}
 \subsubsection[{m\-\_\-server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Server} Connection\-Manager\-::m\-\_\-server\hspace{0.3cm}{\ttfamily [private]}}}\label{class_connection_manager_a8858415ddb04364d4697f7ea00aa2977}
+
+
 Instance of the T\-C\-P server. 
+
+
 
 Definition at line 99 of file Connection\-Manager.\-h.
 

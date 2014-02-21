@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="446,-352 446,-373 506,-373 506,-352 446,-352"/>
 <text text-anchor="middle" x="476" y="-359" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="GetMatlabManager">
+<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="This function returns the only instance of MatlabManager. ">
 <polygon style="fill:white;stroke:black;" points="250,-499 250,-520 370,-520 370,-499 250,-499"/>
 <text text-anchor="middle" x="310" y="-506" style="font-family:Arial;font-size:10.00;">GetMatlabManager</text>
 </a>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_connection_request.html#a06ce45d6a43bc6e92437a8f6deb5c09a" target="_top" xlink:title="TerraSwarm::Asynchronous\l::ClientConnectionRequest\l::GetClientName">
+<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_connection_request.html#a06ce45d6a43bc6e92437a8f6deb5c09a" target="_top" xlink:title="Returns the object name. ">
 <polygon style="fill:white;stroke:black;" points="229,-435 229,-482 391,-482 391,-435 229,-435"/>
 <text text-anchor="start" x="237" y="-468" style="font-family:Arial;font-size:10.00;">TerraSwarm::Asynchronous</text>
 <text text-anchor="start" x="237" y="-455" style="font-family:Arial;font-size:10.00;">::ClientConnectionRequest</text>
@@ -69,7 +69,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_control_manager.html#a56df538a5380c9091123a5a8a5e0fe86" target="_top" xlink:title="ControlManager::Register\lClient">
+<a xlink:href="class_control_manager.html#a56df538a5380c9091123a5a8a5e0fe86" target="_top" xlink:title="Registers a new client to its maps for later referencing. ">
 <polygon style="fill:white;stroke:black;" points="233,-346 233,-380 387,-380 387,-346 233,-346"/>
 <text text-anchor="start" x="241" y="-366" style="font-family:Arial;font-size:10.00;">ControlManager::Register</text>
 <text text-anchor="middle" x="310" y="-353" style="font-family:Arial;font-size:10.00;">Client</text>
@@ -82,7 +82,7 @@
 </g>
 <!-- Node7 -->
 <g id="node14" class="node"><title>Node7</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="268,-307 268,-328 353,-328 353,-307 268,-307"/>
 <text text-anchor="middle" x="310" y="-314" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>
@@ -94,7 +94,7 @@
 </g>
 <!-- Node8 -->
 <g id="node16" class="node"><title>Node8</title>
-<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="GetSystemManager">
+<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="Singleton function that returns the only instance of SystemManager. ">
 <polygon style="fill:white;stroke:black;" points="249,-269 249,-290 372,-290 372,-269 249,-269"/>
 <text text-anchor="middle" x="310" y="-276" style="font-family:Arial;font-size:10.00;">GetSystemManager</text>
 </a>
@@ -106,7 +106,7 @@
 </g>
 <!-- Node9 -->
 <g id="node18" class="node"><title>Node9</title>
-<a xlink:href="class_system_manager.html#ab9f52e613fdbdc4690be79179b7357e6" target="_top" xlink:title="SystemManager::GetSystemMode">
+<a xlink:href="class_system_manager.html#ab9f52e613fdbdc4690be79179b7357e6" target="_top" xlink:title="Returns the current system working mode. ">
 <polygon style="fill:white;stroke:black;" points="211,-231 211,-252 410,-252 410,-231 211,-231"/>
 <text text-anchor="middle" x="310" y="-238" style="font-family:Arial;font-size:10.00;">SystemManager::GetSystemMode</text>
 </a>
@@ -118,7 +118,7 @@
 </g>
 <!-- Node10 -->
 <g id="node20" class="node"><title>Node10</title>
-<a xlink:href="class_system_manager.html#aebfc7fab136f01836e07228474e4326f" target="_top" xlink:title="SystemManager::GetSystemTime">
+<a xlink:href="class_system_manager.html#aebfc7fab136f01836e07228474e4326f" target="_top" xlink:title="Returns the current system time. ">
 <polygon style="fill:white;stroke:black;" points="212,-193 212,-214 409,-214 409,-193 212,-193"/>
 <text text-anchor="middle" x="310" y="-200" style="font-family:Arial;font-size:10.00;">SystemManager::GetSystemTime</text>
 </a>
@@ -142,7 +142,7 @@
 </g>
 <!-- Node12 -->
 <g id="node24" class="node"><title>Node12</title>
-<a xlink:href="class_connection_manager.html#adf13721cde7ae4615aadbb5262f67274" target="_top" xlink:title="ConnectionManager::\lGetNumberOfClients">
+<a xlink:href="class_connection_manager.html#adf13721cde7ae4615aadbb5262f67274" target="_top" xlink:title="Returns the current number of clients connected. ">
 <polygon style="fill:white;stroke:black;" points="244,-104 244,-138 377,-138 377,-104 244,-104"/>
 <text text-anchor="start" x="252" y="-124" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="310" y="-111" style="font-family:Arial;font-size:10.00;">GetNumberOfClients</text>
@@ -155,7 +155,7 @@
 </g>
 <!-- Node13 -->
 <g id="node26" class="node"><title>Node13</title>
-<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="TCPConnectedClient\l::SendData">
+<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="Sends data to the connected client. ">
 <polygon style="fill:white;stroke:black;" points="246,-52 246,-86 375,-86 375,-52 246,-52"/>
 <text text-anchor="start" x="254" y="-72" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 <text text-anchor="middle" x="310" y="-59" style="font-family:Arial;font-size:10.00;">::SendData</text>
@@ -168,7 +168,7 @@
 </g>
 <!-- Node14 -->
 <g id="node28" class="node"><title>Node14</title>
-<a xlink:href="class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863" target="_top" xlink:title="ConnectionManager::\lDeleteClient">
+<a xlink:href="class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863" target="_top" xlink:title="Deletes the ClientManager from all lists and finally deletes itself. ">
 <polygon style="fill:white;stroke:black;" points="244,-0 244,-34 377,-34 377,-0 244,-0"/>
 <text text-anchor="start" x="252" y="-20" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="310" y="-7" style="font-family:Arial;font-size:10.00;">DeleteClient</text>

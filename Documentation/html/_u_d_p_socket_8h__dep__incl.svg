@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_u_d_p_socket_8cpp.html" target="_top" xlink:title="S2Sim/SocketLibrary\l/UDPSocket.cpp">
+<a xlink:href="_u_d_p_socket_8cpp.html" target="_top" xlink:title="Implements the UDPSocket class. ">
 <polygon style="fill:white;stroke:black;" points="0,-0 0,-34 127,-34 127,-0 0,-0"/>
 <text text-anchor="start" x="8" y="-20" style="font-family:Arial;font-size:10.00;">S2Sim/SocketLibrary</text>
 <text text-anchor="middle" x="63" y="-7" style="font-family:Arial;font-size:10.00;">/UDPSocket.cpp</text>

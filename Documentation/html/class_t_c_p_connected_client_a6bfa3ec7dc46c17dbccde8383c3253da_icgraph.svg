@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_threaded_t_c_p_connected_client.html#a019445fcc5fc83ad40583d3772c88a8b" target="_top" xlink:title="ThreadedTCPConnectedClient\l::ExecutionBody">
+<a xlink:href="class_threaded_t_c_p_connected_client.html#a019445fcc5fc83ad40583d3772c88a8b" target="_top" xlink:title="The execution body of the thread. ">
 <polygon style="fill:white;stroke:black;" points="166,-0 166,-34 348,-34 348,-0 166,-0"/>
 <text text-anchor="start" x="174" y="-20" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient</text>
 <text text-anchor="middle" x="257" y="-7" style="font-family:Arial;font-size:10.00;">::ExecutionBody</text>

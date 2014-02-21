@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -110,6 +110,9 @@ $(document).ready(function(){initNavTree('_log_print_8cpp.html','');});
 <div class="title">LogPrint.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines logging related parameters.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_log_print_8h_source.html">LogPrint.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for LogPrint.cpp:</div>
@@ -122,11 +125,19 @@ Include dependency graph for LogPrint.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ae2895202d53e717355f96f260daa5f3c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_log_print_8cpp.html#ae2895202d53e717355f96f260daa5f3c">logLevel</a> = 3</td></tr>
+<tr class="memdesc:ae2895202d53e717355f96f260daa5f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a small hack to suppress compiler warning for default macro parameter initialization.  <a href="#ae2895202d53e717355f96f260daa5f3c">More...</a><br/></td></tr>
 <tr class="separator:ae2895202d53e717355f96f260daa5f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a50674184794aa7532ec7cc791dab9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_log_print_8cpp.html#a7a50674184794aa7532ec7cc791dab9d">functionPrint</a> = true</td></tr>
+<tr class="memdesc:a7a50674184794aa7532ec7cc791dab9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to indicate whether the function name should be printed for each log.  <a href="#a7a50674184794aa7532ec7cc791dab9d">More...</a><br/></td></tr>
 <tr class="separator:a7a50674184794aa7532ec7cc791dab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines logging related parameters. </p>
+<dl class="section date"><dt>Date</dt><dd>Oct 28, 2013 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>: Alper Sinan Akyurek </dd></dl>
+
+<p>Definition in file <a class="el" href="_log_print_8cpp_source.html">LogPrint.cpp</a>.</p>
+</div><h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a7a50674184794aa7532ec7cc791dab9d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -136,6 +147,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Boolean to indicate whether the function name should be printed for each log. </p>
 
 <p>Definition at line <a class="el" href="_log_print_8cpp_source.html#l00011">11</a> of file <a class="el" href="_log_print_8cpp_source.html">LogPrint.cpp</a>.</p>
 
@@ -151,6 +164,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This is a small hack to suppress compiler warning for default macro parameter initialization. </p>
+<p>Logging level on how detailed the logs should be.</p>
+<ul>
+<li>1: All logs</li>
+<li>2: Warnings and errors</li>
+<li>3: Errors only</li>
+<li>&gt;3: No logging </li>
+</ul>
+
 <p>Definition at line <a class="el" href="_log_print_8cpp_source.html#l00010">10</a> of file <a class="el" href="_log_print_8cpp_source.html">LogPrint.cpp</a>.</p>
 
 </div>
@@ -161,7 +183,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="_log_print_8cpp.html">LogPrint.cpp</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

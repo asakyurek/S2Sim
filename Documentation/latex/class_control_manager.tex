@@ -3,7 +3,7 @@
 }
 
 
-Manager the connection with the External Controller.  
+Manages the connection with the External Controller.  
 
 
 
@@ -24,47 +24,47 @@ Collaboration diagram for Control\-Manager\-:\nopagebreak
 \item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_control_manager_a336440023399b9165c117020f6b14ec3}{T\-Voltage}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type of Voltage information. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_control_manager_a24609feed8b0443df450b070194df20a}{T\-Wattage}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type of Wattage/\-Power information. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{Message\-Header\-::\-T\-Id} \hyperlink{class_control_manager_a7eefb0a4e9d10e65771939912d650bcc}{T\-Number\-Of\-Clients}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type of number of clients. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{Message\-Header\-::\-T\-Id} \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id}
-\item 
+\begin{DoxyCompactList}\small\item\em Redefines the type for unique id for rapid development. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_connection_request_a50a16fcfef8eb10d5191b6eaf0723a92}{Asynchronous\-::\-Client\-Connection\-Request\-::\-T\-Client\-Name} \hyperlink{class_control_manager_ae9c86c5286c9ebf222ea44b60c463872}{T\-Client\-Name}
-\item 
+\begin{DoxyCompactList}\small\item\em Redefines the type for object name for rapid development. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_control_manager_acad2d80fd0659e3d979389de905e7b5b}{T\-Price}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type for the price feedback signal. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_control_manager_a236ef5279ad4f3082443e4c6d300a7d2}{T\-Data\-Point}
-\item 
+\begin{DoxyCompactList}\small\item\em Redefines the general data type for rapid development. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}{Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points} \hyperlink{class_control_manager_a90ca5d46699df9c6e67c96e36727eff1}{T\-Number\-Of\-Data\-Points}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Redefines the number of data points type for rapid development. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{class_control_manager_a67d548535b36a78e315a0aa5f9f8e6c8}{Set\-Client} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the connection information to the accepted External Controller. \end{DoxyCompactList}\item 
 void \hyperlink{class_control_manager_a2dc55da1b01fd175b3d885c68b8a7524}{Process\-Data} (void $\ast$data, const size\-\_\-t size)
 \begin{DoxyCompactList}\small\item\em Processes the received message from the External Controller. \end{DoxyCompactList}\item 
 void \hyperlink{class_control_manager_a0d5212df17307aef87d42add3aa6cc7a}{Make\-Decision} (void)
 \begin{DoxyCompactList}\small\item\em Starts the decision process by sending necessary information to External Controller. \end{DoxyCompactList}\item 
 void \hyperlink{class_control_manager_a4e23ffb481554c26cf99c411dd16ae36}{Wait\-Until\-Ready} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Stops the calling thread until a ready signal is received from the External Controller. \end{DoxyCompactList}\item 
 void \hyperlink{class_control_manager_a56df538a5380c9091123a5a8a5e0fe86}{Register\-Client} (const \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id} client\-Id, const \hyperlink{class_control_manager_ae9c86c5286c9ebf222ea44b60c463872}{T\-Client\-Name} \&client\-Name, \hyperlink{class_client_manager}{Client\-Manager} $\ast$client\-Manager)
-\item 
+\begin{DoxyCompactList}\small\item\em Registers a new client to its maps for later referencing. \end{DoxyCompactList}\item 
 void \hyperlink{class_control_manager_ac3c913a01fe2e5e5467ad3d140c8e9a2}{Un\-Register\-Client} (const \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id} client\-Id)
-\item 
+\begin{DoxyCompactList}\small\item\em Deletes a client from the maps when connection is broken. \end{DoxyCompactList}\item 
 void \hyperlink{class_control_manager_aa4398a05586d9b711aa6101334deefe1}{Client\-Price\-Request} (const \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id} client\-Id)
-\item 
+\begin{DoxyCompactList}\small\item\em Relays the price request of a client to the External Controller. \end{DoxyCompactList}\item 
 void \hyperlink{class_control_manager_a5b551f560431d0bb0bcf6c338bac8eb3}{Client\-Demand\-Negotiation} (const \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id} client\-Id, const \hyperlink{class_control_manager_a90ca5d46699df9c6e67c96e36727eff1}{T\-Number\-Of\-Data\-Points} number\-Of\-Data\-Points, \hyperlink{class_control_manager_a236ef5279ad4f3082443e4c6d300a7d2}{T\-Data\-Point} $\ast$data\-Points)
-\item 
+\begin{DoxyCompactList}\small\item\em Relays the demand negotiation response of the client to the External Controller. \end{DoxyCompactList}\item 
 \hyperlink{class_control_manager_ae9c86c5286c9ebf222ea44b60c463872}{T\-Client\-Name} \hyperlink{class_control_manager_a927449c3a4ba8a5bdc23e3747d5bb077}{Get\-Client\-Name} (const \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id} client\-Id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the name of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -77,44 +77,44 @@ enum \hyperlink{class_control_manager_a7b6de4a130e0de1729c7963edd972120}{Message
 \hyperlink{class_control_manager_a7b6de4a130e0de1729c7963edd972120afad3b5e04ece26c7ec3a5f388db53b43}{Price\-Request\-Type} = 0x00000005, 
 \hyperlink{class_control_manager_a7b6de4a130e0de1729c7963edd972120a8adf22182deb49ea93b62097e2618cff}{Demand\-Negotiation\-Type} = 0x00000006
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the available values for different message types. \end{DoxyCompactList}\item 
 typedef size\-\_\-t \hyperlink{class_control_manager_a5c898e9e00806858a59700370560aea7}{T\-Data\-Size}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type for size of a data chunk. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_control_manager_a36b60e90749624a648dc225c2c136397}{T\-Message\-Type}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the message type field used in the communication for message processing. \end{DoxyCompactList}\item 
 typedef std\-::map$<$ \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id}, \\*
 \hyperlink{class_control_manager_ae9c86c5286c9ebf222ea44b60c463872}{T\-Client\-Name} $>$ \hyperlink{class_control_manager_a5f6aa6ca619f6aa8dddfc3d5000162f0}{T\-Client\-Id\-Map}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type holding a Client\-Id-\/$>$Client\-Name mapping. \end{DoxyCompactList}\item 
 typedef std\-::map$<$ \hyperlink{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{T\-Client\-Id}, \\*
 \hyperlink{class_client_manager}{Client\-Manager} $\ast$ $>$ \hyperlink{class_control_manager_a27b18022695359e2a4d5563f91b6befd}{T\-Client\-Manager\-Map}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the type holding a Client\-Id-\/$>$\hyperlink{class_client_manager}{Client\-Manager} mapping. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_control_manager_ab81bac3e592705b7ca4b23ce473fe26e}{Control\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor for singleton implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_threaded_t_c_p_server}{Threaded\-T\-C\-P\-Server} \hyperlink{class_control_manager_a1b71eabaeddfd8ec80e503b734c72e9d}{m\-\_\-server}
-\item 
+\begin{DoxyCompactList}\small\item\em Implements the T\-C\-P server for external controller communication. \end{DoxyCompactList}\item 
 \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$ \hyperlink{class_control_manager_a3081c331c70f5b08dc0ef2615d86cc55}{m\-\_\-client}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointer to the currently accepted external controller communication handler. \end{DoxyCompactList}\item 
 Semaphore \hyperlink{class_control_manager_ab718d2d17750dfea91411de871855075}{m\-\_\-ready\-Semaphore}
-\item 
+\begin{DoxyCompactList}\small\item\em Semaphore that is released when the frame is finished by the external controller. \end{DoxyCompactList}\item 
 \hyperlink{class_control_manager_a5f6aa6ca619f6aa8dddfc3d5000162f0}{T\-Client\-Id\-Map} \hyperlink{class_control_manager_a5623f6ef4da21d143a7a6cf5fbee136f}{m\-\_\-client\-Id\-Map}
-\item 
+\begin{DoxyCompactList}\small\item\em Map containing the unique id to object name mapping. \end{DoxyCompactList}\item 
 \hyperlink{class_control_manager_a27b18022695359e2a4d5563f91b6befd}{T\-Client\-Manager\-Map} \hyperlink{class_control_manager_af47dee5a077190c6aeb7b9ef3d9cfb3b}{m\-\_\-client\-Manager\-Map}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Map containing the unique id to \hyperlink{class_client_manager}{Client\-Manager} mapping. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_control_manager}{Control\-Manager} \& \hyperlink{class_control_manager_a63bfd4667c9c70297f25ae5e5176818e}{Get\-Control\-Manager} (void)
-\begin{DoxyCompactList}\small\item\em Returns the only instance of \hyperlink{class_control_manager}{Control\-Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Friend method for singleton implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Manager the connection with the External Controller. 
+Manages the connection with the External Controller. 
 
 This class manages the connection to the External Controller. All received commands are processed and necessary updates are sent back. 
 
@@ -126,84 +126,132 @@ Definition at line 63 of file Control\-Manager.\-h.
 \hypertarget{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}{\index{Control\-Manager@{Control\-Manager}!T\-Client\-Id@{T\-Client\-Id}}
 \index{T\-Client\-Id@{T\-Client\-Id}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Message\-Header\-::\-T\-Id} {\bf Control\-Manager\-::\-T\-Client\-Id}}}\label{class_control_manager_a1bff13cab35db39c43f81f49b56e4849}
+
+
 Redefines the type for unique id for rapid development. 
+
+
 
 Definition at line 92 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a5f6aa6ca619f6aa8dddfc3d5000162f0}{\index{Control\-Manager@{Control\-Manager}!T\-Client\-Id\-Map@{T\-Client\-Id\-Map}}
 \index{T\-Client\-Id\-Map@{T\-Client\-Id\-Map}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Client\-Id\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf T\-Client\-Id}, {\bf T\-Client\-Name}$>$ {\bf Control\-Manager\-::\-T\-Client\-Id\-Map}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a5f6aa6ca619f6aa8dddfc3d5000162f0}
+
+
 Defines the type holding a Client\-Id-\/$>$Client\-Name mapping. 
+
+
 
 Definition at line 141 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a27b18022695359e2a4d5563f91b6befd}{\index{Control\-Manager@{Control\-Manager}!T\-Client\-Manager\-Map@{T\-Client\-Manager\-Map}}
 \index{T\-Client\-Manager\-Map@{T\-Client\-Manager\-Map}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Client\-Manager\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf T\-Client\-Id},{\bf Client\-Manager}$\ast$$>$ {\bf Control\-Manager\-::\-T\-Client\-Manager\-Map}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a27b18022695359e2a4d5563f91b6befd}
+
+
 Defines the type holding a Client\-Id-\/$>$\hyperlink{class_client_manager}{Client\-Manager} mapping. 
+
+
 
 Definition at line 146 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_ae9c86c5286c9ebf222ea44b60c463872}{\index{Control\-Manager@{Control\-Manager}!T\-Client\-Name@{T\-Client\-Name}}
 \index{T\-Client\-Name@{T\-Client\-Name}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Client\-Name}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Connection\-Request\-::\-T\-Client\-Name} {\bf Control\-Manager\-::\-T\-Client\-Name}}}\label{class_control_manager_ae9c86c5286c9ebf222ea44b60c463872}
+
+
 Redefines the type for object name for rapid development. 
+
+
 
 Definition at line 97 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a236ef5279ad4f3082443e4c6d300a7d2}{\index{Control\-Manager@{Control\-Manager}!T\-Data\-Point@{T\-Data\-Point}}
 \index{T\-Data\-Point@{T\-Data\-Point}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Data\-Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf Control\-Manager\-::\-T\-Data\-Point}}}\label{class_control_manager_a236ef5279ad4f3082443e4c6d300a7d2}
+
+
 Redefines the general data type for rapid development. 
+
+
 
 Definition at line 107 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a5c898e9e00806858a59700370560aea7}{\index{Control\-Manager@{Control\-Manager}!T\-Data\-Size@{T\-Data\-Size}}
 \index{T\-Data\-Size@{T\-Data\-Size}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Data\-Size}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t {\bf Control\-Manager\-::\-T\-Data\-Size}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a5c898e9e00806858a59700370560aea7}
+
+
 Defines the type for size of a data chunk. 
+
+
 
 Definition at line 118 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a36b60e90749624a648dc225c2c136397}{\index{Control\-Manager@{Control\-Manager}!T\-Message\-Type@{T\-Message\-Type}}
 \index{T\-Message\-Type@{T\-Message\-Type}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Message\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Control\-Manager\-::\-T\-Message\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a36b60e90749624a648dc225c2c136397}
+
+
 Defines the message type field used in the communication for message processing. 
+
+
 
 Definition at line 123 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a7eefb0a4e9d10e65771939912d650bcc}{\index{Control\-Manager@{Control\-Manager}!T\-Number\-Of\-Clients@{T\-Number\-Of\-Clients}}
 \index{T\-Number\-Of\-Clients@{T\-Number\-Of\-Clients}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Number\-Of\-Clients}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Message\-Header\-::\-T\-Id} {\bf Control\-Manager\-::\-T\-Number\-Of\-Clients}}}\label{class_control_manager_a7eefb0a4e9d10e65771939912d650bcc}
+
+
 Defines the type of number of clients. 
+
+
 
 Definition at line 87 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a90ca5d46699df9c6e67c96e36727eff1}{\index{Control\-Manager@{Control\-Manager}!T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}}
 \index{T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Number\-Of\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points} {\bf Control\-Manager\-::\-T\-Number\-Of\-Data\-Points}}}\label{class_control_manager_a90ca5d46699df9c6e67c96e36727eff1}
+
+
 Redefines the number of data points type for rapid development. 
+
+
 
 Definition at line 112 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_acad2d80fd0659e3d979389de905e7b5b}{\index{Control\-Manager@{Control\-Manager}!T\-Price@{T\-Price}}
 \index{T\-Price@{T\-Price}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Price}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf Control\-Manager\-::\-T\-Price}}}\label{class_control_manager_acad2d80fd0659e3d979389de905e7b5b}
+
+
 Defines the type for the price feedback signal. 
+
+
 
 Definition at line 102 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a336440023399b9165c117020f6b14ec3}{\index{Control\-Manager@{Control\-Manager}!T\-Voltage@{T\-Voltage}}
 \index{T\-Voltage@{T\-Voltage}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf Control\-Manager\-::\-T\-Voltage}}}\label{class_control_manager_a336440023399b9165c117020f6b14ec3}
+
+
 Defines the type of Voltage information. 
+
+
 
 Definition at line 77 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a24609feed8b0443df450b070194df20a}{\index{Control\-Manager@{Control\-Manager}!T\-Wattage@{T\-Wattage}}
 \index{T\-Wattage@{T\-Wattage}!ControlManager@{Control\-Manager}}
 \subsubsection[{T\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf Control\-Manager\-::\-T\-Wattage}}}\label{class_control_manager_a24609feed8b0443df450b070194df20a}
+
+
 Defines the type of Wattage/\-Power information. 
+
+
 
 Definition at line 82 of file Control\-Manager.\-h.
 
@@ -213,7 +261,11 @@ Definition at line 82 of file Control\-Manager.\-h.
 \hypertarget{class_control_manager_a7b6de4a130e0de1729c7963edd972120}{\index{Control\-Manager@{Control\-Manager}!Message\-Type\-Values@{Message\-Type\-Values}}
 \index{Message\-Type\-Values@{Message\-Type\-Values}!ControlManager@{Control\-Manager}}
 \subsubsection[{Message\-Type\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Control\-Manager\-::\-Message\-Type\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a7b6de4a130e0de1729c7963edd972120}
-Defines the available values for different message types. \begin{Desc}
+
+
+Defines the available values for different message types. 
+
+\begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Make\-Decision\-Type@{Make\-Decision\-Type}!Control\-Manager@{Control\-Manager}}\index{Control\-Manager@{Control\-Manager}!Make\-Decision\-Type@{Make\-Decision\-Type}}\item[{\em 
@@ -244,14 +296,17 @@ Definition at line 128 of file Control\-Manager.\-h.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_ab81bac3e592705b7ca4b23ce473fe26e}
+
+
 Private constructor for singleton implementation. 
+
+
 
 Definition at line 35 of file Control\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -272,6 +327,19 @@ Here is the call graph for this function\-:
 \item[{{\bf T\-Data\-Point} $\ast$}]{data\-Points}
 \end{DoxyParamCaption}
 )}}\label{class_control_manager_a5b551f560431d0bb0bcf6c338bac8eb3}
+
+
+Relays the demand negotiation response of the client to the External Controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Id} & Unique client id of the responding client. \\
+\hline
+{\em number\-Of\-Data\-Points} & Number of consumption points sent. \\
+\hline
+{\em data\-Points} & Buffer for the consumption points. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 231 of file Control\-Manager.\-cpp.
@@ -307,6 +375,15 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_control_manager_aa4398a05586d9b711aa6101334deefe1}
 
 
+Relays the price request of a client to the External Controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Id} & Unique client id of the requesting client. \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line 203 of file Control\-Manager.\-cpp.
 
 
@@ -340,7 +417,23 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_control_manager_a927449c3a4ba8a5bdc23e3747d5bb077}
 
 
-Definition at line 257 of file Control\-Manager.\-h.
+Returns the name of the object. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]Let's make this not inline for debugging.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Id} & Unique client id for the requested object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object name of the requested client id. 
+\end{DoxyReturn}
+
+
+Definition at line 296 of file Control\-Manager.\-h.
 
 
 
@@ -367,7 +460,14 @@ Starts the decision process by sending necessary information to External Control
 This function starts the synchronous client decision process by sending the required information for each client. The information contains\-:
 \begin{DoxyItemize}
 \item Message Size for easier processing.
-\item Total number of synchronous clients. 
+\item Total number of synchronous clients.
+\item System mode.
+\item System time.
+\item For each client\-:
+\begin{DoxyItemize}
+\item Client unique id
+\item Client terminal voltage 
+\end{DoxyItemize}
 \end{DoxyItemize}
 
 Definition at line 132 of file Control\-Manager.\-cpp.
@@ -439,8 +539,7 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -460,7 +559,24 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_control_manager_a56df538a5380c9091123a5a8a5e0fe86}
 
 
-Definition at line 229 of file Control\-Manager.\-h.
+Registers a new client to its maps for later referencing. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]This shouldn't be inline.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Id} & Unique client id. \\
+\hline
+{\em client\-Name} & Object name. \\
+\hline
+{\em client\-Manager} & \hyperlink{class_client_manager}{Client\-Manager} instance managing the client related works. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file Control\-Manager.\-h.
 
 
 
@@ -491,7 +607,9 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{{\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$}]{client}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_control_manager_a67d548535b36a78e315a0aa5f9f8e6c8}
-Sets the connection information to the accepted External Controller.
+
+
+Sets the connection information to the accepted External Controller. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -504,8 +622,7 @@ Definition at line 187 of file Control\-Manager.\-h.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -534,7 +651,16 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_control_manager_ac3c913a01fe2e5e5467ad3d140c8e9a2}
 
 
-Definition at line 239 of file Control\-Manager.\-h.
+Deletes a client from the maps when connection is broken. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Id} & Unique client id of the broken connection. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 259 of file Control\-Manager.\-h.
 
 
 
@@ -567,7 +693,13 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_control_manager_a4e23ffb481554c26cf99c411dd16ae36}
 
 
-Definition at line 221 of file Control\-Manager.\-h.
+Stops the calling thread until a ready signal is received from the External Controller. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]This doesn't need to be inline. \end{DoxyRefDesc}
+
+
+Definition at line 229 of file Control\-Manager.\-h.
 
 
 
@@ -592,9 +724,7 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_control_manager_a63bfd4667c9c70297f25ae5e5176818e}
 
 
-Returns the only instance of \hyperlink{class_control_manager}{Control\-Manager}. 
-
-Friend method for singleton implementation.
+Friend method for singleton implementation. 
 
 \begin{DoxyReturn}{Returns}
 Returns the reference to the \hyperlink{class_control_manager}{Control\-Manager}.
@@ -611,35 +741,55 @@ Definition at line 11 of file Control\-Manager.\-cpp.
 \hypertarget{class_control_manager_a3081c331c70f5b08dc0ef2615d86cc55}{\index{Control\-Manager@{Control\-Manager}!m\-\_\-client@{m\-\_\-client}}
 \index{m\-\_\-client@{m\-\_\-client}!ControlManager@{Control\-Manager}}
 \subsubsection[{m\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Connected\-Client}$\ast$ Control\-Manager\-::m\-\_\-client\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a3081c331c70f5b08dc0ef2615d86cc55}
+
+
 Pointer to the currently accepted external controller communication handler. 
+
+
 
 Definition at line 157 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a5623f6ef4da21d143a7a6cf5fbee136f}{\index{Control\-Manager@{Control\-Manager}!m\-\_\-client\-Id\-Map@{m\-\_\-client\-Id\-Map}}
 \index{m\-\_\-client\-Id\-Map@{m\-\_\-client\-Id\-Map}!ControlManager@{Control\-Manager}}
 \subsubsection[{m\-\_\-client\-Id\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Client\-Id\-Map} Control\-Manager\-::m\-\_\-client\-Id\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a5623f6ef4da21d143a7a6cf5fbee136f}
+
+
 Map containing the unique id to object name mapping. 
+
+
 
 Definition at line 167 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_af47dee5a077190c6aeb7b9ef3d9cfb3b}{\index{Control\-Manager@{Control\-Manager}!m\-\_\-client\-Manager\-Map@{m\-\_\-client\-Manager\-Map}}
 \index{m\-\_\-client\-Manager\-Map@{m\-\_\-client\-Manager\-Map}!ControlManager@{Control\-Manager}}
 \subsubsection[{m\-\_\-client\-Manager\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Client\-Manager\-Map} Control\-Manager\-::m\-\_\-client\-Manager\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_af47dee5a077190c6aeb7b9ef3d9cfb3b}
+
+
 Map containing the unique id to \hyperlink{class_client_manager}{Client\-Manager} mapping. 
+
+
 
 Definition at line 172 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_ab718d2d17750dfea91411de871855075}{\index{Control\-Manager@{Control\-Manager}!m\-\_\-ready\-Semaphore@{m\-\_\-ready\-Semaphore}}
 \index{m\-\_\-ready\-Semaphore@{m\-\_\-ready\-Semaphore}!ControlManager@{Control\-Manager}}
 \subsubsection[{m\-\_\-ready\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Control\-Manager\-::m\-\_\-ready\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_ab718d2d17750dfea91411de871855075}
-Semaphore that is released when the frame is finished by the external controller. It stops all synchronous control until the next frame starts. This handles the process synchronization with the External Controller in a local way. 
+
+
+Semaphore that is released when the frame is finished by the external controller. 
+
+It stops all synchronous control until the next frame starts. This handles the process synchronization with the External Controller in a local way. 
 
 Definition at line 162 of file Control\-Manager.\-h.
 
 \hypertarget{class_control_manager_a1b71eabaeddfd8ec80e503b734c72e9d}{\index{Control\-Manager@{Control\-Manager}!m\-\_\-server@{m\-\_\-server}}
 \index{m\-\_\-server@{m\-\_\-server}!ControlManager@{Control\-Manager}}
 \subsubsection[{m\-\_\-server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Server} Control\-Manager\-::m\-\_\-server\hspace{0.3cm}{\ttfamily [private]}}}\label{class_control_manager_a1b71eabaeddfd8ec80e503b734c72e9d}
+
+
 Implements the T\-C\-P server for external controller communication. 
+
+
 
 Definition at line 152 of file Control\-Manager.\-h.
 

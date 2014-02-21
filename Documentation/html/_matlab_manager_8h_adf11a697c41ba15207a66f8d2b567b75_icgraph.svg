@@ -43,7 +43,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="SystemManager::AdvanceTimeStep">
+<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="Main time iteration of the system. ">
 <polygon style="fill:white;stroke:black;" points="378,-113 378,-134 588,-134 588,-113 378,-113"/>
 <text text-anchor="middle" x="483" y="-120" style="font-family:Arial;font-size:10.00;">SystemManager::AdvanceTimeStep</text>
 </a>
@@ -79,7 +79,7 @@
 </g>
 <!-- Node9 -->
 <g id="node18" class="node"><title>Node9</title>
-<a xlink:href="_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" target="_top" xlink:title="MatlabReceiveHandler">
+<a xlink:href="_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" target="_top" xlink:title="Wrapper callback function that forwards the received data to MatlabManager. ">
 <polygon style="fill:white;stroke:black;" points="180,1 180,-20 319,-20 319,1 180,1"/>
 <text text-anchor="middle" x="249" y="-6" style="font-family:Arial;font-size:10.00;">MatlabReceiveHandler</text>
 </a>
@@ -113,7 +113,7 @@
 </g>
 <!-- Node8 -->
 <g id="node16" class="node"><title>Node8</title>
-<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="MatlabManager::MatlabManager">
+<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="Private constructor to implement the singleton. ">
 <polygon style="fill:white;stroke:black;" points="820,-27 820,-48 1012,-48 1012,-27 820,-27"/>
 <text text-anchor="middle" x="916" y="-34" style="font-family:Arial;font-size:10.00;">MatlabManager::MatlabManager</text>
 </a>
@@ -125,7 +125,7 @@
 </g>
 <!-- Node10 -->
 <g id="node20" class="node"><title>Node10</title>
-<a xlink:href="class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" target="_top" xlink:title="MatlabManager::SetClient">
+<a xlink:href="class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" target="_top" xlink:title="Sets the OpenDSS controller connection information. ">
 <polygon style="fill:white;stroke:black;" points="405,1 405,-20 562,-20 562,1 405,1"/>
 <text text-anchor="middle" x="483" y="-6" style="font-family:Arial;font-size:10.00;">MatlabManager::SetClient</text>
 </a>

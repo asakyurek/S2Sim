@@ -1,6 +1,6 @@
 <map id="ControlManager::MakeDecision" name="ControlManager::MakeDecision">
-<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="348,5,428,32"/>
-<area shape="rect" href="$_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" title="GetSystemManager" alt="" coords="307,56,469,83"/>
-<area shape="rect" href="$_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" title="GetMatlabManager" alt="" coords="308,107,468,133"/>
-<area shape="rect" href="$class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" title="TCPConnectedClient\l::SendData" alt="" coords="303,157,473,203"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="8 parameter log message " alt="" coords="348,5,428,32"/>
+<area shape="rect" href="$_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" title="Singleton function that returns the only instance of SystemManager. " alt="" coords="307,56,469,83"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" title="This function returns the only instance of MatlabManager. " alt="" coords="308,107,468,133"/>
+<area shape="rect" href="$class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" title="Sends data to the connected client. " alt="" coords="303,157,473,203"/>
 </map>

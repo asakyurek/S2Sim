@@ -1,14 +1,14 @@
 <map id="S2Sim/LogPrint.h" name="S2Sim/LogPrint.h">
-<area shape="rect" href="$_connection_manager_8h.html" title="S2Sim/ConnectionManager.h" alt="" coords="197,84,429,111"/>
-<area shape="rect" href="$_client_manager_8h.html" title="S2Sim/ClientManager.h" alt="" coords="508,161,697,188"/>
-<area shape="rect" href="$_system_manager_8h.html" title="S2Sim/SystemManager.h" alt="" coords="504,316,704,343"/>
-<area shape="rect" href="$_control_manager_8h.html" title="S2Sim/ControlManager.h" alt="" coords="181,239,381,265"/>
-<area shape="rect" href="$_log_print_8cpp.html" title="S2Sim/LogPrint.cpp" alt="" coords="813,84,973,111"/>
-<area shape="rect" href="$main_8cpp.html" title="S2Sim/main.cpp" alt="" coords="5,471,144,497"/>
-<area shape="rect" href="$_connection_manager_8cpp.html" title="S2Sim/ConnectionManager.cpp" alt="" coords="185,161,433,188"/>
-<area shape="rect" href="$_client_manager_8cpp.html" title="S2Sim/ClientManager.cpp" alt="" coords="456,239,664,265"/>
-<area shape="rect" href="$_matlab_manager_8h.html" title="S2Sim/MatlabManager.h" alt="" coords="295,393,492,420"/>
-<area shape="rect" href="$_system_manager_8cpp.html" title="S2Sim/SystemManager.cpp" alt="" coords="516,393,735,420"/>
-<area shape="rect" href="$_matlab_manager_8cpp.html" title="S2Sim/MatlabManager.cpp" alt="" coords="287,471,500,497"/>
-<area shape="rect" href="$_control_manager_8cpp.html" title="S2Sim/ControlManager.cpp" alt="" coords="112,316,331,343"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="This file defines the ConnectionManager class. " alt="" coords="205,84,437,111"/>
+<area shape="rect" href="$_client_manager_8h.html" title="Header file for the ClientManager class. " alt="" coords="359,161,548,188"/>
+<area shape="rect" href="$_system_manager_8h.html" title="Defines the SystemManager class. " alt="" coords="511,316,711,343"/>
+<area shape="rect" href="$_control_manager_8h.html" title="This file defines the ControlManager class. " alt="" coords="204,239,404,265"/>
+<area shape="rect" href="$_log_print_8cpp.html" title="Defines logging related parameters. " alt="" coords="836,84,996,111"/>
+<area shape="rect" href="$main_8cpp.html" title="Main file that starts an infinite running loop on the SystemManager::AdvanceTimeStep method..." alt="" coords="191,471,329,497"/>
+<area shape="rect" href="$_connection_manager_8cpp.html" title="This file implements the ConnectionManager class. " alt="" coords="36,161,284,188"/>
+<area shape="rect" href="$_client_manager_8cpp.html" title="Source file for the ClientManager class. " alt="" coords="503,239,711,265"/>
+<area shape="rect" href="$_matlab_manager_8h.html" title="Defines the MatlabManager class. " alt="" coords="443,393,640,420"/>
+<area shape="rect" href="$_system_manager_8cpp.html" title="Implements the SystemManager class. " alt="" coords="664,393,883,420"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html" title="Implements the MatlabManager class. " alt="" coords="435,471,648,497"/>
+<area shape="rect" href="$_control_manager_8cpp.html" title="This file implements the ControlManager class. " alt="" coords="217,316,436,343"/>
 </map>

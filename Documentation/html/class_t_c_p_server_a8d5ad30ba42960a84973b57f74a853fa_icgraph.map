@@ -1,5 +1,5 @@
 <map id="TCPServer::SetPort" name="TCPServer::SetPort">
-<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="255,5,431,51"/>
-<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="ControlManager::ControlManager" alt="" coords="211,75,475,101"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="215,125,471,152"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="Private constructor for singleton implementation. " alt="" coords="255,5,431,51"/>
+<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="Private constructor for singleton implementation. " alt="" coords="211,75,475,101"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="215,125,471,152"/>
 </map>

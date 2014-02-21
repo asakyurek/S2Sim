@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_terra_swarm_1_1_network_byte_accessor.html#a860d2c70eadf18eccbcf1488f1a0e5d5" target="_top" xlink:title="TerraSwarm::NetworkByteAccessor\l::operator=">
+<a xlink:href="class_terra_swarm_1_1_network_byte_accessor.html#a860d2c70eadf18eccbcf1488f1a0e5d5" target="_top" xlink:title="Same as Write() to simplify code writing. ">
 <polygon style="fill:white;stroke:black;" points="238,-0 238,-34 440,-34 440,-0 238,-0"/>
 <text text-anchor="start" x="246" y="-20" style="font-family:Arial;font-size:10.00;">TerraSwarm::NetworkByteAccessor</text>
 <text text-anchor="middle" x="339" y="-7" style="font-family:Arial;font-size:10.00;">::operator=</text>

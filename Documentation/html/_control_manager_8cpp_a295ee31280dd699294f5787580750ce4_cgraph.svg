@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="422,-113 422,-134 482,-134 482,-113 422,-113"/>
 <text text-anchor="middle" x="452" y="-120" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -59,7 +59,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="410,-75 410,-96 495,-96 495,-75 410,-75"/>
 <text text-anchor="middle" x="452" y="-82" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>
@@ -71,7 +71,7 @@
 </g>
 <!-- Node6 -->
 <g id="node12" class="node"><title>Node6</title>
-<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="ErrorPrint">
+<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="6 parameter error message ">
 <polygon style="fill:white;stroke:black;" points="420,-37 420,-58 485,-58 485,-37 420,-37"/>
 <text text-anchor="middle" x="452" y="-44" style="font-family:Arial;font-size:10.00;">ErrorPrint</text>
 </a>
@@ -83,7 +83,7 @@
 </g>
 <!-- Node7 -->
 <g id="node14" class="node"><title>Node7</title>
-<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="GetSystemManager">
+<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="Singleton function that returns the only instance of SystemManager. ">
 <polygon style="fill:white;stroke:black;" points="391,1 391,-20 514,-20 514,1 391,1"/>
 <text text-anchor="middle" x="452" y="-6" style="font-family:Arial;font-size:10.00;">GetSystemManager</text>
 </a>

@@ -1,4 +1,4 @@
 <map id="TerraSwarm::NetworkByteAccessor::EndianConverter::HostToNetwork" name="TerraSwarm::NetworkByteAccessor::EndianConverter::HostToNetwork">
-<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a7d6e11dd4a5f86e6c036bbcf64bccf25" title="TerraSwarm::NetworkByteAccessor\l::Write" alt="" coords="323,5,592,51"/>
-<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a860d2c70eadf18eccbcf1488f1a0e5d5" title="TerraSwarm::NetworkByteAccessor\l::operator=" alt="" coords="640,5,909,51"/>
+<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a7d6e11dd4a5f86e6c036bbcf64bccf25" title="Writes a value to the given address index with correct byte order. " alt="" coords="323,5,592,51"/>
+<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a860d2c70eadf18eccbcf1488f1a0e5d5" title="Same as Write() to simplify code writing. " alt="" coords="640,5,909,51"/>
 </map>

@@ -1,14 +1,14 @@
 <map id="IPAddress::GetSocketSize" name="IPAddress::GetSocketSize">
-<area shape="rect" href="$class_t_c_p_client.html#af093afaf101502080174a55518070c8b" title="TCPClient::Connect" alt="" coords="276,28,436,55"/>
-<area shape="rect" href="$class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" title="TCPServer::SetAddress" alt="" coords="264,79,448,105"/>
-<area shape="rect" href="$class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a" title="TCPServer::Accept" alt="" coords="280,129,432,156"/>
-<area shape="rect" href="$class_u_d_p_socket.html#ab78ab0104e1fafc5feb1b3459e537e32" title="UDPSocket::SendData" alt="" coords="267,180,445,207"/>
-<area shape="rect" href="$class_u_d_p_socket.html#a4f70d5a5bf2bb16fdd897355bb80741b" title="UDPSocket::ReceiveData" alt="" coords="256,231,456,257"/>
-<area shape="rect" href="$class_u_d_p_socket.html#a28960551bca2099a03ad6fa39ef28065" title="UDPSocket::SetIPAddress" alt="" coords="256,281,456,308"/>
-<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="TCPServer::SetPort" alt="" coords="515,75,669,101"/>
-<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="772,5,948,51"/>
-<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="ControlManager::ControlManager" alt="" coords="728,75,992,101"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="732,125,988,152"/>
-<area shape="rect" href="$class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083" title="ThreadedTCPServer::\lExecutionBody" alt="" coords="505,125,679,171"/>
-<area shape="rect" href="$class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" title="UDPSocket::SetPort" alt="" coords="512,281,672,308"/>
+<area shape="rect" href="$class_t_c_p_client.html#af093afaf101502080174a55518070c8b" title="Starts a TCP connection to a server. " alt="" coords="276,28,436,55"/>
+<area shape="rect" href="$class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" title="Sets the IP address of the server. " alt="" coords="264,79,448,105"/>
+<area shape="rect" href="$class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a" title="This method makes the TCP server accept any incoming connection attempt. " alt="" coords="280,129,432,156"/>
+<area shape="rect" href="$class_u_d_p_socket.html#ab78ab0104e1fafc5feb1b3459e537e32" title="Sends a data to another UDP socket. " alt="" coords="267,180,445,207"/>
+<area shape="rect" href="$class_u_d_p_socket.html#a4f70d5a5bf2bb16fdd897355bb80741b" title="Receives data from another UDP Socket. " alt="" coords="256,231,456,257"/>
+<area shape="rect" href="$class_u_d_p_socket.html#a28960551bca2099a03ad6fa39ef28065" title="Sets the IP Address of the socket. " alt="" coords="256,281,456,308"/>
+<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="Sets the listening port of the server. " alt="" coords="515,75,669,101"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="Private constructor for singleton implementation. " alt="" coords="772,5,948,51"/>
+<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="Private constructor for singleton implementation. " alt="" coords="728,75,992,101"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="732,125,988,152"/>
+<area shape="rect" href="$class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083" title="The execution body of the thread. " alt="" coords="505,125,679,171"/>
+<area shape="rect" href="$class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" title="Sets the port of the UDP Socket. " alt="" coords="512,281,672,308"/>
 </map>

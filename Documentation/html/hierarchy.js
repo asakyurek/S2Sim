@@ -18,7 +18,6 @@ var hierarchy =
     [ "TerraSwarm::NetworkByteAccessor< byteIndex, dataSize >::EndianConverter< TInput, 4 >", "class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_014_01_4.html", null ],
     [ "TerraSwarm::Synchronous::GetPrice", "class_terra_swarm_1_1_synchronous_1_1_get_price.html", null ],
     [ "ThreadBase::InputStructure", "struct_thread_base_1_1_input_structure.html", null ],
-    [ "IntSizeNot4", "class_int_size_not4.html", null ],
     [ "IPAddress", "class_i_p_address.html", null ],
     [ "MatlabManager", "class_matlab_manager.html", null ],
     [ "TerraSwarm::MessageEnder", "class_terra_swarm_1_1_message_ender.html", null ],
@@ -44,7 +43,6 @@ var hierarchy =
     ] ],
     [ "SystemManager", "class_system_manager.html", null ],
     [ "ThreadBase", "class_thread_base.html", [
-      [ "MyThread", "class_my_thread.html", null ],
       [ "ThreadedTCPClient", "class_threaded_t_c_p_client.html", null ],
       [ "ThreadedTCPConnectedClient", "class_threaded_t_c_p_connected_client.html", null ],
       [ "ThreadedTCPServer", "class_threaded_t_c_p_server.html", null ]

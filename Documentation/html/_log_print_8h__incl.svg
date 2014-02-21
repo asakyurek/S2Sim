@@ -28,7 +28,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Semaphore.h">
+<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. ">
 <polygon style="fill:white;stroke:black;" points="45,-58 45,-79 135,-79 135,-58 45,-58"/>
 <text text-anchor="middle" x="90" y="-65" style="font-family:Arial;font-size:10.00;">Semaphore.h</text>
 </a>

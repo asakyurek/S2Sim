@@ -1,5 +1,5 @@
 <map id="MatlabReceiveHandler" name="MatlabReceiveHandler">
-<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="MatlabManager::SetClient" alt="" coords="241,5,449,32"/>
+<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="Sets the OpenDSS controller connection information. " alt="" coords="241,5,449,32"/>
 <area shape="rect" href="$_matlab_manager_8cpp.html#aa340f269e04280ce987b3a8325f27580" title="MatlabNotificationHandler" alt="" coords="500,5,711,32"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="760,5,1016,32"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="760,5,1016,32"/>
 </map>

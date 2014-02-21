@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_t_c_p_client_8cpp.html" target="_top" xlink:title="S2Sim/SocketLibrary\l/TCPClient.cpp">
+<a xlink:href="_t_c_p_client_8cpp.html" target="_top" xlink:title="Implements the TCPClient class. ">
 <polygon style="fill:white;stroke:black;" points="0,-70 0,-104 127,-104 127,-70 0,-70"/>
 <text text-anchor="start" x="8" y="-90" style="font-family:Arial;font-size:10.00;">S2Sim/SocketLibrary</text>
 <text text-anchor="middle" x="63" y="-77" style="font-family:Arial;font-size:10.00;">/TCPClient.cpp</text>
@@ -32,7 +32,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_threaded_t_c_p_client_8h.html" target="_top" xlink:title="S2Sim/SocketLibrary\l/ThreadedTCPClient.h">
+<a xlink:href="_threaded_t_c_p_client_8h.html" target="_top" xlink:title="Defines the ThreadedTCPClient class. ">
 <polygon style="fill:white;stroke:black;" points="144,-70 144,-104 279,-104 279,-70 144,-70"/>
 <text text-anchor="start" x="152" y="-90" style="font-family:Arial;font-size:10.00;">S2Sim/SocketLibrary</text>
 <text text-anchor="middle" x="211" y="-77" style="font-family:Arial;font-size:10.00;">/ThreadedTCPClient.h</text>
@@ -45,7 +45,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_threaded_t_c_p_client_8cpp.html" target="_top" xlink:title="S2Sim/SocketLibrary\l/ThreadedTCPClient.cpp">
+<a xlink:href="_threaded_t_c_p_client_8cpp.html" target="_top" xlink:title="Implements the ThreadedTCPClient class. ">
 <polygon style="fill:white;stroke:black;" points="137,-0 137,-34 285,-34 285,-0 137,-0"/>
 <text text-anchor="start" x="145" y="-20" style="font-family:Arial;font-size:10.00;">S2Sim/SocketLibrary</text>
 <text text-anchor="middle" x="211" y="-7" style="font-family:Arial;font-size:10.00;">/ThreadedTCPClient.cpp</text>

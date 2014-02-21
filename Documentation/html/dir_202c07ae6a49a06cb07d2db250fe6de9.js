@@ -28,7 +28,6 @@ var dir_202c07ae6a49a06cb07d2db250fe6de9 =
     [ "GetPrice.h", "_get_price_8h.html", [
       [ "GetPrice", "class_terra_swarm_1_1_synchronous_1_1_get_price.html", "class_terra_swarm_1_1_synchronous_1_1_get_price" ]
     ] ],
-    [ "main.cpp", "_terraswarm_library_2main_8cpp.html", "_terraswarm_library_2main_8cpp" ],
     [ "MessageEnder.cpp", "_message_ender_8cpp.html", null ],
     [ "MessageEnder.h", "_message_ender_8h.html", [
       [ "MessageEnder", "class_terra_swarm_1_1_message_ender.html", "class_terra_swarm_1_1_message_ender" ]

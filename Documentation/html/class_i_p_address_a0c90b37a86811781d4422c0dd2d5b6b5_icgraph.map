@@ -1,9 +1,9 @@
 <map id="IPAddress::GetAddress" name="IPAddress::GetAddress">
-<area shape="rect" href="$class_i_p_address.html#acaa3d485fedf874453d3fd0ab7e93a64" title="IPAddress::operator==" alt="" coords="232,49,413,76"/>
-<area shape="rect" href="$class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" title="IPAddress::SetAddress" alt="" coords="235,100,411,127"/>
-<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="TCPServer::SetPort" alt="" coords="464,75,619,101"/>
-<area shape="rect" href="$class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" title="UDPSocket::SetPort" alt="" coords="461,125,621,152"/>
-<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="713,5,889,51"/>
-<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="ControlManager::ControlManager" alt="" coords="669,75,933,101"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="673,125,929,152"/>
+<area shape="rect" href="$class_i_p_address.html#acaa3d485fedf874453d3fd0ab7e93a64" title="Checks whether the addresses and ports are the same. " alt="" coords="232,49,413,76"/>
+<area shape="rect" href="$class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" title="Sets the address field of the structure. " alt="" coords="235,100,411,127"/>
+<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="Sets the listening port of the server. " alt="" coords="464,75,619,101"/>
+<area shape="rect" href="$class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" title="Sets the port of the UDP Socket. " alt="" coords="461,125,621,152"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="Private constructor for singleton implementation. " alt="" coords="713,5,889,51"/>
+<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="Private constructor for singleton implementation. " alt="" coords="669,75,933,101"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="673,125,929,152"/>
 </map>

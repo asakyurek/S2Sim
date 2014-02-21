@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="IPAddress::GetPort">
+<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="Return a reference to the port value. ">
 <polygon style="fill:white;stroke:black;" points="149,1 149,-20 262,-20 262,1 149,1"/>
 <text text-anchor="middle" x="205" y="-6" style="font-family:Arial;font-size:10.00;">IPAddress::GetPort</text>
 </a>

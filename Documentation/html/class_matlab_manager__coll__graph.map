@@ -1,10 +1,10 @@
 <map id="MatlabManager" name="MatlabManager">
-<area shape="rect" href="$class_threaded_t_c_p_connected_client.html" title="ThreadedTCPConnectedClient" alt="" coords="5,305,248,332"/>
-<area shape="rect" href="$class_threaded_t_c_p_server.html" title="ThreadedTCPServer" alt="" coords="276,401,441,428"/>
-<area shape="rect" href="$class_t_c_p_connected_client.html" title="TCPConnectedClient" alt="" coords="99,199,269,225"/>
+<area shape="rect" href="$class_threaded_t_c_p_connected_client.html" title="Manages the connection to an accepted client on the server side and receives data in a separate threa..." alt="" coords="5,305,248,332"/>
+<area shape="rect" href="$class_threaded_t_c_p_server.html" title="Defines the threaded version of TCPServer that accepts clients in another thread in the background..." alt="" coords="276,401,441,428"/>
+<area shape="rect" href="$class_t_c_p_connected_client.html" title="Manages the connection to a connected client on the server side. " alt="" coords="99,199,269,225"/>
 <area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SOCK_STREAM \&gt;" alt="" coords="279,103,521,129"/>
-<area shape="rect" href="$class_t_c_p_server.html" title="TCPServer" alt="" coords="437,252,533,279"/>
-<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SocketType \&gt;" alt="" coords="289,7,511,33"/>
-<area shape="rect" href="$class_i_p_address.html" title="IPAddress" alt="" coords="140,103,228,129"/>
-<area shape="rect" href="$class_thread_base.html" title="ThreadBase" alt="" coords="313,199,420,225"/>
+<area shape="rect" href="$class_t_c_p_server.html" title="Defines a TCP server that can listen to connection attempts and can accept them for communication..." alt="" coords="437,252,533,279"/>
+<area shape="rect" href="$class_socket_base.html" title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi..." alt="" coords="289,7,511,33"/>
+<area shape="rect" href="$class_i_p_address.html" title="This class is an abstraction of the OS IP Address structure. " alt="" coords="140,103,228,129"/>
+<area shape="rect" href="$class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. " alt="" coords="313,199,420,225"/>
 </map>

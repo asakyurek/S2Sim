@@ -1,7 +1,7 @@
 <map id="S2Sim/TerraswarmLibrary/ClientConnectionRequest.cpp" name="S2Sim/TerraswarmLibrary/ClientConnectionRequest.cpp">
-<area shape="rect" href="$_client_connection_request_8h.html" title="ClientConnectionRequest.h" alt="" coords="77,100,296,127"/>
-<area shape="rect" href="$_message_header_8h.html" title="MessageHeader.h" alt="" coords="5,255,155,281"/>
-<area shape="rect" href="$_message_ender_8h.html" title="MessageEnder.h" alt="" coords="117,177,256,204"/>
-<area shape="rect" href="$_network_byte_accessor_8h.html" title="NetworkByteAccessor.h" alt="" coords="99,332,285,359"/>
-<area shape="rect" href="$_compile_time_checker_library_8h.html" title="CompileTimeCheckerLibrary.h" alt="" coords="163,409,403,436"/>
+<area shape="rect" href="$_client_connection_request_8h.html" title="Defines the ClientConnectionRequest classes. " alt="" coords="77,100,296,127"/>
+<area shape="rect" href="$_message_header_8h.html" title="Defines the MessageHeader class. " alt="" coords="5,255,155,281"/>
+<area shape="rect" href="$_message_ender_8h.html" title="Defines a MessageEnder class. " alt="" coords="117,177,256,204"/>
+<area shape="rect" href="$_network_byte_accessor_8h.html" title="Defines the NetworkByteAccessor class for byte order conversion and easier data access. " alt="" coords="99,332,285,359"/>
+<area shape="rect" href="$_compile_time_checker_library_8h.html" title="This file contains template classes to do compile time checking. " alt="" coords="163,409,403,436"/>
 </map>

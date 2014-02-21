@@ -1,6 +1,11 @@
 \hypertarget{_posix_thread_base_8h}{\section{S2\-Sim/\-Thread\-Library/\-Posix\-Thread\-Base.h File Reference}
 \label{_posix_thread_base_8h}\index{S2\-Sim/\-Thread\-Library/\-Posix\-Thread\-Base.\-h@{S2\-Sim/\-Thread\-Library/\-Posix\-Thread\-Base.\-h}}
 }
+
+
+Defines the \hyperlink{class_thread_base}{Thread\-Base} class.  
+
+
 {\ttfamily \#include $<$pthread.\-h$>$}\\*
 Include dependency graph for Posix\-Thread\-Base.\-h\-:\nopagebreak
 \begin{figure}[H]
@@ -13,14 +18,24 @@ Include dependency graph for Posix\-Thread\-Base.\-h\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_thread_base}{Thread\-Base}
-\item 
+\begin{DoxyCompactList}\small\item\em Provides a base class that can be inherited from to gain threading capabilities. \end{DoxyCompactList}\item 
 struct \hyperlink{struct_thread_base_1_1_input_structure}{Thread\-Base\-::\-Input\-Structure}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Special Input structure sent to the wrapper function\-: \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void $\ast$ \hyperlink{_posix_thread_base_8h_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover} (void $\ast$)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Wrapper function called by the operating system a the thread body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the \hyperlink{class_thread_base}{Thread\-Base} class. \begin{DoxyDate}{Date}
+Dec 21, 2013 \-: Alper Sinan Akyurek 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{_posix_thread_base_8h_source}{Posix\-Thread\-Base.\-h}.
+
 
 
 \subsection{Function Documentation}
@@ -31,3 +46,19 @@ void $\ast$ \hyperlink{_posix_thread_base_8h_a2567acd55e8bbdbf8ac90a8f77bb4943}{
 \item[{void $\ast$}]{}
 \end{DoxyParamCaption}
 )}}\label{_posix_thread_base_8h_a2567acd55e8bbdbf8ac90a8f77bb4943}
+
+
+Wrapper function called by the operating system a the thread body. 
+
+Friend wrapper function that is actually called by the O\-S as the thread body.
+
+It takes the actual class pointer and the input into the execution function from its input and executes the \char`\"{}actual thread body\char`\"{} with the desired input. This allows us to use the O\-S thread utilities to run a C++ class method, rather than a plain C function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void$\ast$} & Special input structure containing the class address and the real input to the execution body.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whatever the class method returns. 
+\end{DoxyReturn}

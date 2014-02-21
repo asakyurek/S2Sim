@@ -1,4 +1,4 @@
 <map id="ConnectionReceiveHandler" name="ConnectionReceiveHandler">
 <area shape="rect" href="$_connection_manager_8cpp.html#a510f5a0926d162b7f546fcf5b8f054e8" title="ConnectionNotificationHandler" alt="" coords="276,15,521,41"/>
-<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="572,5,748,51"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="Private constructor for singleton implementation. " alt="" coords="572,5,748,51"/>
 </map>

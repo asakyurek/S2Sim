@@ -1,4 +1,4 @@
 <map id="ControlManager::SetClient" name="ControlManager::SetClient">
 <area shape="rect" href="$_control_manager_8cpp.html#a5f09b25cf454170e17d1aa3c2707273a" title="ControlNotificationHandler" alt="" coords="267,5,483,32"/>
-<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="ControlManager::ControlManager" alt="" coords="531,5,795,32"/>
+<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="Private constructor for singleton implementation. " alt="" coords="531,5,795,32"/>
 </map>

@@ -3,6 +3,11 @@
 }
 
 
+Provides a base class that can be inherited from to gain threading capabilities.  
+
+
+
+
 {\ttfamily \#include $<$Posix\-Thread\-Base.\-h$>$}
 
 
@@ -18,7 +23,7 @@ Inheritance diagram for Thread\-Base\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{struct_thread_base_1_1_input_structure}{Input\-Structure}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Special Input structure sent to the wrapper function\-: \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,98 +32,100 @@ enum \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{Started\-Va
 \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started} = ( T\-Started )true, 
 \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started} = ( T\-Started )false
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines values for the T\-Started type. \end{DoxyCompactList}\item 
 enum \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{Started\-Values} \{ \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started} = ( T\-Started )true, 
 \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started} = ( T\-Started )false, 
 \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started} = ( T\-Started )true, 
 \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started} = ( T\-Started )false
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines values for the T\-Started type. \end{DoxyCompactList}\item 
 typedef size\-\_\-t \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the Stack Size type for the thread. \end{DoxyCompactList}\item 
 typedef bool \hyperlink{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{T\-Started}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines a type indicating whether the thread is started. \end{DoxyCompactList}\item 
 typedef size\-\_\-t \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the Stack Size type for the thread. \end{DoxyCompactList}\item 
 typedef bool \hyperlink{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{T\-Started}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines a type indicating whether the thread is started. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}{Thread\-Base} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes values but does not create a thread. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_a9e152f859a8ae5a8d76672f0b53da5c7}{Thread\-Base} (void $\ast$input)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes values and starts the thread with the given input. \end{DoxyCompactList}\item 
 virtual \hyperlink{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}{$\sim$\-Thread\-Base} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Stops the thread and frees the allocates attribute. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_a50bd80044eb3845856abef9535f1903c}{Thread\-Base} (const \hyperlink{class_thread_base}{Thread\-Base} \&copy)
-\item 
+\begin{DoxyCompactList}\small\item\em Copies the contents of another thread. \end{DoxyCompactList}\item 
 void \hyperlink{class_thread_base_add14648bdc8059dd8db41166130921dd}{Set\-Stack\-Size} (const \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} stack\-Size)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the stack size of the thread. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} \hyperlink{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{Get\-Stack\-Size} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the stack size of the thread. \end{DoxyCompactList}\item 
 void \hyperlink{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{Start\-Thread} (void $\ast$input)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates a thread and starts executing with the given input. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}{Thread\-Base} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the values but does not create a thread. \end{DoxyCompactList}\item 
 virtual \hyperlink{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}{$\sim$\-Thread\-Base} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Closes the thread handle. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_a50bd80044eb3845856abef9535f1903c}{Thread\-Base} (const \hyperlink{class_thread_base}{Thread\-Base} \&copy)
-\item 
+\begin{DoxyCompactList}\small\item\em Copies the contents of the other class. \end{DoxyCompactList}\item 
 void \hyperlink{class_thread_base_add14648bdc8059dd8db41166130921dd}{Set\-Stack\-Size} (const \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} stack\-Size)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the stack size of the thread. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} \hyperlink{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{Get\-Stack\-Size} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the stack size of the thread. \end{DoxyCompactList}\item 
 void \hyperlink{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{Start\-Thread} (void $\ast$input)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Creates a thread and starts executing with the given input. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef pthread\-\_\-t \hyperlink{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}{T\-Thread\-Id}
-\item 
+\begin{DoxyCompactList}\small\item\em Type for the thread handle used for the O\-S utilities. \end{DoxyCompactList}\item 
 typedef pthread\-\_\-attr\-\_\-t \hyperlink{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}{T\-Thread\-Attribute}
-\item 
+\begin{DoxyCompactList}\small\item\em Type for the thread attributes. \end{DoxyCompactList}\item 
 typedef D\-W\-O\-R\-D \hyperlink{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}{T\-Thread\-Id}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the Thread Id type. \end{DoxyCompactList}\item 
 typedef H\-A\-N\-D\-L\-E \hyperlink{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}{T\-Thread\-Handle}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the Thread Handle type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void $\ast$ \hyperlink{class_thread_base_a844dd13473fee9283197b3905a81da45}{Execute\-Thread} (void $\ast$input)
-\item 
-virtual void $\ast$ \hyperlink{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{Execution\-Body} (void $\ast$)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Function called by the wrapper function \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the O\-S. \end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e}{Execution\-Body} (void $\ast$input)=0
+\begin{DoxyCompactList}\small\item\em Purely virtual method to be overridden by the inheriting class to implement its own thread body. \end{DoxyCompactList}\item 
 void $\ast$ \hyperlink{class_thread_base_a844dd13473fee9283197b3905a81da45}{Execute\-Thread} (void $\ast$input)
-\item 
+\begin{DoxyCompactList}\small\item\em Function called by the wrapper function \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the O\-S. \end{DoxyCompactList}\item 
 virtual void $\ast$ \hyperlink{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{Execution\-Body} (void $\ast$)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Purely virtual method to be overridden by the inheriting class to implement its own thread body. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{T\-Started} \hyperlink{class_thread_base_a5e2958ae98b989268d1e2be629789d64}{m\-\_\-started}
-\item 
+\begin{DoxyCompactList}\small\item\em Indicates whether the thread is started to execute. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}{T\-Thread\-Id} \hyperlink{class_thread_base_ae8574271bdcbfd80cbdde64c77bc7148}{m\-\_\-thread\-Id}
-\item 
+\begin{DoxyCompactList}\small\item\em Variable holding the handle to the thread. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}{T\-Thread\-Attribute} \hyperlink{class_thread_base_ad0d98c6f93707aef346cc66d8de78729}{m\-\_\-thread\-Attribute}
-\item 
+\begin{DoxyCompactList}\small\item\em Variable holding the attributes of the thread. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}{T\-Thread\-Handle} \hyperlink{class_thread_base_a4f279b94eef423109969f69fadd9e674}{m\-\_\-thread\-Handle}
-\item 
+\begin{DoxyCompactList}\small\item\em Variable holding the handle to the thread. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} \hyperlink{class_thread_base_a9c8b3446d099074f0f1608e5246e137d}{m\-\_\-stack\-Size}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Variable holding the stack size of the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 void $\ast$ \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover} (void $\ast$)
-\item 
+\begin{DoxyCompactList}\small\item\em Friend wrapper function that is actually called by the O\-S as the thread body. \end{DoxyCompactList}\item 
 D\-W\-O\-R\-D W\-I\-N\-A\-P\-I \hyperlink{class_thread_base_a790b21ad102d0b813d14e54f4fbf4460}{Windows\-Thread\-Cover} (L\-P\-V\-O\-I\-D)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Friend wrapper function that is actually called by the O\-S as the thread body. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Provides a base class that can be inherited from to gain threading capabilities. 
 
+Any class that wants to have threading capability can inherit from this class and override its purely virtual method \hyperlink{class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e}{Thread\-Base\-::\-Execution\-Body}. This overriden method will be the threads main body. 
 
-Definition at line 18 of file Posix\-Thread\-Base.\-h.
+Definition at line 30 of file Posix\-Thread\-Base.\-h.
 
 
 
@@ -128,56 +135,88 @@ Definition at line 18 of file Posix\-Thread\-Base.\-h.
 \subsubsection[{T\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t {\bf Thread\-Base\-::\-T\-Stack\-Size}}}\label{class_thread_base_af45bd74387b409e15989f7eddbaf3718}
 
 
-Definition at line 35 of file Posix\-Thread\-Base.\-h.
+Defines the Stack Size type for the thread. 
+
+
+
+Definition at line 81 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{\index{Thread\-Base@{Thread\-Base}!T\-Stack\-Size@{T\-Stack\-Size}}
 \index{T\-Stack\-Size@{T\-Stack\-Size}!ThreadBase@{Thread\-Base}}
 \subsubsection[{T\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t {\bf Thread\-Base\-::\-T\-Stack\-Size}}}\label{class_thread_base_af45bd74387b409e15989f7eddbaf3718}
 
 
-Definition at line 35 of file Windows\-Thread\-Base.\-h.
+Defines the Stack Size type for the thread. 
+
+
+
+Definition at line 82 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{\index{Thread\-Base@{Thread\-Base}!T\-Started@{T\-Started}}
 \index{T\-Started@{T\-Started}!ThreadBase@{Thread\-Base}}
 \subsubsection[{T\-Started}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Thread\-Base\-::\-T\-Started}}}\label{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}
 
 
-Definition at line 36 of file Posix\-Thread\-Base.\-h.
+Defines a type indicating whether the thread is started. 
+
+
+
+Definition at line 86 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{\index{Thread\-Base@{Thread\-Base}!T\-Started@{T\-Started}}
 \index{T\-Started@{T\-Started}!ThreadBase@{Thread\-Base}}
 \subsubsection[{T\-Started}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Thread\-Base\-::\-T\-Started}}}\label{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}
 
 
-Definition at line 36 of file Windows\-Thread\-Base.\-h.
+Defines a type indicating whether the thread is started. 
+
+
+
+Definition at line 87 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Attribute@{T\-Thread\-Attribute}}
 \index{T\-Thread\-Attribute@{T\-Thread\-Attribute}!ThreadBase@{Thread\-Base}}
 \subsubsection[{T\-Thread\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}typedef pthread\-\_\-attr\-\_\-t {\bf Thread\-Base\-::\-T\-Thread\-Attribute}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}
 
 
-Definition at line 23 of file Posix\-Thread\-Base.\-h.
+Type for the thread attributes. 
+
+
+
+Definition at line 48 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Handle@{T\-Thread\-Handle}}
 \index{T\-Thread\-Handle@{T\-Thread\-Handle}!ThreadBase@{Thread\-Base}}
 \subsubsection[{T\-Thread\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}typedef H\-A\-N\-D\-L\-E {\bf Thread\-Base\-::\-T\-Thread\-Handle}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}
 
 
-Definition at line 23 of file Windows\-Thread\-Base.\-h.
-
-\hypertarget{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Id@{T\-Thread\-Id}}
-\index{T\-Thread\-Id@{T\-Thread\-Id}!ThreadBase@{Thread\-Base}}
-\subsubsection[{T\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef D\-W\-O\-R\-D {\bf Thread\-Base\-::\-T\-Thread\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}
+Defines the Thread Handle type. 
 
 
-Definition at line 22 of file Windows\-Thread\-Base.\-h.
+
+Definition at line 49 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Id@{T\-Thread\-Id}}
 \index{T\-Thread\-Id@{T\-Thread\-Id}!ThreadBase@{Thread\-Base}}
 \subsubsection[{T\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef pthread\-\_\-t {\bf Thread\-Base\-::\-T\-Thread\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}
 
 
-Definition at line 22 of file Posix\-Thread\-Base.\-h.
+Type for the thread handle used for the O\-S utilities. 
+
+
+
+Definition at line 43 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Id@{T\-Thread\-Id}}
+\index{T\-Thread\-Id@{T\-Thread\-Id}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef D\-W\-O\-R\-D {\bf Thread\-Base\-::\-T\-Thread\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}
+
+
+Defines the Thread Id type. 
+
+
+
+Definition at line 44 of file Windows\-Thread\-Base.\-h.
 
 
 
@@ -185,42 +224,50 @@ Definition at line 22 of file Posix\-Thread\-Base.\-h.
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{\index{Thread\-Base@{Thread\-Base}!Started\-Values@{Started\-Values}}
 \index{Started\-Values@{Started\-Values}!ThreadBase@{Thread\-Base}}
 \subsubsection[{Started\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Thread\-Base\-::\-Started\-Values}}}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}
+
+
+Defines values for the T\-Started type. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
-}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+}]Indicates that the thread is started. \index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
-}]\index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
+}]Indicates that the thread is not started yet. \index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
-}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+}]Indicates that the thread is started. \index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
-}]\end{description}
+}]Indicates that the thread is not started yet. \end{description}
 \end{Desc}
 
 
-Definition at line 37 of file Posix\-Thread\-Base.\-h.
+Definition at line 91 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{\index{Thread\-Base@{Thread\-Base}!Started\-Values@{Started\-Values}}
 \index{Started\-Values@{Started\-Values}!ThreadBase@{Thread\-Base}}
 \subsubsection[{Started\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Thread\-Base\-::\-Started\-Values}}}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}
+
+
+Defines values for the T\-Started type. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
-}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+}]Indicates that the thread is started. \index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
-}]\index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
+}]Indicates that the thread is not started yet. \index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
-}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+}]Indicates that the thread is started. \index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
 \hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
-}]\end{description}
+}]Indicates that the thread is not started yet. \end{description}
 \end{Desc}
 
 
-Definition at line 37 of file Windows\-Thread\-Base.\-h.
+Definition at line 92 of file Windows\-Thread\-Base.\-h.
 
 
 
@@ -234,7 +281,11 @@ Definition at line 37 of file Windows\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}
 
 
-Definition at line 57 of file Posix\-Thread\-Base.\-h.
+Initializes values but does not create a thread. 
+
+
+
+Definition at line 139 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a9e152f859a8ae5a8d76672f0b53da5c7}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
 \index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
@@ -245,7 +296,16 @@ Definition at line 57 of file Posix\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a9e152f859a8ae5a8d76672f0b53da5c7}
 
 
-Definition at line 63 of file Posix\-Thread\-Base.\-h.
+Initializes values and starts the thread with the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input to the thread body. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 150 of file Posix\-Thread\-Base.\-h.
 
 
 
@@ -267,7 +327,11 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}
 
 
-Definition at line 70 of file Posix\-Thread\-Base.\-h.
+Stops the thread and frees the allocates attribute. 
+
+
+
+Definition at line 160 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a50bd80044eb3845856abef9535f1903c}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
 \index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
@@ -278,7 +342,16 @@ Definition at line 70 of file Posix\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a50bd80044eb3845856abef9535f1903c}
 
 
-Definition at line 78 of file Posix\-Thread\-Base.\-h.
+Copies the contents of another thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Instance to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
 \index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
@@ -289,7 +362,11 @@ Definition at line 78 of file Posix\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}
 
 
-Definition at line 58 of file Windows\-Thread\-Base.\-h.
+Initializes the values but does not create a thread. 
+
+
+
+Definition at line 145 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}{\index{Thread\-Base@{Thread\-Base}!$\sim$\-Thread\-Base@{$\sim$\-Thread\-Base}}
 \index{$\sim$\-Thread\-Base@{$\sim$\-Thread\-Base}!ThreadBase@{Thread\-Base}}
@@ -300,7 +377,11 @@ Definition at line 58 of file Windows\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}
 
 
-Definition at line 65 of file Windows\-Thread\-Base.\-h.
+Closes the thread handle. 
+
+
+
+Definition at line 155 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a50bd80044eb3845856abef9535f1903c}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
 \index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
@@ -311,7 +392,16 @@ Definition at line 65 of file Windows\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a50bd80044eb3845856abef9535f1903c}
 
 
-Definition at line 73 of file Windows\-Thread\-Base.\-h.
+Copies the contents of the other class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Class to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 168 of file Windows\-Thread\-Base.\-h.
 
 
 
@@ -325,7 +415,19 @@ Definition at line 73 of file Windows\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_thread_base_a844dd13473fee9283197b3905a81da45}
 
 
-Definition at line 49 of file Posix\-Thread\-Base.\-h.
+Function called by the wrapper function \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the O\-S. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Actual input to the thread body.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the exact thing that the thread body returns. 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file Posix\-Thread\-Base.\-h.
 
 
 
@@ -347,7 +449,19 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_thread_base_a844dd13473fee9283197b3905a81da45}
 
 
-Definition at line 50 of file Windows\-Thread\-Base.\-h.
+Function called by the wrapper function \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the O\-S. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Actual input to the thread body.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the exact thing that the thread body returns. 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file Windows\-Thread\-Base.\-h.
 
 
 
@@ -360,16 +474,28 @@ Here is the call graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{\index{Thread\-Base@{Thread\-Base}!Execution\-Body@{Execution\-Body}}
+\hypertarget{class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e}{\index{Thread\-Base@{Thread\-Base}!Execution\-Body@{Execution\-Body}}
 \index{Execution\-Body@{Execution\-Body}!ThreadBase@{Thread\-Base}}
 \subsubsection[{Execution\-Body}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Thread\-Base\-::\-Execution\-Body (
 \begin{DoxyParamCaption}
-\item[{void $\ast$}]{}
+\item[{void $\ast$}]{input}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}}\label{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}}\label{class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e}
 
 
-Implemented in \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}{Threaded\-T\-C\-P\-Client}, \hyperlink{class_threaded_t_c_p_connected_client_a019445fcc5fc83ad40583d3772c88a8b}{Threaded\-T\-C\-P\-Connected\-Client}, \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Threaded\-T\-C\-P\-Server}, and \hyperlink{class_my_thread_a481693b2ddb2f41e0181d1f9b7de0a21}{My\-Thread}.
+Purely virtual method to be overridden by the inheriting class to implement its own thread body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input to the thread body.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return is optional. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}{Threaded\-T\-C\-P\-Client}, \hyperlink{class_threaded_t_c_p_connected_client_a019445fcc5fc83ad40583d3772c88a8b}{Threaded\-T\-C\-P\-Connected\-Client}, and \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Threaded\-T\-C\-P\-Server}.
 
 
 
@@ -377,7 +503,7 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29_icgraph}
+\includegraphics[width=350pt]{class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e_icgraph}
 \end{center}
 \end{figure}
 
@@ -391,7 +517,19 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}}\label{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}
 
 
-Implemented in \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}{Threaded\-T\-C\-P\-Client}, \hyperlink{class_threaded_t_c_p_connected_client_a019445fcc5fc83ad40583d3772c88a8b}{Threaded\-T\-C\-P\-Connected\-Client}, \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Threaded\-T\-C\-P\-Server}, and \hyperlink{class_my_thread_a481693b2ddb2f41e0181d1f9b7de0a21}{My\-Thread}.
+Purely virtual method to be overridden by the inheriting class to implement its own thread body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input to the thread body.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return is optional. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}{Threaded\-T\-C\-P\-Client}, \hyperlink{class_threaded_t_c_p_connected_client_a019445fcc5fc83ad40583d3772c88a8b}{Threaded\-T\-C\-P\-Connected\-Client}, and \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Threaded\-T\-C\-P\-Server}.
 
 \hypertarget{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{\index{Thread\-Base@{Thread\-Base}!Get\-Stack\-Size@{Get\-Stack\-Size}}
 \index{Get\-Stack\-Size@{Get\-Stack\-Size}!ThreadBase@{Thread\-Base}}
@@ -402,7 +540,14 @@ Implemented in \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b7
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}
 
 
-Definition at line 92 of file Windows\-Thread\-Base.\-h.
+Gets the stack size of the thread. 
+
+\begin{DoxyReturn}{Returns}
+Returns the current stack size. 
+\end{DoxyReturn}
+
+
+Definition at line 197 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{\index{Thread\-Base@{Thread\-Base}!Get\-Stack\-Size@{Get\-Stack\-Size}}
 \index{Get\-Stack\-Size@{Get\-Stack\-Size}!ThreadBase@{Thread\-Base}}
@@ -413,7 +558,14 @@ Definition at line 92 of file Windows\-Thread\-Base.\-h.
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}
 
 
-Definition at line 96 of file Posix\-Thread\-Base.\-h.
+Gets the stack size of the thread. 
+
+\begin{DoxyReturn}{Returns}
+Stack size of the thread. 
+\end{DoxyReturn}
+
+
+Definition at line 202 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_add14648bdc8059dd8db41166130921dd}{\index{Thread\-Base@{Thread\-Base}!Set\-Stack\-Size@{Set\-Stack\-Size}}
 \index{Set\-Stack\-Size@{Set\-Stack\-Size}!ThreadBase@{Thread\-Base}}
@@ -424,7 +576,16 @@ Definition at line 96 of file Posix\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_add14648bdc8059dd8db41166130921dd}
 
 
-Definition at line 81 of file Windows\-Thread\-Base.\-h.
+Sets the stack size of the thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack\-Size} & Desired stack size. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 181 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_add14648bdc8059dd8db41166130921dd}{\index{Thread\-Base@{Thread\-Base}!Set\-Stack\-Size@{Set\-Stack\-Size}}
 \index{Set\-Stack\-Size@{Set\-Stack\-Size}!ThreadBase@{Thread\-Base}}
@@ -435,7 +596,16 @@ Definition at line 81 of file Windows\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_add14648bdc8059dd8db41166130921dd}
 
 
-Definition at line 85 of file Posix\-Thread\-Base.\-h.
+Sets the stack size of the thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack\-Size} & Desired stack size. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 186 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{\index{Thread\-Base@{Thread\-Base}!Start\-Thread@{Start\-Thread}}
 \index{Start\-Thread@{Start\-Thread}!ThreadBase@{Thread\-Base}}
@@ -446,7 +616,16 @@ Definition at line 85 of file Posix\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}
 
 
-Definition at line 103 of file Windows\-Thread\-Base.\-h.
+Creates a thread and starts executing with the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input to the thread body. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 213 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{\index{Thread\-Base@{Thread\-Base}!Start\-Thread@{Start\-Thread}}
 \index{Start\-Thread@{Start\-Thread}!ThreadBase@{Thread\-Base}}
@@ -457,7 +636,16 @@ Definition at line 103 of file Windows\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}
 
 
-Definition at line 109 of file Posix\-Thread\-Base.\-h.
+Creates a thread and starts executing with the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input to the thread body. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 220 of file Posix\-Thread\-Base.\-h.
 
 
 
@@ -480,6 +668,27 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{void $\ast$}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}
+
+
+Friend wrapper function that is actually called by the O\-S as the thread body. 
+
+Uses the input to gain access to the class and the real thread input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void$\ast$} & Special input structure containing the class address and the real input to the execution body.\\
+\hline
+\end{DoxyParams}
+It takes the actual class pointer and the input into the execution function from its input and executes the \char`\"{}actual thread body\char`\"{} with the desired input. This allows us to use the O\-S thread utilities to run a C++ class method, rather than a plain C function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void$\ast$} & Special input structure containing the class address and the real input to the execution body.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whatever the class method returns. 
+\end{DoxyReturn}
 \hypertarget{class_thread_base_a790b21ad102d0b813d14e54f4fbf4460}{\index{Thread\-Base@{Thread\-Base}!Windows\-Thread\-Cover@{Windows\-Thread\-Cover}}
 \index{Windows\-Thread\-Cover@{Windows\-Thread\-Cover}!ThreadBase@{Thread\-Base}}
 \subsubsection[{Windows\-Thread\-Cover}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D W\-I\-N\-A\-P\-I Windows\-Thread\-Cover (
@@ -489,41 +698,82 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_thread_base_a790b21ad102d0b813d14e54f4fbf4460}
 
 
+Friend wrapper function that is actually called by the O\-S as the thread body. 
+
+Uses the input to gain access to the class and the real thread input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void$\ast$} & Special input structure containing the class address and the real input to the execution body.\\
+\hline
+\end{DoxyParams}
+It takes the actual class pointer and the input into the execution function from its input and executes the \char`\"{}actual thread body\char`\"{} with the desired input. This allows us to use the O\-S thread utilities to run a C++ class method, rather than a plain C function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void$\ast$} & Special input structure containing the class address and the real input to the execution body.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whatever the class method returns. 
+\end{DoxyReturn}
+
+
 \subsection{Member Data Documentation}
 \hypertarget{class_thread_base_a9c8b3446d099074f0f1608e5246e137d}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-stack\-Size@{m\-\_\-stack\-Size}}
 \index{m\-\_\-stack\-Size@{m\-\_\-stack\-Size}!ThreadBase@{Thread\-Base}}
 \subsubsection[{m\-\_\-stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Stack\-Size} Thread\-Base\-::m\-\_\-stack\-Size\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a9c8b3446d099074f0f1608e5246e137d}
 
 
-Definition at line 47 of file Windows\-Thread\-Base.\-h.
+Variable holding the stack size of the thread. 
+
+
+
+Definition at line 117 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a5e2958ae98b989268d1e2be629789d64}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-started@{m\-\_\-started}}
 \index{m\-\_\-started@{m\-\_\-started}!ThreadBase@{Thread\-Base}}
 \subsubsection[{m\-\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Started} Thread\-Base\-::m\-\_\-started\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a5e2958ae98b989268d1e2be629789d64}
 
 
-Definition at line 44 of file Posix\-Thread\-Base.\-h.
+Indicates whether the thread is started to execute. 
+
+
+
+Definition at line 101 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_ad0d98c6f93707aef346cc66d8de78729}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-thread\-Attribute@{m\-\_\-thread\-Attribute}}
 \index{m\-\_\-thread\-Attribute@{m\-\_\-thread\-Attribute}!ThreadBase@{Thread\-Base}}
 \subsubsection[{m\-\_\-thread\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Thread\-Attribute} Thread\-Base\-::m\-\_\-thread\-Attribute\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_ad0d98c6f93707aef346cc66d8de78729}
 
 
-Definition at line 46 of file Posix\-Thread\-Base.\-h.
+Variable holding the attributes of the thread. 
+
+
+
+Definition at line 111 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_a4f279b94eef423109969f69fadd9e674}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-thread\-Handle@{m\-\_\-thread\-Handle}}
 \index{m\-\_\-thread\-Handle@{m\-\_\-thread\-Handle}!ThreadBase@{Thread\-Base}}
 \subsubsection[{m\-\_\-thread\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Thread\-Handle} Thread\-Base\-::m\-\_\-thread\-Handle\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a4f279b94eef423109969f69fadd9e674}
 
 
-Definition at line 46 of file Windows\-Thread\-Base.\-h.
+Variable holding the handle to the thread. 
+
+
+
+Definition at line 112 of file Windows\-Thread\-Base.\-h.
 
 \hypertarget{class_thread_base_ae8574271bdcbfd80cbdde64c77bc7148}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-thread\-Id@{m\-\_\-thread\-Id}}
 \index{m\-\_\-thread\-Id@{m\-\_\-thread\-Id}!ThreadBase@{Thread\-Base}}
 \subsubsection[{m\-\_\-thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Thread\-Id} Thread\-Base\-::m\-\_\-thread\-Id\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_ae8574271bdcbfd80cbdde64c77bc7148}
 
 
-Definition at line 45 of file Posix\-Thread\-Base.\-h.
+Variable holding the handle to the thread. 
+
+Variable holding the id of the thread. 
+
+Definition at line 106 of file Posix\-Thread\-Base.\-h.
 
 
 

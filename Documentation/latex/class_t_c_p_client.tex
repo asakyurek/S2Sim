@@ -3,6 +3,11 @@
 }
 
 
+This class defines a T\-C\-P client that can connect to a T\-C\-P server and communicate.  
+
+
+
+
 {\ttfamily \#include $<$T\-C\-P\-Client.\-h$>$}
 
 
@@ -27,27 +32,29 @@ Collaboration diagram for T\-C\-P\-Client\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_t_c_p_client_a091bd16baee06d0c980062a442b2c1c4}{T\-C\-P\-Client} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em No use. \end{DoxyCompactList}\item 
 \hyperlink{class_t_c_p_client_a2a31d81f04bfb18988d68cdd0da007e3}{$\sim$\-T\-C\-P\-Client} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em No use. \end{DoxyCompactList}\item 
 bool \hyperlink{class_t_c_p_client_af093afaf101502080174a55518070c8b}{Connect} (\hyperlink{class_i_p_address}{I\-P\-Address} \&address)
-\item 
+\begin{DoxyCompactList}\small\item\em Starts a T\-C\-P connection to a server. \end{DoxyCompactList}\item 
 \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_t_c_p_client_a6ed7eb539935dc08de06ca331e384241}{Send\-Data} (const \hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} length)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends data to the server. \end{DoxyCompactList}\item 
 \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_t_c_p_client_a01ad319e429ac5f10120a503d0ce40a1}{Receive\-Data} (\hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} reception\-Length)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Received data from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef \hyperlink{class_socket_base}{Socket\-Base}$<$ S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M $>$ \hyperlink{class_t_c_p_client_a562f13657068ebb1bf1d33fb1d562cbf}{T\-Base\-Type}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the base type for rapid development. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+This class defines a T\-C\-P client that can connect to a T\-C\-P server and communicate. 
 
+All O\-S related utilities are abstracted. 
 
-Definition at line 14 of file T\-C\-P\-Client.\-h.
+Definition at line 17 of file T\-C\-P\-Client.\-h.
 
 
 
@@ -57,7 +64,11 @@ Definition at line 14 of file T\-C\-P\-Client.\-h.
 \subsubsection[{T\-Base\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Socket\-Base}$<$S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M$>$ {\bf T\-C\-P\-Client\-::\-T\-Base\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_t_c_p_client_a562f13657068ebb1bf1d33fb1d562cbf}
 
 
-Definition at line 33 of file T\-C\-P\-Client.\-h.
+Defines the base type for rapid development. 
+
+
+
+Definition at line 66 of file T\-C\-P\-Client.\-h.
 
 
 
@@ -71,6 +82,10 @@ Definition at line 33 of file T\-C\-P\-Client.\-h.
 )}}\label{class_t_c_p_client_a091bd16baee06d0c980062a442b2c1c4}
 
 
+No use. 
+
+
+
 Definition at line 10 of file T\-C\-P\-Client.\-cpp.
 
 \hypertarget{class_t_c_p_client_a2a31d81f04bfb18988d68cdd0da007e3}{\index{T\-C\-P\-Client@{T\-C\-P\-Client}!$\sim$\-T\-C\-P\-Client@{$\sim$\-T\-C\-P\-Client}}
@@ -80,6 +95,10 @@ Definition at line 10 of file T\-C\-P\-Client.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_t_c_p_client_a2a31d81f04bfb18988d68cdd0da007e3}
+
+
+No use. 
+
 
 
 Definition at line 14 of file T\-C\-P\-Client.\-cpp.
@@ -94,6 +113,18 @@ Definition at line 14 of file T\-C\-P\-Client.\-cpp.
 \item[{{\bf I\-P\-Address} \&}]{address}
 \end{DoxyParamCaption}
 )}}\label{class_t_c_p_client_af093afaf101502080174a55518070c8b}
+
+
+Starts a T\-C\-P connection to a server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & \hyperlink{class_i_p_address}{I\-P\-Address} of the server.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success of the communication. 
+\end{DoxyReturn}
 
 
 Definition at line 31 of file T\-C\-P\-Client.\-cpp.
@@ -119,6 +150,22 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{class_t_c_p_client_a01ad319e429ac5f10120a503d0ce40a1}
 
 
+Received data from the server. 
+
+This is a blocking call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer that will hold the received data. \\
+\hline
+{\em reception\-Length} & Length of the buffer and maximum receivable data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The actual number of bytes received. 
+\end{DoxyReturn}
+
+
 Definition at line 25 of file T\-C\-P\-Client.\-cpp.
 
 
@@ -140,6 +187,20 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{const {\bf T\-Number\-Of\-Bytes}}]{length}
 \end{DoxyParamCaption}
 )}}\label{class_t_c_p_client_a6ed7eb539935dc08de06ca331e384241}
+
+
+Sends data to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer, holding the data to be sent. \\
+\hline
+{\em length} & Length of the data to be sent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Actually sent number of bytes. 
+\end{DoxyReturn}
 
 
 Definition at line 19 of file T\-C\-P\-Client.\-cpp.

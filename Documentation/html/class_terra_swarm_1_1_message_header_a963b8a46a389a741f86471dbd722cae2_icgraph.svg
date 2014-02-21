@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_terra_swarm_1_1_message_header.html#a6328694eb125adbac38c7e50d5fd40e1" target="_top" xlink:title="TerraSwarm::MessageHeader\l::PrepareOutgoingMessage">
+<a xlink:href="class_terra_swarm_1_1_message_header.html#a6328694eb125adbac38c7e50d5fd40e1" target="_top" xlink:title="Sets all the fields of the message header and prepares it. ">
 <polygon style="fill:white;stroke:black;" points="210,-0 210,-34 384,-34 384,-0 210,-0"/>
 <text text-anchor="start" x="218" y="-20" style="font-family:Arial;font-size:10.00;">TerraSwarm::MessageHeader</text>
 <text text-anchor="middle" x="297" y="-7" style="font-family:Arial;font-size:10.00;">::PrepareOutgoingMessage</text>

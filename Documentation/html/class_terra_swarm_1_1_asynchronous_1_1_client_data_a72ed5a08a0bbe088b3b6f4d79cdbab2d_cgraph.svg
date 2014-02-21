@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#aba73075c35dd912dad8f99dd026b0785" target="_top" xlink:title="TerraSwarm::Asynchronous\l::ClientData::GetNumberOfDataPoints">
+<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#aba73075c35dd912dad8f99dd026b0785" target="_top" xlink:title="Reads the NumberOfDataPoints field. ">
 <polygon style="fill:white;stroke:black;" points="200,-0 200,-34 420,-34 420,-0 200,-0"/>
 <text text-anchor="start" x="208" y="-20" style="font-family:Arial;font-size:10.00;">TerraSwarm::Asynchronous</text>
 <text text-anchor="middle" x="310" y="-7" style="font-family:Arial;font-size:10.00;">::ClientData::GetNumberOfDataPoints</text>

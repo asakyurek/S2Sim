@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_terra_swarm_1_1_message_header.html#a963b8a46a389a741f86471dbd722cae2" target="_top" xlink:title="TerraSwarm::MessageHeader\l::GetNextSequenceNumber">
+<a xlink:href="class_terra_swarm_1_1_message_header.html#a963b8a46a389a741f86471dbd722cae2" target="_top" xlink:title="Static function to get the next sequence number as the sequence number is sender unique, not message unique. ">
 <polygon style="fill:white;stroke:black;" points="210,-0 210,-34 384,-34 384,-0 210,-0"/>
 <text text-anchor="start" x="218" y="-20" style="font-family:Arial;font-size:10.00;">TerraSwarm::MessageHeader</text>
 <text text-anchor="middle" x="297" y="-7" style="font-family:Arial;font-size:10.00;">::GetNextSequenceNumber</text>

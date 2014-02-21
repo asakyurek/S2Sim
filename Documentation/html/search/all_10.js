@@ -33,8 +33,6 @@ var searchData=
   ['tendofmessage',['TEndOfMessage',['../class_terra_swarm_1_1_message_ender.html#a34ecb0835fc9e09799dd1a30fcf5ff65',1,'TerraSwarm::MessageEnder']]],
   ['tendofmessageaccessor',['TEndOfMessageAccessor',['../class_terra_swarm_1_1_message_ender.html#aa82232ef2e15f3c918e5d8187dff86f8',1,'TerraSwarm::MessageEnder']]],
   ['terraswarm',['TerraSwarm',['../namespace_terra_swarm.html',1,'']]],
-  ['terrorcode',['TErrorCode',['../class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11',1,'SocketBase']]],
-  ['test_2ecpp',['test.cpp',['../test_8cpp.html',1,'']]],
   ['threadbase',['ThreadBase',['../class_thread_base.html',1,'ThreadBase'],['../class_thread_base.html#a95aa3532d57d742e9591b37c4aff1bc7',1,'ThreadBase::ThreadBase(void)'],['../class_thread_base.html#a9e152f859a8ae5a8d76672f0b53da5c7',1,'ThreadBase::ThreadBase(void *input)'],['../class_thread_base.html#a50bd80044eb3845856abef9535f1903c',1,'ThreadBase::ThreadBase(const ThreadBase &amp;copy)'],['../class_thread_base.html#a95aa3532d57d742e9591b37c4aff1bc7',1,'ThreadBase::ThreadBase(void)'],['../class_thread_base.html#a50bd80044eb3845856abef9535f1903c',1,'ThreadBase::ThreadBase(const ThreadBase &amp;copy)']]],
   ['threadbase_2eh',['ThreadBase.h',['../_thread_base_8h.html',1,'']]],
   ['threadedtcpclient',['ThreadedTCPClient',['../class_threaded_t_c_p_client.html',1,'ThreadedTCPClient'],['../class_threaded_t_c_p_client.html#aee05df10793942b468883521a5bcc666',1,'ThreadedTCPClient::ThreadedTCPClient(void)'],['../class_threaded_t_c_p_client.html#a79bb042d9ffb617c8da0dcef486d7a07',1,'ThreadedTCPClient::ThreadedTCPClient(const TCPClient &amp;client)']]],
@@ -95,6 +93,6 @@ var searchData=
   ['tthreadid',['TThreadId',['../class_thread_base.html#af8ec97aa7d89f9a4605a1c6c60777d5d',1,'ThreadBase::TThreadId()'],['../class_thread_base.html#a76da3758dcb9858188c493eb9b811f3d',1,'ThreadBase::TThreadId()']]],
   ['ttimeresolution',['TTimeResolution',['../class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a626a7d114c405bceb24262253fe36c71',1,'TerraSwarm::Asynchronous::ClientData']]],
   ['ttimeresolutionaccessor',['TTimeResolutionAccessor',['../class_terra_swarm_1_1_asynchronous_1_1_client_data.html#acda5940545173f5f000e8eb0fdb8c712',1,'TerraSwarm::Asynchronous::ClientData']]],
-  ['tvoltage',['TVoltage',['../class_control_manager.html#a336440023399b9165c117020f6b14ec3',1,'ControlManager::TVoltage()'],['../class_matlab_manager.html#a00f47f07c7dfd449fc39db6c09f6304a',1,'MatlabManager::TVoltage()'],['../class_system_manager.html#ad7c10914fe99b3f09350a10028f25300',1,'SystemManager::TVoltage()']]],
+  ['tvoltage',['TVoltage',['../class_control_manager.html#a336440023399b9165c117020f6b14ec3',1,'ControlManager::TVoltage()'],['../class_matlab_manager.html#a716643f4f29af3225aedf52d61fd0abe',1,'MatlabManager::TVoltage()'],['../class_system_manager.html#a4194454c8c982c9e4d450e16625dd19c',1,'SystemManager::TVoltage()']]],
   ['twattage',['TWattage',['../class_control_manager.html#a24609feed8b0443df450b070194df20a',1,'ControlManager::TWattage()'],['../class_matlab_manager.html#a410b78f356aeacba5c43efee93d8c27d',1,'MatlabManager::TWattage()'],['../class_system_manager.html#a924f6502f78c31bbf5f462f9554d4fc5',1,'SystemManager::TWattage()']]]
 ];

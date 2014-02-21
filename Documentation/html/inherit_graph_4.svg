@@ -13,7 +13,7 @@
 <polygon style="fill:white;stroke:white;" points="-4,4 -4,-24 108,-24 108,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<a xlink:href="class_control_manager.html" target="_top" xlink:title="Manager the connection with the External Controller. ">
+<a xlink:href="class_control_manager.html" target="_top" xlink:title="Manages the connection with the External Controller. ">
 <polygon style="fill:white;stroke:black;" points="0,1 0,-20 104,-20 104,1 0,1"/>
 <text text-anchor="middle" x="52" y="-6" style="font-family:Arial;font-size:10.00;">ControlManager</text>
 </a>

@@ -3,6 +3,11 @@
 }
 
 
+Defines the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} message sent from the client to the Controller as a response to the price proposal.  
+
+
+
+
 {\ttfamily \#include $<$Demand\-Negotiation.\-h$>$}
 
 \subsection*{Public Types}
@@ -11,59 +16,59 @@
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302d}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da3a190a1e60e673508e7d0b752edada78}{Success} = ( T\-Check\-Result )true, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da172b152bb4bc982cf5d623de5a1e696d}{Fail} = ( T\-Check\-Result )false
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for T\-Check\-Result. \end{DoxyCompactList}\item 
 typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_abf70719cd7b70d3eeecb1949bc2157a3}{T\-Check\-Result}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the message check result type. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{T\-Number\-Of\-Data\-Points}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type for number of data points. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{T\-Data\-Point}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines a general data point, used for consumption in this message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a305449b096b0a75cc403222653b241a4}{$\sim$\-Demand\-Negotiation} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Deallocates the memory. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_abf70719cd7b70d3eeecb1949bc2157a3}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a1ebc766e094f58150ff5d1fa78031294}{Check\-Message} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Checks whether the current memory contains a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{T\-Number\-Of\-Data\-Points} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_af0694c36ab00a1dadf8bb8f1b3c7c159}{Get\-Number\-Of\-Data\-Points} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the number of data points in the message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{T\-Data\-Point} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2}{Get\-Data\-Points} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the pointer to the data points field. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a99ffac24b0af7f388d29eb47d3c19f33}{Get\-New\-Demand\-Negotiation} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{T\-Number\-Of\-Data\-Points} number\-Of\-Data\-Points, \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{T\-Data\-Point} $\ast$data\-Points)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} message and allocates the memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a6c276b43db55c33b12b96bf8103aeccc}{Message\-Type} = 0x0003, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a19ff4bbd69f6d5e53a2c8ec3c7e6c582}{Message\-Id} = 0x0004
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Message Header values. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3}{Field\-Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a177cce271c67adfe880026f2991ddd24}{Number\-Of\-Data\-Points\-Size} = sizeof( T\-Number\-Of\-Data\-Points ), 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a98cb806c46ea5332ce3f6e2bc2c77b86}{Data\-Point\-Size} = sizeof( T\-Data\-Point )
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Size of the fields in the message. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bf}{Field\-Index\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfafbea2a0f9ecc4bd089bb5fae8be2777b}{Number\-Of\-Data\-Points\-Index} = Message\-Header\-:\-:Message\-Header\-Size, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfa87d6d357dd529ff7f9503d69dd044a5b}{Data\-Start\-Index} = Number\-Of\-Data\-Points\-Index + Number\-Of\-Data\-Points\-Size
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Index of the fields in the message. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfafbea2a0f9ecc4bd089bb5fae8be2777b}{Number\-Of\-Data\-Points\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a177cce271c67adfe880026f2991ddd24}{Number\-Of\-Data\-Points\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a86cc2804c82d511a7b9e037d041236bd}{T\-Number\-Of\-Data\-Points\-Accessor}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Accessor Helper for Number\-Of\-Data\-Points field. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a9477added06c203f17f43cbfbd651fc4}{Demand\-Negotiation} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor to force the usage of the static creation method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Defines the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} message sent from the client to the Controller as a response to the price proposal. 
 
-
-Definition at line 20 of file Demand\-Negotiation.\-h.
+Definition at line 23 of file Demand\-Negotiation.\-h.
 
 
 
@@ -73,28 +78,44 @@ Definition at line 20 of file Demand\-Negotiation.\-h.
 \subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_abf70719cd7b70d3eeecb1949bc2157a3}
 
 
-Definition at line 30 of file Demand\-Negotiation.\-h.
+Defines the message check result type. 
+
+
+
+Definition at line 39 of file Demand\-Negotiation.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!T\-Data\-Point@{T\-Data\-Point}}
 \index{T\-Data\-Point@{T\-Data\-Point}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
 \subsubsection[{T\-Data\-Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Data\-Point}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}
 
 
-Definition at line 38 of file Demand\-Negotiation.\-h.
+Defines a general data point, used for consumption in this message. 
+
+
+
+Definition at line 58 of file Demand\-Negotiation.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}}
 \index{T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
 \subsubsection[{T\-Number\-Of\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Number\-Of\-Data\-Points}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}
 
 
-Definition at line 37 of file Demand\-Negotiation.\-h.
+Defines the type for number of data points. 
+
+
+
+Definition at line 53 of file Demand\-Negotiation.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a86cc2804c82d511a7b9e037d041236bd}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!T\-Number\-Of\-Data\-Points\-Accessor@{T\-Number\-Of\-Data\-Points\-Accessor}}
 \index{T\-Number\-Of\-Data\-Points\-Accessor@{T\-Number\-Of\-Data\-Points\-Accessor}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
 \subsubsection[{T\-Number\-Of\-Data\-Points\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Number\-Of\-Data\-Points\-Index}, {\bf Number\-Of\-Data\-Points\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Number\-Of\-Data\-Points\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a86cc2804c82d511a7b9e037d041236bd}
 
 
-Definition at line 53 of file Demand\-Negotiation.\-h.
+Accessor Helper for Number\-Of\-Data\-Points field. 
+
+
+
+Definition at line 82 of file Demand\-Negotiation.\-h.
 
 
 
@@ -102,22 +123,30 @@ Definition at line 53 of file Demand\-Negotiation.\-h.
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Check\-Result\-Values@{Check\-Result\-Values}}
 \index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
 \subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302d}
+
+
+Defines the values for T\-Check\-Result. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Success@{Success}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da3a190a1e60e673508e7d0b752edada78}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da3a190a1e60e673508e7d0b752edada78}
-}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Fail@{Fail}}\item[{\em 
+}]Message is of correct type and id. \index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Fail@{Fail}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da172b152bb4bc982cf5d623de5a1e696d}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da172b152bb4bc982cf5d623de5a1e696d}
-}]\end{description}
+}]Message has incorrect type or id. \end{description}
 \end{Desc}
 
 
-Definition at line 31 of file Demand\-Negotiation.\-h.
+Definition at line 44 of file Demand\-Negotiation.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bf}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Field\-Index\-Values@{Field\-Index\-Values}}
 \index{Field\-Index\-Values@{Field\-Index\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
 \subsubsection[{Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bf}
+
+
+Index of the fields in the message. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -129,11 +158,15 @@ Definition at line 31 of file Demand\-Negotiation.\-h.
 \end{Desc}
 
 
-Definition at line 47 of file Demand\-Negotiation.\-h.
+Definition at line 73 of file Demand\-Negotiation.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Field\-Size\-Values@{Field\-Size\-Values}}
 \index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
 \subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3}
+
+
+Size of the fields in the message. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -145,11 +178,15 @@ Definition at line 47 of file Demand\-Negotiation.\-h.
 \end{Desc}
 
 
-Definition at line 41 of file Demand\-Negotiation.\-h.
+Definition at line 64 of file Demand\-Negotiation.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Header\-Values@{Header\-Values}}
 \index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
 \subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21}
+
+
+Message Header values. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -161,7 +198,7 @@ Definition at line 41 of file Demand\-Negotiation.\-h.
 \end{Desc}
 
 
-Definition at line 23 of file Demand\-Negotiation.\-h.
+Definition at line 29 of file Demand\-Negotiation.\-h.
 
 
 
@@ -175,6 +212,10 @@ Definition at line 23 of file Demand\-Negotiation.\-h.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a9477added06c203f17f43cbfbd651fc4}
 
 
+Private constructor to force the usage of the static creation method. 
+
+
+
 Definition at line 14 of file Demand\-Negotiation.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a305449b096b0a75cc403222653b241a4}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!$\sim$\-Demand\-Negotiation@{$\sim$\-Demand\-Negotiation}}
@@ -184,6 +225,10 @@ Definition at line 14 of file Demand\-Negotiation.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a305449b096b0a75cc403222653b241a4}
+
+
+Deallocates the memory. 
+
 
 
 Definition at line 18 of file Demand\-Negotiation.\-cpp.
@@ -200,6 +245,13 @@ Definition at line 18 of file Demand\-Negotiation.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a1ebc766e094f58150ff5d1fa78031294}
 
 
+Checks whether the current memory contains a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} message. 
+
+\begin{DoxyReturn}{Returns}
+Result of the check. 
+\end{DoxyReturn}
+
+
 Definition at line 42 of file Demand\-Negotiation.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Get\-Data\-Points@{Get\-Data\-Points}}
@@ -209,6 +261,13 @@ Definition at line 42 of file Demand\-Negotiation.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2}
+
+
+Gets the pointer to the data points field. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the start of the data points field. 
+\end{DoxyReturn}
 
 
 Definition at line 61 of file Demand\-Negotiation.\-cpp.
@@ -247,6 +306,27 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a99ffac24b0af7f388d29eb47d3c19f33}
 
 
+Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} message and allocates the memory. 
+
+\begin{DoxyWarning}{Warning}
+Dellocation is the responsibility of the user.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em sender\-Id} & Id of the sender. \\
+\hline
+{\em receiver\-Id} & Id of the receiver. \\
+\hline
+{\em number\-Of\-Data\-Points} & Number of data points in the message. \\
+\hline
+{\em data\-Points} & Pointer to the buffer holding the data points.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly allocated message. 
+\end{DoxyReturn}
+
+
 Definition at line 24 of file Demand\-Negotiation.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_af0694c36ab00a1dadf8bb8f1b3c7c159}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Get\-Number\-Of\-Data\-Points@{Get\-Number\-Of\-Data\-Points}}
@@ -256,6 +336,13 @@ Definition at line 24 of file Demand\-Negotiation.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_af0694c36ab00a1dadf8bb8f1b3c7c159}
+
+
+Reads the number of data points in the message. 
+
+\begin{DoxyReturn}{Returns}
+Number of data points. 
+\end{DoxyReturn}
 
 
 Definition at line 53 of file Demand\-Negotiation.\-cpp.

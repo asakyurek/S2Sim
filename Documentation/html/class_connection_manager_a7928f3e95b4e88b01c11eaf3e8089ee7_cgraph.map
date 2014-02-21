@@ -1,21 +1,21 @@
 <map id="ConnectionManager::ConnectionManager" name="ConnectionManager::ConnectionManager">
-<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="TCPServer::SetPort" alt="" coords="279,81,433,108"/>
-<area shape="rect" href="$class_threaded_t_c_p_server.html#ac201656ab22b4ad07115d78cf8b7dd89" title="ThreadedTCPServer::\lSetNotificationCallback" alt="" coords="260,173,452,219"/>
+<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="Sets the listening port of the server. " alt="" coords="279,81,433,108"/>
+<area shape="rect" href="$class_threaded_t_c_p_server.html#ac201656ab22b4ad07115d78cf8b7dd89" title="Sets the notification callback. " alt="" coords="260,173,452,219"/>
 <area shape="rect" href="$_connection_manager_8cpp.html#a510f5a0926d162b7f546fcf5b8f054e8" title="ConnectionNotificationHandler" alt="" coords="233,344,479,371"/>
-<area shape="rect" href="$class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" title="IPAddress::SetAddress" alt="" coords="561,56,737,83"/>
-<area shape="rect" href="$class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" title="IPAddress::SetPort" alt="" coords="575,107,724,133"/>
-<area shape="rect" href="$class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" title="TCPServer::SetAddress" alt="" coords="557,5,741,32"/>
-<area shape="rect" href="$class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" title="IPAddress::GetAddress" alt="" coords="831,56,1009,83"/>
-<area shape="rect" href="$class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" title="IPAddress::GetPort" alt="" coords="845,107,995,133"/>
-<area shape="rect" href="$class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" title="IPAddress::GetSocketSize" alt="" coords="819,5,1021,32"/>
-<area shape="rect" href="$class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b" title="TCPServer::Listen" alt="" coords="576,157,723,184"/>
-<area shape="rect" href="$class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8" title="ThreadBase::StartThread" alt="" coords="548,208,751,235"/>
-<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="1087,375,1167,401"/>
+<area shape="rect" href="$class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" title="Sets the address field of the structure. " alt="" coords="561,56,737,83"/>
+<area shape="rect" href="$class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" title="Sets the port field of the structure. " alt="" coords="575,107,724,133"/>
+<area shape="rect" href="$class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" title="Sets the IP address of the server. " alt="" coords="557,5,741,32"/>
+<area shape="rect" href="$class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" title="Returns a reference to the address value. " alt="" coords="831,56,1009,83"/>
+<area shape="rect" href="$class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" title="Return a reference to the port value. " alt="" coords="845,107,995,133"/>
+<area shape="rect" href="$class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" title="Returns the size of the socket structure. " alt="" coords="819,5,1021,32"/>
+<area shape="rect" href="$class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b" title="This method makes the server listen to incoming connection attempts. " alt="" coords="576,157,723,184"/>
+<area shape="rect" href="$class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8" title="Creates a thread and starts executing with the given input. " alt="" coords="548,208,751,235"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="8 parameter log message " alt="" coords="1087,375,1167,401"/>
 <area shape="rect" href="$_connection_manager_8cpp.html#ab88124ce7a3bf1d2892d0e9763d1af30" title="GetConnectionManager" alt="" coords="823,379,1017,405"/>
 <area shape="rect" href="$class_connection_manager.html#a54968c1176475aa513538691b75aedc9" title="Incoming connection handler. " alt="" coords="832,309,1008,355"/>
-<area shape="rect" href="$class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" title="ThreadedTCPConnectedClient\l::SetNotificationCallback" alt="" coords="528,420,771,465"/>
+<area shape="rect" href="$class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" title="Sets the notification callback function. " alt="" coords="528,420,771,465"/>
 <area shape="rect" href="$_connection_manager_8cpp.html#a2e30244a123626dc9199117c06d257ab" title="Wrapper callback method for reception notification. " alt="" coords="540,489,759,516"/>
-<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="1071,580,1183,607"/>
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="6 parameter warning message " alt="" coords="1071,580,1183,607"/>
 <area shape="rect" href="$class_connection_manager.html#a64473b0369ab91daf3a2da6b8ef576d0" title="Broken connection handler. " alt="" coords="832,600,1008,645"/>
 <area shape="rect" href="$class_connection_manager.html#a4657b51054ad28143f1bddd1f5cc282c" title="New message processor. " alt="" coords="832,480,1008,525"/>
 </map>

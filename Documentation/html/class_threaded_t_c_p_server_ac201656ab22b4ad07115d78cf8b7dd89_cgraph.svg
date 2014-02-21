@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b" target="_top" xlink:title="TCPServer::Listen">
+<a xlink:href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b" target="_top" xlink:title="This method makes the server listen to incoming connection attempts. ">
 <polygon style="fill:white;stroke:black;" points="201,-37 201,-58 311,-58 311,-37 201,-37"/>
 <text text-anchor="middle" x="256" y="-44" style="font-family:Arial;font-size:10.00;">TCPServer::Listen</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8" target="_top" xlink:title="ThreadBase::StartThread">
+<a xlink:href="class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8" target="_top" xlink:title="Creates a thread and starts executing with the given input. ">
 <polygon style="fill:white;stroke:black;" points="180,1 180,-20 332,-20 332,1 180,1"/>
 <text text-anchor="middle" x="256" y="-6" style="font-family:Arial;font-size:10.00;">ThreadBase::StartThread</text>
 </a>

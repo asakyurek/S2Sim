@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" target="_top" xlink:title="IPAddress::SetAddress">
+<a xlink:href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" target="_top" xlink:title="Sets the address field of the structure. ">
 <polygon style="fill:white;stroke:black;" points="157,-75 157,-96 290,-96 290,-75 157,-75"/>
 <text text-anchor="middle" x="223" y="-82" style="font-family:Arial;font-size:10.00;">IPAddress::SetAddress</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" target="_top" xlink:title="IPAddress::SetPort">
+<a xlink:href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" target="_top" xlink:title="Sets the port field of the structure. ">
 <polygon style="fill:white;stroke:black;" points="167,-37 167,-58 279,-58 279,-37 167,-37"/>
 <text text-anchor="middle" x="223" y="-44" style="font-family:Arial;font-size:10.00;">IPAddress::SetPort</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" target="_top" xlink:title="TCPServer::SetAddress">
+<a xlink:href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" target="_top" xlink:title="Sets the IP address of the server. ">
 <polygon style="fill:white;stroke:black;" points="154,1 154,-20 292,-20 292,1 154,1"/>
 <text text-anchor="middle" x="223" y="-6" style="font-family:Arial;font-size:10.00;">TCPServer::SetAddress</text>
 </a>
@@ -54,7 +54,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="IPAddress::GetAddress">
+<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="Returns a reference to the address value. ">
 <polygon style="fill:white;stroke:black;" points="337,-75 337,-96 471,-96 471,-75 337,-75"/>
 <text text-anchor="middle" x="404" y="-82" style="font-family:Arial;font-size:10.00;">IPAddress::GetAddress</text>
 </a>
@@ -66,7 +66,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="IPAddress::GetPort">
+<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="Return a reference to the port value. ">
 <polygon style="fill:white;stroke:black;" points="348,-37 348,-58 461,-58 461,-37 348,-37"/>
 <text text-anchor="middle" x="404" y="-44" style="font-family:Arial;font-size:10.00;">IPAddress::GetPort</text>
 </a>
@@ -78,7 +78,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="IPAddress::GetSocketSize">
+<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="Returns the size of the socket structure. ">
 <polygon style="fill:white;stroke:black;" points="328,1 328,-20 480,-20 480,1 328,1"/>
 <text text-anchor="middle" x="404" y="-6" style="font-family:Arial;font-size:10.00;">IPAddress::GetSocketSize</text>
 </a>

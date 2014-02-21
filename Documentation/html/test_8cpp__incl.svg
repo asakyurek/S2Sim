@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_thread_base_8h.html" target="_top" xlink:title="ThreadBase.h">
+<a xlink:href="_thread_base_8h.html" target="_top" xlink:title="This file selects the right implementation according to the current OS. ">
 <polygon style="fill:white;stroke:black;" points="86,-0 86,-21 177,-21 177,-0 86,-0"/>
 <text text-anchor="middle" x="131" y="-7" style="font-family:Arial;font-size:10.00;">ThreadBase.h</text>
 </a>

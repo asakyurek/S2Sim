@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_client.html#a01ad319e429ac5f10120a503d0ce40a1" target="_top" xlink:title="TCPClient::ReceiveData">
+<a xlink:href="class_t_c_p_client.html#a01ad319e429ac5f10120a503d0ce40a1" target="_top" xlink:title="Received data from the server. ">
 <polygon style="fill:white;stroke:black;" points="164,-6 164,-27 308,-27 308,-6 164,-6"/>
 <text text-anchor="middle" x="236" y="-13" style="font-family:Arial;font-size:10.00;">TCPClient::ReceiveData</text>
 </a>

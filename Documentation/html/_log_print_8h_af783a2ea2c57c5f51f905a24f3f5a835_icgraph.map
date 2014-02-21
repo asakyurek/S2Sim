@@ -1,21 +1,21 @@
 <map id="ErrorPrint" name="ErrorPrint">
 <area shape="rect" href="$class_control_manager.html#a2dc55da1b01fd175b3d885c68b8a7524" title="Processes the received message from the External Controller. " alt="" coords="163,5,397,32"/>
-<area shape="rect" href="$class_control_manager.html#a927449c3a4ba8a5bdc23e3747d5bb077" title="ControlManager::GetClientName" alt="" coords="151,56,409,83"/>
-<area shape="rect" href="$_log_print_8h.html#a15fcf3e40285c82d9253581f3dda2e66" title="ErrorPrint" alt="" coords="237,107,323,133"/>
-<area shape="rect" href="$class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" title="MatlabManager::ProcessData" alt="" coords="165,157,395,184"/>
-<area shape="rect" href="$class_matlab_manager.html#a1c967acc77ef8db3113e83a5325b5729" title="MatlabManager::IsClientPresent" alt="" coords="156,208,404,235"/>
-<area shape="rect" href="$class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" title="MatlabManager::SetWattage" alt="" coords="167,259,393,285"/>
-<area shape="rect" href="$class_matlab_manager.html#afc7fd3eb3469eb7be2af5b857e6f45e1" title="MatlabManager::GetWattage" alt="" coords="165,309,395,336"/>
-<area shape="rect" href="$class_matlab_manager.html#ab741bd4f6545e11dd7dd28548c5229dd" title="MatlabManager::GetVoltage" alt="" coords="168,360,392,387"/>
-<area shape="rect" href="$class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" title="MatlabManager::AdvanceTimeStep" alt="" coords="143,411,417,437"/>
+<area shape="rect" href="$class_control_manager.html#a927449c3a4ba8a5bdc23e3747d5bb077" title="Returns the name of the object. " alt="" coords="151,56,409,83"/>
+<area shape="rect" href="$_log_print_8h.html#a15fcf3e40285c82d9253581f3dda2e66" title="5 parameter error message " alt="" coords="237,107,323,133"/>
+<area shape="rect" href="$class_matlab_manager.html#a7219113b7bc0744fe8faa94d599fe826" title="Processes the received message from OpenDSS controller. " alt="" coords="165,157,395,184"/>
+<area shape="rect" href="$class_matlab_manager.html#a1c967acc77ef8db3113e83a5325b5729" title="Checks for the presence of a client by communicating with OpenDSS controller. " alt="" coords="156,208,404,235"/>
+<area shape="rect" href="$class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" title="Sets the consumption of a client by communicating with OpenDSS controller. " alt="" coords="167,259,393,285"/>
+<area shape="rect" href="$class_matlab_manager.html#afc7fd3eb3469eb7be2af5b857e6f45e1" title="Gets the consumption of an object by communicating with OpenDSS controller. " alt="" coords="165,309,395,336"/>
+<area shape="rect" href="$class_matlab_manager.html#ab741bd4f6545e11dd7dd28548c5229dd" title="Gets the terminal voltage of an object by communicating with OpenDSS controller. " alt="" coords="168,360,392,387"/>
+<area shape="rect" href="$class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" title="Sends a signal to OpenDSS controller to indicate the end of a time step. " alt="" coords="143,411,417,437"/>
 <area shape="rect" href="$_control_manager_8h.html#a295ee31280dd699294f5787580750ce4" title="Wrapper callback method for reception notification. " alt="" coords="512,5,701,32"/>
-<area shape="rect" href="$class_control_manager.html#a67d548535b36a78e315a0aa5f9f8e6c8" title="ControlManager::SetClient" alt="" coords="795,5,1008,32"/>
+<area shape="rect" href="$class_control_manager.html#a67d548535b36a78e315a0aa5f9f8e6c8" title="Sets the connection information to the accepted External Controller. " alt="" coords="795,5,1008,32"/>
 <area shape="rect" href="$_control_manager_8cpp.html#a5f09b25cf454170e17d1aa3c2707273a" title="ControlNotificationHandler" alt="" coords="1056,5,1272,32"/>
-<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="ControlManager::ControlManager" alt="" coords="1320,5,1584,32"/>
-<area shape="rect" href="$_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" title="MatlabReceiveHandler" alt="" coords="515,157,699,184"/>
-<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="MatlabManager::SetClient" alt="" coords="797,157,1005,184"/>
+<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="Private constructor for singleton implementation. " alt="" coords="1320,5,1584,32"/>
+<area shape="rect" href="$_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" title="Wrapper callback function that forwards the received data to MatlabManager. " alt="" coords="515,157,699,184"/>
+<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="Sets the OpenDSS controller connection information. " alt="" coords="797,157,1005,184"/>
 <area shape="rect" href="$_matlab_manager_8cpp.html#aa340f269e04280ce987b3a8325f27580" title="MatlabNotificationHandler" alt="" coords="1059,157,1269,184"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="1324,157,1580,184"/>
-<area shape="rect" href="$class_system_manager.html#a87443d7e75b0f170535d315c27237253" title="SystemManager::AdvanceTimeStep" alt="" coords="467,335,747,361"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="1324,157,1580,184"/>
+<area shape="rect" href="$class_system_manager.html#a87443d7e75b0f170535d315c27237253" title="Main time iteration of the system. " alt="" coords="467,335,747,361"/>
 <area shape="rect" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="872,335,931,361"/>
 </map>

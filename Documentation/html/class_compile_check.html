@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -115,25 +115,39 @@ $(document).ready(function(){initNavTree('class_compile_check.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This class has two specializations.  
+ <a href="class_compile_check.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_compile_time_checker_library_8h_source.html">CompileTimeCheckerLibrary.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a23f09425353e49afb718c608ee4e14ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_compile_check.html#a23f09425353e49afb718c608ee4e14eeae1aaa6a952694dd245ce18936fb2b758">Result</a> = true
  }</td></tr>
+<tr class="memdesc:a23f09425353e49afb718c608ee4e14ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for Result displaying.  <a href="class_compile_check.html#a23f09425353e49afb718c608ee4e14ee">More...</a><br/></td></tr>
 <tr class="separator:a23f09425353e49afb718c608ee4e14ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b48338cd3cb0e57b5d5182a1400f847"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compile_check.html#a0b48338cd3cb0e57b5d5182a1400f847">Check</a> (void)</td></tr>
+<tr class="memdesc:a0b48338cd3cb0e57b5d5182a1400f847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty function for visual purposes.  <a href="#a0b48338cd3cb0e57b5d5182a1400f847">More...</a><br/></td></tr>
 <tr class="separator:a0b48338cd3cb0e57b5d5182a1400f847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;bool expression, typename Reason = class NoReason&gt;<br/>
 class CompileCheck&lt; expression, Reason &gt;</h3>
 
+<p>This class has two specializations. </p>
+<p>If the expression is true, the static <a class="el" href="class_compile_check.html#a0b48338cd3cb0e57b5d5182a1400f847" title="Empty function for visual purposes. ">Check()</a> function will be public and compilation will continue.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">expression</td><td>This is a boolean expression that can be evaluated in compile time. </td></tr>
+    <tr><td class="paramname">Reason</td><td>This can be the name of any class that will be used for debug information only. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="_compile_time_checker_library_8h_source.html#l00012">12</a> of file <a class="el" href="_compile_time_checker_library_8h_source.html">CompileTimeCheckerLibrary.h</a>.</p>
+<p>Definition at line <a class="el" href="_compile_time_checker_library_8h_source.html#l00019">19</a> of file <a class="el" href="_compile_time_checker_library_8h_source.html">CompileTimeCheckerLibrary.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a23f09425353e49afb718c608ee4e14ee"></a>
 <div class="memitem">
@@ -146,12 +160,15 @@ template&lt;bool expression, typename Reason  = class NoReason&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enumeration for Result displaying. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a23f09425353e49afb718c608ee4e14eeae1aaa6a952694dd245ce18936fb2b758"></a>Result</em>&#160;</td><td class="fielddoc">
+<p>The check passed. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_compile_time_checker_library_8h_source.html#l00015">15</a> of file <a class="el" href="_compile_time_checker_library_8h_source.html">CompileTimeCheckerLibrary.h</a>.</p>
+<p>Definition at line <a class="el" href="_compile_time_checker_library_8h_source.html#l00025">25</a> of file <a class="el" href="_compile_time_checker_library_8h_source.html">CompileTimeCheckerLibrary.h</a>.</p>
 
 </div>
 </div>
@@ -180,7 +197,9 @@ template&lt;bool expression, typename Reason  = class NoReason&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_compile_time_checker_library_8h_source.html#l00020">20</a> of file <a class="el" href="_compile_time_checker_library_8h_source.html">CompileTimeCheckerLibrary.h</a>.</p>
+<p>Empty function for visual purposes. </p>
+
+<p>Definition at line <a class="el" href="_compile_time_checker_library_8h_source.html#l00036">36</a> of file <a class="el" href="_compile_time_checker_library_8h_source.html">CompileTimeCheckerLibrary.h</a>.</p>
 
 </div>
 </div>
@@ -193,7 +212,7 @@ template&lt;bool expression, typename Reason  = class NoReason&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_compile_check.html">CompileCheck</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

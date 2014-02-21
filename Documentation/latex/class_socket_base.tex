@@ -3,6 +3,11 @@
 }
 
 
+This class is an abstraction over the O\-S socket and defines a base class for socket opening and closing utilities.  
+
+
+
+
 {\ttfamily \#include $<$Socket\-Base.\-h$>$}
 
 
@@ -17,56 +22,58 @@ Inheritance diagram for Socket\-Base$<$ Socket\-Type $>$\-:\nopagebreak
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{class_socket_base_abb6e8769e1c9168c1ff7423fe7933d30}{Error\-Code\-Values} \{ \hyperlink{class_socket_base_abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc}{No\-Error} = 0
- \}
-\item 
-typedef unsigned int \hyperlink{class_socket_base_a8feec23168739e87c6ccb7fa8c64ac11}{T\-Error\-Code}
-\item 
 typedef size\-\_\-t \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type for number of bytes. \end{DoxyCompactList}\item 
 typedef void $\ast$ \hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the type for a buffer pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Types}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_socket_base_a1441f12307a40913930ccbb8baf953bb}{Socket\-Id\-Values} \{ \hyperlink{class_socket_base_a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0}{Invalid\-Socket\-Id} = ( T\-Socket\-Id )( -\/1 )
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Special values for the T\-Socket\-Id. \end{DoxyCompactList}\item 
 typedef int \hyperlink{class_socket_base_aa1bd9ff0bcf59292806575e0abbe3829}{S\-O\-C\-K\-E\-T}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type of a Socket handle. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_socket_base_aa1bd9ff0bcf59292806575e0abbe3829}{S\-O\-C\-K\-E\-T} \hyperlink{class_socket_base_aad53265037e46768af4d6a0c2ebed277}{T\-Socket\-Id}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Redefines the socket handle type for multiplatform purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_socket_base_afdeb4c469db205b8030ff65540adbbc8}{Socket\-Base} (const \hyperlink{class_socket_base_aad53265037e46768af4d6a0c2ebed277}{T\-Socket\-Id} socket\-Id)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor that receives a handle as input. \end{DoxyCompactList}\item 
 \hyperlink{class_socket_base_aae440e9ad170eeec2465c4501e91b761}{Socket\-Base} (const \hyperlink{class_socket_base}{Socket\-Base}$<$ Socket\-Type $>$ \&copy)
-\item 
-\hyperlink{class_socket_base_ab53eb639e056af7269e0d720736f48e2}{Socket\-Base} (void)  throw ( T\-Error\-Code )
-\item 
-\hyperlink{class_socket_base_aa19d43bd8b53e91b1600c7b60f8f48e0}{$\sim$\-Socket\-Base} (void)  throw ( T\-Error\-Code )
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Copies the handle of another socket. \end{DoxyCompactList}\item 
+\hyperlink{class_socket_base_ab53eb639e056af7269e0d720736f48e2}{Socket\-Base} (void)
+\begin{DoxyCompactList}\small\item\em Sets the handle to the invalid value. \end{DoxyCompactList}\item 
+\hyperlink{class_socket_base_aa19d43bd8b53e91b1600c7b60f8f48e0}{$\sim$\-Socket\-Base} (void)
+\begin{DoxyCompactList}\small\item\em Closes the socket handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_socket_base_aad53265037e46768af4d6a0c2ebed277}{T\-Socket\-Id} \hyperlink{class_socket_base_aa9d855a8843ac61555721dfbedbad5a8}{m\-\_\-socket\-Id}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Handle to the socket used for O\-S utilities. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{class_socket_base_a812f91e92f493eeb546395b41c5ad465}{Open\-Socket} (void)  throw ( T\-Error\-Code )
-\item 
-void \hyperlink{class_socket_base_accdcf166761d3a7f7dc9bfb4afd939e1}{Close\-Socket} (void)  throw ( T\-Error\-Code )
-\end{DoxyCompactItemize}
+void \hyperlink{class_socket_base_a812f91e92f493eeb546395b41c5ad465}{Open\-Socket} (void)
+\begin{DoxyCompactList}\small\item\em Opens a new socket and sets its reusable options. \end{DoxyCompactList}\item 
+void \hyperlink{class_socket_base_accdcf166761d3a7f7dc9bfb4afd939e1}{Close\-Socket} (void)
+\begin{DoxyCompactList}\small\item\em Closes the socket handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \subsubsection*{template$<$int Socket\-Type$>$class Socket\-Base$<$ Socket\-Type $>$}
 
+This class is an abstraction over the O\-S socket and defines a base class for socket opening and closing utilities. 
 
 
-Definition at line 28 of file Socket\-Base.\-h.
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Socket\-Type} & Type of the socket for U\-D\-P, T\-C\-P or other types. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 33 of file Socket\-Base.\-h.
 
 
 
@@ -76,66 +83,65 @@ Definition at line 28 of file Socket\-Base.\-h.
 \subsubsection[{S\-O\-C\-K\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ typedef int {\bf Socket\-Base}$<$ Socket\-Type $>$\-::{\bf S\-O\-C\-K\-E\-T}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_aa1bd9ff0bcf59292806575e0abbe3829}
 
 
-Definition at line 49 of file Socket\-Base.\-h.
+Defines the type of a Socket handle. 
+
+
+
+Definition at line 50 of file Socket\-Base.\-h.
 
 \hypertarget{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{\index{Socket\-Base@{Socket\-Base}!T\-Buffer@{T\-Buffer}}
 \index{T\-Buffer@{T\-Buffer}!SocketBase@{Socket\-Base}}
 \subsubsection[{T\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ typedef void$\ast$ {\bf Socket\-Base}$<$ Socket\-Type $>$\-::{\bf T\-Buffer}}}\label{class_socket_base_a1557d64029a25c20b4c306b80efcc143}
 
 
-Definition at line 39 of file Socket\-Base.\-h.
-
-\hypertarget{class_socket_base_a8feec23168739e87c6ccb7fa8c64ac11}{\index{Socket\-Base@{Socket\-Base}!T\-Error\-Code@{T\-Error\-Code}}
-\index{T\-Error\-Code@{T\-Error\-Code}!SocketBase@{Socket\-Base}}
-\subsubsection[{T\-Error\-Code}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ typedef unsigned int {\bf Socket\-Base}$<$ Socket\-Type $>$\-::{\bf T\-Error\-Code}}}\label{class_socket_base_a8feec23168739e87c6ccb7fa8c64ac11}
+Defines the type for a buffer pointer. 
 
 
-Definition at line 32 of file Socket\-Base.\-h.
+
+Definition at line 44 of file Socket\-Base.\-h.
 
 \hypertarget{class_socket_base_ac414903631491453b96e71c06c2c2e72}{\index{Socket\-Base@{Socket\-Base}!T\-Number\-Of\-Bytes@{T\-Number\-Of\-Bytes}}
 \index{T\-Number\-Of\-Bytes@{T\-Number\-Of\-Bytes}!SocketBase@{Socket\-Base}}
 \subsubsection[{T\-Number\-Of\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ typedef size\-\_\-t {\bf Socket\-Base}$<$ Socket\-Type $>$\-::{\bf T\-Number\-Of\-Bytes}}}\label{class_socket_base_ac414903631491453b96e71c06c2c2e72}
 
 
-Definition at line 38 of file Socket\-Base.\-h.
+Defines the type for number of bytes. 
+
+
+
+Definition at line 39 of file Socket\-Base.\-h.
 
 \hypertarget{class_socket_base_aad53265037e46768af4d6a0c2ebed277}{\index{Socket\-Base@{Socket\-Base}!T\-Socket\-Id@{T\-Socket\-Id}}
 \index{T\-Socket\-Id@{T\-Socket\-Id}!SocketBase@{Socket\-Base}}
 \subsubsection[{T\-Socket\-Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ typedef {\bf S\-O\-C\-K\-E\-T} {\bf Socket\-Base}$<$ Socket\-Type $>$\-::{\bf T\-Socket\-Id}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_aad53265037e46768af4d6a0c2ebed277}
 
 
-Definition at line 50 of file Socket\-Base.\-h.
+Redefines the socket handle type for multiplatform purposes. 
+
+
+
+Definition at line 55 of file Socket\-Base.\-h.
 
 
 
 \subsection{Member Enumeration Documentation}
-\hypertarget{class_socket_base_abb6e8769e1c9168c1ff7423fe7933d30}{\index{Socket\-Base@{Socket\-Base}!Error\-Code\-Values@{Error\-Code\-Values}}
-\index{Error\-Code\-Values@{Error\-Code\-Values}!SocketBase@{Socket\-Base}}
-\subsubsection[{Error\-Code\-Values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ enum {\bf Socket\-Base\-::\-Error\-Code\-Values}}}\label{class_socket_base_abb6e8769e1c9168c1ff7423fe7933d30}
-\begin{Desc}
-\item[Enumerator]\par
-\begin{description}
-\index{No\-Error@{No\-Error}!Socket\-Base@{Socket\-Base}}\index{Socket\-Base@{Socket\-Base}!No\-Error@{No\-Error}}\item[{\em 
-\hypertarget{class_socket_base_abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc}{No\-Error}\label{class_socket_base_abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc}
-}]\end{description}
-\end{Desc}
-
-
-Definition at line 33 of file Socket\-Base.\-h.
-
 \hypertarget{class_socket_base_a1441f12307a40913930ccbb8baf953bb}{\index{Socket\-Base@{Socket\-Base}!Socket\-Id\-Values@{Socket\-Id\-Values}}
 \index{Socket\-Id\-Values@{Socket\-Id\-Values}!SocketBase@{Socket\-Base}}
 \subsubsection[{Socket\-Id\-Values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ enum {\bf Socket\-Base\-::\-Socket\-Id\-Values}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_a1441f12307a40913930ccbb8baf953bb}
+
+
+Special values for the T\-Socket\-Id. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Invalid\-Socket\-Id@{Invalid\-Socket\-Id}!Socket\-Base@{Socket\-Base}}\index{Socket\-Base@{Socket\-Base}!Invalid\-Socket\-Id@{Invalid\-Socket\-Id}}\item[{\em 
 \hypertarget{class_socket_base_a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0}{Invalid\-Socket\-Id}\label{class_socket_base_a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0}
-}]\end{description}
+}]Defines an invalid socket handle. \end{description}
 \end{Desc}
 
 
-Definition at line 52 of file Socket\-Base.\-h.
+Definition at line 60 of file Socket\-Base.\-h.
 
 
 
@@ -149,7 +155,18 @@ Definition at line 52 of file Socket\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_socket_base_afdeb4c469db205b8030ff65540adbbc8}
 
 
-Definition at line 59 of file Socket\-Base.\-h.
+Constructor that receives a handle as input. 
+
+It does not open a new socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\-Id} & Handle of a socket. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file Socket\-Base.\-h.
 
 \hypertarget{class_socket_base_aae440e9ad170eeec2465c4501e91b761}{\index{Socket\-Base@{Socket\-Base}!Socket\-Base@{Socket\-Base}}
 \index{Socket\-Base@{Socket\-Base}!SocketBase@{Socket\-Base}}
@@ -160,7 +177,16 @@ Definition at line 59 of file Socket\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_socket_base_aae440e9ad170eeec2465c4501e91b761}
 
 
-Definition at line 60 of file Socket\-Base.\-h.
+Copies the handle of another socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Socket to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 78 of file Socket\-Base.\-h.
 
 \hypertarget{class_socket_base_ab53eb639e056af7269e0d720736f48e2}{\index{Socket\-Base@{Socket\-Base}!Socket\-Base@{Socket\-Base}}
 \index{Socket\-Base@{Socket\-Base}!SocketBase@{Socket\-Base}}
@@ -168,10 +194,14 @@ Definition at line 60 of file Socket\-Base.\-h.
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) throw  {\bf T\-Error\-Code}) \hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_ab53eb639e056af7269e0d720736f48e2}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_ab53eb639e056af7269e0d720736f48e2}
 
 
-Definition at line 84 of file Socket\-Base.\-h.
+Sets the handle to the invalid value. 
+
+
+
+Definition at line 111 of file Socket\-Base.\-h.
 
 
 
@@ -190,21 +220,14 @@ Here is the call graph for this function\-:\nopagebreak
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) throw  {\bf T\-Error\-Code}) \hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_aa19d43bd8b53e91b1600c7b60f8f48e0}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_aa19d43bd8b53e91b1600c7b60f8f48e0}
 
 
-Definition at line 90 of file Socket\-Base.\-h.
+Closes the socket handle. 
 
 
 
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_socket_base_aa19d43bd8b53e91b1600c7b60f8f48e0_cgraph}
-\end{center}
-\end{figure}
-
+Definition at line 117 of file Socket\-Base.\-h.
 
 
 
@@ -215,21 +238,14 @@ Here is the call graph for this function\-:\nopagebreak
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) throw  {\bf T\-Error\-Code}) \hspace{0.3cm}{\ttfamily [private]}}}\label{class_socket_base_accdcf166761d3a7f7dc9bfb4afd939e1}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_socket_base_accdcf166761d3a7f7dc9bfb4afd939e1}
 
 
-Definition at line 117 of file Socket\-Base.\-h.
+Closes the socket handle. 
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_socket_base_accdcf166761d3a7f7dc9bfb4afd939e1_icgraph}
-\end{center}
-\end{figure}
-
+Definition at line 144 of file Socket\-Base.\-h.
 
 \hypertarget{class_socket_base_a812f91e92f493eeb546395b41c5ad465}{\index{Socket\-Base@{Socket\-Base}!Open\-Socket@{Open\-Socket}}
 \index{Open\-Socket@{Open\-Socket}!SocketBase@{Socket\-Base}}
@@ -237,10 +253,14 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) throw  {\bf T\-Error\-Code}) \hspace{0.3cm}{\ttfamily [private]}}}\label{class_socket_base_a812f91e92f493eeb546395b41c5ad465}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_socket_base_a812f91e92f493eeb546395b41c5ad465}
 
 
-Definition at line 97 of file Socket\-Base.\-h.
+Opens a new socket and sets its reusable options. 
+
+
+
+Definition at line 124 of file Socket\-Base.\-h.
 
 
 
@@ -261,7 +281,11 @@ Here is the caller graph for this function\-:\nopagebreak
 \subsubsection[{m\-\_\-socket\-Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Socket\-Type$>$ {\bf T\-Socket\-Id} {\bf Socket\-Base}$<$ Socket\-Type $>$\-::m\-\_\-socket\-Id\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_socket_base_aa9d855a8843ac61555721dfbedbad5a8}
 
 
-Definition at line 66 of file Socket\-Base.\-h.
+Handle to the socket used for O\-S utilities. 
+
+
+
+Definition at line 94 of file Socket\-Base.\-h.
 
 
 

@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" target="_top" xlink:title="TCPServer::SetPort">
+<a xlink:href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" target="_top" xlink:title="Sets the listening port of the server. ">
 <polygon style="fill:white;stroke:black;" points="205,-402 205,-423 322,-423 322,-402 205,-402"/>
 <text text-anchor="middle" x="263" y="-409" style="font-family:Arial;font-size:10.00;">TCPServer::SetPort</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="class_threaded_t_c_p_server.html#ac201656ab22b4ad07115d78cf8b7dd89" target="_top" xlink:title="ThreadedTCPServer::\lSetNotificationCallback">
+<a xlink:href="class_threaded_t_c_p_server.html#ac201656ab22b4ad07115d78cf8b7dd89" target="_top" xlink:title="Sets the notification callback. ">
 <polygon style="fill:white;stroke:black;" points="191,-320 191,-354 335,-354 335,-320 191,-320"/>
 <text text-anchor="start" x="199" y="-340" style="font-family:Arial;font-size:10.00;">ThreadedTCPServer::</text>
 <text text-anchor="middle" x="263" y="-327" style="font-family:Arial;font-size:10.00;">SetNotificationCallback</text>
@@ -56,7 +56,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" target="_top" xlink:title="IPAddress::SetAddress">
+<a xlink:href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" target="_top" xlink:title="Sets the address field of the structure. ">
 <polygon style="fill:white;stroke:black;" points="417,-421 417,-442 550,-442 550,-421 417,-421"/>
 <text text-anchor="middle" x="483" y="-428" style="font-family:Arial;font-size:10.00;">IPAddress::SetAddress</text>
 </a>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" target="_top" xlink:title="IPAddress::SetPort">
+<a xlink:href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" target="_top" xlink:title="Sets the port field of the structure. ">
 <polygon style="fill:white;stroke:black;" points="427,-383 427,-404 539,-404 539,-383 427,-383"/>
 <text text-anchor="middle" x="483" y="-390" style="font-family:Arial;font-size:10.00;">IPAddress::SetPort</text>
 </a>
@@ -80,7 +80,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" target="_top" xlink:title="TCPServer::SetAddress">
+<a xlink:href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" target="_top" xlink:title="Sets the IP address of the server. ">
 <polygon style="fill:white;stroke:black;" points="414,-459 414,-480 552,-480 552,-459 414,-459"/>
 <text text-anchor="middle" x="483" y="-466" style="font-family:Arial;font-size:10.00;">TCPServer::SetAddress</text>
 </a>
@@ -92,7 +92,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="IPAddress::GetAddress">
+<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="Returns a reference to the address value. ">
 <polygon style="fill:white;stroke:black;" points="619,-421 619,-442 753,-442 753,-421 619,-421"/>
 <text text-anchor="middle" x="686" y="-428" style="font-family:Arial;font-size:10.00;">IPAddress::GetAddress</text>
 </a>
@@ -104,7 +104,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="IPAddress::GetPort">
+<a xlink:href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" target="_top" xlink:title="Return a reference to the port value. ">
 <polygon style="fill:white;stroke:black;" points="630,-383 630,-404 743,-404 743,-383 630,-383"/>
 <text text-anchor="middle" x="686" y="-390" style="font-family:Arial;font-size:10.00;">IPAddress::GetPort</text>
 </a>
@@ -116,7 +116,7 @@
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="IPAddress::GetSocketSize">
+<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="Returns the size of the socket structure. ">
 <polygon style="fill:white;stroke:black;" points="610,-459 610,-480 762,-480 762,-459 610,-459"/>
 <text text-anchor="middle" x="686" y="-466" style="font-family:Arial;font-size:10.00;">IPAddress::GetSocketSize</text>
 </a>
@@ -128,7 +128,7 @@
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
-<a xlink:href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b" target="_top" xlink:title="TCPServer::Listen">
+<a xlink:href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b" target="_top" xlink:title="This method makes the server listen to incoming connection attempts. ">
 <polygon style="fill:white;stroke:black;" points="428,-345 428,-366 538,-366 538,-345 428,-345"/>
 <text text-anchor="middle" x="483" y="-352" style="font-family:Arial;font-size:10.00;">TCPServer::Listen</text>
 </a>
@@ -140,7 +140,7 @@
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
-<a xlink:href="class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8" target="_top" xlink:title="ThreadBase::StartThread">
+<a xlink:href="class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8" target="_top" xlink:title="Creates a thread and starts executing with the given input. ">
 <polygon style="fill:white;stroke:black;" points="407,-307 407,-328 559,-328 559,-307 407,-307"/>
 <text text-anchor="middle" x="483" y="-314" style="font-family:Arial;font-size:10.00;">ThreadBase::StartThread</text>
 </a>
@@ -152,7 +152,7 @@
 </g>
 <!-- Node13 -->
 <g id="node25" class="node"><title>Node13</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="811,-182 811,-203 871,-203 871,-182 811,-182"/>
 <text text-anchor="middle" x="841" y="-189" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -189,7 +189,7 @@
 </g>
 <!-- Node16 -->
 <g id="node32" class="node"><title>Node16</title>
-<a xlink:href="class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" target="_top" xlink:title="ThreadedTCPConnectedClient\l::SetNotificationCallback">
+<a xlink:href="class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" target="_top" xlink:title="Sets the notification callback function. ">
 <polygon style="fill:white;stroke:black;" points="392,-135 392,-169 574,-169 574,-135 392,-135"/>
 <text text-anchor="start" x="400" y="-155" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient</text>
 <text text-anchor="middle" x="483" y="-142" style="font-family:Arial;font-size:10.00;">::SetNotificationCallback</text>
@@ -229,7 +229,7 @@
 </g>
 <!-- Node18 -->
 <g id="node37" class="node"><title>Node18</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="799,-28 799,-49 884,-49 884,-28 799,-28"/>
 <text text-anchor="middle" x="841" y="-35" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>

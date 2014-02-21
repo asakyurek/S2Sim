@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="ConnectionManager::\lConnectionManager">
+<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="425,-0 425,-34 558,-34 558,-0 425,-0"/>
 <text text-anchor="start" x="433" y="-20" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="491" y="-7" style="font-family:Arial;font-size:10.00;">ConnectionManager</text>

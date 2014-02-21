@@ -33,7 +33,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#ab99ce665f0822299184ff34cf5e674d2" target="_top" xlink:title="TerraSwarm::Synchronous\l::DemandNegotiation::GetData\lPoints">
+<a xlink:href="class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#ab99ce665f0822299184ff34cf5e674d2" target="_top" xlink:title="Gets the pointer to the data points field. ">
 <polygon style="fill:white;stroke:black;" points="238,1 238,-46 422,-46 422,1 238,1"/>
 <text text-anchor="start" x="246" y="-32" style="font-family:Arial;font-size:10.00;">TerraSwarm::Synchronous</text>
 <text text-anchor="start" x="246" y="-19" style="font-family:Arial;font-size:10.00;">::DemandNegotiation::GetData</text>

@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="525,-151 525,-172 585,-172 585,-151 525,-151"/>
 <text text-anchor="middle" x="555" y="-158" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="GetMatlabManager">
+<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="This function returns the only instance of MatlabManager. ">
 <polygon style="fill:white;stroke:black;" points="495,-51 495,-72 615,-72 615,-51 495,-51"/>
 <text text-anchor="middle" x="555" y="-58" style="font-family:Arial;font-size:10.00;">GetMatlabManager</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" target="_top" xlink:title="MatlabManager::SetWattage">
+<a xlink:href="class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" target="_top" xlink:title="Sets the consumption of a client by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="265,-203 265,-224 436,-224 436,-203 265,-203"/>
 <text text-anchor="middle" x="350" y="-210" style="font-family:Arial;font-size:10.00;">MatlabManager::SetWattage</text>
 </a>
@@ -66,7 +66,7 @@
 </g>
 <!-- Node9 -->
 <g id="node18" class="node"><title>Node9</title>
-<a xlink:href="class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" target="_top" xlink:title="MatlabManager::AdvanceTimeStep">
+<a xlink:href="class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" target="_top" xlink:title="Sends a signal to OpenDSS controller to indicate the end of a time step. ">
 <polygon style="fill:white;stroke:black;" points="247,-241 247,-262 454,-262 454,-241 247,-241"/>
 <text text-anchor="middle" x="350" y="-248" style="font-family:Arial;font-size:10.00;">MatlabManager::AdvanceTimeStep</text>
 </a>
@@ -90,7 +90,7 @@
 </g>
 <!-- Node12 -->
 <g id="node31" class="node"><title>Node12</title>
-<a xlink:href="class_control_manager.html#a4e23ffb481554c26cf99c411dd16ae36" target="_top" xlink:title="ControlManager::WaitUntil\lReady">
+<a xlink:href="class_control_manager.html#a4e23ffb481554c26cf99c411dd16ae36" target="_top" xlink:title="Stops the calling thread until a ready signal is received from the External Controller. ">
 <polygon style="fill:white;stroke:black;" points="271,-0 271,-34 430,-34 430,-0 271,-0"/>
 <text text-anchor="start" x="279" y="-20" style="font-family:Arial;font-size:10.00;">ControlManager::WaitUntil</text>
 <text text-anchor="middle" x="350" y="-7" style="font-family:Arial;font-size:10.00;">Ready</text>
@@ -108,7 +108,7 @@
 </g>
 <!-- Node5 -->
 <g id="node10" class="node"><title>Node5</title>
-<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="ErrorPrint">
+<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="6 parameter error message ">
 <polygon style="fill:white;stroke:black;" points="523,-279 523,-300 588,-300 588,-279 523,-279"/>
 <text text-anchor="middle" x="555" y="-286" style="font-family:Arial;font-size:10.00;">ErrorPrint</text>
 </a>
@@ -120,7 +120,7 @@
 </g>
 <!-- Node6 -->
 <g id="node12" class="node"><title>Node6</title>
-<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="TCPConnectedClient\l::SendData">
+<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="Sends data to the connected client. ">
 <polygon style="fill:white;stroke:black;" points="491,-190 491,-224 620,-224 620,-190 491,-190"/>
 <text text-anchor="start" x="499" y="-210" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 <text text-anchor="middle" x="555" y="-197" style="font-family:Arial;font-size:10.00;">::SendData</text>
@@ -133,7 +133,7 @@
 </g>
 <!-- Node7 -->
 <g id="node14" class="node"><title>Node7</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="513,-241 513,-262 598,-262 598,-241 513,-241"/>
 <text text-anchor="middle" x="555" y="-248" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>
@@ -180,7 +180,7 @@
 </g>
 <!-- Node11 -->
 <g id="node27" class="node"><title>Node11</title>
-<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="GetSystemManager">
+<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="Singleton function that returns the only instance of SystemManager. ">
 <polygon style="fill:white;stroke:black;" points="494,-89 494,-110 617,-110 617,-89 494,-89"/>
 <text text-anchor="middle" x="555" y="-96" style="font-family:Arial;font-size:10.00;">GetSystemManager</text>
 </a>

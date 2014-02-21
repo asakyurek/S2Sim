@@ -3,6 +3,11 @@
 }
 
 
+Manages the various components of the system and timing.  
+
+
+
+
 {\ttfamily \#include $<$System\-Manager.\-h$>$}
 
 \subsection*{Public Types}
@@ -11,73 +16,75 @@
 enum \hyperlink{class_system_manager_a073873362e7861f8a0368bb62144d4ca}{System\-Mode\-Values} \{ \hyperlink{class_system_manager_a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e}{Simulation\-Mode} = ( T\-System\-Mode )0x0001, 
 \hyperlink{class_system_manager_a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357}{Real\-Time\-Mode} = ( T\-System\-Mode )0x0002
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for the T\-System\-Mode type. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the type for System Time in epoch format. \end{DoxyCompactList}\item 
 typedef unsigned short \hyperlink{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{T\-System\-Mode}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the working mode of the system. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{Message\-Header\-::\-T\-Id} \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id}
-\item 
+\begin{DoxyCompactList}\small\item\em Redefines the unique client id type for rapid development. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_connection_request_a50a16fcfef8eb10d5191b6eaf0723a92}{Asynchronous\-::\-Client\-Connection\-Request\-::\-T\-Client\-Name} \hyperlink{class_system_manager_a2d2818eaeb5787ef4f4d009ff343d195}{T\-Client\-Name}
-\item 
+\begin{DoxyCompactList}\small\item\em Redefines the object name for rapid development. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point}
-\item 
+\begin{DoxyCompactList}\small\item\em Redefines the data point type for rapid development. \end{DoxyCompactList}\item 
 typedef \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}{Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points} \hyperlink{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}{T\-Number\-Of\-Data\-Points}
-\item 
-typedef unsigned int \hyperlink{class_system_manager_ad7c10914fe99b3f09350a10028f25300}{T\-Voltage}
-\item 
+\begin{DoxyCompactList}\small\item\em Redefines the number of data points type for rapid development. \end{DoxyCompactList}\item 
+typedef \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} \hyperlink{class_system_manager_a4194454c8c982c9e4d450e16625dd19c}{T\-Voltage}
+\begin{DoxyCompactList}\small\item\em Defines the voltage information type. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} \hyperlink{class_system_manager_a924f6502f78c31bbf5f462f9554d4fc5}{T\-Wattage}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the wattage consumption type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} \hyperlink{class_system_manager_aebfc7fab136f01836e07228474e4326f}{Get\-System\-Time} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the current system time. \end{DoxyCompactList}\item 
 \hyperlink{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{T\-System\-Mode} \hyperlink{class_system_manager_ab9f52e613fdbdc4690be79179b7357e6}{Get\-System\-Mode} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the current system working mode. \end{DoxyCompactList}\item 
 void \hyperlink{class_system_manager_abaf36dbd2e75a773f2ddc40ac82e5f3b}{Register\-Data} (const \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id} client\-Id, const \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} start\-Time, const \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} resolution, const \hyperlink{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}{T\-Number\-Of\-Data\-Points} number\-Of\-Data\-Points, \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} $\ast$data\-Points)
-\item 
+\begin{DoxyCompactList}\small\item\em Used to register multiple consumption information. \end{DoxyCompactList}\item 
 void \hyperlink{class_system_manager_ae96634f0635ad6c5e98620eb70ef7fbe}{Register\-Data} (const \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id} client\-Id, \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} data\-Point)
-\item 
+\begin{DoxyCompactList}\small\item\em Used to register a single consumption information for the next time step. \end{DoxyCompactList}\item 
 void \hyperlink{class_system_manager_a87443d7e75b0f170535d315c27237253}{Advance\-Time\-Step} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Main time iteration of the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef std\-::map$<$ \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id}, \\*
 \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} $>$ \hyperlink{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}{T\-Data\-Map}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the mapping from Client\-Id-\/$>$Consumption. \end{DoxyCompactList}\item 
 typedef std\-::map$<$ \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time}, \\*
 \hyperlink{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}{T\-Data\-Map} $>$ \hyperlink{class_system_manager_aae66953e62823ae14519c7e9b3925864}{T\-System\-Map}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the mappting from Time-\/$>$(Client\-Id-\/$>$Consumption). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_system_manager_a7654b10e671b56945ff0958781e07a6f}{System\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor for singleton implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} \hyperlink{class_system_manager_af5a7fec3622669af269cbcf7b1b2af22}{m\-\_\-system\-Time}
-\item 
+\begin{DoxyCompactList}\small\item\em The current system time, incremented at each time step. \end{DoxyCompactList}\item 
 \hyperlink{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{T\-System\-Mode} \hyperlink{class_system_manager_a25bf998fe8f48168e2ad4c3dfd3bad91}{m\-\_\-system\-Mode}
-\item 
+\begin{DoxyCompactList}\small\item\em The current working mode of the system. \end{DoxyCompactList}\item 
 \hyperlink{class_system_manager_aae66953e62823ae14519c7e9b3925864}{T\-System\-Map} \hyperlink{class_system_manager_a74a1b7e836ad95da039de9eb367544c3}{m\-\_\-system\-Map}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This variable contains the consumption information for all clients for the future. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_system_manager}{System\-Manager} \& \hyperlink{class_system_manager_a97e64f74d188d41051488578800d20cd}{Get\-System\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Friend function to implement the singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Manages the various components of the system and timing. 
 
+This class coordinates the other components within S2\-Sim and manages the timing of consumption information from both async and synchronous clients. 
 
-Definition at line 28 of file System\-Manager.\-h.
+Definition at line 37 of file System\-Manager.\-h.
 
 
 
@@ -87,70 +94,110 @@ Definition at line 28 of file System\-Manager.\-h.
 \subsubsection[{T\-Client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Message\-Header\-::\-T\-Id} {\bf System\-Manager\-::\-T\-Client\-Id}}}\label{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}
 
 
-Definition at line 40 of file System\-Manager.\-h.
+Redefines the unique client id type for rapid development. 
+
+
+
+Definition at line 69 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_a2d2818eaeb5787ef4f4d009ff343d195}{\index{System\-Manager@{System\-Manager}!T\-Client\-Name@{T\-Client\-Name}}
 \index{T\-Client\-Name@{T\-Client\-Name}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-Client\-Name}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Connection\-Request\-::\-T\-Client\-Name} {\bf System\-Manager\-::\-T\-Client\-Name}}}\label{class_system_manager_a2d2818eaeb5787ef4f4d009ff343d195}
 
 
-Definition at line 41 of file System\-Manager.\-h.
+Redefines the object name for rapid development. 
+
+
+
+Definition at line 74 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}{\index{System\-Manager@{System\-Manager}!T\-Data\-Map@{T\-Data\-Map}}
 \index{T\-Data\-Map@{T\-Data\-Map}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-Data\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf T\-Client\-Id}, {\bf T\-Data\-Point}$>$ {\bf System\-Manager\-::\-T\-Data\-Map}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}
 
 
-Definition at line 49 of file System\-Manager.\-h.
+Defines the mapping from Client\-Id-\/$>$Consumption. 
+
+
+
+Definition at line 100 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{\index{System\-Manager@{System\-Manager}!T\-Data\-Point@{T\-Data\-Point}}
 \index{T\-Data\-Point@{T\-Data\-Point}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-Data\-Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf System\-Manager\-::\-T\-Data\-Point}}}\label{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}
 
 
-Definition at line 42 of file System\-Manager.\-h.
+Redefines the data point type for rapid development. 
+
+
+
+Definition at line 79 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}{\index{System\-Manager@{System\-Manager}!T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}}
 \index{T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-Number\-Of\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points} {\bf System\-Manager\-::\-T\-Number\-Of\-Data\-Points}}}\label{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}
 
 
-Definition at line 43 of file System\-Manager.\-h.
+Redefines the number of data points type for rapid development. 
+
+
+
+Definition at line 84 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_aae66953e62823ae14519c7e9b3925864}{\index{System\-Manager@{System\-Manager}!T\-System\-Map@{T\-System\-Map}}
 \index{T\-System\-Map@{T\-System\-Map}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-System\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf T\-System\-Time}, {\bf T\-Data\-Map}$>$ {\bf System\-Manager\-::\-T\-System\-Map}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_aae66953e62823ae14519c7e9b3925864}
 
 
-Definition at line 50 of file System\-Manager.\-h.
+Defines the mappting from Time-\/$>$(Client\-Id-\/$>$Consumption). 
+
+
+
+Definition at line 105 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{\index{System\-Manager@{System\-Manager}!T\-System\-Mode@{T\-System\-Mode}}
 \index{T\-System\-Mode@{T\-System\-Mode}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-System\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf System\-Manager\-::\-T\-System\-Mode}}}\label{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}
 
 
-Definition at line 33 of file System\-Manager.\-h.
+Defines the working mode of the system. 
+
+
+
+Definition at line 55 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{\index{System\-Manager@{System\-Manager}!T\-System\-Time@{T\-System\-Time}}
 \index{T\-System\-Time@{T\-System\-Time}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-System\-Time}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf System\-Manager\-::\-T\-System\-Time}}}\label{class_system_manager_a9743ff4f23e7d957f5932780d8070099}
 
 
-Definition at line 32 of file System\-Manager.\-h.
+Defines the type for System Time in epoch format. 
 
-\hypertarget{class_system_manager_ad7c10914fe99b3f09350a10028f25300}{\index{System\-Manager@{System\-Manager}!T\-Voltage@{T\-Voltage}}
+
+
+Definition at line 50 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_a4194454c8c982c9e4d450e16625dd19c}{\index{System\-Manager@{System\-Manager}!T\-Voltage@{T\-Voltage}}
 \index{T\-Voltage@{T\-Voltage}!SystemManager@{System\-Manager}}
-\subsubsection[{T\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf System\-Manager\-::\-T\-Voltage}}}\label{class_system_manager_ad7c10914fe99b3f09350a10028f25300}
+\subsubsection[{T\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Data\-Point} {\bf System\-Manager\-::\-T\-Voltage}}}\label{class_system_manager_a4194454c8c982c9e4d450e16625dd19c}
 
 
-Definition at line 45 of file System\-Manager.\-h.
+Defines the voltage information type. 
+
+
+
+Definition at line 89 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_a924f6502f78c31bbf5f462f9554d4fc5}{\index{System\-Manager@{System\-Manager}!T\-Wattage@{T\-Wattage}}
 \index{T\-Wattage@{T\-Wattage}!SystemManager@{System\-Manager}}
 \subsubsection[{T\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Data\-Point} {\bf System\-Manager\-::\-T\-Wattage}}}\label{class_system_manager_a924f6502f78c31bbf5f462f9554d4fc5}
 
 
-Definition at line 46 of file System\-Manager.\-h.
+Defines the wattage consumption type. 
+
+
+
+Definition at line 94 of file System\-Manager.\-h.
 
 
 
@@ -158,18 +205,22 @@ Definition at line 46 of file System\-Manager.\-h.
 \hypertarget{class_system_manager_a073873362e7861f8a0368bb62144d4ca}{\index{System\-Manager@{System\-Manager}!System\-Mode\-Values@{System\-Mode\-Values}}
 \index{System\-Mode\-Values@{System\-Mode\-Values}!SystemManager@{System\-Manager}}
 \subsubsection[{System\-Mode\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf System\-Manager\-::\-System\-Mode\-Values}}}\label{class_system_manager_a073873362e7861f8a0368bb62144d4ca}
+
+
+Defines the values for the T\-System\-Mode type. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Simulation\-Mode@{Simulation\-Mode}!System\-Manager@{System\-Manager}}\index{System\-Manager@{System\-Manager}!Simulation\-Mode@{Simulation\-Mode}}\item[{\em 
 \hypertarget{class_system_manager_a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e}{Simulation\-Mode}\label{class_system_manager_a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e}
-}]\index{Real\-Time\-Mode@{Real\-Time\-Mode}!System\-Manager@{System\-Manager}}\index{System\-Manager@{System\-Manager}!Real\-Time\-Mode@{Real\-Time\-Mode}}\item[{\em 
+}]Indicates that the system expects an external signal to start. \index{Real\-Time\-Mode@{Real\-Time\-Mode}!System\-Manager@{System\-Manager}}\index{System\-Manager@{System\-Manager}!Real\-Time\-Mode@{Real\-Time\-Mode}}\item[{\em 
 \hypertarget{class_system_manager_a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357}{Real\-Time\-Mode}\label{class_system_manager_a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357}
-}]\end{description}
+}]Indicates that the system is working in real-\/time, even without external signaling. Not implemented. \end{description}
 \end{Desc}
 
 
-Definition at line 34 of file System\-Manager.\-h.
+Definition at line 60 of file System\-Manager.\-h.
 
 
 
@@ -181,6 +232,10 @@ Definition at line 34 of file System\-Manager.\-h.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_a7654b10e671b56945ff0958781e07a6f}
+
+
+Private constructor for singleton implementation. 
+
 
 
 Definition at line 19 of file System\-Manager.\-cpp.
@@ -197,12 +252,23 @@ Definition at line 19 of file System\-Manager.\-cpp.
 )}}\label{class_system_manager_a87443d7e75b0f170535d315c27237253}
 
 
+Main time iteration of the system. 
+
+This method is the main time iteration of the whole system. The workflow is as follows\-:
+\begin{DoxyItemize}
+\item Delete the previous time step information.
+\item Get the current time consumption information.
+\item Set the consumption information in Open\-D\-S\-S.
+\item Advance the time in Open\-D\-S\-S.
+\item Invoke the External Controller for a decision.
+\item Wait for the External Controller to finish its decision. 
+\end{DoxyItemize}
+
 Definition at line 63 of file System\-Manager.\-cpp.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -231,7 +297,14 @@ Here is the caller graph for this function\-:\nopagebreak
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_system_manager_ab9f52e613fdbdc4690be79179b7357e6}
 
 
-Definition at line 69 of file System\-Manager.\-h.
+Returns the current system working mode. 
+
+\begin{DoxyReturn}{Returns}
+Current system working mode. 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file System\-Manager.\-h.
 
 
 
@@ -253,7 +326,14 @@ Here is the caller graph for this function\-:\nopagebreak
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_system_manager_aebfc7fab136f01836e07228474e4326f}
 
 
-Definition at line 63 of file System\-Manager.\-h.
+Returns the current system time. 
+
+\begin{DoxyReturn}{Returns}
+Current system time. 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file System\-Manager.\-h.
 
 
 
@@ -277,6 +357,25 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{{\bf T\-Data\-Point} $\ast$}]{data\-Points}
 \end{DoxyParamCaption}
 )}}\label{class_system_manager_abaf36dbd2e75a773f2ddc40ac82e5f3b}
+
+
+Used to register multiple consumption information. 
+
+This method is mostly used for asynchronous consumption registration. Multiple consumption data points are fed into the \hyperlink{class_system_manager_a74a1b7e836ad95da039de9eb367544c3}{System\-Manager\-::m\-\_\-system\-Map}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Id} & Unique client id for the consumer. \\
+\hline
+{\em start\-Time} & Starting time of the consumption map. \\
+\hline
+{\em resolution} & Time resolution between consecutive consumptions. \\
+\hline
+{\em number\-Of\-Data\-Points} & Number of consumption data points. \\
+\hline
+{\em data\-Points} & Buffer containing consumption data points. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 27 of file System\-Manager.\-cpp.
@@ -313,6 +412,19 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_system_manager_ae96634f0635ad6c5e98620eb70ef7fbe}
 
 
+Used to register a single consumption information for the next time step. 
+
+The method is mostly used for synchronous consumption registration. The consumption for the next time interval is registered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\-Id} & Unique client id of the consumer. \\
+\hline
+{\em data\-Point} & Consumption for the next time interval. \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line 53 of file System\-Manager.\-cpp.
 
 
@@ -338,6 +450,15 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_system_manager_a97e64f74d188d41051488578800d20cd}
 
 
+Friend function to implement the singleton. 
+
+\begin{DoxyReturn}{Returns}
+Returns the only instance of \hyperlink{class_system_manager}{System\-Manager}.
+
+The only instance of \hyperlink{class_system_manager}{System\-Manager}. 
+\end{DoxyReturn}
+
+
 Definition at line 13 of file System\-Manager.\-cpp.
 
 
@@ -348,21 +469,33 @@ Definition at line 13 of file System\-Manager.\-cpp.
 \subsubsection[{m\-\_\-system\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Map} System\-Manager\-::m\-\_\-system\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_a74a1b7e836ad95da039de9eb367544c3}
 
 
-Definition at line 56 of file System\-Manager.\-h.
+This variable contains the consumption information for all clients for the future. 
+
+It is a mapping from time-\/$>$Client/\-Data. This allows us to get the consumption of any client at any time. This simplifies the asynchronous client consumption drastically. 
+
+Definition at line 121 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_a25bf998fe8f48168e2ad4c3dfd3bad91}{\index{System\-Manager@{System\-Manager}!m\-\_\-system\-Mode@{m\-\_\-system\-Mode}}
 \index{m\-\_\-system\-Mode@{m\-\_\-system\-Mode}!SystemManager@{System\-Manager}}
 \subsubsection[{m\-\_\-system\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Mode} System\-Manager\-::m\-\_\-system\-Mode\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_a25bf998fe8f48168e2ad4c3dfd3bad91}
 
 
-Definition at line 54 of file System\-Manager.\-h.
+The current working mode of the system. 
+
+
+
+Definition at line 116 of file System\-Manager.\-h.
 
 \hypertarget{class_system_manager_af5a7fec3622669af269cbcf7b1b2af22}{\index{System\-Manager@{System\-Manager}!m\-\_\-system\-Time@{m\-\_\-system\-Time}}
 \index{m\-\_\-system\-Time@{m\-\_\-system\-Time}!SystemManager@{System\-Manager}}
 \subsubsection[{m\-\_\-system\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Time} System\-Manager\-::m\-\_\-system\-Time\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_af5a7fec3622669af269cbcf7b1b2af22}
 
 
-Definition at line 53 of file System\-Manager.\-h.
+The current system time, incremented at each time step. 
+
+
+
+Definition at line 111 of file System\-Manager.\-h.
 
 
 

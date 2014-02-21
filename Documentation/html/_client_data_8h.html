@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('_client_data_8h.html','');});
 <div class="title">ClientData.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines the Aysnchronous and Synchronous ClientData class and messages.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_message_ender_8h_source.html">MessageEnder.h</a>&quot;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
@@ -122,7 +125,7 @@ Include dependency graph for ClientData.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_client_data_8h__dep__incl.svg" width="1027" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_client_data_8h__dep__incl.svg" width="1050" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="_client_data_8h_source.html">Go to the source code of this file.</a></p>
@@ -130,26 +133,36 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html">TerraSwarm::Asynchronous::ClientData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_terra_swarm_1_1_asynchronous.html" title="Asynchronous client messages are defined under this namespace. ">Asynchronous</a> Client Data message from the client to indicate its consumption for a time interval.  <a href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_client_data.html">TerraSwarm::Synchronous::ClientData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_terra_swarm_1_1_synchronous.html" title="Synchronous client message are defined under this namespace. ">Synchronous</a> Client Data message from the client to indicate its consumption for a time interval.  <a href="class_terra_swarm_1_1_synchronous_1_1_client_data.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_terra_swarm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_terra_swarm.html">TerraSwarm</a></td></tr>
+<tr class="memdesc:namespace_terra_swarm"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_terra_swarm.html" title="TerraSwarm related classes are defined under this namespace. ">TerraSwarm</a> related classes are defined under this namespace. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_terra_swarm_1_1_asynchronous"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_terra_swarm_1_1_asynchronous.html">TerraSwarm::Asynchronous</a></td></tr>
+<tr class="memdesc:namespace_terra_swarm_1_1_asynchronous"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_terra_swarm_1_1_asynchronous.html" title="Asynchronous client messages are defined under this namespace. ">Asynchronous</a> client messages are defined under this namespace. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_terra_swarm_1_1_synchronous"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_terra_swarm_1_1_synchronous.html">TerraSwarm::Synchronous</a></td></tr>
+<tr class="memdesc:namespace_terra_swarm_1_1_synchronous"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_terra_swarm_1_1_synchronous.html" title="Synchronous client message are defined under this namespace. ">Synchronous</a> client message are defined under this namespace. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines the Aysnchronous and Synchronous ClientData class and messages. </p>
+<p>Created on: Oct 13, 2013 Author: Alper </p>
+
+<p>Definition in file <a class="el" href="_client_data_8h_source.html">ClientData.h</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="dir_202c07ae6a49a06cb07d2db250fe6de9.html">TerraswarmLibrary</a></li><li class="navelem"><a class="el" href="_client_data_8h.html">ClientData.h</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

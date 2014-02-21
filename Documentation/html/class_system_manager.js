@@ -8,7 +8,7 @@ var class_system_manager =
     [ "TSystemMap", "class_system_manager.html#aae66953e62823ae14519c7e9b3925864", null ],
     [ "TSystemMode", "class_system_manager.html#aa32b3f50b8882c8aa7a9ca88ab7a43dd", null ],
     [ "TSystemTime", "class_system_manager.html#a9743ff4f23e7d957f5932780d8070099", null ],
-    [ "TVoltage", "class_system_manager.html#ad7c10914fe99b3f09350a10028f25300", null ],
+    [ "TVoltage", "class_system_manager.html#a4194454c8c982c9e4d450e16625dd19c", null ],
     [ "TWattage", "class_system_manager.html#a924f6502f78c31bbf5f462f9554d4fc5", null ],
     [ "SystemModeValues", "class_system_manager.html#a073873362e7861f8a0368bb62144d4ca", [
       [ "SimulationMode", "class_system_manager.html#a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e", null ],

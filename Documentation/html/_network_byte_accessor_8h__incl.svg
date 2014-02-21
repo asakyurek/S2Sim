@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_compile_time_checker_library_8h.html" target="_top" xlink:title="CompileTimeCheckerLibrary.h">
+<a xlink:href="_compile_time_checker_library_8h.html" target="_top" xlink:title="This file contains template classes to do compile time checking. ">
 <polygon style="fill:white;stroke:black;" points="74,-0 74,-21 255,-21 255,-0 74,-0"/>
 <text text-anchor="middle" x="164" y="-7" style="font-family:Arial;font-size:10.00;">CompileTimeCheckerLibrary.h</text>
 </a>

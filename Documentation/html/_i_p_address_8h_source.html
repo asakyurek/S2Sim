@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -108,13 +108,7 @@ $(document).ready(function(){initNavTree('_i_p_address_8h_source.html','');});
 <div class="title">IPAddress.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_p_address_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * IPAddress.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: Jan 21, 2014</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: asakyurek</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<a href="_i_p_address_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef IPADDRESS_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IPADDRESS_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
@@ -134,81 +128,85 @@ $(document).ready(function(){initNavTree('_i_p_address_8h_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_i_p_address.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_p_address.html">IPAddress</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">   30</a></span>&#160;        <span class="keyword">typedef</span> sockaddr_in <a class="code" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">TAddressStruct</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">   33</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">   34</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">   35</a></span>&#160;        <span class="keyword">typedef</span> socklen_t <a class="code" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">TSocketSize</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_i_p_address.html#aaafe20f26b2569a5ac9cd3b61b5c0c50">   38</a></span>&#160;        <a class="code" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">TAddressStruct</a> <a class="code" href="class_i_p_address.html#aaafe20f26b2569a5ac9cd3b61b5c0c50">m_address</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a>&amp;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5">GetAddress</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a>&amp;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb">GetPort</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_i_p_address.html#a1333231aa0a638d7d730a5c89ae868c9">IPAddress</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_i_p_address.html#a1333231aa0a638d7d730a5c89ae868c9">IPAddress</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; copy );</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_i_p_address.html#a877ef12fd67c5064b7188a95e570a28b">~IPAddress</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="class_i_p_address.html">IPAddress</a>&amp;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_i_p_address.html#adebc20befea4d99f6ffd058d999480b2">operator = </a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; rhs );</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_i_p_address.html#acaa3d485fedf874453d3fd0ab7e93a64">operator == </a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; rhs ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e">SetAddress</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a> address );</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5">GetAddress</a>( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7">SetPort</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a> port );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb">GetPort</a>( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">operator</span> sockaddr* ( void );</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">TSocketSize</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22">   73</a></span>&#160;        <a class="code" href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22">GetSocketSize</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> ( <span class="keyword">sizeof</span>( sockaddr_in ) );</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IPADDRESS_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_i_p_address_html"><div class="ttname"><a href="class_i_p_address.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00027">IPAddress.h:27</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a0c90b37a86811781d4422c0dd2d5b6b5"><div class="ttname"><a href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5">IPAddress::GetAddress</a></div><div class="ttdeci">TAddress &amp; GetAddress(void)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00053">IPAddress.cpp:53</a></div></div>
-<div class="ttc" id="class_i_p_address_html_aaafe20f26b2569a5ac9cd3b61b5c0c50"><div class="ttname"><a href="class_i_p_address.html#aaafe20f26b2569a5ac9cd3b61b5c0c50">IPAddress::m_address</a></div><div class="ttdeci">TAddressStruct m_address</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00038">IPAddress.h:38</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a5908d6242879f0e45685f8b0734dafa7"><div class="ttname"><a href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7">IPAddress::SetPort</a></div><div class="ttdeci">void SetPort(const TPort port)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00073">IPAddress.cpp:73</a></div></div>
-<div class="ttc" id="class_i_p_address_html_acaa3d485fedf874453d3fd0ab7e93a64"><div class="ttname"><a href="class_i_p_address.html#acaa3d485fedf874453d3fd0ab7e93a64">IPAddress::operator==</a></div><div class="ttdeci">bool operator==(const IPAddress &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00037">IPAddress.cpp:37</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a877ef12fd67c5064b7188a95e570a28b"><div class="ttname"><a href="class_i_p_address.html#a877ef12fd67c5064b7188a95e570a28b">IPAddress::~IPAddress</a></div><div class="ttdeci">~IPAddress(void)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00021">IPAddress.cpp:21</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a5c8a6aeae1105603538c2661c68fd6bb"><div class="ttname"><a href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb">IPAddress::GetPort</a></div><div class="ttdeci">TPort &amp; GetPort(void)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00085">IPAddress.cpp:85</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a1333231aa0a638d7d730a5c89ae868c9"><div class="ttname"><a href="class_i_p_address.html#a1333231aa0a638d7d730a5c89ae868c9">IPAddress::IPAddress</a></div><div class="ttdeci">IPAddress(void)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00010">IPAddress.cpp:10</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a45062a631f57459b18c10c1c8fe310bf"><div class="ttname"><a href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">IPAddress::TAddressStruct</a></div><div class="ttdeci">sockaddr_in TAddressStruct</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00030">IPAddress.h:30</a></div></div>
-<div class="ttc" id="class_i_p_address_html_adebc20befea4d99f6ffd058d999480b2"><div class="ttname"><a href="class_i_p_address.html#adebc20befea4d99f6ffd058d999480b2">IPAddress::operator=</a></div><div class="ttdeci">IPAddress &amp; operator=(const IPAddress &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00026">IPAddress.cpp:26</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a36831f63346275f44e8747d77a2a5d51"><div class="ttname"><a href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">IPAddress::TAddress</a></div><div class="ttdeci">unsigned int TAddress</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00033">IPAddress.h:33</a></div></div>
-<div class="ttc" id="class_i_p_address_html_ade47d25d834bfb952fcf7fb2867db21e"><div class="ttname"><a href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e">IPAddress::SetAddress</a></div><div class="ttdeci">void SetAddress(const TAddress address)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00047">IPAddress.cpp:47</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a28c76ca7e5d4aa86d2caf0b742a23cdb"><div class="ttname"><a href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">IPAddress::TSocketSize</a></div><div class="ttdeci">socklen_t TSocketSize</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00035">IPAddress.h:35</a></div></div>
-<div class="ttc" id="class_i_p_address_html_abdbc7cc25dc15d9e85ceb2e1d3125e22"><div class="ttname"><a href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22">IPAddress::GetSocketSize</a></div><div class="ttdeci">static TSocketSize GetSocketSize(void)</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00073">IPAddress.h:73</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a51188195685c31d4258c0a078cc37154"><div class="ttname"><a href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">IPAddress::TPort</a></div><div class="ttdeci">unsigned short TPort</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00034">IPAddress.h:34</a></div></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_i_p_address.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_p_address.html">IPAddress</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">   36</a></span>&#160;        <span class="keyword">typedef</span> sockaddr_in <a class="code" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">TAddressStruct</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">   42</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">   47</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">   52</a></span>&#160;        <span class="keyword">typedef</span> socklen_t <a class="code" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">TSocketSize</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_i_p_address.html#aaafe20f26b2569a5ac9cd3b61b5c0c50">   58</a></span>&#160;        <a class="code" href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">TAddressStruct</a> <a class="code" href="class_i_p_address.html#aaafe20f26b2569a5ac9cd3b61b5c0c50">m_address</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a>&amp;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5">GetAddress</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a>&amp;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb">GetPort</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class_i_p_address.html#a1333231aa0a638d7d730a5c89ae868c9">IPAddress</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_i_p_address.html#a1333231aa0a638d7d730a5c89ae868c9">IPAddress</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; copy );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="class_i_p_address.html#a877ef12fd67c5064b7188a95e570a28b">~IPAddress</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="class_i_p_address.html">IPAddress</a>&amp;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="class_i_p_address.html#adebc20befea4d99f6ffd058d999480b2">operator = </a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; rhs );</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="class_i_p_address.html#acaa3d485fedf874453d3fd0ab7e93a64">operator == </a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; rhs ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e">SetAddress</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a> address );</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">TAddress</a></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5">GetAddress</a>( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7">SetPort</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a> port );</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">TPort</a></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb">GetPort</a>( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">operator</span> sockaddr* ( void );</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">TSocketSize</a></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22">  160</a></span>&#160;        <a class="code" href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22">GetSocketSize</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">return</span> ( <span class="keyword">sizeof</span>( sockaddr_in ) );</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IPADDRESS_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_i_p_address_html"><div class="ttname"><a href="class_i_p_address.html">IPAddress</a></div><div class="ttdoc">This class is an abstraction of the OS IP Address structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00030">IPAddress.h:30</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a0c90b37a86811781d4422c0dd2d5b6b5"><div class="ttname"><a href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5">IPAddress::GetAddress</a></div><div class="ttdeci">TAddress &amp; GetAddress(void)</div><div class="ttdoc">Returns a reference to the address value. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00053">IPAddress.cpp:53</a></div></div>
+<div class="ttc" id="class_i_p_address_html_aaafe20f26b2569a5ac9cd3b61b5c0c50"><div class="ttname"><a href="class_i_p_address.html#aaafe20f26b2569a5ac9cd3b61b5c0c50">IPAddress::m_address</a></div><div class="ttdeci">TAddressStruct m_address</div><div class="ttdoc">OS Address structure to be abstracted. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00058">IPAddress.h:58</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a5908d6242879f0e45685f8b0734dafa7"><div class="ttname"><a href="class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7">IPAddress::SetPort</a></div><div class="ttdeci">void SetPort(const TPort port)</div><div class="ttdoc">Sets the port field of the structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00073">IPAddress.cpp:73</a></div></div>
+<div class="ttc" id="class_i_p_address_html_acaa3d485fedf874453d3fd0ab7e93a64"><div class="ttname"><a href="class_i_p_address.html#acaa3d485fedf874453d3fd0ab7e93a64">IPAddress::operator==</a></div><div class="ttdeci">bool operator==(const IPAddress &amp;rhs) const </div><div class="ttdoc">Checks whether the addresses and ports are the same. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00037">IPAddress.cpp:37</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a877ef12fd67c5064b7188a95e570a28b"><div class="ttname"><a href="class_i_p_address.html#a877ef12fd67c5064b7188a95e570a28b">IPAddress::~IPAddress</a></div><div class="ttdeci">~IPAddress(void)</div><div class="ttdoc">No use. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00021">IPAddress.cpp:21</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a5c8a6aeae1105603538c2661c68fd6bb"><div class="ttname"><a href="class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb">IPAddress::GetPort</a></div><div class="ttdeci">TPort &amp; GetPort(void)</div><div class="ttdoc">Return a reference to the port value. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00085">IPAddress.cpp:85</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a1333231aa0a638d7d730a5c89ae868c9"><div class="ttname"><a href="class_i_p_address.html#a1333231aa0a638d7d730a5c89ae868c9">IPAddress::IPAddress</a></div><div class="ttdeci">IPAddress(void)</div><div class="ttdoc">Sets the address family and clears the structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00010">IPAddress.cpp:10</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a45062a631f57459b18c10c1c8fe310bf"><div class="ttname"><a href="class_i_p_address.html#a45062a631f57459b18c10c1c8fe310bf">IPAddress::TAddressStruct</a></div><div class="ttdeci">sockaddr_in TAddressStruct</div><div class="ttdoc">BSD Socket structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00036">IPAddress.h:36</a></div></div>
+<div class="ttc" id="class_i_p_address_html_adebc20befea4d99f6ffd058d999480b2"><div class="ttname"><a href="class_i_p_address.html#adebc20befea4d99f6ffd058d999480b2">IPAddress::operator=</a></div><div class="ttdeci">IPAddress &amp; operator=(const IPAddress &amp;rhs)</div><div class="ttdoc">Assignment operator for binary copy. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00026">IPAddress.cpp:26</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a36831f63346275f44e8747d77a2a5d51"><div class="ttname"><a href="class_i_p_address.html#a36831f63346275f44e8747d77a2a5d51">IPAddress::TAddress</a></div><div class="ttdeci">unsigned int TAddress</div><div class="ttdoc">IP Address value. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00042">IPAddress.h:42</a></div></div>
+<div class="ttc" id="class_i_p_address_html_ade47d25d834bfb952fcf7fb2867db21e"><div class="ttname"><a href="class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e">IPAddress::SetAddress</a></div><div class="ttdeci">void SetAddress(const TAddress address)</div><div class="ttdoc">Sets the address field of the structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8cpp_source.html#l00047">IPAddress.cpp:47</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a28c76ca7e5d4aa86d2caf0b742a23cdb"><div class="ttname"><a href="class_i_p_address.html#a28c76ca7e5d4aa86d2caf0b742a23cdb">IPAddress::TSocketSize</a></div><div class="ttdeci">socklen_t TSocketSize</div><div class="ttdoc">Size of the socket structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00052">IPAddress.h:52</a></div></div>
+<div class="ttc" id="class_i_p_address_html_abdbc7cc25dc15d9e85ceb2e1d3125e22"><div class="ttname"><a href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22">IPAddress::GetSocketSize</a></div><div class="ttdeci">static TSocketSize GetSocketSize(void)</div><div class="ttdoc">Returns the size of the socket structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00160">IPAddress.h:160</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a51188195685c31d4258c0a078cc37154"><div class="ttname"><a href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">IPAddress::TPort</a></div><div class="ttdeci">unsigned short TPort</div><div class="ttdoc">Port value. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00047">IPAddress.h:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="dir_6b989bf8ba74a24286adf9e324b41c76.html">SocketLibrary</a></li><li class="navelem"><a class="el" href="_i_p_address_8h.html">IPAddress.h</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:14 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:33 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

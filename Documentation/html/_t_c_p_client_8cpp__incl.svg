@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_t_c_p_client_8h.html" target="_top" xlink:title="TCPClient.h">
+<a xlink:href="_t_c_p_client_8h.html" target="_top" xlink:title="Defines the TCPClient class. ">
 <polygon style="fill:white;stroke:black;" points="55,-116 55,-137 134,-137 134,-116 55,-116"/>
 <text text-anchor="middle" x="94" y="-123" style="font-family:Arial;font-size:10.00;">TCPClient.h</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_socket_base_8h.html" target="_top" xlink:title="SocketBase.h">
+<a xlink:href="_socket_base_8h.html" target="_top" xlink:title="Defines the SocketBase template class. ">
 <polygon style="fill:white;stroke:black;" points="0,-58 0,-79 89,-79 89,-58 0,-58"/>
 <text text-anchor="middle" x="44" y="-65" style="font-family:Arial;font-size:10.00;">SocketBase.h</text>
 </a>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="IPAddress.h">
+<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="Defines the IPAddress class. ">
 <polygon style="fill:white;stroke:black;" points="106,-58 106,-79 183,-79 183,-58 106,-58"/>
 <text text-anchor="middle" x="144" y="-65" style="font-family:Arial;font-size:10.00;">IPAddress.h</text>
 </a>

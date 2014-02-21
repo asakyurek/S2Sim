@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="257,-127 257,-148 317,-148 317,-127 257,-127"/>
 <text text-anchor="middle" x="287" y="-134" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="GetSystemManager">
+<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="Singleton function that returns the only instance of SystemManager. ">
 <polygon style="fill:white;stroke:black;" points="226,-89 226,-110 349,-110 349,-89 226,-89"/>
 <text text-anchor="middle" x="287" y="-96" style="font-family:Arial;font-size:10.00;">GetSystemManager</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="GetMatlabManager">
+<a xlink:href="_matlab_manager_8cpp.html#adf11a697c41ba15207a66f8d2b567b75" target="_top" xlink:title="This function returns the only instance of MatlabManager. ">
 <polygon style="fill:white;stroke:black;" points="227,-51 227,-72 347,-72 347,-51 227,-51"/>
 <text text-anchor="middle" x="287" y="-58" style="font-family:Arial;font-size:10.00;">GetMatlabManager</text>
 </a>
@@ -54,7 +54,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="TCPConnectedClient\l::SendData">
+<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="Sends data to the connected client. ">
 <polygon style="fill:white;stroke:black;" points="223,-0 223,-34 352,-34 352,-0 223,-0"/>
 <text text-anchor="start" x="231" y="-20" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 <text text-anchor="middle" x="287" y="-7" style="font-family:Arial;font-size:10.00;">::SendData</text>

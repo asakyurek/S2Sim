@@ -1,6 +1,5 @@
 <map id="ThreadBase" name="ThreadBase">
-<area shape="rect" href="$class_my_thread.html" title="MyThread" alt="" coords="5,84,99,111"/>
-<area shape="rect" href="$class_threaded_t_c_p_client.html" title="ThreadedTCPClient" alt="" coords="123,84,285,111"/>
-<area shape="rect" href="$class_threaded_t_c_p_connected_client.html" title="ThreadedTCPConnectedClient" alt="" coords="309,84,552,111"/>
-<area shape="rect" href="$class_threaded_t_c_p_server.html" title="ThreadedTCPServer" alt="" coords="576,84,741,111"/>
+<area shape="rect" href="$class_threaded_t_c_p_client.html" title="This is a TCP client class that receives data in a separate thread in the background. " alt="" coords="5,84,168,111"/>
+<area shape="rect" href="$class_threaded_t_c_p_connected_client.html" title="Manages the connection to an accepted client on the server side and receives data in a separate threa..." alt="" coords="192,84,435,111"/>
+<area shape="rect" href="$class_threaded_t_c_p_server.html" title="Defines the threaded version of TCPServer that accepts clients in another thread in the background..." alt="" coords="459,84,624,111"/>
 </map>

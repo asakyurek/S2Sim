@@ -1,6 +1,6 @@
 <map id="TCPServer::Listen" name="TCPServer::Listen">
-<area shape="rect" href="$class_threaded_t_c_p_server.html#ac201656ab22b4ad07115d78cf8b7dd89" title="ThreadedTCPServer::\lSetNotificationCallback" alt="" coords="200,65,392,111"/>
-<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="484,5,660,51"/>
-<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="ControlManager::ControlManager" alt="" coords="440,75,704,101"/>
-<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="444,125,700,152"/>
+<area shape="rect" href="$class_threaded_t_c_p_server.html#ac201656ab22b4ad07115d78cf8b7dd89" title="Sets the notification callback. " alt="" coords="200,65,392,111"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="Private constructor for singleton implementation. " alt="" coords="484,5,660,51"/>
+<area shape="rect" href="$class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" title="Private constructor for singleton implementation. " alt="" coords="440,75,704,101"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="Private constructor to implement the singleton. " alt="" coords="444,125,700,152"/>
 </map>

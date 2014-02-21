@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html" target="_top" xlink:title="LogPrint.h">
+<a xlink:href="_log_print_8h.html" target="_top" xlink:title="Defines logging related functions. ">
 <polygon style="fill:white;stroke:black;" points="25,-116 25,-137 95,-137 95,-116 25,-116"/>
 <text text-anchor="middle" x="60" y="-123" style="font-family:Arial;font-size:10.00;">LogPrint.h</text>
 </a>
@@ -40,7 +40,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Semaphore.h">
+<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. ">
 <polygon style="fill:white;stroke:black;" points="52,-58 52,-79 142,-79 142,-58 52,-58"/>
 <text text-anchor="middle" x="97" y="-65" style="font-family:Arial;font-size:10.00;">Semaphore.h</text>
 </a>

@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="856,-113 856,-134 916,-134 916,-113 856,-113"/>
 <text text-anchor="middle" x="886" y="-120" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_control_manager.html#a67d548535b36a78e315a0aa5f9f8e6c8" target="_top" xlink:title="ControlManager::SetClient">
+<a xlink:href="class_control_manager.html#a67d548535b36a78e315a0aa5f9f8e6c8" target="_top" xlink:title="Sets the connection information to the accepted External Controller. ">
 <polygon style="fill:white;stroke:black;" points="198,-99 198,-120 358,-120 358,-99 198,-99"/>
 <text text-anchor="middle" x="278" y="-106" style="font-family:Arial;font-size:10.00;">ControlManager::SetClient</text>
 </a>
@@ -54,7 +54,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" target="_top" xlink:title="ThreadedTCPConnectedClient\l::SetNotificationCallback">
+<a xlink:href="class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" target="_top" xlink:title="Sets the notification callback function. ">
 <polygon style="fill:white;stroke:black;" points="394,-93 394,-127 576,-127 576,-93 394,-93"/>
 <text text-anchor="start" x="402" y="-113" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient</text>
 <text text-anchor="middle" x="485" y="-100" style="font-family:Arial;font-size:10.00;">::SetNotificationCallback</text>
@@ -106,7 +106,7 @@
 </g>
 <!-- Node8 -->
 <g id="node17" class="node"><title>Node8</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="844,-75 844,-96 929,-96 929,-75 844,-75"/>
 <text text-anchor="middle" x="886" y="-82" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>
@@ -118,7 +118,7 @@
 </g>
 <!-- Node9 -->
 <g id="node20" class="node"><title>Node9</title>
-<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="ErrorPrint">
+<a xlink:href="_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" target="_top" xlink:title="6 parameter error message ">
 <polygon style="fill:white;stroke:black;" points="854,-37 854,-58 919,-58 919,-37 854,-37"/>
 <text text-anchor="middle" x="886" y="-44" style="font-family:Arial;font-size:10.00;">ErrorPrint</text>
 </a>
@@ -130,7 +130,7 @@
 </g>
 <!-- Node10 -->
 <g id="node22" class="node"><title>Node10</title>
-<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="GetSystemManager">
+<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="Singleton function that returns the only instance of SystemManager. ">
 <polygon style="fill:white;stroke:black;" points="825,1 825,-20 948,-20 948,1 825,1"/>
 <text text-anchor="middle" x="886" y="-6" style="font-family:Arial;font-size:10.00;">GetSystemManager</text>
 </a>

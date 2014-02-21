@@ -3,6 +3,11 @@
 }
 
 
+\hyperlink{namespace_terra_swarm_1_1_asynchronous}{Asynchronous} Client Data message from the client to indicate its consumption for a time interval.  
+
+
+
+
 {\ttfamily \#include $<$Client\-Data.\-h$>$}
 
 \subsection*{Public Types}
@@ -11,79 +16,79 @@
 enum \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9f}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9fab47acf016a2a1f12737512d9ee7102a0}{Success} = ( T\-Check\-Result )true, 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9fa89702b1843b2d2547e4da97c3adca3d0}{Fail} = ( T\-Check\-Result )false
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for T\-Check\-Result. \end{DoxyCompactList}\item 
 typedef bool \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a91575e9105c574792d5216d40f1c89de}{T\-Check\-Result}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the message check result type. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a70b07646d3a13d9c2cb16ade44a49966}{T\-Start\-Time}
-\item 
+\begin{DoxyCompactList}\small\item\em Starting time of the sent data points. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a626a7d114c405bceb24262253fe36c71}{T\-Time\-Resolution}
-\item 
+\begin{DoxyCompactList}\small\item\em Time interval between consecutive data points. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}{T\-Number\-Of\-Data\-Points}
-\item 
+\begin{DoxyCompactList}\small\item\em Number of data points in the message. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{T\-Data\-Point}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em General type for a data point representing consumption for this case. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a7ef007db6436f43f2fa6b503e3ad690e}{$\sim$\-Client\-Data} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Deallocates the memory. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a91575e9105c574792d5216d40f1c89de}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a6d290292eacc3416e00da93b3f79d8c3}{Check\-Message} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Checks whether the current memory contains a \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Client\-Data} message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a70b07646d3a13d9c2cb16ade44a49966}{T\-Start\-Time} \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_af78cac737c5197ad17205bab73421b60}{Get\-Start\-Time} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the Start\-Time field. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a626a7d114c405bceb24262253fe36c71}{T\-Time\-Resolution} \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a6e3ca8aab58e0b40867eee3e3ec281e6}{Get\-Time\-Resolution} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the Time\-Resolution field. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}{T\-Number\-Of\-Data\-Points} \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aba73075c35dd912dad8f99dd026b0785}{Get\-Number\-Of\-Data\-Points} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the Number\-Of\-Data\-Points field. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{T\-Data\-Point} $\ast$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a72ed5a08a0bbe088b3b6f4d79cdbab2d}{Get\-Data\-Points} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the pointer to the data points in the message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Client\-Data} $\ast$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_abbae8a9d83addb3758fe00fbfeefae97}{Get\-New\-Client\-Data} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a70b07646d3a13d9c2cb16ade44a49966}{T\-Start\-Time} start\-Time, const \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a626a7d114c405bceb24262253fe36c71}{T\-Time\-Resolution} time\-Resolution, const \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}{T\-Number\-Of\-Data\-Points} number\-Of\-Data\-Points, \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{T\-Data\-Point} $\ast$data\-Points)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Creates a new Asnychronous \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Client\-Data} message and allocates memory for it. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ab125e3c9367fdafbd7adfcee2f4916ca}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ab125e3c9367fdafbd7adfcee2f4916caade31247f7e6ce63ad9d29f262e71f1f3}{Message\-Type} = 0x0001, 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ab125e3c9367fdafbd7adfcee2f4916caa9b9e910bbc8034727a892e32130a6a88}{Message\-Id} = 0x0003
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Message Header values. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0}{Field\-Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0a669ddc8638e4c5d6c0ae519ff59f66c1}{Start\-Time\-Size} = sizeof( T\-Start\-Time ), 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0ac13dfbedd3bb3241adca682ae0cae309}{Time\-Resolution\-Size} = sizeof( T\-Time\-Resolution ), 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0a5042b9a88db56411ee2879d930f5defb}{Number\-Of\-Data\-Points\-Size} = sizeof( T\-Number\-Of\-Data\-Points ), 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0a673cab9c8ea4ec18ec428a34c5a30eb2}{Data\-Point\-Size} = sizeof( T\-Data\-Point )
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Size of the message fields. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1db}{Field\-Index\-Values} \{ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1dba01941423451995fbb2656b85f2199b06}{Start\-Time\-Index} = Message\-Header\-:\-:Message\-Header\-Size, 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1dba5f51978c66fb63b9b2e7e7fabc6f8b32}{Time\-Resolution\-Index} = Start\-Time\-Index + Start\-Time\-Size, 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1dba55c2f5bf31d40f83c6fec0e3943e4985}{Number\-Of\-Data\-Points\-Index} = Time\-Resolution\-Index + Time\-Resolution\-Size, 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1dba27bcfe80092d93659e1b03f67c3f3b77}{Data\-Start\-Index} = Number\-Of\-Data\-Points\-Index + Number\-Of\-Data\-Points\-Size
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Index of the message fields. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1dba01941423451995fbb2656b85f2199b06}{Start\-Time\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0a669ddc8638e4c5d6c0ae519ff59f66c1}{Start\-Time\-Size} $>$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a9d8f2e887da6bef7fc623b4ca8e2cf57}{T\-Start\-Time\-Accessor}
-\item 
+\begin{DoxyCompactList}\small\item\em Accessor helper for Start\-Time field. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1dba5f51978c66fb63b9b2e7e7fabc6f8b32}{Time\-Resolution\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0ac13dfbedd3bb3241adca682ae0cae309}{Time\-Resolution\-Size} $>$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_acda5940545173f5f000e8eb0fdb8c712}{T\-Time\-Resolution\-Accessor}
-\item 
+\begin{DoxyCompactList}\small\item\em Accessor helper for Time\-Resolution field. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1dba55c2f5bf31d40f83c6fec0e3943e4985}{Number\-Of\-Data\-Points\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0a5042b9a88db56411ee2879d930f5defb}{Number\-Of\-Data\-Points\-Size} $>$ \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a5a4bdd7c49a72f585ba8c0216a241bb8}{T\-Number\-Of\-Data\-Points\-Accessor}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Accessor helper for Number\-Of\-Data\-Points field. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ad17e5aeaa79fe4815bfe6187b32632f4}{Client\-Data} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor to force the usage of the static construction method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+\hyperlink{namespace_terra_swarm_1_1_asynchronous}{Asynchronous} Client Data message from the client to indicate its consumption for a time interval. 
 
-
-Definition at line 20 of file Client\-Data.\-h.
+Definition at line 23 of file Client\-Data.\-h.
 
 
 
@@ -93,56 +98,88 @@ Definition at line 20 of file Client\-Data.\-h.
 \subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a91575e9105c574792d5216d40f1c89de}
 
 
-Definition at line 30 of file Client\-Data.\-h.
+Defines the message check result type. 
+
+
+
+Definition at line 39 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!T\-Data\-Point@{T\-Data\-Point}}
 \index{T\-Data\-Point@{T\-Data\-Point}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{T\-Data\-Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}
 
 
-Definition at line 40 of file Client\-Data.\-h.
+General type for a data point representing consumption for this case. 
+
+
+
+Definition at line 68 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}}
 \index{T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{T\-Number\-Of\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}
 
 
-Definition at line 39 of file Client\-Data.\-h.
+Number of data points in the message. 
+
+
+
+Definition at line 63 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a5a4bdd7c49a72f585ba8c0216a241bb8}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!T\-Number\-Of\-Data\-Points\-Accessor@{T\-Number\-Of\-Data\-Points\-Accessor}}
 \index{T\-Number\-Of\-Data\-Points\-Accessor@{T\-Number\-Of\-Data\-Points\-Accessor}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{T\-Number\-Of\-Data\-Points\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Number\-Of\-Data\-Points\-Index}, {\bf Number\-Of\-Data\-Points\-Size}$>$ {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a5a4bdd7c49a72f585ba8c0216a241bb8}
 
 
-Definition at line 61 of file Client\-Data.\-h.
+Accessor helper for Number\-Of\-Data\-Points field. 
+
+
+
+Definition at line 106 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a70b07646d3a13d9c2cb16ade44a49966}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!T\-Start\-Time@{T\-Start\-Time}}
 \index{T\-Start\-Time@{T\-Start\-Time}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{T\-Start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Start\-Time}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a70b07646d3a13d9c2cb16ade44a49966}
 
 
-Definition at line 37 of file Client\-Data.\-h.
+Starting time of the sent data points. 
+
+
+
+Definition at line 53 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a9d8f2e887da6bef7fc623b4ca8e2cf57}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!T\-Start\-Time\-Accessor@{T\-Start\-Time\-Accessor}}
 \index{T\-Start\-Time\-Accessor@{T\-Start\-Time\-Accessor}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{T\-Start\-Time\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Start\-Time\-Index}, {\bf Start\-Time\-Size}$>$ {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Start\-Time\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a9d8f2e887da6bef7fc623b4ca8e2cf57}
 
 
-Definition at line 59 of file Client\-Data.\-h.
+Accessor helper for Start\-Time field. 
+
+
+
+Definition at line 96 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a626a7d114c405bceb24262253fe36c71}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!T\-Time\-Resolution@{T\-Time\-Resolution}}
 \index{T\-Time\-Resolution@{T\-Time\-Resolution}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{T\-Time\-Resolution}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Time\-Resolution}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a626a7d114c405bceb24262253fe36c71}
 
 
-Definition at line 38 of file Client\-Data.\-h.
+Time interval between consecutive data points. 
+
+
+
+Definition at line 58 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_acda5940545173f5f000e8eb0fdb8c712}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!T\-Time\-Resolution\-Accessor@{T\-Time\-Resolution\-Accessor}}
 \index{T\-Time\-Resolution\-Accessor@{T\-Time\-Resolution\-Accessor}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{T\-Time\-Resolution\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Time\-Resolution\-Index}, {\bf Time\-Resolution\-Size}$>$ {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-T\-Time\-Resolution\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_acda5940545173f5f000e8eb0fdb8c712}
 
 
-Definition at line 60 of file Client\-Data.\-h.
+Accessor helper for Time\-Resolution field. 
+
+
+
+Definition at line 101 of file Client\-Data.\-h.
 
 
 
@@ -150,22 +187,30 @@ Definition at line 60 of file Client\-Data.\-h.
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9f}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Check\-Result\-Values@{Check\-Result\-Values}}
 \index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9f}
+
+
+Defines the values for T\-Check\-Result. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Success@{Success}!Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Success@{Success}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9fab47acf016a2a1f12737512d9ee7102a0}{Success}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9fab47acf016a2a1f12737512d9ee7102a0}
-}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Fail@{Fail}}\item[{\em 
+}]Message is of correct type and id. \index{Fail@{Fail}!Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Fail@{Fail}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9fa89702b1843b2d2547e4da97c3adca3d0}{Fail}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a4af3124197d375d54989d28c2703dc9fa89702b1843b2d2547e4da97c3adca3d0}
-}]\end{description}
+}]Message has incorrect type or id. \end{description}
 \end{Desc}
 
 
-Definition at line 31 of file Client\-Data.\-h.
+Definition at line 44 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1db}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Field\-Index\-Values@{Field\-Index\-Values}}
 \index{Field\-Index\-Values@{Field\-Index\-Values}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_aa673343abbf055d48820fa210064a1db}
+
+
+Index of the message fields. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -181,11 +226,15 @@ Definition at line 31 of file Client\-Data.\-h.
 \end{Desc}
 
 
-Definition at line 51 of file Client\-Data.\-h.
+Definition at line 85 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Field\-Size\-Values@{Field\-Size\-Values}}
 \index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac66a46fcb609d1205cef15f85cd551b0}
+
+
+Size of the message fields. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -201,11 +250,15 @@ Definition at line 51 of file Client\-Data.\-h.
 \end{Desc}
 
 
-Definition at line 43 of file Client\-Data.\-h.
+Definition at line 74 of file Client\-Data.\-h.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_ab125e3c9367fdafbd7adfcee2f4916ca}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Header\-Values@{Header\-Values}}
 \index{Header\-Values@{Header\-Values}!TerraSwarm::Asynchronous::ClientData@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}}
 \subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_ab125e3c9367fdafbd7adfcee2f4916ca}
+
+
+Message Header values. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -217,7 +270,7 @@ Definition at line 43 of file Client\-Data.\-h.
 \end{Desc}
 
 
-Definition at line 23 of file Client\-Data.\-h.
+Definition at line 29 of file Client\-Data.\-h.
 
 
 
@@ -231,6 +284,10 @@ Definition at line 23 of file Client\-Data.\-h.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_ad17e5aeaa79fe4815bfe6187b32632f4}
 
 
+Private constructor to force the usage of the static construction method. 
+
+
+
 Definition at line 15 of file Client\-Data.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a7ef007db6436f43f2fa6b503e3ad690e}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!$\sim$\-Client\-Data@{$\sim$\-Client\-Data}}
@@ -240,6 +297,10 @@ Definition at line 15 of file Client\-Data.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a7ef007db6436f43f2fa6b503e3ad690e}
+
+
+Deallocates the memory. 
+
 
 
 Definition at line 19 of file Client\-Data.\-cpp.
@@ -256,6 +317,13 @@ Definition at line 19 of file Client\-Data.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a6d290292eacc3416e00da93b3f79d8c3}
 
 
+Checks whether the current memory contains a \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Client\-Data} message. 
+
+\begin{DoxyReturn}{Returns}
+Result of the check. 
+\end{DoxyReturn}
+
+
 Definition at line 49 of file Client\-Data.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_a72ed5a08a0bbe088b3b6f4d79cdbab2d}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Get\-Data\-Points@{Get\-Data\-Points}}
@@ -265,6 +333,13 @@ Definition at line 49 of file Client\-Data.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a72ed5a08a0bbe088b3b6f4d79cdbab2d}
+
+
+Gets the pointer to the data points in the message. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the beginning of data points. 
+\end{DoxyReturn}
 
 
 Definition at line 84 of file Client\-Data.\-cpp.
@@ -305,6 +380,31 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_abbae8a9d83addb3758fe00fbfeefae97}
 
 
+Creates a new Asnychronous \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Client\-Data} message and allocates memory for it. 
+
+\begin{DoxyWarning}{Warning}
+Deallocation is the responsibility of the user.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em sender\-Id} & Id of the Sender. \\
+\hline
+{\em receiver\-Id} & Id of the Receiver. \\
+\hline
+{\em start\-Time} & Starting time for the first consumption data. \\
+\hline
+{\em time\-Resolution} & Time interval between consecutive data points. \\
+\hline
+{\em number\-Of\-Data\-Points} & Number of data points in the message. \\
+\hline
+{\em data\-Points} & Pointer to the buffer holding the data points.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Newly allocated \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Client\-Data} message. 
+\end{DoxyReturn}
+
+
 Definition at line 25 of file Client\-Data.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_asynchronous_1_1_client_data_aba73075c35dd912dad8f99dd026b0785}{\index{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data@{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}!Get\-Number\-Of\-Data\-Points@{Get\-Number\-Of\-Data\-Points}}
@@ -314,6 +414,13 @@ Definition at line 25 of file Client\-Data.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_aba73075c35dd912dad8f99dd026b0785}
+
+
+Reads the Number\-Of\-Data\-Points field. 
+
+\begin{DoxyReturn}{Returns}
+Number of data points in the message. 
+\end{DoxyReturn}
 
 
 Definition at line 76 of file Client\-Data.\-cpp.
@@ -338,6 +445,13 @@ Here is the caller graph for this function\-:\nopagebreak
 ) const}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_af78cac737c5197ad17205bab73421b60}
 
 
+Reads the Start\-Time field. 
+
+\begin{DoxyReturn}{Returns}
+Start\-Time value. 
+\end{DoxyReturn}
+
+
 Definition at line 60 of file Client\-Data.\-cpp.
 
 
@@ -358,6 +472,13 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_asynchronous_1_1_client_data_a6e3ca8aab58e0b40867eee3e3ec281e6}
+
+
+Reads the Time\-Resolution field. 
+
+\begin{DoxyReturn}{Returns}
+Time\-Resolution value. 
+\end{DoxyReturn}
 
 
 Definition at line 68 of file Client\-Data.\-cpp.

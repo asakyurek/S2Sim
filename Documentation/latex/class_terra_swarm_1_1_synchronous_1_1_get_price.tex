@@ -3,6 +3,11 @@
 }
 
 
+Defines the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message sent from the client to the Controller to get the current price value.  
+
+
+
+
 {\ttfamily \#include $<$Get\-Price.\-h$>$}
 
 \subsection*{Public Types}
@@ -11,44 +16,44 @@
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798aa6e8d01a11a6e2d19be5074d6ab3e779}{Success} = ( T\-Check\-Result )true, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798a5b3330fb077085ae5fae8509ffcf64c8}{Fail} = ( T\-Check\-Result )false
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for T\-Check\-Result. \end{DoxyCompactList}\item 
 typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a174c0399b878132f69b36c99ec7a09b4}{T\-Check\-Result}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the message check result type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a1727e44cb45249ec35fdcd84b4b0b331}{$\sim$\-Get\-Price} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Deallocates the memory. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a174c0399b878132f69b36c99ec7a09b4}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a9d05dcfb45a62ffe7891c31fbd1fb4ca}{Check\-Message} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks whether the current memory contains the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a989d177a7d82912fb902f99304f84433}{Get\-New\-Get\-Price} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message and allocates the necessary memory. \end{DoxyCompactList}\item 
 static \hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{T\-Data\-Size} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a424d231d9de597d35ffc1359bdcea4b2}{Get\-Size} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the size of a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a753a713a664ad54645f58aa349d74017}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a753a713a664ad54645f58aa349d74017a08ca4ff2a63b1d19e7ac3fc9dbc247fb}{Message\-Type} = 0x0003, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_a753a713a664ad54645f58aa349d74017a2719f42b8dc56e4b37b8e0a3d63936e8}{Message\-Id} = 0x0001
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Message Header values. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_ac675c3af37b1b76c0af699178c4fbe06}{Field\-Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_ac675c3af37b1b76c0af699178c4fbe06a6bd2ff634603aa756193e870db6762d7}{Total\-Size} = ( 0 )
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the Field Size values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price_ab0eb094bba4cdd8d67b93373db2fa2a6}{Get\-Price} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor to force the usage of the static creation method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Defines the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message sent from the client to the Controller to get the current price value. 
 
-
-Definition at line 19 of file Get\-Price.\-h.
+Definition at line 22 of file Get\-Price.\-h.
 
 
 
@@ -58,7 +63,11 @@ Definition at line 19 of file Get\-Price.\-h.
 \subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_a174c0399b878132f69b36c99ec7a09b4}
 
 
-Definition at line 29 of file Get\-Price.\-h.
+Defines the message check result type. 
+
+
+
+Definition at line 38 of file Get\-Price.\-h.
 
 
 
@@ -66,36 +75,48 @@ Definition at line 29 of file Get\-Price.\-h.
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Check\-Result\-Values@{Check\-Result\-Values}}
 \index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::GetPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}}
 \subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798}
+
+
+Defines the values for T\-Check\-Result. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Success@{Success}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798aa6e8d01a11a6e2d19be5074d6ab3e779}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798aa6e8d01a11a6e2d19be5074d6ab3e779}
-}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Fail@{Fail}}\item[{\em 
+}]Message is of correct type and id. \index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Fail@{Fail}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798a5b3330fb077085ae5fae8509ffcf64c8}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_ace12fb126447b011bb7f0e39522e3798a5b3330fb077085ae5fae8509ffcf64c8}
-}]\end{description}
+}]Message has incorrect type or id. \end{description}
 \end{Desc}
 
 
-Definition at line 30 of file Get\-Price.\-h.
+Definition at line 43 of file Get\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_ac675c3af37b1b76c0af699178c4fbe06}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Field\-Size\-Values@{Field\-Size\-Values}}
 \index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Synchronous::GetPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}}
 \subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_ac675c3af37b1b76c0af699178c4fbe06}
+
+
+Defines the Field Size values. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Total\-Size@{Total\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Total\-Size@{Total\-Size}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_ac675c3af37b1b76c0af699178c4fbe06a6bd2ff634603aa756193e870db6762d7}{Total\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_ac675c3af37b1b76c0af699178c4fbe06a6bd2ff634603aa756193e870db6762d7}
-}]\end{description}
+}]No data field. \end{description}
 \end{Desc}
 
 
-Definition at line 37 of file Get\-Price.\-h.
+Definition at line 53 of file Get\-Price.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_a753a713a664ad54645f58aa349d74017}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Header\-Values@{Header\-Values}}
 \index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::GetPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}}
 \subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_a753a713a664ad54645f58aa349d74017}
+
+
+Message Header values. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -107,7 +128,7 @@ Definition at line 37 of file Get\-Price.\-h.
 \end{Desc}
 
 
-Definition at line 22 of file Get\-Price.\-h.
+Definition at line 28 of file Get\-Price.\-h.
 
 
 
@@ -121,6 +142,10 @@ Definition at line 22 of file Get\-Price.\-h.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_ab0eb094bba4cdd8d67b93373db2fa2a6}
 
 
+Private constructor to force the usage of the static creation method. 
+
+
+
 Definition at line 14 of file Get\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_a1727e44cb45249ec35fdcd84b4b0b331}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!$\sim$\-Get\-Price@{$\sim$\-Get\-Price}}
@@ -130,6 +155,10 @@ Definition at line 14 of file Get\-Price.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_a1727e44cb45249ec35fdcd84b4b0b331}
+
+
+Deallocates the memory. 
+
 
 
 Definition at line 18 of file Get\-Price.\-cpp.
@@ -146,6 +175,13 @@ Definition at line 18 of file Get\-Price.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_a9d05dcfb45a62ffe7891c31fbd1fb4ca}
 
 
+Checks whether the current memory contains the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message. 
+
+\begin{DoxyReturn}{Returns}
+Result of the check. 
+\end{DoxyReturn}
+
+
 Definition at line 35 of file Get\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_a989d177a7d82912fb902f99304f84433}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Get\-New\-Get\-Price@{Get\-New\-Get\-Price}}
@@ -158,6 +194,23 @@ Definition at line 35 of file Get\-Price.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_a989d177a7d82912fb902f99304f84433}
 
 
+Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message and allocates the necessary memory. 
+
+\begin{DoxyWarning}{Warning}
+Deallocation is the responsibility of the user.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em sender\-Id} & Id of the sender. \\
+\hline
+{\em receiver\-Id} & Id of the receiver.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly allocated message. 
+\end{DoxyReturn}
+
+
 Definition at line 24 of file Get\-Price.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_get_price_a424d231d9de597d35ffc1359bdcea4b2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}!Get\-Size@{Get\-Size}}
@@ -167,6 +220,13 @@ Definition at line 24 of file Get\-Price.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_get_price_a424d231d9de597d35ffc1359bdcea4b2}
+
+
+Returns the size of a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message. 
+
+\begin{DoxyReturn}{Returns}
+Size of the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Get\-Price} message. 
+\end{DoxyReturn}
 
 
 Definition at line 46 of file Get\-Price.\-cpp.

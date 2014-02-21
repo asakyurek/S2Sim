@@ -1,5 +1,5 @@
 <map id="TerraSwarm::Synchronous::DemandNegotiation::GetNumberOfDataPoints" name="TerraSwarm::Synchronous::DemandNegotiation::GetNumberOfDataPoints">
 <area shape="rect" href="$class_client_manager.html#ad8841acd386513f41ab0872c67593ff4" title="Processes the demand negotiation response. " alt="" coords="617,13,868,59"/>
-<area shape="rect" href="$class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#ab99ce665f0822299184ff34cf5e674d2" title="TerraSwarm::Synchronous\l::DemandNegotiation::GetData\lPoints" alt="" coords="323,39,568,100"/>
+<area shape="rect" href="$class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#ab99ce665f0822299184ff34cf5e674d2" title="Gets the pointer to the data points field. " alt="" coords="323,39,568,100"/>
 <area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="919,23,1183,49"/>
 </map>

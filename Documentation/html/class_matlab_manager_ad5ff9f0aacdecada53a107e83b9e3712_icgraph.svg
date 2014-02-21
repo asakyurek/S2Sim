@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="MatlabManager::MatlabManager">
+<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="Private constructor to implement the singleton. ">
 <polygon style="fill:white;stroke:black;" points="390,1 390,-20 582,-20 582,1 390,1"/>
 <text text-anchor="middle" x="486" y="-6" style="font-family:Arial;font-size:10.00;">MatlabManager::MatlabManager</text>
 </a>

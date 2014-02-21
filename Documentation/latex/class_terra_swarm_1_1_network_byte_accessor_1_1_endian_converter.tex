@@ -1,21 +1,37 @@
 \hypertarget{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter}{\section{Terra\-Swarm\-:\-:Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-:\-:Endian\-Converter$<$ T\-Input, size $>$ Class Template Reference}
 \label{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter}\index{Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-::\-Endian\-Converter$<$ T\-Input, size $>$@{Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-::\-Endian\-Converter$<$ T\-Input, size $>$}}
 }
+
+
+Template class that uses the correct conversion function according to the size of the data.  
+
+
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static T\-Input \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_aa33fe4997f3ec0957f43d003b925f224}{Network\-To\-Host} (const T\-Input \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Converts the network byte order to host byte order. \end{DoxyCompactList}\item 
 static T\-Input \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_ab43849574a96cddb8f398d93afaf8f91}{Host\-To\-Network} (const T\-Input \&value)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Converts the host byte order to the network byte order. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \subsubsection*{template$<$T\-Byte\-Index byte\-Index, T\-Data\-Size data\-Size$>$template$<$typename T\-Input, T\-Data\-Size size = sizeof( T\-Input )$>$class Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-::\-Endian\-Converter$<$ T\-Input, size $>$}
 
+Template class that uses the correct conversion function according to the size of the data. 
+
+The default specialization is for any size not equal to 1,2 or 4.
 
 
-Definition at line 30 of file Network\-Byte\-Accessor.\-h.
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\-Input} & Type of the field that is to be accessed. \\
+\hline
+{\em size} & Size of T\-Input, done automatically. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 49 of file Network\-Byte\-Accessor.\-h.
 
 
 
@@ -29,7 +45,19 @@ Definition at line 30 of file Network\-Byte\-Accessor.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_ab43849574a96cddb8f398d93afaf8f91}
 
 
-Definition at line 39 of file Network\-Byte\-Accessor.\-h.
+Converts the host byte order to the network byte order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be converted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted value. 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Network\-Byte\-Accessor.\-h.
 
 
 
@@ -51,7 +79,19 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_aa33fe4997f3ec0957f43d003b925f224}
 
 
-Definition at line 34 of file Network\-Byte\-Accessor.\-h.
+Converts the network byte order to host byte order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Values to be converted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted result. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Network\-Byte\-Accessor.\-h.
 
 
 

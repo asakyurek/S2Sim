@@ -1,0 +1,844 @@
+\contentsline {chapter}{\numberline {1}S2\discretionary {-}{}{}Sim}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Todo List}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Namespace Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Namespace List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Hierarchical Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Class Hierarchy}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Class Index}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Class List}{9}{section.5.1}
+\contentsline {chapter}{\numberline {6}File Index}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}File List}{11}{section.6.1}
+\contentsline {chapter}{\numberline {7}Namespace Documentation}{15}{chapter.7}
+\contentsline {section}{\numberline {7.1}Terra\discretionary {-}{}{}Swarm Namespace Reference}{15}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{15}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Typedef Documentation}{16}{subsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.2.1}T\discretionary {-}{}{}Byte\discretionary {-}{}{}Index}{16}{subsubsection.7.1.2.1}
+\contentsline {subsubsection}{\numberline {7.1.2.2}T\discretionary {-}{}{}Data\discretionary {-}{}{}Size}{16}{subsubsection.7.1.2.2}
+\contentsline {section}{\numberline {7.2}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Asynchronous Namespace Reference}{16}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{16}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous Namespace Reference}{16}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{17}{subsection.7.3.1}
+\contentsline {chapter}{\numberline {8}Class Documentation}{19}{chapter.8}
+\contentsline {section}{\numberline {8.1}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Asynchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request Class Reference}{19}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Detailed Description}{20}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Member Typedef Documentation}{20}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{20}{subsubsection.8.1.2.1}
+\contentsline {subsubsection}{\numberline {8.1.2.2}T\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{20}{subsubsection.8.1.2.2}
+\contentsline {subsection}{\numberline {8.1.3}Member Enumeration Documentation}{20}{subsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{20}{subsubsection.8.1.3.1}
+\contentsline {subsubsection}{\numberline {8.1.3.2}Header\discretionary {-}{}{}Values}{20}{subsubsection.8.1.3.2}
+\contentsline {subsection}{\numberline {8.1.4}Constructor \& Destructor Documentation}{21}{subsection.8.1.4}
+\contentsline {subsubsection}{\numberline {8.1.4.1}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{21}{subsubsection.8.1.4.1}
+\contentsline {subsubsection}{\numberline {8.1.4.2}$\sim $\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{21}{subsubsection.8.1.4.2}
+\contentsline {subsection}{\numberline {8.1.5}Member Function Documentation}{21}{subsection.8.1.5}
+\contentsline {subsubsection}{\numberline {8.1.5.1}Check\discretionary {-}{}{}Message}{21}{subsubsection.8.1.5.1}
+\contentsline {subsubsection}{\numberline {8.1.5.2}Get\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{21}{subsubsection.8.1.5.2}
+\contentsline {subsubsection}{\numberline {8.1.5.3}Get\discretionary {-}{}{}New\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{22}{subsubsection.8.1.5.3}
+\contentsline {section}{\numberline {8.2}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request Class Reference}{22}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Detailed Description}{23}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Member Typedef Documentation}{23}{subsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{23}{subsubsection.8.2.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2.2}T\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{23}{subsubsection.8.2.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Member Enumeration Documentation}{23}{subsection.8.2.3}
+\contentsline {subsubsection}{\numberline {8.2.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{23}{subsubsection.8.2.3.1}
+\contentsline {subsubsection}{\numberline {8.2.3.2}Header\discretionary {-}{}{}Values}{24}{subsubsection.8.2.3.2}
+\contentsline {subsection}{\numberline {8.2.4}Constructor \& Destructor Documentation}{24}{subsection.8.2.4}
+\contentsline {subsubsection}{\numberline {8.2.4.1}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{24}{subsubsection.8.2.4.1}
+\contentsline {subsubsection}{\numberline {8.2.4.2}$\sim $\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{24}{subsubsection.8.2.4.2}
+\contentsline {subsection}{\numberline {8.2.5}Member Function Documentation}{24}{subsection.8.2.5}
+\contentsline {subsubsection}{\numberline {8.2.5.1}Check\discretionary {-}{}{}Message}{24}{subsubsection.8.2.5.1}
+\contentsline {subsubsection}{\numberline {8.2.5.2}Get\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{24}{subsubsection.8.2.5.2}
+\contentsline {subsubsection}{\numberline {8.2.5.3}Get\discretionary {-}{}{}New\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{25}{subsubsection.8.2.5.3}
+\contentsline {section}{\numberline {8.3}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Asynchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response Class Reference}{25}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Detailed Description}{27}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Member Typedef Documentation}{27}{subsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{27}{subsubsection.8.3.2.1}
+\contentsline {subsubsection}{\numberline {8.3.2.2}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients}{28}{subsubsection.8.3.2.2}
+\contentsline {subsubsection}{\numberline {8.3.2.3}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients\discretionary {-}{}{}Accessor}{28}{subsubsection.8.3.2.3}
+\contentsline {subsubsection}{\numberline {8.3.2.4}T\discretionary {-}{}{}Request\discretionary {-}{}{}Result}{28}{subsubsection.8.3.2.4}
+\contentsline {subsubsection}{\numberline {8.3.2.5}T\discretionary {-}{}{}Request\discretionary {-}{}{}Result\discretionary {-}{}{}Accessor}{28}{subsubsection.8.3.2.5}
+\contentsline {subsubsection}{\numberline {8.3.2.6}T\discretionary {-}{}{}System\discretionary {-}{}{}Mode}{28}{subsubsection.8.3.2.6}
+\contentsline {subsubsection}{\numberline {8.3.2.7}T\discretionary {-}{}{}System\discretionary {-}{}{}Mode\discretionary {-}{}{}Accessor}{28}{subsubsection.8.3.2.7}
+\contentsline {subsubsection}{\numberline {8.3.2.8}T\discretionary {-}{}{}System\discretionary {-}{}{}Time}{28}{subsubsection.8.3.2.8}
+\contentsline {subsubsection}{\numberline {8.3.2.9}T\discretionary {-}{}{}System\discretionary {-}{}{}Time\discretionary {-}{}{}Accessor}{28}{subsubsection.8.3.2.9}
+\contentsline {subsection}{\numberline {8.3.3}Member Enumeration Documentation}{29}{subsection.8.3.3}
+\contentsline {subsubsection}{\numberline {8.3.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{29}{subsubsection.8.3.3.1}
+\contentsline {subsubsection}{\numberline {8.3.3.2}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{29}{subsubsection.8.3.3.2}
+\contentsline {subsubsection}{\numberline {8.3.3.3}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{29}{subsubsection.8.3.3.3}
+\contentsline {subsubsection}{\numberline {8.3.3.4}Header\discretionary {-}{}{}Values}{29}{subsubsection.8.3.3.4}
+\contentsline {subsubsection}{\numberline {8.3.3.5}Request\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{30}{subsubsection.8.3.3.5}
+\contentsline {subsubsection}{\numberline {8.3.3.6}System\discretionary {-}{}{}Mode\discretionary {-}{}{}Values}{30}{subsubsection.8.3.3.6}
+\contentsline {subsection}{\numberline {8.3.4}Constructor \& Destructor Documentation}{30}{subsection.8.3.4}
+\contentsline {subsubsection}{\numberline {8.3.4.1}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response}{30}{subsubsection.8.3.4.1}
+\contentsline {subsubsection}{\numberline {8.3.4.2}$\sim $\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response}{30}{subsubsection.8.3.4.2}
+\contentsline {subsection}{\numberline {8.3.5}Member Function Documentation}{30}{subsection.8.3.5}
+\contentsline {subsubsection}{\numberline {8.3.5.1}Check\discretionary {-}{}{}Message}{30}{subsubsection.8.3.5.1}
+\contentsline {subsubsection}{\numberline {8.3.5.2}Get\discretionary {-}{}{}New\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response}{31}{subsubsection.8.3.5.2}
+\contentsline {subsubsection}{\numberline {8.3.5.3}Get\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients}{31}{subsubsection.8.3.5.3}
+\contentsline {subsubsection}{\numberline {8.3.5.4}Get\discretionary {-}{}{}Request\discretionary {-}{}{}Result}{31}{subsubsection.8.3.5.4}
+\contentsline {subsubsection}{\numberline {8.3.5.5}Get\discretionary {-}{}{}Size}{31}{subsubsection.8.3.5.5}
+\contentsline {subsubsection}{\numberline {8.3.5.6}Get\discretionary {-}{}{}System\discretionary {-}{}{}Mode}{32}{subsubsection.8.3.5.6}
+\contentsline {subsubsection}{\numberline {8.3.5.7}Get\discretionary {-}{}{}System\discretionary {-}{}{}Time}{32}{subsubsection.8.3.5.7}
+\contentsline {section}{\numberline {8.4}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response Class Reference}{32}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Detailed Description}{34}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Member Typedef Documentation}{34}{subsection.8.4.2}
+\contentsline {subsubsection}{\numberline {8.4.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{34}{subsubsection.8.4.2.1}
+\contentsline {subsubsection}{\numberline {8.4.2.2}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients}{34}{subsubsection.8.4.2.2}
+\contentsline {subsubsection}{\numberline {8.4.2.3}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients\discretionary {-}{}{}Accessor}{34}{subsubsection.8.4.2.3}
+\contentsline {subsubsection}{\numberline {8.4.2.4}T\discretionary {-}{}{}Request\discretionary {-}{}{}Result}{35}{subsubsection.8.4.2.4}
+\contentsline {subsubsection}{\numberline {8.4.2.5}T\discretionary {-}{}{}Request\discretionary {-}{}{}Result\discretionary {-}{}{}Accessor}{35}{subsubsection.8.4.2.5}
+\contentsline {subsubsection}{\numberline {8.4.2.6}T\discretionary {-}{}{}System\discretionary {-}{}{}Mode}{35}{subsubsection.8.4.2.6}
+\contentsline {subsubsection}{\numberline {8.4.2.7}T\discretionary {-}{}{}System\discretionary {-}{}{}Mode\discretionary {-}{}{}Accessor}{35}{subsubsection.8.4.2.7}
+\contentsline {subsubsection}{\numberline {8.4.2.8}T\discretionary {-}{}{}System\discretionary {-}{}{}Time}{35}{subsubsection.8.4.2.8}
+\contentsline {subsubsection}{\numberline {8.4.2.9}T\discretionary {-}{}{}System\discretionary {-}{}{}Time\discretionary {-}{}{}Accessor}{35}{subsubsection.8.4.2.9}
+\contentsline {subsection}{\numberline {8.4.3}Member Enumeration Documentation}{35}{subsection.8.4.3}
+\contentsline {subsubsection}{\numberline {8.4.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{35}{subsubsection.8.4.3.1}
+\contentsline {subsubsection}{\numberline {8.4.3.2}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{36}{subsubsection.8.4.3.2}
+\contentsline {subsubsection}{\numberline {8.4.3.3}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{36}{subsubsection.8.4.3.3}
+\contentsline {subsubsection}{\numberline {8.4.3.4}Header\discretionary {-}{}{}Values}{36}{subsubsection.8.4.3.4}
+\contentsline {subsubsection}{\numberline {8.4.3.5}Request\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{36}{subsubsection.8.4.3.5}
+\contentsline {subsubsection}{\numberline {8.4.3.6}System\discretionary {-}{}{}Mode\discretionary {-}{}{}Values}{37}{subsubsection.8.4.3.6}
+\contentsline {subsection}{\numberline {8.4.4}Constructor \& Destructor Documentation}{37}{subsection.8.4.4}
+\contentsline {subsubsection}{\numberline {8.4.4.1}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response}{37}{subsubsection.8.4.4.1}
+\contentsline {subsubsection}{\numberline {8.4.4.2}$\sim $\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response}{37}{subsubsection.8.4.4.2}
+\contentsline {subsection}{\numberline {8.4.5}Member Function Documentation}{37}{subsection.8.4.5}
+\contentsline {subsubsection}{\numberline {8.4.5.1}Check\discretionary {-}{}{}Message}{37}{subsubsection.8.4.5.1}
+\contentsline {subsubsection}{\numberline {8.4.5.2}Get\discretionary {-}{}{}New\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response}{37}{subsubsection.8.4.5.2}
+\contentsline {subsubsection}{\numberline {8.4.5.3}Get\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients}{38}{subsubsection.8.4.5.3}
+\contentsline {subsubsection}{\numberline {8.4.5.4}Get\discretionary {-}{}{}Request\discretionary {-}{}{}Result}{38}{subsubsection.8.4.5.4}
+\contentsline {subsubsection}{\numberline {8.4.5.5}Get\discretionary {-}{}{}Size}{38}{subsubsection.8.4.5.5}
+\contentsline {subsubsection}{\numberline {8.4.5.6}Get\discretionary {-}{}{}System\discretionary {-}{}{}Mode}{38}{subsubsection.8.4.5.6}
+\contentsline {subsubsection}{\numberline {8.4.5.7}Get\discretionary {-}{}{}System\discretionary {-}{}{}Time}{39}{subsubsection.8.4.5.7}
+\contentsline {section}{\numberline {8.5}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Asynchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Client\discretionary {-}{}{}Data Class Reference}{39}{section.8.5}
+\contentsline {subsection}{\numberline {8.5.1}Detailed Description}{41}{subsection.8.5.1}
+\contentsline {subsection}{\numberline {8.5.2}Member Typedef Documentation}{41}{subsection.8.5.2}
+\contentsline {subsubsection}{\numberline {8.5.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{41}{subsubsection.8.5.2.1}
+\contentsline {subsubsection}{\numberline {8.5.2.2}T\discretionary {-}{}{}Data\discretionary {-}{}{}Point}{41}{subsubsection.8.5.2.2}
+\contentsline {subsubsection}{\numberline {8.5.2.3}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{41}{subsubsection.8.5.2.3}
+\contentsline {subsubsection}{\numberline {8.5.2.4}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points\discretionary {-}{}{}Accessor}{41}{subsubsection.8.5.2.4}
+\contentsline {subsubsection}{\numberline {8.5.2.5}T\discretionary {-}{}{}Start\discretionary {-}{}{}Time}{41}{subsubsection.8.5.2.5}
+\contentsline {subsubsection}{\numberline {8.5.2.6}T\discretionary {-}{}{}Start\discretionary {-}{}{}Time\discretionary {-}{}{}Accessor}{41}{subsubsection.8.5.2.6}
+\contentsline {subsubsection}{\numberline {8.5.2.7}T\discretionary {-}{}{}Time\discretionary {-}{}{}Resolution}{41}{subsubsection.8.5.2.7}
+\contentsline {subsubsection}{\numberline {8.5.2.8}T\discretionary {-}{}{}Time\discretionary {-}{}{}Resolution\discretionary {-}{}{}Accessor}{42}{subsubsection.8.5.2.8}
+\contentsline {subsection}{\numberline {8.5.3}Member Enumeration Documentation}{42}{subsection.8.5.3}
+\contentsline {subsubsection}{\numberline {8.5.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{42}{subsubsection.8.5.3.1}
+\contentsline {subsubsection}{\numberline {8.5.3.2}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{42}{subsubsection.8.5.3.2}
+\contentsline {subsubsection}{\numberline {8.5.3.3}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{42}{subsubsection.8.5.3.3}
+\contentsline {subsubsection}{\numberline {8.5.3.4}Header\discretionary {-}{}{}Values}{43}{subsubsection.8.5.3.4}
+\contentsline {subsection}{\numberline {8.5.4}Constructor \& Destructor Documentation}{43}{subsection.8.5.4}
+\contentsline {subsubsection}{\numberline {8.5.4.1}Client\discretionary {-}{}{}Data}{43}{subsubsection.8.5.4.1}
+\contentsline {subsubsection}{\numberline {8.5.4.2}$\sim $\discretionary {-}{}{}Client\discretionary {-}{}{}Data}{43}{subsubsection.8.5.4.2}
+\contentsline {subsection}{\numberline {8.5.5}Member Function Documentation}{43}{subsection.8.5.5}
+\contentsline {subsubsection}{\numberline {8.5.5.1}Check\discretionary {-}{}{}Message}{43}{subsubsection.8.5.5.1}
+\contentsline {subsubsection}{\numberline {8.5.5.2}Get\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{43}{subsubsection.8.5.5.2}
+\contentsline {subsubsection}{\numberline {8.5.5.3}Get\discretionary {-}{}{}New\discretionary {-}{}{}Client\discretionary {-}{}{}Data}{44}{subsubsection.8.5.5.3}
+\contentsline {subsubsection}{\numberline {8.5.5.4}Get\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{45}{subsubsection.8.5.5.4}
+\contentsline {subsubsection}{\numberline {8.5.5.5}Get\discretionary {-}{}{}Start\discretionary {-}{}{}Time}{45}{subsubsection.8.5.5.5}
+\contentsline {subsubsection}{\numberline {8.5.5.6}Get\discretionary {-}{}{}Time\discretionary {-}{}{}Resolution}{45}{subsubsection.8.5.5.6}
+\contentsline {section}{\numberline {8.6}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Client\discretionary {-}{}{}Data Class Reference}{46}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}Detailed Description}{47}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.2}Member Typedef Documentation}{47}{subsection.8.6.2}
+\contentsline {subsubsection}{\numberline {8.6.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{47}{subsubsection.8.6.2.1}
+\contentsline {subsubsection}{\numberline {8.6.2.2}T\discretionary {-}{}{}Data\discretionary {-}{}{}Point}{47}{subsubsection.8.6.2.2}
+\contentsline {subsubsection}{\numberline {8.6.2.3}T\discretionary {-}{}{}Data\discretionary {-}{}{}Point\discretionary {-}{}{}Accessor}{47}{subsubsection.8.6.2.3}
+\contentsline {subsection}{\numberline {8.6.3}Member Enumeration Documentation}{47}{subsection.8.6.3}
+\contentsline {subsubsection}{\numberline {8.6.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{47}{subsubsection.8.6.3.1}
+\contentsline {subsubsection}{\numberline {8.6.3.2}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{47}{subsubsection.8.6.3.2}
+\contentsline {subsubsection}{\numberline {8.6.3.3}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{48}{subsubsection.8.6.3.3}
+\contentsline {subsubsection}{\numberline {8.6.3.4}Header\discretionary {-}{}{}Values}{48}{subsubsection.8.6.3.4}
+\contentsline {subsection}{\numberline {8.6.4}Constructor \& Destructor Documentation}{48}{subsection.8.6.4}
+\contentsline {subsubsection}{\numberline {8.6.4.1}Client\discretionary {-}{}{}Data}{48}{subsubsection.8.6.4.1}
+\contentsline {subsubsection}{\numberline {8.6.4.2}$\sim $\discretionary {-}{}{}Client\discretionary {-}{}{}Data}{48}{subsubsection.8.6.4.2}
+\contentsline {subsection}{\numberline {8.6.5}Member Function Documentation}{48}{subsection.8.6.5}
+\contentsline {subsubsection}{\numberline {8.6.5.1}Check\discretionary {-}{}{}Message}{48}{subsubsection.8.6.5.1}
+\contentsline {subsubsection}{\numberline {8.6.5.2}Get\discretionary {-}{}{}Data\discretionary {-}{}{}Point}{49}{subsubsection.8.6.5.2}
+\contentsline {subsubsection}{\numberline {8.6.5.3}Get\discretionary {-}{}{}New\discretionary {-}{}{}Client\discretionary {-}{}{}Data}{49}{subsubsection.8.6.5.3}
+\contentsline {section}{\numberline {8.7}Client\discretionary {-}{}{}Manager Class Reference}{49}{section.8.7}
+\contentsline {subsection}{\numberline {8.7.1}Detailed Description}{52}{subsection.8.7.1}
+\contentsline {subsection}{\numberline {8.7.2}Member Typedef Documentation}{52}{subsection.8.7.2}
+\contentsline {subsubsection}{\numberline {8.7.2.1}T\discretionary {-}{}{}Client\discretionary {-}{}{}Type}{52}{subsubsection.8.7.2.1}
+\contentsline {subsubsection}{\numberline {8.7.2.2}T\discretionary {-}{}{}Id}{52}{subsubsection.8.7.2.2}
+\contentsline {subsubsection}{\numberline {8.7.2.3}T\discretionary {-}{}{}Interval}{52}{subsubsection.8.7.2.3}
+\contentsline {subsubsection}{\numberline {8.7.2.4}T\discretionary {-}{}{}Price}{52}{subsubsection.8.7.2.4}
+\contentsline {subsection}{\numberline {8.7.3}Member Enumeration Documentation}{52}{subsection.8.7.3}
+\contentsline {subsubsection}{\numberline {8.7.3.1}Client\discretionary {-}{}{}Type\discretionary {-}{}{}Values}{52}{subsubsection.8.7.3.1}
+\contentsline {subsection}{\numberline {8.7.4}Constructor \& Destructor Documentation}{53}{subsection.8.7.4}
+\contentsline {subsubsection}{\numberline {8.7.4.1}Client\discretionary {-}{}{}Manager}{53}{subsubsection.8.7.4.1}
+\contentsline {subsubsection}{\numberline {8.7.4.2}Client\discretionary {-}{}{}Manager}{53}{subsubsection.8.7.4.2}
+\contentsline {subsubsection}{\numberline {8.7.4.3}Client\discretionary {-}{}{}Manager}{53}{subsubsection.8.7.4.3}
+\contentsline {subsubsection}{\numberline {8.7.4.4}$\sim $\discretionary {-}{}{}Client\discretionary {-}{}{}Manager}{53}{subsubsection.8.7.4.4}
+\contentsline {subsection}{\numberline {8.7.5}Member Function Documentation}{53}{subsection.8.7.5}
+\contentsline {subsubsection}{\numberline {8.7.5.1}Connection\discretionary {-}{}{}Broken}{53}{subsubsection.8.7.5.1}
+\contentsline {subsubsection}{\numberline {8.7.5.2}Is\discretionary {-}{}{}Asynchronous}{54}{subsubsection.8.7.5.2}
+\contentsline {subsubsection}{\numberline {8.7.5.3}Is\discretionary {-}{}{}Synchronous}{54}{subsubsection.8.7.5.3}
+\contentsline {subsubsection}{\numberline {8.7.5.4}Message\discretionary {-}{}{}Received}{54}{subsubsection.8.7.5.4}
+\contentsline {subsubsection}{\numberline {8.7.5.5}operator=}{55}{subsubsection.8.7.5.5}
+\contentsline {subsubsection}{\numberline {8.7.5.6}Price\discretionary {-}{}{}Proposal}{56}{subsubsection.8.7.5.6}
+\contentsline {subsubsection}{\numberline {8.7.5.7}Process\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{56}{subsubsection.8.7.5.7}
+\contentsline {subsubsection}{\numberline {8.7.5.8}Process\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request}{58}{subsubsection.8.7.5.8}
+\contentsline {subsubsection}{\numberline {8.7.5.9}Process\discretionary {-}{}{}Client\discretionary {-}{}{}Data}{59}{subsubsection.8.7.5.9}
+\contentsline {subsubsection}{\numberline {8.7.5.10}Process\discretionary {-}{}{}Client\discretionary {-}{}{}Data}{59}{subsubsection.8.7.5.10}
+\contentsline {subsubsection}{\numberline {8.7.5.11}Process\discretionary {-}{}{}Demand\discretionary {-}{}{}Negotiation}{60}{subsubsection.8.7.5.11}
+\contentsline {subsubsection}{\numberline {8.7.5.12}Process\discretionary {-}{}{}Get\discretionary {-}{}{}Price}{61}{subsubsection.8.7.5.12}
+\contentsline {subsubsection}{\numberline {8.7.5.13}Set\discretionary {-}{}{}Current\discretionary {-}{}{}Price}{61}{subsubsection.8.7.5.13}
+\contentsline {subsection}{\numberline {8.7.6}Member Data Documentation}{62}{subsection.8.7.6}
+\contentsline {subsubsection}{\numberline {8.7.6.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}client}{62}{subsubsection.8.7.6.1}
+\contentsline {subsubsection}{\numberline {8.7.6.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Id}{62}{subsubsection.8.7.6.2}
+\contentsline {subsubsection}{\numberline {8.7.6.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Type}{62}{subsubsection.8.7.6.3}
+\contentsline {subsubsection}{\numberline {8.7.6.4}next\discretionary {-}{}{}Client\discretionary {-}{}{}Id}{62}{subsubsection.8.7.6.4}
+\contentsline {section}{\numberline {8.8}Compile\discretionary {-}{}{}Check$<$ expression, Reason $>$ Class Template Reference}{63}{section.8.8}
+\contentsline {subsection}{\numberline {8.8.1}Detailed Description}{63}{subsection.8.8.1}
+\contentsline {subsection}{\numberline {8.8.2}Member Enumeration Documentation}{63}{subsection.8.8.2}
+\contentsline {subsubsection}{\numberline {8.8.2.1}anonymous enum}{63}{subsubsection.8.8.2.1}
+\contentsline {subsection}{\numberline {8.8.3}Member Function Documentation}{63}{subsection.8.8.3}
+\contentsline {subsubsection}{\numberline {8.8.3.1}Check}{63}{subsubsection.8.8.3.1}
+\contentsline {section}{\numberline {8.9}Compile\discretionary {-}{}{}Check$<$ false, Reason $>$ Class Template Reference}{64}{section.8.9}
+\contentsline {subsection}{\numberline {8.9.1}Detailed Description}{64}{subsection.8.9.1}
+\contentsline {subsection}{\numberline {8.9.2}Member Enumeration Documentation}{64}{subsection.8.9.2}
+\contentsline {subsubsection}{\numberline {8.9.2.1}anonymous enum}{64}{subsubsection.8.9.2.1}
+\contentsline {subsection}{\numberline {8.9.3}Member Function Documentation}{64}{subsection.8.9.3}
+\contentsline {subsubsection}{\numberline {8.9.3.1}Check}{64}{subsubsection.8.9.3.1}
+\contentsline {section}{\numberline {8.10}Connection\discretionary {-}{}{}Manager Class Reference}{65}{section.8.10}
+\contentsline {subsection}{\numberline {8.10.1}Detailed Description}{66}{subsection.8.10.1}
+\contentsline {subsection}{\numberline {8.10.2}Member Typedef Documentation}{67}{subsection.8.10.2}
+\contentsline {subsubsection}{\numberline {8.10.2.1}T\discretionary {-}{}{}Client\discretionary {-}{}{}Id}{67}{subsubsection.8.10.2.1}
+\contentsline {subsubsection}{\numberline {8.10.2.2}T\discretionary {-}{}{}Client\discretionary {-}{}{}Id\discretionary {-}{}{}List}{67}{subsubsection.8.10.2.2}
+\contentsline {subsubsection}{\numberline {8.10.2.3}T\discretionary {-}{}{}Client\discretionary {-}{}{}List}{67}{subsubsection.8.10.2.3}
+\contentsline {subsubsection}{\numberline {8.10.2.4}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients}{67}{subsubsection.8.10.2.4}
+\contentsline {subsubsection}{\numberline {8.10.2.5}T\discretionary {-}{}{}Reversed\discretionary {-}{}{}Client\discretionary {-}{}{}List}{67}{subsubsection.8.10.2.5}
+\contentsline {subsection}{\numberline {8.10.3}Constructor \& Destructor Documentation}{67}{subsection.8.10.3}
+\contentsline {subsubsection}{\numberline {8.10.3.1}Connection\discretionary {-}{}{}Manager}{67}{subsubsection.8.10.3.1}
+\contentsline {subsection}{\numberline {8.10.4}Member Function Documentation}{68}{subsection.8.10.4}
+\contentsline {subsubsection}{\numberline {8.10.4.1}Broken\discretionary {-}{}{}Connection}{68}{subsubsection.8.10.4.1}
+\contentsline {subsubsection}{\numberline {8.10.4.2}Delete\discretionary {-}{}{}Client}{69}{subsubsection.8.10.4.2}
+\contentsline {subsubsection}{\numberline {8.10.4.3}Get\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients}{69}{subsubsection.8.10.4.3}
+\contentsline {subsubsection}{\numberline {8.10.4.4}Incoming\discretionary {-}{}{}Connection}{70}{subsubsection.8.10.4.4}
+\contentsline {subsubsection}{\numberline {8.10.4.5}Incoming\discretionary {-}{}{}Message}{70}{subsubsection.8.10.4.5}
+\contentsline {subsection}{\numberline {8.10.5}Friends And Related Function Documentation}{71}{subsection.8.10.5}
+\contentsline {subsubsection}{\numberline {8.10.5.1}Get\discretionary {-}{}{}Connection\discretionary {-}{}{}Manager}{71}{subsubsection.8.10.5.1}
+\contentsline {subsection}{\numberline {8.10.6}Member Data Documentation}{71}{subsection.8.10.6}
+\contentsline {subsubsection}{\numberline {8.10.6.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}List}{71}{subsubsection.8.10.6.1}
+\contentsline {subsubsection}{\numberline {8.10.6.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}reversed\discretionary {-}{}{}Client\discretionary {-}{}{}List}{71}{subsubsection.8.10.6.2}
+\contentsline {subsubsection}{\numberline {8.10.6.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}server}{71}{subsubsection.8.10.6.3}
+\contentsline {section}{\numberline {8.11}Control\discretionary {-}{}{}Manager Class Reference}{72}{section.8.11}
+\contentsline {subsection}{\numberline {8.11.1}Detailed Description}{74}{subsection.8.11.1}
+\contentsline {subsection}{\numberline {8.11.2}Member Typedef Documentation}{74}{subsection.8.11.2}
+\contentsline {subsubsection}{\numberline {8.11.2.1}T\discretionary {-}{}{}Client\discretionary {-}{}{}Id}{74}{subsubsection.8.11.2.1}
+\contentsline {subsubsection}{\numberline {8.11.2.2}T\discretionary {-}{}{}Client\discretionary {-}{}{}Id\discretionary {-}{}{}Map}{75}{subsubsection.8.11.2.2}
+\contentsline {subsubsection}{\numberline {8.11.2.3}T\discretionary {-}{}{}Client\discretionary {-}{}{}Manager\discretionary {-}{}{}Map}{75}{subsubsection.8.11.2.3}
+\contentsline {subsubsection}{\numberline {8.11.2.4}T\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{75}{subsubsection.8.11.2.4}
+\contentsline {subsubsection}{\numberline {8.11.2.5}T\discretionary {-}{}{}Data\discretionary {-}{}{}Point}{75}{subsubsection.8.11.2.5}
+\contentsline {subsubsection}{\numberline {8.11.2.6}T\discretionary {-}{}{}Data\discretionary {-}{}{}Size}{75}{subsubsection.8.11.2.6}
+\contentsline {subsubsection}{\numberline {8.11.2.7}T\discretionary {-}{}{}Message\discretionary {-}{}{}Type}{75}{subsubsection.8.11.2.7}
+\contentsline {subsubsection}{\numberline {8.11.2.8}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Clients}{75}{subsubsection.8.11.2.8}
+\contentsline {subsubsection}{\numberline {8.11.2.9}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{75}{subsubsection.8.11.2.9}
+\contentsline {subsubsection}{\numberline {8.11.2.10}T\discretionary {-}{}{}Price}{75}{subsubsection.8.11.2.10}
+\contentsline {subsubsection}{\numberline {8.11.2.11}T\discretionary {-}{}{}Voltage}{76}{subsubsection.8.11.2.11}
+\contentsline {subsubsection}{\numberline {8.11.2.12}T\discretionary {-}{}{}Wattage}{76}{subsubsection.8.11.2.12}
+\contentsline {subsection}{\numberline {8.11.3}Member Enumeration Documentation}{76}{subsection.8.11.3}
+\contentsline {subsubsection}{\numberline {8.11.3.1}Message\discretionary {-}{}{}Type\discretionary {-}{}{}Values}{76}{subsubsection.8.11.3.1}
+\contentsline {subsection}{\numberline {8.11.4}Constructor \& Destructor Documentation}{76}{subsection.8.11.4}
+\contentsline {subsubsection}{\numberline {8.11.4.1}Control\discretionary {-}{}{}Manager}{76}{subsubsection.8.11.4.1}
+\contentsline {subsection}{\numberline {8.11.5}Member Function Documentation}{77}{subsection.8.11.5}
+\contentsline {subsubsection}{\numberline {8.11.5.1}Client\discretionary {-}{}{}Demand\discretionary {-}{}{}Negotiation}{77}{subsubsection.8.11.5.1}
+\contentsline {subsubsection}{\numberline {8.11.5.2}Client\discretionary {-}{}{}Price\discretionary {-}{}{}Request}{77}{subsubsection.8.11.5.2}
+\contentsline {subsubsection}{\numberline {8.11.5.3}Get\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{78}{subsubsection.8.11.5.3}
+\contentsline {subsubsection}{\numberline {8.11.5.4}Make\discretionary {-}{}{}Decision}{79}{subsubsection.8.11.5.4}
+\contentsline {subsubsection}{\numberline {8.11.5.5}Process\discretionary {-}{}{}Data}{79}{subsubsection.8.11.5.5}
+\contentsline {subsubsection}{\numberline {8.11.5.6}Register\discretionary {-}{}{}Client}{80}{subsubsection.8.11.5.6}
+\contentsline {subsubsection}{\numberline {8.11.5.7}Set\discretionary {-}{}{}Client}{81}{subsubsection.8.11.5.7}
+\contentsline {subsubsection}{\numberline {8.11.5.8}Un\discretionary {-}{}{}Register\discretionary {-}{}{}Client}{82}{subsubsection.8.11.5.8}
+\contentsline {subsubsection}{\numberline {8.11.5.9}Wait\discretionary {-}{}{}Until\discretionary {-}{}{}Ready}{82}{subsubsection.8.11.5.9}
+\contentsline {subsection}{\numberline {8.11.6}Friends And Related Function Documentation}{83}{subsection.8.11.6}
+\contentsline {subsubsection}{\numberline {8.11.6.1}Get\discretionary {-}{}{}Control\discretionary {-}{}{}Manager}{83}{subsubsection.8.11.6.1}
+\contentsline {subsection}{\numberline {8.11.7}Member Data Documentation}{83}{subsection.8.11.7}
+\contentsline {subsubsection}{\numberline {8.11.7.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}client}{83}{subsubsection.8.11.7.1}
+\contentsline {subsubsection}{\numberline {8.11.7.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Id\discretionary {-}{}{}Map}{83}{subsubsection.8.11.7.2}
+\contentsline {subsubsection}{\numberline {8.11.7.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Manager\discretionary {-}{}{}Map}{83}{subsubsection.8.11.7.3}
+\contentsline {subsubsection}{\numberline {8.11.7.4}m\discretionary {-}{}{}\_\discretionary {-}{}{}ready\discretionary {-}{}{}Semaphore}{83}{subsubsection.8.11.7.4}
+\contentsline {subsubsection}{\numberline {8.11.7.5}m\discretionary {-}{}{}\_\discretionary {-}{}{}server}{84}{subsubsection.8.11.7.5}
+\contentsline {section}{\numberline {8.12}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Demand\discretionary {-}{}{}Negotiation Class Reference}{84}{section.8.12}
+\contentsline {subsection}{\numberline {8.12.1}Detailed Description}{85}{subsection.8.12.1}
+\contentsline {subsection}{\numberline {8.12.2}Member Typedef Documentation}{85}{subsection.8.12.2}
+\contentsline {subsubsection}{\numberline {8.12.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{85}{subsubsection.8.12.2.1}
+\contentsline {subsubsection}{\numberline {8.12.2.2}T\discretionary {-}{}{}Data\discretionary {-}{}{}Point}{85}{subsubsection.8.12.2.2}
+\contentsline {subsubsection}{\numberline {8.12.2.3}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{85}{subsubsection.8.12.2.3}
+\contentsline {subsubsection}{\numberline {8.12.2.4}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points\discretionary {-}{}{}Accessor}{86}{subsubsection.8.12.2.4}
+\contentsline {subsection}{\numberline {8.12.3}Member Enumeration Documentation}{86}{subsection.8.12.3}
+\contentsline {subsubsection}{\numberline {8.12.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{86}{subsubsection.8.12.3.1}
+\contentsline {subsubsection}{\numberline {8.12.3.2}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{86}{subsubsection.8.12.3.2}
+\contentsline {subsubsection}{\numberline {8.12.3.3}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{86}{subsubsection.8.12.3.3}
+\contentsline {subsubsection}{\numberline {8.12.3.4}Header\discretionary {-}{}{}Values}{86}{subsubsection.8.12.3.4}
+\contentsline {subsection}{\numberline {8.12.4}Constructor \& Destructor Documentation}{87}{subsection.8.12.4}
+\contentsline {subsubsection}{\numberline {8.12.4.1}Demand\discretionary {-}{}{}Negotiation}{87}{subsubsection.8.12.4.1}
+\contentsline {subsubsection}{\numberline {8.12.4.2}$\sim $\discretionary {-}{}{}Demand\discretionary {-}{}{}Negotiation}{87}{subsubsection.8.12.4.2}
+\contentsline {subsection}{\numberline {8.12.5}Member Function Documentation}{87}{subsection.8.12.5}
+\contentsline {subsubsection}{\numberline {8.12.5.1}Check\discretionary {-}{}{}Message}{87}{subsubsection.8.12.5.1}
+\contentsline {subsubsection}{\numberline {8.12.5.2}Get\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{87}{subsubsection.8.12.5.2}
+\contentsline {subsubsection}{\numberline {8.12.5.3}Get\discretionary {-}{}{}New\discretionary {-}{}{}Demand\discretionary {-}{}{}Negotiation}{88}{subsubsection.8.12.5.3}
+\contentsline {subsubsection}{\numberline {8.12.5.4}Get\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{88}{subsubsection.8.12.5.4}
+\contentsline {section}{\numberline {8.13}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Network\discretionary {-}{}{}Byte\discretionary {-}{}{}Accessor$<$ byte\discretionary {-}{}{}Index, data\discretionary {-}{}{}Size $>$\discretionary {-}{}{}:\discretionary {-}{}{}:Endian\discretionary {-}{}{}Converter$<$ T\discretionary {-}{}{}Input, size $>$ Class Template Reference}{89}{section.8.13}
+\contentsline {subsection}{\numberline {8.13.1}Detailed Description}{89}{subsection.8.13.1}
+\contentsline {subsection}{\numberline {8.13.2}Member Function Documentation}{89}{subsection.8.13.2}
+\contentsline {subsubsection}{\numberline {8.13.2.1}Host\discretionary {-}{}{}To\discretionary {-}{}{}Network}{89}{subsubsection.8.13.2.1}
+\contentsline {subsubsection}{\numberline {8.13.2.2}Network\discretionary {-}{}{}To\discretionary {-}{}{}Host}{90}{subsubsection.8.13.2.2}
+\contentsline {section}{\numberline {8.14}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Network\discretionary {-}{}{}Byte\discretionary {-}{}{}Accessor$<$ byte\discretionary {-}{}{}Index, data\discretionary {-}{}{}Size $>$\discretionary {-}{}{}:\discretionary {-}{}{}:Endian\discretionary {-}{}{}Converter$<$ T\discretionary {-}{}{}Input, 1 $>$ Class Template Reference}{90}{section.8.14}
+\contentsline {subsection}{\numberline {8.14.1}Detailed Description}{91}{subsection.8.14.1}
+\contentsline {subsection}{\numberline {8.14.2}Member Function Documentation}{91}{subsection.8.14.2}
+\contentsline {subsubsection}{\numberline {8.14.2.1}Host\discretionary {-}{}{}To\discretionary {-}{}{}Network}{91}{subsubsection.8.14.2.1}
+\contentsline {subsubsection}{\numberline {8.14.2.2}Network\discretionary {-}{}{}To\discretionary {-}{}{}Host}{91}{subsubsection.8.14.2.2}
+\contentsline {section}{\numberline {8.15}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Network\discretionary {-}{}{}Byte\discretionary {-}{}{}Accessor$<$ byte\discretionary {-}{}{}Index, data\discretionary {-}{}{}Size $>$\discretionary {-}{}{}:\discretionary {-}{}{}:Endian\discretionary {-}{}{}Converter$<$ T\discretionary {-}{}{}Input, 2 $>$ Class Template Reference}{91}{section.8.15}
+\contentsline {subsection}{\numberline {8.15.1}Detailed Description}{91}{subsection.8.15.1}
+\contentsline {subsection}{\numberline {8.15.2}Member Function Documentation}{92}{subsection.8.15.2}
+\contentsline {subsubsection}{\numberline {8.15.2.1}Host\discretionary {-}{}{}To\discretionary {-}{}{}Network}{92}{subsubsection.8.15.2.1}
+\contentsline {subsubsection}{\numberline {8.15.2.2}Network\discretionary {-}{}{}To\discretionary {-}{}{}Host}{92}{subsubsection.8.15.2.2}
+\contentsline {section}{\numberline {8.16}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Network\discretionary {-}{}{}Byte\discretionary {-}{}{}Accessor$<$ byte\discretionary {-}{}{}Index, data\discretionary {-}{}{}Size $>$\discretionary {-}{}{}:\discretionary {-}{}{}:Endian\discretionary {-}{}{}Converter$<$ T\discretionary {-}{}{}Input, 4 $>$ Class Template Reference}{92}{section.8.16}
+\contentsline {subsection}{\numberline {8.16.1}Detailed Description}{92}{subsection.8.16.1}
+\contentsline {subsection}{\numberline {8.16.2}Member Function Documentation}{92}{subsection.8.16.2}
+\contentsline {subsubsection}{\numberline {8.16.2.1}Host\discretionary {-}{}{}To\discretionary {-}{}{}Network}{92}{subsubsection.8.16.2.1}
+\contentsline {subsubsection}{\numberline {8.16.2.2}Network\discretionary {-}{}{}To\discretionary {-}{}{}Host}{93}{subsubsection.8.16.2.2}
+\contentsline {section}{\numberline {8.17}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Get\discretionary {-}{}{}Price Class Reference}{93}{section.8.17}
+\contentsline {subsection}{\numberline {8.17.1}Detailed Description}{94}{subsection.8.17.1}
+\contentsline {subsection}{\numberline {8.17.2}Member Typedef Documentation}{94}{subsection.8.17.2}
+\contentsline {subsubsection}{\numberline {8.17.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{94}{subsubsection.8.17.2.1}
+\contentsline {subsection}{\numberline {8.17.3}Member Enumeration Documentation}{94}{subsection.8.17.3}
+\contentsline {subsubsection}{\numberline {8.17.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{94}{subsubsection.8.17.3.1}
+\contentsline {subsubsection}{\numberline {8.17.3.2}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{94}{subsubsection.8.17.3.2}
+\contentsline {subsubsection}{\numberline {8.17.3.3}Header\discretionary {-}{}{}Values}{94}{subsubsection.8.17.3.3}
+\contentsline {subsection}{\numberline {8.17.4}Constructor \& Destructor Documentation}{95}{subsection.8.17.4}
+\contentsline {subsubsection}{\numberline {8.17.4.1}Get\discretionary {-}{}{}Price}{95}{subsubsection.8.17.4.1}
+\contentsline {subsubsection}{\numberline {8.17.4.2}$\sim $\discretionary {-}{}{}Get\discretionary {-}{}{}Price}{95}{subsubsection.8.17.4.2}
+\contentsline {subsection}{\numberline {8.17.5}Member Function Documentation}{95}{subsection.8.17.5}
+\contentsline {subsubsection}{\numberline {8.17.5.1}Check\discretionary {-}{}{}Message}{95}{subsubsection.8.17.5.1}
+\contentsline {subsubsection}{\numberline {8.17.5.2}Get\discretionary {-}{}{}New\discretionary {-}{}{}Get\discretionary {-}{}{}Price}{95}{subsubsection.8.17.5.2}
+\contentsline {subsubsection}{\numberline {8.17.5.3}Get\discretionary {-}{}{}Size}{95}{subsubsection.8.17.5.3}
+\contentsline {section}{\numberline {8.18}Thread\discretionary {-}{}{}Base\discretionary {-}{}{}:\discretionary {-}{}{}:Input\discretionary {-}{}{}Structure Struct Reference}{96}{section.8.18}
+\contentsline {subsection}{\numberline {8.18.1}Detailed Description}{97}{subsection.8.18.1}
+\contentsline {subsection}{\numberline {8.18.2}Constructor \& Destructor Documentation}{97}{subsection.8.18.2}
+\contentsline {subsubsection}{\numberline {8.18.2.1}Input\discretionary {-}{}{}Structure}{97}{subsubsection.8.18.2.1}
+\contentsline {subsubsection}{\numberline {8.18.2.2}Input\discretionary {-}{}{}Structure}{97}{subsubsection.8.18.2.2}
+\contentsline {subsection}{\numberline {8.18.3}Member Data Documentation}{97}{subsection.8.18.3}
+\contentsline {subsubsection}{\numberline {8.18.3.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}class\discretionary {-}{}{}Pointer}{97}{subsubsection.8.18.3.1}
+\contentsline {subsubsection}{\numberline {8.18.3.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}main\discretionary {-}{}{}Input}{97}{subsubsection.8.18.3.2}
+\contentsline {section}{\numberline {8.19}I\discretionary {-}{}{}P\discretionary {-}{}{}Address Class Reference}{98}{section.8.19}
+\contentsline {subsection}{\numberline {8.19.1}Detailed Description}{99}{subsection.8.19.1}
+\contentsline {subsection}{\numberline {8.19.2}Member Typedef Documentation}{99}{subsection.8.19.2}
+\contentsline {subsubsection}{\numberline {8.19.2.1}T\discretionary {-}{}{}Address}{99}{subsubsection.8.19.2.1}
+\contentsline {subsubsection}{\numberline {8.19.2.2}T\discretionary {-}{}{}Address\discretionary {-}{}{}Struct}{99}{subsubsection.8.19.2.2}
+\contentsline {subsubsection}{\numberline {8.19.2.3}T\discretionary {-}{}{}Port}{99}{subsubsection.8.19.2.3}
+\contentsline {subsubsection}{\numberline {8.19.2.4}T\discretionary {-}{}{}Socket\discretionary {-}{}{}Size}{99}{subsubsection.8.19.2.4}
+\contentsline {subsection}{\numberline {8.19.3}Constructor \& Destructor Documentation}{99}{subsection.8.19.3}
+\contentsline {subsubsection}{\numberline {8.19.3.1}I\discretionary {-}{}{}P\discretionary {-}{}{}Address}{99}{subsubsection.8.19.3.1}
+\contentsline {subsubsection}{\numberline {8.19.3.2}I\discretionary {-}{}{}P\discretionary {-}{}{}Address}{100}{subsubsection.8.19.3.2}
+\contentsline {subsubsection}{\numberline {8.19.3.3}$\sim $\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}Address}{100}{subsubsection.8.19.3.3}
+\contentsline {subsection}{\numberline {8.19.4}Member Function Documentation}{100}{subsection.8.19.4}
+\contentsline {subsubsection}{\numberline {8.19.4.1}Get\discretionary {-}{}{}Address}{100}{subsubsection.8.19.4.1}
+\contentsline {subsubsection}{\numberline {8.19.4.2}Get\discretionary {-}{}{}Address}{100}{subsubsection.8.19.4.2}
+\contentsline {subsubsection}{\numberline {8.19.4.3}Get\discretionary {-}{}{}Port}{101}{subsubsection.8.19.4.3}
+\contentsline {subsubsection}{\numberline {8.19.4.4}Get\discretionary {-}{}{}Port}{101}{subsubsection.8.19.4.4}
+\contentsline {subsubsection}{\numberline {8.19.4.5}Get\discretionary {-}{}{}Socket\discretionary {-}{}{}Size}{101}{subsubsection.8.19.4.5}
+\contentsline {subsubsection}{\numberline {8.19.4.6}operator sockaddr $\ast $}{102}{subsubsection.8.19.4.6}
+\contentsline {subsubsection}{\numberline {8.19.4.7}operator=}{102}{subsubsection.8.19.4.7}
+\contentsline {subsubsection}{\numberline {8.19.4.8}operator==}{102}{subsubsection.8.19.4.8}
+\contentsline {subsubsection}{\numberline {8.19.4.9}Set\discretionary {-}{}{}Address}{102}{subsubsection.8.19.4.9}
+\contentsline {subsubsection}{\numberline {8.19.4.10}Set\discretionary {-}{}{}Port}{103}{subsubsection.8.19.4.10}
+\contentsline {subsection}{\numberline {8.19.5}Member Data Documentation}{104}{subsection.8.19.5}
+\contentsline {subsubsection}{\numberline {8.19.5.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}address}{104}{subsubsection.8.19.5.1}
+\contentsline {section}{\numberline {8.20}Matlab\discretionary {-}{}{}Manager Class Reference}{104}{section.8.20}
+\contentsline {subsection}{\numberline {8.20.1}Detailed Description}{107}{subsection.8.20.1}
+\contentsline {subsection}{\numberline {8.20.2}Member Typedef Documentation}{107}{subsection.8.20.2}
+\contentsline {subsubsection}{\numberline {8.20.2.1}T\discretionary {-}{}{}Client\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{107}{subsubsection.8.20.2.1}
+\contentsline {subsubsection}{\numberline {8.20.2.2}T\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{107}{subsubsection.8.20.2.2}
+\contentsline {subsubsection}{\numberline {8.20.2.3}T\discretionary {-}{}{}Message\discretionary {-}{}{}Type}{107}{subsubsection.8.20.2.3}
+\contentsline {subsubsection}{\numberline {8.20.2.4}T\discretionary {-}{}{}Voltage}{107}{subsubsection.8.20.2.4}
+\contentsline {subsubsection}{\numberline {8.20.2.5}T\discretionary {-}{}{}Wattage}{107}{subsubsection.8.20.2.5}
+\contentsline {subsection}{\numberline {8.20.3}Member Enumeration Documentation}{108}{subsection.8.20.3}
+\contentsline {subsubsection}{\numberline {8.20.3.1}Client\discretionary {-}{}{}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{108}{subsubsection.8.20.3.1}
+\contentsline {subsubsection}{\numberline {8.20.3.2}Message\discretionary {-}{}{}Type\discretionary {-}{}{}Values}{108}{subsubsection.8.20.3.2}
+\contentsline {subsection}{\numberline {8.20.4}Constructor \& Destructor Documentation}{108}{subsection.8.20.4}
+\contentsline {subsubsection}{\numberline {8.20.4.1}Matlab\discretionary {-}{}{}Manager}{108}{subsubsection.8.20.4.1}
+\contentsline {subsection}{\numberline {8.20.5}Member Function Documentation}{109}{subsection.8.20.5}
+\contentsline {subsubsection}{\numberline {8.20.5.1}Advance\discretionary {-}{}{}Time\discretionary {-}{}{}Step}{109}{subsubsection.8.20.5.1}
+\contentsline {subsubsection}{\numberline {8.20.5.2}Get\discretionary {-}{}{}Voltage}{109}{subsubsection.8.20.5.2}
+\contentsline {subsubsection}{\numberline {8.20.5.3}Get\discretionary {-}{}{}Wattage}{110}{subsubsection.8.20.5.3}
+\contentsline {subsubsection}{\numberline {8.20.5.4}Is\discretionary {-}{}{}Client\discretionary {-}{}{}Present}{111}{subsubsection.8.20.5.4}
+\contentsline {subsubsection}{\numberline {8.20.5.5}Process\discretionary {-}{}{}Data}{112}{subsubsection.8.20.5.5}
+\contentsline {subsubsection}{\numberline {8.20.5.6}Set\discretionary {-}{}{}Client}{113}{subsubsection.8.20.5.6}
+\contentsline {subsubsection}{\numberline {8.20.5.7}Set\discretionary {-}{}{}Wattage}{114}{subsubsection.8.20.5.7}
+\contentsline {subsection}{\numberline {8.20.6}Friends And Related Function Documentation}{114}{subsection.8.20.6}
+\contentsline {subsubsection}{\numberline {8.20.6.1}Get\discretionary {-}{}{}Matlab\discretionary {-}{}{}Manager}{114}{subsubsection.8.20.6.1}
+\contentsline {subsection}{\numberline {8.20.7}Member Data Documentation}{115}{subsection.8.20.7}
+\contentsline {subsubsection}{\numberline {8.20.7.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}client}{115}{subsubsection.8.20.7.1}
+\contentsline {subsubsection}{\numberline {8.20.7.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Presence\discretionary {-}{}{}Semaphore}{115}{subsubsection.8.20.7.2}
+\contentsline {subsubsection}{\numberline {8.20.7.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Present\discretionary {-}{}{}Information}{115}{subsubsection.8.20.7.3}
+\contentsline {subsubsection}{\numberline {8.20.7.4}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Voltage\discretionary {-}{}{}Information}{115}{subsubsection.8.20.7.4}
+\contentsline {subsubsection}{\numberline {8.20.7.5}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Voltage\discretionary {-}{}{}Semaphore}{115}{subsubsection.8.20.7.5}
+\contentsline {subsubsection}{\numberline {8.20.7.6}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Wattage\discretionary {-}{}{}Information}{115}{subsubsection.8.20.7.6}
+\contentsline {subsubsection}{\numberline {8.20.7.7}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Wattage\discretionary {-}{}{}Semaphore}{115}{subsubsection.8.20.7.7}
+\contentsline {subsubsection}{\numberline {8.20.7.8}m\discretionary {-}{}{}\_\discretionary {-}{}{}server}{115}{subsubsection.8.20.7.8}
+\contentsline {section}{\numberline {8.21}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Message\discretionary {-}{}{}Ender Class Reference}{116}{section.8.21}
+\contentsline {subsection}{\numberline {8.21.1}Detailed Description}{116}{subsection.8.21.1}
+\contentsline {subsection}{\numberline {8.21.2}Member Typedef Documentation}{116}{subsection.8.21.2}
+\contentsline {subsubsection}{\numberline {8.21.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{116}{subsubsection.8.21.2.1}
+\contentsline {subsubsection}{\numberline {8.21.2.2}T\discretionary {-}{}{}End\discretionary {-}{}{}Of\discretionary {-}{}{}Message}{117}{subsubsection.8.21.2.2}
+\contentsline {subsubsection}{\numberline {8.21.2.3}T\discretionary {-}{}{}End\discretionary {-}{}{}Of\discretionary {-}{}{}Message\discretionary {-}{}{}Accessor}{117}{subsubsection.8.21.2.3}
+\contentsline {subsection}{\numberline {8.21.3}Member Enumeration Documentation}{117}{subsection.8.21.3}
+\contentsline {subsubsection}{\numberline {8.21.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{117}{subsubsection.8.21.3.1}
+\contentsline {subsubsection}{\numberline {8.21.3.2}End\discretionary {-}{}{}Of\discretionary {-}{}{}Message\discretionary {-}{}{}Values}{117}{subsubsection.8.21.3.2}
+\contentsline {subsubsection}{\numberline {8.21.3.3}Size\discretionary {-}{}{}Values}{117}{subsubsection.8.21.3.3}
+\contentsline {subsection}{\numberline {8.21.4}Member Function Documentation}{117}{subsection.8.21.4}
+\contentsline {subsubsection}{\numberline {8.21.4.1}Check\discretionary {-}{}{}End\discretionary {-}{}{}Of\discretionary {-}{}{}Message\discretionary {-}{}{}Field}{117}{subsubsection.8.21.4.1}
+\contentsline {subsubsection}{\numberline {8.21.4.2}Set\discretionary {-}{}{}End\discretionary {-}{}{}Of\discretionary {-}{}{}Message\discretionary {-}{}{}Field}{118}{subsubsection.8.21.4.2}
+\contentsline {section}{\numberline {8.22}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Message\discretionary {-}{}{}Header Class Reference}{118}{section.8.22}
+\contentsline {subsection}{\numberline {8.22.1}Detailed Description}{121}{subsection.8.22.1}
+\contentsline {subsection}{\numberline {8.22.2}Member Typedef Documentation}{121}{subsection.8.22.2}
+\contentsline {subsubsection}{\numberline {8.22.2.1}T\discretionary {-}{}{}Data\discretionary {-}{}{}Size\discretionary {-}{}{}Accessor}{121}{subsubsection.8.22.2.1}
+\contentsline {subsubsection}{\numberline {8.22.2.2}T\discretionary {-}{}{}Id}{121}{subsubsection.8.22.2.2}
+\contentsline {subsubsection}{\numberline {8.22.2.3}T\discretionary {-}{}{}Message\discretionary {-}{}{}Id}{121}{subsubsection.8.22.2.3}
+\contentsline {subsubsection}{\numberline {8.22.2.4}T\discretionary {-}{}{}Message\discretionary {-}{}{}Id\discretionary {-}{}{}Accessor}{121}{subsubsection.8.22.2.4}
+\contentsline {subsubsection}{\numberline {8.22.2.5}T\discretionary {-}{}{}Message\discretionary {-}{}{}Type}{121}{subsubsection.8.22.2.5}
+\contentsline {subsubsection}{\numberline {8.22.2.6}T\discretionary {-}{}{}Message\discretionary {-}{}{}Type\discretionary {-}{}{}Accessor}{121}{subsubsection.8.22.2.6}
+\contentsline {subsubsection}{\numberline {8.22.2.7}T\discretionary {-}{}{}Receiver\discretionary {-}{}{}Id}{121}{subsubsection.8.22.2.7}
+\contentsline {subsubsection}{\numberline {8.22.2.8}T\discretionary {-}{}{}Receiver\discretionary {-}{}{}Id\discretionary {-}{}{}Accessor}{122}{subsubsection.8.22.2.8}
+\contentsline {subsubsection}{\numberline {8.22.2.9}T\discretionary {-}{}{}Sender\discretionary {-}{}{}Id}{122}{subsubsection.8.22.2.9}
+\contentsline {subsubsection}{\numberline {8.22.2.10}T\discretionary {-}{}{}Sender\discretionary {-}{}{}Id\discretionary {-}{}{}Accessor}{122}{subsubsection.8.22.2.10}
+\contentsline {subsubsection}{\numberline {8.22.2.11}T\discretionary {-}{}{}Sequence\discretionary {-}{}{}Number}{122}{subsubsection.8.22.2.11}
+\contentsline {subsubsection}{\numberline {8.22.2.12}T\discretionary {-}{}{}Sequence\discretionary {-}{}{}Number\discretionary {-}{}{}Accessor}{122}{subsubsection.8.22.2.12}
+\contentsline {subsubsection}{\numberline {8.22.2.13}T\discretionary {-}{}{}Start\discretionary {-}{}{}Of\discretionary {-}{}{}Message}{122}{subsubsection.8.22.2.13}
+\contentsline {subsubsection}{\numberline {8.22.2.14}T\discretionary {-}{}{}Start\discretionary {-}{}{}Of\discretionary {-}{}{}Message\discretionary {-}{}{}Accessor}{122}{subsubsection.8.22.2.14}
+\contentsline {subsection}{\numberline {8.22.3}Member Enumeration Documentation}{122}{subsection.8.22.3}
+\contentsline {subsubsection}{\numberline {8.22.3.1}Header\discretionary {-}{}{}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{122}{subsubsection.8.22.3.1}
+\contentsline {subsubsection}{\numberline {8.22.3.2}Header\discretionary {-}{}{}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{123}{subsubsection.8.22.3.2}
+\contentsline {subsubsection}{\numberline {8.22.3.3}Size\discretionary {-}{}{}Values}{123}{subsubsection.8.22.3.3}
+\contentsline {subsubsection}{\numberline {8.22.3.4}Start\discretionary {-}{}{}Of\discretionary {-}{}{}Message\discretionary {-}{}{}Values}{123}{subsubsection.8.22.3.4}
+\contentsline {subsection}{\numberline {8.22.4}Constructor \& Destructor Documentation}{124}{subsection.8.22.4}
+\contentsline {subsubsection}{\numberline {8.22.4.1}Message\discretionary {-}{}{}Header}{124}{subsubsection.8.22.4.1}
+\contentsline {subsection}{\numberline {8.22.5}Member Function Documentation}{124}{subsection.8.22.5}
+\contentsline {subsubsection}{\numberline {8.22.5.1}Access}{124}{subsubsection.8.22.5.1}
+\contentsline {subsubsection}{\numberline {8.22.5.2}Access}{124}{subsubsection.8.22.5.2}
+\contentsline {subsubsection}{\numberline {8.22.5.3}Get\discretionary {-}{}{}Data\discretionary {-}{}{}Size}{124}{subsubsection.8.22.5.3}
+\contentsline {subsubsection}{\numberline {8.22.5.4}Get\discretionary {-}{}{}Message\discretionary {-}{}{}Id}{125}{subsubsection.8.22.5.4}
+\contentsline {subsubsection}{\numberline {8.22.5.5}Get\discretionary {-}{}{}Message\discretionary {-}{}{}Type}{125}{subsubsection.8.22.5.5}
+\contentsline {subsubsection}{\numberline {8.22.5.6}Get\discretionary {-}{}{}New\discretionary {-}{}{}Message\discretionary {-}{}{}Header}{125}{subsubsection.8.22.5.6}
+\contentsline {subsubsection}{\numberline {8.22.5.7}Get\discretionary {-}{}{}Next\discretionary {-}{}{}Sequence\discretionary {-}{}{}Number}{125}{subsubsection.8.22.5.7}
+\contentsline {subsubsection}{\numberline {8.22.5.8}Get\discretionary {-}{}{}Receiver\discretionary {-}{}{}Id}{126}{subsubsection.8.22.5.8}
+\contentsline {subsubsection}{\numberline {8.22.5.9}Get\discretionary {-}{}{}Sender\discretionary {-}{}{}Id}{126}{subsubsection.8.22.5.9}
+\contentsline {subsubsection}{\numberline {8.22.5.10}Prepare\discretionary {-}{}{}Outgoing\discretionary {-}{}{}Message}{126}{subsubsection.8.22.5.10}
+\contentsline {section}{\numberline {8.23}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Network\discretionary {-}{}{}Byte\discretionary {-}{}{}Accessor$<$ byte\discretionary {-}{}{}Index, data\discretionary {-}{}{}Size $>$ Class Template Reference}{127}{section.8.23}
+\contentsline {subsection}{\numberline {8.23.1}Detailed Description}{128}{subsection.8.23.1}
+\contentsline {subsection}{\numberline {8.23.2}Member Function Documentation}{128}{subsection.8.23.2}
+\contentsline {subsubsection}{\numberline {8.23.2.1}operator=}{128}{subsubsection.8.23.2.1}
+\contentsline {subsubsection}{\numberline {8.23.2.2}Read}{128}{subsubsection.8.23.2.2}
+\contentsline {subsubsection}{\numberline {8.23.2.3}Write}{129}{subsubsection.8.23.2.3}
+\contentsline {section}{\numberline {8.24}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Price\discretionary {-}{}{}Proposal Class Reference}{130}{section.8.24}
+\contentsline {subsection}{\numberline {8.24.1}Detailed Description}{131}{subsection.8.24.1}
+\contentsline {subsection}{\numberline {8.24.2}Member Typedef Documentation}{131}{subsection.8.24.2}
+\contentsline {subsubsection}{\numberline {8.24.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{131}{subsubsection.8.24.2.1}
+\contentsline {subsubsection}{\numberline {8.24.2.2}T\discretionary {-}{}{}Interval}{132}{subsubsection.8.24.2.2}
+\contentsline {subsubsection}{\numberline {8.24.2.3}T\discretionary {-}{}{}Interval\discretionary {-}{}{}Begin\discretionary {-}{}{}Accessor}{132}{subsubsection.8.24.2.3}
+\contentsline {subsubsection}{\numberline {8.24.2.4}T\discretionary {-}{}{}Interval\discretionary {-}{}{}End\discretionary {-}{}{}Accessor}{132}{subsubsection.8.24.2.4}
+\contentsline {subsubsection}{\numberline {8.24.2.5}T\discretionary {-}{}{}Price}{132}{subsubsection.8.24.2.5}
+\contentsline {subsubsection}{\numberline {8.24.2.6}T\discretionary {-}{}{}Price\discretionary {-}{}{}Accessor}{132}{subsubsection.8.24.2.6}
+\contentsline {subsection}{\numberline {8.24.3}Member Enumeration Documentation}{132}{subsection.8.24.3}
+\contentsline {subsubsection}{\numberline {8.24.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{132}{subsubsection.8.24.3.1}
+\contentsline {subsubsection}{\numberline {8.24.3.2}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{132}{subsubsection.8.24.3.2}
+\contentsline {subsubsection}{\numberline {8.24.3.3}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{133}{subsubsection.8.24.3.3}
+\contentsline {subsubsection}{\numberline {8.24.3.4}Header\discretionary {-}{}{}Values}{133}{subsubsection.8.24.3.4}
+\contentsline {subsection}{\numberline {8.24.4}Constructor \& Destructor Documentation}{133}{subsection.8.24.4}
+\contentsline {subsubsection}{\numberline {8.24.4.1}Price\discretionary {-}{}{}Proposal}{133}{subsubsection.8.24.4.1}
+\contentsline {subsubsection}{\numberline {8.24.4.2}$\sim $\discretionary {-}{}{}Price\discretionary {-}{}{}Proposal}{133}{subsubsection.8.24.4.2}
+\contentsline {subsection}{\numberline {8.24.5}Member Function Documentation}{133}{subsection.8.24.5}
+\contentsline {subsubsection}{\numberline {8.24.5.1}Check\discretionary {-}{}{}Message}{133}{subsubsection.8.24.5.1}
+\contentsline {subsubsection}{\numberline {8.24.5.2}Get\discretionary {-}{}{}Interval\discretionary {-}{}{}Begin}{134}{subsubsection.8.24.5.2}
+\contentsline {subsubsection}{\numberline {8.24.5.3}Get\discretionary {-}{}{}Interval\discretionary {-}{}{}End}{134}{subsubsection.8.24.5.3}
+\contentsline {subsubsection}{\numberline {8.24.5.4}Get\discretionary {-}{}{}New\discretionary {-}{}{}Price\discretionary {-}{}{}Proposal}{134}{subsubsection.8.24.5.4}
+\contentsline {subsubsection}{\numberline {8.24.5.5}Get\discretionary {-}{}{}Price}{135}{subsubsection.8.24.5.5}
+\contentsline {subsubsection}{\numberline {8.24.5.6}Get\discretionary {-}{}{}Size}{135}{subsubsection.8.24.5.6}
+\contentsline {section}{\numberline {8.25}Terra\discretionary {-}{}{}Swarm\discretionary {-}{}{}:\discretionary {-}{}{}:Synchronous\discretionary {-}{}{}:\discretionary {-}{}{}:Set\discretionary {-}{}{}Current\discretionary {-}{}{}Price Class Reference}{135}{section.8.25}
+\contentsline {subsection}{\numberline {8.25.1}Detailed Description}{136}{subsection.8.25.1}
+\contentsline {subsection}{\numberline {8.25.2}Member Typedef Documentation}{137}{subsection.8.25.2}
+\contentsline {subsubsection}{\numberline {8.25.2.1}T\discretionary {-}{}{}Check\discretionary {-}{}{}Result}{137}{subsubsection.8.25.2.1}
+\contentsline {subsubsection}{\numberline {8.25.2.2}T\discretionary {-}{}{}Interval}{137}{subsubsection.8.25.2.2}
+\contentsline {subsubsection}{\numberline {8.25.2.3}T\discretionary {-}{}{}Interval\discretionary {-}{}{}Begin\discretionary {-}{}{}Accessor}{137}{subsubsection.8.25.2.3}
+\contentsline {subsubsection}{\numberline {8.25.2.4}T\discretionary {-}{}{}Interval\discretionary {-}{}{}End\discretionary {-}{}{}Accessor}{137}{subsubsection.8.25.2.4}
+\contentsline {subsubsection}{\numberline {8.25.2.5}T\discretionary {-}{}{}Price}{137}{subsubsection.8.25.2.5}
+\contentsline {subsubsection}{\numberline {8.25.2.6}T\discretionary {-}{}{}Price\discretionary {-}{}{}Accessor}{137}{subsubsection.8.25.2.6}
+\contentsline {subsection}{\numberline {8.25.3}Member Enumeration Documentation}{137}{subsection.8.25.3}
+\contentsline {subsubsection}{\numberline {8.25.3.1}Check\discretionary {-}{}{}Result\discretionary {-}{}{}Values}{137}{subsubsection.8.25.3.1}
+\contentsline {subsubsection}{\numberline {8.25.3.2}Field\discretionary {-}{}{}Index\discretionary {-}{}{}Values}{138}{subsubsection.8.25.3.2}
+\contentsline {subsubsection}{\numberline {8.25.3.3}Field\discretionary {-}{}{}Size\discretionary {-}{}{}Values}{138}{subsubsection.8.25.3.3}
+\contentsline {subsubsection}{\numberline {8.25.3.4}Header\discretionary {-}{}{}Values}{138}{subsubsection.8.25.3.4}
+\contentsline {subsection}{\numberline {8.25.4}Constructor \& Destructor Documentation}{138}{subsection.8.25.4}
+\contentsline {subsubsection}{\numberline {8.25.4.1}Set\discretionary {-}{}{}Current\discretionary {-}{}{}Price}{138}{subsubsection.8.25.4.1}
+\contentsline {subsubsection}{\numberline {8.25.4.2}$\sim $\discretionary {-}{}{}Set\discretionary {-}{}{}Current\discretionary {-}{}{}Price}{138}{subsubsection.8.25.4.2}
+\contentsline {subsection}{\numberline {8.25.5}Member Function Documentation}{139}{subsection.8.25.5}
+\contentsline {subsubsection}{\numberline {8.25.5.1}Check\discretionary {-}{}{}Message}{139}{subsubsection.8.25.5.1}
+\contentsline {subsubsection}{\numberline {8.25.5.2}Get\discretionary {-}{}{}Interval\discretionary {-}{}{}Begin}{139}{subsubsection.8.25.5.2}
+\contentsline {subsubsection}{\numberline {8.25.5.3}Get\discretionary {-}{}{}Interval\discretionary {-}{}{}End}{139}{subsubsection.8.25.5.3}
+\contentsline {subsubsection}{\numberline {8.25.5.4}Get\discretionary {-}{}{}New\discretionary {-}{}{}Set\discretionary {-}{}{}Current\discretionary {-}{}{}Price}{139}{subsubsection.8.25.5.4}
+\contentsline {subsubsection}{\numberline {8.25.5.5}Get\discretionary {-}{}{}Price}{140}{subsubsection.8.25.5.5}
+\contentsline {subsubsection}{\numberline {8.25.5.6}Get\discretionary {-}{}{}Size}{140}{subsubsection.8.25.5.6}
+\contentsline {section}{\numberline {8.26}Size\discretionary {-}{}{}Check$<$ checked\discretionary {-}{}{}Type, checked\discretionary {-}{}{}Size, Reason $>$ Class Template Reference}{140}{section.8.26}
+\contentsline {subsection}{\numberline {8.26.1}Detailed Description}{141}{subsection.8.26.1}
+\contentsline {subsection}{\numberline {8.26.2}Member Enumeration Documentation}{141}{subsection.8.26.2}
+\contentsline {subsubsection}{\numberline {8.26.2.1}anonymous enum}{141}{subsubsection.8.26.2.1}
+\contentsline {subsection}{\numberline {8.26.3}Member Function Documentation}{141}{subsection.8.26.3}
+\contentsline {subsubsection}{\numberline {8.26.3.1}Check}{141}{subsubsection.8.26.3.1}
+\contentsline {section}{\numberline {8.27}Socket\discretionary {-}{}{}Base$<$ Socket\discretionary {-}{}{}Type $>$ Class Template Reference}{142}{section.8.27}
+\contentsline {subsection}{\numberline {8.27.1}Detailed Description}{143}{subsection.8.27.1}
+\contentsline {subsection}{\numberline {8.27.2}Member Typedef Documentation}{143}{subsection.8.27.2}
+\contentsline {subsubsection}{\numberline {8.27.2.1}S\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}E\discretionary {-}{}{}T}{143}{subsubsection.8.27.2.1}
+\contentsline {subsubsection}{\numberline {8.27.2.2}T\discretionary {-}{}{}Buffer}{143}{subsubsection.8.27.2.2}
+\contentsline {subsubsection}{\numberline {8.27.2.3}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Bytes}{143}{subsubsection.8.27.2.3}
+\contentsline {subsubsection}{\numberline {8.27.2.4}T\discretionary {-}{}{}Socket\discretionary {-}{}{}Id}{143}{subsubsection.8.27.2.4}
+\contentsline {subsection}{\numberline {8.27.3}Member Enumeration Documentation}{144}{subsection.8.27.3}
+\contentsline {subsubsection}{\numberline {8.27.3.1}Socket\discretionary {-}{}{}Id\discretionary {-}{}{}Values}{144}{subsubsection.8.27.3.1}
+\contentsline {subsection}{\numberline {8.27.4}Constructor \& Destructor Documentation}{144}{subsection.8.27.4}
+\contentsline {subsubsection}{\numberline {8.27.4.1}Socket\discretionary {-}{}{}Base}{144}{subsubsection.8.27.4.1}
+\contentsline {subsubsection}{\numberline {8.27.4.2}Socket\discretionary {-}{}{}Base}{144}{subsubsection.8.27.4.2}
+\contentsline {subsubsection}{\numberline {8.27.4.3}Socket\discretionary {-}{}{}Base}{144}{subsubsection.8.27.4.3}
+\contentsline {subsubsection}{\numberline {8.27.4.4}$\sim $\discretionary {-}{}{}Socket\discretionary {-}{}{}Base}{145}{subsubsection.8.27.4.4}
+\contentsline {subsection}{\numberline {8.27.5}Member Function Documentation}{145}{subsection.8.27.5}
+\contentsline {subsubsection}{\numberline {8.27.5.1}Close\discretionary {-}{}{}Socket}{145}{subsubsection.8.27.5.1}
+\contentsline {subsubsection}{\numberline {8.27.5.2}Open\discretionary {-}{}{}Socket}{145}{subsubsection.8.27.5.2}
+\contentsline {subsection}{\numberline {8.27.6}Member Data Documentation}{145}{subsection.8.27.6}
+\contentsline {subsubsection}{\numberline {8.27.6.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}socket\discretionary {-}{}{}Id}{145}{subsubsection.8.27.6.1}
+\contentsline {section}{\numberline {8.28}System\discretionary {-}{}{}Manager Class Reference}{145}{section.8.28}
+\contentsline {subsection}{\numberline {8.28.1}Detailed Description}{147}{subsection.8.28.1}
+\contentsline {subsection}{\numberline {8.28.2}Member Typedef Documentation}{147}{subsection.8.28.2}
+\contentsline {subsubsection}{\numberline {8.28.2.1}T\discretionary {-}{}{}Client\discretionary {-}{}{}Id}{147}{subsubsection.8.28.2.1}
+\contentsline {subsubsection}{\numberline {8.28.2.2}T\discretionary {-}{}{}Client\discretionary {-}{}{}Name}{147}{subsubsection.8.28.2.2}
+\contentsline {subsubsection}{\numberline {8.28.2.3}T\discretionary {-}{}{}Data\discretionary {-}{}{}Map}{147}{subsubsection.8.28.2.3}
+\contentsline {subsubsection}{\numberline {8.28.2.4}T\discretionary {-}{}{}Data\discretionary {-}{}{}Point}{147}{subsubsection.8.28.2.4}
+\contentsline {subsubsection}{\numberline {8.28.2.5}T\discretionary {-}{}{}Number\discretionary {-}{}{}Of\discretionary {-}{}{}Data\discretionary {-}{}{}Points}{148}{subsubsection.8.28.2.5}
+\contentsline {subsubsection}{\numberline {8.28.2.6}T\discretionary {-}{}{}System\discretionary {-}{}{}Map}{148}{subsubsection.8.28.2.6}
+\contentsline {subsubsection}{\numberline {8.28.2.7}T\discretionary {-}{}{}System\discretionary {-}{}{}Mode}{148}{subsubsection.8.28.2.7}
+\contentsline {subsubsection}{\numberline {8.28.2.8}T\discretionary {-}{}{}System\discretionary {-}{}{}Time}{148}{subsubsection.8.28.2.8}
+\contentsline {subsubsection}{\numberline {8.28.2.9}T\discretionary {-}{}{}Voltage}{148}{subsubsection.8.28.2.9}
+\contentsline {subsubsection}{\numberline {8.28.2.10}T\discretionary {-}{}{}Wattage}{148}{subsubsection.8.28.2.10}
+\contentsline {subsection}{\numberline {8.28.3}Member Enumeration Documentation}{148}{subsection.8.28.3}
+\contentsline {subsubsection}{\numberline {8.28.3.1}System\discretionary {-}{}{}Mode\discretionary {-}{}{}Values}{148}{subsubsection.8.28.3.1}
+\contentsline {subsection}{\numberline {8.28.4}Constructor \& Destructor Documentation}{149}{subsection.8.28.4}
+\contentsline {subsubsection}{\numberline {8.28.4.1}System\discretionary {-}{}{}Manager}{149}{subsubsection.8.28.4.1}
+\contentsline {subsection}{\numberline {8.28.5}Member Function Documentation}{149}{subsection.8.28.5}
+\contentsline {subsubsection}{\numberline {8.28.5.1}Advance\discretionary {-}{}{}Time\discretionary {-}{}{}Step}{149}{subsubsection.8.28.5.1}
+\contentsline {subsubsection}{\numberline {8.28.5.2}Get\discretionary {-}{}{}System\discretionary {-}{}{}Mode}{150}{subsubsection.8.28.5.2}
+\contentsline {subsubsection}{\numberline {8.28.5.3}Get\discretionary {-}{}{}System\discretionary {-}{}{}Time}{150}{subsubsection.8.28.5.3}
+\contentsline {subsubsection}{\numberline {8.28.5.4}Register\discretionary {-}{}{}Data}{151}{subsubsection.8.28.5.4}
+\contentsline {subsubsection}{\numberline {8.28.5.5}Register\discretionary {-}{}{}Data}{151}{subsubsection.8.28.5.5}
+\contentsline {subsection}{\numberline {8.28.6}Friends And Related Function Documentation}{152}{subsection.8.28.6}
+\contentsline {subsubsection}{\numberline {8.28.6.1}Get\discretionary {-}{}{}System\discretionary {-}{}{}Manager}{152}{subsubsection.8.28.6.1}
+\contentsline {subsection}{\numberline {8.28.7}Member Data Documentation}{152}{subsection.8.28.7}
+\contentsline {subsubsection}{\numberline {8.28.7.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}system\discretionary {-}{}{}Map}{152}{subsubsection.8.28.7.1}
+\contentsline {subsubsection}{\numberline {8.28.7.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}system\discretionary {-}{}{}Mode}{152}{subsubsection.8.28.7.2}
+\contentsline {subsubsection}{\numberline {8.28.7.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}system\discretionary {-}{}{}Time}{152}{subsubsection.8.28.7.3}
+\contentsline {section}{\numberline {8.29}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client Class Reference}{153}{section.8.29}
+\contentsline {subsection}{\numberline {8.29.1}Detailed Description}{154}{subsection.8.29.1}
+\contentsline {subsection}{\numberline {8.29.2}Member Typedef Documentation}{155}{subsection.8.29.2}
+\contentsline {subsubsection}{\numberline {8.29.2.1}T\discretionary {-}{}{}Base\discretionary {-}{}{}Type}{155}{subsubsection.8.29.2.1}
+\contentsline {subsection}{\numberline {8.29.3}Constructor \& Destructor Documentation}{155}{subsection.8.29.3}
+\contentsline {subsubsection}{\numberline {8.29.3.1}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client}{155}{subsubsection.8.29.3.1}
+\contentsline {subsubsection}{\numberline {8.29.3.2}$\sim $\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client}{155}{subsubsection.8.29.3.2}
+\contentsline {subsection}{\numberline {8.29.4}Member Function Documentation}{155}{subsection.8.29.4}
+\contentsline {subsubsection}{\numberline {8.29.4.1}Connect}{155}{subsubsection.8.29.4.1}
+\contentsline {subsubsection}{\numberline {8.29.4.2}Receive\discretionary {-}{}{}Data}{155}{subsubsection.8.29.4.2}
+\contentsline {subsubsection}{\numberline {8.29.4.3}Send\discretionary {-}{}{}Data}{157}{subsubsection.8.29.4.3}
+\contentsline {section}{\numberline {8.30}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client Class Reference}{157}{section.8.30}
+\contentsline {subsection}{\numberline {8.30.1}Detailed Description}{159}{subsection.8.30.1}
+\contentsline {subsection}{\numberline {8.30.2}Member Typedef Documentation}{159}{subsection.8.30.2}
+\contentsline {subsubsection}{\numberline {8.30.2.1}T\discretionary {-}{}{}Base\discretionary {-}{}{}Type}{159}{subsubsection.8.30.2.1}
+\contentsline {subsection}{\numberline {8.30.3}Constructor \& Destructor Documentation}{159}{subsection.8.30.3}
+\contentsline {subsubsection}{\numberline {8.30.3.1}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client}{159}{subsubsection.8.30.3.1}
+\contentsline {subsubsection}{\numberline {8.30.3.2}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client}{160}{subsubsection.8.30.3.2}
+\contentsline {subsubsection}{\numberline {8.30.3.3}$\sim $\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client}{160}{subsubsection.8.30.3.3}
+\contentsline {subsection}{\numberline {8.30.4}Member Function Documentation}{160}{subsection.8.30.4}
+\contentsline {subsubsection}{\numberline {8.30.4.1}Get\discretionary {-}{}{}Client\discretionary {-}{}{}Address}{160}{subsubsection.8.30.4.1}
+\contentsline {subsubsection}{\numberline {8.30.4.2}Receive\discretionary {-}{}{}Data}{160}{subsubsection.8.30.4.2}
+\contentsline {subsubsection}{\numberline {8.30.4.3}Send\discretionary {-}{}{}Data}{161}{subsubsection.8.30.4.3}
+\contentsline {subsection}{\numberline {8.30.5}Member Data Documentation}{161}{subsection.8.30.5}
+\contentsline {subsubsection}{\numberline {8.30.5.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}client\discretionary {-}{}{}Address}{161}{subsubsection.8.30.5.1}
+\contentsline {section}{\numberline {8.31}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server Class Reference}{162}{section.8.31}
+\contentsline {subsection}{\numberline {8.31.1}Detailed Description}{163}{subsection.8.31.1}
+\contentsline {subsection}{\numberline {8.31.2}Member Typedef Documentation}{164}{subsection.8.31.2}
+\contentsline {subsubsection}{\numberline {8.31.2.1}T\discretionary {-}{}{}Base\discretionary {-}{}{}Type}{164}{subsubsection.8.31.2.1}
+\contentsline {subsection}{\numberline {8.31.3}Constructor \& Destructor Documentation}{164}{subsection.8.31.3}
+\contentsline {subsubsection}{\numberline {8.31.3.1}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server}{164}{subsubsection.8.31.3.1}
+\contentsline {subsubsection}{\numberline {8.31.3.2}$\sim $\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server}{164}{subsubsection.8.31.3.2}
+\contentsline {subsection}{\numberline {8.31.4}Member Function Documentation}{164}{subsection.8.31.4}
+\contentsline {subsubsection}{\numberline {8.31.4.1}Accept}{164}{subsubsection.8.31.4.1}
+\contentsline {subsubsection}{\numberline {8.31.4.2}Listen}{165}{subsubsection.8.31.4.2}
+\contentsline {subsubsection}{\numberline {8.31.4.3}Set\discretionary {-}{}{}Address}{165}{subsubsection.8.31.4.3}
+\contentsline {subsubsection}{\numberline {8.31.4.4}Set\discretionary {-}{}{}Port}{166}{subsubsection.8.31.4.4}
+\contentsline {section}{\numberline {8.32}Thread\discretionary {-}{}{}Base Class Reference}{167}{section.8.32}
+\contentsline {subsection}{\numberline {8.32.1}Detailed Description}{170}{subsection.8.32.1}
+\contentsline {subsection}{\numberline {8.32.2}Member Typedef Documentation}{170}{subsection.8.32.2}
+\contentsline {subsubsection}{\numberline {8.32.2.1}T\discretionary {-}{}{}Stack\discretionary {-}{}{}Size}{170}{subsubsection.8.32.2.1}
+\contentsline {subsubsection}{\numberline {8.32.2.2}T\discretionary {-}{}{}Stack\discretionary {-}{}{}Size}{170}{subsubsection.8.32.2.2}
+\contentsline {subsubsection}{\numberline {8.32.2.3}T\discretionary {-}{}{}Started}{170}{subsubsection.8.32.2.3}
+\contentsline {subsubsection}{\numberline {8.32.2.4}T\discretionary {-}{}{}Started}{170}{subsubsection.8.32.2.4}
+\contentsline {subsubsection}{\numberline {8.32.2.5}T\discretionary {-}{}{}Thread\discretionary {-}{}{}Attribute}{170}{subsubsection.8.32.2.5}
+\contentsline {subsubsection}{\numberline {8.32.2.6}T\discretionary {-}{}{}Thread\discretionary {-}{}{}Handle}{170}{subsubsection.8.32.2.6}
+\contentsline {subsubsection}{\numberline {8.32.2.7}T\discretionary {-}{}{}Thread\discretionary {-}{}{}Id}{170}{subsubsection.8.32.2.7}
+\contentsline {subsubsection}{\numberline {8.32.2.8}T\discretionary {-}{}{}Thread\discretionary {-}{}{}Id}{171}{subsubsection.8.32.2.8}
+\contentsline {subsection}{\numberline {8.32.3}Member Enumeration Documentation}{171}{subsection.8.32.3}
+\contentsline {subsubsection}{\numberline {8.32.3.1}Started\discretionary {-}{}{}Values}{171}{subsubsection.8.32.3.1}
+\contentsline {subsubsection}{\numberline {8.32.3.2}Started\discretionary {-}{}{}Values}{171}{subsubsection.8.32.3.2}
+\contentsline {subsection}{\numberline {8.32.4}Constructor \& Destructor Documentation}{171}{subsection.8.32.4}
+\contentsline {subsubsection}{\numberline {8.32.4.1}Thread\discretionary {-}{}{}Base}{171}{subsubsection.8.32.4.1}
+\contentsline {subsubsection}{\numberline {8.32.4.2}Thread\discretionary {-}{}{}Base}{171}{subsubsection.8.32.4.2}
+\contentsline {subsubsection}{\numberline {8.32.4.3}$\sim $\discretionary {-}{}{}Thread\discretionary {-}{}{}Base}{172}{subsubsection.8.32.4.3}
+\contentsline {subsubsection}{\numberline {8.32.4.4}Thread\discretionary {-}{}{}Base}{172}{subsubsection.8.32.4.4}
+\contentsline {subsubsection}{\numberline {8.32.4.5}Thread\discretionary {-}{}{}Base}{172}{subsubsection.8.32.4.5}
+\contentsline {subsubsection}{\numberline {8.32.4.6}$\sim $\discretionary {-}{}{}Thread\discretionary {-}{}{}Base}{172}{subsubsection.8.32.4.6}
+\contentsline {subsubsection}{\numberline {8.32.4.7}Thread\discretionary {-}{}{}Base}{172}{subsubsection.8.32.4.7}
+\contentsline {subsection}{\numberline {8.32.5}Member Function Documentation}{173}{subsection.8.32.5}
+\contentsline {subsubsection}{\numberline {8.32.5.1}Execute\discretionary {-}{}{}Thread}{173}{subsubsection.8.32.5.1}
+\contentsline {subsubsection}{\numberline {8.32.5.2}Execute\discretionary {-}{}{}Thread}{173}{subsubsection.8.32.5.2}
+\contentsline {subsubsection}{\numberline {8.32.5.3}Execution\discretionary {-}{}{}Body}{174}{subsubsection.8.32.5.3}
+\contentsline {subsubsection}{\numberline {8.32.5.4}Execution\discretionary {-}{}{}Body}{174}{subsubsection.8.32.5.4}
+\contentsline {subsubsection}{\numberline {8.32.5.5}Get\discretionary {-}{}{}Stack\discretionary {-}{}{}Size}{175}{subsubsection.8.32.5.5}
+\contentsline {subsubsection}{\numberline {8.32.5.6}Get\discretionary {-}{}{}Stack\discretionary {-}{}{}Size}{175}{subsubsection.8.32.5.6}
+\contentsline {subsubsection}{\numberline {8.32.5.7}Set\discretionary {-}{}{}Stack\discretionary {-}{}{}Size}{175}{subsubsection.8.32.5.7}
+\contentsline {subsubsection}{\numberline {8.32.5.8}Set\discretionary {-}{}{}Stack\discretionary {-}{}{}Size}{175}{subsubsection.8.32.5.8}
+\contentsline {subsubsection}{\numberline {8.32.5.9}Start\discretionary {-}{}{}Thread}{175}{subsubsection.8.32.5.9}
+\contentsline {subsubsection}{\numberline {8.32.5.10}Start\discretionary {-}{}{}Thread}{175}{subsubsection.8.32.5.10}
+\contentsline {subsection}{\numberline {8.32.6}Friends And Related Function Documentation}{176}{subsection.8.32.6}
+\contentsline {subsubsection}{\numberline {8.32.6.1}Posix\discretionary {-}{}{}Thread\discretionary {-}{}{}Cover}{176}{subsubsection.8.32.6.1}
+\contentsline {subsubsection}{\numberline {8.32.6.2}Windows\discretionary {-}{}{}Thread\discretionary {-}{}{}Cover}{176}{subsubsection.8.32.6.2}
+\contentsline {subsection}{\numberline {8.32.7}Member Data Documentation}{177}{subsection.8.32.7}
+\contentsline {subsubsection}{\numberline {8.32.7.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}stack\discretionary {-}{}{}Size}{177}{subsubsection.8.32.7.1}
+\contentsline {subsubsection}{\numberline {8.32.7.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}started}{177}{subsubsection.8.32.7.2}
+\contentsline {subsubsection}{\numberline {8.32.7.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}thread\discretionary {-}{}{}Attribute}{177}{subsubsection.8.32.7.3}
+\contentsline {subsubsection}{\numberline {8.32.7.4}m\discretionary {-}{}{}\_\discretionary {-}{}{}thread\discretionary {-}{}{}Handle}{177}{subsubsection.8.32.7.4}
+\contentsline {subsubsection}{\numberline {8.32.7.5}m\discretionary {-}{}{}\_\discretionary {-}{}{}thread\discretionary {-}{}{}Id}{177}{subsubsection.8.32.7.5}
+\contentsline {section}{\numberline {8.33}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client Class Reference}{178}{section.8.33}
+\contentsline {subsection}{\numberline {8.33.1}Detailed Description}{180}{subsection.8.33.1}
+\contentsline {subsection}{\numberline {8.33.2}Member Typedef Documentation}{180}{subsection.8.33.2}
+\contentsline {subsubsection}{\numberline {8.33.2.1}T\discretionary {-}{}{}Notification}{180}{subsubsection.8.33.2.1}
+\contentsline {subsection}{\numberline {8.33.3}Constructor \& Destructor Documentation}{180}{subsection.8.33.3}
+\contentsline {subsubsection}{\numberline {8.33.3.1}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client}{180}{subsubsection.8.33.3.1}
+\contentsline {subsubsection}{\numberline {8.33.3.2}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client}{181}{subsubsection.8.33.3.2}
+\contentsline {subsubsection}{\numberline {8.33.3.3}$\sim $\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client}{181}{subsubsection.8.33.3.3}
+\contentsline {subsection}{\numberline {8.33.4}Member Function Documentation}{181}{subsection.8.33.4}
+\contentsline {subsubsection}{\numberline {8.33.4.1}Execution\discretionary {-}{}{}Body}{181}{subsubsection.8.33.4.1}
+\contentsline {subsubsection}{\numberline {8.33.4.2}Set\discretionary {-}{}{}Notification\discretionary {-}{}{}Callback}{182}{subsubsection.8.33.4.2}
+\contentsline {subsection}{\numberline {8.33.5}Member Data Documentation}{182}{subsection.8.33.5}
+\contentsline {subsubsection}{\numberline {8.33.5.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}allowing\discretionary {-}{}{}Semaphore}{182}{subsubsection.8.33.5.1}
+\contentsline {subsubsection}{\numberline {8.33.5.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}notification}{182}{subsubsection.8.33.5.2}
+\contentsline {subsubsection}{\numberline {8.33.5.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}started}{182}{subsubsection.8.33.5.3}
+\contentsline {section}{\numberline {8.34}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client Class Reference}{183}{section.8.34}
+\contentsline {subsection}{\numberline {8.34.1}Detailed Description}{185}{subsection.8.34.1}
+\contentsline {subsection}{\numberline {8.34.2}Member Typedef Documentation}{185}{subsection.8.34.2}
+\contentsline {subsubsection}{\numberline {8.34.2.1}T\discretionary {-}{}{}Notification}{185}{subsubsection.8.34.2.1}
+\contentsline {subsection}{\numberline {8.34.3}Constructor \& Destructor Documentation}{185}{subsection.8.34.3}
+\contentsline {subsubsection}{\numberline {8.34.3.1}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client}{185}{subsubsection.8.34.3.1}
+\contentsline {subsubsection}{\numberline {8.34.3.2}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client}{186}{subsubsection.8.34.3.2}
+\contentsline {subsubsection}{\numberline {8.34.3.3}$\sim $\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client}{186}{subsubsection.8.34.3.3}
+\contentsline {subsection}{\numberline {8.34.4}Member Function Documentation}{186}{subsection.8.34.4}
+\contentsline {subsubsection}{\numberline {8.34.4.1}Execution\discretionary {-}{}{}Body}{186}{subsubsection.8.34.4.1}
+\contentsline {subsubsection}{\numberline {8.34.4.2}Set\discretionary {-}{}{}Notification\discretionary {-}{}{}Callback}{187}{subsubsection.8.34.4.2}
+\contentsline {subsection}{\numberline {8.34.5}Member Data Documentation}{187}{subsection.8.34.5}
+\contentsline {subsubsection}{\numberline {8.34.5.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}allowing\discretionary {-}{}{}Semaphore}{187}{subsubsection.8.34.5.1}
+\contentsline {subsubsection}{\numberline {8.34.5.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}notification}{187}{subsubsection.8.34.5.2}
+\contentsline {subsubsection}{\numberline {8.34.5.3}m\discretionary {-}{}{}\_\discretionary {-}{}{}started}{187}{subsubsection.8.34.5.3}
+\contentsline {section}{\numberline {8.35}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server Class Reference}{187}{section.8.35}
+\contentsline {subsection}{\numberline {8.35.1}Detailed Description}{189}{subsection.8.35.1}
+\contentsline {subsection}{\numberline {8.35.2}Member Typedef Documentation}{189}{subsection.8.35.2}
+\contentsline {subsubsection}{\numberline {8.35.2.1}T\discretionary {-}{}{}Notification}{189}{subsubsection.8.35.2.1}
+\contentsline {subsection}{\numberline {8.35.3}Constructor \& Destructor Documentation}{190}{subsection.8.35.3}
+\contentsline {subsubsection}{\numberline {8.35.3.1}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server}{190}{subsubsection.8.35.3.1}
+\contentsline {subsubsection}{\numberline {8.35.3.2}$\sim $\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server}{190}{subsubsection.8.35.3.2}
+\contentsline {subsection}{\numberline {8.35.4}Member Function Documentation}{190}{subsection.8.35.4}
+\contentsline {subsubsection}{\numberline {8.35.4.1}Execution\discretionary {-}{}{}Body}{190}{subsubsection.8.35.4.1}
+\contentsline {subsubsection}{\numberline {8.35.4.2}Set\discretionary {-}{}{}Notification\discretionary {-}{}{}Callback}{190}{subsubsection.8.35.4.2}
+\contentsline {subsection}{\numberline {8.35.5}Member Data Documentation}{191}{subsection.8.35.5}
+\contentsline {subsubsection}{\numberline {8.35.5.1}m\discretionary {-}{}{}\_\discretionary {-}{}{}notification}{191}{subsubsection.8.35.5.1}
+\contentsline {subsubsection}{\numberline {8.35.5.2}m\discretionary {-}{}{}\_\discretionary {-}{}{}started}{191}{subsubsection.8.35.5.2}
+\contentsline {section}{\numberline {8.36}U\discretionary {-}{}{}D\discretionary {-}{}{}P\discretionary {-}{}{}Socket Class Reference}{192}{section.8.36}
+\contentsline {subsection}{\numberline {8.36.1}Detailed Description}{193}{subsection.8.36.1}
+\contentsline {subsection}{\numberline {8.36.2}Member Typedef Documentation}{193}{subsection.8.36.2}
+\contentsline {subsubsection}{\numberline {8.36.2.1}T\discretionary {-}{}{}Base\discretionary {-}{}{}Type}{193}{subsubsection.8.36.2.1}
+\contentsline {subsection}{\numberline {8.36.3}Constructor \& Destructor Documentation}{193}{subsection.8.36.3}
+\contentsline {subsubsection}{\numberline {8.36.3.1}U\discretionary {-}{}{}D\discretionary {-}{}{}P\discretionary {-}{}{}Socket}{193}{subsubsection.8.36.3.1}
+\contentsline {subsubsection}{\numberline {8.36.3.2}$\sim $\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}P\discretionary {-}{}{}Socket}{194}{subsubsection.8.36.3.2}
+\contentsline {subsection}{\numberline {8.36.4}Member Function Documentation}{194}{subsection.8.36.4}
+\contentsline {subsubsection}{\numberline {8.36.4.1}Receive\discretionary {-}{}{}Data}{194}{subsubsection.8.36.4.1}
+\contentsline {subsubsection}{\numberline {8.36.4.2}Send\discretionary {-}{}{}Data}{194}{subsubsection.8.36.4.2}
+\contentsline {subsubsection}{\numberline {8.36.4.3}Set\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}Address}{195}{subsubsection.8.36.4.3}
+\contentsline {subsubsection}{\numberline {8.36.4.4}Set\discretionary {-}{}{}Port}{196}{subsubsection.8.36.4.4}
+\contentsline {chapter}{\numberline {9}File Documentation}{199}{chapter.9}
+\contentsline {section}{\numberline {9.1}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Client\discretionary {-}{}{}Manager.cpp File Reference}{199}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Detailed Description}{199}{subsection.9.1.1}
+\contentsline {section}{\numberline {9.2}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Client\discretionary {-}{}{}Manager.h File Reference}{200}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Detailed Description}{201}{subsection.9.2.1}
+\contentsline {section}{\numberline {9.3}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Connection\discretionary {-}{}{}Manager.cpp File Reference}{201}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Detailed Description}{202}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Function Documentation}{202}{subsection.9.3.2}
+\contentsline {subsubsection}{\numberline {9.3.2.1}Connection\discretionary {-}{}{}Notification\discretionary {-}{}{}Handler}{202}{subsubsection.9.3.2.1}
+\contentsline {subsubsection}{\numberline {9.3.2.2}Connection\discretionary {-}{}{}Receive\discretionary {-}{}{}Handler}{202}{subsubsection.9.3.2.2}
+\contentsline {subsubsection}{\numberline {9.3.2.3}Get\discretionary {-}{}{}Connection\discretionary {-}{}{}Manager}{203}{subsubsection.9.3.2.3}
+\contentsline {section}{\numberline {9.4}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Connection\discretionary {-}{}{}Manager.h File Reference}{204}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Detailed Description}{205}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Function Documentation}{205}{subsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.2.1}Connection\discretionary {-}{}{}Notification\discretionary {-}{}{}Handler}{205}{subsubsection.9.4.2.1}
+\contentsline {subsubsection}{\numberline {9.4.2.2}Connection\discretionary {-}{}{}Receive\discretionary {-}{}{}Handler}{206}{subsubsection.9.4.2.2}
+\contentsline {subsubsection}{\numberline {9.4.2.3}Get\discretionary {-}{}{}Connection\discretionary {-}{}{}Manager}{206}{subsubsection.9.4.2.3}
+\contentsline {section}{\numberline {9.5}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Control\discretionary {-}{}{}Manager.cpp File Reference}{207}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Detailed Description}{207}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.2}Function Documentation}{208}{subsection.9.5.2}
+\contentsline {subsubsection}{\numberline {9.5.2.1}Control\discretionary {-}{}{}Notification\discretionary {-}{}{}Handler}{208}{subsubsection.9.5.2.1}
+\contentsline {subsubsection}{\numberline {9.5.2.2}Control\discretionary {-}{}{}Receive\discretionary {-}{}{}Handler}{208}{subsubsection.9.5.2.2}
+\contentsline {subsubsection}{\numberline {9.5.2.3}Get\discretionary {-}{}{}Control\discretionary {-}{}{}Manager}{209}{subsubsection.9.5.2.3}
+\contentsline {section}{\numberline {9.6}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Control\discretionary {-}{}{}Manager.h File Reference}{210}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Detailed Description}{211}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}Function Documentation}{211}{subsection.9.6.2}
+\contentsline {subsubsection}{\numberline {9.6.2.1}Control\discretionary {-}{}{}Notification\discretionary {-}{}{}Handler}{211}{subsubsection.9.6.2.1}
+\contentsline {subsubsection}{\numberline {9.6.2.2}Control\discretionary {-}{}{}Receive\discretionary {-}{}{}Handler}{211}{subsubsection.9.6.2.2}
+\contentsline {subsubsection}{\numberline {9.6.2.3}Get\discretionary {-}{}{}Control\discretionary {-}{}{}Manager}{212}{subsubsection.9.6.2.3}
+\contentsline {section}{\numberline {9.7}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Log\discretionary {-}{}{}Print.cpp File Reference}{212}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}Detailed Description}{213}{subsection.9.7.1}
+\contentsline {subsection}{\numberline {9.7.2}Variable Documentation}{214}{subsection.9.7.2}
+\contentsline {subsubsection}{\numberline {9.7.2.1}function\discretionary {-}{}{}Print}{214}{subsubsection.9.7.2.1}
+\contentsline {subsubsection}{\numberline {9.7.2.2}log\discretionary {-}{}{}Level}{214}{subsubsection.9.7.2.2}
+\contentsline {section}{\numberline {9.8}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Log\discretionary {-}{}{}Print.h File Reference}{214}{section.9.8}
+\contentsline {subsection}{\numberline {9.8.1}Detailed Description}{217}{subsection.9.8.1}
+\contentsline {subsection}{\numberline {9.8.2}Macro Definition Documentation}{217}{subsection.9.8.2}
+\contentsline {subsubsection}{\numberline {9.8.2.1}L\discretionary {-}{}{}O\discretionary {-}{}{}G\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}U\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}D}{217}{subsubsection.9.8.2.1}
+\contentsline {subsubsection}{\numberline {9.8.2.2}L\discretionary {-}{}{}O\discretionary {-}{}{}G\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}U\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T}{217}{subsubsection.9.8.2.2}
+\contentsline {subsection}{\numberline {9.8.3}Function Documentation}{217}{subsection.9.8.3}
+\contentsline {subsubsection}{\numberline {9.8.3.1}Error\discretionary {-}{}{}Print}{217}{subsubsection.9.8.3.1}
+\contentsline {subsubsection}{\numberline {9.8.3.2}Error\discretionary {-}{}{}Print}{218}{subsubsection.9.8.3.2}
+\contentsline {subsubsection}{\numberline {9.8.3.3}Error\discretionary {-}{}{}Print}{218}{subsubsection.9.8.3.3}
+\contentsline {subsubsection}{\numberline {9.8.3.4}Error\discretionary {-}{}{}Print}{219}{subsubsection.9.8.3.4}
+\contentsline {subsubsection}{\numberline {9.8.3.5}Error\discretionary {-}{}{}Print}{219}{subsubsection.9.8.3.5}
+\contentsline {subsubsection}{\numberline {9.8.3.6}Error\discretionary {-}{}{}Print}{219}{subsubsection.9.8.3.6}
+\contentsline {subsubsection}{\numberline {9.8.3.7}Log\discretionary {-}{}{}Print}{220}{subsubsection.9.8.3.7}
+\contentsline {subsubsection}{\numberline {9.8.3.8}Log\discretionary {-}{}{}Print}{221}{subsubsection.9.8.3.8}
+\contentsline {subsubsection}{\numberline {9.8.3.9}Log\discretionary {-}{}{}Print}{222}{subsubsection.9.8.3.9}
+\contentsline {subsubsection}{\numberline {9.8.3.10}Log\discretionary {-}{}{}Print}{222}{subsubsection.9.8.3.10}
+\contentsline {subsubsection}{\numberline {9.8.3.11}Log\discretionary {-}{}{}Print}{223}{subsubsection.9.8.3.11}
+\contentsline {subsubsection}{\numberline {9.8.3.12}Log\discretionary {-}{}{}Print}{223}{subsubsection.9.8.3.12}
+\contentsline {subsubsection}{\numberline {9.8.3.13}Log\discretionary {-}{}{}Print}{223}{subsubsection.9.8.3.13}
+\contentsline {subsubsection}{\numberline {9.8.3.14}Log\discretionary {-}{}{}Print}{224}{subsubsection.9.8.3.14}
+\contentsline {subsubsection}{\numberline {9.8.3.15}Warning\discretionary {-}{}{}Print}{224}{subsubsection.9.8.3.15}
+\contentsline {subsubsection}{\numberline {9.8.3.16}Warning\discretionary {-}{}{}Print}{225}{subsubsection.9.8.3.16}
+\contentsline {subsubsection}{\numberline {9.8.3.17}Warning\discretionary {-}{}{}Print}{225}{subsubsection.9.8.3.17}
+\contentsline {subsubsection}{\numberline {9.8.3.18}Warning\discretionary {-}{}{}Print}{225}{subsubsection.9.8.3.18}
+\contentsline {subsubsection}{\numberline {9.8.3.19}Warning\discretionary {-}{}{}Print}{226}{subsubsection.9.8.3.19}
+\contentsline {subsubsection}{\numberline {9.8.3.20}Warning\discretionary {-}{}{}Print}{226}{subsubsection.9.8.3.20}
+\contentsline {subsection}{\numberline {9.8.4}Variable Documentation}{226}{subsection.9.8.4}
+\contentsline {subsubsection}{\numberline {9.8.4.1}function\discretionary {-}{}{}Print}{227}{subsubsection.9.8.4.1}
+\contentsline {subsubsection}{\numberline {9.8.4.2}log\discretionary {-}{}{}Level}{227}{subsubsection.9.8.4.2}
+\contentsline {section}{\numberline {9.9}S2\discretionary {-}{}{}Sim/main.cpp File Reference}{227}{section.9.9}
+\contentsline {subsection}{\numberline {9.9.1}Detailed Description}{227}{subsection.9.9.1}
+\contentsline {subsection}{\numberline {9.9.2}Function Documentation}{228}{subsection.9.9.2}
+\contentsline {subsubsection}{\numberline {9.9.2.1}main}{228}{subsubsection.9.9.2.1}
+\contentsline {section}{\numberline {9.10}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Matlab\discretionary {-}{}{}Manager.cpp File Reference}{228}{section.9.10}
+\contentsline {subsection}{\numberline {9.10.1}Detailed Description}{229}{subsection.9.10.1}
+\contentsline {subsection}{\numberline {9.10.2}Function Documentation}{229}{subsection.9.10.2}
+\contentsline {subsubsection}{\numberline {9.10.2.1}Get\discretionary {-}{}{}Matlab\discretionary {-}{}{}Manager}{229}{subsubsection.9.10.2.1}
+\contentsline {subsubsection}{\numberline {9.10.2.2}Matlab\discretionary {-}{}{}Notification\discretionary {-}{}{}Handler}{230}{subsubsection.9.10.2.2}
+\contentsline {subsubsection}{\numberline {9.10.2.3}Matlab\discretionary {-}{}{}Receive\discretionary {-}{}{}Handler}{230}{subsubsection.9.10.2.3}
+\contentsline {section}{\numberline {9.11}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Matlab\discretionary {-}{}{}Manager.h File Reference}{231}{section.9.11}
+\contentsline {subsection}{\numberline {9.11.1}Detailed Description}{232}{subsection.9.11.1}
+\contentsline {subsection}{\numberline {9.11.2}Function Documentation}{232}{subsection.9.11.2}
+\contentsline {subsubsection}{\numberline {9.11.2.1}Get\discretionary {-}{}{}Matlab\discretionary {-}{}{}Manager}{232}{subsubsection.9.11.2.1}
+\contentsline {subsubsection}{\numberline {9.11.2.2}Matlab\discretionary {-}{}{}Receive\discretionary {-}{}{}Handler}{233}{subsubsection.9.11.2.2}
+\contentsline {section}{\numberline {9.12}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Semaphore\discretionary {-}{}{}Library/\discretionary {-}{}{}Semaphore.cpp File Reference}{234}{section.9.12}
+\contentsline {subsection}{\numberline {9.12.1}Detailed Description}{234}{subsection.9.12.1}
+\contentsline {section}{\numberline {9.13}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Semaphore\discretionary {-}{}{}Library/\discretionary {-}{}{}Semaphore.h File Reference}{234}{section.9.13}
+\contentsline {subsection}{\numberline {9.13.1}Detailed Description}{235}{subsection.9.13.1}
+\contentsline {section}{\numberline {9.14}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}Address.cpp File Reference}{236}{section.9.14}
+\contentsline {subsection}{\numberline {9.14.1}Detailed Description}{236}{subsection.9.14.1}
+\contentsline {section}{\numberline {9.15}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}Address.h File Reference}{236}{section.9.15}
+\contentsline {subsection}{\numberline {9.15.1}Detailed Description}{237}{subsection.9.15.1}
+\contentsline {section}{\numberline {9.16}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}Socket\discretionary {-}{}{}Base.h File Reference}{238}{section.9.16}
+\contentsline {subsection}{\numberline {9.16.1}Detailed Description}{239}{subsection.9.16.1}
+\contentsline {section}{\numberline {9.17}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client.cpp File Reference}{239}{section.9.17}
+\contentsline {subsection}{\numberline {9.17.1}Detailed Description}{240}{subsection.9.17.1}
+\contentsline {section}{\numberline {9.18}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client.h File Reference}{240}{section.9.18}
+\contentsline {subsection}{\numberline {9.18.1}Detailed Description}{242}{subsection.9.18.1}
+\contentsline {section}{\numberline {9.19}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client.cpp File Reference}{242}{section.9.19}
+\contentsline {subsection}{\numberline {9.19.1}Detailed Description}{242}{subsection.9.19.1}
+\contentsline {section}{\numberline {9.20}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client.h File Reference}{243}{section.9.20}
+\contentsline {subsection}{\numberline {9.20.1}Detailed Description}{244}{subsection.9.20.1}
+\contentsline {section}{\numberline {9.21}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server.cpp File Reference}{244}{section.9.21}
+\contentsline {subsection}{\numberline {9.21.1}Detailed Description}{245}{subsection.9.21.1}
+\contentsline {section}{\numberline {9.22}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server.h File Reference}{245}{section.9.22}
+\contentsline {subsection}{\numberline {9.22.1}Detailed Description}{247}{subsection.9.22.1}
+\contentsline {section}{\numberline {9.23}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client.cpp File Reference}{247}{section.9.23}
+\contentsline {subsection}{\numberline {9.23.1}Detailed Description}{247}{subsection.9.23.1}
+\contentsline {section}{\numberline {9.24}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Client.h File Reference}{248}{section.9.24}
+\contentsline {subsection}{\numberline {9.24.1}Detailed Description}{249}{subsection.9.24.1}
+\contentsline {section}{\numberline {9.25}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client.cpp File Reference}{249}{section.9.25}
+\contentsline {subsection}{\numberline {9.25.1}Detailed Description}{250}{subsection.9.25.1}
+\contentsline {section}{\numberline {9.26}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Connected\discretionary {-}{}{}Client.h File Reference}{250}{section.9.26}
+\contentsline {subsection}{\numberline {9.26.1}Detailed Description}{252}{subsection.9.26.1}
+\contentsline {section}{\numberline {9.27}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server.cpp File Reference}{252}{section.9.27}
+\contentsline {subsection}{\numberline {9.27.1}Detailed Description}{253}{subsection.9.27.1}
+\contentsline {section}{\numberline {9.28}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}Threaded\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}Server.h File Reference}{253}{section.9.28}
+\contentsline {subsection}{\numberline {9.28.1}Detailed Description}{254}{subsection.9.28.1}
+\contentsline {section}{\numberline {9.29}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}P\discretionary {-}{}{}Socket.cpp File Reference}{254}{section.9.29}
+\contentsline {subsection}{\numberline {9.29.1}Detailed Description}{255}{subsection.9.29.1}
+\contentsline {section}{\numberline {9.30}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Socket\discretionary {-}{}{}Library/\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}P\discretionary {-}{}{}Socket.h File Reference}{255}{section.9.30}
+\contentsline {subsection}{\numberline {9.30.1}Detailed Description}{256}{subsection.9.30.1}
+\contentsline {section}{\numberline {9.31}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}System\discretionary {-}{}{}Manager.cpp File Reference}{257}{section.9.31}
+\contentsline {subsection}{\numberline {9.31.1}Detailed Description}{257}{subsection.9.31.1}
+\contentsline {subsection}{\numberline {9.31.2}Function Documentation}{258}{subsection.9.31.2}
+\contentsline {subsubsection}{\numberline {9.31.2.1}Get\discretionary {-}{}{}System\discretionary {-}{}{}Manager}{258}{subsubsection.9.31.2.1}
+\contentsline {section}{\numberline {9.32}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}System\discretionary {-}{}{}Manager.h File Reference}{258}{section.9.32}
+\contentsline {subsection}{\numberline {9.32.1}Detailed Description}{259}{subsection.9.32.1}
+\contentsline {subsection}{\numberline {9.32.2}Function Documentation}{259}{subsection.9.32.2}
+\contentsline {subsubsection}{\numberline {9.32.2.1}Get\discretionary {-}{}{}System\discretionary {-}{}{}Manager}{259}{subsubsection.9.32.2.1}
+\contentsline {section}{\numberline {9.33}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request.cpp File Reference}{260}{section.9.33}
+\contentsline {subsection}{\numberline {9.33.1}Detailed Description}{261}{subsection.9.33.1}
+\contentsline {section}{\numberline {9.34}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Request.h File Reference}{262}{section.9.34}
+\contentsline {subsection}{\numberline {9.34.1}Detailed Description}{263}{subsection.9.34.1}
+\contentsline {section}{\numberline {9.35}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response.cpp File Reference}{264}{section.9.35}
+\contentsline {subsection}{\numberline {9.35.1}Detailed Description}{264}{subsection.9.35.1}
+\contentsline {section}{\numberline {9.36}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Client\discretionary {-}{}{}Connection\discretionary {-}{}{}Response.h File Reference}{265}{section.9.36}
+\contentsline {subsection}{\numberline {9.36.1}Detailed Description}{266}{subsection.9.36.1}
+\contentsline {section}{\numberline {9.37}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Client\discretionary {-}{}{}Data.cpp File Reference}{267}{section.9.37}
+\contentsline {subsection}{\numberline {9.37.1}Detailed Description}{268}{subsection.9.37.1}
+\contentsline {section}{\numberline {9.38}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Client\discretionary {-}{}{}Data.h File Reference}{268}{section.9.38}
+\contentsline {subsection}{\numberline {9.38.1}Detailed Description}{269}{subsection.9.38.1}
+\contentsline {section}{\numberline {9.39}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Compile\discretionary {-}{}{}Time\discretionary {-}{}{}Checker\discretionary {-}{}{}Library.h File Reference}{269}{section.9.39}
+\contentsline {subsection}{\numberline {9.39.1}Detailed Description}{270}{subsection.9.39.1}
+\contentsline {section}{\numberline {9.40}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Demand\discretionary {-}{}{}Negotiation.cpp File Reference}{270}{section.9.40}
+\contentsline {subsection}{\numberline {9.40.1}Detailed Description}{271}{subsection.9.40.1}
+\contentsline {section}{\numberline {9.41}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Demand\discretionary {-}{}{}Negotiation.h File Reference}{272}{section.9.41}
+\contentsline {subsection}{\numberline {9.41.1}Detailed Description}{273}{subsection.9.41.1}
+\contentsline {section}{\numberline {9.42}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Get\discretionary {-}{}{}Price.cpp File Reference}{273}{section.9.42}
+\contentsline {subsection}{\numberline {9.42.1}Detailed Description}{274}{subsection.9.42.1}
+\contentsline {section}{\numberline {9.43}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Get\discretionary {-}{}{}Price.h File Reference}{275}{section.9.43}
+\contentsline {subsection}{\numberline {9.43.1}Detailed Description}{276}{subsection.9.43.1}
+\contentsline {section}{\numberline {9.44}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Message\discretionary {-}{}{}Ender.cpp File Reference}{276}{section.9.44}
+\contentsline {subsection}{\numberline {9.44.1}Detailed Description}{277}{subsection.9.44.1}
+\contentsline {section}{\numberline {9.45}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Message\discretionary {-}{}{}Ender.h File Reference}{278}{section.9.45}
+\contentsline {subsection}{\numberline {9.45.1}Detailed Description}{279}{subsection.9.45.1}
+\contentsline {section}{\numberline {9.46}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Message\discretionary {-}{}{}Header.cpp File Reference}{279}{section.9.46}
+\contentsline {subsection}{\numberline {9.46.1}Detailed Description}{280}{subsection.9.46.1}
+\contentsline {section}{\numberline {9.47}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Message\discretionary {-}{}{}Header.h File Reference}{280}{section.9.47}
+\contentsline {subsection}{\numberline {9.47.1}Detailed Description}{281}{subsection.9.47.1}
+\contentsline {section}{\numberline {9.48}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Network\discretionary {-}{}{}Byte\discretionary {-}{}{}Accessor.h File Reference}{281}{section.9.48}
+\contentsline {subsection}{\numberline {9.48.1}Detailed Description}{283}{subsection.9.48.1}
+\contentsline {section}{\numberline {9.49}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Price\discretionary {-}{}{}Proposal.cpp File Reference}{283}{section.9.49}
+\contentsline {subsection}{\numberline {9.49.1}Detailed Description}{284}{subsection.9.49.1}
+\contentsline {section}{\numberline {9.50}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Price\discretionary {-}{}{}Proposal.h File Reference}{285}{section.9.50}
+\contentsline {subsection}{\numberline {9.50.1}Detailed Description}{286}{subsection.9.50.1}
+\contentsline {section}{\numberline {9.51}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Set\discretionary {-}{}{}Current\discretionary {-}{}{}Price.cpp File Reference}{286}{section.9.51}
+\contentsline {subsection}{\numberline {9.51.1}Detailed Description}{287}{subsection.9.51.1}
+\contentsline {section}{\numberline {9.52}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Terraswarm\discretionary {-}{}{}Library/\discretionary {-}{}{}Set\discretionary {-}{}{}Current\discretionary {-}{}{}Price.h File Reference}{288}{section.9.52}
+\contentsline {subsection}{\numberline {9.52.1}Detailed Description}{289}{subsection.9.52.1}
+\contentsline {section}{\numberline {9.53}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Thread\discretionary {-}{}{}Library/\discretionary {-}{}{}Posix\discretionary {-}{}{}Thread\discretionary {-}{}{}Base.h File Reference}{289}{section.9.53}
+\contentsline {subsection}{\numberline {9.53.1}Detailed Description}{290}{subsection.9.53.1}
+\contentsline {subsection}{\numberline {9.53.2}Function Documentation}{290}{subsection.9.53.2}
+\contentsline {subsubsection}{\numberline {9.53.2.1}Posix\discretionary {-}{}{}Thread\discretionary {-}{}{}Cover}{290}{subsubsection.9.53.2.1}
+\contentsline {section}{\numberline {9.54}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Thread\discretionary {-}{}{}Library/\discretionary {-}{}{}Thread\discretionary {-}{}{}Base.h File Reference}{291}{section.9.54}
+\contentsline {subsection}{\numberline {9.54.1}Detailed Description}{291}{subsection.9.54.1}
+\contentsline {section}{\numberline {9.55}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Thread\discretionary {-}{}{}Library/\discretionary {-}{}{}Thread\discretionary {-}{}{}Implementation.cpp File Reference}{291}{section.9.55}
+\contentsline {subsection}{\numberline {9.55.1}Detailed Description}{292}{subsection.9.55.1}
+\contentsline {section}{\numberline {9.56}S2\discretionary {-}{}{}Sim/\discretionary {-}{}{}Thread\discretionary {-}{}{}Library/\discretionary {-}{}{}Windows\discretionary {-}{}{}Thread\discretionary {-}{}{}Base.h File Reference}{292}{section.9.56}
+\contentsline {subsection}{\numberline {9.56.1}Detailed Description}{293}{subsection.9.56.1}
+\contentsline {subsection}{\numberline {9.56.2}Function Documentation}{293}{subsection.9.56.2}
+\contentsline {subsubsection}{\numberline {9.56.2.1}Windows\discretionary {-}{}{}Thread\discretionary {-}{}{}Cover}{293}{subsubsection.9.56.2.1}

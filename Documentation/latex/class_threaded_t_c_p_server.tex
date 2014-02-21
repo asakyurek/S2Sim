@@ -3,6 +3,11 @@
 }
 
 
+Defines the threaded version of \hyperlink{class_t_c_p_server}{T\-C\-P\-Server} that accepts clients in another thread in the background.  
+
+
+
+
 {\ttfamily \#include $<$Threaded\-T\-C\-P\-Server.\-h$>$}
 
 
@@ -27,35 +32,37 @@ Collaboration diagram for Threaded\-T\-C\-P\-Server\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 typedef void($\ast$ \hyperlink{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}{T\-Notification} )(\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the type of the callback notification function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_threaded_t_c_p_server_a824edd681a2fd81d259efd22de63058d}{Threaded\-T\-C\-P\-Server} (void)
-\item 
-virtual \hyperlink{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}{$\sim$\-Threaded\-T\-C\-P\-Server} (void)  throw ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the variables. \end{DoxyCompactList}\item 
+\hyperlink{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}{$\sim$\-Threaded\-T\-C\-P\-Server} (void)  throw ()
+\begin{DoxyCompactList}\small\item\em Stops the execution of the thread. \end{DoxyCompactList}\item 
 void \hyperlink{class_threaded_t_c_p_server_ac201656ab22b4ad07115d78cf8b7dd89}{Set\-Notification\-Callback} (\hyperlink{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}{T\-Notification} notification)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the notification callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void $\ast$ \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Execution\-Body} (void $\ast$input)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The execution body of the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}{T\-Notification} \hyperlink{class_threaded_t_c_p_server_acb1fa272e38dbd62673d5279a3e94345}{m\-\_\-notification}
-\item 
+\begin{DoxyCompactList}\small\item\em Callback function. \end{DoxyCompactList}\item 
 bool \hyperlink{class_threaded_t_c_p_server_aae68c31d87e830f67907edba35eceec3}{m\-\_\-started}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Indicates whether the thread is running. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+Defines the threaded version of \hyperlink{class_t_c_p_server}{T\-C\-P\-Server} that accepts clients in another thread in the background. 
 
+When a connection is established, the user will be notified through a callback function. 
 
-Definition at line 15 of file Threaded\-T\-C\-P\-Server.\-h.
+Definition at line 18 of file Threaded\-T\-C\-P\-Server.\-h.
 
 
 
@@ -65,7 +72,11 @@ Definition at line 15 of file Threaded\-T\-C\-P\-Server.\-h.
 \subsubsection[{T\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}typedef void( $\ast$ Threaded\-T\-C\-P\-Server\-::\-T\-Notification)({\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$)}}\label{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}
 
 
-Definition at line 18 of file Threaded\-T\-C\-P\-Server.\-h.
+Defines the type of the callback notification function. 
+
+The callback should only have a single input. The function will be provided the pointer of its caller. 
+
+Definition at line 24 of file Threaded\-T\-C\-P\-Server.\-h.
 
 
 
@@ -79,6 +90,10 @@ Definition at line 18 of file Threaded\-T\-C\-P\-Server.\-h.
 )}}\label{class_threaded_t_c_p_server_a824edd681a2fd81d259efd22de63058d}
 
 
+Initializes the variables. 
+
+
+
 Definition at line 10 of file Threaded\-T\-C\-P\-Server.\-cpp.
 
 \hypertarget{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!$\sim$\-Threaded\-T\-C\-P\-Server@{$\sim$\-Threaded\-T\-C\-P\-Server}}
@@ -87,7 +102,11 @@ Definition at line 10 of file Threaded\-T\-C\-P\-Server.\-cpp.
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}
+) throw  ) }}\label{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}
+
+
+Stops the execution of the thread. 
+
 
 
 Definition at line 14 of file Threaded\-T\-C\-P\-Server.\-cpp.
@@ -104,7 +123,21 @@ Definition at line 14 of file Threaded\-T\-C\-P\-Server.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}
 
 
-Implements \hyperlink{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{Thread\-Base}.
+The execution body of the thread. 
+
+The thread will start accepting connections.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Not used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Not used. N\-U\-L\-L. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e}{Thread\-Base}.
 
 
 
@@ -130,7 +163,18 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_threaded_t_c_p_server_ac201656ab22b4ad07115d78cf8b7dd89}
 
 
-Definition at line 32 of file Threaded\-T\-C\-P\-Server.\-h.
+Sets the notification callback. 
+
+If the notification callback function is legit, the thread is started. This function can be set only once. Adding a guard has currently no meaning but overhead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & Callback to the notification function. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file Threaded\-T\-C\-P\-Server.\-h.
 
 
 
@@ -162,14 +206,22 @@ Here is the caller graph for this function\-:\nopagebreak
 \subsubsection[{m\-\_\-notification}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Notification} Threaded\-T\-C\-P\-Server\-::m\-\_\-notification\hspace{0.3cm}{\ttfamily [private]}}}\label{class_threaded_t_c_p_server_acb1fa272e38dbd62673d5279a3e94345}
 
 
-Definition at line 24 of file Threaded\-T\-C\-P\-Server.\-h.
+Callback function. 
+
+
+
+Definition at line 40 of file Threaded\-T\-C\-P\-Server.\-h.
 
 \hypertarget{class_threaded_t_c_p_server_aae68c31d87e830f67907edba35eceec3}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!m\-\_\-started@{m\-\_\-started}}
 \index{m\-\_\-started@{m\-\_\-started}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
 \subsubsection[{m\-\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}bool Threaded\-T\-C\-P\-Server\-::m\-\_\-started\hspace{0.3cm}{\ttfamily [private]}}}\label{class_threaded_t_c_p_server_aae68c31d87e830f67907edba35eceec3}
 
 
-Definition at line 25 of file Threaded\-T\-C\-P\-Server.\-h.
+Indicates whether the thread is running. 
+
+
+
+Definition at line 45 of file Threaded\-T\-C\-P\-Server.\-h.
 
 
 

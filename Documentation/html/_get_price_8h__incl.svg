@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_message_header_8h.html" target="_top" xlink:title="MessageHeader.h">
+<a xlink:href="_message_header_8h.html" target="_top" xlink:title="Defines the MessageHeader class. ">
 <polygon style="fill:white;stroke:black;" points="0,-116 0,-137 113,-137 113,-116 0,-116"/>
 <text text-anchor="middle" x="56" y="-123" style="font-family:Arial;font-size:10.00;">MessageHeader.h</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="_message_ender_8h.html" target="_top" xlink:title="MessageEnder.h">
+<a xlink:href="_message_ender_8h.html" target="_top" xlink:title="Defines a MessageEnder class. ">
 <polygon style="fill:white;stroke:black;" points="84,-174 84,-195 188,-195 188,-174 84,-174"/>
 <text text-anchor="middle" x="136" y="-181" style="font-family:Arial;font-size:10.00;">MessageEnder.h</text>
 </a>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_network_byte_accessor_8h.html" target="_top" xlink:title="NetworkByteAccessor.h">
+<a xlink:href="_network_byte_accessor_8h.html" target="_top" xlink:title="Defines the NetworkByteAccessor class for byte order conversion and easier data access. ">
 <polygon style="fill:white;stroke:black;" points="70,-58 70,-79 211,-79 211,-58 70,-58"/>
 <text text-anchor="middle" x="140" y="-65" style="font-family:Arial;font-size:10.00;">NetworkByteAccessor.h</text>
 </a>
@@ -75,7 +75,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_compile_time_checker_library_8h.html" target="_top" xlink:title="CompileTimeCheckerLibrary.h">
+<a xlink:href="_compile_time_checker_library_8h.html" target="_top" xlink:title="This file contains template classes to do compile time checking. ">
 <polygon style="fill:white;stroke:black;" points="118,-0 118,-21 299,-21 299,-0 118,-0"/>
 <text text-anchor="middle" x="208" y="-7" style="font-family:Arial;font-size:10.00;">CompileTimeCheckerLibrary.h</text>
 </a>

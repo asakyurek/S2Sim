@@ -1,4 +1,4 @@
 <map id="TerraSwarm::NetworkByteAccessor::Read" name="TerraSwarm::NetworkByteAccessor::Read">
-<area shape="rect" href="$class_size_check.html#a5e3ffed91b912bc4b3f8b3290dc64351" title="SizeCheck::Check" alt="" coords="383,5,532,32"/>
-<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter.html#aa33fe4997f3ec0957f43d003b925f224" title="TerraSwarm::NetworkByteAccessor\l::EndianConverter::NetworkToHost" alt="" coords="323,56,592,101"/>
+<area shape="rect" href="$class_size_check.html#a5e3ffed91b912bc4b3f8b3290dc64351" title="Empty class that will only compile if the check passes. " alt="" coords="383,5,532,32"/>
+<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter.html#aa33fe4997f3ec0957f43d003b925f224" title="Converts the network byte order to host byte order. " alt="" coords="323,56,592,101"/>
 </map>

@@ -1,6 +1,11 @@
 \hypertarget{_log_print_8h}{\section{S2\-Sim/\-Log\-Print.h File Reference}
 \label{_log_print_8h}\index{S2\-Sim/\-Log\-Print.\-h@{S2\-Sim/\-Log\-Print.\-h}}
 }
+
+
+Defines logging related functions.  
+
+
 {\ttfamily \#include $<$iostream$>$}\\*
 {\ttfamily \#include \char`\"{}Semaphore.\-h\char`\"{}}\\*
 Include dependency graph for Log\-Print.\-h\-:\nopagebreak
@@ -21,59 +26,72 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 \#define \hyperlink{_log_print_8h_a6d24bc4bf65a1e66d360280f9f083cdb}{L\-O\-G\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-S\-T\-A\-R\-T}()~\hyperlink{_log_print_8h_a9f8e625d61d36702189c54bea5ad6d7b}{Log\-Print}( \char`\"{}-\/S\-T\-A\-R\-T-\/\char`\"{} );
-\item 
+\begin{DoxyCompactList}\small\item\em Macro to indicate the start of a function for verbose debugging. \end{DoxyCompactList}\item 
 \#define \hyperlink{_log_print_8h_a60627d69f6ca5f2f86ac0f864a7fd8c8}{L\-O\-G\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-E\-N\-D}()~\hyperlink{_log_print_8h_a9f8e625d61d36702189c54bea5ad6d7b}{Log\-Print}( \char`\"{}-\/E\-N\-D-\/\char`\"{} );
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Macro to indicate the end of a function for verbose debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 , typename I6 , typename I7 , typename I8 $>$ }\\void \hyperlink{_log_print_8h_a7e0c5f42cad5bc3a44134fb9c9a7a052}{Log\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, I6 input6, I7 input7, I8 input8, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 8 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 , typename I6 , typename I7 $>$ }\\void \hyperlink{_log_print_8h_ad42404ba6013340b27b37b0aea79b658}{Log\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, I6 input6, I7 input7, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 7 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 , typename I6 $>$ }\\void \hyperlink{_log_print_8h_acd5f16a41b44dd5b8ad52cc0bd13d101}{Log\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, I6 input6, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 6 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 $>$ }\\void \hyperlink{_log_print_8h_a2c497128f30f2865cfb14a5a62a877a6}{Log\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 5 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 $>$ }\\void \hyperlink{_log_print_8h_a69bf40fb72779e422d4a3334adb456f0}{Log\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 4 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 $>$ }\\void \hyperlink{_log_print_8h_a07901086025116b2a879c45406ff0462}{Log\-Print} (I1 input1, I2 input2, I3 input3, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 3 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 $>$ }\\void \hyperlink{_log_print_8h_afb23a185d96777d61e1b19fd266b25e0}{Log\-Print} (I1 input1, I2 input2, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 2 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 $>$ }\\void \hyperlink{_log_print_8h_a9f8e625d61d36702189c54bea5ad6d7b}{Log\-Print} (I1 input1, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 1 parameter log message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 , typename I6 $>$ }\\void \hyperlink{_log_print_8h_a46ea30a62534f8ce32cd39454e459b23}{Warning\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, I6 input6, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 6 parameter warning message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 $>$ }\\void \hyperlink{_log_print_8h_a3ab7949e7df5473f5062b962d463492d}{Warning\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 5 parameter warning message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 $>$ }\\void \hyperlink{_log_print_8h_a112a213faba672591c56351f24d13386}{Warning\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 4 parameter warning message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 $>$ }\\void \hyperlink{_log_print_8h_a5bb388602449f3655b56cd513d0c86a0}{Warning\-Print} (I1 input1, I2 input2, I3 input3, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 3 parameter warning message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 $>$ }\\void \hyperlink{_log_print_8h_a3f6859bc5038cdb38b79e9de1a2786a7}{Warning\-Print} (I1 input1, I2 input2, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 2 parameter warning message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 $>$ }\\void \hyperlink{_log_print_8h_adeefc895c0bb9d158b098e767f3c5125}{Warning\-Print} (I1 input1, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 1 parameter warning message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 , typename I6 $>$ }\\void \hyperlink{_log_print_8h_af783a2ea2c57c5f51f905a24f3f5a835}{Error\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, I6 input6, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 6 parameter error message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 , typename I5 $>$ }\\void \hyperlink{_log_print_8h_a15fcf3e40285c82d9253581f3dda2e66}{Error\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, I5 input5, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 5 parameter error message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 , typename I4 $>$ }\\void \hyperlink{_log_print_8h_a8d6a537554b76fd4255bc3e072b70d04}{Error\-Print} (I1 input1, I2 input2, I3 input3, I4 input4, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 4 parameter error message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 , typename I3 $>$ }\\void \hyperlink{_log_print_8h_a390a822d10d57bc1d13740fa162cfdde}{Error\-Print} (I1 input1, I2 input2, I3 input3, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 3 parameter error message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 , typename I2 $>$ }\\void \hyperlink{_log_print_8h_af588f10298e709d9ce97de76a285ca75}{Error\-Print} (I1 input1, I2 input2, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\item 
+\begin{DoxyCompactList}\small\item\em 2 parameter error message \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename I1 $>$ }\\void \hyperlink{_log_print_8h_afeeee2642385c53e518890d3417be2a4}{Error\-Print} (I1 input1, const char $\ast$function=\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 1 parameter error message \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 unsigned int \hyperlink{_log_print_8h_ae2895202d53e717355f96f260daa5f3c}{log\-Level}
-\item 
+\begin{DoxyCompactList}\small\item\em This is a small hack to suppress compiler warning for default macro parameter initialization. \end{DoxyCompactList}\item 
 bool \hyperlink{_log_print_8h_a7a50674184794aa7532ec7cc791dab9d}{function\-Print}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Boolean to indicate whether the function name should be printed for each log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines logging related functions. \begin{DoxyDate}{Date}
+Oct 28, 2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\-: Alper Sinan Akyurek 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{_log_print_8h_source}{Log\-Print.\-h}.
+
 
 
 \subsection{Macro Definition Documentation}
@@ -86,7 +104,11 @@ bool \hyperlink{_log_print_8h_a7a50674184794aa7532ec7cc791dab9d}{function\-Print
 )~{\bf Log\-Print}( \char`\"{}-\/E\-N\-D-\/\char`\"{} );}}\label{_log_print_8h_a60627d69f6ca5f2f86ac0f864a7fd8c8}
 
 
-Definition at line 20 of file Log\-Print.\-h.
+Macro to indicate the end of a function for verbose debugging. 
+
+
+
+Definition at line 41 of file Log\-Print.\-h.
 
 \hypertarget{_log_print_8h_a6d24bc4bf65a1e66d360280f9f083cdb}{\index{Log\-Print.\-h@{Log\-Print.\-h}!L\-O\-G\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-S\-T\-A\-R\-T@{L\-O\-G\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-S\-T\-A\-R\-T}}
 \index{L\-O\-G\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-S\-T\-A\-R\-T@{L\-O\-G\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-S\-T\-A\-R\-T}!LogPrint.h@{Log\-Print.\-h}}
@@ -97,7 +119,11 @@ Definition at line 20 of file Log\-Print.\-h.
 )~{\bf Log\-Print}( \char`\"{}-\/S\-T\-A\-R\-T-\/\char`\"{} );}}\label{_log_print_8h_a6d24bc4bf65a1e66d360280f9f083cdb}
 
 
-Definition at line 19 of file Log\-Print.\-h.
+Macro to indicate the start of a function for verbose debugging. 
+
+
+
+Definition at line 36 of file Log\-Print.\-h.
 
 
 
@@ -117,12 +143,15 @@ Definition at line 19 of file Log\-Print.\-h.
 )}}\label{_log_print_8h_af783a2ea2c57c5f51f905a24f3f5a835}
 
 
-Definition at line 134 of file Log\-Print.\-h.
+6 parameter error message 
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Definition at line 200 of file Log\-Print.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -145,7 +174,11 @@ Here is the caller graph for this function\-:
 )}}\label{_log_print_8h_a15fcf3e40285c82d9253581f3dda2e66}
 
 
-Definition at line 151 of file Log\-Print.\-h.
+5 parameter error message 
+
+
+
+Definition at line 220 of file Log\-Print.\-h.
 
 
 
@@ -171,7 +204,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a8d6a537554b76fd4255bc3e072b70d04}
 
 
-Definition at line 157 of file Log\-Print.\-h.
+4 parameter error message 
+
+
+
+Definition at line 229 of file Log\-Print.\-h.
 
 
 
@@ -196,7 +233,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a390a822d10d57bc1d13740fa162cfdde}
 
 
-Definition at line 163 of file Log\-Print.\-h.
+3 parameter error message 
+
+
+
+Definition at line 238 of file Log\-Print.\-h.
 
 
 
@@ -220,7 +261,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_af588f10298e709d9ce97de76a285ca75}
 
 
-Definition at line 169 of file Log\-Print.\-h.
+2 parameter error message 
+
+
+
+Definition at line 247 of file Log\-Print.\-h.
 
 
 
@@ -243,7 +288,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_afeeee2642385c53e518890d3417be2a4}
 
 
-Definition at line 175 of file Log\-Print.\-h.
+1 parameter error message 
+
+
+
+Definition at line 256 of file Log\-Print.\-h.
 
 
 
@@ -273,12 +322,15 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a7e0c5f42cad5bc3a44134fb9c9a7a052}
 
 
-Definition at line 23 of file Log\-Print.\-h.
+8 parameter log message 
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Definition at line 47 of file Log\-Print.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -303,7 +355,11 @@ Here is the caller graph for this function\-:
 )}}\label{_log_print_8h_ad42404ba6013340b27b37b0aea79b658}
 
 
-Definition at line 45 of file Log\-Print.\-h.
+7 parameter log message 
+
+
+
+Definition at line 72 of file Log\-Print.\-h.
 
 
 
@@ -331,7 +387,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_acd5f16a41b44dd5b8ad52cc0bd13d101}
 
 
-Definition at line 51 of file Log\-Print.\-h.
+6 parameter log message 
+
+
+
+Definition at line 81 of file Log\-Print.\-h.
 
 
 
@@ -358,7 +418,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a2c497128f30f2865cfb14a5a62a877a6}
 
 
-Definition at line 57 of file Log\-Print.\-h.
+5 parameter log message 
+
+
+
+Definition at line 90 of file Log\-Print.\-h.
 
 
 
@@ -384,7 +448,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a69bf40fb72779e422d4a3334adb456f0}
 
 
-Definition at line 63 of file Log\-Print.\-h.
+4 parameter log message 
+
+
+
+Definition at line 99 of file Log\-Print.\-h.
 
 
 
@@ -409,7 +477,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a07901086025116b2a879c45406ff0462}
 
 
-Definition at line 69 of file Log\-Print.\-h.
+3 parameter log message 
+
+
+
+Definition at line 108 of file Log\-Print.\-h.
 
 
 
@@ -433,7 +505,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_afb23a185d96777d61e1b19fd266b25e0}
 
 
-Definition at line 75 of file Log\-Print.\-h.
+2 parameter log message 
+
+
+
+Definition at line 117 of file Log\-Print.\-h.
 
 
 
@@ -456,7 +532,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a9f8e625d61d36702189c54bea5ad6d7b}
 
 
-Definition at line 81 of file Log\-Print.\-h.
+1 parameter log message 
+
+
+
+Definition at line 126 of file Log\-Print.\-h.
 
 
 
@@ -484,12 +564,15 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a46ea30a62534f8ce32cd39454e459b23}
 
 
-Definition at line 87 of file Log\-Print.\-h.
+6 parameter warning message 
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Definition at line 135 of file Log\-Print.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -512,7 +595,11 @@ Here is the caller graph for this function\-:
 )}}\label{_log_print_8h_a3ab7949e7df5473f5062b962d463492d}
 
 
-Definition at line 104 of file Log\-Print.\-h.
+5 parameter warning message 
+
+
+
+Definition at line 155 of file Log\-Print.\-h.
 
 
 
@@ -538,7 +625,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a112a213faba672591c56351f24d13386}
 
 
-Definition at line 110 of file Log\-Print.\-h.
+4 parameter warning message 
+
+
+
+Definition at line 164 of file Log\-Print.\-h.
 
 
 
@@ -563,7 +654,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a5bb388602449f3655b56cd513d0c86a0}
 
 
-Definition at line 116 of file Log\-Print.\-h.
+3 parameter warning message 
+
+
+
+Definition at line 173 of file Log\-Print.\-h.
 
 
 
@@ -587,7 +682,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_a3f6859bc5038cdb38b79e9de1a2786a7}
 
 
-Definition at line 122 of file Log\-Print.\-h.
+2 parameter warning message 
+
+
+
+Definition at line 182 of file Log\-Print.\-h.
 
 
 
@@ -610,7 +709,11 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{_log_print_8h_adeefc895c0bb9d158b098e767f3c5125}
 
 
-Definition at line 128 of file Log\-Print.\-h.
+1 parameter warning message 
+
+
+
+Definition at line 191 of file Log\-Print.\-h.
 
 
 
@@ -631,12 +734,26 @@ Here is the call graph for this function\-:\nopagebreak
 \subsubsection[{function\-Print}]{\setlength{\rightskip}{0pt plus 5cm}bool function\-Print}}\label{_log_print_8h_a7a50674184794aa7532ec7cc791dab9d}
 
 
+Boolean to indicate whether the function name should be printed for each log. 
+
+
+
 Definition at line 11 of file Log\-Print.\-cpp.
 
 \hypertarget{_log_print_8h_ae2895202d53e717355f96f260daa5f3c}{\index{Log\-Print.\-h@{Log\-Print.\-h}!log\-Level@{log\-Level}}
 \index{log\-Level@{log\-Level}!LogPrint.h@{Log\-Print.\-h}}
 \subsubsection[{log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int log\-Level}}\label{_log_print_8h_ae2895202d53e717355f96f260daa5f3c}
 
+
+This is a small hack to suppress compiler warning for default macro parameter initialization. 
+
+Logging level on how detailed the logs should be.
+\begin{DoxyItemize}
+\item 1\-: All logs
+\item 2\-: Warnings and errors
+\item 3\-: Errors only
+\item $>$3\-: No logging 
+\end{DoxyItemize}
 
 Definition at line 10 of file Log\-Print.\-cpp.
 

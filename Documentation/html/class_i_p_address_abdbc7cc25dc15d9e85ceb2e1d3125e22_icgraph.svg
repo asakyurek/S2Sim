@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_client.html#af093afaf101502080174a55518070c8b" target="_top" xlink:title="TCPClient::Connect">
+<a xlink:href="class_t_c_p_client.html#af093afaf101502080174a55518070c8b" target="_top" xlink:title="Starts a TCP connection to a server. ">
 <polygon style="fill:white;stroke:black;" points="203,-189 203,-210 324,-210 324,-189 203,-189"/>
 <text text-anchor="middle" x="263" y="-196" style="font-family:Arial;font-size:10.00;">TCPClient::Connect</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" target="_top" xlink:title="TCPServer::SetAddress">
+<a xlink:href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" target="_top" xlink:title="Sets the IP address of the server. ">
 <polygon style="fill:white;stroke:black;" points="194,-151 194,-172 332,-172 332,-151 194,-151"/>
 <text text-anchor="middle" x="263" y="-158" style="font-family:Arial;font-size:10.00;">TCPServer::SetAddress</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a" target="_top" xlink:title="TCPServer::Accept">
+<a xlink:href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a" target="_top" xlink:title="This method makes the TCP server accept any incoming connection attempt. ">
 <polygon style="fill:white;stroke:black;" points="206,-113 206,-134 321,-134 321,-113 206,-113"/>
 <text text-anchor="middle" x="263" y="-120" style="font-family:Arial;font-size:10.00;">TCPServer::Accept</text>
 </a>
@@ -54,7 +54,7 @@
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
-<a xlink:href="class_u_d_p_socket.html#ab78ab0104e1fafc5feb1b3459e537e32" target="_top" xlink:title="UDPSocket::SendData">
+<a xlink:href="class_u_d_p_socket.html#ab78ab0104e1fafc5feb1b3459e537e32" target="_top" xlink:title="Sends a data to another UDP socket. ">
 <polygon style="fill:white;stroke:black;" points="196,-75 196,-96 331,-96 331,-75 196,-75"/>
 <text text-anchor="middle" x="263" y="-82" style="font-family:Arial;font-size:10.00;">UDPSocket::SendData</text>
 </a>
@@ -66,7 +66,7 @@
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
-<a xlink:href="class_u_d_p_socket.html#a4f70d5a5bf2bb16fdd897355bb80741b" target="_top" xlink:title="UDPSocket::ReceiveData">
+<a xlink:href="class_u_d_p_socket.html#a4f70d5a5bf2bb16fdd897355bb80741b" target="_top" xlink:title="Receives data from another UDP Socket. ">
 <polygon style="fill:white;stroke:black;" points="188,-37 188,-58 338,-58 338,-37 188,-37"/>
 <text text-anchor="middle" x="263" y="-44" style="font-family:Arial;font-size:10.00;">UDPSocket::ReceiveData</text>
 </a>
@@ -78,7 +78,7 @@
 </g>
 <!-- Node12 -->
 <g id="node23" class="node"><title>Node12</title>
-<a xlink:href="class_u_d_p_socket.html#a28960551bca2099a03ad6fa39ef28065" target="_top" xlink:title="UDPSocket::SetIPAddress">
+<a xlink:href="class_u_d_p_socket.html#a28960551bca2099a03ad6fa39ef28065" target="_top" xlink:title="Sets the IP Address of the socket. ">
 <polygon style="fill:white;stroke:black;" points="188,1 188,-20 338,-20 338,1 188,1"/>
 <text text-anchor="middle" x="263" y="-6" style="font-family:Arial;font-size:10.00;">UDPSocket::SetIPAddress</text>
 </a>
@@ -90,7 +90,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" target="_top" xlink:title="TCPServer::SetPort">
+<a xlink:href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" target="_top" xlink:title="Sets the listening port of the server. ">
 <polygon style="fill:white;stroke:black;" points="382,-154 382,-175 499,-175 499,-154 382,-154"/>
 <text text-anchor="middle" x="440" y="-161" style="font-family:Arial;font-size:10.00;">TCPServer::SetPort</text>
 </a>
@@ -102,7 +102,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="ConnectionManager::\lConnectionManager">
+<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="575,-193 575,-227 708,-227 708,-193 575,-193"/>
 <text text-anchor="start" x="583" y="-213" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="641" y="-200" style="font-family:Arial;font-size:10.00;">ConnectionManager</text>
@@ -115,7 +115,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="ControlManager::ControlManager">
+<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="542,-154 542,-175 740,-175 740,-154 542,-154"/>
 <text text-anchor="middle" x="641" y="-161" style="font-family:Arial;font-size:10.00;">ControlManager::ControlManager</text>
 </a>
@@ -127,7 +127,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="MatlabManager::MatlabManager">
+<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="Private constructor to implement the singleton. ">
 <polygon style="fill:white;stroke:black;" points="545,-116 545,-137 737,-137 737,-116 545,-116"/>
 <text text-anchor="middle" x="641" y="-123" style="font-family:Arial;font-size:10.00;">MatlabManager::MatlabManager</text>
 </a>
@@ -139,7 +139,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083" target="_top" xlink:title="ThreadedTCPServer::\lExecutionBody">
+<a xlink:href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083" target="_top" xlink:title="The execution body of the thread. ">
 <polygon style="fill:white;stroke:black;" points="375,-103 375,-137 506,-137 506,-103 375,-103"/>
 <text text-anchor="start" x="383" y="-123" style="font-family:Arial;font-size:10.00;">ThreadedTCPServer::</text>
 <text text-anchor="middle" x="440" y="-110" style="font-family:Arial;font-size:10.00;">ExecutionBody</text>
@@ -152,7 +152,7 @@
 </g>
 <!-- Node13 -->
 <g id="node25" class="node"><title>Node13</title>
-<a xlink:href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" target="_top" xlink:title="UDPSocket::SetPort">
+<a xlink:href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" target="_top" xlink:title="Sets the port of the UDP Socket. ">
 <polygon style="fill:white;stroke:black;" points="380,1 380,-20 500,-20 500,1 380,1"/>
 <text text-anchor="middle" x="440" y="-6" style="font-family:Arial;font-size:10.00;">UDPSocket::SetPort</text>
 </a>

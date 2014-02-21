@@ -3,6 +3,11 @@
 }
 
 
+This class checks the size of a type with the given size and gives a compile error with the reason parameter is the check fails.  
+
+
+
+
 {\ttfamily \#include $<$Compile\-Time\-Checker\-Library.\-h$>$}
 
 \subsection*{Public Types}
@@ -10,35 +15,50 @@
 \item 
 enum \{ \hyperlink{class_size_check_a63104e95e61670b9f2b89af60512c866a8eec13abbe1b0ca10baf99b76909c77f}{Result} = Compile\-Check$<$sizeof( checked\-Type ) == checked\-Size, Reason$>$\-:\-:Result
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Enumeration for Result displaying. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static void \hyperlink{class_size_check_a5e3ffed91b912bc4b3f8b3290dc64351}{Check} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Empty class that will only compile if the check passes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \subsubsection*{template$<$typename checked\-Type, unsigned int checked\-Size, typename Reason = class No\-Reason$>$class Size\-Check$<$ checked\-Type, checked\-Size, Reason $>$}
 
+This class checks the size of a type with the given size and gives a compile error with the reason parameter is the check fails. 
 
 
-Definition at line 36 of file Compile\-Time\-Checker\-Library.\-h.
+\begin{DoxyTemplParams}{Template Parameters}
+{\em checked\-Type} & A type that will be checked for size. \\
+\hline
+{\em checked\-Size} & The size that the type should have. \\
+\hline
+{\em Reason} & Any class name that will be used for debug information only. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 71 of file Compile\-Time\-Checker\-Library.\-h.
 
 
 
 \subsection{Member Enumeration Documentation}
 \hypertarget{class_size_check_a63104e95e61670b9f2b89af60512c866}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename checked\-Type , unsigned int checked\-Size, typename Reason  = class No\-Reason$>$ anonymous enum}}\label{class_size_check_a63104e95e61670b9f2b89af60512c866}
+
+
+Enumeration for Result displaying. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Result@{Result}!Size\-Check@{Size\-Check}}\index{Size\-Check@{Size\-Check}!Result@{Result}}\item[{\em 
 \hypertarget{class_size_check_a63104e95e61670b9f2b89af60512c866a8eec13abbe1b0ca10baf99b76909c77f}{Result}\label{class_size_check_a63104e95e61670b9f2b89af60512c866a8eec13abbe1b0ca10baf99b76909c77f}
-}]\end{description}
+}]Result is the result of the compile check class. \end{description}
 \end{Desc}
 
 
-Definition at line 39 of file Compile\-Time\-Checker\-Library.\-h.
+Definition at line 77 of file Compile\-Time\-Checker\-Library.\-h.
 
 
 
@@ -52,7 +72,11 @@ Definition at line 39 of file Compile\-Time\-Checker\-Library.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_size_check_a5e3ffed91b912bc4b3f8b3290dc64351}
 
 
-Definition at line 44 of file Compile\-Time\-Checker\-Library.\-h.
+Empty class that will only compile if the check passes. 
+
+
+
+Definition at line 88 of file Compile\-Time\-Checker\-Library.\-h.
 
 
 

@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a" target="_top" xlink:title="TCPServer::Accept">
+<a xlink:href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a" target="_top" xlink:title="This method makes the TCP server accept any incoming connection attempt. ">
 <polygon style="fill:white;stroke:black;" points="169,-6 169,-27 284,-27 284,-6 169,-6"/>
 <text text-anchor="middle" x="226" y="-13" style="font-family:Arial;font-size:10.00;">TCPServer::Accept</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="IPAddress::GetSocketSize">
+<a xlink:href="class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" target="_top" xlink:title="Returns the size of the socket structure. ">
 <polygon style="fill:white;stroke:black;" points="320,-6 320,-27 472,-27 472,-6 320,-6"/>
 <text text-anchor="middle" x="396" y="-13" style="font-family:Arial;font-size:10.00;">IPAddress::GetSocketSize</text>
 </a>

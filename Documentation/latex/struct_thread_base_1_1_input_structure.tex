@@ -3,6 +3,11 @@
 }
 
 
+Special Input structure sent to the wrapper function\-: \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}.  
+
+
+
+
 Collaboration diagram for Thread\-Base\-:\-:Input\-Structure\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -14,22 +19,24 @@ Collaboration diagram for Thread\-Base\-:\-:Input\-Structure\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{struct_thread_base_1_1_input_structure_a05703c0e565f0d0616e5439d4bcbd2f7}{Input\-Structure} (void $\ast$main\-Input, \hyperlink{class_thread_base}{Thread\-Base} $\ast$class\-Pointer)
-\item 
+\begin{DoxyCompactList}\small\item\em Simple constructor to assign the values. \end{DoxyCompactList}\item 
 \hyperlink{struct_thread_base_1_1_input_structure_a05703c0e565f0d0616e5439d4bcbd2f7}{Input\-Structure} (void $\ast$main\-Input, \hyperlink{class_thread_base}{Thread\-Base} $\ast$class\-Pointer)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Simple constructor to assign the values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 void $\ast$ \hyperlink{struct_thread_base_1_1_input_structure_ab91961eacdcce8b1628f46a1a116fa1e}{m\-\_\-main\-Input}
-\item 
+\begin{DoxyCompactList}\small\item\em Actual input to the thread body. \end{DoxyCompactList}\item 
 \hyperlink{class_thread_base}{Thread\-Base} $\ast$ \hyperlink{struct_thread_base_1_1_input_structure_af522f05c6feb189c62b450a7eb344986}{m\-\_\-class\-Pointer}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the \hyperlink{class_thread_base}{Thread\-Base} class to gain access to the real thread body. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Special Input structure sent to the wrapper function\-: \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover()}. 
 
+This structure is used to recover the class pointer and the actual input to the thread body. 
 
-Definition at line 24 of file Posix\-Thread\-Base.\-h.
+Definition at line 53 of file Posix\-Thread\-Base.\-h.
 
 
 
@@ -44,7 +51,18 @@ Definition at line 24 of file Posix\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_thread_base_1_1_input_structure_a05703c0e565f0d0616e5439d4bcbd2f7}
 
 
-Definition at line 28 of file Posix\-Thread\-Base.\-h.
+Simple constructor to assign the values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\-Input} & Actual input to the thread body. \\
+\hline
+{\em class\-Pointer} & Pointer to the \hyperlink{class_thread_base}{Thread\-Base} class. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{struct_thread_base_1_1_input_structure_a05703c0e565f0d0616e5439d4bcbd2f7}{\index{Thread\-Base\-::\-Input\-Structure@{Thread\-Base\-::\-Input\-Structure}!Input\-Structure@{Input\-Structure}}
 \index{Input\-Structure@{Input\-Structure}!ThreadBase::InputStructure@{Thread\-Base\-::\-Input\-Structure}}
@@ -56,7 +74,18 @@ Definition at line 28 of file Posix\-Thread\-Base.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_thread_base_1_1_input_structure_a05703c0e565f0d0616e5439d4bcbd2f7}
 
 
-Definition at line 28 of file Windows\-Thread\-Base.\-h.
+Simple constructor to assign the values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\-Input} & Actual input to the thread body. \\
+\hline
+{\em class\-Pointer} & Pointer to the \hyperlink{class_thread_base}{Thread\-Base} class. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Windows\-Thread\-Base.\-h.
 
 
 
@@ -66,14 +95,22 @@ Definition at line 28 of file Windows\-Thread\-Base.\-h.
 \subsubsection[{m\-\_\-class\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Thread\-Base} $\ast$ Thread\-Base\-::\-Input\-Structure\-::m\-\_\-class\-Pointer}}\label{struct_thread_base_1_1_input_structure_af522f05c6feb189c62b450a7eb344986}
 
 
-Definition at line 27 of file Posix\-Thread\-Base.\-h.
+Pointer to the \hyperlink{class_thread_base}{Thread\-Base} class to gain access to the real thread body. 
+
+
+
+Definition at line 63 of file Posix\-Thread\-Base.\-h.
 
 \hypertarget{struct_thread_base_1_1_input_structure_ab91961eacdcce8b1628f46a1a116fa1e}{\index{Thread\-Base\-::\-Input\-Structure@{Thread\-Base\-::\-Input\-Structure}!m\-\_\-main\-Input@{m\-\_\-main\-Input}}
 \index{m\-\_\-main\-Input@{m\-\_\-main\-Input}!ThreadBase::InputStructure@{Thread\-Base\-::\-Input\-Structure}}
 \subsubsection[{m\-\_\-main\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Thread\-Base\-::\-Input\-Structure\-::m\-\_\-main\-Input}}\label{struct_thread_base_1_1_input_structure_ab91961eacdcce8b1628f46a1a116fa1e}
 
 
-Definition at line 26 of file Posix\-Thread\-Base.\-h.
+Actual input to the thread body. 
+
+This is stored in this structure because the O\-S only allows a single input to the thread body, which is structure itself. 
+
+Definition at line 58 of file Posix\-Thread\-Base.\-h.
 
 
 

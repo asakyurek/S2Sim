@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_threaded_t_c_p_client.html#a1cd1c985635fe8f87c444d3b78fcaefb" target="_top" xlink:title="ThreadedTCPClient::\lExecutionBody">
+<a xlink:href="class_threaded_t_c_p_client.html#a1cd1c985635fe8f87c444d3b78fcaefb" target="_top" xlink:title="The execution body of the thread. ">
 <polygon style="fill:white;stroke:black;" points="180,-0 180,-34 308,-34 308,-0 180,-0"/>
 <text text-anchor="start" x="188" y="-20" style="font-family:Arial;font-size:10.00;">ThreadedTCPClient::</text>
 <text text-anchor="middle" x="244" y="-7" style="font-family:Arial;font-size:10.00;">ExecutionBody</text>

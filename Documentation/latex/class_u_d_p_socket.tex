@@ -3,6 +3,11 @@
 }
 
 
+Manages a U\-D\-P connection.  
+
+
+
+
 {\ttfamily \#include $<$U\-D\-P\-Socket.\-h$>$}
 
 
@@ -27,29 +32,31 @@ Collaboration diagram for U\-D\-P\-Socket\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_u_d_p_socket_a237d16ccc7a9c4aefa81f69774748791}{U\-D\-P\-Socket} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Not used. \end{DoxyCompactList}\item 
 \hyperlink{class_u_d_p_socket_aa5c869eca5bab38df89f09ac79f54afb}{$\sim$\-U\-D\-P\-Socket} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Not used. \end{DoxyCompactList}\item 
 void \hyperlink{class_u_d_p_socket_a28960551bca2099a03ad6fa39ef28065}{Set\-I\-P\-Address} (\hyperlink{class_i_p_address}{I\-P\-Address} \&address)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the I\-P Address of the socket. \end{DoxyCompactList}\item 
 void \hyperlink{class_u_d_p_socket_a13165df1eb017e8ba2eba43a06a083ec}{Set\-Port} (const \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{I\-P\-Address\-::\-T\-Port} port)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the port of the U\-D\-P Socket. \end{DoxyCompactList}\item 
 \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_u_d_p_socket_ab78ab0104e1fafc5feb1b3459e537e32}{Send\-Data} (const \hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} length, \hyperlink{class_i_p_address}{I\-P\-Address} \&destination)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends a data to another U\-D\-P socket. \end{DoxyCompactList}\item 
 \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_u_d_p_socket_a4f70d5a5bf2bb16fdd897355bb80741b}{Receive\-Data} (\hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} reception\-Length, \hyperlink{class_i_p_address}{I\-P\-Address} \&destination\-Address)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Receives data from another U\-D\-P Socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef \hyperlink{class_socket_base}{Socket\-Base}$<$ S\-O\-C\-K\-\_\-\-D\-G\-R\-A\-M $>$ \hyperlink{class_u_d_p_socket_abdd3401d1e8ac4129eb799d02e6db28b}{T\-Base\-Type}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the base class for rapid development. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+Manages a U\-D\-P connection. 
 
+If the port is selected, this socket can send to any U\-D\-P socket. 
 
-Definition at line 14 of file U\-D\-P\-Socket.\-h.
+Definition at line 17 of file U\-D\-P\-Socket.\-h.
 
 
 
@@ -59,7 +66,11 @@ Definition at line 14 of file U\-D\-P\-Socket.\-h.
 \subsubsection[{T\-Base\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Socket\-Base}$<$S\-O\-C\-K\-\_\-\-D\-G\-R\-A\-M$>$ {\bf U\-D\-P\-Socket\-::\-T\-Base\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_u_d_p_socket_abdd3401d1e8ac4129eb799d02e6db28b}
 
 
-Definition at line 36 of file U\-D\-P\-Socket.\-h.
+Defines the base class for rapid development. 
+
+
+
+Definition at line 74 of file U\-D\-P\-Socket.\-h.
 
 
 
@@ -73,6 +84,10 @@ Definition at line 36 of file U\-D\-P\-Socket.\-h.
 )}}\label{class_u_d_p_socket_a237d16ccc7a9c4aefa81f69774748791}
 
 
+Not used. 
+
+
+
 Definition at line 10 of file U\-D\-P\-Socket.\-cpp.
 
 \hypertarget{class_u_d_p_socket_aa5c869eca5bab38df89f09ac79f54afb}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!$\sim$\-U\-D\-P\-Socket@{$\sim$\-U\-D\-P\-Socket}}
@@ -82,6 +97,10 @@ Definition at line 10 of file U\-D\-P\-Socket.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_u_d_p_socket_aa5c869eca5bab38df89f09ac79f54afb}
+
+
+Not used. 
+
 
 
 Definition at line 14 of file U\-D\-P\-Socket.\-cpp.
@@ -98,6 +117,24 @@ Definition at line 14 of file U\-D\-P\-Socket.\-cpp.
 \item[{{\bf I\-P\-Address} \&}]{destination\-Address}
 \end{DoxyParamCaption}
 )}}\label{class_u_d_p_socket_a4f70d5a5bf2bb16fdd897355bb80741b}
+
+
+Receives data from another U\-D\-P Socket. 
+
+This is a blocking call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & An allocated buffer where the received data will be stored in. \\
+\hline
+{\em reception\-Length} & Length of the buffer and the maximum reception length. \\
+\hline
+{\em destination\-Address} & I\-P Address, from which the data will be received.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the actual received number of bytes. 
+\end{DoxyReturn}
 
 
 Definition at line 25 of file U\-D\-P\-Socket.\-cpp.
@@ -124,6 +161,22 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{class_u_d_p_socket_ab78ab0104e1fafc5feb1b3459e537e32}
 
 
+Sends a data to another U\-D\-P socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer, containing the data to be sent. \\
+\hline
+{\em length} & Length of the data to be sent. \\
+\hline
+{\em destination} & I\-P Address of the destination socket.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the actual number of bytes sent. 
+\end{DoxyReturn}
+
+
 Definition at line 19 of file U\-D\-P\-Socket.\-cpp.
 
 
@@ -144,6 +197,17 @@ Here is the call graph for this function\-:\nopagebreak
 \item[{{\bf I\-P\-Address} \&}]{address}
 \end{DoxyParamCaption}
 )}}\label{class_u_d_p_socket_a28960551bca2099a03ad6fa39ef28065}
+
+
+Sets the I\-P Address of the socket. 
+
+This method is not recommended as the I\-P Address of the user is already set. If the user is not sure, \hyperlink{class_u_d_p_socket_a13165df1eb017e8ba2eba43a06a083ec}{U\-D\-P\-Socket\-::\-Set\-Port()} is the usual usage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & I\-P Address of the socket. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 32 of file U\-D\-P\-Socket.\-cpp.
@@ -177,6 +241,15 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{const {\bf I\-P\-Address\-::\-T\-Port}}]{port}
 \end{DoxyParamCaption}
 )}}\label{class_u_d_p_socket_a13165df1eb017e8ba2eba43a06a083ec}
+
+
+Sets the port of the U\-D\-P Socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port that the destination will send its data to. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 38 of file U\-D\-P\-Socket.\-cpp.

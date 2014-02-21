@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('_posix_thread_base_8h.html','');});
 <div class="title">PosixThreadBase.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines the <a class="el" href="class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. ">ThreadBase</a> class.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;pthread.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for PosixThreadBase.h:</div>
@@ -123,16 +126,24 @@ Include dependency graph for PosixThreadBase.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html">ThreadBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a base class that can be inherited from to gain threading capabilities.  <a href="class_thread_base.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_base_1_1_input_structure.html">ThreadBase::InputStructure</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special Input structure sent to the wrapper function: <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>.  <a href="struct_thread_base_1_1_input_structure.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2567acd55e8bbdbf8ac90a8f77bb4943"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_posix_thread_base_8h.html#a2567acd55e8bbdbf8ac90a8f77bb4943">PosixThreadCover</a> (void *)</td></tr>
+<tr class="memdesc:a2567acd55e8bbdbf8ac90a8f77bb4943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function called by the operating system a the thread body.  <a href="#a2567acd55e8bbdbf8ac90a8f77bb4943">More...</a><br/></td></tr>
 <tr class="separator:a2567acd55e8bbdbf8ac90a8f77bb4943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines the <a class="el" href="class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. ">ThreadBase</a> class. </p>
+<dl class="section date"><dt>Date</dt><dd>Dec 21, 2013 : Alper Sinan Akyurek </dd></dl>
+
+<p>Definition in file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a2567acd55e8bbdbf8ac90a8f77bb4943"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +158,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Wrapper function called by the operating system a the thread body. </p>
+<p>Friend wrapper function that is actually called by the OS as the thread body.</p>
+<p>It takes the actual class pointer and the input into the execution function from its input and executes the "actual thread body" with the desired input. This allows us to use the OS thread utilities to run a C++ class method, rather than a plain C function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void*</td><td>Special input structure containing the class address and the real input to the execution body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns whatever the class method returns. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -155,7 +177,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="dir_a7af9107ec02fcfb2ee8d3bbd2609d89.html">ThreadLibrary</a></li><li class="navelem"><a class="el" href="_posix_thread_base_8h.html">PosixThreadBase.h</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

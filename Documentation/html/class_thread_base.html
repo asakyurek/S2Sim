@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -120,16 +120,20 @@ $(document).ready(function(){initNavTree('class_thread_base.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Provides a base class that can be inherited from to gain threading capabilities.  
+ <a href="class_thread_base.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ThreadBase:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_thread_base__inherit__graph.svg" width="747" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_thread_base__inherit__graph.svg" width="630" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_base_1_1_input_structure.html">InputStructure</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special Input structure sent to the wrapper function: <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>.  <a href="struct_thread_base_1_1_input_structure.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -139,96 +143,132 @@ Public Types</h2></td></tr>
 <a class="el" href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab">isStarted</a> = ( TStarted )true, 
 <a class="el" href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb">isNotStarted</a> = ( TStarted )false
  }</td></tr>
+<tr class="memdesc:a6676ad16581b715cf6d59180fd990cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines values for the TStarted type.  <a href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1">More...</a><br/></td></tr>
 <tr class="separator:a6676ad16581b715cf6d59180fd990cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6676ad16581b715cf6d59180fd990cf1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1">StartedValues</a> { <a class="el" href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab">isStarted</a> = ( TStarted )true, 
 <a class="el" href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb">isNotStarted</a> = ( TStarted )false, 
 <a class="el" href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab">isStarted</a> = ( TStarted )true, 
 <a class="el" href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb">isNotStarted</a> = ( TStarted )false
  }</td></tr>
+<tr class="memdesc:a6676ad16581b715cf6d59180fd990cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines values for the TStarted type.  <a href="class_thread_base.html#a6676ad16581b715cf6d59180fd990cf1">More...</a><br/></td></tr>
 <tr class="separator:a6676ad16581b715cf6d59180fd990cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af45bd74387b409e15989f7eddbaf3718"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#af45bd74387b409e15989f7eddbaf3718">TStackSize</a></td></tr>
+<tr class="memdesc:af45bd74387b409e15989f7eddbaf3718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the Stack Size type for the thread.  <a href="#af45bd74387b409e15989f7eddbaf3718">More...</a><br/></td></tr>
 <tr class="separator:af45bd74387b409e15989f7eddbaf3718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8b410e3bc7320addea3c5b56ff6c985"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#ad8b410e3bc7320addea3c5b56ff6c985">TStarted</a></td></tr>
+<tr class="memdesc:ad8b410e3bc7320addea3c5b56ff6c985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a type indicating whether the thread is started.  <a href="#ad8b410e3bc7320addea3c5b56ff6c985">More...</a><br/></td></tr>
 <tr class="separator:ad8b410e3bc7320addea3c5b56ff6c985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af45bd74387b409e15989f7eddbaf3718"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#af45bd74387b409e15989f7eddbaf3718">TStackSize</a></td></tr>
+<tr class="memdesc:af45bd74387b409e15989f7eddbaf3718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the Stack Size type for the thread.  <a href="#af45bd74387b409e15989f7eddbaf3718">More...</a><br/></td></tr>
 <tr class="separator:af45bd74387b409e15989f7eddbaf3718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8b410e3bc7320addea3c5b56ff6c985"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#ad8b410e3bc7320addea3c5b56ff6c985">TStarted</a></td></tr>
+<tr class="memdesc:ad8b410e3bc7320addea3c5b56ff6c985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a type indicating whether the thread is started.  <a href="#ad8b410e3bc7320addea3c5b56ff6c985">More...</a><br/></td></tr>
 <tr class="separator:ad8b410e3bc7320addea3c5b56ff6c985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a95aa3532d57d742e9591b37c4aff1bc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a95aa3532d57d742e9591b37c4aff1bc7">ThreadBase</a> (void)</td></tr>
+<tr class="memdesc:a95aa3532d57d742e9591b37c4aff1bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes values but does not create a thread.  <a href="#a95aa3532d57d742e9591b37c4aff1bc7">More...</a><br/></td></tr>
 <tr class="separator:a95aa3532d57d742e9591b37c4aff1bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e152f859a8ae5a8d76672f0b53da5c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a9e152f859a8ae5a8d76672f0b53da5c7">ThreadBase</a> (void *input)</td></tr>
+<tr class="memdesc:a9e152f859a8ae5a8d76672f0b53da5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes values and starts the thread with the given input.  <a href="#a9e152f859a8ae5a8d76672f0b53da5c7">More...</a><br/></td></tr>
 <tr class="separator:a9e152f859a8ae5a8d76672f0b53da5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4afe68df229298e2c2920d34ce612e0e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a4afe68df229298e2c2920d34ce612e0e">~ThreadBase</a> (void)</td></tr>
+<tr class="memdesc:a4afe68df229298e2c2920d34ce612e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the thread and frees the allocates attribute.  <a href="#a4afe68df229298e2c2920d34ce612e0e">More...</a><br/></td></tr>
 <tr class="separator:a4afe68df229298e2c2920d34ce612e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bd80044eb3845856abef9535f1903c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a50bd80044eb3845856abef9535f1903c">ThreadBase</a> (const <a class="el" href="class_thread_base.html">ThreadBase</a> &amp;copy)</td></tr>
+<tr class="memdesc:a50bd80044eb3845856abef9535f1903c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the contents of another thread.  <a href="#a50bd80044eb3845856abef9535f1903c">More...</a><br/></td></tr>
 <tr class="separator:a50bd80044eb3845856abef9535f1903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add14648bdc8059dd8db41166130921dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#add14648bdc8059dd8db41166130921dd">SetStackSize</a> (const <a class="el" href="class_thread_base.html#af45bd74387b409e15989f7eddbaf3718">TStackSize</a> stackSize)</td></tr>
+<tr class="memdesc:add14648bdc8059dd8db41166130921dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stack size of the thread.  <a href="#add14648bdc8059dd8db41166130921dd">More...</a><br/></td></tr>
 <tr class="separator:add14648bdc8059dd8db41166130921dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e2186d3cf4ddf6b9aa533d59f56546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html#af45bd74387b409e15989f7eddbaf3718">TStackSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a39e2186d3cf4ddf6b9aa533d59f56546">GetStackSize</a> (void) const </td></tr>
+<tr class="memdesc:a39e2186d3cf4ddf6b9aa533d59f56546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stack size of the thread.  <a href="#a39e2186d3cf4ddf6b9aa533d59f56546">More...</a><br/></td></tr>
 <tr class="separator:a39e2186d3cf4ddf6b9aa533d59f56546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea6437d738ac97e3427bbe466f850f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8">StartThread</a> (void *input)</td></tr>
+<tr class="memdesc:aaea6437d738ac97e3427bbe466f850f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a thread and starts executing with the given input.  <a href="#aaea6437d738ac97e3427bbe466f850f8">More...</a><br/></td></tr>
 <tr class="separator:aaea6437d738ac97e3427bbe466f850f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95aa3532d57d742e9591b37c4aff1bc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a95aa3532d57d742e9591b37c4aff1bc7">ThreadBase</a> (void)</td></tr>
+<tr class="memdesc:a95aa3532d57d742e9591b37c4aff1bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the values but does not create a thread.  <a href="#a95aa3532d57d742e9591b37c4aff1bc7">More...</a><br/></td></tr>
 <tr class="separator:a95aa3532d57d742e9591b37c4aff1bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4afe68df229298e2c2920d34ce612e0e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a4afe68df229298e2c2920d34ce612e0e">~ThreadBase</a> (void)</td></tr>
+<tr class="memdesc:a4afe68df229298e2c2920d34ce612e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the thread handle.  <a href="#a4afe68df229298e2c2920d34ce612e0e">More...</a><br/></td></tr>
 <tr class="separator:a4afe68df229298e2c2920d34ce612e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bd80044eb3845856abef9535f1903c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a50bd80044eb3845856abef9535f1903c">ThreadBase</a> (const <a class="el" href="class_thread_base.html">ThreadBase</a> &amp;copy)</td></tr>
+<tr class="memdesc:a50bd80044eb3845856abef9535f1903c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the contents of the other class.  <a href="#a50bd80044eb3845856abef9535f1903c">More...</a><br/></td></tr>
 <tr class="separator:a50bd80044eb3845856abef9535f1903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add14648bdc8059dd8db41166130921dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#add14648bdc8059dd8db41166130921dd">SetStackSize</a> (const <a class="el" href="class_thread_base.html#af45bd74387b409e15989f7eddbaf3718">TStackSize</a> stackSize)</td></tr>
+<tr class="memdesc:add14648bdc8059dd8db41166130921dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stack size of the thread.  <a href="#add14648bdc8059dd8db41166130921dd">More...</a><br/></td></tr>
 <tr class="separator:add14648bdc8059dd8db41166130921dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e2186d3cf4ddf6b9aa533d59f56546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html#af45bd74387b409e15989f7eddbaf3718">TStackSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a39e2186d3cf4ddf6b9aa533d59f56546">GetStackSize</a> (void) const </td></tr>
+<tr class="memdesc:a39e2186d3cf4ddf6b9aa533d59f56546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stack size of the thread.  <a href="#a39e2186d3cf4ddf6b9aa533d59f56546">More...</a><br/></td></tr>
 <tr class="separator:a39e2186d3cf4ddf6b9aa533d59f56546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea6437d738ac97e3427bbe466f850f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8">StartThread</a> (void *input)</td></tr>
+<tr class="memdesc:aaea6437d738ac97e3427bbe466f850f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a thread and starts executing with the given input.  <a href="#aaea6437d738ac97e3427bbe466f850f8">More...</a><br/></td></tr>
 <tr class="separator:aaea6437d738ac97e3427bbe466f850f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:af8ec97aa7d89f9a4605a1c6c60777d5d"><td class="memItemLeft" align="right" valign="top">typedef pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#af8ec97aa7d89f9a4605a1c6c60777d5d">TThreadId</a></td></tr>
+<tr class="memdesc:af8ec97aa7d89f9a4605a1c6c60777d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the thread handle used for the OS utilities.  <a href="#af8ec97aa7d89f9a4605a1c6c60777d5d">More...</a><br/></td></tr>
 <tr class="separator:af8ec97aa7d89f9a4605a1c6c60777d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adea5ffdf2c74b95dbfee5148248f93b8"><td class="memItemLeft" align="right" valign="top">typedef pthread_attr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#adea5ffdf2c74b95dbfee5148248f93b8">TThreadAttribute</a></td></tr>
+<tr class="memdesc:adea5ffdf2c74b95dbfee5148248f93b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the thread attributes.  <a href="#adea5ffdf2c74b95dbfee5148248f93b8">More...</a><br/></td></tr>
 <tr class="separator:adea5ffdf2c74b95dbfee5148248f93b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76da3758dcb9858188c493eb9b811f3d"><td class="memItemLeft" align="right" valign="top">typedef DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a76da3758dcb9858188c493eb9b811f3d">TThreadId</a></td></tr>
+<tr class="memdesc:a76da3758dcb9858188c493eb9b811f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the Thread Id type.  <a href="#a76da3758dcb9858188c493eb9b811f3d">More...</a><br/></td></tr>
 <tr class="separator:a76da3758dcb9858188c493eb9b811f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87b599650c2062b6ff7e54934da7e2b"><td class="memItemLeft" align="right" valign="top">typedef HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#ad87b599650c2062b6ff7e54934da7e2b">TThreadHandle</a></td></tr>
+<tr class="memdesc:ad87b599650c2062b6ff7e54934da7e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the Thread Handle type.  <a href="#ad87b599650c2062b6ff7e54934da7e2b">More...</a><br/></td></tr>
 <tr class="separator:ad87b599650c2062b6ff7e54934da7e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a844dd13473fee9283197b3905a81da45"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a844dd13473fee9283197b3905a81da45">ExecuteThread</a> (void *input)</td></tr>
+<tr class="memdesc:a844dd13473fee9283197b3905a81da45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the wrapper function <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the OS.  <a href="#a844dd13473fee9283197b3905a81da45">More...</a><br/></td></tr>
 <tr class="separator:a844dd13473fee9283197b3905a81da45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cbbb5fb63f5e92d32085b6e874b6f29"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a2cbbb5fb63f5e92d32085b6e874b6f29">ExecutionBody</a> (void *)=0</td></tr>
-<tr class="separator:a2cbbb5fb63f5e92d32085b6e874b6f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9904309fcfb4dce33130ef1f1a1c227e"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a9904309fcfb4dce33130ef1f1a1c227e">ExecutionBody</a> (void *input)=0</td></tr>
+<tr class="memdesc:a9904309fcfb4dce33130ef1f1a1c227e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purely virtual method to be overridden by the inheriting class to implement its own thread body.  <a href="#a9904309fcfb4dce33130ef1f1a1c227e">More...</a><br/></td></tr>
+<tr class="separator:a9904309fcfb4dce33130ef1f1a1c227e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a844dd13473fee9283197b3905a81da45"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a844dd13473fee9283197b3905a81da45">ExecuteThread</a> (void *input)</td></tr>
+<tr class="memdesc:a844dd13473fee9283197b3905a81da45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the wrapper function <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the OS.  <a href="#a844dd13473fee9283197b3905a81da45">More...</a><br/></td></tr>
 <tr class="separator:a844dd13473fee9283197b3905a81da45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cbbb5fb63f5e92d32085b6e874b6f29"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a2cbbb5fb63f5e92d32085b6e874b6f29">ExecutionBody</a> (void *)=0</td></tr>
+<tr class="memdesc:a2cbbb5fb63f5e92d32085b6e874b6f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purely virtual method to be overridden by the inheriting class to implement its own thread body.  <a href="#a2cbbb5fb63f5e92d32085b6e874b6f29">More...</a><br/></td></tr>
 <tr class="separator:a2cbbb5fb63f5e92d32085b6e874b6f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5e2958ae98b989268d1e2be629789d64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html#ad8b410e3bc7320addea3c5b56ff6c985">TStarted</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a5e2958ae98b989268d1e2be629789d64">m_started</a></td></tr>
+<tr class="memdesc:a5e2958ae98b989268d1e2be629789d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the thread is started to execute.  <a href="#a5e2958ae98b989268d1e2be629789d64">More...</a><br/></td></tr>
 <tr class="separator:a5e2958ae98b989268d1e2be629789d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8574271bdcbfd80cbdde64c77bc7148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html#af8ec97aa7d89f9a4605a1c6c60777d5d">TThreadId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#ae8574271bdcbfd80cbdde64c77bc7148">m_threadId</a></td></tr>
+<tr class="memdesc:ae8574271bdcbfd80cbdde64c77bc7148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable holding the handle to the thread.  <a href="#ae8574271bdcbfd80cbdde64c77bc7148">More...</a><br/></td></tr>
 <tr class="separator:ae8574271bdcbfd80cbdde64c77bc7148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d98c6f93707aef346cc66d8de78729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html#adea5ffdf2c74b95dbfee5148248f93b8">TThreadAttribute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#ad0d98c6f93707aef346cc66d8de78729">m_threadAttribute</a></td></tr>
+<tr class="memdesc:ad0d98c6f93707aef346cc66d8de78729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable holding the attributes of the thread.  <a href="#ad0d98c6f93707aef346cc66d8de78729">More...</a><br/></td></tr>
 <tr class="separator:ad0d98c6f93707aef346cc66d8de78729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f279b94eef423109969f69fadd9e674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html#ad87b599650c2062b6ff7e54934da7e2b">TThreadHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a4f279b94eef423109969f69fadd9e674">m_threadHandle</a></td></tr>
+<tr class="memdesc:a4f279b94eef423109969f69fadd9e674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable holding the handle to the thread.  <a href="#a4f279b94eef423109969f69fadd9e674">More...</a><br/></td></tr>
 <tr class="separator:a4f279b94eef423109969f69fadd9e674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c8b3446d099074f0f1608e5246e137d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html#af45bd74387b409e15989f7eddbaf3718">TStackSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a9c8b3446d099074f0f1608e5246e137d">m_stackSize</a></td></tr>
+<tr class="memdesc:a9c8b3446d099074f0f1608e5246e137d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable holding the stack size of the thread.  <a href="#a9c8b3446d099074f0f1608e5246e137d">More...</a><br/></td></tr>
 <tr class="separator:a9c8b3446d099074f0f1608e5246e137d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a2567acd55e8bbdbf8ac90a8f77bb4943"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943">PosixThreadCover</a> (void *)</td></tr>
+<tr class="memdesc:a2567acd55e8bbdbf8ac90a8f77bb4943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Friend wrapper function that is actually called by the OS as the thread body.  <a href="#a2567acd55e8bbdbf8ac90a8f77bb4943">More...</a><br/></td></tr>
 <tr class="separator:a2567acd55e8bbdbf8ac90a8f77bb4943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a790b21ad102d0b813d14e54f4fbf4460"><td class="memItemLeft" align="right" valign="top">DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thread_base.html#a790b21ad102d0b813d14e54f4fbf4460">WindowsThreadCover</a> (LPVOID)</td></tr>
+<tr class="memdesc:a790b21ad102d0b813d14e54f4fbf4460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Friend wrapper function that is actually called by the OS as the thread body.  <a href="#a790b21ad102d0b813d14e54f4fbf4460">More...</a><br/></td></tr>
 <tr class="separator:a790b21ad102d0b813d14e54f4fbf4460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00018">18</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<div class="textblock"><p>Provides a base class that can be inherited from to gain threading capabilities. </p>
+<p>Any class that wants to have threading capability can inherit from this class and override its purely virtual method <a class="el" href="class_thread_base.html#a9904309fcfb4dce33130ef1f1a1c227e" title="Purely virtual method to be overridden by the inheriting class to implement its own thread body...">ThreadBase::ExecutionBody</a>. This overriden method will be the threads main body. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00030">30</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="af45bd74387b409e15989f7eddbaf3718"></a>
 <div class="memitem">
@@ -240,7 +280,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00035">35</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Defines the Stack Size type for the thread. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00081">81</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +296,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00035">35</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Defines the Stack Size type for the thread. </p>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00082">82</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +312,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00036">36</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Defines a type indicating whether the thread is started. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00086">86</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +328,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00036">36</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Defines a type indicating whether the thread is started. </p>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00087">87</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -304,7 +352,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00023">23</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Type for the thread attributes. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00048">48</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -326,29 +376,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00023">23</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Defines the Thread Handle type. </p>
 
-</div>
-</div>
-<a class="anchor" id="a76da3758dcb9858188c493eb9b811f3d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DWORD <a class="el" href="class_thread_base.html#af8ec97aa7d89f9a4605a1c6c60777d5d">ThreadBase::TThreadId</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00022">22</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00049">49</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +400,33 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00022">22</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Type for the thread handle used for the OS utilities. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00043">43</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76da3758dcb9858188c493eb9b811f3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef DWORD <a class="el" href="class_thread_base.html#af8ec97aa7d89f9a4605a1c6c60777d5d">ThreadBase::TThreadId</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines the Thread Id type. </p>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00044">44</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -384,18 +440,24 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines values for the TStarted type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab"></a>isStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is started. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb"></a>isNotStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is not started yet. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab"></a>isStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is started. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb"></a>isNotStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is not started yet. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00037">37</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00091">91</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -408,18 +470,24 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines values for the TStarted type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab"></a>isStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is started. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb"></a>isNotStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is not started yet. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab"></a>isStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is started. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb"></a>isNotStarted</em>&#160;</td><td class="fielddoc">
+<p>Indicates that the thread is not started yet. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00037">37</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00092">92</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +514,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00057">57</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Initializes values but does not create a thread. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00139">139</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +542,15 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00063">63</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Initializes values and starts the thread with the given input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Input to the thread body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00150">150</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -505,7 +583,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00070">70</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Stops the thread and frees the allocates attribute. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00160">160</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +611,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00078">78</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Copies the contents of another thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copy</td><td>Instance to be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00174">174</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +645,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00058">58</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Initializes the values but does not create a thread. </p>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00145">145</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +673,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00065">65</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Closes the thread handle. </p>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00155">155</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +701,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00073">73</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Copies the contents of the other class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copy</td><td>Class to be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00168">168</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +736,16 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00049">49</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Function called by the wrapper function <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the OS. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Actual input to the thread body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the exact thing that the thread body returns. </dd></dl>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00121">121</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -669,7 +778,16 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00050">50</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Function called by the wrapper function <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>.The method executes the overridden execution body method with the actual input and returns the output of the execution body through the OS. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Actual input to the thread body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the exact thing that the thread body returns. </dd></dl>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00127">127</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -680,7 +798,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2cbbb5fb63f5e92d32085b6e874b6f29"></a>
+<a class="anchor" id="a9904309fcfb4dce33130ef1f1a1c227e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -691,7 +809,7 @@ Here is the call graph for this function:</div>
           <td class="memname">virtual void* ThreadBase::ExecutionBody </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -702,12 +820,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_threaded_t_c_p_client.html#a1cd1c985635fe8f87c444d3b78fcaefb">ThreadedTCPClient</a>, <a class="el" href="class_threaded_t_c_p_connected_client.html#a019445fcc5fc83ad40583d3772c88a8b">ThreadedTCPConnectedClient</a>, <a class="el" href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083">ThreadedTCPServer</a>, and <a class="el" href="class_my_thread.html#a481693b2ddb2f41e0181d1f9b7de0a21">MyThread</a>.</p>
+<p>Purely virtual method to be overridden by the inheriting class to implement its own thread body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Input to the thread body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return is optional. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_threaded_t_c_p_client.html#a1cd1c985635fe8f87c444d3b78fcaefb">ThreadedTCPClient</a>, <a class="el" href="class_threaded_t_c_p_connected_client.html#a019445fcc5fc83ad40583d3772c88a8b">ThreadedTCPConnectedClient</a>, and <a class="el" href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083">ThreadedTCPServer</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29_icgraph.svg" width="510" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e_icgraph.svg" width="510" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -735,7 +862,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_threaded_t_c_p_client.html#a1cd1c985635fe8f87c444d3b78fcaefb">ThreadedTCPClient</a>, <a class="el" href="class_threaded_t_c_p_connected_client.html#a019445fcc5fc83ad40583d3772c88a8b">ThreadedTCPConnectedClient</a>, <a class="el" href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083">ThreadedTCPServer</a>, and <a class="el" href="class_my_thread.html#a481693b2ddb2f41e0181d1f9b7de0a21">MyThread</a>.</p>
+<p>Purely virtual method to be overridden by the inheriting class to implement its own thread body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Input to the thread body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return is optional. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_threaded_t_c_p_client.html#a1cd1c985635fe8f87c444d3b78fcaefb">ThreadedTCPClient</a>, <a class="el" href="class_threaded_t_c_p_connected_client.html#a019445fcc5fc83ad40583d3772c88a8b">ThreadedTCPConnectedClient</a>, and <a class="el" href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083">ThreadedTCPServer</a>.</p>
 
 </div>
 </div>
@@ -761,7 +897,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00092">92</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Gets the stack size of the thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the current stack size. </dd></dl>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00197">197</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +926,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00096">96</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Gets the stack size of the thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>Stack size of the thread. </dd></dl>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00202">202</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -813,7 +955,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00081">81</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Sets the stack size of the thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stackSize</td><td>Desired stack size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00181">181</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +989,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00085">85</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Sets the stack size of the thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stackSize</td><td>Desired stack size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00186">186</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -865,7 +1023,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00103">103</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Creates a thread and starts executing with the given input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Input to the thread body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00213">213</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -891,12 +1057,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00109">109</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Creates a thread and starts executing with the given input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Input to the thread body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00220">220</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_thread_base_aaea6437d738ac97e3427bbe466f850f8_icgraph.svg" width="824" height="296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_thread_base_aaea6437d738ac97e3427bbe466f850f8_icgraph.svg" width="824" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -925,6 +1099,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Friend wrapper function that is actually called by the OS as the thread body. </p>
+<p>Uses the input to gain access to the class and the real thread input.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void*</td><td>Special input structure containing the class address and the real input to the execution body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>It takes the actual class pointer and the input into the execution function from its input and executes the "actual thread body" with the desired input. This allows us to use the OS thread utilities to run a C++ class method, rather than a plain C function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void*</td><td>Special input structure containing the class address and the real input to the execution body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns whatever the class method returns. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a790b21ad102d0b813d14e54f4fbf4460"></a>
@@ -949,6 +1140,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Friend wrapper function that is actually called by the OS as the thread body. </p>
+<p>Uses the input to gain access to the class and the real thread input.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void*</td><td>Special input structure containing the class address and the real input to the execution body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>It takes the actual class pointer and the input into the execution function from its input and executes the "actual thread body" with the desired input. This allows us to use the OS thread utilities to run a C++ class method, rather than a plain C function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void*</td><td>Special input structure containing the class address and the real input to the execution body.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns whatever the class method returns. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -970,7 +1178,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00047">47</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Variable holding the stack size of the thread. </p>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00117">117</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -992,7 +1202,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00044">44</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Indicates whether the thread is started to execute. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00101">101</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1226,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00046">46</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Variable holding the attributes of the thread. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00111">111</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1250,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00046">46</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Variable holding the handle to the thread. </p>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00112">112</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1274,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00045">45</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Variable holding the handle to the thread. </p>
+<p>Variable holding the id of the thread. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00106">106</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1291,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_thread_base.html">ThreadBase</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:35 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

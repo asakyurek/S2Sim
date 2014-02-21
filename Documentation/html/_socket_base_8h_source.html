@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -108,13 +108,7 @@ $(document).ready(function(){initNavTree('_socket_base_8h_source.html','');});
 <div class="title">SocketBase.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_socket_base_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * SocketBase.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: Jun 21, 2013</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Alper</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<a href="_socket_base_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SOCKETBASE_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SOCKETBASE_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
@@ -134,131 +128,110 @@ $(document).ready(function(){initNavTree('_socket_base_8h_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_socket_base.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_socket_base.html">SocketBase</a></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">/* Type Definitions */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">   32</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">TErrorCode</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30">   33</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30">ErrorCodeValues</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc">   35</a></span>&#160;            <a class="code" href="class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc">NoError</a> = 0</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">   38</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">size_t</span> <a class="code" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">TNumberOfBytes</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">   39</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">void</span>* <a class="code" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">TBuffer</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">/* Function Definitions */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">/* Member Definitions */</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">/* Type Definitions */</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">   49</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SOCKET</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">   50</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SOCKET</a> <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">   52</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">SocketIdValues</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0">   54</a></span>&#160;            <a class="code" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0">InvalidSocketId</a> = ( <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a> )( -1 )</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_socket_base.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_socket_base.html">SocketBase</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">   39</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">size_t</span> <a class="code" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">TNumberOfBytes</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">   44</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">void</span>* <a class="code" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">TBuffer</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">   50</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SOCKET</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">   55</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SOCKET</a> <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">/* Function Definitions */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_socket_base.html#afdeb4c469db205b8030ff65540adbbc8">   59</a></span>&#160;        <a class="code" href="class_socket_base.html#afdeb4c469db205b8030ff65540adbbc8">SocketBase</a>( <span class="keyword">const</span> <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a> socketId ) : <a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>( socketId ){}</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_socket_base.html#aae440e9ad170eeec2465c4501e91b761">   60</a></span>&#160;        <a class="code" href="class_socket_base.html#aae440e9ad170eeec2465c4501e91b761">SocketBase</a>( <span class="keyword">const</span> <a class="code" href="class_socket_base.html">SocketBase&lt;SocketType&gt;</a> &amp; copy ) : <a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>( copy.<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a> ){}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">SocketBase</a>( <span class="keywordtype">void</span> ) throw ( <a class="code" href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">TErrorCode</a> );</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        ~<a class="code" href="class_socket_base.html">SocketBase</a>( <span class="keywordtype">void</span> ) throw ( TErrorCode );</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    protected:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">/* Member Definitions */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">   66</a></span>&#160;        <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a> <a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    private:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">/* Type Definitions */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    private:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">/* Function Definitions */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">OpenSocket</a>( <span class="keywordtype">void</span> ) throw ( TErrorCode );</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">CloseSocket</a>( <span class="keywordtype">void</span> ) throw ( TErrorCode );</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    private:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">/* Member Definitions */</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;template &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">   84</a></span>&#160;<a class="code" href="class_socket_base.html">SocketBase</a>&lt;SocketType&gt;::<a class="code" href="class_socket_base.html">SocketBase</a>( <span class="keywordtype">void</span> ) throw ( TErrorCode ) : m_socketId( <a class="code" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0">InvalidSocketId</a> )</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    this-&gt;<a class="code" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">OpenSocket</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">   90</a></span>&#160;<a class="code" href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">SocketBase&lt;SocketType&gt;::~SocketBase</a>( <span class="keywordtype">void</span> ) throw ( <a class="code" href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">TErrorCode</a> )</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    this-&gt;<a class="code" href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">CloseSocket</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">   97</a></span>&#160;<a class="code" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">SocketBase&lt;SocketType&gt;::OpenSocket</a>( <span class="keywordtype">void</span> ) throw ( <a class="code" href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">TErrorCode</a> )</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    this-&gt;<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a> = socket( AF_INET, SocketType, 0 );</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a> &lt;= 0 )</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid Socket&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> value = 1;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> ( 0 != setsockopt( this-&gt;<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>, SOL_SOCKET, SO_REUSEADDR, &amp;value, <span class="keyword">sizeof</span>( value ) ) )</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Socket Option Not Set! Error: &quot;</span> &lt;&lt; errno &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> ( 0 != setsockopt( this-&gt;<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>, SOL_SOCKET, SO_REUSEPORT, &amp;value, <span class="keyword">sizeof</span>( value ) ) )</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Socket Option Not Set! Error: &quot;</span> &lt;&lt; errno &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">  117</a></span>&#160;<a class="code" href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">SocketBase&lt;SocketType&gt;::CloseSocket</a>( <span class="keywordtype">void</span> ) throw ( <a class="code" href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">TErrorCode</a> )</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">   60</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">SocketIdValues</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0">   62</a></span>&#160;            <a class="code" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0">InvalidSocketId</a> = ( <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a> )( -1 ) </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_socket_base.html#afdeb4c469db205b8030ff65540adbbc8">   71</a></span>&#160;        <a class="code" href="class_socket_base.html#afdeb4c469db205b8030ff65540adbbc8">SocketBase</a>( <span class="keyword">const</span> <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a> socketId ) : <a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>( socketId ){}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_socket_base.html#aae440e9ad170eeec2465c4501e91b761">   78</a></span>&#160;        <a class="code" href="class_socket_base.html#aae440e9ad170eeec2465c4501e91b761">SocketBase</a>( <span class="keyword">const</span> <a class="code" href="class_socket_base.html">SocketBase&lt;SocketType&gt;</a> &amp; copy ) : <a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>( copy.<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a> ){}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">SocketBase</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">~SocketBase</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">   94</a></span>&#160;        <a class="code" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a> <a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">OpenSocket</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">CloseSocket</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">  111</a></span>&#160;<a class="code" href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">SocketBase&lt;SocketType&gt;::SocketBase</a>( <span class="keywordtype">void</span> ) : m_socketId( InvalidSocketId )</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    this-&gt;<a class="code" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">OpenSocket</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">  117</a></span>&#160;<a class="code" href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">SocketBase&lt;SocketType&gt;::~SocketBase</a>( <span class="keywordtype">void</span> )</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#if defined(_WIN32) || defined(_WIN64)</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span>    closesocket( this-&gt;<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a> );</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#elif defined( __linux__ ) || defined ( __APPLE__ )</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Socket Closed&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    close( this-&gt;<a class="code" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a> );</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SOCKETBASE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_socket_base_html_aae440e9ad170eeec2465c4501e91b761"><div class="ttname"><a href="class_socket_base.html#aae440e9ad170eeec2465c4501e91b761">SocketBase::SocketBase</a></div><div class="ttdeci">SocketBase(const SocketBase&lt; SocketType &gt; &amp;copy)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00060">SocketBase.h:60</a></div></div>
-<div class="ttc" id="class_socket_base_html_aa9d855a8843ac61555721dfbedbad5a8"><div class="ttname"><a href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">SocketBase::m_socketId</a></div><div class="ttdeci">TSocketId m_socketId</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00066">SocketBase.h:66</a></div></div>
-<div class="ttc" id="class_socket_base_html_aad53265037e46768af4d6a0c2ebed277"><div class="ttname"><a href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">SocketBase::TSocketId</a></div><div class="ttdeci">SOCKET TSocketId</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00050">SocketBase.h:50</a></div></div>
-<div class="ttc" id="class_socket_base_html_afdeb4c469db205b8030ff65540adbbc8"><div class="ttname"><a href="class_socket_base.html#afdeb4c469db205b8030ff65540adbbc8">SocketBase::SocketBase</a></div><div class="ttdeci">SocketBase(const TSocketId socketId)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00059">SocketBase.h:59</a></div></div>
-<div class="ttc" id="class_socket_base_html_a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0"><div class="ttname"><a href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0">SocketBase::InvalidSocketId</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00054">SocketBase.h:54</a></div></div>
-<div class="ttc" id="class_socket_base_html_a8feec23168739e87c6ccb7fa8c64ac11"><div class="ttname"><a href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">SocketBase::TErrorCode</a></div><div class="ttdeci">unsigned int TErrorCode</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00032">SocketBase.h:32</a></div></div>
-<div class="ttc" id="class_socket_base_html_accdcf166761d3a7f7dc9bfb4afd939e1"><div class="ttname"><a href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">SocketBase::CloseSocket</a></div><div class="ttdeci">void CloseSocket(void)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00117">SocketBase.h:117</a></div></div>
-<div class="ttc" id="class_socket_base_html_abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc"><div class="ttname"><a href="class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30a01138908e891529174d30941d3014bdc">SocketBase::NoError</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00035">SocketBase.h:35</a></div></div>
-<div class="ttc" id="class_socket_base_html_aa19d43bd8b53e91b1600c7b60f8f48e0"><div class="ttname"><a href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">SocketBase::~SocketBase</a></div><div class="ttdeci">~SocketBase(void)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00090">SocketBase.h:90</a></div></div>
-<div class="ttc" id="class_socket_base_html_a1441f12307a40913930ccbb8baf953bb"><div class="ttname"><a href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">SocketBase&lt; SOCK_DGRAM &gt;::SocketIdValues</a></div><div class="ttdeci">SocketIdValues</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00052">SocketBase.h:52</a></div></div>
-<div class="ttc" id="class_socket_base_html_ac414903631491453b96e71c06c2c2e72"><div class="ttname"><a href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">SocketBase::TNumberOfBytes</a></div><div class="ttdeci">size_t TNumberOfBytes</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00038">SocketBase.h:38</a></div></div>
-<div class="ttc" id="class_socket_base_html_a1557d64029a25c20b4c306b80efcc143"><div class="ttname"><a href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">SocketBase::TBuffer</a></div><div class="ttdeci">void * TBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00039">SocketBase.h:39</a></div></div>
-<div class="ttc" id="class_socket_base_html_abb6e8769e1c9168c1ff7423fe7933d30"><div class="ttname"><a href="class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30">SocketBase&lt; SOCK_DGRAM &gt;::ErrorCodeValues</a></div><div class="ttdeci">ErrorCodeValues</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00033">SocketBase.h:33</a></div></div>
-<div class="ttc" id="class_socket_base_html_a812f91e92f493eeb546395b41c5ad465"><div class="ttname"><a href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">SocketBase::OpenSocket</a></div><div class="ttdeci">void OpenSocket(void)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00097">SocketBase.h:97</a></div></div>
-<div class="ttc" id="class_socket_base_html"><div class="ttname"><a href="class_socket_base.html">SocketBase</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00028">SocketBase.h:28</a></div></div>
-<div class="ttc" id="class_socket_base_html_aa1bd9ff0bcf59292806575e0abbe3829"><div class="ttname"><a href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SocketBase::SOCKET</a></div><div class="ttdeci">int SOCKET</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00049">SocketBase.h:49</a></div></div>
-<div class="ttc" id="class_socket_base_html_ab53eb639e056af7269e0d720736f48e2"><div class="ttname"><a href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">SocketBase::SocketBase</a></div><div class="ttdeci">SocketBase(void)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00084">SocketBase.h:84</a></div></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    this-&gt;CloseSocket();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">  124</a></span>&#160;<a class="code" href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">SocketBase&lt;SocketType&gt;::OpenSocket</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    this-&gt;m_socketId = socket( AF_INET, SocketType, 0 );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> ( this-&gt;m_socketId &lt;= 0 )</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid Socket&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">int</span> value = 1;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> ( 0 != setsockopt( this-&gt;m_socketId, SOL_SOCKET, SO_REUSEADDR, &amp;value, <span class="keyword">sizeof</span>( value ) ) )</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Socket Option Not Set! Error: &quot;</span> &lt;&lt; errno &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> ( 0 != setsockopt( this-&gt;m_socketId, SOL_SOCKET, SO_REUSEPORT, &amp;value, <span class="keyword">sizeof</span>( value ) ) )</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Socket Option Not Set! Error: &quot;</span> &lt;&lt; errno &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> SocketType&gt;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">  144</a></span>&#160;<a class="code" href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">SocketBase&lt;SocketType&gt;::CloseSocket</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#if defined(_WIN32) || defined(_WIN64)</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span>    closesocket( this-&gt;m_socketId );</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#elif defined( __linux__ ) || defined ( __APPLE__ )</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Socket Closed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    close( this-&gt;m_socketId );</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SOCKETBASE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_socket_base_html_aae440e9ad170eeec2465c4501e91b761"><div class="ttname"><a href="class_socket_base.html#aae440e9ad170eeec2465c4501e91b761">SocketBase::SocketBase</a></div><div class="ttdeci">SocketBase(const SocketBase&lt; SocketType &gt; &amp;copy)</div><div class="ttdoc">Copies the handle of another socket. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00078">SocketBase.h:78</a></div></div>
+<div class="ttc" id="class_socket_base_html_aa9d855a8843ac61555721dfbedbad5a8"><div class="ttname"><a href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">SocketBase::m_socketId</a></div><div class="ttdeci">TSocketId m_socketId</div><div class="ttdoc">Handle to the socket used for OS utilities. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00094">SocketBase.h:94</a></div></div>
+<div class="ttc" id="class_socket_base_html_aad53265037e46768af4d6a0c2ebed277"><div class="ttname"><a href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">SocketBase::TSocketId</a></div><div class="ttdeci">SOCKET TSocketId</div><div class="ttdoc">Redefines the socket handle type for multiplatform purposes. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00055">SocketBase.h:55</a></div></div>
+<div class="ttc" id="class_socket_base_html_afdeb4c469db205b8030ff65540adbbc8"><div class="ttname"><a href="class_socket_base.html#afdeb4c469db205b8030ff65540adbbc8">SocketBase::SocketBase</a></div><div class="ttdeci">SocketBase(const TSocketId socketId)</div><div class="ttdoc">Constructor that receives a handle as input. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00071">SocketBase.h:71</a></div></div>
+<div class="ttc" id="class_socket_base_html_a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0"><div class="ttname"><a href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bbaa1aa134affcd450ff233364a61bcd5b0">SocketBase::InvalidSocketId</a></div><div class="ttdoc">Defines an invalid socket handle. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00062">SocketBase.h:62</a></div></div>
+<div class="ttc" id="class_socket_base_html_accdcf166761d3a7f7dc9bfb4afd939e1"><div class="ttname"><a href="class_socket_base.html#accdcf166761d3a7f7dc9bfb4afd939e1">SocketBase::CloseSocket</a></div><div class="ttdeci">void CloseSocket(void)</div><div class="ttdoc">Closes the socket handle. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00144">SocketBase.h:144</a></div></div>
+<div class="ttc" id="class_socket_base_html_aa19d43bd8b53e91b1600c7b60f8f48e0"><div class="ttname"><a href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">SocketBase::~SocketBase</a></div><div class="ttdeci">~SocketBase(void)</div><div class="ttdoc">Closes the socket handle. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00117">SocketBase.h:117</a></div></div>
+<div class="ttc" id="class_socket_base_html_a1441f12307a40913930ccbb8baf953bb"><div class="ttname"><a href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">SocketBase&lt; SOCK_DGRAM &gt;::SocketIdValues</a></div><div class="ttdeci">SocketIdValues</div><div class="ttdoc">Special values for the TSocketId. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00060">SocketBase.h:60</a></div></div>
+<div class="ttc" id="class_socket_base_html_ac414903631491453b96e71c06c2c2e72"><div class="ttname"><a href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">SocketBase::TNumberOfBytes</a></div><div class="ttdeci">size_t TNumberOfBytes</div><div class="ttdoc">Defines the type for number of bytes. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00039">SocketBase.h:39</a></div></div>
+<div class="ttc" id="class_socket_base_html_a1557d64029a25c20b4c306b80efcc143"><div class="ttname"><a href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">SocketBase::TBuffer</a></div><div class="ttdeci">void * TBuffer</div><div class="ttdoc">Defines the type for a buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00044">SocketBase.h:44</a></div></div>
+<div class="ttc" id="class_socket_base_html_a812f91e92f493eeb546395b41c5ad465"><div class="ttname"><a href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465">SocketBase::OpenSocket</a></div><div class="ttdeci">void OpenSocket(void)</div><div class="ttdoc">Opens a new socket and sets its reusable options. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00124">SocketBase.h:124</a></div></div>
+<div class="ttc" id="class_socket_base_html"><div class="ttname"><a href="class_socket_base.html">SocketBase</a></div><div class="ttdoc">This class is an abstraction over the OS socket and defines a base class for socket opening and closi...</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00033">SocketBase.h:33</a></div></div>
+<div class="ttc" id="class_socket_base_html_aa1bd9ff0bcf59292806575e0abbe3829"><div class="ttname"><a href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SocketBase::SOCKET</a></div><div class="ttdeci">int SOCKET</div><div class="ttdoc">Defines the type of a Socket handle. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00050">SocketBase.h:50</a></div></div>
+<div class="ttc" id="class_socket_base_html_ab53eb639e056af7269e0d720736f48e2"><div class="ttname"><a href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">SocketBase::SocketBase</a></div><div class="ttdeci">SocketBase(void)</div><div class="ttdoc">Sets the handle to the invalid value. </div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00111">SocketBase.h:111</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="dir_6b989bf8ba74a24286adf9e324b41c76.html">SocketLibrary</a></li><li class="navelem"><a class="el" href="_socket_base_8h.html">SocketBase.h</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:14 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:33 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

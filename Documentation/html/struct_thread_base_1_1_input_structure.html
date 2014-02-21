@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -114,6 +114,9 @@ $(document).ready(function(){initNavTree('struct_thread_base_1_1_input_structure
 <div class="title">ThreadBase::InputStructure Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Special Input structure sent to the wrapper function: <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>.  
+ <a href="struct_thread_base_1_1_input_structure.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for ThreadBase::InputStructure:</div>
 <div class="dyncontent">
@@ -123,20 +126,26 @@ Collaboration diagram for ThreadBase::InputStructure:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a05703c0e565f0d0616e5439d4bcbd2f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_base_1_1_input_structure.html#a05703c0e565f0d0616e5439d4bcbd2f7">InputStructure</a> (void *mainInput, <a class="el" href="class_thread_base.html">ThreadBase</a> *classPointer)</td></tr>
+<tr class="memdesc:a05703c0e565f0d0616e5439d4bcbd2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple constructor to assign the values.  <a href="#a05703c0e565f0d0616e5439d4bcbd2f7">More...</a><br/></td></tr>
 <tr class="separator:a05703c0e565f0d0616e5439d4bcbd2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05703c0e565f0d0616e5439d4bcbd2f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_base_1_1_input_structure.html#a05703c0e565f0d0616e5439d4bcbd2f7">InputStructure</a> (void *mainInput, <a class="el" href="class_thread_base.html">ThreadBase</a> *classPointer)</td></tr>
+<tr class="memdesc:a05703c0e565f0d0616e5439d4bcbd2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple constructor to assign the values.  <a href="#a05703c0e565f0d0616e5439d4bcbd2f7">More...</a><br/></td></tr>
 <tr class="separator:a05703c0e565f0d0616e5439d4bcbd2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab91961eacdcce8b1628f46a1a116fa1e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_base_1_1_input_structure.html#ab91961eacdcce8b1628f46a1a116fa1e">m_mainInput</a></td></tr>
+<tr class="memdesc:ab91961eacdcce8b1628f46a1a116fa1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actual input to the thread body.  <a href="#ab91961eacdcce8b1628f46a1a116fa1e">More...</a><br/></td></tr>
 <tr class="separator:ab91961eacdcce8b1628f46a1a116fa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af522f05c6feb189c62b450a7eb344986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thread_base.html">ThreadBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_thread_base_1_1_input_structure.html#af522f05c6feb189c62b450a7eb344986">m_classPointer</a></td></tr>
+<tr class="memdesc:af522f05c6feb189c62b450a7eb344986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the <a class="el" href="class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. ">ThreadBase</a> class to gain access to the real thread body.  <a href="#af522f05c6feb189c62b450a7eb344986">More...</a><br/></td></tr>
 <tr class="separator:af522f05c6feb189c62b450a7eb344986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00024">24</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<div class="textblock"><p>Special Input structure sent to the wrapper function: <a class="el" href="class_thread_base.html#a2567acd55e8bbdbf8ac90a8f77bb4943" title="Friend wrapper function that is actually called by the OS as the thread body. ">PosixThreadCover()</a>. </p>
+<p>This structure is used to recover the class pointer and the actual input to the thread body. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00053">53</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a05703c0e565f0d0616e5439d4bcbd2f7"></a>
 <div class="memitem">
@@ -170,7 +179,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00028">28</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Simple constructor to assign the values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mainInput</td><td>Actual input to the thread body. </td></tr>
+    <tr><td class="paramname">classPointer</td><td>Pointer to the <a class="el" href="class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. ">ThreadBase</a> class. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00071">71</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -206,7 +224,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00028">28</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
+<p>Simple constructor to assign the values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mainInput</td><td>Actual input to the thread body. </td></tr>
+    <tr><td class="paramname">classPointer</td><td>Pointer to the <a class="el" href="class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. ">ThreadBase</a> class. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_windows_thread_base_8h_source.html#l00072">72</a> of file <a class="el" href="_windows_thread_base_8h_source.html">WindowsThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +248,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00027">27</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Pointer to the <a class="el" href="class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. ">ThreadBase</a> class to gain access to the real thread body. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00063">63</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +264,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00026">26</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
+<p>Actual input to the thread body. </p>
+<p>This is stored in this structure because the OS only allows a single input to the thread body, which is structure itself. </p>
+
+<p>Definition at line <a class="el" href="_posix_thread_base_8h_source.html#l00058">58</a> of file <a class="el" href="_posix_thread_base_8h_source.html">PosixThreadBase.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +281,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_thread_base.html">ThreadBase</a></li><li class="navelem"><a class="el" href="struct_thread_base_1_1_input_structure.html">InputStructure</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:35 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

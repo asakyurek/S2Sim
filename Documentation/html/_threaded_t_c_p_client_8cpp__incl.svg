@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_threaded_t_c_p_client_8h.html" target="_top" xlink:title="ThreadedTCPClient.h">
+<a xlink:href="_threaded_t_c_p_client_8h.html" target="_top" xlink:title="Defines the ThreadedTCPClient class. ">
 <polygon style="fill:white;stroke:black;" points="106,-174 106,-195 238,-195 238,-174 106,-174"/>
 <text text-anchor="middle" x="172" y="-181" style="font-family:Arial;font-size:10.00;">ThreadedTCPClient.h</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_t_c_p_client_8h.html" target="_top" xlink:title="TCPClient.h">
+<a xlink:href="_t_c_p_client_8h.html" target="_top" xlink:title="Defines the TCPClient class. ">
 <polygon style="fill:white;stroke:black;" points="31,-116 31,-137 110,-137 110,-116 31,-116"/>
 <text text-anchor="middle" x="70" y="-123" style="font-family:Arial;font-size:10.00;">TCPClient.h</text>
 </a>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="_thread_base_8h.html" target="_top" xlink:title="ThreadBase.h">
+<a xlink:href="_thread_base_8h.html" target="_top" xlink:title="This file selects the right implementation according to the current OS. ">
 <polygon style="fill:white;stroke:black;" points="127,-116 127,-137 218,-137 218,-116 127,-116"/>
 <text text-anchor="middle" x="172" y="-123" style="font-family:Arial;font-size:10.00;">ThreadBase.h</text>
 </a>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Semaphore.h">
+<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. ">
 <polygon style="fill:white;stroke:black;" points="200,-58 200,-79 290,-79 290,-58 200,-58"/>
 <text text-anchor="middle" x="245" y="-65" style="font-family:Arial;font-size:10.00;">Semaphore.h</text>
 </a>
@@ -67,7 +67,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_socket_base_8h.html" target="_top" xlink:title="SocketBase.h">
+<a xlink:href="_socket_base_8h.html" target="_top" xlink:title="Defines the SocketBase template class. ">
 <polygon style="fill:white;stroke:black;" points="94,-58 94,-79 183,-79 183,-58 94,-58"/>
 <text text-anchor="middle" x="138" y="-65" style="font-family:Arial;font-size:10.00;">SocketBase.h</text>
 </a>
@@ -79,7 +79,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="IPAddress.h">
+<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="Defines the IPAddress class. ">
 <polygon style="fill:white;stroke:black;" points="0,-58 0,-79 77,-79 77,-58 0,-58"/>
 <text text-anchor="middle" x="38" y="-65" style="font-family:Arial;font-size:10.00;">IPAddress.h</text>
 </a>

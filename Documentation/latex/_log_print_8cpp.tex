@@ -1,6 +1,11 @@
 \hypertarget{_log_print_8cpp}{\section{S2\-Sim/\-Log\-Print.cpp File Reference}
 \label{_log_print_8cpp}\index{S2\-Sim/\-Log\-Print.\-cpp@{S2\-Sim/\-Log\-Print.\-cpp}}
 }
+
+
+Defines logging related parameters.  
+
+
 {\ttfamily \#include \char`\"{}Log\-Print.\-h\char`\"{}}\\*
 Include dependency graph for Log\-Print.\-cpp\-:\nopagebreak
 \begin{figure}[H]
@@ -13,9 +18,22 @@ Include dependency graph for Log\-Print.\-cpp\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 unsigned int \hyperlink{_log_print_8cpp_ae2895202d53e717355f96f260daa5f3c}{log\-Level} = 3
-\item 
+\begin{DoxyCompactList}\small\item\em This is a small hack to suppress compiler warning for default macro parameter initialization. \end{DoxyCompactList}\item 
 bool \hyperlink{_log_print_8cpp_a7a50674184794aa7532ec7cc791dab9d}{function\-Print} = true
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Boolean to indicate whether the function name should be printed for each log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines logging related parameters. \begin{DoxyDate}{Date}
+Oct 28, 2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\-: Alper Sinan Akyurek 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{_log_print_8cpp_source}{Log\-Print.\-cpp}.
+
 
 
 \subsection{Variable Documentation}
@@ -24,12 +42,26 @@ bool \hyperlink{_log_print_8cpp_a7a50674184794aa7532ec7cc791dab9d}{function\-Pri
 \subsubsection[{function\-Print}]{\setlength{\rightskip}{0pt plus 5cm}bool function\-Print = true}}\label{_log_print_8cpp_a7a50674184794aa7532ec7cc791dab9d}
 
 
+Boolean to indicate whether the function name should be printed for each log. 
+
+
+
 Definition at line 11 of file Log\-Print.\-cpp.
 
 \hypertarget{_log_print_8cpp_ae2895202d53e717355f96f260daa5f3c}{\index{Log\-Print.\-cpp@{Log\-Print.\-cpp}!log\-Level@{log\-Level}}
 \index{log\-Level@{log\-Level}!LogPrint.cpp@{Log\-Print.\-cpp}}
 \subsubsection[{log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int log\-Level = 3}}\label{_log_print_8cpp_ae2895202d53e717355f96f260daa5f3c}
 
+
+This is a small hack to suppress compiler warning for default macro parameter initialization. 
+
+Logging level on how detailed the logs should be.
+\begin{DoxyItemize}
+\item 1\-: All logs
+\item 2\-: Warnings and errors
+\item 3\-: Errors only
+\item $>$3\-: No logging 
+\end{DoxyItemize}
 
 Definition at line 10 of file Log\-Print.\-cpp.
 

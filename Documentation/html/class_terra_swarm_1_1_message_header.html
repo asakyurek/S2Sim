@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -119,48 +119,65 @@ $(document).ready(function(){initNavTree('class_terra_swarm_1_1_message_header.h
 </div><!--header-->
 <div class="contents">
 
+<p>This class defines the common message header for all messages.  
+ <a href="class_terra_swarm_1_1_message_header.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa1066aaf03d8443ecda7e4c9b8e60fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#aa1066aaf03d8443ecda7e4c9b8e60fce">SizeValues</a> { <a class="el" href="class_terra_swarm_1_1_message_header.html#aa1066aaf03d8443ecda7e4c9b8e60fcea421e8aff7e21d86fb408624a2963e8b9">MessageHeaderSize</a>
  }</td></tr>
+<tr class="memdesc:aa1066aaf03d8443ecda7e4c9b8e60fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines various size values for the Message Header.  <a href="class_terra_swarm_1_1_message_header.html#aa1066aaf03d8443ecda7e4c9b8e60fce">More...</a><br/></td></tr>
 <tr class="separator:aa1066aaf03d8443ecda7e4c9b8e60fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab55de822fadad758edcd8f36bd07676e"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#ab55de822fadad758edcd8f36bd07676e">TId</a></td></tr>
+<tr class="memdesc:ab55de822fadad758edcd8f36bd07676e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique client id type.  <a href="#ab55de822fadad758edcd8f36bd07676e">More...</a><br/></td></tr>
 <tr class="separator:ab55de822fadad758edcd8f36bd07676e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516b36855e2aad7cfbf8770f1b42784f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_message_header.html#ab55de822fadad758edcd8f36bd07676e">TId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a516b36855e2aad7cfbf8770f1b42784f">TSenderId</a></td></tr>
+<tr class="memdesc:a516b36855e2aad7cfbf8770f1b42784f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique Id of the sender.  <a href="#a516b36855e2aad7cfbf8770f1b42784f">More...</a><br/></td></tr>
 <tr class="separator:a516b36855e2aad7cfbf8770f1b42784f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3260702b182b6f88ddbdd3416e98df0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_message_header.html#ab55de822fadad758edcd8f36bd07676e">TId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#aa3260702b182b6f88ddbdd3416e98df0">TReceiverId</a></td></tr>
+<tr class="memdesc:aa3260702b182b6f88ddbdd3416e98df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique Id of the receiver.  <a href="#aa3260702b182b6f88ddbdd3416e98df0">More...</a><br/></td></tr>
 <tr class="separator:aa3260702b182b6f88ddbdd3416e98df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eaf3733d65fa5eaac0c223da4f5670c"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a6eaf3733d65fa5eaac0c223da4f5670c">TMessageType</a></td></tr>
+<tr class="memdesc:a6eaf3733d65fa5eaac0c223da4f5670c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the message for message parsing.  <a href="#a6eaf3733d65fa5eaac0c223da4f5670c">More...</a><br/></td></tr>
 <tr class="separator:a6eaf3733d65fa5eaac0c223da4f5670c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3ebce9679077b0e438532be7c7bf6d"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#acc3ebce9679077b0e438532be7c7bf6d">TMessageId</a></td></tr>
+<tr class="memdesc:acc3ebce9679077b0e438532be7c7bf6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the message for message parsing.  <a href="#acc3ebce9679077b0e438532be7c7bf6d">More...</a><br/></td></tr>
 <tr class="separator:acc3ebce9679077b0e438532be7c7bf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6328694eb125adbac38c7e50d5fd40e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a6328694eb125adbac38c7e50d5fd40e1">PrepareOutgoingMessage</a> (const <a class="el" href="class_terra_swarm_1_1_message_header.html#a516b36855e2aad7cfbf8770f1b42784f">TSenderId</a> senderId, const <a class="el" href="class_terra_swarm_1_1_message_header.html#aa3260702b182b6f88ddbdd3416e98df0">TReceiverId</a> receiverId, const <a class="el" href="class_terra_swarm_1_1_message_header.html#a6eaf3733d65fa5eaac0c223da4f5670c">TMessageType</a> messageType, const <a class="el" href="class_terra_swarm_1_1_message_header.html#acc3ebce9679077b0e438532be7c7bf6d">TMessageId</a> messageId, const <a class="el" href="namespace_terra_swarm.html#a092e6ec9739175076ae3106783f5c1b6">TDataSize</a> dataSize)</td></tr>
+<tr class="memdesc:a6328694eb125adbac38c7e50d5fd40e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all the fields of the message header and prepares it.  <a href="#a6328694eb125adbac38c7e50d5fd40e1">More...</a><br/></td></tr>
 <tr class="separator:a6328694eb125adbac38c7e50d5fd40e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd4750b2bab3760208f7016c5fe24f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_message_header.html#a516b36855e2aad7cfbf8770f1b42784f">TSenderId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#abd4750b2bab3760208f7016c5fe24f38">GetSenderId</a> (void) const </td></tr>
+<tr class="memdesc:abd4750b2bab3760208f7016c5fe24f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Sender Id.  <a href="#abd4750b2bab3760208f7016c5fe24f38">More...</a><br/></td></tr>
 <tr class="separator:abd4750b2bab3760208f7016c5fe24f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83dd1c28d2523cee08b418bda8372234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_message_header.html#aa3260702b182b6f88ddbdd3416e98df0">TReceiverId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a83dd1c28d2523cee08b418bda8372234">GetReceiverId</a> (void) const </td></tr>
+<tr class="memdesc:a83dd1c28d2523cee08b418bda8372234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Receiver Id.  <a href="#a83dd1c28d2523cee08b418bda8372234">More...</a><br/></td></tr>
 <tr class="separator:a83dd1c28d2523cee08b418bda8372234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70949a1f6ad6a41333c3a46d0166451c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_message_header.html#a6eaf3733d65fa5eaac0c223da4f5670c">TMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a70949a1f6ad6a41333c3a46d0166451c">GetMessageType</a> (void) const </td></tr>
+<tr class="memdesc:a70949a1f6ad6a41333c3a46d0166451c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the message type.  <a href="#a70949a1f6ad6a41333c3a46d0166451c">More...</a><br/></td></tr>
 <tr class="separator:a70949a1f6ad6a41333c3a46d0166451c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9233350f349d3de319c55ca92b3170de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_message_header.html#acc3ebce9679077b0e438532be7c7bf6d">TMessageId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a9233350f349d3de319c55ca92b3170de">GetMessageId</a> (void) const </td></tr>
+<tr class="memdesc:a9233350f349d3de319c55ca92b3170de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Message Id.  <a href="#a9233350f349d3de319c55ca92b3170de">More...</a><br/></td></tr>
 <tr class="separator:a9233350f349d3de319c55ca92b3170de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ce27ba8283537c9cbf3c447abbc512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_terra_swarm.html#a092e6ec9739175076ae3106783f5c1b6">TDataSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a77ce27ba8283537c9cbf3c447abbc512">GetDataSize</a> (void) const </td></tr>
+<tr class="memdesc:a77ce27ba8283537c9cbf3c447abbc512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Data Size.  <a href="#a77ce27ba8283537c9cbf3c447abbc512">More...</a><br/></td></tr>
 <tr class="separator:a77ce27ba8283537c9cbf3c447abbc512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:adfe790bb186f34e505d4ca699f7aa06b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_terra_swarm_1_1_message_header.html">MessageHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#adfe790bb186f34e505d4ca699f7aa06b">GetNewMessageHeader</a> (void)</td></tr>
+<tr class="memdesc:adfe790bb186f34e505d4ca699f7aa06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function that creates a buffer for a new message header.  <a href="#adfe790bb186f34e505d4ca699f7aa06b">More...</a><br/></td></tr>
 <tr class="separator:adfe790bb186f34e505d4ca699f7aa06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:acc3f58a1107fca3a112e3b68b80be3bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#acc3f58a1107fca3a112e3b68b80be3bf">StartOfMessageValues</a> { <a class="el" href="class_terra_swarm_1_1_message_header.html#acc3f58a1107fca3a112e3b68b80be3bfa4f866bfd6f54d1a723c05eea30a17e6d">StartOfMessageDefaultValue</a> = ( TStartOfMessage )0x12345678
  }</td></tr>
+<tr class="memdesc:acc3f58a1107fca3a112e3b68b80be3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the value for TStartOfMessage.  <a href="class_terra_swarm_1_1_message_header.html#acc3f58a1107fca3a112e3b68b80be3bf">More...</a><br/></td></tr>
 <tr class="separator:acc3f58a1107fca3a112e3b68b80be3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189acad5bd9f60fe47b3381da62d3484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484">HeaderFieldSizeValues</a> { <br/>
 &#160;&#160;<a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484a66c01670e26436cba7028bb19c238cef">StartOfMessageSize</a> = ( TDataSize )sizeof( TStartOfMessage ), 
@@ -174,6 +191,7 @@ Private Types</h2></td></tr>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484a3ef403fe13fcd865a980e28ad63dac48">DataSizeSize</a> = ( TDataSize )sizeof( TDataSize )
 <br/>
  }</td></tr>
+<tr class="memdesc:a189acad5bd9f60fe47b3381da62d3484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the header fields.  <a href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484">More...</a><br/></td></tr>
 <tr class="separator:a189acad5bd9f60fe47b3381da62d3484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a96f83a96cfee0465da982814cb372a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372a">HeaderFieldIndexValues</a> { <br/>
 &#160;&#160;<a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa74b66ff4fa355a80faf96e67ce47f679">StartOfMessageIndex</a> = ( TByteIndex )0, 
@@ -187,57 +205,72 @@ Private Types</h2></td></tr>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa0306ff2262dbf1c9df9328c28c2adc8d">DataIndex</a> = ( TByteIndex )( DataSizeIndex + DataSizeSize )
 <br/>
  }</td></tr>
+<tr class="memdesc:a2a96f83a96cfee0465da982814cb372a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Byte index values for the header fields.  <a href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372a">More...</a><br/></td></tr>
 <tr class="separator:a2a96f83a96cfee0465da982814cb372a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cf24e4a2eb361223ae61052630dfe24"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a2cf24e4a2eb361223ae61052630dfe24">TStartOfMessage</a></td></tr>
+<tr class="memdesc:a2cf24e4a2eb361223ae61052630dfe24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the start of the message.  <a href="#a2cf24e4a2eb361223ae61052630dfe24">More...</a><br/></td></tr>
 <tr class="separator:a2cf24e4a2eb361223ae61052630dfe24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d92af0bc15cc856a21975d1f3813eb5"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a0d92af0bc15cc856a21975d1f3813eb5">TSequenceNumber</a></td></tr>
+<tr class="memdesc:a0d92af0bc15cc856a21975d1f3813eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the message sequence number.  <a href="#a0d92af0bc15cc856a21975d1f3813eb5">More...</a><br/></td></tr>
 <tr class="separator:a0d92af0bc15cc856a21975d1f3813eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791ee152a9a2709c7479737dfdddfa2f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa74b66ff4fa355a80faf96e67ce47f679">StartOfMessageIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484a66c01670e26436cba7028bb19c238cef">StartOfMessageSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a791ee152a9a2709c7479737dfdddfa2f">TStartOfMessageAccessor</a></td></tr>
+<tr class="memdesc:a791ee152a9a2709c7479737dfdddfa2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the accessing of the Start of Message field.  <a href="#a791ee152a9a2709c7479737dfdddfa2f">More...</a><br/></td></tr>
 <tr class="separator:a791ee152a9a2709c7479737dfdddfa2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4003ec191b4bf2a4e38cc289bb10e70"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa468f5b005cd4374790f76469c53b6708">SenderIdIndex</a>, <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484a51b6e5f4bb02d1e98de93c3de237bf3c">SenderIdSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#aa4003ec191b4bf2a4e38cc289bb10e70">TSenderIdAccessor</a></td></tr>
+<tr class="memdesc:aa4003ec191b4bf2a4e38cc289bb10e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the accessing of the Sender Id field.  <a href="#aa4003ec191b4bf2a4e38cc289bb10e70">More...</a><br/></td></tr>
 <tr class="separator:aa4003ec191b4bf2a4e38cc289bb10e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9725379883f5e9451d235fb4bd1c8ee3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aabe5cfb032e70c35d03586a7d16d66490">ReceiverIdIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484aa9ca8b3cb72a1ff173d84c8ca71f96d5">ReceiverIdSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a9725379883f5e9451d235fb4bd1c8ee3">TReceiverIdAccessor</a></td></tr>
+<tr class="memdesc:a9725379883f5e9451d235fb4bd1c8ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the accessing of the Receiver Id field.  <a href="#a9725379883f5e9451d235fb4bd1c8ee3">More...</a><br/></td></tr>
 <tr class="separator:a9725379883f5e9451d235fb4bd1c8ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4ad43e1cb866a290b7d124af9661f6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa56286e86c6b2fb61f58f34c4fed8c28e">SequenceNumberIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484ab930e6de45a4e449f3a576e38ba4d3a5">SequenceNumberSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#afd4ad43e1cb866a290b7d124af9661f6">TSequenceNumberAccessor</a></td></tr>
+<tr class="memdesc:afd4ad43e1cb866a290b7d124af9661f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the accessing of the Sequence Number field.  <a href="#afd4ad43e1cb866a290b7d124af9661f6">More...</a><br/></td></tr>
 <tr class="separator:afd4ad43e1cb866a290b7d124af9661f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae21a1eeb66f61c557c12f05440aa6f5b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa636e016fbe208240bd9d92af77fd747a">MessageTypeIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484ad45da22415ac87cda0dc06e3e6047947">MessageTypeSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#ae21a1eeb66f61c557c12f05440aa6f5b">TMessageTypeAccessor</a></td></tr>
+<tr class="memdesc:ae21a1eeb66f61c557c12f05440aa6f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the accessing of the Message Type field.  <a href="#ae21a1eeb66f61c557c12f05440aa6f5b">More...</a><br/></td></tr>
 <tr class="separator:ae21a1eeb66f61c557c12f05440aa6f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269de9ac839cc588d65fad2e27f6dcbb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa683b7a06a5ebe8befe0dcae6701c3003">MessageIdIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484a9008a5ec8c433f7c7f74c1c150581ea2">MessageIdSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a269de9ac839cc588d65fad2e27f6dcbb">TMessageIdAccessor</a></td></tr>
+<tr class="memdesc:a269de9ac839cc588d65fad2e27f6dcbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the accessing of the Message Id field.  <a href="#a269de9ac839cc588d65fad2e27f6dcbb">More...</a><br/></td></tr>
 <tr class="separator:a269de9ac839cc588d65fad2e27f6dcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed583369adabf273cabc86e379229537"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa8bf63201f7bd66a6757cefa82db24548">DataSizeIndex</a>, <a class="el" href="class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484a3ef403fe13fcd865a980e28ad63dac48">DataSizeSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#aed583369adabf273cabc86e379229537">TDataSizeAccessor</a></td></tr>
+<tr class="memdesc:aed583369adabf273cabc86e379229537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the accessing of the Data Size field.  <a href="#aed583369adabf273cabc86e379229537">More...</a><br/></td></tr>
 <tr class="separator:aed583369adabf273cabc86e379229537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a3a3365d5965976b4ff944e90bcc57d10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a3a3365d5965976b4ff944e90bcc57d10">MessageHeader</a> (void)</td></tr>
+<tr class="memdesc:a3a3365d5965976b4ff944e90bcc57d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not used.  <a href="#a3a3365d5965976b4ff944e90bcc57d10">More...</a><br/></td></tr>
 <tr class="separator:a3a3365d5965976b4ff944e90bcc57d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf08e6517af2015ca25f0cadeaf90126"><td class="memTemplParams" colspan="2">template&lt;typename Accessor &gt; </td></tr>
 <tr class="memitem:adf08e6517af2015ca25f0cadeaf90126"><td class="memTemplItemLeft" align="right" valign="top">Accessor *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#adf08e6517af2015ca25f0cadeaf90126">Access</a> (void)</td></tr>
+<tr class="memdesc:adf08e6517af2015ca25f0cadeaf90126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template function to use the accessor of any field to access that field.  <a href="#adf08e6517af2015ca25f0cadeaf90126">More...</a><br/></td></tr>
 <tr class="separator:adf08e6517af2015ca25f0cadeaf90126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0d3fbe9cd0e0c63384810e57c246f1"><td class="memTemplParams" colspan="2">template&lt;typename Accessor &gt; </td></tr>
 <tr class="memitem:aaa0d3fbe9cd0e0c63384810e57c246f1"><td class="memTemplItemLeft" align="right" valign="top">const Accessor *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#aaa0d3fbe9cd0e0c63384810e57c246f1">Access</a> (void) const </td></tr>
+<tr class="memdesc:aaa0d3fbe9cd0e0c63384810e57c246f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template function to use the accessor of any field to access that field in a constant fashion.  <a href="#aaa0d3fbe9cd0e0c63384810e57c246f1">More...</a><br/></td></tr>
 <tr class="separator:aaa0d3fbe9cd0e0c63384810e57c246f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a963b8a46a389a741f86471dbd722cae2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_terra_swarm_1_1_message_header.html#a0d92af0bc15cc856a21975d1f3813eb5">TSequenceNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_message_header.html#a963b8a46a389a741f86471dbd722cae2">GetNextSequenceNumber</a> (const <a class="el" href="class_terra_swarm_1_1_message_header.html#a516b36855e2aad7cfbf8770f1b42784f">TSenderId</a> senderId, const <a class="el" href="class_terra_swarm_1_1_message_header.html#aa3260702b182b6f88ddbdd3416e98df0">TReceiverId</a> receiverId)</td></tr>
+<tr class="memdesc:a963b8a46a389a741f86471dbd722cae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function to get the next sequence number as the sequence number is sender unique, not message unique.  <a href="#a963b8a46a389a741f86471dbd722cae2">More...</a><br/></td></tr>
 <tr class="separator:a963b8a46a389a741f86471dbd722cae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00016">16</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<div class="textblock"><p>This class defines the common message header for all messages. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00019">19</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aed583369adabf273cabc86e379229537"></a>
 <div class="memitem">
@@ -257,7 +290,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00067">67</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Manages the accessing of the Data Size field. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00140">140</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -271,7 +306,9 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00019">19</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Unique client id type. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00025">25</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +322,9 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00023">23</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Id of the message for message parsing. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00045">45</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +346,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00066">66</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Manages the accessing of the Message Id field. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00135">135</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -321,7 +362,9 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00022">22</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Type of the message for message parsing. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00040">40</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +386,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00065">65</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Manages the accessing of the Message Type field. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00130">130</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +402,9 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00021">21</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Unique Id of the receiver. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00035">35</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +426,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00063">63</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Manages the accessing of the Receiver Id field. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00120">120</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +442,9 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00020">20</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Unique Id of the sender. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00030">30</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -415,7 +466,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00062">62</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Manages the accessing of the Sender Id field. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00115">115</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +490,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00032">32</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Defines the message sequence number. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00064">64</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +514,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00064">64</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Manages the accessing of the Sequence Number field. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00125">125</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +538,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00026">26</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Indicates the start of the message. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00051">51</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +562,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00061">61</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Manages the accessing of the Start of Message field. </p>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00110">110</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -525,6 +586,8 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Byte index values for the header fields. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a2a96f83a96cfee0465da982814cb372aa74b66ff4fa355a80faf96e67ce47f679"></a>StartOfMessageIndex</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -544,7 +607,7 @@ Static Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00049">49</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00095">95</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -565,6 +628,8 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Size of the header fields. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a189acad5bd9f60fe47b3381da62d3484a66c01670e26436cba7028bb19c238cef"></a>StartOfMessageSize</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -584,7 +649,7 @@ Static Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00037">37</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00080">80</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -597,12 +662,15 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines various size values for the Message Header. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aa1066aaf03d8443ecda7e4c9b8e60fcea421e8aff7e21d86fb408624a2963e8b9"></a>MessageHeaderSize</em>&#160;</td><td class="fielddoc">
+<p>Size of the message header. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00070">70</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00146">146</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -623,12 +691,15 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Defines the value for TStartOfMessage. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="acc3f58a1107fca3a112e3b68b80be3bfa4f866bfd6f54d1a723c05eea30a17e6d"></a>StartOfMessageDefaultValue</em>&#160;</td><td class="fielddoc">
+<p>Only possible value for SOM. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00027">27</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00056">56</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -654,6 +725,8 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Not used. </p>
 
 <p>Definition at line <a class="el" href="_message_header_8cpp_source.html#l00013">13</a> of file <a class="el" href="_message_header_8cpp_source.html">MessageHeader.cpp</a>.</p>
 
@@ -684,7 +757,16 @@ template&lt;typename Accessor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00085">85</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Template function to use the accessor of any field to access that field. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Accessor</td><td>The accessor type for the desired field. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the accessor for the desired field. </dd></dl>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00170">170</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -712,7 +794,16 @@ template&lt;typename Accessor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00091">91</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Template function to use the accessor of any field to access that field in a constant fashion. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Accessor</td><td>The accessor type for the desired field. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the accessor for the desired field. </dd></dl>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00183">183</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +829,10 @@ template&lt;typename Accessor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00140">140</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Gets the Data Size. </p>
+<dl class="section return"><dt>Returns</dt><dd>Size of the user data. </dd></dl>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00271">271</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -771,7 +865,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00132">132</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Gets the Message Id. </p>
+<dl class="section return"><dt>Returns</dt><dd>Message Id field value. </dd></dl>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00258">258</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -797,7 +894,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00124">124</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Gets the message type. </p>
+<dl class="section return"><dt>Returns</dt><dd>Message Type field value. </dd></dl>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00245">245</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -822,6 +922,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Static function that creates a buffer for a new message header. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the address of the allocated buffer. </dd></dl>
 
 <p>Definition at line <a class="el" href="_message_header_8cpp_source.html#l00018">18</a> of file <a class="el" href="_message_header_8cpp_source.html">MessageHeader.cpp</a>.</p>
 
@@ -859,6 +962,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Static function to get the next sequence number as the sequence number is sender unique, not message unique. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderId</td><td>Id of the sender. </td></tr>
+    <tr><td class="paramname">receiverId</td><td>Id of the intended receiver.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Next available sequence number. </dd></dl>
+
 <p>Definition at line <a class="el" href="_message_header_8cpp_source.html#l00041">41</a> of file <a class="el" href="_message_header_8cpp_source.html">MessageHeader.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -892,7 +1005,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00116">116</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Gets the Receiver Id. </p>
+<dl class="section return"><dt>Returns</dt><dd>Id of the Receiver. </dd></dl>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00232">232</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -918,7 +1034,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00108">108</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
+<p>Gets the Sender Id. </p>
+<dl class="section return"><dt>Returns</dt><dd>Id of the Sender. </dd></dl>
+
+<p>Definition at line <a class="el" href="_message_header_8h_source.html#l00219">219</a> of file <a class="el" href="_message_header_8h_source.html">MessageHeader.h</a>.</p>
 
 </div>
 </div>
@@ -964,6 +1083,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sets all the fields of the message header and prepares it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderId</td><td>Id of the sender. </td></tr>
+    <tr><td class="paramname">receiverId</td><td>Id of the receiver. </td></tr>
+    <tr><td class="paramname">messageType</td><td>Message type field. </td></tr>
+    <tr><td class="paramname">messageId</td><td>Message Id field. </td></tr>
+    <tr><td class="paramname">dataSize</td><td>Data Size field. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="_message_header_8cpp_source.html#l00025">25</a> of file <a class="el" href="_message_header_8cpp_source.html">MessageHeader.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -985,7 +1116,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_terra_swarm.html">TerraSwarm</a></li><li class="navelem"><a class="el" href="class_terra_swarm_1_1_message_header.html">MessageHeader</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:35 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,5 @@
 <map id="SizeCheck::Check" name="SizeCheck::Check">
-<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a7d6e11dd4a5f86e6c036bbcf64bccf25" title="TerraSwarm::NetworkByteAccessor\l::Write" alt="" coords="205,5,475,51"/>
-<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a30b72470a765a59f572cc72db86db29a" title="TerraSwarm::NetworkByteAccessor\l::Read" alt="" coords="205,75,475,120"/>
-<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a860d2c70eadf18eccbcf1488f1a0e5d5" title="TerraSwarm::NetworkByteAccessor\l::operator=" alt="" coords="523,5,792,51"/>
+<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a7d6e11dd4a5f86e6c036bbcf64bccf25" title="Writes a value to the given address index with correct byte order. " alt="" coords="205,5,475,51"/>
+<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a30b72470a765a59f572cc72db86db29a" title="Reads a value from the given address index with correct byte order. " alt="" coords="205,75,475,120"/>
+<area shape="rect" href="$class_terra_swarm_1_1_network_byte_accessor.html#a860d2c70eadf18eccbcf1488f1a0e5d5" title="Same as Write() to simplify code writing. " alt="" coords="523,5,792,51"/>
 </map>

@@ -20,7 +20,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#af0694c36ab00a1dadf8bb8f1b3c7c159" target="_top" xlink:title="TerraSwarm::Synchronous\l::DemandNegotiation::GetNumber\lOfDataPoints">
+<a xlink:href="class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#af0694c36ab00a1dadf8bb8f1b3c7c159" target="_top" xlink:title="Reads the number of data points in the message. ">
 <polygon style="fill:white;stroke:black;" points="220,1 220,-46 422,-46 422,1 220,1"/>
 <text text-anchor="start" x="228" y="-32" style="font-family:Arial;font-size:10.00;">TerraSwarm::Synchronous</text>
 <text text-anchor="start" x="228" y="-19" style="font-family:Arial;font-size:10.00;">::DemandNegotiation::GetNumber</text>

@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="IPAddress::GetAddress">
+<a xlink:href="class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" target="_top" xlink:title="Returns a reference to the address value. ">
 <polygon style="fill:white;stroke:black;" points="170,1 170,-20 304,-20 304,1 170,1"/>
 <text text-anchor="middle" x="237" y="-6" style="font-family:Arial;font-size:10.00;">IPAddress::GetAddress</text>
 </a>

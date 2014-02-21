@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['s2sim',['S2Sim',['../index.html',1,'']]],
   ['semaphore_2ecpp',['Semaphore.cpp',['../_semaphore_8cpp.html',1,'']]],
   ['semaphore_2eh',['Semaphore.h',['../_semaphore_8h.html',1,'']]],
   ['senddata',['SendData',['../class_t_c_p_client.html#a6ed7eb539935dc08de06ca331e384241',1,'TCPClient::SendData()'],['../class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d',1,'TCPConnectedClient::SendData()'],['../class_u_d_p_socket.html#ab78ab0104e1fafc5feb1b3459e537e32',1,'UDPSocket::SendData()']]],

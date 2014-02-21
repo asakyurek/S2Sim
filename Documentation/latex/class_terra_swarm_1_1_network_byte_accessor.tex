@@ -3,36 +3,52 @@
 }
 
 
+Template class to automatically convert byte order and help access ordered bytes in the memory.  
+
+
+
+
 {\ttfamily \#include $<$Network\-Byte\-Accessor.\-h$>$}
 
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter}{Endian\-Converter}
-\item 
+\begin{DoxyCompactList}\small\item\em Template class that uses the correct conversion function according to the size of the data. \end{DoxyCompactList}\item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_011_01_4}{Endian\-Converter$<$ T\-Input, 1 $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Template specialization for a type with size 1 (char). \end{DoxyCompactList}\item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_012_01_4}{Endian\-Converter$<$ T\-Input, 2 $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Template specialization for a type with size 2 (short). \end{DoxyCompactList}\item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_014_01_4}{Endian\-Converter$<$ T\-Input, 4 $>$}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Template specialization for a type with size 4 (int). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$typename T\-Input $>$ }\\T\-Input \hyperlink{class_terra_swarm_1_1_network_byte_accessor_a7d6e11dd4a5f86e6c036bbcf64bccf25}{Write} (const T\-Input input)
-\item 
+\begin{DoxyCompactList}\small\item\em Writes a value to the given address index with correct byte order. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T\-Input $>$ }\\T\-Input \hyperlink{class_terra_swarm_1_1_network_byte_accessor_a860d2c70eadf18eccbcf1488f1a0e5d5}{operator=} (const T\-Input input)
-\item 
+\begin{DoxyCompactList}\small\item\em Same as \hyperlink{class_terra_swarm_1_1_network_byte_accessor_a7d6e11dd4a5f86e6c036bbcf64bccf25}{Write()} to simplify code writing. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T\-Input $>$ }\\T\-Input \hyperlink{class_terra_swarm_1_1_network_byte_accessor_a30b72470a765a59f572cc72db86db29a}{Read} (T\-Input \&value) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Reads a value from the given address index with correct byte order. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \subsubsection*{template$<$T\-Byte\-Index byte\-Index, T\-Data\-Size data\-Size$>$class Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$}
 
+Template class to automatically convert byte order and help access ordered bytes in the memory. 
+
+This class is especially useful for message processing and preparing.
 
 
-Definition at line 26 of file Network\-Byte\-Accessor.\-h.
+\begin{DoxyTemplParams}{Template Parameters}
+{\em byte\-Index} & Index of the bytes that are to be manipulated/accessed. \\
+\hline
+{\em data\-Size} & Number of bytes to be manipulated/accessed. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 39 of file Network\-Byte\-Accessor.\-h.
 
 
 
@@ -46,7 +62,19 @@ Definition at line 26 of file Network\-Byte\-Accessor.\-h.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_network_byte_accessor_a860d2c70eadf18eccbcf1488f1a0e5d5}
 
 
-Definition at line 107 of file Network\-Byte\-Accessor.\-h.
+Same as \hyperlink{class_terra_swarm_1_1_network_byte_accessor_a7d6e11dd4a5f86e6c036bbcf64bccf25}{Write()} to simplify code writing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Value to be written.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Actually written value. 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file Network\-Byte\-Accessor.\-h.
 
 
 
@@ -68,7 +96,21 @@ Here is the call graph for this function\-:\nopagebreak
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_network_byte_accessor_a30b72470a765a59f572cc72db86db29a}
 
 
-Definition at line 114 of file Network\-Byte\-Accessor.\-h.
+Reads a value from the given address index with correct byte order. 
+
+In addition, this function checks for the size of the input for mistakes inc ompile time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Reference to the value to be written to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value read from the address index. 
+\end{DoxyReturn}
+
+
+Definition at line 178 of file Network\-Byte\-Accessor.\-h.
 
 
 
@@ -90,7 +132,21 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_network_byte_accessor_a7d6e11dd4a5f86e6c036bbcf64bccf25}
 
 
-Definition at line 96 of file Network\-Byte\-Accessor.\-h.
+Writes a value to the given address index with correct byte order. 
+
+In addition, it checks for the size of the input type for mistakes in compile time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Value to be written.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Actually written value. 
+\end{DoxyReturn}
+
+
+Definition at line 146 of file Network\-Byte\-Accessor.\-h.
 
 
 

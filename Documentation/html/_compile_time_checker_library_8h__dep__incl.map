@@ -1,33 +1,32 @@
 <map id="S2Sim/TerraswarmLibrary/CompileTimeCheckerLibrary.h" name="S2Sim/TerraswarmLibrary/CompileTimeCheckerLibrary.h">
-<area shape="rect" href="$_network_byte_accessor_8h.html" title="S2Sim/TerraswarmLibrary\l/NetworkByteAccessor.h" alt="" coords="1065,99,1268,144"/>
-<area shape="rect" href="$_terraswarm_library_2main_8cpp.html" title="S2Sim/TerraswarmLibrary\l/main.cpp" alt="" coords="1271,192,1473,237"/>
-<area shape="rect" href="$_message_header_8h.html" title="S2Sim/TerraswarmLibrary\l/MessageHeader.h" alt="" coords="1044,192,1247,237"/>
-<area shape="rect" href="$_message_ender_8h.html" title="S2Sim/TerraswarmLibrary\l/MessageEnder.h" alt="" coords="855,285,1057,331"/>
-<area shape="rect" href="$_client_manager_8h.html" title="S2Sim/ClientManager.h" alt="" coords="1020,481,1209,508"/>
-<area shape="rect" href="$_client_connection_request_8h.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionRequest.h" alt="" coords="1687,379,1911,424"/>
-<area shape="rect" href="$_client_connection_response_8h.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionResponse.h" alt="" coords="17,379,252,424"/>
-<area shape="rect" href="$_client_data_8h.html" title="S2Sim/TerraswarmLibrary\l/ClientData.h" alt="" coords="276,379,479,424"/>
-<area shape="rect" href="$_demand_negotiation_8h.html" title="S2Sim/TerraswarmLibrary\l/DemandNegotiation.h" alt="" coords="729,379,932,424"/>
-<area shape="rect" href="$_get_price_8h.html" title="S2Sim/TerraswarmLibrary\l/GetPrice.h" alt="" coords="956,379,1159,424"/>
-<area shape="rect" href="$_price_proposal_8h.html" title="S2Sim/TerraswarmLibrary\l/PriceProposal.h" alt="" coords="1233,379,1436,424"/>
-<area shape="rect" href="$_set_current_price_8h.html" title="S2Sim/TerraswarmLibrary\l/SetCurrentPrice.h" alt="" coords="1460,379,1663,424"/>
-<area shape="rect" href="$_message_header_8cpp.html" title="S2Sim/TerraswarmLibrary\l/MessageHeader.cpp" alt="" coords="1233,285,1436,331"/>
-<area shape="rect" href="$_client_manager_8cpp.html" title="S2Sim/ClientManager.cpp" alt="" coords="613,567,821,593"/>
-<area shape="rect" href="$_connection_manager_8h.html" title="S2Sim/ConnectionManager.h" alt="" coords="845,567,1077,593"/>
-<area shape="rect" href="$_control_manager_8h.html" title="S2Sim/ControlManager.h" alt="" coords="928,644,1128,671"/>
-<area shape="rect" href="$_system_manager_8h.html" title="S2Sim/SystemManager.h" alt="" coords="1077,721,1277,748"/>
-<area shape="rect" href="$main_8cpp.html" title="S2Sim/main.cpp" alt="" coords="677,876,816,903"/>
-<area shape="rect" href="$_connection_manager_8cpp.html" title="S2Sim/ConnectionManager.cpp" alt="" coords="656,644,904,671"/>
-<area shape="rect" href="$_control_manager_8cpp.html" title="S2Sim/ControlManager.cpp" alt="" coords="835,721,1053,748"/>
-<area shape="rect" href="$_matlab_manager_8h.html" title="S2Sim/MatlabManager.h" alt="" coords="1079,799,1276,825"/>
-<area shape="rect" href="$_system_manager_8cpp.html" title="S2Sim/SystemManager.cpp" alt="" coords="836,799,1055,825"/>
-<area shape="rect" href="$_matlab_manager_8cpp.html" title="S2Sim/MatlabManager.cpp" alt="" coords="1071,876,1284,903"/>
-<area shape="rect" href="$_client_connection_request_8cpp.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionRequest.cpp" alt="" coords="1687,472,1927,517"/>
-<area shape="rect" href="$_message_ender_8cpp.html" title="S2Sim/TerraswarmLibrary\l/MessageEnder.cpp" alt="" coords="503,379,705,424"/>
-<area shape="rect" href="$_client_connection_response_8cpp.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionResponse.cpp" alt="" coords="5,472,256,517"/>
-<area shape="rect" href="$_client_data_8cpp.html" title="S2Sim/TerraswarmLibrary\l/ClientData.cpp" alt="" coords="280,472,483,517"/>
-<area shape="rect" href="$_demand_negotiation_8cpp.html" title="S2Sim/TerraswarmLibrary\l/DemandNegotiation.cpp" alt="" coords="567,472,769,517"/>
-<area shape="rect" href="$_get_price_8cpp.html" title="S2Sim/TerraswarmLibrary\l/GetPrice.cpp" alt="" coords="793,472,996,517"/>
-<area shape="rect" href="$_price_proposal_8cpp.html" title="S2Sim/TerraswarmLibrary\l/PriceProposal.cpp" alt="" coords="1233,472,1436,517"/>
-<area shape="rect" href="$_set_current_price_8cpp.html" title="S2Sim/TerraswarmLibrary\l/SetCurrentPrice.cpp" alt="" coords="1460,472,1663,517"/>
+<area shape="rect" href="$_network_byte_accessor_8h.html" title="Defines the NetworkByteAccessor class for byte order conversion and easier data access. " alt="" coords="931,99,1133,144"/>
+<area shape="rect" href="$_message_header_8h.html" title="Defines the MessageHeader class. " alt="" coords="1000,192,1203,237"/>
+<area shape="rect" href="$_message_ender_8h.html" title="Defines a MessageEnder class. " alt="" coords="861,285,1064,331"/>
+<area shape="rect" href="$_client_manager_8h.html" title="Header file for the ClientManager class. " alt="" coords="972,481,1161,508"/>
+<area shape="rect" href="$_client_connection_request_8h.html" title="Defines the ClientConnectionRequest classes. " alt="" coords="1416,379,1640,424"/>
+<area shape="rect" href="$_client_connection_response_8h.html" title="Defines the Asnyc and Synchronous ClientConnectionResponse messages and classes. " alt="" coords="1664,379,1899,424"/>
+<area shape="rect" href="$_client_data_8h.html" title="Defines the Aysnchronous and Synchronous ClientData class and messages. " alt="" coords="5,379,208,424"/>
+<area shape="rect" href="$_demand_negotiation_8h.html" title="Defines the DemandNegotiation class and message. " alt="" coords="232,379,435,424"/>
+<area shape="rect" href="$_get_price_8h.html" title="Defines the GetPrice class and message. " alt="" coords="459,379,661,424"/>
+<area shape="rect" href="$_price_proposal_8h.html" title="Defines the PriceProposal class. " alt="" coords="912,379,1115,424"/>
+<area shape="rect" href="$_set_current_price_8h.html" title="Defines the SetCurrentPrice class. " alt="" coords="1189,379,1392,424"/>
+<area shape="rect" href="$_message_header_8cpp.html" title="Implements the MessageHeader class. " alt="" coords="1189,285,1392,331"/>
+<area shape="rect" href="$_client_manager_8cpp.html" title="Source file for the ClientManager class. " alt="" coords="565,567,773,593"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="This file defines the ConnectionManager class. " alt="" coords="797,567,1029,593"/>
+<area shape="rect" href="$_control_manager_8h.html" title="This file defines the ControlManager class. " alt="" coords="880,644,1080,671"/>
+<area shape="rect" href="$_system_manager_8h.html" title="Defines the SystemManager class. " alt="" coords="1029,721,1229,748"/>
+<area shape="rect" href="$main_8cpp.html" title="Main file that starts an infinite running loop on the SystemManager::AdvanceTimeStep method..." alt="" coords="709,876,848,903"/>
+<area shape="rect" href="$_connection_manager_8cpp.html" title="This file implements the ConnectionManager class. " alt="" coords="363,644,611,671"/>
+<area shape="rect" href="$_control_manager_8cpp.html" title="This file implements the ControlManager class. " alt="" coords="736,721,955,748"/>
+<area shape="rect" href="$_matlab_manager_8h.html" title="Defines the MatlabManager class. " alt="" coords="961,799,1159,825"/>
+<area shape="rect" href="$_system_manager_8cpp.html" title="Implements the SystemManager class. " alt="" coords="1183,799,1401,825"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html" title="Implements the MatlabManager class. " alt="" coords="953,876,1167,903"/>
+<area shape="rect" href="$_client_connection_request_8cpp.html" title="Implements the ClientConnectionRequest class. " alt="" coords="1412,472,1652,517"/>
+<area shape="rect" href="$_message_ender_8cpp.html" title="Implements a MessageEnder class. " alt="" coords="685,379,888,424"/>
+<area shape="rect" href="$_client_connection_response_8cpp.html" title="Implements the Async and Synchronous ClientConnectionResponse message and classes. " alt="" coords="1676,472,1927,517"/>
+<area shape="rect" href="$_client_data_8cpp.html" title="Implements the Async and Synchronous ClientData classes and messages. " alt="" coords="5,472,208,517"/>
+<area shape="rect" href="$_demand_negotiation_8cpp.html" title="Implements the DemandNegotiation class. " alt="" coords="232,472,435,517"/>
+<area shape="rect" href="$_get_price_8cpp.html" title="Implements the GetPrice class. " alt="" coords="459,472,661,517"/>
+<area shape="rect" href="$_price_proposal_8cpp.html" title="Implements the PriceProposal class. " alt="" coords="745,472,948,517"/>
+<area shape="rect" href="$_set_current_price_8cpp.html" title="Implements the SetCurrentPrice class. " alt="" coords="1185,472,1388,517"/>
 </map>

@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="437,-70 437,-91 497,-91 497,-70 437,-70"/>
 <text text-anchor="middle" x="467" y="-77" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" target="_top" xlink:title="ControlManager::ClientPrice\lRequest">
+<a xlink:href="class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" target="_top" xlink:title="Relays the price request of a client to the External Controller. ">
 <polygon style="fill:white;stroke:black;" points="198,-0 198,-34 366,-34 366,-0 198,-0"/>
 <text text-anchor="start" x="206" y="-20" style="font-family:Arial;font-size:10.00;">ControlManager::ClientPrice</text>
 <text text-anchor="middle" x="282" y="-7" style="font-family:Arial;font-size:10.00;">Request</text>
@@ -61,7 +61,7 @@
 </g>
 <!-- Node5 -->
 <g id="node10" class="node"><title>Node5</title>
-<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="TCPConnectedClient\l::SendData">
+<a xlink:href="class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" target="_top" xlink:title="Sends data to the connected client. ">
 <polygon style="fill:white;stroke:black;" points="403,-0 403,-34 532,-34 532,-0 403,-0"/>
 <text text-anchor="start" x="411" y="-20" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 <text text-anchor="middle" x="467" y="-7" style="font-family:Arial;font-size:10.00;">::SendData</text>

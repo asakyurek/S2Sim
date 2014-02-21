@@ -1,4 +1,4 @@
 <map id="TerraSwarm::MessageHeader::GetDataSize" name="TerraSwarm::MessageHeader::GetDataSize">
-<area shape="rect" href="$class_terra_swarm_1_1_message_ender.html#af69030fc95ad65634ce03e0edb5f3bdd" title="TerraSwarm::MessageEnder\l::SetEndOfMessageField" alt="" coords="287,5,505,51"/>
-<area shape="rect" href="$class_terra_swarm_1_1_message_ender.html#abc51a9a7a6fb91254ce5cc2ea8edf5bb" title="TerraSwarm::MessageEnder\l::CheckEndOfMessageField" alt="" coords="287,75,505,120"/>
+<area shape="rect" href="$class_terra_swarm_1_1_message_ender.html#af69030fc95ad65634ce03e0edb5f3bdd" title="Sets the EOM field to its value. " alt="" coords="287,5,505,51"/>
+<area shape="rect" href="$class_terra_swarm_1_1_message_ender.html#abc51a9a7a6fb91254ce5cc2ea8edf5bb" title="Checks the EOM field for the correct value. " alt="" coords="287,75,505,120"/>
 </map>

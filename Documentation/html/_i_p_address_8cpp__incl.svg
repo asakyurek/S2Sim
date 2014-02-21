@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="IPAddress.h">
+<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="Defines the IPAddress class. ">
 <polygon style="fill:white;stroke:black;" points="25,-58 25,-79 102,-79 102,-58 25,-58"/>
 <text text-anchor="middle" x="63" y="-65" style="font-family:Arial;font-size:10.00;">IPAddress.h</text>
 </a>

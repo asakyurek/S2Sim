@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_client_manager_8h.html" target="_top" xlink:title="S2Sim/ClientManager.h">
+<a xlink:href="_client_manager_8h.html" target="_top" xlink:title="Header file for the ClientManager class. ">
 <polygon style="fill:white;stroke:black;" points="206,-232 206,-253 349,-253 349,-232 206,-232"/>
 <text text-anchor="middle" x="277" y="-239" style="font-family:Arial;font-size:10.00;">S2Sim/ClientManager.h</text>
 </a>
@@ -30,37 +30,37 @@
 </g>
 <!-- Node6 -->
 <g id="node14" class="node"><title>Node6</title>
-<a xlink:href="_control_manager_8h.html" target="_top" xlink:title="S2Sim/ControlManager.h">
+<a xlink:href="_control_manager_8h.html" target="_top" xlink:title="This file defines the ControlManager class. ">
 <polygon style="fill:white;stroke:black;" points="373,-174 373,-195 524,-195 524,-174 373,-174"/>
 <text text-anchor="middle" x="448" y="-181" style="font-family:Arial;font-size:10.00;">S2Sim/ControlManager.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge36" class="edge"><title>Node1&#45;&gt;Node6</title>
+<g id="edge38" class="edge"><title>Node1&#45;&gt;Node6</title>
 <path style="fill:none;stroke:midnightblue;" d="M448,-280C448,-255 448,-214 448,-195"/>
 <polygon style="fill:midnightblue;stroke:midnightblue;" points="444.5,-280 448,-290 451.5,-280 444.5,-280"/>
 </g>
 <!-- Node8 -->
 <g id="node19" class="node"><title>Node8</title>
-<a xlink:href="main_8cpp.html" target="_top" xlink:title="S2Sim/main.cpp">
-<polygon style="fill:white;stroke:black;" points="475,-0 475,-21 579,-21 579,-0 475,-0"/>
-<text text-anchor="middle" x="527" y="-7" style="font-family:Arial;font-size:10.00;">S2Sim/main.cpp</text>
+<a xlink:href="main_8cpp.html" target="_top" xlink:title="Main file that starts an infinite running loop on the SystemManager::AdvanceTimeStep method...">
+<polygon style="fill:white;stroke:black;" points="395,-0 395,-21 499,-21 499,-0 395,-0"/>
+<text text-anchor="middle" x="447" y="-7" style="font-family:Arial;font-size:10.00;">S2Sim/main.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge40" class="edge"><title>Node1&#45;&gt;Node8</title>
-<path style="fill:none;stroke:midnightblue;" d="M482,-285C517,-267 565,-232 565,-185 565,-185 565,-185 565,-127 565,-86 543,-41 533,-21"/>
+<g id="edge42" class="edge"><title>Node1&#45;&gt;Node8</title>
+<path style="fill:none;stroke:midnightblue;" d="M482,-285C517,-267 565,-232 565,-185 565,-185 565,-185 565,-127 565,-74 505,-38 470,-21"/>
 <polygon style="fill:midnightblue;stroke:midnightblue;" points="480.042,-282.084 473,-290 483.441,-288.203 480.042,-282.084"/>
 </g>
 <!-- Node11 -->
-<g id="node30" class="node"><title>Node11</title>
-<a xlink:href="_connection_manager_8cpp.html" target="_top" xlink:title="S2Sim/ConnectionManager.cpp">
+<g id="node31" class="node"><title>Node11</title>
+<a xlink:href="_connection_manager_8cpp.html" target="_top" xlink:title="This file implements the ConnectionManager class. ">
 <polygon style="fill:white;stroke:black;" points="593,-232 593,-253 780,-253 780,-232 593,-232"/>
 <text text-anchor="middle" x="686" y="-239" style="font-family:Arial;font-size:10.00;">S2Sim/ConnectionManager.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
-<g id="edge38" class="edge"><title>Node1&#45;&gt;Node11</title>
+<g id="edge40" class="edge"><title>Node1&#45;&gt;Node11</title>
 <path style="fill:none;stroke:midnightblue;" d="M503,-288C546,-277 605,-262 645,-253"/>
 <polygon style="fill:midnightblue;stroke:midnightblue;" points="502.119,-284.607 493,-290 503.492,-291.471 502.119,-284.607"/>
 </g>
@@ -71,7 +71,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_client_manager_8cpp.html" target="_top" xlink:title="S2Sim/ClientManager.cpp">
+<a xlink:href="_client_manager_8cpp.html" target="_top" xlink:title="Source file for the ClientManager class. ">
 <polygon style="fill:white;stroke:black;" points="199,-174 199,-195 355,-195 355,-174 199,-174"/>
 <text text-anchor="middle" x="277" y="-181" style="font-family:Arial;font-size:10.00;">S2Sim/ClientManager.cpp</text>
 </a>
@@ -83,7 +83,7 @@
 </g>
 <!-- Node4 -->
 <g id="node8" class="node"><title>Node4</title>
-<a xlink:href="_system_manager_8h.html" target="_top" xlink:title="S2Sim/SystemManager.h">
+<a xlink:href="_system_manager_8h.html" target="_top" xlink:title="Defines the SystemManager class. ">
 <polygon style="fill:white;stroke:black;" points="129,-116 129,-137 280,-137 280,-116 129,-116"/>
 <text text-anchor="middle" x="204" y="-123" style="font-family:Arial;font-size:10.00;">S2Sim/SystemManager.h</text>
 </a>
@@ -94,7 +94,7 @@
 <polygon style="fill:midnightblue;stroke:midnightblue;" points="219.44,-231.137 230,-232 222.283,-224.74 219.44,-231.137"/>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
-<g id="edge34" class="edge"><title>Node2&#45;&gt;Node6</title>
+<g id="edge36" class="edge"><title>Node2&#45;&gt;Node6</title>
 <path style="fill:none;stroke:midnightblue;" d="M320,-229C350,-218 391,-204 418,-195"/>
 <polygon style="fill:midnightblue;stroke:midnightblue;" points="318.573,-225.774 310,-232 320.584,-232.479 318.573,-225.774"/>
 </g>
@@ -105,7 +105,7 @@
 </g>
 <!-- Node5 -->
 <g id="node10" class="node"><title>Node5</title>
-<a xlink:href="_matlab_manager_8h.html" target="_top" xlink:title="S2Sim/MatlabManager.h">
+<a xlink:href="_matlab_manager_8h.html" target="_top" xlink:title="Defines the MatlabManager class. ">
 <polygon style="fill:white;stroke:black;" points="182,-58 182,-79 330,-79 330,-58 182,-58"/>
 <text text-anchor="middle" x="256" y="-65" style="font-family:Arial;font-size:10.00;">S2Sim/MatlabManager.h</text>
 </a>
@@ -120,15 +120,20 @@
 <path style="fill:none;stroke:midnightblue;" d="M261,-139C306,-149 367,-164 407,-174"/>
 <polygon style="fill:midnightblue;stroke:midnightblue;" points="261.492,-135.529 251,-137 260.119,-142.393 261.492,-135.529"/>
 </g>
+<!-- Node4&#45;&gt;Node8 -->
+<g id="edge32" class="edge"><title>Node4&#45;&gt;Node8</title>
+<path style="fill:none;stroke:midnightblue;" d="M252,-113C278,-105 311,-93 339,-80 375,-63 413,-36 433,-21"/>
+<polygon style="fill:midnightblue;stroke:midnightblue;" points="250.573,-109.774 242,-116 252.584,-116.479 250.573,-109.774"/>
+</g>
 <!-- Node10 -->
-<g id="node26" class="node"><title>Node10</title>
-<a xlink:href="_system_manager_8cpp.html" target="_top" xlink:title="S2Sim/SystemManager.cpp">
+<g id="node27" class="node"><title>Node10</title>
+<a xlink:href="_system_manager_8cpp.html" target="_top" xlink:title="Implements the SystemManager class. ">
 <polygon style="fill:white;stroke:black;" points="0,-58 0,-79 164,-79 164,-58 0,-58"/>
 <text text-anchor="middle" x="82" y="-65" style="font-family:Arial;font-size:10.00;">S2Sim/SystemManager.cpp</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node10 -->
-<g id="edge32" class="edge"><title>Node4&#45;&gt;Node10</title>
+<g id="edge34" class="edge"><title>Node4&#45;&gt;Node10</title>
 <path style="fill:none;stroke:midnightblue;" d="M172,-112C150,-101 122,-88 103,-79"/>
 <polygon style="fill:midnightblue;stroke:midnightblue;" points="170.44,-115.137 181,-116 173.283,-108.74 170.44,-115.137"/>
 </g>
@@ -149,12 +154,12 @@
 </g>
 <!-- Node5&#45;&gt;Node8 -->
 <g id="edge24" class="edge"><title>Node5&#45;&gt;Node8</title>
-<path style="fill:none;stroke:midnightblue;" d="M318,-56C367,-45 435,-30 480,-21"/>
-<polygon style="fill:midnightblue;stroke:midnightblue;" points="317.119,-52.6067 308,-58 318.492,-59.4708 317.119,-52.6067"/>
+<path style="fill:none;stroke:midnightblue;" d="M302,-55C336,-44 383,-30 414,-21"/>
+<polygon style="fill:midnightblue;stroke:midnightblue;" points="300.573,-51.7741 292,-58 302.584,-58.4788 300.573,-51.7741"/>
 </g>
 <!-- Node9 -->
 <g id="node22" class="node"><title>Node9</title>
-<a xlink:href="_matlab_manager_8cpp.html" target="_top" xlink:title="S2Sim/MatlabManager.cpp">
+<a xlink:href="_matlab_manager_8cpp.html" target="_top" xlink:title="Implements the MatlabManager class. ">
 <polygon style="fill:white;stroke:black;" points="176,-0 176,-21 337,-21 337,-0 176,-0"/>
 <text text-anchor="middle" x="256" y="-7" style="font-family:Arial;font-size:10.00;">S2Sim/MatlabManager.cpp</text>
 </a>
@@ -171,7 +176,7 @@
 </g>
 <!-- Node7 -->
 <g id="node17" class="node"><title>Node7</title>
-<a xlink:href="_control_manager_8cpp.html" target="_top" xlink:title="S2Sim/ControlManager.cpp">
+<a xlink:href="_control_manager_8cpp.html" target="_top" xlink:title="This file implements the ControlManager class. ">
 <polygon style="fill:white;stroke:black;" points="335,-116 335,-137 499,-137 499,-116 335,-116"/>
 <text text-anchor="middle" x="417" y="-123" style="font-family:Arial;font-size:10.00;">S2Sim/ControlManager.cpp</text>
 </a>
@@ -183,8 +188,8 @@
 </g>
 <!-- Node6&#45;&gt;Node8 -->
 <g id="edge22" class="edge"><title>Node6&#45;&gt;Node8</title>
-<path style="fill:none;stroke:midnightblue;" d="M478,-168C488,-160 500,-150 508,-138 530,-99 529,-44 528,-21"/>
-<polygon style="fill:midnightblue;stroke:midnightblue;" points="475.379,-165.541 469,-174 479.262,-171.365 475.379,-165.541"/>
+<path style="fill:none;stroke:midnightblue;" d="M480,-168C490,-161 502,-151 508,-138 512,-129 510,-125 508,-116 497,-77 469,-39 455,-21"/>
+<polygon style="fill:midnightblue;stroke:midnightblue;" points="477.379,-165.541 471,-174 481.262,-171.365 477.379,-165.541"/>
 </g>
 </g>
 </svg>

@@ -44,7 +44,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_t_c_p_client.html" target="_top" xlink:title="TCPClient">
+<a xlink:href="class_t_c_p_client.html" target="_top" xlink:title="This class defines a TCP client that can connect to a TCP server and communicate. ...">
 <polygon style="fill:white;stroke:black;" points="54,-60 54,-81 123,-81 123,-60 54,-60"/>
 <text text-anchor="middle" x="88" y="-67" style="font-family:Arial;font-size:10.00;">TCPClient</text>
 </a>
@@ -56,7 +56,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_t_c_p_connected_client.html" target="_top" xlink:title="TCPConnectedClient">
+<a xlink:href="class_t_c_p_connected_client.html" target="_top" xlink:title="Manages the connection to a connected client on the server side. ">
 <polygon style="fill:white;stroke:black;" points="167,-60 167,-81 296,-81 296,-60 167,-60"/>
 <text text-anchor="middle" x="231" y="-67" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 </a>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_t_c_p_server.html" target="_top" xlink:title="TCPServer">
+<a xlink:href="class_t_c_p_server.html" target="_top" xlink:title="Defines a TCP server that can listen to connection attempts and can accept them for communication...">
 <polygon style="fill:white;stroke:black;" points="313,-60 313,-81 385,-81 385,-60 313,-60"/>
 <text text-anchor="middle" x="349" y="-67" style="font-family:Arial;font-size:10.00;">TCPServer</text>
 </a>
@@ -80,7 +80,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_threaded_t_c_p_client.html" target="_top" xlink:title="ThreadedTCPClient">
+<a xlink:href="class_threaded_t_c_p_client.html" target="_top" xlink:title="This is a TCP client class that receives data in a separate thread in the background. ">
 <polygon style="fill:white;stroke:black;" points="0,-0 0,-21 122,-21 122,-0 0,-0"/>
 <text text-anchor="middle" x="61" y="-7" style="font-family:Arial;font-size:10.00;">ThreadedTCPClient</text>
 </a>
@@ -92,7 +92,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_threaded_t_c_p_connected_client.html" target="_top" xlink:title="ThreadedTCPConnectedClient">
+<a xlink:href="class_threaded_t_c_p_connected_client.html" target="_top" xlink:title="Manages the connection to an accepted client on the server side and receives data in a separate threa...">
 <polygon style="fill:white;stroke:black;" points="140,-0 140,-21 322,-21 322,-0 140,-0"/>
 <text text-anchor="middle" x="231" y="-7" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient</text>
 </a>
@@ -104,7 +104,7 @@
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="class_threaded_t_c_p_server.html" target="_top" xlink:title="ThreadedTCPServer">
+<a xlink:href="class_threaded_t_c_p_server.html" target="_top" xlink:title="Defines the threaded version of TCPServer that accepts clients in another thread in the background...">
 <polygon style="fill:white;stroke:black;" points="340,-0 340,-21 465,-21 465,-0 340,-0"/>
 <text text-anchor="middle" x="402" y="-7" style="font-family:Arial;font-size:10.00;">ThreadedTCPServer</text>
 </a>
@@ -116,7 +116,7 @@
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
-<a xlink:href="class_u_d_p_socket.html" target="_top" xlink:title="UDPSocket">
+<a xlink:href="class_u_d_p_socket.html" target="_top" xlink:title="Manages a UDP connection. ">
 <polygon style="fill:white;stroke:black;" points="403,-60 403,-81 478,-81 478,-60 403,-60"/>
 <text text-anchor="middle" x="440" y="-67" style="font-family:Arial;font-size:10.00;">UDPSocket</text>
 </a>

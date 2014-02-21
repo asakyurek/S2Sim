@@ -1,10 +1,10 @@
 <map id="S2Sim/SocketLibrary/ThreadedTCPServer.cpp" name="S2Sim/SocketLibrary/ThreadedTCPServer.cpp">
-<area shape="rect" href="$_threaded_t_c_p_server_8h.html" title="ThreadedTCPServer.h" alt="" coords="160,100,339,127"/>
-<area shape="rect" href="$_thread_base_8h.html" title="ThreadBase.h" alt="" coords="5,332,125,359"/>
-<area shape="rect" href="$_t_c_p_server_8h.html" title="TCPServer.h" alt="" coords="336,177,445,204"/>
-<area shape="rect" href="$_threaded_t_c_p_connected_client_8h.html" title="ThreadedTCPConnectedClient.h" alt="" coords="121,255,377,281"/>
-<area shape="rect" href="$_socket_base_8h.html" title="SocketBase.h" alt="" coords="247,409,364,436"/>
-<area shape="rect" href="$_i_p_address_8h.html" title="IPAddress.h" alt="" coords="404,409,505,436"/>
-<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="TCPConnectedClient.h" alt="" coords="200,332,384,359"/>
-<area shape="rect" href="$_semaphore_8h.html" title="Semaphore.h" alt="" coords="103,409,223,436"/>
+<area shape="rect" href="$_threaded_t_c_p_server_8h.html" title="Defines the ThreadedTCPServer class. " alt="" coords="160,100,339,127"/>
+<area shape="rect" href="$_thread_base_8h.html" title="This file selects the right implementation according to the current OS. " alt="" coords="5,332,125,359"/>
+<area shape="rect" href="$_t_c_p_server_8h.html" title="Defines the TCPServer class. " alt="" coords="336,177,445,204"/>
+<area shape="rect" href="$_threaded_t_c_p_connected_client_8h.html" title="Defeines the ThreadedTCPConnectedClient class. " alt="" coords="121,255,377,281"/>
+<area shape="rect" href="$_socket_base_8h.html" title="Defines the SocketBase template class. " alt="" coords="247,409,364,436"/>
+<area shape="rect" href="$_i_p_address_8h.html" title="Defines the IPAddress class. " alt="" coords="404,409,505,436"/>
+<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="Defines the TCPConnectedClient class. " alt="" coords="200,332,384,359"/>
+<area shape="rect" href="$_semaphore_8h.html" title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. " alt="" coords="103,409,223,436"/>
 </map>

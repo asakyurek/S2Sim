@@ -13,11 +13,11 @@
 <polygon style="fill:white;stroke:white;" points="-4,4 -4,-50 250,-50 250,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<a xlink:href="class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_014_01_4.html" target="_top" xlink:title="TerraSwarm::NetworkByteAccessor\l\&lt; byteIndex, dataSize \&gt;::EndianConverter\l\&lt; TInput, 4 \&gt;">
+<a xlink:href="class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter.html" target="_top" xlink:title="Template class that uses the correct conversion function according to the size of the data...">
 <polygon style="fill:white;stroke:black;" points="1,1 1,-46 246,-46 246,1 1,1"/>
 <text text-anchor="start" x="9" y="-32" style="font-family:Arial;font-size:10.00;">TerraSwarm::NetworkByteAccessor</text>
 <text text-anchor="start" x="9" y="-19" style="font-family:Arial;font-size:10.00;">&lt; byteIndex, dataSize &gt;::EndianConverter</text>
-<text text-anchor="middle" x="123" y="-6" style="font-family:Arial;font-size:10.00;">&lt; TInput, 4 &gt;</text>
+<text text-anchor="middle" x="123" y="-6" style="font-family:Arial;font-size:10.00;">&lt; TInput, size &gt;</text>
 </a>
 </g>
 </g>

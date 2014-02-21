@@ -3,7 +3,7 @@ var class_matlab_manager =
     [ "TClientCheckResult", "class_matlab_manager.html#ac04dd0e7a4ab2efafe9604da5d44b318", null ],
     [ "TClientName", "class_matlab_manager.html#a62cb494115d46fdf4ecc6bd369fe0320", null ],
     [ "TMessageType", "class_matlab_manager.html#a36ad68398613c0d0ede6077af22d830c", null ],
-    [ "TVoltage", "class_matlab_manager.html#a00f47f07c7dfd449fc39db6c09f6304a", null ],
+    [ "TVoltage", "class_matlab_manager.html#a716643f4f29af3225aedf52d61fd0abe", null ],
     [ "TWattage", "class_matlab_manager.html#a410b78f356aeacba5c43efee93d8c27d", null ],
     [ "ClientCheckResultValues", "class_matlab_manager.html#a3030ee8380a9c54563d3ba494b2ac5bd", [
       [ "ClientExists", "class_matlab_manager.html#a3030ee8380a9c54563d3ba494b2ac5bdaee007d7e72b359f645f0f48f11270826", null ],

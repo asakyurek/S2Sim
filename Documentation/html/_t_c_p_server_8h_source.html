@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -108,13 +108,7 @@ $(document).ready(function(){initNavTree('_t_c_p_server_8h_source.html','');});
 <div class="title">TCPServer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_t_c_p_server_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * TCPServer.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: Jan 21, 2014</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: asakyurek</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<a href="_t_c_p_server_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef TCPSERVER_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TCPSERVER_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
@@ -122,54 +116,52 @@ $(document).ready(function(){initNavTree('_t_c_p_server_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_i_p_address_8h.html">IPAddress.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_threaded_t_c_p_connected_client_8h.html">ThreadedTCPConnectedClient.h</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_t_c_p_server.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_t_c_p_server.html">TCPServer</a> : <span class="keyword">public</span> <a class="code" href="class_socket_base.html">SocketBase</a>&lt;SOCK_STREAM&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* Type Definitions */</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* Member Functions */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_t_c_p_server.html#ad764ce120c77624cf1c3436ff154dd7a">TCPServer</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_t_c_p_server.html#ab8524656d788731d2350f50c6174554e">~TCPServer</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* Members */</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb">SetAddress</a>( <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; address );</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa">SetPort</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">IPAddress::TPort</a> port );</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b">Listen</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_threaded_t_c_p_connected_client.html">ThreadedTCPConnectedClient</a>*</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a">Accept</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_t_c_p_server.html#aed13a25d9b432da0be24ade2206a0914">   37</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="class_socket_base.html">SocketBase&lt;SOCK_STREAM&gt;</a> <a class="code" href="class_t_c_p_server.html#aed13a25d9b432da0be24ade2206a0914">TBaseType</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TCPSERVER_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_threaded_t_c_p_connected_client_html"><div class="ttname"><a href="class_threaded_t_c_p_connected_client.html">ThreadedTCPConnectedClient</a></div><div class="ttdef"><b>Definition:</b> <a href="_threaded_t_c_p_connected_client_8h_source.html#l00015">ThreadedTCPConnectedClient.h:15</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html_ab8524656d788731d2350f50c6174554e"><div class="ttname"><a href="class_t_c_p_server.html#ab8524656d788731d2350f50c6174554e">TCPServer::~TCPServer</a></div><div class="ttdeci">~TCPServer(void)</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00014">TCPServer.cpp:14</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html"><div class="ttname"><a href="class_t_c_p_server.html">TCPServer</a></div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8h_source.html#l00015">TCPServer.h:15</a></div></div>
-<div class="ttc" id="_socket_base_8h_html"><div class="ttname"><a href="_socket_base_8h.html">SocketBase.h</a></div></div>
-<div class="ttc" id="class_i_p_address_html"><div class="ttname"><a href="class_i_p_address.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00027">IPAddress.h:27</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html_a85bb8272c9599d98bcb28e4156a755fb"><div class="ttname"><a href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb">TCPServer::SetAddress</a></div><div class="ttdeci">void SetAddress(IPAddress &amp;address)</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00019">TCPServer.cpp:19</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html_a2d424428c9107b8b40905f0aefc7d30b"><div class="ttname"><a href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b">TCPServer::Listen</a></div><div class="ttdeci">bool Listen(void)</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00037">TCPServer.cpp:37</a></div></div>
-<div class="ttc" id="class_socket_base_html"><div class="ttname"><a href="class_socket_base.html">SocketBase</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00028">SocketBase.h:28</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html_ae53980fd5e4791bc6e5e15c97a1a796a"><div class="ttname"><a href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a">TCPServer::Accept</a></div><div class="ttdeci">ThreadedTCPConnectedClient * Accept(void)</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00048">TCPServer.cpp:48</a></div></div>
-<div class="ttc" id="_threaded_t_c_p_connected_client_8h_html"><div class="ttname"><a href="_threaded_t_c_p_connected_client_8h.html">ThreadedTCPConnectedClient.h</a></div></div>
-<div class="ttc" id="_i_p_address_8h_html"><div class="ttname"><a href="_i_p_address_8h.html">IPAddress.h</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html_ad764ce120c77624cf1c3436ff154dd7a"><div class="ttname"><a href="class_t_c_p_server.html#ad764ce120c77624cf1c3436ff154dd7a">TCPServer::TCPServer</a></div><div class="ttdeci">TCPServer(void)</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00010">TCPServer.cpp:10</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html_aed13a25d9b432da0be24ade2206a0914"><div class="ttname"><a href="class_t_c_p_server.html#aed13a25d9b432da0be24ade2206a0914">TCPServer::TBaseType</a></div><div class="ttdeci">SocketBase&lt; SOCK_STREAM &gt; TBaseType</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8h_source.html#l00037">TCPServer.h:37</a></div></div>
-<div class="ttc" id="class_i_p_address_html_a51188195685c31d4258c0a078cc37154"><div class="ttname"><a href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">IPAddress::TPort</a></div><div class="ttdeci">unsigned short TPort</div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00034">IPAddress.h:34</a></div></div>
-<div class="ttc" id="class_t_c_p_server_html_a8d5ad30ba42960a84973b57f74a853fa"><div class="ttname"><a href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa">TCPServer::SetPort</a></div><div class="ttdeci">void SetPort(const IPAddress::TPort port)</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00028">TCPServer.cpp:28</a></div></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_t_c_p_server.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_t_c_p_server.html">TCPServer</a> : <span class="keyword">public</span> <a class="code" href="class_socket_base.html">SocketBase</a>&lt;SOCK_STREAM&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_t_c_p_server.html#ad764ce120c77624cf1c3436ff154dd7a">TCPServer</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_t_c_p_server.html#ab8524656d788731d2350f50c6174554e">~TCPServer</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb">SetAddress</a>( <a class="code" href="class_i_p_address.html">IPAddress</a> &amp; address );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa">SetPort</a>( <span class="keyword">const</span> <a class="code" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">IPAddress::TPort</a> port );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b">Listen</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="class_threaded_t_c_p_connected_client.html">ThreadedTCPConnectedClient</a>*</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a">Accept</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_t_c_p_server.html#aed13a25d9b432da0be24ade2206a0914">   67</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="class_socket_base.html">SocketBase&lt;SOCK_STREAM&gt;</a> <a class="code" href="class_t_c_p_server.html#aed13a25d9b432da0be24ade2206a0914">TBaseType</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TCPSERVER_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_threaded_t_c_p_connected_client_html"><div class="ttname"><a href="class_threaded_t_c_p_connected_client.html">ThreadedTCPConnectedClient</a></div><div class="ttdoc">Manages the connection to an accepted client on the server side and receives data in a separate threa...</div><div class="ttdef"><b>Definition:</b> <a href="_threaded_t_c_p_connected_client_8h_source.html#l00018">ThreadedTCPConnectedClient.h:18</a></div></div>
+<div class="ttc" id="class_t_c_p_server_html_ab8524656d788731d2350f50c6174554e"><div class="ttname"><a href="class_t_c_p_server.html#ab8524656d788731d2350f50c6174554e">TCPServer::~TCPServer</a></div><div class="ttdeci">~TCPServer(void)</div><div class="ttdoc">Not used. </div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00014">TCPServer.cpp:14</a></div></div>
+<div class="ttc" id="class_t_c_p_server_html"><div class="ttname"><a href="class_t_c_p_server.html">TCPServer</a></div><div class="ttdoc">Defines a TCP server that can listen to connection attempts and can accept them for communication...</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8h_source.html#l00018">TCPServer.h:18</a></div></div>
+<div class="ttc" id="_socket_base_8h_html"><div class="ttname"><a href="_socket_base_8h.html">SocketBase.h</a></div><div class="ttdoc">Defines the SocketBase template class. </div></div>
+<div class="ttc" id="class_i_p_address_html"><div class="ttname"><a href="class_i_p_address.html">IPAddress</a></div><div class="ttdoc">This class is an abstraction of the OS IP Address structure. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00030">IPAddress.h:30</a></div></div>
+<div class="ttc" id="class_t_c_p_server_html_a85bb8272c9599d98bcb28e4156a755fb"><div class="ttname"><a href="class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb">TCPServer::SetAddress</a></div><div class="ttdeci">void SetAddress(IPAddress &amp;address)</div><div class="ttdoc">Sets the IP address of the server. </div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00019">TCPServer.cpp:19</a></div></div>
+<div class="ttc" id="class_t_c_p_server_html_a2d424428c9107b8b40905f0aefc7d30b"><div class="ttname"><a href="class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b">TCPServer::Listen</a></div><div class="ttdeci">bool Listen(void)</div><div class="ttdoc">This method makes the server listen to incoming connection attempts. </div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00037">TCPServer.cpp:37</a></div></div>
+<div class="ttc" id="class_socket_base_html"><div class="ttname"><a href="class_socket_base.html">SocketBase</a></div><div class="ttdoc">This class is an abstraction over the OS socket and defines a base class for socket opening and closi...</div><div class="ttdef"><b>Definition:</b> <a href="_socket_base_8h_source.html#l00033">SocketBase.h:33</a></div></div>
+<div class="ttc" id="class_t_c_p_server_html_ae53980fd5e4791bc6e5e15c97a1a796a"><div class="ttname"><a href="class_t_c_p_server.html#ae53980fd5e4791bc6e5e15c97a1a796a">TCPServer::Accept</a></div><div class="ttdeci">ThreadedTCPConnectedClient * Accept(void)</div><div class="ttdoc">This method makes the TCP server accept any incoming connection attempt. </div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00048">TCPServer.cpp:48</a></div></div>
+<div class="ttc" id="_threaded_t_c_p_connected_client_8h_html"><div class="ttname"><a href="_threaded_t_c_p_connected_client_8h.html">ThreadedTCPConnectedClient.h</a></div><div class="ttdoc">Defeines the ThreadedTCPConnectedClient class. </div></div>
+<div class="ttc" id="_i_p_address_8h_html"><div class="ttname"><a href="_i_p_address_8h.html">IPAddress.h</a></div><div class="ttdoc">Defines the IPAddress class. </div></div>
+<div class="ttc" id="class_t_c_p_server_html_ad764ce120c77624cf1c3436ff154dd7a"><div class="ttname"><a href="class_t_c_p_server.html#ad764ce120c77624cf1c3436ff154dd7a">TCPServer::TCPServer</a></div><div class="ttdeci">TCPServer(void)</div><div class="ttdoc">Not used. </div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00010">TCPServer.cpp:10</a></div></div>
+<div class="ttc" id="class_t_c_p_server_html_aed13a25d9b432da0be24ade2206a0914"><div class="ttname"><a href="class_t_c_p_server.html#aed13a25d9b432da0be24ade2206a0914">TCPServer::TBaseType</a></div><div class="ttdeci">SocketBase&lt; SOCK_STREAM &gt; TBaseType</div><div class="ttdoc">Defines the type of the base class for rapid development. </div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8h_source.html#l00067">TCPServer.h:67</a></div></div>
+<div class="ttc" id="class_i_p_address_html_a51188195685c31d4258c0a078cc37154"><div class="ttname"><a href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">IPAddress::TPort</a></div><div class="ttdeci">unsigned short TPort</div><div class="ttdoc">Port value. </div><div class="ttdef"><b>Definition:</b> <a href="_i_p_address_8h_source.html#l00047">IPAddress.h:47</a></div></div>
+<div class="ttc" id="class_t_c_p_server_html_a8d5ad30ba42960a84973b57f74a853fa"><div class="ttname"><a href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa">TCPServer::SetPort</a></div><div class="ttdeci">void SetPort(const IPAddress::TPort port)</div><div class="ttdoc">Sets the listening port of the server. </div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_server_8cpp_source.html#l00028">TCPServer.cpp:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d13aca5c3a7fbefcf31bfb6d4a9613.html">S2Sim</a></li><li class="navelem"><a class="el" href="dir_6b989bf8ba74a24286adf9e324b41c76.html">SocketLibrary</a></li><li class="navelem"><a class="el" href="_t_c_p_server_8h.html">TCPServer.h</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:14 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:33 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

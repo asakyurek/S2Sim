@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" target="_top" xlink:title="TCPServer::SetPort">
+<a xlink:href="class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" target="_top" xlink:title="Sets the listening port of the server. ">
 <polygon style="fill:white;stroke:black;" points="150,-37 150,-58 267,-58 267,-37 150,-37"/>
 <text text-anchor="middle" x="208" y="-44" style="font-family:Arial;font-size:10.00;">TCPServer::SetPort</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" target="_top" xlink:title="UDPSocket::SetPort">
+<a xlink:href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" target="_top" xlink:title="Sets the port of the UDP Socket. ">
 <polygon style="fill:white;stroke:black;" points="148,1 148,-20 268,-20 268,1 148,1"/>
 <text text-anchor="middle" x="208" y="-6" style="font-family:Arial;font-size:10.00;">UDPSocket::SetPort</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="ConnectionManager::\lConnectionManager">
+<a xlink:href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="337,-76 337,-110 470,-110 470,-76 337,-76"/>
 <text text-anchor="start" x="345" y="-96" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="403" y="-83" style="font-family:Arial;font-size:10.00;">ConnectionManager</text>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="ControlManager::ControlManager">
+<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="304,-37 304,-58 502,-58 502,-37 304,-37"/>
 <text text-anchor="middle" x="403" y="-44" style="font-family:Arial;font-size:10.00;">ControlManager::ControlManager</text>
 </a>
@@ -67,7 +67,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="MatlabManager::MatlabManager">
+<a xlink:href="class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" target="_top" xlink:title="Private constructor to implement the singleton. ">
 <polygon style="fill:white;stroke:black;" points="307,1 307,-20 499,-20 499,1 307,1"/>
 <text text-anchor="middle" x="403" y="-6" style="font-family:Arial;font-size:10.00;">MatlabManager::MatlabManager</text>
 </a>

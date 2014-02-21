@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="245,-179 245,-200 330,-200 330,-179 245,-179"/>
 <text text-anchor="middle" x="287" y="-186" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_control_manager.html#ac3c913a01fe2e5e5467ad3d140c8e9a2" target="_top" xlink:title="ControlManager::UnRegister\lClient">
+<a xlink:href="class_control_manager.html#ac3c913a01fe2e5e5467ad3d140c8e9a2" target="_top" xlink:title="Deletes a client from the maps when connection is broken. ">
 <polygon style="fill:white;stroke:black;" points="203,-90 203,-124 372,-124 372,-90 203,-90"/>
 <text text-anchor="start" x="211" y="-110" style="font-family:Arial;font-size:10.00;">ControlManager::UnRegister</text>
 <text text-anchor="middle" x="287" y="-97" style="font-family:Arial;font-size:10.00;">Client</text>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863" target="_top" xlink:title="ConnectionManager::\lDeleteClient">
+<a xlink:href="class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863" target="_top" xlink:title="Deletes the ClientManager from all lists and finally deletes itself. ">
 <polygon style="fill:white;stroke:black;" points="221,-0 221,-34 354,-34 354,-0 221,-0"/>
 <text text-anchor="start" x="229" y="-20" style="font-family:Arial;font-size:10.00;">ConnectionManager::</text>
 <text text-anchor="middle" x="287" y="-7" style="font-family:Arial;font-size:10.00;">DeleteClient</text>
@@ -81,7 +81,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="408,-51 408,-72 468,-72 468,-51 408,-51"/>
 <text text-anchor="middle" x="438" y="-58" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>

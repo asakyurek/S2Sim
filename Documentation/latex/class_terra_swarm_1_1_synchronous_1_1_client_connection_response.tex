@@ -3,6 +3,11 @@
 }
 
 
+This class implements the Response message of the controller to the clients connection request.  
+
+
+
+
 {\ttfamily \#include $<$Client\-Connection\-Response.\-h$>$}
 
 \subsection*{Public Types}
@@ -11,54 +16,54 @@
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78a3a4dbed8f44a1f0abc1efe7a4ad3d5b0}{Success} = ( T\-Check\-Result )true, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78a085c06501e85345b78e415907a88203b}{Fail} = ( T\-Check\-Result )false
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for T\-Check\-Result. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8}{Request\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8a25dc7f6bdc925becc175d30660c1f6ec}{Request\-Accepted} = ( T\-Request\-Result )0x00000000, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8a25a21c0a3a3a6d792215b28d1b566fb2}{Request\-Object\-Id\-Not\-Found} = ( T\-Request\-Result )0x00000001
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines values for the T\-Request\-Result type. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60a}{System\-Mode\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60aaa5129160fa9b512de957c03f99faa3f9}{Simulation\-Mode} = ( T\-System\-Mode )0x0001, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60aaa62f96af700b98db3f35ea6885a541a3}{Real\-Time\-Mode} = ( T\-System\-Mode )0x0002
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the values for the T\-System\-Mode type. \end{DoxyCompactList}\item 
 typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a33254e9e1216ca2dde89b8a66f7ad18e}{T\-Check\-Result}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the message check result type. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4b55c1f852e288564e5aa00e882f80d5}{T\-Request\-Result}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the result of the request type. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7b389f7e89631ce7c758c3a26c46c303}{T\-System\-Time}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the time of the system in epoch format. \end{DoxyCompactList}\item 
 typedef unsigned short \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_adc391c9557f0acfdb0763043058cdf83}{T\-Number\-Of\-Clients}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines the number of clients type. \end{DoxyCompactList}\item 
 typedef unsigned short \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a828bc4f350b4f661c541d988c79f05e9}{T\-System\-Mode}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the current system working mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7724857b04c7711aa3d197313b629b74}{$\sim$\-Client\-Connection\-Response} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Deallocates the memory. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a33254e9e1216ca2dde89b8a66f7ad18e}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ad15e893416857bab01902838eee36af4}{Check\-Message} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Checks whether the current memory holds a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} message. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4b55c1f852e288564e5aa00e882f80d5}{T\-Request\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a68294b87ea430db689b58bb56d73c969}{Get\-Request\-Result} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the Request\-Result field. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7b389f7e89631ce7c758c3a26c46c303}{T\-System\-Time} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a1f309c374b8e5197a65d0248cbdcf5d2}{Get\-System\-Time} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the System\-Time field. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_adc391c9557f0acfdb0763043058cdf83}{T\-Number\-Of\-Clients} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aae66d7183246c6eac58aa961bff7f293}{Get\-Number\-Of\-Clients} (void) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Reads the Number\-Of\-Clients field. \end{DoxyCompactList}\item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a828bc4f350b4f661c541d988c79f05e9}{T\-System\-Mode} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a462cfecc85eac135682b2fe3ea971526}{Get\-System\-Mode} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Reads the System\-Mode field. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ae38339e5fc2703a0ddb58da353722ea8}{Get\-New\-Client\-Connection\-Response} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4b55c1f852e288564e5aa00e882f80d5}{T\-Request\-Result} request\-Result, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7b389f7e89631ce7c758c3a26c46c303}{T\-System\-Time} system\-Time, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_adc391c9557f0acfdb0763043058cdf83}{T\-Number\-Of\-Clients} number\-Of\-Clients, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a828bc4f350b4f661c541d988c79f05e9}{T\-System\-Mode} system\-Mode)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} message and allocates memory for it. \end{DoxyCompactList}\item 
 static \hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{T\-Data\-Size} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_af665b5c5ef472eddc40f46ad185b2d90}{Get\-Size} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the size of a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ae5b6f6ce8e9057779e6115b9d10f9f27}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ae5b6f6ce8e9057779e6115b9d10f9f27a3d9f125f956d841cb53726088daf9f4d}{Message\-Type} = 0x0001, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ae5b6f6ce8e9057779e6115b9d10f9f27a6a76dfe62910631da6f001cf65d1ab73}{Message\-Id} = 0x0005
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Message Header values. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08}{Field\-Size\-Values} \{ \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08aec725d8333b75b6c1cf36a1703d8712f}{Request\-Result\-Size} = sizeof( T\-Request\-Result ), 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08ace1096317246657c7174cc95e7ae42fd}{System\-Time\-Size} = sizeof( T\-System\-Time ), 
@@ -67,40 +72,40 @@ enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response
 \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08a99f73dfa527e590c0f7cb12fe47e495a}{Total\-Size} = ( Request\-Result\-Size + System\-Time\-Size + Number\-Of\-Clients\-Size + System\-Mode\-Size )
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Size of the message fields. \end{DoxyCompactList}\item 
 enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbd}{Field\-Index\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbda71c63341170df807c76e11e47c8cb62e}{Request\-Result\-Index} = Message\-Header\-:\-:Message\-Header\-Size, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbda2a8e1ab11473138d8b95056ea19323ac}{System\-Time\-Index} = Request\-Result\-Index + Request\-Result\-Size, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbdacfa0a3412da8705ea266357cfda4b3e5}{Number\-Of\-Clients\-Index} = System\-Time\-Index + System\-Time\-Size, 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbda0554d9a00a3e896e87549ad13eafa1ed}{System\-Mode\-Index} = Number\-Of\-Clients\-Index + Number\-Of\-Clients\-Size
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Index of the message fields. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbda71c63341170df807c76e11e47c8cb62e}{Request\-Result\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08aec725d8333b75b6c1cf36a1703d8712f}{Request\-Result\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_af1c0b39e843f05dcadd4e2b39c65bcee}{T\-Request\-Result\-Accessor}
-\item 
+\begin{DoxyCompactList}\small\item\em Accessor helper for the Request\-Result field. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbda2a8e1ab11473138d8b95056ea19323ac}{System\-Time\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08ace1096317246657c7174cc95e7ae42fd}{System\-Time\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ad4b8d0ca4f4c2bbb9cfc704e6b250e57}{T\-System\-Time\-Accessor}
-\item 
+\begin{DoxyCompactList}\small\item\em Accessor helper for the System\-Time field. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbdacfa0a3412da8705ea266357cfda4b3e5}{Number\-Of\-Clients\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08ad751beae96e2b6b6d55e322c762772c1}{Number\-Of\-Clients\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ac029cc8910297215aa037106589ec9c2}{T\-Number\-Of\-Clients\-Accessor}
-\item 
+\begin{DoxyCompactList}\small\item\em Accessor helper for the Number\-Of\-Clients field. \end{DoxyCompactList}\item 
 typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
 $<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbda0554d9a00a3e896e87549ad13eafa1ed}{System\-Mode\-Index}, \\*
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08a967e285d0517d9d1920b562699ed8080}{System\-Mode\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a241ee2024d2b124e89185884213650c2}{T\-System\-Mode\-Accessor}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Accessor helper for the System\-Mode field. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a478ac409364847fc12eada42064b79e3}{Client\-Connection\-Response} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private constructor to force the usage of the static construction method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+This class implements the Response message of the controller to the clients connection request. 
 
-
-Definition at line 113 of file Client\-Connection\-Response.\-h.
+Definition at line 220 of file Client\-Connection\-Response.\-h.
 
 
 
@@ -110,63 +115,99 @@ Definition at line 113 of file Client\-Connection\-Response.\-h.
 \subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a33254e9e1216ca2dde89b8a66f7ad18e}
 
 
-Definition at line 123 of file Client\-Connection\-Response.\-h.
+Defines the message check result type. 
+
+
+
+Definition at line 236 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_adc391c9557f0acfdb0763043058cdf83}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-Number\-Of\-Clients@{T\-Number\-Of\-Clients}}
 \index{T\-Number\-Of\-Clients@{T\-Number\-Of\-Clients}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-Number\-Of\-Clients}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-Number\-Of\-Clients}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_adc391c9557f0acfdb0763043058cdf83}
 
 
-Definition at line 138 of file Client\-Connection\-Response.\-h.
+Defines the number of clients type. 
+
+
+
+Definition at line 269 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ac029cc8910297215aa037106589ec9c2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-Number\-Of\-Clients\-Accessor@{T\-Number\-Of\-Clients\-Accessor}}
 \index{T\-Number\-Of\-Clients\-Accessor@{T\-Number\-Of\-Clients\-Accessor}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-Number\-Of\-Clients\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Number\-Of\-Clients\-Index}, {\bf Number\-Of\-Clients\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-Number\-Of\-Clients\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ac029cc8910297215aa037106589ec9c2}
 
 
-Definition at line 166 of file Client\-Connection\-Response.\-h.
+Accessor helper for the Number\-Of\-Clients field. 
+
+
+
+Definition at line 322 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4b55c1f852e288564e5aa00e882f80d5}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-Request\-Result@{T\-Request\-Result}}
 \index{T\-Request\-Result@{T\-Request\-Result}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-Request\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-Request\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4b55c1f852e288564e5aa00e882f80d5}
 
 
-Definition at line 130 of file Client\-Connection\-Response.\-h.
+Defines the result of the request type. 
+
+
+
+Definition at line 250 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_af1c0b39e843f05dcadd4e2b39c65bcee}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-Request\-Result\-Accessor@{T\-Request\-Result\-Accessor}}
 \index{T\-Request\-Result\-Accessor@{T\-Request\-Result\-Accessor}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-Request\-Result\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Request\-Result\-Index}, {\bf Request\-Result\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-Request\-Result\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_af1c0b39e843f05dcadd4e2b39c65bcee}
 
 
-Definition at line 164 of file Client\-Connection\-Response.\-h.
+Accessor helper for the Request\-Result field. 
+
+
+
+Definition at line 312 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a828bc4f350b4f661c541d988c79f05e9}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-System\-Mode@{T\-System\-Mode}}
 \index{T\-System\-Mode@{T\-System\-Mode}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-System\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-System\-Mode}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a828bc4f350b4f661c541d988c79f05e9}
 
 
-Definition at line 139 of file Client\-Connection\-Response.\-h.
+Defines the current system working mode. 
+
+
+
+Definition at line 274 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a241ee2024d2b124e89185884213650c2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-System\-Mode\-Accessor@{T\-System\-Mode\-Accessor}}
 \index{T\-System\-Mode\-Accessor@{T\-System\-Mode\-Accessor}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-System\-Mode\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf System\-Mode\-Index}, {\bf System\-Mode\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-System\-Mode\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a241ee2024d2b124e89185884213650c2}
 
 
-Definition at line 167 of file Client\-Connection\-Response.\-h.
+Accessor helper for the System\-Mode field. 
+
+
+
+Definition at line 327 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7b389f7e89631ce7c758c3a26c46c303}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-System\-Time@{T\-System\-Time}}
 \index{T\-System\-Time@{T\-System\-Time}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-System\-Time}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-System\-Time}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7b389f7e89631ce7c758c3a26c46c303}
 
 
-Definition at line 137 of file Client\-Connection\-Response.\-h.
+Defines the time of the system in epoch format. 
+
+
+
+Definition at line 264 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ad4b8d0ca4f4c2bbb9cfc704e6b250e57}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!T\-System\-Time\-Accessor@{T\-System\-Time\-Accessor}}
 \index{T\-System\-Time\-Accessor@{T\-System\-Time\-Accessor}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{T\-System\-Time\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf System\-Time\-Index}, {\bf System\-Time\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-T\-System\-Time\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ad4b8d0ca4f4c2bbb9cfc704e6b250e57}
 
 
-Definition at line 165 of file Client\-Connection\-Response.\-h.
+Accessor helper for the System\-Time field. 
+
+
+
+Definition at line 317 of file Client\-Connection\-Response.\-h.
 
 
 
@@ -174,22 +215,30 @@ Definition at line 165 of file Client\-Connection\-Response.\-h.
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Check\-Result\-Values@{Check\-Result\-Values}}
 \index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78}
+
+
+Defines the values for T\-Check\-Result. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Success@{Success}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78a3a4dbed8f44a1f0abc1efe7a4ad3d5b0}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78a3a4dbed8f44a1f0abc1efe7a4ad3d5b0}
-}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Fail@{Fail}}\item[{\em 
+}]Message is of correct type and id. \index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Fail@{Fail}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78a085c06501e85345b78e415907a88203b}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a915e4d4af1f35e3de466d27d42c57d78a085c06501e85345b78e415907a88203b}
-}]\end{description}
+}]Message has incorrect type or id. \end{description}
 \end{Desc}
 
 
-Definition at line 124 of file Client\-Connection\-Response.\-h.
+Definition at line 241 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbd}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Field\-Index\-Values@{Field\-Index\-Values}}
 \index{Field\-Index\-Values@{Field\-Index\-Values}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4cbf4ea0e840420400a931390a8acfbd}
+
+
+Index of the message fields. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -205,11 +254,15 @@ Definition at line 124 of file Client\-Connection\-Response.\-h.
 \end{Desc}
 
 
-Definition at line 156 of file Client\-Connection\-Response.\-h.
+Definition at line 301 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Field\-Size\-Values@{Field\-Size\-Values}}
 \index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a3933c56d09c6ccf4f1b533024d9d4b08}
+
+
+Size of the message fields. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -227,11 +280,15 @@ Definition at line 156 of file Client\-Connection\-Response.\-h.
 \end{Desc}
 
 
-Definition at line 147 of file Client\-Connection\-Response.\-h.
+Definition at line 289 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ae5b6f6ce8e9057779e6115b9d10f9f27}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Header\-Values@{Header\-Values}}
 \index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ae5b6f6ce8e9057779e6115b9d10f9f27}
+
+
+Message Header values. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
@@ -243,39 +300,47 @@ Definition at line 147 of file Client\-Connection\-Response.\-h.
 \end{Desc}
 
 
-Definition at line 116 of file Client\-Connection\-Response.\-h.
+Definition at line 226 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Request\-Result\-Values@{Request\-Result\-Values}}
 \index{Request\-Result\-Values@{Request\-Result\-Values}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{Request\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-Request\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8}
+
+
+Defines values for the T\-Request\-Result type. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Request\-Accepted@{Request\-Accepted}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Request\-Accepted@{Request\-Accepted}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8a25dc7f6bdc925becc175d30660c1f6ec}{Request\-Accepted}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8a25dc7f6bdc925becc175d30660c1f6ec}
-}]\index{Request\-Object\-Id\-Not\-Found@{Request\-Object\-Id\-Not\-Found}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Request\-Object\-Id\-Not\-Found@{Request\-Object\-Id\-Not\-Found}}\item[{\em 
+}]The request is accepted. \index{Request\-Object\-Id\-Not\-Found@{Request\-Object\-Id\-Not\-Found}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Request\-Object\-Id\-Not\-Found@{Request\-Object\-Id\-Not\-Found}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8a25a21c0a3a3a6d792215b28d1b566fb2}{Request\-Object\-Id\-Not\-Found}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aab8ffc2f078549c994416633d0aa8fb8a25a21c0a3a3a6d792215b28d1b566fb2}
-}]\end{description}
+}]The requested object name is not found and rejected. \end{description}
 \end{Desc}
 
 
-Definition at line 131 of file Client\-Connection\-Response.\-h.
+Definition at line 255 of file Client\-Connection\-Response.\-h.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60a}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!System\-Mode\-Values@{System\-Mode\-Values}}
 \index{System\-Mode\-Values@{System\-Mode\-Values}!TerraSwarm::Synchronous::ClientConnectionResponse@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}
 \subsubsection[{System\-Mode\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response\-::\-System\-Mode\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60a}
+
+
+Defines the values for the T\-System\-Mode type. 
+
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
 \index{Simulation\-Mode@{Simulation\-Mode}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Simulation\-Mode@{Simulation\-Mode}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60aaa5129160fa9b512de957c03f99faa3f9}{Simulation\-Mode}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60aaa5129160fa9b512de957c03f99faa3f9}
-}]\index{Real\-Time\-Mode@{Real\-Time\-Mode}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Real\-Time\-Mode@{Real\-Time\-Mode}}\item[{\em 
+}]Simulation working mode where the system is started artificially. \index{Real\-Time\-Mode@{Real\-Time\-Mode}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Real\-Time\-Mode@{Real\-Time\-Mode}}\item[{\em 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60aaa62f96af700b98db3f35ea6885a541a3}{Real\-Time\-Mode}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a4aacecf0e8e3829b1de3197919a1e60aaa62f96af700b98db3f35ea6885a541a3}
-}]\end{description}
+}]Real time working mode where the system is working in real time. Not implemented yet. \end{description}
 \end{Desc}
 
 
-Definition at line 140 of file Client\-Connection\-Response.\-h.
+Definition at line 279 of file Client\-Connection\-Response.\-h.
 
 
 
@@ -289,6 +354,10 @@ Definition at line 140 of file Client\-Connection\-Response.\-h.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a478ac409364847fc12eada42064b79e3}
 
 
+Private constructor to force the usage of the static construction method. 
+
+
+
 Definition at line 97 of file Client\-Connection\-Response.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7724857b04c7711aa3d197313b629b74}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!$\sim$\-Client\-Connection\-Response@{$\sim$\-Client\-Connection\-Response}}
@@ -298,6 +367,10 @@ Definition at line 97 of file Client\-Connection\-Response.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a7724857b04c7711aa3d197313b629b74}
+
+
+Deallocates the memory. 
+
 
 
 Definition at line 101 of file Client\-Connection\-Response.\-cpp.
@@ -312,6 +385,13 @@ Definition at line 101 of file Client\-Connection\-Response.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ad15e893416857bab01902838eee36af4}
+
+
+Checks whether the current memory holds a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} message. 
+
+\begin{DoxyReturn}{Returns}
+Result of the check. 
+\end{DoxyReturn}
 
 
 Definition at line 126 of file Client\-Connection\-Response.\-cpp.
@@ -330,6 +410,31 @@ Definition at line 126 of file Client\-Connection\-Response.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_ae38339e5fc2703a0ddb58da353722ea8}
 
 
+Creates a new \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} message and allocates memory for it. 
+
+\begin{DoxyWarning}{Warning}
+Deallocation is the responsibility of the user.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em sender\-Id} & Id of the sender. \\
+\hline
+{\em receiver\-Id} & Id of the receiver. \\
+\hline
+{\em request\-Result} & Result of the connection request. \\
+\hline
+{\em system\-Time} & Current system time. \\
+\hline
+{\em number\-Of\-Clients} & Current number of clients. \\
+\hline
+{\em system\-Mode} & Current system working mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Newly allocated message pointer. 
+\end{DoxyReturn}
+
+
 Definition at line 107 of file Client\-Connection\-Response.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aae66d7183246c6eac58aa961bff7f293}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Get\-Number\-Of\-Clients@{Get\-Number\-Of\-Clients}}
@@ -339,6 +444,13 @@ Definition at line 107 of file Client\-Connection\-Response.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_aae66d7183246c6eac58aa961bff7f293}
+
+
+Reads the Number\-Of\-Clients field. 
+
+\begin{DoxyReturn}{Returns}
+Number of clients in the system. 
+\end{DoxyReturn}
 
 
 Definition at line 153 of file Client\-Connection\-Response.\-cpp.
@@ -352,6 +464,13 @@ Definition at line 153 of file Client\-Connection\-Response.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a68294b87ea430db689b58bb56d73c969}
 
 
+Reads the Request\-Result field. 
+
+\begin{DoxyReturn}{Returns}
+Result of the connection request. 
+\end{DoxyReturn}
+
+
 Definition at line 137 of file Client\-Connection\-Response.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_af665b5c5ef472eddc40f46ad185b2d90}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Get\-Size@{Get\-Size}}
@@ -361,6 +480,13 @@ Definition at line 137 of file Client\-Connection\-Response.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_af665b5c5ef472eddc40f46ad185b2d90}
+
+
+Returns the size of a \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} message. 
+
+\begin{DoxyReturn}{Returns}
+Size of the \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_response}{Client\-Connection\-Response} message. 
+\end{DoxyReturn}
 
 
 Definition at line 169 of file Client\-Connection\-Response.\-cpp.
@@ -374,6 +500,13 @@ Definition at line 169 of file Client\-Connection\-Response.\-cpp.
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a462cfecc85eac135682b2fe3ea971526}
 
 
+Reads the System\-Mode field. 
+
+\begin{DoxyReturn}{Returns}
+The current system working mode. 
+\end{DoxyReturn}
+
+
 Definition at line 161 of file Client\-Connection\-Response.\-cpp.
 
 \hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a1f309c374b8e5197a65d0248cbdcf5d2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Response}!Get\-System\-Time@{Get\-System\-Time}}
@@ -383,6 +516,13 @@ Definition at line 161 of file Client\-Connection\-Response.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 ) const}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_response_a1f309c374b8e5197a65d0248cbdcf5d2}
+
+
+Reads the System\-Time field. 
+
+\begin{DoxyReturn}{Returns}
+Current system time. 
+\end{DoxyReturn}
 
 
 Definition at line 145 of file Client\-Connection\-Response.\-cpp.

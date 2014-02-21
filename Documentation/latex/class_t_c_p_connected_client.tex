@@ -3,6 +3,11 @@
 }
 
 
+Manages the connection to a connected client on the server side.  
+
+
+
+
 {\ttfamily \#include $<$T\-C\-P\-Connected\-Client.\-h$>$}
 
 
@@ -27,34 +32,36 @@ Collaboration diagram for T\-C\-P\-Connected\-Client\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_t_c_p_connected_client_a6e1c47791a6603dfe5cacf425587f27b}{T\-C\-P\-Connected\-Client} (const \hyperlink{class_socket_base_aad53265037e46768af4d6a0c2ebed277}{T\-Socket\-Id} socket\-Id, \hyperlink{class_i_p_address}{I\-P\-Address} \&client\-Address)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the class with a ready socket and address. \end{DoxyCompactList}\item 
 \hyperlink{class_t_c_p_connected_client_a58e14efd1eccd877ec8dc4a3a0d6211d}{T\-C\-P\-Connected\-Client} (const \hyperlink{class_t_c_p_connected_client}{T\-C\-P\-Connected\-Client} \&copy)
-\item 
+\begin{DoxyCompactList}\small\item\em Copies the contents of another instance. \end{DoxyCompactList}\item 
 \hyperlink{class_t_c_p_connected_client_aaf6bba3a6621001a030d36e117f9dd5e}{$\sim$\-T\-C\-P\-Connected\-Client} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Not used. \end{DoxyCompactList}\item 
 \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_t_c_p_connected_client_a7c3a1d1172f3880b48d35ffbf255712d}{Send\-Data} (const \hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} length)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends data to the connected client. \end{DoxyCompactList}\item 
 \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_t_c_p_connected_client_a6bfa3ec7dc46c17dbccde8383c3253da}{Receive\-Data} (\hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} reception\-Length)
-\item 
+\begin{DoxyCompactList}\small\item\em Receives data from the connected client. \end{DoxyCompactList}\item 
 \hyperlink{class_i_p_address}{I\-P\-Address} \hyperlink{class_t_c_p_connected_client_a41e3600f6ae8c52a2a4a8eb1351bf200}{Get\-Client\-Address} (void) const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the I\-P address of the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef \hyperlink{class_socket_base}{Socket\-Base}$<$ S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M $>$ \hyperlink{class_t_c_p_connected_client_a8f789adb85d13f662bc739ac7979e270}{T\-Base\-Type}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the base class for rapid development. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_i_p_address}{I\-P\-Address} \hyperlink{class_t_c_p_connected_client_a7ef3342e4792893fa7c653a5f1a02ffe}{m\-\_\-client\-Address}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em I\-P Address of the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+Manages the connection to a connected client on the server side. 
 
+When a client is accepted, an instance of the class is initialized to furthur maintain the connection. 
 
-Definition at line 14 of file T\-C\-P\-Connected\-Client.\-h.
+Definition at line 17 of file T\-C\-P\-Connected\-Client.\-h.
 
 
 
@@ -64,7 +71,11 @@ Definition at line 14 of file T\-C\-P\-Connected\-Client.\-h.
 \subsubsection[{T\-Base\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Socket\-Base}$<$S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M$>$ {\bf T\-C\-P\-Connected\-Client\-::\-T\-Base\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_t_c_p_connected_client_a8f789adb85d13f662bc739ac7979e270}
 
 
-Definition at line 34 of file T\-C\-P\-Connected\-Client.\-h.
+Defines the base class for rapid development. 
+
+
+
+Definition at line 72 of file T\-C\-P\-Connected\-Client.\-h.
 
 
 
@@ -79,6 +90,17 @@ Definition at line 34 of file T\-C\-P\-Connected\-Client.\-h.
 )}}\label{class_t_c_p_connected_client_a6e1c47791a6603dfe5cacf425587f27b}
 
 
+Initializes the class with a ready socket and address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\-Id} & Handle to the socket. \\
+\hline
+{\em client\-Address} & \hyperlink{class_i_p_address}{I\-P\-Address} of the connected client. \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line 10 of file T\-C\-P\-Connected\-Client.\-cpp.
 
 \hypertarget{class_t_c_p_connected_client_a58e14efd1eccd877ec8dc4a3a0d6211d}{\index{T\-C\-P\-Connected\-Client@{T\-C\-P\-Connected\-Client}!T\-C\-P\-Connected\-Client@{T\-C\-P\-Connected\-Client}}
@@ -90,7 +112,16 @@ Definition at line 10 of file T\-C\-P\-Connected\-Client.\-cpp.
 )}}\label{class_t_c_p_connected_client_a58e14efd1eccd877ec8dc4a3a0d6211d}
 
 
-Definition at line 15 of file T\-C\-P\-Connected\-Client.\-cpp.
+Copies the contents of another instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Instance to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file T\-C\-P\-Connected\-Client.\-cpp.
 
 \hypertarget{class_t_c_p_connected_client_aaf6bba3a6621001a030d36e117f9dd5e}{\index{T\-C\-P\-Connected\-Client@{T\-C\-P\-Connected\-Client}!$\sim$\-T\-C\-P\-Connected\-Client@{$\sim$\-T\-C\-P\-Connected\-Client}}
 \index{$\sim$\-T\-C\-P\-Connected\-Client@{$\sim$\-T\-C\-P\-Connected\-Client}!TCPConnectedClient@{T\-C\-P\-Connected\-Client}}
@@ -101,7 +132,11 @@ Definition at line 15 of file T\-C\-P\-Connected\-Client.\-cpp.
 )}}\label{class_t_c_p_connected_client_aaf6bba3a6621001a030d36e117f9dd5e}
 
 
-Definition at line 19 of file T\-C\-P\-Connected\-Client.\-cpp.
+Not used. 
+
+
+
+Definition at line 20 of file T\-C\-P\-Connected\-Client.\-cpp.
 
 
 
@@ -115,7 +150,14 @@ Definition at line 19 of file T\-C\-P\-Connected\-Client.\-cpp.
 ) const}}\label{class_t_c_p_connected_client_a41e3600f6ae8c52a2a4a8eb1351bf200}
 
 
-Definition at line 37 of file T\-C\-P\-Connected\-Client.\-cpp.
+Returns the I\-P address of the client. 
+
+\begin{DoxyReturn}{Returns}
+I\-P address of the client. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file T\-C\-P\-Connected\-Client.\-cpp.
 
 \hypertarget{class_t_c_p_connected_client_a6bfa3ec7dc46c17dbccde8383c3253da}{\index{T\-C\-P\-Connected\-Client@{T\-C\-P\-Connected\-Client}!Receive\-Data@{Receive\-Data}}
 \index{Receive\-Data@{Receive\-Data}!TCPConnectedClient@{T\-C\-P\-Connected\-Client}}
@@ -127,7 +169,23 @@ Definition at line 37 of file T\-C\-P\-Connected\-Client.\-cpp.
 )}}\label{class_t_c_p_connected_client_a6bfa3ec7dc46c17dbccde8383c3253da}
 
 
-Definition at line 30 of file T\-C\-P\-Connected\-Client.\-cpp.
+Receives data from the connected client. 
+
+This is a blocking call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer, where the received data will be stored int. \\
+\hline
+{\em reception\-Length} & Length of the buffer and the maximum receivable data size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The actual number of bytes received. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file T\-C\-P\-Connected\-Client.\-cpp.
 
 
 
@@ -150,12 +208,25 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_t_c_p_connected_client_a7c3a1d1172f3880b48d35ffbf255712d}
 
 
-Definition at line 24 of file T\-C\-P\-Connected\-Client.\-cpp.
+Sends data to the connected client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer, holding the data to be sent. \\
+\hline
+{\em length} & Length of the data to be sent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Actual number of bytes sent. 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file T\-C\-P\-Connected\-Client.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -172,7 +243,11 @@ Here is the caller graph for this function\-:
 \subsubsection[{m\-\_\-client\-Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-Address} T\-C\-P\-Connected\-Client\-::m\-\_\-client\-Address\hspace{0.3cm}{\ttfamily [private]}}}\label{class_t_c_p_connected_client_a7ef3342e4792893fa7c653a5f1a02ffe}
 
 
-Definition at line 37 of file T\-C\-P\-Connected\-Client.\-h.
+I\-P Address of the client. 
+
+
+
+Definition at line 78 of file T\-C\-P\-Connected\-Client.\-h.
 
 
 

@@ -1,27 +1,27 @@
 <map id="S2Sim/ClientManager.cpp" name="S2Sim/ClientManager.cpp">
-<area shape="rect" href="$_client_manager_8h.html" title="ClientManager.h" alt="" coords="1253,84,1395,111"/>
-<area shape="rect" href="$_message_header_8h.html" title="MessageHeader.h" alt="" coords="584,316,733,343"/>
-<area shape="rect" href="$_client_connection_request_8h.html" title="ClientConnectionRequest.h" alt="" coords="872,161,1091,188"/>
-<area shape="rect" href="$_client_connection_response_8h.html" title="ClientConnectionResponse.h" alt="" coords="619,161,848,188"/>
-<area shape="rect" href="$_set_current_price_8h.html" title="SetCurrentPrice.h" alt="" coords="1115,161,1261,188"/>
-<area shape="rect" href="$_price_proposal_8h.html" title="PriceProposal.h" alt="" coords="347,161,477,188"/>
-<area shape="rect" href="$_client_data_8h.html" title="ClientData.h" alt="" coords="5,161,117,188"/>
-<area shape="rect" href="$_get_price_8h.html" title="GetPrice.h" alt="" coords="501,161,595,188"/>
-<area shape="rect" href="$_demand_negotiation_8h.html" title="DemandNegotiation.h" alt="" coords="141,161,323,188"/>
-<area shape="rect" href="$_connection_manager_8h.html" title="ConnectionManager.h" alt="" coords="1320,393,1501,420"/>
-<area shape="rect" href="$_threaded_t_c_p_connected_client_8h.html" title="ThreadedTCPConnectedClient.h" alt="" coords="1524,625,1780,652"/>
-<area shape="rect" href="$_log_print_8h.html" title="LogPrint.h" alt="" coords="1373,471,1467,497"/>
-<area shape="rect" href="$_matlab_manager_8h.html" title="MatlabManager.h" alt="" coords="1689,161,1836,188"/>
-<area shape="rect" href="$_system_manager_8h.html" title="SystemManager.h" alt="" coords="1461,239,1613,265"/>
-<area shape="rect" href="$_network_byte_accessor_8h.html" title="NetworkByteAccessor.h" alt="" coords="453,393,640,420"/>
-<area shape="rect" href="$_compile_time_checker_library_8h.html" title="CompileTimeCheckerLibrary.h" alt="" coords="427,471,667,497"/>
-<area shape="rect" href="$_message_ender_8h.html" title="MessageEnder.h" alt="" coords="479,239,617,265"/>
-<area shape="rect" href="$_threaded_t_c_p_server_8h.html" title="ThreadedTCPServer.h" alt="" coords="1601,471,1780,497"/>
-<area shape="rect" href="$_thread_base_8h.html" title="ThreadBase.h" alt="" coords="1747,703,1867,729"/>
-<area shape="rect" href="$_t_c_p_server_8h.html" title="TCPServer.h" alt="" coords="1367,548,1476,575"/>
-<area shape="rect" href="$_socket_base_8h.html" title="SocketBase.h" alt="" coords="1501,780,1619,807"/>
-<area shape="rect" href="$_i_p_address_8h.html" title="IPAddress.h" alt="" coords="1269,780,1371,807"/>
-<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="TCPConnectedClient.h" alt="" coords="1339,703,1523,729"/>
-<area shape="rect" href="$_semaphore_8h.html" title="Semaphore.h" alt="" coords="1597,703,1717,729"/>
-<area shape="rect" href="$_control_manager_8h.html" title="ControlManager.h" alt="" coords="1575,316,1727,343"/>
+<area shape="rect" href="$_client_manager_8h.html" title="Header file for the ClientManager class. " alt="" coords="1253,84,1395,111"/>
+<area shape="rect" href="$_message_header_8h.html" title="Defines the MessageHeader class. " alt="" coords="584,316,733,343"/>
+<area shape="rect" href="$_client_connection_request_8h.html" title="Defines the ClientConnectionRequest classes. " alt="" coords="872,161,1091,188"/>
+<area shape="rect" href="$_client_connection_response_8h.html" title="Defines the Asnyc and Synchronous ClientConnectionResponse messages and classes. " alt="" coords="619,161,848,188"/>
+<area shape="rect" href="$_set_current_price_8h.html" title="Defines the SetCurrentPrice class. " alt="" coords="1115,161,1261,188"/>
+<area shape="rect" href="$_price_proposal_8h.html" title="Defines the PriceProposal class. " alt="" coords="347,161,477,188"/>
+<area shape="rect" href="$_client_data_8h.html" title="Defines the Aysnchronous and Synchronous ClientData class and messages. " alt="" coords="5,161,117,188"/>
+<area shape="rect" href="$_get_price_8h.html" title="Defines the GetPrice class and message. " alt="" coords="501,161,595,188"/>
+<area shape="rect" href="$_demand_negotiation_8h.html" title="Defines the DemandNegotiation class and message. " alt="" coords="141,161,323,188"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="This file defines the ConnectionManager class. " alt="" coords="1320,393,1501,420"/>
+<area shape="rect" href="$_threaded_t_c_p_connected_client_8h.html" title="Defeines the ThreadedTCPConnectedClient class. " alt="" coords="1524,625,1780,652"/>
+<area shape="rect" href="$_log_print_8h.html" title="Defines logging related functions. " alt="" coords="1373,471,1467,497"/>
+<area shape="rect" href="$_matlab_manager_8h.html" title="Defines the MatlabManager class. " alt="" coords="1689,161,1836,188"/>
+<area shape="rect" href="$_system_manager_8h.html" title="Defines the SystemManager class. " alt="" coords="1461,239,1613,265"/>
+<area shape="rect" href="$_network_byte_accessor_8h.html" title="Defines the NetworkByteAccessor class for byte order conversion and easier data access. " alt="" coords="453,393,640,420"/>
+<area shape="rect" href="$_compile_time_checker_library_8h.html" title="This file contains template classes to do compile time checking. " alt="" coords="427,471,667,497"/>
+<area shape="rect" href="$_message_ender_8h.html" title="Defines a MessageEnder class. " alt="" coords="479,239,617,265"/>
+<area shape="rect" href="$_threaded_t_c_p_server_8h.html" title="Defines the ThreadedTCPServer class. " alt="" coords="1601,471,1780,497"/>
+<area shape="rect" href="$_thread_base_8h.html" title="This file selects the right implementation according to the current OS. " alt="" coords="1747,703,1867,729"/>
+<area shape="rect" href="$_t_c_p_server_8h.html" title="Defines the TCPServer class. " alt="" coords="1367,548,1476,575"/>
+<area shape="rect" href="$_socket_base_8h.html" title="Defines the SocketBase template class. " alt="" coords="1501,780,1619,807"/>
+<area shape="rect" href="$_i_p_address_8h.html" title="Defines the IPAddress class. " alt="" coords="1269,780,1371,807"/>
+<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="Defines the TCPConnectedClient class. " alt="" coords="1339,703,1523,729"/>
+<area shape="rect" href="$_semaphore_8h.html" title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. " alt="" coords="1597,703,1717,729"/>
+<area shape="rect" href="$_control_manager_8h.html" title="This file defines the ControlManager class. " alt="" coords="1575,316,1727,343"/>
 </map>

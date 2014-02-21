@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<a xlink:href="class_t_c_p_client.html" target="_top" xlink:title="TCPClient">
+<a xlink:href="class_t_c_p_client.html" target="_top" xlink:title="This class defines a TCP client that can connect to a TCP server and communicate. ...">
 <polygon style="fill:white;stroke:black;" points="57,-60 57,-81 126,-81 126,-60 57,-60"/>
 <text text-anchor="middle" x="91" y="-67" style="font-family:Arial;font-size:10.00;">TCPClient</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node6" class="node"><title>Node4</title>
-<a xlink:href="class_socket_base.html" target="_top" xlink:title="SocketBase\&lt; SocketType \&gt;">
+<a xlink:href="class_socket_base.html" target="_top" xlink:title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi...">
 <polygon style="fill:white;stroke:black;" points="8,-192 8,-213 174,-213 174,-192 8,-192"/>
 <text text-anchor="middle" x="91" y="-199" style="font-family:Arial;font-size:10.00;">SocketBase&lt; SocketType &gt;</text>
 </a>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node5 -->
 <g id="node8" class="node"><title>Node5</title>
-<a xlink:href="class_thread_base.html" target="_top" xlink:title="ThreadBase">
+<a xlink:href="class_thread_base.html" target="_top" xlink:title="Provides a base class that can be inherited from to gain threading capabilities. ">
 <polygon style="fill:white;stroke:black;" points="143,-60 143,-81 224,-81 224,-60 143,-60"/>
 <text text-anchor="middle" x="183" y="-67" style="font-family:Arial;font-size:10.00;">ThreadBase</text>
 </a>

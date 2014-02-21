@@ -3,6 +3,11 @@
 }
 
 
+Defines a T\-C\-P server that can listen to connection attempts and can accept them for communication.  
+
+
+
+
 {\ttfamily \#include $<$T\-C\-P\-Server.\-h$>$}
 
 
@@ -27,29 +32,29 @@ Collaboration diagram for T\-C\-P\-Server\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_t_c_p_server_ad764ce120c77624cf1c3436ff154dd7a}{T\-C\-P\-Server} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Not used. \end{DoxyCompactList}\item 
 \hyperlink{class_t_c_p_server_ab8524656d788731d2350f50c6174554e}{$\sim$\-T\-C\-P\-Server} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Not used. \end{DoxyCompactList}\item 
 void \hyperlink{class_t_c_p_server_a85bb8272c9599d98bcb28e4156a755fb}{Set\-Address} (\hyperlink{class_i_p_address}{I\-P\-Address} \&address)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the I\-P address of the server. \end{DoxyCompactList}\item 
 void \hyperlink{class_t_c_p_server_a8d5ad30ba42960a84973b57f74a853fa}{Set\-Port} (const \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{I\-P\-Address\-::\-T\-Port} port)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the listening port of the server. \end{DoxyCompactList}\item 
 bool \hyperlink{class_t_c_p_server_a2d424428c9107b8b40905f0aefc7d30b}{Listen} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em This method makes the server listen to incoming connection attempts. \end{DoxyCompactList}\item 
 \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$ \hyperlink{class_t_c_p_server_ae53980fd5e4791bc6e5e15c97a1a796a}{Accept} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method makes the T\-C\-P server accept any incoming connection attempt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef \hyperlink{class_socket_base}{Socket\-Base}$<$ S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M $>$ \hyperlink{class_t_c_p_server_aed13a25d9b432da0be24ade2206a0914}{T\-Base\-Type}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the type of the base class for rapid development. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+Defines a T\-C\-P server that can listen to connection attempts and can accept them for communication. 
 
-
-Definition at line 15 of file T\-C\-P\-Server.\-h.
+Definition at line 18 of file T\-C\-P\-Server.\-h.
 
 
 
@@ -59,7 +64,11 @@ Definition at line 15 of file T\-C\-P\-Server.\-h.
 \subsubsection[{T\-Base\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Socket\-Base}$<$S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M$>$ {\bf T\-C\-P\-Server\-::\-T\-Base\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_t_c_p_server_aed13a25d9b432da0be24ade2206a0914}
 
 
-Definition at line 37 of file T\-C\-P\-Server.\-h.
+Defines the type of the base class for rapid development. 
+
+
+
+Definition at line 67 of file T\-C\-P\-Server.\-h.
 
 
 
@@ -73,6 +82,10 @@ Definition at line 37 of file T\-C\-P\-Server.\-h.
 )}}\label{class_t_c_p_server_ad764ce120c77624cf1c3436ff154dd7a}
 
 
+Not used. 
+
+
+
 Definition at line 10 of file T\-C\-P\-Server.\-cpp.
 
 \hypertarget{class_t_c_p_server_ab8524656d788731d2350f50c6174554e}{\index{T\-C\-P\-Server@{T\-C\-P\-Server}!$\sim$\-T\-C\-P\-Server@{$\sim$\-T\-C\-P\-Server}}
@@ -82,6 +95,10 @@ Definition at line 10 of file T\-C\-P\-Server.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_t_c_p_server_ab8524656d788731d2350f50c6174554e}
+
+
+Not used. 
+
 
 
 Definition at line 14 of file T\-C\-P\-Server.\-cpp.
@@ -96,6 +113,15 @@ Definition at line 14 of file T\-C\-P\-Server.\-cpp.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_t_c_p_server_ae53980fd5e4791bc6e5e15c97a1a796a}
+
+
+This method makes the T\-C\-P server accept any incoming connection attempt. 
+
+This is a blocking call. If any client is accepted, a \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} instance is returned for client management and communication.
+
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} for client management and communication. 
+\end{DoxyReturn}
 
 
 Definition at line 48 of file T\-C\-P\-Server.\-cpp.
@@ -131,6 +157,13 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{class_t_c_p_server_a2d424428c9107b8b40905f0aefc7d30b}
 
 
+This method makes the server listen to incoming connection attempts. 
+
+\begin{DoxyReturn}{Returns}
+Returns the success of the listen attempt. 
+\end{DoxyReturn}
+
+
 Definition at line 37 of file T\-C\-P\-Server.\-cpp.
 
 
@@ -151,6 +184,17 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{{\bf I\-P\-Address} \&}]{address}
 \end{DoxyParamCaption}
 )}}\label{class_t_c_p_server_a85bb8272c9599d98bcb28e4156a755fb}
+
+
+Sets the I\-P address of the server. 
+
+This method is not recommended as the I\-P address of the computer is mostly set, while only the port number is required. If you are not sure, use \hyperlink{class_t_c_p_server_a8d5ad30ba42960a84973b57f74a853fa}{T\-C\-P\-Server\-::\-Set\-Port()} instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & I\-P Address to be used. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 19 of file T\-C\-P\-Server.\-cpp.
@@ -184,6 +228,15 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{const {\bf I\-P\-Address\-::\-T\-Port}}]{port}
 \end{DoxyParamCaption}
 )}}\label{class_t_c_p_server_a8d5ad30ba42960a84973b57f74a853fa}
+
+
+Sets the listening port of the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Port to be listened to for incoming connection attempts. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 28 of file T\-C\-P\-Server.\-cpp.

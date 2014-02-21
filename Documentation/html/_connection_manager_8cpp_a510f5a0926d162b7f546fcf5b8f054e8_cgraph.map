@@ -1,10 +1,10 @@
 <map id="ConnectionNotificationHandler" name="ConnectionNotificationHandler">
-<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="852,143,932,169"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="8 parameter log message " alt="" coords="852,143,932,169"/>
 <area shape="rect" href="$_connection_manager_8cpp.html#ab88124ce7a3bf1d2892d0e9763d1af30" title="GetConnectionManager" alt="" coords="592,137,787,164"/>
 <area shape="rect" href="$class_connection_manager.html#a54968c1176475aa513538691b75aedc9" title="Incoming connection handler. " alt="" coords="335,71,511,116"/>
-<area shape="rect" href="$class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" title="ThreadedTCPConnectedClient\l::SetNotificationCallback" alt="" coords="301,191,544,236"/>
+<area shape="rect" href="$class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" title="Sets the notification callback function. " alt="" coords="301,191,544,236"/>
 <area shape="rect" href="$_connection_manager_8cpp.html#a2e30244a123626dc9199117c06d257ab" title="Wrapper callback method for reception notification. " alt="" coords="313,260,532,287"/>
-<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="836,339,948,365"/>
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="6 parameter warning message " alt="" coords="836,339,948,365"/>
 <area shape="rect" href="$class_connection_manager.html#a64473b0369ab91daf3a2da6b8ef576d0" title="Broken connection handler. " alt="" coords="601,359,777,404"/>
 <area shape="rect" href="$class_connection_manager.html#a4657b51054ad28143f1bddd1f5cc282c" title="New message processor. " alt="" coords="601,188,777,233"/>
 </map>

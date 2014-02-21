@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -118,6 +118,9 @@ $(document).ready(function(){initNavTree('class_terra_swarm_1_1_synchronous_1_1_
 </div><!--header-->
 <div class="contents">
 
+<p>Set Current Price message sent for the Controller to the clients to set the current price and advance the time frame.  
+ <a href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -125,32 +128,43 @@ Public Types</h2></td></tr>
 <tr class="memitem:a0234ba20aa9372d9aaee3948bd008909"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a0234ba20aa9372d9aaee3948bd008909">CheckResultValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827">Success</a> = ( TCheckResult )true, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b">Fail</a> = ( TCheckResult )false
  }</td></tr>
+<tr class="memdesc:a0234ba20aa9372d9aaee3948bd008909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the values for TCheckResult.  <a href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a0234ba20aa9372d9aaee3948bd008909">More...</a><br/></td></tr>
 <tr class="separator:a0234ba20aa9372d9aaee3948bd008909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed4ef4c867719626ede15e2f8718436"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aeed4ef4c867719626ede15e2f8718436">TCheckResult</a></td></tr>
+<tr class="memdesc:aeed4ef4c867719626ede15e2f8718436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the message check result type.  <a href="#aeed4ef4c867719626ede15e2f8718436">More...</a><br/></td></tr>
 <tr class="separator:aeed4ef4c867719626ede15e2f8718436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed14f2a90070d19a70183bb63e7708e"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a2ed14f2a90070d19a70183bb63e7708e">TPrice</a></td></tr>
+<tr class="memdesc:a2ed14f2a90070d19a70183bb63e7708e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for price signal.  <a href="#a2ed14f2a90070d19a70183bb63e7708e">More...</a><br/></td></tr>
 <tr class="separator:a2ed14f2a90070d19a70183bb63e7708e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87902078a0788d13ef70b899d83f4d3"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aa87902078a0788d13ef70b899d83f4d3">TInterval</a></td></tr>
+<tr class="memdesc:aa87902078a0788d13ef70b899d83f4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for time interval.  <a href="#aa87902078a0788d13ef70b899d83f4d3">More...</a><br/></td></tr>
 <tr class="separator:aa87902078a0788d13ef70b899d83f4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9188b1b4eeed0a333ec879acac1cc30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#ab9188b1b4eeed0a333ec879acac1cc30">~SetCurrentPrice</a> (void)</td></tr>
+<tr class="memdesc:ab9188b1b4eeed0a333ec879acac1cc30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates the memory for the message.  <a href="#ab9188b1b4eeed0a333ec879acac1cc30">More...</a><br/></td></tr>
 <tr class="separator:ab9188b1b4eeed0a333ec879acac1cc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01c2cf6549b92e8066d2f57b753ce8b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aeed4ef4c867719626ede15e2f8718436">TCheckResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a01c2cf6549b92e8066d2f57b753ce8b2">CheckMessage</a> (void) const </td></tr>
+<tr class="memdesc:a01c2cf6549b92e8066d2f57b753ce8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the current memory contains a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html" title="Set Current Price message sent for the Controller to the clients to set the current price and advance...">SetCurrentPrice</a> message.  <a href="#a01c2cf6549b92e8066d2f57b753ce8b2">More...</a><br/></td></tr>
 <tr class="separator:a01c2cf6549b92e8066d2f57b753ce8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd75de81420798be1243a02cd8ab7a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a2ed14f2a90070d19a70183bb63e7708e">TPrice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aafd75de81420798be1243a02cd8ab7a2">GetPrice</a> (void) const </td></tr>
+<tr class="memdesc:aafd75de81420798be1243a02cd8ab7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the price form the current message.  <a href="#aafd75de81420798be1243a02cd8ab7a2">More...</a><br/></td></tr>
 <tr class="separator:aafd75de81420798be1243a02cd8ab7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a5775c7987c4b1882edfa730f36e7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aa87902078a0788d13ef70b899d83f4d3">TInterval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a35a5775c7987c4b1882edfa730f36e7b">GetIntervalBegin</a> (void) const </td></tr>
+<tr class="memdesc:a35a5775c7987c4b1882edfa730f36e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the IntervalBegin field in the message.  <a href="#a35a5775c7987c4b1882edfa730f36e7b">More...</a><br/></td></tr>
 <tr class="separator:a35a5775c7987c4b1882edfa730f36e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a267e167ab05f6dd602a202fcc5d7efdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aa87902078a0788d13ef70b899d83f4d3">TInterval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a267e167ab05f6dd602a202fcc5d7efdf">GetIntervalEnd</a> (void) const </td></tr>
+<tr class="memdesc:a267e167ab05f6dd602a202fcc5d7efdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the IntervalEnd field in the message.  <a href="#a267e167ab05f6dd602a202fcc5d7efdf">More...</a><br/></td></tr>
 <tr class="separator:a267e167ab05f6dd602a202fcc5d7efdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f796519e90280eb712adabec444493e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html">SetCurrentPrice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a4f796519e90280eb712adabec444493e">GetNewSetCurrentPrice</a> (const <a class="el" href="class_terra_swarm_1_1_message_header.html#a516b36855e2aad7cfbf8770f1b42784f">MessageHeader::TSenderId</a> senderId, const <a class="el" href="class_terra_swarm_1_1_message_header.html#aa3260702b182b6f88ddbdd3416e98df0">MessageHeader::TReceiverId</a> receiverId, const <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a2ed14f2a90070d19a70183bb63e7708e">TPrice</a> price, const <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aa87902078a0788d13ef70b899d83f4d3">TInterval</a> intervalBegin, const <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#aa87902078a0788d13ef70b899d83f4d3">TInterval</a> intervalEnd)</td></tr>
+<tr class="memdesc:a4f796519e90280eb712adabec444493e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html" title="Set Current Price message sent for the Controller to the clients to set the current price and advance...">SetCurrentPrice</a> message and allocates memory for it.  <a href="#a4f796519e90280eb712adabec444493e">More...</a><br/></td></tr>
 <tr class="separator:a4f796519e90280eb712adabec444493e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e1cebec60aa525dbb32025b4201b43"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_terra_swarm.html#a092e6ec9739175076ae3106783f5c1b6">TDataSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a32e1cebec60aa525dbb32025b4201b43">GetSize</a> (void)</td></tr>
+<tr class="memdesc:a32e1cebec60aa525dbb32025b4201b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html" title="Set Current Price message sent for the Controller to the clients to set the current price and advance...">SetCurrentPrice</a> message.  <a href="#a32e1cebec60aa525dbb32025b4201b43">More...</a><br/></td></tr>
 <tr class="separator:a32e1cebec60aa525dbb32025b4201b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
@@ -158,38 +172,46 @@ Private Types</h2></td></tr>
 <tr class="memitem:a940712bcf18dc80c00b4d79fe18edf9b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a940712bcf18dc80c00b4d79fe18edf9b">HeaderValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a940712bcf18dc80c00b4d79fe18edf9ba465058dd25ba7ae05bc5285a2d3708b1">MessageType</a> = 0x0003, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a940712bcf18dc80c00b4d79fe18edf9baa56dbab91fc6a488f2a629b3278a7580">MessageId</a> = 0x0002
  }</td></tr>
+<tr class="memdesc:a940712bcf18dc80c00b4d79fe18edf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message header values.  <a href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a940712bcf18dc80c00b4d79fe18edf9b">More...</a><br/></td></tr>
 <tr class="separator:a940712bcf18dc80c00b4d79fe18edf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e183f6b467bff2559f766835197fb5d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5d">FieldSizeValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75">PriceSize</a> = sizeof( TPrice ), 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5">IntervalBeginSize</a> = sizeof( TInterval ), 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691">IntervalEndSize</a> = sizeof( TInterval ), 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5da6e935dcdc8159878532d28b745c005c8">TotalSize</a> = ( PriceSize + IntervalBeginSize + IntervalEndSize )
  }</td></tr>
+<tr class="memdesc:a8e183f6b467bff2559f766835197fb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size values for the data fields.  <a href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5d">More...</a><br/></td></tr>
 <tr class="separator:a8e183f6b467bff2559f766835197fb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e2f6ce793cf79b121b76b6903e9df58"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58">FieldIndexValues</a> { <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c">PriceIndex</a> = MessageHeader::MessageHeaderSize, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d">IntervalBeginIndex</a> = PriceIndex + PriceSize, 
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c">IntervalEndIndex</a> = IntervalBeginIndex + IntervalBeginSize
  }</td></tr>
+<tr class="memdesc:a1e2f6ce793cf79b121b76b6903e9df58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index values for the fata fields.  <a href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58">More...</a><br/></td></tr>
 <tr class="separator:a1e2f6ce793cf79b121b76b6903e9df58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950c013f39e20f890173e81a716e3b6b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c">PriceIndex</a>, <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75">PriceSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a950c013f39e20f890173e81a716e3b6b">TPriceAccessor</a></td></tr>
+<tr class="memdesc:a950c013f39e20f890173e81a716e3b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor helper for the Price field.  <a href="#a950c013f39e20f890173e81a716e3b6b">More...</a><br/></td></tr>
 <tr class="separator:a950c013f39e20f890173e81a716e3b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d095e9cd5341bca06b121f115875bcc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d">IntervalBeginIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5">IntervalBeginSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a2d095e9cd5341bca06b121f115875bcc">TIntervalBeginAccessor</a></td></tr>
+<tr class="memdesc:a2d095e9cd5341bca06b121f115875bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor helper for the IntervalBegin field.  <a href="#a2d095e9cd5341bca06b121f115875bcc">More...</a><br/></td></tr>
 <tr class="separator:a2d095e9cd5341bca06b121f115875bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada50db521ec8f4351b11c9e7a55191f6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a><br class="typebreak"/>
 &lt; <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c">IntervalEndIndex</a>, <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691">IntervalEndSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#ada50db521ec8f4351b11c9e7a55191f6">TIntervalEndAccessor</a></td></tr>
+<tr class="memdesc:ada50db521ec8f4351b11c9e7a55191f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor helper for the IntervalEnd field.  <a href="#ada50db521ec8f4351b11c9e7a55191f6">More...</a><br/></td></tr>
 <tr class="separator:ada50db521ec8f4351b11c9e7a55191f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a1d8f82415c6d84a85176ee9f233288dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a1d8f82415c6d84a85176ee9f233288dd">SetCurrentPrice</a> (void)</td></tr>
+<tr class="memdesc:a1d8f82415c6d84a85176ee9f233288dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">No use.  <a href="#a1d8f82415c6d84a85176ee9f233288dd">More...</a><br/></td></tr>
 <tr class="separator:a1d8f82415c6d84a85176ee9f233288dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00019">19</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<div class="textblock"><p>Set Current Price message sent for the Controller to the clients to set the current price and advance the time frame. </p>
+
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00022">22</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aeed4ef4c867719626ede15e2f8718436"></a>
 <div class="memitem">
@@ -201,7 +223,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00029">29</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Defines the message check result type. </p>
+
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00038">38</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +239,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00037">37</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Type for time interval. </p>
+
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00057">57</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +263,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00056">56</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Accessor helper for the IntervalBegin field. </p>
+
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00089">89</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +287,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00057">57</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Accessor helper for the IntervalEnd field. </p>
+
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00094">94</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +303,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00036">36</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Type for price signal. </p>
+
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00052">52</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -295,7 +327,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00055">55</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Accessor helper for the Price field. </p>
+
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00084">84</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -309,14 +343,18 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Defines the values for TCheckResult. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827"></a>Success</em>&#160;</td><td class="fielddoc">
+<p>Message is of correct type and id. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b"></a>Fail</em>&#160;</td><td class="fielddoc">
+<p>Message has incorrect type or id. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00030">30</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00043">43</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -337,6 +375,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Index values for the fata fields. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c"></a>PriceIndex</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -346,7 +386,7 @@ Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00048">48</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00074">74</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -367,6 +407,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Size values for the data fields. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75"></a>PriceSize</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -378,7 +420,7 @@ Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00040">40</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00063">63</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -399,6 +441,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Message header values. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a940712bcf18dc80c00b4d79fe18edf9ba465058dd25ba7ae05bc5285a2d3708b1"></a>MessageType</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -406,7 +450,7 @@ Private Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00022">22</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
+<p>Definition at line <a class="el" href="_set_current_price_8h_source.html#l00028">28</a> of file <a class="el" href="_set_current_price_8h_source.html">SetCurrentPrice.h</a>.</p>
 
 </div>
 </div>
@@ -433,6 +477,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>No use. </p>
+<p>Private constructor to force usage of the static creation method. </p>
+
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00014">14</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
 </div>
@@ -450,6 +497,8 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deallocates the memory for the message. </p>
 
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00018">18</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
@@ -470,6 +519,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Checks whether the current memory contains a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html" title="Set Current Price message sent for the Controller to the clients to set the current price and advance...">SetCurrentPrice</a> message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Result of the check. </dd></dl>
+
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00041">41</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
 </div>
@@ -488,6 +540,9 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Reads the IntervalBegin field in the message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Value of IntervalBegin in the message. </dd></dl>
+
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00060">60</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
 </div>
@@ -505,6 +560,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads the IntervalEnd field in the message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Value of IntervalEnd in the message. </dd></dl>
 
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00068">68</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
@@ -560,6 +618,20 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a new <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html" title="Set Current Price message sent for the Controller to the clients to set the current price and advance...">SetCurrentPrice</a> message and allocates memory for it. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Deallocation is the responsibility of the user.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderId</td><td>Id of the sender. </td></tr>
+    <tr><td class="paramname">receiverId</td><td>Id of the receiver. </td></tr>
+    <tr><td class="paramname">price</td><td>Price signal to be set. </td></tr>
+    <tr><td class="paramname">intervalBegin</td><td>Beginning of the price interval. </td></tr>
+    <tr><td class="paramname">intervalEnd</td><td>Ending of the price interval.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a new allocated message. </dd></dl>
+
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00024">24</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
 </div>
@@ -577,6 +649,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads the price form the current message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Price value in the message. </dd></dl>
 
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00052">52</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
@@ -604,6 +679,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the size of a <a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html" title="Set Current Price message sent for the Controller to the clients to set the current price and advance...">SetCurrentPrice</a> message. </p>
+<dl class="section return"><dt>Returns</dt><dd>&lt;#return value description#&gt; </dd></dl>
+
 <p>Definition at line <a class="el" href="_set_current_price_8cpp_source.html#l00076">76</a> of file <a class="el" href="_set_current_price_8cpp_source.html">SetCurrentPrice.cpp</a>.</p>
 
 </div>
@@ -618,7 +696,7 @@ Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_terra_swarm.html">TerraSwarm</a></li><li class="navelem"><a class="el" href="namespace_terra_swarm_1_1_synchronous.html">Synchronous</a></li><li class="navelem"><a class="el" href="class_terra_swarm_1_1_synchronous_1_1_set_current_price.html">SetCurrentPrice</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:35 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

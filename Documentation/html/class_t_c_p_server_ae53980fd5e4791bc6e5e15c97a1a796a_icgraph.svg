@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083" target="_top" xlink:title="ThreadedTCPServer::\lExecutionBody">
+<a xlink:href="class_threaded_t_c_p_server.html#a1e706ece4845443580b2e9c98f178083" target="_top" xlink:title="The execution body of the thread. ">
 <polygon style="fill:white;stroke:black;" points="153,-0 153,-34 284,-34 284,-0 153,-0"/>
 <text text-anchor="start" x="161" y="-20" style="font-family:Arial;font-size:10.00;">ThreadedTCPServer::</text>
 <text text-anchor="middle" x="218" y="-7" style="font-family:Arial;font-size:10.00;">ExecutionBody</text>

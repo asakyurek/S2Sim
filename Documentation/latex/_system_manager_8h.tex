@@ -1,6 +1,11 @@
 \hypertarget{_system_manager_8h}{\section{S2\-Sim/\-System\-Manager.h File Reference}
 \label{_system_manager_8h}\index{S2\-Sim/\-System\-Manager.\-h@{S2\-Sim/\-System\-Manager.\-h}}
 }
+
+
+Defines the \hyperlink{class_system_manager}{System\-Manager} class.  
+
+
 {\ttfamily \#include $<$map$>$}\\*
 {\ttfamily \#include \char`\"{}Client\-Manager.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Matlab\-Manager.\-h\char`\"{}}\\*
@@ -24,12 +29,25 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_system_manager}{System\-Manager}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Manages the various components of the system and timing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_system_manager}{System\-Manager} \& \hyperlink{_system_manager_8h_a97e64f74d188d41051488578800d20cd}{Get\-System\-Manager} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Singleton function that returns the only instance of \hyperlink{class_system_manager}{System\-Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the \hyperlink{class_system_manager}{System\-Manager} class. \begin{DoxyDate}{Date}
+Oct 25, 2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\-: Alper Sinan Akyurek 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{_system_manager_8h_source}{System\-Manager.\-h}.
+
 
 
 \subsection{Function Documentation}
@@ -42,12 +60,22 @@ class \hyperlink{class_system_manager}{System\-Manager}
 )}}\label{_system_manager_8h_a97e64f74d188d41051488578800d20cd}
 
 
+Singleton function that returns the only instance of \hyperlink{class_system_manager}{System\-Manager}. 
+
+Friend function to implement the singleton.
+
+\begin{DoxyReturn}{Returns}
+The only instance of \hyperlink{class_system_manager}{System\-Manager}.
+
+Returns the only instance of \hyperlink{class_system_manager}{System\-Manager}. 
+\end{DoxyReturn}
+
+
 Definition at line 13 of file System\-Manager.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -32,7 +32,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_client_manager.html#adb64a2ee5d0eb7b1a4bdedcd0e3b92f5" target="_top" xlink:title="ClientManager::SetCurrent\lPrice">
+<a xlink:href="class_client_manager.html#adb64a2ee5d0eb7b1a4bdedcd0e3b92f5" target="_top" xlink:title="Sends a price signal to the client. ">
 <polygon style="fill:white;stroke:black;" points="190,-370 190,-404 351,-404 351,-370 190,-370"/>
 <text text-anchor="start" x="198" y="-390" style="font-family:Arial;font-size:10.00;">ClientManager::SetCurrent</text>
 <text text-anchor="middle" x="270" y="-377" style="font-family:Arial;font-size:10.00;">Price</text>
@@ -45,7 +45,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_client_manager.html#ae297765312b5f2f93f7b8ec700ad2fbb" target="_top" xlink:title="ClientManager::PriceProposal">
+<a xlink:href="class_client_manager.html#ae297765312b5f2f93f7b8ec700ad2fbb" target="_top" xlink:title="Sends a price proposal to the client. ">
 <polygon style="fill:white;stroke:black;" points="183,-331 183,-352 357,-352 357,-331 183,-331"/>
 <text text-anchor="middle" x="270" y="-338" style="font-family:Arial;font-size:10.00;">ClientManager::PriceProposal</text>
 </a>
@@ -69,7 +69,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" target="_top" xlink:title="ControlManager::ClientPrice\lRequest">
+<a xlink:href="class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" target="_top" xlink:title="Relays the price request of a client to the External Controller. ">
 <polygon style="fill:white;stroke:black;" points="186,-280 186,-314 354,-314 354,-280 186,-280"/>
 <text text-anchor="start" x="194" y="-300" style="font-family:Arial;font-size:10.00;">ControlManager::ClientPrice</text>
 <text text-anchor="middle" x="270" y="-287" style="font-family:Arial;font-size:10.00;">Request</text>
@@ -82,7 +82,7 @@
 </g>
 <!-- Node11 -->
 <g id="node22" class="node"><title>Node11</title>
-<a xlink:href="class_control_manager.html#a5b551f560431d0bb0bcf6c338bac8eb3" target="_top" xlink:title="ControlManager::ClientDemand\lNegotiation">
+<a xlink:href="class_control_manager.html#a5b551f560431d0bb0bcf6c338bac8eb3" target="_top" xlink:title="Relays the demand negotiation response of the client to the External Controller. ">
 <polygon style="fill:white;stroke:black;" points="176,-228 176,-262 365,-262 365,-228 176,-228"/>
 <text text-anchor="start" x="184" y="-248" style="font-family:Arial;font-size:10.00;">ControlManager::ClientDemand</text>
 <text text-anchor="middle" x="270" y="-235" style="font-family:Arial;font-size:10.00;">Negotiation</text>
@@ -95,7 +95,7 @@
 </g>
 <!-- Node13 -->
 <g id="node27" class="node"><title>Node13</title>
-<a xlink:href="class_matlab_manager.html#a1c967acc77ef8db3113e83a5325b5729" target="_top" xlink:title="MatlabManager::IsClientPresent">
+<a xlink:href="class_matlab_manager.html#a1c967acc77ef8db3113e83a5325b5729" target="_top" xlink:title="Checks for the presence of a client by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="177,-151 177,-172 364,-172 364,-151 177,-151"/>
 <text text-anchor="middle" x="270" y="-158" style="font-family:Arial;font-size:10.00;">MatlabManager::IsClientPresent</text>
 </a>
@@ -107,7 +107,7 @@
 </g>
 <!-- Node14 -->
 <g id="node29" class="node"><title>Node14</title>
-<a xlink:href="class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" target="_top" xlink:title="MatlabManager::SetWattage">
+<a xlink:href="class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" target="_top" xlink:title="Sets the consumption of a client by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="185,-113 185,-134 356,-134 356,-113 185,-113"/>
 <text text-anchor="middle" x="270" y="-120" style="font-family:Arial;font-size:10.00;">MatlabManager::SetWattage</text>
 </a>
@@ -119,7 +119,7 @@
 </g>
 <!-- Node15 -->
 <g id="node32" class="node"><title>Node15</title>
-<a xlink:href="class_matlab_manager.html#afc7fd3eb3469eb7be2af5b857e6f45e1" target="_top" xlink:title="MatlabManager::GetWattage">
+<a xlink:href="class_matlab_manager.html#afc7fd3eb3469eb7be2af5b857e6f45e1" target="_top" xlink:title="Gets the consumption of an object by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="184,-75 184,-96 356,-96 356,-75 184,-75"/>
 <text text-anchor="middle" x="270" y="-82" style="font-family:Arial;font-size:10.00;">MatlabManager::GetWattage</text>
 </a>
@@ -131,7 +131,7 @@
 </g>
 <!-- Node16 -->
 <g id="node34" class="node"><title>Node16</title>
-<a xlink:href="class_matlab_manager.html#ab741bd4f6545e11dd7dd28548c5229dd" target="_top" xlink:title="MatlabManager::GetVoltage">
+<a xlink:href="class_matlab_manager.html#ab741bd4f6545e11dd7dd28548c5229dd" target="_top" xlink:title="Gets the terminal voltage of an object by communicating with OpenDSS controller. ">
 <polygon style="fill:white;stroke:black;" points="186,-37 186,-58 354,-58 354,-37 186,-37"/>
 <text text-anchor="middle" x="270" y="-44" style="font-family:Arial;font-size:10.00;">MatlabManager::GetVoltage</text>
 </a>
@@ -143,7 +143,7 @@
 </g>
 <!-- Node17 -->
 <g id="node36" class="node"><title>Node17</title>
-<a xlink:href="class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" target="_top" xlink:title="MatlabManager::AdvanceTimeStep">
+<a xlink:href="class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" target="_top" xlink:title="Sends a signal to OpenDSS controller to indicate the end of a time step. ">
 <polygon style="fill:white;stroke:black;" points="167,1 167,-20 374,-20 374,1 167,1"/>
 <text text-anchor="middle" x="270" y="-6" style="font-family:Arial;font-size:10.00;">MatlabManager::AdvanceTimeStep</text>
 </a>
@@ -167,7 +167,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="SystemManager::AdvanceTimeStep">
+<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="Main time iteration of the system. ">
 <polygon style="fill:white;stroke:black;" points="410,-113 410,-134 620,-134 620,-113 410,-113"/>
 <text text-anchor="middle" x="515" y="-120" style="font-family:Arial;font-size:10.00;">SystemManager::AdvanceTimeStep</text>
 </a>

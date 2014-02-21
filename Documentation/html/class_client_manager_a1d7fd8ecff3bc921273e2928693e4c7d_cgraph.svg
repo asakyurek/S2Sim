@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="465,-82 465,-103 525,-103 525,-82 465,-82"/>
 <text text-anchor="middle" x="495" y="-89" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_terra_swarm_1_1_synchronous_1_1_client_data.html#ac71da8ed6f56cfdac3f01131f6bef342" target="_top" xlink:title="TerraSwarm::Synchronous\l::ClientData::GetDataPoint">
+<a xlink:href="class_terra_swarm_1_1_synchronous_1_1_client_data.html#ac71da8ed6f56cfdac3f01131f6bef342" target="_top" xlink:title="Reads the data point in the message. ">
 <polygon style="fill:white;stroke:black;" points="247,-76 247,-110 405,-110 405,-76 247,-76"/>
 <text text-anchor="start" x="255" y="-96" style="font-family:Arial;font-size:10.00;">TerraSwarm::Synchronous</text>
 <text text-anchor="middle" x="326" y="-83" style="font-family:Arial;font-size:10.00;">::ClientData::GetDataPoint</text>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="GetSystemManager">
+<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="Singleton function that returns the only instance of SystemManager. ">
 <polygon style="fill:white;stroke:black;" points="265,-37 265,-58 388,-58 388,-37 265,-37"/>
 <text text-anchor="middle" x="326" y="-44" style="font-family:Arial;font-size:10.00;">GetSystemManager</text>
 </a>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" target="_top" xlink:title="SystemManager::RegisterData">
+<a xlink:href="class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" target="_top" xlink:title="Used to register multiple consumption information. ">
 <polygon style="fill:white;stroke:black;" points="236,1 236,-20 416,-20 416,1 236,1"/>
 <text text-anchor="middle" x="326" y="-6" style="font-family:Arial;font-size:10.00;">SystemManager::RegisterData</text>
 </a>
@@ -72,7 +72,7 @@
 </g>
 <!-- Node6 -->
 <g id="node12" class="node"><title>Node6</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="453,1 453,-20 538,-20 538,1 453,1"/>
 <text text-anchor="middle" x="495" y="-6" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>

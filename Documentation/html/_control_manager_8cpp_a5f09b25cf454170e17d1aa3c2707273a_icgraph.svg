@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="ControlManager::ControlManager">
+<a xlink:href="class_control_manager.html#ab81bac3e592705b7ca4b23ce473fe26e" target="_top" xlink:title="Private constructor for singleton implementation. ">
 <polygon style="fill:white;stroke:black;" points="198,1 198,-20 396,-20 396,1 198,1"/>
 <text text-anchor="middle" x="297" y="-6" style="font-family:Arial;font-size:10.00;">ControlManager::ControlManager</text>
 </a>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -113,12 +113,17 @@ $(document).ready(function(){initNavTree('class_terra_swarm_1_1_network_byte_acc
 <div class="title">TerraSwarm::NetworkByteAccessor&lt; byteIndex, dataSize &gt;::EndianConverter&lt; TInput, size &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Template class that uses the correct conversion function according to the size of the data.  
+ <a href="class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa33fe4997f3ec0957f43d003b925f224"><td class="memItemLeft" align="right" valign="top">static TInput&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter.html#aa33fe4997f3ec0957f43d003b925f224">NetworkToHost</a> (const TInput &amp;value)</td></tr>
+<tr class="memdesc:aa33fe4997f3ec0957f43d003b925f224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the network byte order to host byte order.  <a href="#aa33fe4997f3ec0957f43d003b925f224">More...</a><br/></td></tr>
 <tr class="separator:aa33fe4997f3ec0957f43d003b925f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab43849574a96cddb8f398d93afaf8f91"><td class="memItemLeft" align="right" valign="top">static TInput&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter.html#ab43849574a96cddb8f398d93afaf8f91">HostToNetwork</a> (const TInput &amp;value)</td></tr>
+<tr class="memdesc:ab43849574a96cddb8f398d93afaf8f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the host byte order to the network byte order.  <a href="#ab43849574a96cddb8f398d93afaf8f91">More...</a><br/></td></tr>
 <tr class="separator:ab43849574a96cddb8f398d93afaf8f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -126,8 +131,17 @@ Static Public Member Functions</h2></td></tr>
 template&lt;typename TInput, TDataSize size = sizeof( TInput )&gt;<br/>
 class TerraSwarm::NetworkByteAccessor&lt; byteIndex, dataSize &gt;::EndianConverter&lt; TInput, size &gt;</h3>
 
+<p>Template class that uses the correct conversion function according to the size of the data. </p>
+<p>The default specialization is for any size not equal to 1,2 or 4.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TInput</td><td>Type of the field that is to be accessed. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of TInput, done automatically. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="_network_byte_accessor_8h_source.html#l00030">30</a> of file <a class="el" href="_network_byte_accessor_8h_source.html">NetworkByteAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="_network_byte_accessor_8h_source.html#l00049">49</a> of file <a class="el" href="_network_byte_accessor_8h_source.html">NetworkByteAccessor.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab43849574a96cddb8f398d93afaf8f91"></a>
 <div class="memitem">
@@ -155,7 +169,16 @@ template&lt;typename TInput , TDataSize size = sizeof( TInput )&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_network_byte_accessor_8h_source.html#l00039">39</a> of file <a class="el" href="_network_byte_accessor_8h_source.html">NetworkByteAccessor.h</a>.</p>
+<p>Converts the host byte order to the network byte order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Value to be converted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Converted value. </dd></dl>
+
+<p>Definition at line <a class="el" href="_network_byte_accessor_8h_source.html#l00073">73</a> of file <a class="el" href="_network_byte_accessor_8h_source.html">NetworkByteAccessor.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -192,7 +215,16 @@ template&lt;typename TInput , TDataSize size = sizeof( TInput )&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_network_byte_accessor_8h_source.html#l00034">34</a> of file <a class="el" href="_network_byte_accessor_8h_source.html">NetworkByteAccessor.h</a>.</p>
+<p>Converts the network byte order to host byte order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Values to be converted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Converted result. </dd></dl>
+
+<p>Definition at line <a class="el" href="_network_byte_accessor_8h_source.html#l00060">60</a> of file <a class="el" href="_network_byte_accessor_8h_source.html">NetworkByteAccessor.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -212,7 +244,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_terra_swarm.html">TerraSwarm</a></li><li class="navelem"><a class="el" href="class_terra_swarm_1_1_network_byte_accessor.html">NetworkByteAccessor</a></li><li class="navelem"><a class="el" href="class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter.html">EndianConverter</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:35 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

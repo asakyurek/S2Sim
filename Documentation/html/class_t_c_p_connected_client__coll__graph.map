@@ -1,5 +1,5 @@
 <map id="TCPConnectedClient" name="TCPConnectedClient">
 <area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SOCK_STREAM \&gt;" alt="" coords="5,103,248,129"/>
-<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SocketType \&gt;" alt="" coords="16,7,237,33"/>
-<area shape="rect" href="$class_i_p_address.html" title="IPAddress" alt="" coords="272,103,360,129"/>
+<area shape="rect" href="$class_socket_base.html" title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi..." alt="" coords="16,7,237,33"/>
+<area shape="rect" href="$class_i_p_address.html" title="This class is an abstraction of the OS IP Address structure. " alt="" coords="272,103,360,129"/>
 </map>

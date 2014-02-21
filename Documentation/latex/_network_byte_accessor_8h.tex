@@ -1,6 +1,11 @@
 \hypertarget{_network_byte_accessor_8h}{\section{S2\-Sim/\-Terraswarm\-Library/\-Network\-Byte\-Accessor.h File Reference}
 \label{_network_byte_accessor_8h}\index{S2\-Sim/\-Terraswarm\-Library/\-Network\-Byte\-Accessor.\-h@{S2\-Sim/\-Terraswarm\-Library/\-Network\-Byte\-Accessor.\-h}}
 }
+
+
+Defines the Network\-Byte\-Accessor class for byte order conversion and easier data access.  
+
+
 {\ttfamily \#include $<$string.\-h$>$}\\*
 {\ttfamily \#include \char`\"{}Compile\-Time\-Checker\-Library.\-h\char`\"{}}\\*
 Include dependency graph for Network\-Byte\-Accessor.\-h\-:\nopagebreak
@@ -21,24 +26,37 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Template class to automatically convert byte order and help access ordered bytes in the memory. \end{DoxyCompactList}\item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter}{Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-::\-Endian\-Converter$<$ T\-Input, size $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Template class that uses the correct conversion function according to the size of the data. \end{DoxyCompactList}\item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_011_01_4}{Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-::\-Endian\-Converter$<$ T\-Input, 1 $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Template specialization for a type with size 1 (char). \end{DoxyCompactList}\item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_012_01_4}{Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-::\-Endian\-Converter$<$ T\-Input, 2 $>$}
-\item 
+\begin{DoxyCompactList}\small\item\em Template specialization for a type with size 2 (short). \end{DoxyCompactList}\item 
 class \hyperlink{class_terra_swarm_1_1_network_byte_accessor_1_1_endian_converter_3_01_t_input_00_014_01_4}{Terra\-Swarm\-::\-Network\-Byte\-Accessor$<$ byte\-Index, data\-Size $>$\-::\-Endian\-Converter$<$ T\-Input, 4 $>$}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Template specialization for a type with size 4 (int). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{namespace_terra_swarm}{Terra\-Swarm}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_terra_swarm}{Terra\-Swarm} related classes are defined under this namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 typedef unsigned int \hyperlink{namespace_terra_swarm_a5f9f404900316abc28c8bd2cbaa8fb4b}{Terra\-Swarm\-::\-T\-Byte\-Index}
-\item 
+\begin{DoxyCompactList}\small\item\em Index of a byte in memory. \end{DoxyCompactList}\item 
 typedef unsigned int \hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{Terra\-Swarm\-::\-T\-Data\-Size}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Size of a data in memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the Network\-Byte\-Accessor class for byte order conversion and easier data access. \begin{DoxyDate}{Date}
+Oct 8, 2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\-: Alper Sinan Akyurek 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{_network_byte_accessor_8h_source}{Network\-Byte\-Accessor.\-h}.
+

@@ -3,6 +3,11 @@
 }
 
 
+This is a T\-C\-P client class that receives data in a separate thread in the background.  
+
+
+
+
 {\ttfamily \#include $<$Threaded\-T\-C\-P\-Client.\-h$>$}
 
 
@@ -27,39 +32,41 @@ Collaboration diagram for Threaded\-T\-C\-P\-Client\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 typedef void($\ast$ \hyperlink{class_threaded_t_c_p_client_a67efb980455f9da4cdecd46eebbbb568}{T\-Notification} )(\hyperlink{class_threaded_t_c_p_client}{Threaded\-T\-C\-P\-Client} $\ast$, \hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} data, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} size)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines the callback type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_threaded_t_c_p_client_aee05df10793942b468883521a5bcc666}{Threaded\-T\-C\-P\-Client} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Starts the thread and initializes the variables. \end{DoxyCompactList}\item 
 \hyperlink{class_threaded_t_c_p_client_a79bb042d9ffb617c8da0dcef486d7a07}{Threaded\-T\-C\-P\-Client} (const \hyperlink{class_t_c_p_client}{T\-C\-P\-Client} \&client)
-\item 
+\begin{DoxyCompactList}\small\item\em Copies only the T\-C\-P Client part and starts a new thread. \end{DoxyCompactList}\item 
 \hyperlink{class_threaded_t_c_p_client_a54cabf8982b04e30fa81189bbeeab5d8}{$\sim$\-Threaded\-T\-C\-P\-Client} (void)  throw ()
-\item 
+\begin{DoxyCompactList}\small\item\em Stops execution. \end{DoxyCompactList}\item 
 void \hyperlink{class_threaded_t_c_p_client_a46f301432b075ae8ce3928cb8635a546}{Set\-Notification\-Callback} (\hyperlink{class_threaded_t_c_p_client_a67efb980455f9da4cdecd46eebbbb568}{T\-Notification} notification)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the notification callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void $\ast$ \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}{Execution\-Body} (void $\ast$input)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The execution body of the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_threaded_t_c_p_client_a67efb980455f9da4cdecd46eebbbb568}{T\-Notification} \hyperlink{class_threaded_t_c_p_client_adc7409a7ec74e4ee527be24008cc2208}{m\-\_\-notification}
-\item 
+\begin{DoxyCompactList}\small\item\em Notification callback to be called. \end{DoxyCompactList}\item 
 bool \hyperlink{class_threaded_t_c_p_client_a32d0d8b7239c8eda6ff9d4ab45de5e8e}{m\-\_\-started}
-\item 
+\begin{DoxyCompactList}\small\item\em Boolean variable to stop the thread. \end{DoxyCompactList}\item 
 Semaphore \hyperlink{class_threaded_t_c_p_client_a54007f130f17856b944f0f35656ebc5c}{m\-\_\-allowing\-Semaphore}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This semaphore is released only if there is a legitimate callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+This is a T\-C\-P client class that receives data in a separate thread in the background. 
 
+In order to use the class, a notification callback needs to be set that will be called when a data is received. 
 
-Definition at line 15 of file Threaded\-T\-C\-P\-Client.\-h.
+Definition at line 18 of file Threaded\-T\-C\-P\-Client.\-h.
 
 
 
@@ -69,7 +76,16 @@ Definition at line 15 of file Threaded\-T\-C\-P\-Client.\-h.
 \subsubsection[{T\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}typedef void( $\ast$ Threaded\-T\-C\-P\-Client\-::\-T\-Notification)({\bf Threaded\-T\-C\-P\-Client} $\ast$, {\bf T\-Buffer} data, const {\bf T\-Number\-Of\-Bytes} size)}}\label{class_threaded_t_c_p_client_a67efb980455f9da4cdecd46eebbbb568}
 
 
-Definition at line 18 of file Threaded\-T\-C\-P\-Client.\-h.
+Defines the callback type. 
+
+The function should have three inputs\-:
+\begin{DoxyItemize}
+\item Threaded\-T\-C\-P\-Client$\ast$\-: The function will be notified who the sender is.
+\item T\-Buffer\-: The function will be provided the data received in a buffer on the stack. The function is responsible of copying the data or it will be overwritten.
+\item T\-Number\-Of\-Bytes\-: The function will be provided how many bytes have been actually received. 
+\end{DoxyItemize}
+
+Definition at line 27 of file Threaded\-T\-C\-P\-Client.\-h.
 
 
 
@@ -81,6 +97,10 @@ Definition at line 18 of file Threaded\-T\-C\-P\-Client.\-h.
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}}\label{class_threaded_t_c_p_client_aee05df10793942b468883521a5bcc666}
+
+
+Starts the thread and initializes the variables. 
+
 
 
 Definition at line 10 of file Threaded\-T\-C\-P\-Client.\-cpp.
@@ -105,6 +125,10 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{class_threaded_t_c_p_client_a79bb042d9ffb617c8da0dcef486d7a07}
 
 
+Copies only the T\-C\-P Client part and starts a new thread. 
+
+
+
 Definition at line 15 of file Threaded\-T\-C\-P\-Client.\-cpp.
 
 
@@ -127,6 +151,10 @@ Here is the call graph for this function\-:\nopagebreak
 ) throw  ) }}\label{class_threaded_t_c_p_client_a54cabf8982b04e30fa81189bbeeab5d8}
 
 
+Stops execution. 
+
+
+
 Definition at line 20 of file Threaded\-T\-C\-P\-Client.\-cpp.
 
 
@@ -141,7 +169,21 @@ Definition at line 20 of file Threaded\-T\-C\-P\-Client.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}
 
 
-Implements \hyperlink{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{Thread\-Base}.
+The execution body of the thread. 
+
+The thread waits for a semaphore, which is released only once when the notification callback is set. If the semaphore is taken, the thread will start receiving data from the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Not used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Not used. N\-U\-L\-L. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_thread_base_a9904309fcfb4dce33130ef1f1a1c227e}{Thread\-Base}.
 
 
 
@@ -167,7 +209,18 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_threaded_t_c_p_client_a46f301432b075ae8ce3928cb8635a546}
 
 
-Definition at line 34 of file Threaded\-T\-C\-P\-Client.\-h.
+Sets the notification callback function. 
+
+If the semaphore was already released, it is taken back. If the new callback is legit, it is released again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & Notification callback function. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file Threaded\-T\-C\-P\-Client.\-h.
 
 
 
@@ -177,21 +230,33 @@ Definition at line 34 of file Threaded\-T\-C\-P\-Client.\-h.
 \subsubsection[{m\-\_\-allowing\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Threaded\-T\-C\-P\-Client\-::m\-\_\-allowing\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_threaded_t_c_p_client_a54007f130f17856b944f0f35656ebc5c}
 
 
-Definition at line 26 of file Threaded\-T\-C\-P\-Client.\-h.
+This semaphore is released only if there is a legitimate callback function. 
+
+
+
+Definition at line 53 of file Threaded\-T\-C\-P\-Client.\-h.
 
 \hypertarget{class_threaded_t_c_p_client_adc7409a7ec74e4ee527be24008cc2208}{\index{Threaded\-T\-C\-P\-Client@{Threaded\-T\-C\-P\-Client}!m\-\_\-notification@{m\-\_\-notification}}
 \index{m\-\_\-notification@{m\-\_\-notification}!ThreadedTCPClient@{Threaded\-T\-C\-P\-Client}}
 \subsubsection[{m\-\_\-notification}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Notification} Threaded\-T\-C\-P\-Client\-::m\-\_\-notification\hspace{0.3cm}{\ttfamily [private]}}}\label{class_threaded_t_c_p_client_adc7409a7ec74e4ee527be24008cc2208}
 
 
-Definition at line 24 of file Threaded\-T\-C\-P\-Client.\-h.
+Notification callback to be called. 
+
+
+
+Definition at line 43 of file Threaded\-T\-C\-P\-Client.\-h.
 
 \hypertarget{class_threaded_t_c_p_client_a32d0d8b7239c8eda6ff9d4ab45de5e8e}{\index{Threaded\-T\-C\-P\-Client@{Threaded\-T\-C\-P\-Client}!m\-\_\-started@{m\-\_\-started}}
 \index{m\-\_\-started@{m\-\_\-started}!ThreadedTCPClient@{Threaded\-T\-C\-P\-Client}}
 \subsubsection[{m\-\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}bool Threaded\-T\-C\-P\-Client\-::m\-\_\-started\hspace{0.3cm}{\ttfamily [private]}}}\label{class_threaded_t_c_p_client_a32d0d8b7239c8eda6ff9d4ab45de5e8e}
 
 
-Definition at line 25 of file Threaded\-T\-C\-P\-Client.\-h.
+Boolean variable to stop the thread. 
+
+
+
+Definition at line 48 of file Threaded\-T\-C\-P\-Client.\-h.
 
 
 

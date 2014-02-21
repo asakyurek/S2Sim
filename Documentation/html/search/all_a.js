@@ -30,8 +30,7 @@ var searchData=
   ['m_5fthreadattribute',['m_threadAttribute',['../class_thread_base.html#ad0d98c6f93707aef346cc66d8de78729',1,'ThreadBase']]],
   ['m_5fthreadhandle',['m_threadHandle',['../class_thread_base.html#a4f279b94eef423109969f69fadd9e674',1,'ThreadBase']]],
   ['m_5fthreadid',['m_threadId',['../class_thread_base.html#ae8574271bdcbfd80cbdde64c77bc7148',1,'ThreadBase']]],
-  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cpp'],['../_terraswarm_library_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cpp'],['../test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test.cpp']]],
-  ['main_2ecpp',['main.cpp',['../_terraswarm_library_2main_8cpp.html',1,'']]],
+  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
   ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
   ['makedecision',['MakeDecision',['../class_control_manager.html#a0d5212df17307aef87d42add3aa6cc7a',1,'ControlManager']]],
   ['makedecisiontype',['MakeDecisionType',['../class_control_manager.html#a7b6de4a130e0de1729c7963edd972120afe62fd2d680bfeddc030a63944f8e513',1,'ControlManager']]],
@@ -43,8 +42,8 @@ var searchData=
   ['messageender',['MessageEnder',['../class_terra_swarm_1_1_message_ender.html',1,'TerraSwarm']]],
   ['messageender_2ecpp',['MessageEnder.cpp',['../_message_ender_8cpp.html',1,'']]],
   ['messageender_2eh',['MessageEnder.h',['../_message_ender_8h.html',1,'']]],
-  ['messageheader',['MessageHeader',['../class_terra_swarm_1_1_message_header.html#a3a3365d5965976b4ff944e90bcc57d10',1,'TerraSwarm::MessageHeader']]],
   ['messageheader',['MessageHeader',['../class_terra_swarm_1_1_message_header.html',1,'TerraSwarm']]],
+  ['messageheader',['MessageHeader',['../class_terra_swarm_1_1_message_header.html#a3a3365d5965976b4ff944e90bcc57d10',1,'TerraSwarm::MessageHeader']]],
   ['messageheader_2ecpp',['MessageHeader.cpp',['../_message_header_8cpp.html',1,'']]],
   ['messageheader_2eh',['MessageHeader.h',['../_message_header_8h.html',1,'']]],
   ['messageheadersize',['MessageHeaderSize',['../class_terra_swarm_1_1_message_header.html#aa1066aaf03d8443ecda7e4c9b8e60fcea421e8aff7e21d86fb408624a2963e8b9',1,'TerraSwarm::MessageHeader']]],
@@ -55,6 +54,5 @@ var searchData=
   ['messagetype',['MessageType',['../class_terra_swarm_1_1_asynchronous_1_1_client_connection_request.html#a5b974b64f68c96feb31f851ddb46c0f9af4ebdf9aec34ae059a020f367ea2b77d',1,'TerraSwarm::Asynchronous::ClientConnectionRequest::MessageType()'],['../class_terra_swarm_1_1_synchronous_1_1_client_connection_request.html#aea4a8b2edd6730c9b592394868d059e3abd99d038acc6de976f899ab9fc50595d',1,'TerraSwarm::Synchronous::ClientConnectionRequest::MessageType()'],['../class_terra_swarm_1_1_asynchronous_1_1_client_connection_response.html#a210030e9835d5daaae100ff496cc2b99a1b0238ecfc24737ee8aa6565198b4052',1,'TerraSwarm::Asynchronous::ClientConnectionResponse::MessageType()'],['../class_terra_swarm_1_1_synchronous_1_1_client_connection_response.html#ae5b6f6ce8e9057779e6115b9d10f9f27a3d9f125f956d841cb53726088daf9f4d',1,'TerraSwarm::Synchronous::ClientConnectionResponse::MessageType()'],['../class_terra_swarm_1_1_asynchronous_1_1_client_data.html#ab125e3c9367fdafbd7adfcee2f4916caade31247f7e6ce63ad9d29f262e71f1f3',1,'TerraSwarm::Asynchronous::ClientData::MessageType()'],['../class_terra_swarm_1_1_synchronous_1_1_client_data.html#a529711f4bde913bbc871ba784b668cb5acfabe23548b5afe59eb4880618ebd082',1,'TerraSwarm::Synchronous::ClientData::MessageType()'],['../class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#afbf936743aecc68e9e53598ed8146e21a6c276b43db55c33b12b96bf8103aeccc',1,'TerraSwarm::Synchronous::DemandNegotiation::MessageType()'],['../class_terra_swarm_1_1_synchronous_1_1_get_price.html#a753a713a664ad54645f58aa349d74017a08ca4ff2a63b1d19e7ac3fc9dbc247fb',1,'TerraSwarm::Synchronous::GetPrice::MessageType()'],['../class_terra_swarm_1_1_synchronous_1_1_price_proposal.html#a14b7d0d8b5050be599045136920effcba3dc295e632080af4b40c9cae3fedb652',1,'TerraSwarm::Synchronous::PriceProposal::MessageType()'],['../class_terra_swarm_1_1_synchronous_1_1_set_current_price.html#a940712bcf18dc80c00b4d79fe18edf9ba465058dd25ba7ae05bc5285a2d3708b1',1,'TerraSwarm::Synchronous::SetCurrentPrice::MessageType()']]],
   ['messagetypeindex',['MessageTypeIndex',['../class_terra_swarm_1_1_message_header.html#a2a96f83a96cfee0465da982814cb372aa636e016fbe208240bd9d92af77fd747a',1,'TerraSwarm::MessageHeader']]],
   ['messagetypesize',['MessageTypeSize',['../class_terra_swarm_1_1_message_header.html#a189acad5bd9f60fe47b3381da62d3484ad45da22415ac87cda0dc06e3e6047947',1,'TerraSwarm::MessageHeader']]],
-  ['messagetypevalues',['MessageTypeValues',['../class_control_manager.html#a7b6de4a130e0de1729c7963edd972120',1,'ControlManager::MessageTypeValues()'],['../class_matlab_manager.html#afc23406cdfc3be02850cb0ebfff31667',1,'MatlabManager::MessageTypeValues()']]],
-  ['mythread',['MyThread',['../class_my_thread.html',1,'']]]
+  ['messagetypevalues',['MessageTypeValues',['../class_control_manager.html#a7b6de4a130e0de1729c7963edd972120',1,'ControlManager::MessageTypeValues()'],['../class_matlab_manager.html#afc23406cdfc3be02850cb0ebfff31667',1,'MatlabManager::MessageTypeValues()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['todo_20list',['Todo List',['../todo.html',1,'']]]
+  ['s2sim',['S2Sim',['../index.html',1,'']]]
 ];

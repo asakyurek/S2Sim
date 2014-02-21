@@ -1,6 +1,11 @@
 \hypertarget{_matlab_manager_8h}{\section{S2\-Sim/\-Matlab\-Manager.h File Reference}
 \label{_matlab_manager_8h}\index{S2\-Sim/\-Matlab\-Manager.\-h@{S2\-Sim/\-Matlab\-Manager.\-h}}
 }
+
+
+Defines the \hyperlink{class_matlab_manager}{Matlab\-Manager} class.  
+
+
 {\ttfamily \#include $<$iostream$>$}\\*
 {\ttfamily \#include \char`\"{}Semaphore.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Threaded\-T\-C\-P\-Server.\-h\char`\"{}}\\*
@@ -24,14 +29,27 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_matlab_manager}{Matlab\-Manager}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Manages the connection to the Open\-D\-S\-S-\/\-Matlab controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_matlab_manager}{Matlab\-Manager} \& \hyperlink{_matlab_manager_8h_adf11a697c41ba15207a66f8d2b567b75}{Get\-Matlab\-Manager} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em This function returns the only instance of \hyperlink{class_matlab_manager}{Matlab\-Manager}. \end{DoxyCompactList}\item 
 void \hyperlink{_matlab_manager_8h_adde5ef25c1ac7d9ccf067e4bc4894675}{Matlab\-Receive\-Handler} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client, \hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{Threaded\-T\-C\-P\-Connected\-Client\-::\-T\-Buffer} buffer, \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{Threaded\-T\-C\-P\-Connected\-Client\-::\-T\-Number\-Of\-Bytes} size)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Wrapper callback function that forwards the received data to \hyperlink{class_matlab_manager}{Matlab\-Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the \hyperlink{class_matlab_manager}{Matlab\-Manager} class. \begin{DoxyDate}{Date}
+Oct 13, 2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\-: Alper Sinan Akyurek 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{_matlab_manager_8h_source}{Matlab\-Manager.\-h}.
+
 
 
 \subsection{Function Documentation}
@@ -44,12 +62,22 @@ void \hyperlink{_matlab_manager_8h_adde5ef25c1ac7d9ccf067e4bc4894675}{Matlab\-Re
 )}}\label{_matlab_manager_8h_adf11a697c41ba15207a66f8d2b567b75}
 
 
+This function returns the only instance of \hyperlink{class_matlab_manager}{Matlab\-Manager}. 
+
+Friend method to implement the singleton for \hyperlink{class_matlab_manager}{Matlab\-Manager}.
+
+\begin{DoxyReturn}{Returns}
+The only instance of \hyperlink{class_matlab_manager}{Matlab\-Manager}.
+
+Returns the only instance of \hyperlink{class_matlab_manager}{Matlab\-Manager}. 
+\end{DoxyReturn}
+
+
 Definition at line 13 of file Matlab\-Manager.\-cpp.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -67,6 +95,19 @@ Here is the caller graph for this function\-:
 \item[{{\bf Threaded\-T\-C\-P\-Connected\-Client\-::\-T\-Number\-Of\-Bytes}}]{size}
 \end{DoxyParamCaption}
 )}}\label{_matlab_manager_8h_adde5ef25c1ac7d9ccf067e4bc4894675}
+
+
+Wrapper callback function that forwards the received data to \hyperlink{class_matlab_manager}{Matlab\-Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & Connection information of Open\-D\-S\-S-\/\-Matlab controller. \\
+\hline
+{\em buffer} & Buffer containing the received data. \\
+\hline
+{\em size} & Size of the received data. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line 29 of file Matlab\-Manager.\-cpp.

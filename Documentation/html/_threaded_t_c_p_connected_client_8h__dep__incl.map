@@ -1,18 +1,18 @@
 <map id="S2Sim/SocketLibrary/ThreadedTCPConnectedClient.h" name="S2Sim/SocketLibrary/ThreadedTCPConnectedClient.h">
-<area shape="rect" href="$_connection_manager_8h.html" title="S2Sim/ConnectionManager.h" alt="" coords="329,295,561,321"/>
-<area shape="rect" href="$_client_manager_8h.html" title="S2Sim/ClientManager.h" alt="" coords="108,380,297,407"/>
-<area shape="rect" href="$_matlab_manager_8h.html" title="S2Sim/MatlabManager.h" alt="" coords="139,612,336,639"/>
-<area shape="rect" href="$_control_manager_8h.html" title="S2Sim/ControlManager.h" alt="" coords="644,457,844,484"/>
-<area shape="rect" href="$_t_c_p_server_8h.html" title="S2Sim/SocketLibrary\l/TCPServer.h" alt="" coords="796,99,964,144"/>
-<area shape="rect" href="$_threaded_t_c_p_server_8h.html" title="S2Sim/SocketLibrary\l/ThreadedTCPServer.h" alt="" coords="507,192,691,237"/>
-<area shape="rect" href="$_threaded_t_c_p_connected_client_8cpp.html" title="S2Sim/SocketLibrary\l/ThreadedTCPConnectedClient.cpp" alt="" coords="988,99,1265,144"/>
-<area shape="rect" href="$main_8cpp.html" title="S2Sim/main.cpp" alt="" coords="713,689,852,716"/>
-<area shape="rect" href="$_connection_manager_8cpp.html" title="S2Sim/ConnectionManager.cpp" alt="" coords="321,380,569,407"/>
-<area shape="rect" href="$_client_manager_8cpp.html" title="S2Sim/ClientManager.cpp" alt="" coords="93,457,301,484"/>
-<area shape="rect" href="$_system_manager_8h.html" title="S2Sim/SystemManager.h" alt="" coords="369,535,569,561"/>
-<area shape="rect" href="$_system_manager_8cpp.html" title="S2Sim/SystemManager.cpp" alt="" coords="360,612,579,639"/>
-<area shape="rect" href="$_matlab_manager_8cpp.html" title="S2Sim/MatlabManager.cpp" alt="" coords="131,689,344,716"/>
-<area shape="rect" href="$_control_manager_8cpp.html" title="S2Sim/ControlManager.cpp" alt="" coords="695,535,913,561"/>
-<area shape="rect" href="$_t_c_p_server_8cpp.html" title="S2Sim/SocketLibrary\l/TCPServer.cpp" alt="" coords="796,192,964,237"/>
-<area shape="rect" href="$_threaded_t_c_p_server_8cpp.html" title="S2Sim/SocketLibrary\l/ThreadedTCPServer.cpp" alt="" coords="636,285,836,331"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="This file defines the ConnectionManager class. " alt="" coords="200,295,432,321"/>
+<area shape="rect" href="$_client_manager_8h.html" title="Header file for the ClientManager class. " alt="" coords="93,380,283,407"/>
+<area shape="rect" href="$_matlab_manager_8h.html" title="Defines the MatlabManager class. " alt="" coords="28,612,225,639"/>
+<area shape="rect" href="$_control_manager_8h.html" title="This file defines the ControlManager class. " alt="" coords="593,457,793,484"/>
+<area shape="rect" href="$_t_c_p_server_8h.html" title="Defines the TCPServer class. " alt="" coords="420,99,588,144"/>
+<area shape="rect" href="$_threaded_t_c_p_server_8h.html" title="Defines the ThreadedTCPServer class. " alt="" coords="331,192,515,237"/>
+<area shape="rect" href="$_threaded_t_c_p_connected_client_8cpp.html" title="Implements the ThreadedTCPConnectedClient class. " alt="" coords="781,99,1059,144"/>
+<area shape="rect" href="$main_8cpp.html" title="Main file that starts an infinite running loop on the SystemManager::AdvanceTimeStep method..." alt="" coords="461,689,600,716"/>
+<area shape="rect" href="$_connection_manager_8cpp.html" title="This file implements the ConnectionManager class. " alt="" coords="307,380,555,407"/>
+<area shape="rect" href="$_client_manager_8cpp.html" title="Source file for the ClientManager class. " alt="" coords="144,457,352,484"/>
+<area shape="rect" href="$_system_manager_8h.html" title="Defines the SystemManager class. " alt="" coords="301,535,501,561"/>
+<area shape="rect" href="$_system_manager_8cpp.html" title="Implements the SystemManager class. " alt="" coords="249,612,468,639"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html" title="Implements the MatlabManager class. " alt="" coords="20,689,233,716"/>
+<area shape="rect" href="$_control_manager_8cpp.html" title="This file implements the ControlManager class. " alt="" coords="644,535,863,561"/>
+<area shape="rect" href="$_t_c_p_server_8cpp.html" title="Implements the TCPServer class. " alt="" coords="539,192,707,237"/>
+<area shape="rect" href="$_threaded_t_c_p_server_8cpp.html" title="Implements the ThreadedTCPServer class. " alt="" coords="456,285,656,331"/>
 </map>

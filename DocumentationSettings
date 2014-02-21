@@ -38,7 +38,7 @@ PROJECT_NAME           = S2Sim
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 1
+PROJECT_NUMBER         = 1.0.0
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -179,7 +179,7 @@ SHORT_NAMES            = NO
 # description.)
 # The default value is: NO.
 
-JAVADOC_AUTOBRIEF      = NO
+JAVADOC_AUTOBRIEF      = YES
 
 # If the QT_AUTOBRIEF tag is set to YES then doxygen will interpret the first
 # line (until the first dot) of a Qt-style comment as the brief description. If
@@ -187,7 +187,7 @@ JAVADOC_AUTOBRIEF      = NO
 # requiring an explicit \brief command for a brief description.)
 # The default value is: NO.
 
-QT_AUTOBRIEF           = NO
+QT_AUTOBRIEF           = YES
 
 # The MULTILINE_CPP_IS_BRIEF tag can be set to YES to make doxygen treat a
 # multi-line C++ special comment block (i.e. a block of //! or /// comments) as
@@ -1654,7 +1654,7 @@ COMPACT_LATEX          = NO
 # The default value is: a4.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-PAPER_TYPE             = a4
+PAPER_TYPE             = letter
 
 # The EXTRA_PACKAGES tag can be used to specify one or more LaTeX package names
 # that should be included in the LaTeX output. To get the times font for
@@ -2089,7 +2089,7 @@ PERL_PATH              = /usr/bin/perl
 # powerful graphs.
 # The default value is: YES.
 
-CLASS_DIAGRAMS         = NO
+CLASS_DIAGRAMS         = YES
 
 # You can define message sequence charts within doxygen comments using the \msc
 # command. Doxygen will then run the mscgen tool (see:
@@ -2130,7 +2130,7 @@ HAVE_DOT               = YES
 # Minimum value: 0, maximum value: 32, default value: 0.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOT_NUM_THREADS        = 0
+DOT_NUM_THREADS        = 8
 
 # When you want a differently looking font n the dot files that doxygen
 # generates you can specify the font name using DOT_FONTNAME. You need to make
@@ -2207,7 +2207,7 @@ UML_LIMIT_NUM_FIELDS   = 10
 # The default value is: NO.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-TEMPLATE_RELATIONS     = NO
+TEMPLATE_RELATIONS     = YES
 
 # If the INCLUDE_GRAPH, ENABLE_PREPROCESSING and SEARCH_INCLUDES tags are set to
 # YES then doxygen will generate a graph for each documented file showing the
@@ -2274,7 +2274,7 @@ DIRECTORY_GRAPH        = YES
 # The default value is: png.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOT_IMAGE_FORMAT       = png
+DOT_IMAGE_FORMAT       = svg
 
 # If DOT_IMAGE_FORMAT is set to svg, then this option can be set to YES to
 # enable generation of interactive SVG images that allow zooming and panning.

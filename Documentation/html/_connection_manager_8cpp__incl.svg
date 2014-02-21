@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_connection_manager_8h.html" target="_top" xlink:title="ConnectionManager.h">
+<a xlink:href="_connection_manager_8h.html" target="_top" xlink:title="This file defines the ConnectionManager class. ">
 <polygon style="fill:white;stroke:black;" points="1334,-580 1334,-601 1471,-601 1471,-580 1334,-580"/>
 <text text-anchor="middle" x="1402" y="-587" style="font-family:Arial;font-size:10.00;">ConnectionManager.h</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_client_manager_8h.html" target="_top" xlink:title="ClientManager.h">
+<a xlink:href="_client_manager_8h.html" target="_top" xlink:title="Header file for the ClientManager class. ">
 <polygon style="fill:white;stroke:black;" points="1055,-522 1055,-543 1161,-543 1161,-522 1055,-522"/>
 <text text-anchor="middle" x="1108" y="-529" style="font-family:Arial;font-size:10.00;">ClientManager.h</text>
 </a>
@@ -52,7 +52,7 @@
 </g>
 <!-- Node21 -->
 <g id="node60" class="node"><title>Node21</title>
-<a xlink:href="_threaded_t_c_p_server_8h.html" target="_top" xlink:title="ThreadedTCPServer.h">
+<a xlink:href="_threaded_t_c_p_server_8h.html" target="_top" xlink:title="Defines the ThreadedTCPServer class. ">
 <polygon style="fill:white;stroke:black;" points="1287,-290 1287,-311 1422,-311 1422,-290 1287,-290"/>
 <text text-anchor="middle" x="1354" y="-297" style="font-family:Arial;font-size:10.00;">ThreadedTCPServer.h</text>
 </a>
@@ -64,7 +64,7 @@
 </g>
 <!-- Node26 -->
 <g id="node72" class="node"><title>Node26</title>
-<a xlink:href="_threaded_t_c_p_connected_client_8h.html" target="_top" xlink:title="ThreadedTCPConnectedClient.h">
+<a xlink:href="_threaded_t_c_p_connected_client_8h.html" target="_top" xlink:title="Defeines the ThreadedTCPConnectedClient class. ">
 <polygon style="fill:white;stroke:black;" points="1265,-174 1265,-195 1457,-195 1457,-174 1265,-174"/>
 <text text-anchor="middle" x="1361" y="-181" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient.h</text>
 </a>
@@ -76,7 +76,7 @@
 </g>
 <!-- Node30 -->
 <g id="node95" class="node"><title>Node30</title>
-<a xlink:href="_log_print_8h.html" target="_top" xlink:title="LogPrint.h">
+<a xlink:href="_log_print_8h.html" target="_top" xlink:title="Defines logging related functions. ">
 <polygon style="fill:white;stroke:black;" points="1566,-290 1566,-311 1636,-311 1636,-290 1566,-290"/>
 <text text-anchor="middle" x="1601" y="-297" style="font-family:Arial;font-size:10.00;">LogPrint.h</text>
 </a>
@@ -103,7 +103,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_message_header_8h.html" target="_top" xlink:title="MessageHeader.h">
+<a xlink:href="_message_header_8h.html" target="_top" xlink:title="Defines the MessageHeader class. ">
 <polygon style="fill:white;stroke:black;" points="496,-348 496,-369 609,-369 609,-348 496,-348"/>
 <text text-anchor="middle" x="552" y="-355" style="font-family:Arial;font-size:10.00;">MessageHeader.h</text>
 </a>
@@ -115,7 +115,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="_client_connection_request_8h.html" target="_top" xlink:title="ClientConnectionRequest.h">
+<a xlink:href="_client_connection_request_8h.html" target="_top" xlink:title="Defines the ClientConnectionRequest classes. ">
 <polygon style="fill:white;stroke:black;" points="693,-464 693,-485 858,-485 858,-464 693,-464"/>
 <text text-anchor="middle" x="775" y="-471" style="font-family:Arial;font-size:10.00;">ClientConnectionRequest.h</text>
 </a>
@@ -127,7 +127,7 @@
 </g>
 <!-- Node12 -->
 <g id="node26" class="node"><title>Node12</title>
-<a xlink:href="_client_connection_response_8h.html" target="_top" xlink:title="ClientConnectionResponse.h">
+<a xlink:href="_client_connection_response_8h.html" target="_top" xlink:title="Defines the Asnyc and Synchronous ClientConnectionResponse messages and classes. ">
 <polygon style="fill:white;stroke:black;" points="375,-464 375,-485 548,-485 548,-464 375,-464"/>
 <text text-anchor="middle" x="461" y="-471" style="font-family:Arial;font-size:10.00;">ClientConnectionResponse.h</text>
 </a>
@@ -139,7 +139,7 @@
 </g>
 <!-- Node13 -->
 <g id="node30" class="node"><title>Node13</title>
-<a xlink:href="_set_current_price_8h.html" target="_top" xlink:title="SetCurrentPrice.h">
+<a xlink:href="_set_current_price_8h.html" target="_top" xlink:title="Defines the SetCurrentPrice class. ">
 <polygon style="fill:white;stroke:black;" points="565,-464 565,-485 676,-485 676,-464 565,-464"/>
 <text text-anchor="middle" x="620" y="-471" style="font-family:Arial;font-size:10.00;">SetCurrentPrice.h</text>
 </a>
@@ -151,7 +151,7 @@
 </g>
 <!-- Node14 -->
 <g id="node34" class="node"><title>Node14</title>
-<a xlink:href="_price_proposal_8h.html" target="_top" xlink:title="PriceProposal.h">
+<a xlink:href="_price_proposal_8h.html" target="_top" xlink:title="Defines the PriceProposal class. ">
 <polygon style="fill:white;stroke:black;" points="875,-464 875,-485 973,-485 973,-464 875,-464"/>
 <text text-anchor="middle" x="924" y="-471" style="font-family:Arial;font-size:10.00;">PriceProposal.h</text>
 </a>
@@ -163,7 +163,7 @@
 </g>
 <!-- Node15 -->
 <g id="node38" class="node"><title>Node15</title>
-<a xlink:href="_client_data_8h.html" target="_top" xlink:title="ClientData.h">
+<a xlink:href="_client_data_8h.html" target="_top" xlink:title="Defines the Aysnchronous and Synchronous ClientData class and messages. ">
 <polygon style="fill:white;stroke:black;" points="273,-464 273,-485 357,-485 357,-464 273,-464"/>
 <text text-anchor="middle" x="315" y="-471" style="font-family:Arial;font-size:10.00;">ClientData.h</text>
 </a>
@@ -175,7 +175,7 @@
 </g>
 <!-- Node16 -->
 <g id="node43" class="node"><title>Node16</title>
-<a xlink:href="_get_price_8h.html" target="_top" xlink:title="GetPrice.h">
+<a xlink:href="_get_price_8h.html" target="_top" xlink:title="Defines the GetPrice class and message. ">
 <polygon style="fill:white;stroke:black;" points="991,-464 991,-485 1062,-485 1062,-464 991,-464"/>
 <text text-anchor="middle" x="1026" y="-471" style="font-family:Arial;font-size:10.00;">GetPrice.h</text>
 </a>
@@ -187,7 +187,7 @@
 </g>
 <!-- Node17 -->
 <g id="node47" class="node"><title>Node17</title>
-<a xlink:href="_demand_negotiation_8h.html" target="_top" xlink:title="DemandNegotiation.h">
+<a xlink:href="_demand_negotiation_8h.html" target="_top" xlink:title="Defines the DemandNegotiation class and message. ">
 <polygon style="fill:white;stroke:black;" points="119,-464 119,-485 256,-485 256,-464 119,-464"/>
 <text text-anchor="middle" x="187" y="-471" style="font-family:Arial;font-size:10.00;">DemandNegotiation.h</text>
 </a>
@@ -199,7 +199,7 @@
 </g>
 <!-- Node18 -->
 <g id="node53" class="node"><title>Node18</title>
-<a xlink:href="_matlab_manager_8h.html" target="_top" xlink:title="MatlabManager.h">
+<a xlink:href="_matlab_manager_8h.html" target="_top" xlink:title="Defines the MatlabManager class. ">
 <polygon style="fill:white;stroke:black;" points="1349,-464 1349,-485 1460,-485 1460,-464 1349,-464"/>
 <text text-anchor="middle" x="1404" y="-471" style="font-family:Arial;font-size:10.00;">MatlabManager.h</text>
 </a>
@@ -216,7 +216,7 @@
 </g>
 <!-- Node28 -->
 <g id="node82" class="node"><title>Node28</title>
-<a xlink:href="_system_manager_8h.html" target="_top" xlink:title="SystemManager.h">
+<a xlink:href="_system_manager_8h.html" target="_top" xlink:title="Defines the SystemManager class. ">
 <polygon style="fill:white;stroke:black;" points="1193,-406 1193,-427 1307,-427 1307,-406 1193,-406"/>
 <text text-anchor="middle" x="1250" y="-413" style="font-family:Arial;font-size:10.00;">SystemManager.h</text>
 </a>
@@ -233,7 +233,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_network_byte_accessor_8h.html" target="_top" xlink:title="NetworkByteAccessor.h">
+<a xlink:href="_network_byte_accessor_8h.html" target="_top" xlink:title="Defines the NetworkByteAccessor class for byte order conversion and easier data access. ">
 <polygon style="fill:white;stroke:black;" points="536,-290 536,-311 677,-311 677,-290 536,-290"/>
 <text text-anchor="middle" x="606" y="-297" style="font-family:Arial;font-size:10.00;">NetworkByteAccessor.h</text>
 </a>
@@ -260,7 +260,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="_compile_time_checker_library_8h.html" target="_top" xlink:title="CompileTimeCheckerLibrary.h">
+<a xlink:href="_compile_time_checker_library_8h.html" target="_top" xlink:title="This file contains template classes to do compile time checking. ">
 <polygon style="fill:white;stroke:black;" points="398,-232 398,-253 579,-253 579,-232 398,-232"/>
 <text text-anchor="middle" x="488" y="-239" style="font-family:Arial;font-size:10.00;">CompileTimeCheckerLibrary.h</text>
 </a>
@@ -277,7 +277,7 @@
 </g>
 <!-- Node10 -->
 <g id="node20" class="node"><title>Node10</title>
-<a xlink:href="_message_ender_8h.html" target="_top" xlink:title="MessageEnder.h">
+<a xlink:href="_message_ender_8h.html" target="_top" xlink:title="Defines a MessageEnder class. ">
 <polygon style="fill:white;stroke:black;" points="580,-406 580,-427 684,-427 684,-406 580,-406"/>
 <text text-anchor="middle" x="632" y="-413" style="font-family:Arial;font-size:10.00;">MessageEnder.h</text>
 </a>
@@ -389,7 +389,7 @@
 </g>
 <!-- Node20 -->
 <g id="node57" class="node"><title>Node20</title>
-<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Semaphore.h">
+<a xlink:href="_semaphore_8h.html" target="_top" xlink:title="Defines the Semaphore class under Windows 32/64bit and POSIX enables OSes. ">
 <polygon style="fill:white;stroke:black;" points="1500,-116 1500,-137 1590,-137 1590,-116 1500,-116"/>
 <text text-anchor="middle" x="1545" y="-123" style="font-family:Arial;font-size:10.00;">Semaphore.h</text>
 </a>
@@ -421,7 +421,7 @@
 </g>
 <!-- Node22 -->
 <g id="node62" class="node"><title>Node22</title>
-<a xlink:href="_thread_base_8h.html" target="_top" xlink:title="ThreadBase.h">
+<a xlink:href="_thread_base_8h.html" target="_top" xlink:title="This file selects the right implementation according to the current OS. ">
 <polygon style="fill:white;stroke:black;" points="1354,-116 1354,-137 1445,-137 1445,-116 1354,-116"/>
 <text text-anchor="middle" x="1399" y="-123" style="font-family:Arial;font-size:10.00;">ThreadBase.h</text>
 </a>
@@ -433,7 +433,7 @@
 </g>
 <!-- Node23 -->
 <g id="node64" class="node"><title>Node23</title>
-<a xlink:href="_t_c_p_server_8h.html" target="_top" xlink:title="TCPServer.h">
+<a xlink:href="_t_c_p_server_8h.html" target="_top" xlink:title="Defines the TCPServer class. ">
 <polygon style="fill:white;stroke:black;" points="1017,-232 1017,-253 1099,-253 1099,-232 1017,-232"/>
 <text text-anchor="middle" x="1058" y="-239" style="font-family:Arial;font-size:10.00;">TCPServer.h</text>
 </a>
@@ -450,7 +450,7 @@
 </g>
 <!-- Node24 -->
 <g id="node66" class="node"><title>Node24</title>
-<a xlink:href="_socket_base_8h.html" target="_top" xlink:title="SocketBase.h">
+<a xlink:href="_socket_base_8h.html" target="_top" xlink:title="Defines the SocketBase template class. ">
 <polygon style="fill:white;stroke:black;" points="1193,-58 1193,-79 1282,-79 1282,-58 1193,-58"/>
 <text text-anchor="middle" x="1237" y="-65" style="font-family:Arial;font-size:10.00;">SocketBase.h</text>
 </a>
@@ -462,7 +462,7 @@
 </g>
 <!-- Node25 -->
 <g id="node69" class="node"><title>Node25</title>
-<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="IPAddress.h">
+<a xlink:href="_i_p_address_8h.html" target="_top" xlink:title="Defines the IPAddress class. ">
 <polygon style="fill:white;stroke:black;" points="1005,-58 1005,-79 1082,-79 1082,-58 1005,-58"/>
 <text text-anchor="middle" x="1043" y="-65" style="font-family:Arial;font-size:10.00;">IPAddress.h</text>
 </a>
@@ -499,7 +499,7 @@
 </g>
 <!-- Node27 -->
 <g id="node74" class="node"><title>Node27</title>
-<a xlink:href="_t_c_p_connected_client_8h.html" target="_top" xlink:title="TCPConnectedClient.h">
+<a xlink:href="_t_c_p_connected_client_8h.html" target="_top" xlink:title="Defines the TCPConnectedClient class. ">
 <polygon style="fill:white;stroke:black;" points="1071,-116 1071,-137 1210,-137 1210,-116 1071,-116"/>
 <text text-anchor="middle" x="1140" y="-123" style="font-family:Arial;font-size:10.00;">TCPConnectedClient.h</text>
 </a>
@@ -536,7 +536,7 @@
 </g>
 <!-- Node29 -->
 <g id="node87" class="node"><title>Node29</title>
-<a xlink:href="_control_manager_8h.html" target="_top" xlink:title="ControlManager.h">
+<a xlink:href="_control_manager_8h.html" target="_top" xlink:title="This file defines the ControlManager class. ">
 <polygon style="fill:white;stroke:black;" points="1235,-348 1235,-369 1349,-369 1349,-348 1235,-348"/>
 <text text-anchor="middle" x="1292" y="-355" style="font-family:Arial;font-size:10.00;">ControlManager.h</text>
 </a>

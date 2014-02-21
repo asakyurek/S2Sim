@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465" target="_top" xlink:title="SocketBase::OpenSocket">
+<a xlink:href="class_socket_base.html#a812f91e92f493eeb546395b41c5ad465" target="_top" xlink:title="Opens a new socket and sets its reusable options. ">
 <polygon style="fill:white;stroke:black;" points="184,1 184,-20 336,-20 336,1 184,1"/>
 <text text-anchor="middle" x="260" y="-6" style="font-family:Arial;font-size:10.00;">SocketBase::OpenSocket</text>
 </a>

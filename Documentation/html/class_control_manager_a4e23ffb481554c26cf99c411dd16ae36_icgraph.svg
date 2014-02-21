@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="SystemManager::AdvanceTimeStep">
+<a xlink:href="class_system_manager.html#a87443d7e75b0f170535d315c27237253" target="_top" xlink:title="Main time iteration of the system. ">
 <polygon style="fill:white;stroke:black;" points="196,1 196,-20 406,-20 406,1 196,1"/>
 <text text-anchor="middle" x="301" y="-6" style="font-family:Arial;font-size:10.00;">SystemManager::AdvanceTimeStep</text>
 </a>

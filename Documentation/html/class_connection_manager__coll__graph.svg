@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<a xlink:href="class_threaded_t_c_p_server.html" target="_top" xlink:title="ThreadedTCPServer">
+<a xlink:href="class_threaded_t_c_p_server.html" target="_top" xlink:title="Defines the threaded version of TCPServer that accepts clients in another thread in the background...">
 <polygon style="fill:white;stroke:black;" points="92,-72 92,-93 217,-93 217,-72 92,-72"/>
 <text text-anchor="middle" x="154" y="-79" style="font-family:Arial;font-size:10.00;">ThreadedTCPServer</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
-<a xlink:href="class_t_c_p_server.html" target="_top" xlink:title="TCPServer">
+<a xlink:href="class_t_c_p_server.html" target="_top" xlink:title="Defines a TCP server that can listen to connection attempts and can accept them for communication...">
 <polygon style="fill:white;stroke:black;" points="333,-184 333,-205 405,-205 405,-184 333,-184"/>
 <text text-anchor="middle" x="369" y="-191" style="font-family:Arial;font-size:10.00;">TCPServer</text>
 </a>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node8 -->
 <g id="node14" class="node"><title>Node8</title>
-<a xlink:href="class_t_c_p_connected_client.html" target="_top" xlink:title="TCPConnectedClient">
+<a xlink:href="class_t_c_p_connected_client.html" target="_top" xlink:title="Manages the connection to a connected client on the server side. ">
 <polygon style="fill:white;stroke:black;" points="107,-224 107,-245 236,-245 236,-224 107,-224"/>
 <text text-anchor="middle" x="171" y="-231" style="font-family:Arial;font-size:10.00;">TCPConnectedClient</text>
 </a>
@@ -67,7 +67,7 @@
 </g>
 <!-- Node5 -->
 <g id="node8" class="node"><title>Node5</title>
-<a xlink:href="class_socket_base.html" target="_top" xlink:title="SocketBase\&lt; SocketType \&gt;">
+<a xlink:href="class_socket_base.html" target="_top" xlink:title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi...">
 <polygon style="fill:white;stroke:black;" points="266,-368 266,-389 432,-389 432,-368 266,-368"/>
 <text text-anchor="middle" x="349" y="-375" style="font-family:Arial;font-size:10.00;">SocketBase&lt; SocketType &gt;</text>
 </a>
@@ -80,7 +80,7 @@
 </g>
 <!-- Node6 -->
 <g id="node10" class="node"><title>Node6</title>
-<a xlink:href="class_thread_base.html" target="_top" xlink:title="ThreadBase">
+<a xlink:href="class_thread_base.html" target="_top" xlink:title="Provides a base class that can be inherited from to gain threading capabilities. ">
 <polygon style="fill:white;stroke:black;" points="0,-224 0,-245 81,-245 81,-224 0,-224"/>
 <text text-anchor="middle" x="40" y="-231" style="font-family:Arial;font-size:10.00;">ThreadBase</text>
 </a>
@@ -92,7 +92,7 @@
 </g>
 <!-- Node7 -->
 <g id="node12" class="node"><title>Node7</title>
-<a xlink:href="class_threaded_t_c_p_connected_client.html" target="_top" xlink:title="ThreadedTCPConnectedClient">
+<a xlink:href="class_threaded_t_c_p_connected_client.html" target="_top" xlink:title="Manages the connection to an accepted client on the server side and receives data in a separate threa...">
 <polygon style="fill:white;stroke:black;" points="63,-144 63,-165 245,-165 245,-144 63,-144"/>
 <text text-anchor="middle" x="154" y="-151" style="font-family:Arial;font-size:10.00;">ThreadedTCPConnectedClient</text>
 </a>
@@ -121,7 +121,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="class_i_p_address.html" target="_top" xlink:title="IPAddress">
+<a xlink:href="class_i_p_address.html" target="_top" xlink:title="This class is an abstraction of the OS IP Address structure. ">
 <polygon style="fill:white;stroke:black;" points="138,-296 138,-317 205,-317 205,-296 138,-296"/>
 <text text-anchor="middle" x="171" y="-303" style="font-family:Arial;font-size:10.00;">IPAddress</text>
 </a>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('class_u_d_p_socket.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Manages a UDP connection.  
+ <a href="class_u_d_p_socket.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_u_d_p_socket_8h_source.html">UDPSocket.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UDPSocket:</div>
@@ -130,56 +133,71 @@ Collaboration diagram for UDPSocket:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a237d16ccc7a9c4aefa81f69774748791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_d_p_socket.html#a237d16ccc7a9c4aefa81f69774748791">UDPSocket</a> (void)</td></tr>
+<tr class="memdesc:a237d16ccc7a9c4aefa81f69774748791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not used.  <a href="#a237d16ccc7a9c4aefa81f69774748791">More...</a><br/></td></tr>
 <tr class="separator:a237d16ccc7a9c4aefa81f69774748791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5c869eca5bab38df89f09ac79f54afb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_d_p_socket.html#aa5c869eca5bab38df89f09ac79f54afb">~UDPSocket</a> (void)</td></tr>
+<tr class="memdesc:aa5c869eca5bab38df89f09ac79f54afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not used.  <a href="#aa5c869eca5bab38df89f09ac79f54afb">More...</a><br/></td></tr>
 <tr class="separator:aa5c869eca5bab38df89f09ac79f54afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28960551bca2099a03ad6fa39ef28065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_d_p_socket.html#a28960551bca2099a03ad6fa39ef28065">SetIPAddress</a> (<a class="el" href="class_i_p_address.html">IPAddress</a> &amp;address)</td></tr>
+<tr class="memdesc:a28960551bca2099a03ad6fa39ef28065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IP Address of the socket.  <a href="#a28960551bca2099a03ad6fa39ef28065">More...</a><br/></td></tr>
 <tr class="separator:a28960551bca2099a03ad6fa39ef28065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13165df1eb017e8ba2eba43a06a083ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec">SetPort</a> (const <a class="el" href="class_i_p_address.html#a51188195685c31d4258c0a078cc37154">IPAddress::TPort</a> port)</td></tr>
+<tr class="memdesc:a13165df1eb017e8ba2eba43a06a083ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the port of the UDP Socket.  <a href="#a13165df1eb017e8ba2eba43a06a083ec">More...</a><br/></td></tr>
 <tr class="separator:a13165df1eb017e8ba2eba43a06a083ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab78ab0104e1fafc5feb1b3459e537e32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">TNumberOfBytes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_d_p_socket.html#ab78ab0104e1fafc5feb1b3459e537e32">SendData</a> (const <a class="el" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">TBuffer</a> buffer, const <a class="el" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">TNumberOfBytes</a> length, <a class="el" href="class_i_p_address.html">IPAddress</a> &amp;destination)</td></tr>
+<tr class="memdesc:ab78ab0104e1fafc5feb1b3459e537e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a data to another UDP socket.  <a href="#ab78ab0104e1fafc5feb1b3459e537e32">More...</a><br/></td></tr>
 <tr class="separator:ab78ab0104e1fafc5feb1b3459e537e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f70d5a5bf2bb16fdd897355bb80741b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">TNumberOfBytes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_d_p_socket.html#a4f70d5a5bf2bb16fdd897355bb80741b">ReceiveData</a> (<a class="el" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">TBuffer</a> buffer, const <a class="el" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">TNumberOfBytes</a> receptionLength, <a class="el" href="class_i_p_address.html">IPAddress</a> &amp;destinationAddress)</td></tr>
+<tr class="memdesc:a4f70d5a5bf2bb16fdd897355bb80741b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives data from another UDP Socket.  <a href="#a4f70d5a5bf2bb16fdd897355bb80741b">More...</a><br/></td></tr>
 <tr class="separator:a4f70d5a5bf2bb16fdd897355bb80741b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:abdd3401d1e8ac4129eb799d02e6db28b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_socket_base.html">SocketBase</a>&lt; SOCK_DGRAM &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_d_p_socket.html#abdd3401d1e8ac4129eb799d02e6db28b">TBaseType</a></td></tr>
+<tr class="memdesc:abdd3401d1e8ac4129eb799d02e6db28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the base class for rapid development.  <a href="#abdd3401d1e8ac4129eb799d02e6db28b">More...</a><br/></td></tr>
 <tr class="separator:abdd3401d1e8ac4129eb799d02e6db28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_socket_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_socket_base')"><img src="closed.png" alt="-"/>&#160;Private Types inherited from <a class="el" href="class_socket_base.html">SocketBase&lt; SOCK_DGRAM &gt;</a></td></tr>
-<tr class="memitem:abb6e8769e1c9168c1ff7423fe7933d30 inherit pub_types_class_socket_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#abb6e8769e1c9168c1ff7423fe7933d30">ErrorCodeValues</a> </td></tr>
-<tr class="separator:abb6e8769e1c9168c1ff7423fe7933d30 inherit pub_types_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8feec23168739e87c6ccb7fa8c64ac11 inherit pub_types_class_socket_base"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#a8feec23168739e87c6ccb7fa8c64ac11">TErrorCode</a></td></tr>
-<tr class="separator:a8feec23168739e87c6ccb7fa8c64ac11 inherit pub_types_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac414903631491453b96e71c06c2c2e72 inherit pub_types_class_socket_base"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#ac414903631491453b96e71c06c2c2e72">TNumberOfBytes</a></td></tr>
+<tr class="memdesc:ac414903631491453b96e71c06c2c2e72 inherit pub_types_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the type for number of bytes.  <a href="#ac414903631491453b96e71c06c2c2e72">More...</a><br/></td></tr>
 <tr class="separator:ac414903631491453b96e71c06c2c2e72 inherit pub_types_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1557d64029a25c20b4c306b80efcc143 inherit pub_types_class_socket_base"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#a1557d64029a25c20b4c306b80efcc143">TBuffer</a></td></tr>
+<tr class="memdesc:a1557d64029a25c20b4c306b80efcc143 inherit pub_types_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the type for a buffer pointer.  <a href="#a1557d64029a25c20b4c306b80efcc143">More...</a><br/></td></tr>
 <tr class="separator:a1557d64029a25c20b4c306b80efcc143 inherit pub_types_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1441f12307a40913930ccbb8baf953bb inherit pub_types_class_socket_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">SocketIdValues</a> </td></tr>
+<tr class="memdesc:a1441f12307a40913930ccbb8baf953bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special values for the TSocketId.  <a href="class_socket_base.html#a1441f12307a40913930ccbb8baf953bb">More...</a><br/></td></tr>
 <tr class="separator:a1441f12307a40913930ccbb8baf953bb inherit pub_types_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1bd9ff0bcf59292806575e0abbe3829 inherit pub_types_class_socket_base"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SOCKET</a></td></tr>
+<tr class="memdesc:aa1bd9ff0bcf59292806575e0abbe3829 inherit pub_types_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the type of a Socket handle.  <a href="#aa1bd9ff0bcf59292806575e0abbe3829">More...</a><br/></td></tr>
 <tr class="separator:aa1bd9ff0bcf59292806575e0abbe3829 inherit pub_types_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad53265037e46768af4d6a0c2ebed277 inherit pub_types_class_socket_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_socket_base.html#aa1bd9ff0bcf59292806575e0abbe3829">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a></td></tr>
+<tr class="memdesc:aad53265037e46768af4d6a0c2ebed277 inherit pub_types_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefines the socket handle type for multiplatform purposes.  <a href="#aad53265037e46768af4d6a0c2ebed277">More...</a><br/></td></tr>
 <tr class="separator:aad53265037e46768af4d6a0c2ebed277 inherit pub_types_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_class_socket_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_socket_base')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="class_socket_base.html">SocketBase&lt; SOCK_DGRAM &gt;</a></td></tr>
 <tr class="memitem:afdeb4c469db205b8030ff65540adbbc8 inherit pub_methods_class_socket_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#afdeb4c469db205b8030ff65540adbbc8">SocketBase</a> (const <a class="el" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a> socketId)</td></tr>
+<tr class="memdesc:afdeb4c469db205b8030ff65540adbbc8 inherit pub_methods_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that receives a handle as input.  <a href="#afdeb4c469db205b8030ff65540adbbc8">More...</a><br/></td></tr>
 <tr class="separator:afdeb4c469db205b8030ff65540adbbc8 inherit pub_methods_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae440e9ad170eeec2465c4501e91b761 inherit pub_methods_class_socket_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#aae440e9ad170eeec2465c4501e91b761">SocketBase</a> (const <a class="el" href="class_socket_base.html">SocketBase</a>&lt; SocketType &gt; &amp;copy)</td></tr>
+<tr class="memdesc:aae440e9ad170eeec2465c4501e91b761 inherit pub_methods_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the handle of another socket.  <a href="#aae440e9ad170eeec2465c4501e91b761">More...</a><br/></td></tr>
 <tr class="separator:aae440e9ad170eeec2465c4501e91b761 inherit pub_methods_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab53eb639e056af7269e0d720736f48e2 inherit pub_methods_class_socket_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">SocketBase</a> (void)  throw ( TErrorCode )</td></tr>
+<tr class="memitem:ab53eb639e056af7269e0d720736f48e2 inherit pub_methods_class_socket_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2">SocketBase</a> (void)</td></tr>
+<tr class="memdesc:ab53eb639e056af7269e0d720736f48e2 inherit pub_methods_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the handle to the invalid value.  <a href="#ab53eb639e056af7269e0d720736f48e2">More...</a><br/></td></tr>
 <tr class="separator:ab53eb639e056af7269e0d720736f48e2 inherit pub_methods_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa19d43bd8b53e91b1600c7b60f8f48e0 inherit pub_methods_class_socket_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">~SocketBase</a> (void)  throw ( TErrorCode )</td></tr>
+<tr class="memitem:aa19d43bd8b53e91b1600c7b60f8f48e0 inherit pub_methods_class_socket_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#aa19d43bd8b53e91b1600c7b60f8f48e0">~SocketBase</a> (void)</td></tr>
+<tr class="memdesc:aa19d43bd8b53e91b1600c7b60f8f48e0 inherit pub_methods_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the socket handle.  <a href="#aa19d43bd8b53e91b1600c7b60f8f48e0">More...</a><br/></td></tr>
 <tr class="separator:aa19d43bd8b53e91b1600c7b60f8f48e0 inherit pub_methods_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_socket_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_socket_base')"><img src="closed.png" alt="-"/>&#160;Private Attributes inherited from <a class="el" href="class_socket_base.html">SocketBase&lt; SOCK_DGRAM &gt;</a></td></tr>
 <tr class="memitem:aa9d855a8843ac61555721dfbedbad5a8 inherit pub_attribs_class_socket_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_socket_base.html#aad53265037e46768af4d6a0c2ebed277">TSocketId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_base.html#aa9d855a8843ac61555721dfbedbad5a8">m_socketId</a></td></tr>
+<tr class="memdesc:aa9d855a8843ac61555721dfbedbad5a8 inherit pub_attribs_class_socket_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle to the socket used for OS utilities.  <a href="#aa9d855a8843ac61555721dfbedbad5a8">More...</a><br/></td></tr>
 <tr class="separator:aa9d855a8843ac61555721dfbedbad5a8 inherit pub_attribs_class_socket_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_u_d_p_socket_8h_source.html#l00014">14</a> of file <a class="el" href="_u_d_p_socket_8h_source.html">UDPSocket.h</a>.</p>
+<div class="textblock"><p>Manages a UDP connection. </p>
+<p>If the port is selected, this socket can send to any UDP socket. </p>
+
+<p>Definition at line <a class="el" href="_u_d_p_socket_8h_source.html#l00017">17</a> of file <a class="el" href="_u_d_p_socket_8h_source.html">UDPSocket.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="abdd3401d1e8ac4129eb799d02e6db28b"></a>
 <div class="memitem">
@@ -199,7 +217,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_u_d_p_socket_8h_source.html#l00036">36</a> of file <a class="el" href="_u_d_p_socket_8h_source.html">UDPSocket.h</a>.</p>
+<p>Defines the base class for rapid development. </p>
+
+<p>Definition at line <a class="el" href="_u_d_p_socket_8h_source.html#l00074">74</a> of file <a class="el" href="_u_d_p_socket_8h_source.html">UDPSocket.h</a>.</p>
 
 </div>
 </div>
@@ -218,6 +238,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Not used. </p>
+
 <p>Definition at line <a class="el" href="_u_d_p_socket_8cpp_source.html#l00010">10</a> of file <a class="el" href="_u_d_p_socket_8cpp_source.html">UDPSocket.cpp</a>.</p>
 
 </div>
@@ -235,6 +257,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Not used. </p>
 
 <p>Definition at line <a class="el" href="_u_d_p_socket_8cpp_source.html#l00014">14</a> of file <a class="el" href="_u_d_p_socket_8cpp_source.html">UDPSocket.cpp</a>.</p>
 
@@ -270,6 +294,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Receives data from another UDP Socket. </p>
+<p>This is a blocking call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>An allocated buffer where the received data will be stored in. </td></tr>
+    <tr><td class="paramname">receptionLength</td><td>Length of the buffer and the maximum reception length. </td></tr>
+    <tr><td class="paramname">destinationAddress</td><td>IP Address, from which the data will be received.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the actual received number of bytes. </dd></dl>
 
 <p>Definition at line <a class="el" href="_u_d_p_socket_8cpp_source.html#l00025">25</a> of file <a class="el" href="_u_d_p_socket_8cpp_source.html">UDPSocket.cpp</a>.</p>
 
@@ -312,6 +348,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sends a data to another UDP socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer, containing the data to be sent. </td></tr>
+    <tr><td class="paramname">length</td><td>Length of the data to be sent. </td></tr>
+    <tr><td class="paramname">destination</td><td>IP Address of the destination socket.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the actual number of bytes sent. </dd></dl>
+
 <p>Definition at line <a class="el" href="_u_d_p_socket_8cpp_source.html#l00019">19</a> of file <a class="el" href="_u_d_p_socket_8cpp_source.html">UDPSocket.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -336,6 +383,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the IP Address of the socket. </p>
+<p>This method is not recommended as the IP Address of the user is already set. If the user is not sure, <a class="el" href="class_u_d_p_socket.html#a13165df1eb017e8ba2eba43a06a083ec" title="Sets the port of the UDP Socket. ">UDPSocket::SetPort()</a> is the usual usage.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>IP Address of the socket. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="_u_d_p_socket_8cpp_source.html#l00032">32</a> of file <a class="el" href="_u_d_p_socket_8cpp_source.html">UDPSocket.cpp</a>.</p>
 
@@ -369,6 +425,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the port of the UDP Socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>The port that the destination will send its data to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="_u_d_p_socket_8cpp_source.html#l00038">38</a> of file <a class="el" href="_u_d_p_socket_8cpp_source.html">UDPSocket.cpp</a>.</p>
 
 <p><div class="dynheader">
@@ -390,7 +454,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_u_d_p_socket.html">UDPSocket</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:16 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:35 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,5 @@
 <map id="TCPClient" name="TCPClient">
-<area shape="rect" href="$class_threaded_t_c_p_client.html" title="ThreadedTCPClient" alt="" coords="45,263,208,289"/>
+<area shape="rect" href="$class_threaded_t_c_p_client.html" title="This is a TCP client class that receives data in a separate thread in the background. " alt="" coords="45,263,208,289"/>
 <area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SOCK_STREAM \&gt;" alt="" coords="5,103,248,129"/>
-<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SocketType \&gt;" alt="" coords="16,7,237,33"/>
+<area shape="rect" href="$class_socket_base.html" title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi..." alt="" coords="16,7,237,33"/>
 </map>

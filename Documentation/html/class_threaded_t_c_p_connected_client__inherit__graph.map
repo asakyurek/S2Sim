@@ -1,6 +1,6 @@
 <map id="ThreadedTCPConnectedClient" name="ThreadedTCPConnectedClient">
-<area shape="rect" href="$class_t_c_p_connected_client.html" title="TCPConnectedClient" alt="" coords="41,183,212,209"/>
+<area shape="rect" href="$class_t_c_p_connected_client.html" title="Manages the connection to a connected client on the server side. " alt="" coords="41,183,212,209"/>
 <area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SOCK_STREAM \&gt;" alt="" coords="5,103,248,129"/>
-<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SocketType \&gt;" alt="" coords="16,7,237,33"/>
-<area shape="rect" href="$class_thread_base.html" title="ThreadBase" alt="" coords="236,183,343,209"/>
+<area shape="rect" href="$class_socket_base.html" title="This class is an abstraction over the OS socket and defines a base class for socket opening and closi..." alt="" coords="16,7,237,33"/>
+<area shape="rect" href="$class_thread_base.html" title="Provides a base class that can be inherited from to gain threading capabilities. " alt="" coords="236,183,343,209"/>
 </map>

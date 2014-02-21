@@ -5,5 +5,5 @@
 <area shape="rect" href="$_connection_manager_8h.html#a2e30244a123626dc9199117c06d257ab" title="Wrapper callback method for reception notification. " alt="" coords="255,195,473,221"/>
 <area shape="rect" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="335,245,393,272"/>
 <area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="529,84,793,111"/>
-<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="844,160,1020,205"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="Private constructor for singleton implementation. " alt="" coords="844,160,1020,205"/>
 </map>

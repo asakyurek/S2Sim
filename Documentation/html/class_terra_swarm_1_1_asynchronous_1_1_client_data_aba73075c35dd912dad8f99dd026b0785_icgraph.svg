@@ -31,7 +31,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" target="_top" xlink:title="TerraSwarm::Asynchronous\l::ClientData::GetDataPoints">
+<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" target="_top" xlink:title="Gets the pointer to the data points in the message. ">
 <polygon style="fill:white;stroke:black;" points="257,-0 257,-34 420,-34 420,-0 257,-0"/>
 <text text-anchor="start" x="265" y="-20" style="font-family:Arial;font-size:10.00;">TerraSwarm::Asynchronous</text>
 <text text-anchor="middle" x="338" y="-7" style="font-family:Arial;font-size:10.00;">::ClientData::GetDataPoints</text>

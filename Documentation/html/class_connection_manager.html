@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">S2Sim
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">SmartGrid Swarm Simulator</div>
   </td>
@@ -132,6 +132,7 @@ Collaboration diagram for ConnectionManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a0f5f5b25b063cfebfac54b25cda131f7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_connection_manager.html#a0c3634c02b95af84a477b253fcf2b29a">TClientId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#a0f5f5b25b063cfebfac54b25cda131f7">TNumberOfClients</a></td></tr>
+<tr class="memdesc:a0f5f5b25b063cfebfac54b25cda131f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the type for number of clients.  <a href="#a0f5f5b25b063cfebfac54b25cda131f7">More...</a><br/></td></tr>
 <tr class="separator:a0f5f5b25b063cfebfac54b25cda131f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -146,44 +147,55 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4657b51054ad28143f1bddd1f5cc282c"><td class="mdescLeft">&#160;</td><td class="mdescRight">New message processor.  <a href="#a4657b51054ad28143f1bddd1f5cc282c">More...</a><br/></td></tr>
 <tr class="separator:a4657b51054ad28143f1bddd1f5cc282c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc67553cf1eff6ab251a5dd2a313e863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863">DeleteClient</a> (<a class="el" href="class_client_manager.html">ClientManager</a> *clientManager)</td></tr>
+<tr class="memdesc:afc67553cf1eff6ab251a5dd2a313e863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the <a class="el" href="class_client_manager.html" title="Manages the connection with a client. ">ClientManager</a> from all lists and finally deletes itself.  <a href="#afc67553cf1eff6ab251a5dd2a313e863">More...</a><br/></td></tr>
 <tr class="separator:afc67553cf1eff6ab251a5dd2a313e863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf13721cde7ae4615aadbb5262f67274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_connection_manager.html#a0f5f5b25b063cfebfac54b25cda131f7">TNumberOfClients</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#adf13721cde7ae4615aadbb5262f67274">GetNumberOfClients</a> (void) const </td></tr>
+<tr class="memdesc:adf13721cde7ae4615aadbb5262f67274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of clients connected.  <a href="#adf13721cde7ae4615aadbb5262f67274">More...</a><br/></td></tr>
 <tr class="separator:adf13721cde7ae4615aadbb5262f67274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a0c3634c02b95af84a477b253fcf2b29a"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="class_terra_swarm_1_1_message_header.html#ab55de822fadad758edcd8f36bd07676e">TerraSwarm::MessageHeader::TId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#a0c3634c02b95af84a477b253fcf2b29a">TClientId</a></td></tr>
+<tr class="memdesc:a0c3634c02b95af84a477b253fcf2b29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type representing the Unique Id of the client.  <a href="#a0c3634c02b95af84a477b253fcf2b29a">More...</a><br/></td></tr>
 <tr class="separator:a0c3634c02b95af84a477b253fcf2b29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6865543285e3b27b981a739fd0db18"><td class="memItemLeft" align="right" valign="top">typedef std::map<br class="typebreak"/>
 &lt; <a class="el" href="class_threaded_t_c_p_connected_client.html">ThreadedTCPConnectedClient</a> <br class="typebreak"/>
 *, <a class="el" href="class_client_manager.html">ClientManager</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#a7b6865543285e3b27b981a739fd0db18">TClientList</a></td></tr>
+<tr class="memdesc:a7b6865543285e3b27b981a739fd0db18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type mapping TCP client connection pointers to their respective managers.  <a href="#a7b6865543285e3b27b981a739fd0db18">More...</a><br/></td></tr>
 <tr class="separator:a7b6865543285e3b27b981a739fd0db18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35cf836145608197dbe4201b115991c"><td class="memItemLeft" align="right" valign="top">typedef std::map<br class="typebreak"/>
 &lt; <a class="el" href="class_client_manager.html">ClientManager</a> <br class="typebreak"/>
 *, <a class="el" href="class_threaded_t_c_p_connected_client.html">ThreadedTCPConnectedClient</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#aa35cf836145608197dbe4201b115991c">TReversedClientList</a></td></tr>
+<tr class="memdesc:aa35cf836145608197dbe4201b115991c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type mapping the client managers to their respective TCP client connections.  <a href="#aa35cf836145608197dbe4201b115991c">More...</a><br/></td></tr>
 <tr class="separator:aa35cf836145608197dbe4201b115991c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c371deff0ac4add801b3c64216a467"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="class_connection_manager.html#a0c3634c02b95af84a477b253fcf2b29a">TClientId</a>, <br class="typebreak"/>
 <a class="el" href="class_client_manager.html">ClientManager</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#a78c371deff0ac4add801b3c64216a467">TClientIdList</a></td></tr>
+<tr class="memdesc:a78c371deff0ac4add801b3c64216a467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type mapping the client unique id's to respective managers.  <a href="#a78c371deff0ac4add801b3c64216a467">More...</a><br/></td></tr>
 <tr class="separator:a78c371deff0ac4add801b3c64216a467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a7928f3e95b4e88b01c11eaf3e8089ee7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7">ConnectionManager</a> (void)</td></tr>
+<tr class="memdesc:a7928f3e95b4e88b01c11eaf3e8089ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor for singleton implementation.  <a href="#a7928f3e95b4e88b01c11eaf3e8089ee7">More...</a><br/></td></tr>
 <tr class="separator:a7928f3e95b4e88b01c11eaf3e8089ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad9da7334bc0a1ed0f152f5998b46268a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_connection_manager.html#a7b6865543285e3b27b981a739fd0db18">TClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#ad9da7334bc0a1ed0f152f5998b46268a">m_clientList</a></td></tr>
+<tr class="memdesc:ad9da7334bc0a1ed0f152f5998b46268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the Connection-&gt;Manager based list.  <a href="#ad9da7334bc0a1ed0f152f5998b46268a">More...</a><br/></td></tr>
 <tr class="separator:ad9da7334bc0a1ed0f152f5998b46268a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae27a14334d4b84076231534196e75eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_connection_manager.html#aa35cf836145608197dbe4201b115991c">TReversedClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#aae27a14334d4b84076231534196e75eb">m_reversedClientList</a></td></tr>
+<tr class="memdesc:aae27a14334d4b84076231534196e75eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the Manager-&gt;Connection based list for speed.  <a href="#aae27a14334d4b84076231534196e75eb">More...</a><br/></td></tr>
 <tr class="separator:aae27a14334d4b84076231534196e75eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8858415ddb04364d4697f7ea00aa2977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_threaded_t_c_p_server.html">ThreadedTCPServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#a8858415ddb04364d4697f7ea00aa2977">m_server</a></td></tr>
+<tr class="memdesc:a8858415ddb04364d4697f7ea00aa2977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of the TCP server.  <a href="#a8858415ddb04364d4697f7ea00aa2977">More...</a><br/></td></tr>
 <tr class="separator:a8858415ddb04364d4697f7ea00aa2977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ab88124ce7a3bf1d2892d0e9763d1af30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_connection_manager.html">ConnectionManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_connection_manager.html#ab88124ce7a3bf1d2892d0e9763d1af30">GetConnectionManager</a> (void)</td></tr>
+<tr class="memdesc:ab88124ce7a3bf1d2892d0e9763d1af30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Friend method for singleton implementation.  <a href="#ab88124ce7a3bf1d2892d0e9763d1af30">More...</a><br/></td></tr>
 <tr class="separator:ab88124ce7a3bf1d2892d0e9763d1af30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -209,6 +221,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Type representing the Unique Id of the client. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00062">62</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -232,6 +245,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Type mapping the client unique id's to respective managers. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00077">77</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -255,6 +269,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Type mapping TCP client connection pointers to their respective managers. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00067">67</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -270,6 +285,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Represents the type for number of clients. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00083">83</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -293,6 +309,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Type mapping the client managers to their respective TCP client connections. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00072">72</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -321,6 +338,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Private constructor for singleton implementation. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8cpp_source.html#l00045">45</a> of file <a class="el" href="_connection_manager_8cpp_source.html">ConnectionManager.cpp</a>.</p>
@@ -389,7 +407,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Deletes the <a class="el" href="class_client_manager.html" title="Manages the connection with a client. ">ClientManager</a> from all lists and finally deletes itself.</p>
+
+<p>Deletes the <a class="el" href="class_client_manager.html" title="Manages the connection with a client. ">ClientManager</a> from all lists and finally deletes itself. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clientManager</td><td><a class="el" href="class_client_manager.html" title="Manages the connection with a client. ">ClientManager</a> to be deleted. </td></tr>
@@ -436,7 +455,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the current number of clients connected.</p>
+
+<p>Returns the current number of clients connected. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of connected clients. </dd></dl>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00154">154</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -572,7 +592,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Friend method for singleton implementation.</p>
+
+<p>Friend method for singleton implementation. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns the reference to the <a class="el" href="class_connection_manager.html" title="Manages connections to all clients. ">ConnectionManager</a>. </dd></dl>
 
 <p>Definition at line <a class="el" href="_connection_manager_8cpp_source.html#l00011">11</a> of file <a class="el" href="_connection_manager_8cpp_source.html">ConnectionManager.cpp</a>.</p>
@@ -597,6 +618,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Holds the Connection-&gt;Manager based list. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00089">89</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -620,6 +642,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Holds the Manager-&gt;Connection based list for speed. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00094">94</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -643,6 +666,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Instance of the TCP server. </p>
 
 <p>Definition at line <a class="el" href="_connection_manager_8h_source.html#l00099">99</a> of file <a class="el" href="_connection_manager_8h_source.html">ConnectionManager.h</a>.</p>
@@ -659,7 +683,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_connection_manager.html">ConnectionManager</a></li>
-    <li class="footer">Generated on Thu Feb 20 2014 14:42:15 for S2Sim by
+    <li class="footer">Generated on Fri Feb 21 2014 15:21:34 for S2Sim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

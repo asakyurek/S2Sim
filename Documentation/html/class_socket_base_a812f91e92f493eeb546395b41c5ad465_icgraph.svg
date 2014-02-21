@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2" target="_top" xlink:title="SocketBase::SocketBase">
+<a xlink:href="class_socket_base.html#ab53eb639e056af7269e0d720736f48e2" target="_top" xlink:title="Sets the handle to the invalid value. ">
 <polygon style="fill:white;stroke:black;" points="188,1 188,-20 336,-20 336,1 188,1"/>
 <text text-anchor="middle" x="262" y="-6" style="font-family:Arial;font-size:10.00;">SocketBase::SocketBase</text>
 </a>

@@ -1,6 +1,6 @@
 <map id="ClientManager::ProcessGetPrice" name="ClientManager::ProcessGetPrice">
-<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="588,5,668,32"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="8 parameter log message " alt="" coords="588,5,668,32"/>
 <area shape="rect" href="$_control_manager_8cpp.html#a63bfd4667c9c70297f25ae5e5176818e" title="Returns the only instance of ControlManager. " alt="" coords="300,31,463,57"/>
-<area shape="rect" href="$class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" title="ControlManager::ClientPrice\lRequest" alt="" coords="269,81,493,127"/>
-<area shape="rect" href="$class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" title="TCPConnectedClient\l::SendData" alt="" coords="543,81,713,127"/>
+<area shape="rect" href="$class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" title="Relays the price request of a client to the External Controller. " alt="" coords="269,81,493,127"/>
+<area shape="rect" href="$class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" title="Sends data to the connected client. " alt="" coords="543,81,713,127"/>
 </map>

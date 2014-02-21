@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="LogPrint">
+<a xlink:href="_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" target="_top" xlink:title="8 parameter log message ">
 <polygon style="fill:white;stroke:black;" points="542,-215 542,-236 602,-236 602,-215 542,-215"/>
 <text text-anchor="middle" x="572" y="-222" style="font-family:Arial;font-size:10.00;">LogPrint</text>
 </a>
@@ -30,7 +30,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#af78cac737c5197ad17205bab73421b60" target="_top" xlink:title="TerraSwarm::Asynchronous\l::ClientData::GetStartTime">
+<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#af78cac737c5197ad17205bab73421b60" target="_top" xlink:title="Reads the StartTime field. ">
 <polygon style="fill:white;stroke:black;" points="250,-216 250,-250 412,-250 412,-216 250,-216"/>
 <text text-anchor="start" x="258" y="-236" style="font-family:Arial;font-size:10.00;">TerraSwarm::Asynchronous</text>
 <text text-anchor="middle" x="331" y="-223" style="font-family:Arial;font-size:10.00;">::ClientData::GetStartTime</text>
@@ -43,7 +43,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a6e3ca8aab58e0b40867eee3e3ec281e6" target="_top" xlink:title="TerraSwarm::Asynchronous\l::ClientData::GetTimeResolution">
+<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a6e3ca8aab58e0b40867eee3e3ec281e6" target="_top" xlink:title="Reads the TimeResolution field. ">
 <polygon style="fill:white;stroke:black;" points="236,-164 236,-198 426,-198 426,-164 236,-164"/>
 <text text-anchor="start" x="244" y="-184" style="font-family:Arial;font-size:10.00;">TerraSwarm::Asynchronous</text>
 <text text-anchor="middle" x="331" y="-171" style="font-family:Arial;font-size:10.00;">::ClientData::GetTimeResolution</text>
@@ -56,7 +56,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#aba73075c35dd912dad8f99dd026b0785" target="_top" xlink:title="TerraSwarm::Asynchronous\l::ClientData::GetNumberOfDataPoints">
+<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#aba73075c35dd912dad8f99dd026b0785" target="_top" xlink:title="Reads the NumberOfDataPoints field. ">
 <polygon style="fill:white;stroke:black;" points="462,-13 462,-47 682,-47 682,-13 462,-13"/>
 <text text-anchor="start" x="470" y="-33" style="font-family:Arial;font-size:10.00;">TerraSwarm::Asynchronous</text>
 <text text-anchor="middle" x="572" y="-20" style="font-family:Arial;font-size:10.00;">::ClientData::GetNumberOfDataPoints</text>
@@ -69,7 +69,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="GetSystemManager">
+<a xlink:href="_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" target="_top" xlink:title="Singleton function that returns the only instance of SystemManager. ">
 <polygon style="fill:white;stroke:black;" points="270,-87 270,-108 393,-108 393,-87 270,-87"/>
 <text text-anchor="middle" x="331" y="-94" style="font-family:Arial;font-size:10.00;">GetSystemManager</text>
 </a>
@@ -81,7 +81,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" target="_top" xlink:title="SystemManager::RegisterData">
+<a xlink:href="class_system_manager.html#abaf36dbd2e75a773f2ddc40ac82e5f3b" target="_top" xlink:title="Used to register multiple consumption information. ">
 <polygon style="fill:white;stroke:black;" points="241,-125 241,-146 421,-146 421,-125 241,-125"/>
 <text text-anchor="middle" x="331" y="-132" style="font-family:Arial;font-size:10.00;">SystemManager::RegisterData</text>
 </a>
@@ -93,7 +93,7 @@
 </g>
 <!-- Node9 -->
 <g id="node18" class="node"><title>Node9</title>
-<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" target="_top" xlink:title="TerraSwarm::Asynchronous\l::ClientData::GetDataPoints">
+<a xlink:href="class_terra_swarm_1_1_asynchronous_1_1_client_data.html#a72ed5a08a0bbe088b3b6f4d79cdbab2d" target="_top" xlink:title="Gets the pointer to the data points in the message. ">
 <polygon style="fill:white;stroke:black;" points="250,-36 250,-70 413,-70 413,-36 250,-36"/>
 <text text-anchor="start" x="258" y="-56" style="font-family:Arial;font-size:10.00;">TerraSwarm::Asynchronous</text>
 <text text-anchor="middle" x="331" y="-43" style="font-family:Arial;font-size:10.00;">::ClientData::GetDataPoints</text>
@@ -111,7 +111,7 @@
 </g>
 <!-- Node8 -->
 <g id="node16" class="node"><title>Node8</title>
-<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="WarningPrint">
+<a xlink:href="_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" target="_top" xlink:title="6 parameter warning message ">
 <polygon style="fill:white;stroke:black;" points="530,-125 530,-146 615,-146 615,-125 530,-125"/>
 <text text-anchor="middle" x="572" y="-132" style="font-family:Arial;font-size:10.00;">WarningPrint</text>
 </a>
