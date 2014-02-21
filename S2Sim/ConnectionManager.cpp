@@ -1,4 +1,4 @@
-/*
+/**
  * @file ConnectionManager.cpp
  * This file implements the ConnectionManager class.
  *  @date Oct 13, 2013

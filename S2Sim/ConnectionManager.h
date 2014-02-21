@@ -1,4 +1,4 @@
-/*
+/**
  * @file ConnectionManager.h
  * This file defines the ConnectionManager class.
  *  @date Oct 13, 2013
