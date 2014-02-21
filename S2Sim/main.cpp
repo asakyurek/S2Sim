@@ -5,6 +5,12 @@
  *  @author: Alper Sinan Akyurek
  */
 
+/**
+ *  @mainpage S2Sim
+ * S2Sim, SmartGrid Swarm Simulator is a Smart Grid simulation tool that allows clients to cosimulate their local controls and test their outputs within the big picture of the grid. S2Sim uses OpenDSS to solve the power flow equations. More on the usage os S2Sim is written in its Interoperability Document.
+ */
+
+
 #include "MatlabManager.h"
 #include "ConnectionManager.h"
 #include "ControlManager.h"
