@@ -1,0 +1,4 @@
+<map id="TerraSwarm::Asynchronous::ClientData::GetTimeResolution" name="TerraSwarm::Asynchronous::ClientData::GetTimeResolution">
+<area shape="rect" href="$class_client_manager.html#a1dd815fe845945ae8966b3a3f449ba0e" title="Processes the consumption information. " alt="" coords="307,15,573,41"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="623,15,887,41"/>
+</map>

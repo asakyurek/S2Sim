@@ -1,0 +1,8 @@
+<map id="TCPServer::SetPort" name="TCPServer::SetPort">
+<area shape="rect" href="$class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" title="IPAddress::SetAddress" alt="" coords="215,5,391,32"/>
+<area shape="rect" href="$class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" title="IPAddress::SetPort" alt="" coords="228,56,377,83"/>
+<area shape="rect" href="$class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" title="TCPServer::SetAddress" alt="" coords="211,107,395,133"/>
+<area shape="rect" href="$class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" title="IPAddress::GetAddress" alt="" coords="455,5,633,32"/>
+<area shape="rect" href="$class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" title="IPAddress::GetPort" alt="" coords="469,56,619,83"/>
+<area shape="rect" href="$class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" title="IPAddress::GetSocketSize" alt="" coords="443,107,645,133"/>
+</map>

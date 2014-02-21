@@ -1,0 +1,26 @@
+<map id="S2Sim/MatlabManager.h" name="S2Sim/MatlabManager.h">
+<area shape="rect" href="$_semaphore_8h.html" title="Semaphore.h" alt="" coords="496,548,616,575"/>
+<area shape="rect" href="$_threaded_t_c_p_server_8h.html" title="ThreadedTCPServer.h" alt="" coords="121,316,300,343"/>
+<area shape="rect" href="$_threaded_t_c_p_connected_client_8h.html" title="ThreadedTCPConnectedClient.h" alt="" coords="277,471,533,497"/>
+<area shape="rect" href="$_system_manager_8h.html" title="SystemManager.h" alt="" coords="681,84,833,111"/>
+<area shape="rect" href="$_thread_base_8h.html" title="ThreadBase.h" alt="" coords="144,548,264,575"/>
+<area shape="rect" href="$_t_c_p_server_8h.html" title="TCPServer.h" alt="" coords="93,393,203,420"/>
+<area shape="rect" href="$_socket_base_8h.html" title="SocketBase.h" alt="" coords="211,625,328,652"/>
+<area shape="rect" href="$_i_p_address_8h.html" title="IPAddress.h" alt="" coords="352,625,453,652"/>
+<area shape="rect" href="$_t_c_p_connected_client_8h.html" title="TCPConnectedClient.h" alt="" coords="288,548,472,575"/>
+<area shape="rect" href="$_client_manager_8h.html" title="ClientManager.h" alt="" coords="803,316,944,343"/>
+<area shape="rect" href="$_log_print_8h.html" title="LogPrint.h" alt="" coords="524,393,617,420"/>
+<area shape="rect" href="$_control_manager_8h.html" title="ControlManager.h" alt="" coords="447,161,599,188"/>
+<area shape="rect" href="$_message_header_8h.html" title="MessageHeader.h" alt="" coords="1283,548,1432,575"/>
+<area shape="rect" href="$_client_connection_request_8h.html" title="ClientConnectionRequest.h" alt="" coords="793,393,1012,420"/>
+<area shape="rect" href="$_client_connection_response_8h.html" title="ClientConnectionResponse.h" alt="" coords="1479,393,1708,420"/>
+<area shape="rect" href="$_set_current_price_8h.html" title="SetCurrentPrice.h" alt="" coords="1036,393,1183,420"/>
+<area shape="rect" href="$_price_proposal_8h.html" title="PriceProposal.h" alt="" coords="1207,393,1337,420"/>
+<area shape="rect" href="$_client_data_8h.html" title="ClientData.h" alt="" coords="1732,393,1844,420"/>
+<area shape="rect" href="$_get_price_8h.html" title="GetPrice.h" alt="" coords="1361,393,1455,420"/>
+<area shape="rect" href="$_demand_negotiation_8h.html" title="DemandNegotiation.h" alt="" coords="1868,393,2049,420"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="ConnectionManager.h" alt="" coords="425,239,607,265"/>
+<area shape="rect" href="$_network_byte_accessor_8h.html" title="NetworkByteAccessor.h" alt="" coords="1400,625,1587,652"/>
+<area shape="rect" href="$_compile_time_checker_library_8h.html" title="CompileTimeCheckerLibrary.h" alt="" coords="1373,703,1613,729"/>
+<area shape="rect" href="$_message_ender_8h.html" title="MessageEnder.h" alt="" coords="1395,471,1533,497"/>
+</map>

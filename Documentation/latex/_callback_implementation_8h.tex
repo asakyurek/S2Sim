@@ -1,0 +1,112 @@
+\hypertarget{_callback_implementation_8h}{\section{S2\-Sim/\-Callback\-Implementation.h File Reference}
+\label{_callback_implementation_8h}\index{S2\-Sim/\-Callback\-Implementation.\-h@{S2\-Sim/\-Callback\-Implementation.\-h}}
+}
+{\ttfamily \#include \char`\"{}Callback.\-h\char`\"{}}\\*
+Include dependency graph for Callback\-Implementation.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{_callback_implementation_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_empty_class}{Empty\-Class}
+\item 
+class \hyperlink{class_callback_implementation}{Callback\-Implementation$<$ T\-Obj, T\-In1, T\-In2, T\-In3, T\-In4 $>$}
+\item 
+class \hyperlink{class_callback_implementation_3_01_t_obj_00_01_t_in1_00_01_t_in2_00_01_t_in3_00_01_empty_class_01_4}{Callback\-Implementation$<$ T\-Obj, T\-In1, T\-In2, T\-In3, Empty\-Class $>$}
+\item 
+class \hyperlink{class_callback_implementation_3_01_t_obj_00_01_t_in1_00_01_t_in2_00_01_empty_class_00_01_empty_class_01_4}{Callback\-Implementation$<$ T\-Obj, T\-In1, T\-In2, Empty\-Class, Empty\-Class $>$}
+\item 
+class \hyperlink{class_callback_implementation_3_01_t_obj_00_01_t_in1_00_01_empty_class_00_01_empty_class_00_01_empty_class_01_4}{Callback\-Implementation$<$ T\-Obj, T\-In1, Empty\-Class, Empty\-Class, Empty\-Class $>$}
+\item 
+class \hyperlink{class_callback_implementation_3_01_t_obj_00_01_empty_class_00_01_empty_class_00_01_empty_class_00_01_empty_class_01_4}{Callback\-Implementation$<$ T\-Obj, Empty\-Class, Empty\-Class, Empty\-Class, Empty\-Class $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\-Obj , typename T\-In1 , typename T\-In2 , typename T\-In3 , typename T\-In4 $>$ }\\\hyperlink{class_callback}{Callback} $\ast$ \hyperlink{_callback_implementation_8h_ae9a8eeacd299452d4bd9867387a4d380}{Make\-Callback} (T\-Obj $\ast$obj, void(T\-Obj\-::$\ast$function)(T\-In1, T\-In2, T\-In3, T\-In4), const T\-In1 \&in1, const T\-In2 \&in2, const T\-In3 \&in3, const T\-In4 \&in4)
+\item 
+{\footnotesize template$<$typename T\-Obj , typename T\-In1 , typename T\-In2 , typename T\-In3 $>$ }\\\hyperlink{class_callback}{Callback} $\ast$ \hyperlink{_callback_implementation_8h_a18085f4fb179b6f11a4c2e65f0f01e1d}{Make\-Callback} (T\-Obj $\ast$obj, typename \hyperlink{class_callback_implementation}{Callback\-Implementation}$<$ T\-Obj, T\-In1, T\-In2, T\-In3 $>$\-::T\-Function function, const T\-In1 \&in1, const T\-In2 \&in2, const T\-In3 \&in3)
+\item 
+{\footnotesize template$<$typename T\-Obj , typename T\-In1 , typename T\-In2 $>$ }\\\hyperlink{class_callback}{Callback} $\ast$ \hyperlink{_callback_implementation_8h_ac0a67bcb949eb392c704a96391cfcbcb}{Make\-Callback} (T\-Obj $\ast$obj, typename \hyperlink{class_callback_implementation}{Callback\-Implementation}$<$ T\-Obj, T\-In1, T\-In2 $>$\-::T\-Function function, const T\-In1 \&in1, const T\-In2 \&in2)
+\item 
+{\footnotesize template$<$typename T\-Obj , typename T\-In1 $>$ }\\\hyperlink{class_callback}{Callback} $\ast$ \hyperlink{_callback_implementation_8h_a046b1e2344737ef39267f47976ea3b57}{Make\-Callback} (T\-Obj $\ast$obj, typename \hyperlink{class_callback_implementation}{Callback\-Implementation}$<$ T\-Obj, T\-In1 $>$\-::T\-Function function, const T\-In1 \&in1)
+\item 
+{\footnotesize template$<$typename T\-Obj $>$ }\\\hyperlink{class_callback}{Callback} $\ast$ \hyperlink{_callback_implementation_8h_a3917d61732bb1fdf9b06a56ac81db73d}{Make\-Callback} (T\-Obj $\ast$obj, typename \hyperlink{class_callback_implementation}{Callback\-Implementation}$<$ T\-Obj $>$\-::T\-Function function)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_callback_implementation_8h_ae9a8eeacd299452d4bd9867387a4d380}{\index{Callback\-Implementation.\-h@{Callback\-Implementation.\-h}!Make\-Callback@{Make\-Callback}}
+\index{Make\-Callback@{Make\-Callback}!CallbackImplementation.h@{Callback\-Implementation.\-h}}
+\subsubsection[{Make\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Obj , typename T\-In1 , typename T\-In2 , typename T\-In3 , typename T\-In4 $>$ {\bf Callback}$\ast$ Make\-Callback (
+\begin{DoxyParamCaption}
+\item[{T\-Obj $\ast$}]{obj, }
+\item[{void(T\-Obj\-::$\ast$)(T\-In1, T\-In2, T\-In3, T\-In4)}]{function, }
+\item[{const T\-In1 \&}]{in1, }
+\item[{const T\-In2 \&}]{in2, }
+\item[{const T\-In3 \&}]{in3, }
+\item[{const T\-In4 \&}]{in4}
+\end{DoxyParamCaption}
+)}}\label{_callback_implementation_8h_ae9a8eeacd299452d4bd9867387a4d380}
+
+
+Definition at line 215 of file Callback\-Implementation.\-h.
+
+\hypertarget{_callback_implementation_8h_a18085f4fb179b6f11a4c2e65f0f01e1d}{\index{Callback\-Implementation.\-h@{Callback\-Implementation.\-h}!Make\-Callback@{Make\-Callback}}
+\index{Make\-Callback@{Make\-Callback}!CallbackImplementation.h@{Callback\-Implementation.\-h}}
+\subsubsection[{Make\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Obj , typename T\-In1 , typename T\-In2 , typename T\-In3 $>$ {\bf Callback}$\ast$ Make\-Callback (
+\begin{DoxyParamCaption}
+\item[{T\-Obj $\ast$}]{obj, }
+\item[{typename {\bf Callback\-Implementation}$<$ T\-Obj, T\-In1, T\-In2, T\-In3 $>$\-::T\-Function}]{function, }
+\item[{const T\-In1 \&}]{in1, }
+\item[{const T\-In2 \&}]{in2, }
+\item[{const T\-In3 \&}]{in3}
+\end{DoxyParamCaption}
+)}}\label{_callback_implementation_8h_a18085f4fb179b6f11a4c2e65f0f01e1d}
+
+
+Definition at line 233 of file Callback\-Implementation.\-h.
+
+\hypertarget{_callback_implementation_8h_ac0a67bcb949eb392c704a96391cfcbcb}{\index{Callback\-Implementation.\-h@{Callback\-Implementation.\-h}!Make\-Callback@{Make\-Callback}}
+\index{Make\-Callback@{Make\-Callback}!CallbackImplementation.h@{Callback\-Implementation.\-h}}
+\subsubsection[{Make\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Obj , typename T\-In1 , typename T\-In2 $>$ {\bf Callback}$\ast$ Make\-Callback (
+\begin{DoxyParamCaption}
+\item[{T\-Obj $\ast$}]{obj, }
+\item[{typename {\bf Callback\-Implementation}$<$ T\-Obj, T\-In1, T\-In2 $>$\-::T\-Function}]{function, }
+\item[{const T\-In1 \&}]{in1, }
+\item[{const T\-In2 \&}]{in2}
+\end{DoxyParamCaption}
+)}}\label{_callback_implementation_8h_ac0a67bcb949eb392c704a96391cfcbcb}
+
+
+Definition at line 249 of file Callback\-Implementation.\-h.
+
+\hypertarget{_callback_implementation_8h_a046b1e2344737ef39267f47976ea3b57}{\index{Callback\-Implementation.\-h@{Callback\-Implementation.\-h}!Make\-Callback@{Make\-Callback}}
+\index{Make\-Callback@{Make\-Callback}!CallbackImplementation.h@{Callback\-Implementation.\-h}}
+\subsubsection[{Make\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Obj , typename T\-In1 $>$ {\bf Callback}$\ast$ Make\-Callback (
+\begin{DoxyParamCaption}
+\item[{T\-Obj $\ast$}]{obj, }
+\item[{typename {\bf Callback\-Implementation}$<$ T\-Obj, T\-In1 $>$\-::T\-Function}]{function, }
+\item[{const T\-In1 \&}]{in1}
+\end{DoxyParamCaption}
+)}}\label{_callback_implementation_8h_a046b1e2344737ef39267f47976ea3b57}
+
+
+Definition at line 263 of file Callback\-Implementation.\-h.
+
+\hypertarget{_callback_implementation_8h_a3917d61732bb1fdf9b06a56ac81db73d}{\index{Callback\-Implementation.\-h@{Callback\-Implementation.\-h}!Make\-Callback@{Make\-Callback}}
+\index{Make\-Callback@{Make\-Callback}!CallbackImplementation.h@{Callback\-Implementation.\-h}}
+\subsubsection[{Make\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Obj $>$ {\bf Callback}$\ast$ Make\-Callback (
+\begin{DoxyParamCaption}
+\item[{T\-Obj $\ast$}]{obj, }
+\item[{typename {\bf Callback\-Implementation}$<$ T\-Obj $>$\-::T\-Function}]{function}
+\end{DoxyParamCaption}
+)}}\label{_callback_implementation_8h_a3917d61732bb1fdf9b06a56ac81db73d}
+
+
+Definition at line 275 of file Callback\-Implementation.\-h.
+

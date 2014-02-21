@@ -1,0 +1,168 @@
+\hypertarget{class_terra_swarm_1_1_message_ender}{\section{Terra\-Swarm\-:\-:Message\-Ender Class Reference}
+\label{class_terra_swarm_1_1_message_ender}\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}}
+}
+
+
+{\ttfamily \#include $<$Message\-Ender.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_message_ender_a69b4e82c4fb985160b5bbd11c0fc65ff}{Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_message_ender_a69b4e82c4fb985160b5bbd11c0fc65ffa61b601ee3929906b25d5d72130acc98e}{End\-Of\-Message\-Size} = sizeof( T\-End\-Of\-Message )
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cd}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cda73d1f17b583961365d46511dc24a95a0}{Check\-Success} = ( T\-Check\-Result )true, 
+\hyperlink{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cda1a4cb11f4fcd5e5257c47f27650c9cdf}{Check\-Fail} = ( T\-Check\-Result )false
+ \}
+\item 
+typedef bool \hyperlink{class_terra_swarm_1_1_message_ender_a4f3f1bf696190619eb5580c3007ac83a}{T\-Check\-Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_terra_swarm_1_1_message_ender_af69030fc95ad65634ce03e0edb5f3bdd}{Set\-End\-Of\-Message\-Field} (void)
+\item 
+\hyperlink{class_terra_swarm_1_1_message_ender_a4f3f1bf696190619eb5580c3007ac83a}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_message_ender_abc51a9a7a6fb91254ce5cc2ea8edf5bb}{Check\-End\-Of\-Message\-Field} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_message_ender_a0ba74240f52a1197820539e30b216b91}{End\-Of\-Message\-Values} \{ \hyperlink{class_terra_swarm_1_1_message_ender_a0ba74240f52a1197820539e30b216b91ac6e6cab219b02e3512687915ec26be5c}{End\-Of\-Message\-Value} = ( T\-End\-Of\-Message )0x\-F\-E\-D\-C\-B\-A98
+ \}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_message_ender_a34ecb0835fc9e09799dd1a30fcf5ff65}{T\-End\-Of\-Message}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ 0, \hyperlink{class_terra_swarm_1_1_message_ender_a69b4e82c4fb985160b5bbd11c0fc65ffa61b601ee3929906b25d5d72130acc98e}{End\-Of\-Message\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_ender_aa82232ef2e15f3c918e5d8187dff86f8}{T\-End\-Of\-Message\-Accessor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Message\-Ender.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_terra_swarm_1_1_message_ender_a4f3f1bf696190619eb5580c3007ac83a}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!T\-Check\-Result@{T\-Check\-Result}}
+\index{T\-Check\-Result@{T\-Check\-Result}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Message\-Ender\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_message_ender_a4f3f1bf696190619eb5580c3007ac83a}
+
+
+Definition at line 32 of file Message\-Ender.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_ender_a34ecb0835fc9e09799dd1a30fcf5ff65}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!T\-End\-Of\-Message@{T\-End\-Of\-Message}}
+\index{T\-End\-Of\-Message@{T\-End\-Of\-Message}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{T\-End\-Of\-Message}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Message\-Ender\-::\-T\-End\-Of\-Message}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_ender_a34ecb0835fc9e09799dd1a30fcf5ff65}
+
+
+Definition at line 20 of file Message\-Ender.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_ender_aa82232ef2e15f3c918e5d8187dff86f8}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!T\-End\-Of\-Message\-Accessor@{T\-End\-Of\-Message\-Accessor}}
+\index{T\-End\-Of\-Message\-Accessor@{T\-End\-Of\-Message\-Accessor}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{T\-End\-Of\-Message\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<$0,{\bf End\-Of\-Message\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Ender\-::\-T\-End\-Of\-Message\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_ender_aa82232ef2e15f3c918e5d8187dff86f8}
+
+
+Definition at line 40 of file Message\-Ender.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cd}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!Check\-Result\-Values@{Check\-Result\-Values}}
+\index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Message\-Ender\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cd}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Check\-Success@{Check\-Success}!Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}}\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!Check\-Success@{Check\-Success}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cda73d1f17b583961365d46511dc24a95a0}{Check\-Success}\label{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cda73d1f17b583961365d46511dc24a95a0}
+}]\index{Check\-Fail@{Check\-Fail}!Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}}\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!Check\-Fail@{Check\-Fail}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cda1a4cb11f4fcd5e5257c47f27650c9cdf}{Check\-Fail}\label{class_terra_swarm_1_1_message_ender_ad7afbe0b4913ddd8eebac745d343e1cda1a4cb11f4fcd5e5257c47f27650c9cdf}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 33 of file Message\-Ender.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_ender_a0ba74240f52a1197820539e30b216b91}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!End\-Of\-Message\-Values@{End\-Of\-Message\-Values}}
+\index{End\-Of\-Message\-Values@{End\-Of\-Message\-Values}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{End\-Of\-Message\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Message\-Ender\-::\-End\-Of\-Message\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_ender_a0ba74240f52a1197820539e30b216b91}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{End\-Of\-Message\-Value@{End\-Of\-Message\-Value}!Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}}\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!End\-Of\-Message\-Value@{End\-Of\-Message\-Value}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_ender_a0ba74240f52a1197820539e30b216b91ac6e6cab219b02e3512687915ec26be5c}{End\-Of\-Message\-Value}\label{class_terra_swarm_1_1_message_ender_a0ba74240f52a1197820539e30b216b91ac6e6cab219b02e3512687915ec26be5c}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 21 of file Message\-Ender.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_ender_a69b4e82c4fb985160b5bbd11c0fc65ff}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!Size\-Values@{Size\-Values}}
+\index{Size\-Values@{Size\-Values}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Message\-Ender\-::\-Size\-Values}}}\label{class_terra_swarm_1_1_message_ender_a69b4e82c4fb985160b5bbd11c0fc65ff}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{End\-Of\-Message\-Size@{End\-Of\-Message\-Size}!Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}}\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!End\-Of\-Message\-Size@{End\-Of\-Message\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_ender_a69b4e82c4fb985160b5bbd11c0fc65ffa61b601ee3929906b25d5d72130acc98e}{End\-Of\-Message\-Size}\label{class_terra_swarm_1_1_message_ender_a69b4e82c4fb985160b5bbd11c0fc65ffa61b601ee3929906b25d5d72130acc98e}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 27 of file Message\-Ender.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_terra_swarm_1_1_message_ender_abc51a9a7a6fb91254ce5cc2ea8edf5bb}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!Check\-End\-Of\-Message\-Field@{Check\-End\-Of\-Message\-Field}}
+\index{Check\-End\-Of\-Message\-Field@{Check\-End\-Of\-Message\-Field}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{Check\-End\-Of\-Message\-Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message\-Ender\-::\-T\-Check\-Result} Terra\-Swarm\-::\-Message\-Ender\-::\-Check\-End\-Of\-Message\-Field (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_message_ender_abc51a9a7a6fb91254ce5cc2ea8edf5bb}
+
+
+Definition at line 23 of file Message\-Ender.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_message_ender_abc51a9a7a6fb91254ce5cc2ea8edf5bb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_terra_swarm_1_1_message_ender_af69030fc95ad65634ce03e0edb5f3bdd}{\index{Terra\-Swarm\-::\-Message\-Ender@{Terra\-Swarm\-::\-Message\-Ender}!Set\-End\-Of\-Message\-Field@{Set\-End\-Of\-Message\-Field}}
+\index{Set\-End\-Of\-Message\-Field@{Set\-End\-Of\-Message\-Field}!TerraSwarm::MessageEnder@{Terra\-Swarm\-::\-Message\-Ender}}
+\subsubsection[{Set\-End\-Of\-Message\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void Terra\-Swarm\-::\-Message\-Ender\-::\-Set\-End\-Of\-Message\-Field (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_terra_swarm_1_1_message_ender_af69030fc95ad65634ce03e0edb5f3bdd}
+
+
+Definition at line 14 of file Message\-Ender.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_message_ender_af69030fc95ad65634ce03e0edb5f3bdd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_message_ender_8h}{Message\-Ender.\-h}\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_message_ender_8cpp}{Message\-Ender.\-cpp}\end{DoxyCompactItemize}

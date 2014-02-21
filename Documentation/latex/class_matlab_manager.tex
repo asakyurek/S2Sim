@@ -1,0 +1,494 @@
+\hypertarget{class_matlab_manager}{\section{Matlab\-Manager Class Reference}
+\label{class_matlab_manager}\index{Matlab\-Manager@{Matlab\-Manager}}
+}
+
+
+{\ttfamily \#include $<$Matlab\-Manager.\-h$>$}
+
+
+
+Collaboration diagram for Matlab\-Manager\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::string \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name}
+\item 
+typedef \\*
+\hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage}
+\item 
+typedef unsigned int \hyperlink{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{T\-Voltage}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_matlab_manager_ad5ff9f0aacdecada53a107e83b9e3712}{Set\-Client} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client)
+\item 
+bool \hyperlink{class_matlab_manager_a1c967acc77ef8db3113e83a5325b5729}{Is\-Client\-Present} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name)
+\item 
+void \hyperlink{class_matlab_manager_a2967a226a9c6a9ed22998cad67afed3c}{Set\-Wattage} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name, const \hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage} wattage)
+\item 
+\hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage} \hyperlink{class_matlab_manager_afc7fd3eb3469eb7be2af5b857e6f45e1}{Get\-Wattage} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name)
+\item 
+\hyperlink{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{T\-Voltage} \hyperlink{class_matlab_manager_ab741bd4f6545e11dd7dd28548c5229dd}{Get\-Voltage} (const \hyperlink{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{T\-Client\-Name} \&client\-Name)
+\item 
+void \hyperlink{class_matlab_manager_a55151e4e7f68cad7a8b18c93e9f0e0b1}{Advance\-Time\-Step} (void)
+\item 
+void \hyperlink{class_matlab_manager_a7219113b7bc0744fe8faa94d599fe826}{Process\-Data} (void $\ast$buffer, size\-\_\-t size)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667}{Message\-Type\-Values} \{ \\*
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667adcbf0e0a9cff329e02fee0497abfa0ad}{Client\-Check\-Request\-Type} = ( T\-Message\-Type )0x00000001, 
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a6de37f5f7bc415439f9bfac3d388134e}{Client\-Check\-Result\-Type} = ( T\-Message\-Type )0x00000002, 
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667acb00c176bba6ee9a2fba061b06b66d51}{Client\-Set\-Wattage\-Type} = ( T\-Message\-Type )0x00000003, 
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a48753b1473148776d411382a2a691da3}{Client\-Get\-Wattage\-Type} = ( T\-Message\-Type )0x00000004, 
+\\*
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667abc777d9922513b94f1cf1541a83ada1a}{Client\-Wattage\-Result\-Type} = ( T\-Message\-Type )0x00000005, 
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aa4d88f91b01fbcea0365103defc963f2}{Advance\-Time\-Step\-Type} = ( T\-Message\-Type )0x00000006, 
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a665fee7de60985960737ee5508d8c3ca}{Client\-Get\-Voltage\-Type} = ( T\-Message\-Type )0x00000007, 
+\hyperlink{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aaead7562933ee6468343ba41654b2c18}{Client\-Voltage\-Result\-Type} = ( T\-Message\-Type )0x00000008
+ \}
+\item 
+enum \hyperlink{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bd}{Client\-Check\-Result\-Values} \{ \hyperlink{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bdaee007d7e72b359f645f0f48f11270826}{Client\-Exists} = ( T\-Client\-Check\-Result )0x00000001, 
+\hyperlink{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bda55075a8cc68c810028c410f20517f381}{Client\-Does\-Not\-Exist} = ( T\-Client\-Check\-Result )0x00000002
+ \}
+\item 
+typedef unsigned int \hyperlink{class_matlab_manager_a36ad68398613c0d0ede6077af22d830c}{T\-Message\-Type}
+\item 
+typedef unsigned int \hyperlink{class_matlab_manager_ac04dd0e7a4ab2efafe9604da5d44b318}{T\-Client\-Check\-Result}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matlab_manager_a319d996a8872d9cdba8cf335520af258}{Matlab\-Manager} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_threaded_t_c_p_server}{Threaded\-T\-C\-P\-Server} \hyperlink{class_matlab_manager_a2eea12132471953cf6cdb6effb7233f9}{m\-\_\-server}
+\item 
+\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$ \hyperlink{class_matlab_manager_a216ee97a37b033d6a02893206e1793e0}{m\-\_\-client}
+\item 
+Semaphore \hyperlink{class_matlab_manager_a97e67367dd6bf4b6976bcd2237277d46}{m\-\_\-client\-Presence\-Semaphore}
+\item 
+Semaphore \hyperlink{class_matlab_manager_a476eb9e68029520e9032f58672b7829e}{m\-\_\-client\-Wattage\-Semaphore}
+\item 
+Semaphore \hyperlink{class_matlab_manager_a18a1ab2e178279313daf7a0790b91f04}{m\-\_\-client\-Voltage\-Semaphore}
+\item 
+bool \hyperlink{class_matlab_manager_acf28415517fd10ff8105e5ac80280a63}{m\-\_\-client\-Present\-Information}
+\item 
+\hyperlink{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{T\-Wattage} \hyperlink{class_matlab_manager_af4c255ddf41fda74a77367a17520d21f}{m\-\_\-client\-Wattage\-Information}
+\item 
+\hyperlink{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{T\-Voltage} \hyperlink{class_matlab_manager_abf48a413742f5d98d4a13c68b60d9e83}{m\-\_\-client\-Voltage\-Information}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matlab_manager}{Matlab\-Manager} \& \hyperlink{class_matlab_manager_adf11a697c41ba15207a66f8d2b567b75}{Get\-Matlab\-Manager} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file Matlab\-Manager.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_matlab_manager_ac04dd0e7a4ab2efafe9604da5d44b318}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Client\-Check\-Result@{T\-Client\-Check\-Result}}
+\index{T\-Client\-Check\-Result@{T\-Client\-Check\-Result}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{T\-Client\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Matlab\-Manager\-::\-T\-Client\-Check\-Result}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_ac04dd0e7a4ab2efafe9604da5d44b318}
+
+
+Definition at line 50 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Client\-Name@{T\-Client\-Name}}
+\index{T\-Client\-Name@{T\-Client\-Name}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{T\-Client\-Name}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::string {\bf Matlab\-Manager\-::\-T\-Client\-Name}}}\label{class_matlab_manager_a62cb494115d46fdf4ecc6bd369fe0320}
+
+
+Definition at line 58 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a36ad68398613c0d0ede6077af22d830c}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Message\-Type@{T\-Message\-Type}}
+\index{T\-Message\-Type@{T\-Message\-Type}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{T\-Message\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Matlab\-Manager\-::\-T\-Message\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a36ad68398613c0d0ede6077af22d830c}
+
+
+Definition at line 37 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Voltage@{T\-Voltage}}
+\index{T\-Voltage@{T\-Voltage}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{T\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Matlab\-Manager\-::\-T\-Voltage}}}\label{class_matlab_manager_a00f47f07c7dfd449fc39db6c09f6304a}
+
+
+Definition at line 60 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}{\index{Matlab\-Manager@{Matlab\-Manager}!T\-Wattage@{T\-Wattage}}
+\index{T\-Wattage@{T\-Wattage}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{T\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf Matlab\-Manager\-::\-T\-Wattage}}}\label{class_matlab_manager_a410b78f356aeacba5c43efee93d8c27d}
+
+
+Definition at line 59 of file Matlab\-Manager.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bd}{\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Check\-Result\-Values@{Client\-Check\-Result\-Values}}
+\index{Client\-Check\-Result\-Values@{Client\-Check\-Result\-Values}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Client\-Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Matlab\-Manager\-::\-Client\-Check\-Result\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bd}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Client\-Exists@{Client\-Exists}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Exists@{Client\-Exists}}\item[{\em 
+\hypertarget{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bdaee007d7e72b359f645f0f48f11270826}{Client\-Exists}\label{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bdaee007d7e72b359f645f0f48f11270826}
+}]\index{Client\-Does\-Not\-Exist@{Client\-Does\-Not\-Exist}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Does\-Not\-Exist@{Client\-Does\-Not\-Exist}}\item[{\em 
+\hypertarget{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bda55075a8cc68c810028c410f20517f381}{Client\-Does\-Not\-Exist}\label{class_matlab_manager_a3030ee8380a9c54563d3ba494b2ac5bda55075a8cc68c810028c410f20517f381}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 51 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667}{\index{Matlab\-Manager@{Matlab\-Manager}!Message\-Type\-Values@{Message\-Type\-Values}}
+\index{Message\-Type\-Values@{Message\-Type\-Values}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Message\-Type\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Matlab\-Manager\-::\-Message\-Type\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Client\-Check\-Request\-Type@{Client\-Check\-Request\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Check\-Request\-Type@{Client\-Check\-Request\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667adcbf0e0a9cff329e02fee0497abfa0ad}{Client\-Check\-Request\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667adcbf0e0a9cff329e02fee0497abfa0ad}
+}]\index{Client\-Check\-Result\-Type@{Client\-Check\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Check\-Result\-Type@{Client\-Check\-Result\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a6de37f5f7bc415439f9bfac3d388134e}{Client\-Check\-Result\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a6de37f5f7bc415439f9bfac3d388134e}
+}]\index{Client\-Set\-Wattage\-Type@{Client\-Set\-Wattage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Set\-Wattage\-Type@{Client\-Set\-Wattage\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667acb00c176bba6ee9a2fba061b06b66d51}{Client\-Set\-Wattage\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667acb00c176bba6ee9a2fba061b06b66d51}
+}]\index{Client\-Get\-Wattage\-Type@{Client\-Get\-Wattage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Get\-Wattage\-Type@{Client\-Get\-Wattage\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a48753b1473148776d411382a2a691da3}{Client\-Get\-Wattage\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a48753b1473148776d411382a2a691da3}
+}]\index{Client\-Wattage\-Result\-Type@{Client\-Wattage\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Wattage\-Result\-Type@{Client\-Wattage\-Result\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667abc777d9922513b94f1cf1541a83ada1a}{Client\-Wattage\-Result\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667abc777d9922513b94f1cf1541a83ada1a}
+}]\index{Advance\-Time\-Step\-Type@{Advance\-Time\-Step\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Advance\-Time\-Step\-Type@{Advance\-Time\-Step\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aa4d88f91b01fbcea0365103defc963f2}{Advance\-Time\-Step\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aa4d88f91b01fbcea0365103defc963f2}
+}]\index{Client\-Get\-Voltage\-Type@{Client\-Get\-Voltage\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Get\-Voltage\-Type@{Client\-Get\-Voltage\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a665fee7de60985960737ee5508d8c3ca}{Client\-Get\-Voltage\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667a665fee7de60985960737ee5508d8c3ca}
+}]\index{Client\-Voltage\-Result\-Type@{Client\-Voltage\-Result\-Type}!Matlab\-Manager@{Matlab\-Manager}}\index{Matlab\-Manager@{Matlab\-Manager}!Client\-Voltage\-Result\-Type@{Client\-Voltage\-Result\-Type}}\item[{\em 
+\hypertarget{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aaead7562933ee6468343ba41654b2c18}{Client\-Voltage\-Result\-Type}\label{class_matlab_manager_afc23406cdfc3be02850cb0ebfff31667aaead7562933ee6468343ba41654b2c18}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 38 of file Matlab\-Manager.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_matlab_manager_a319d996a8872d9cdba8cf335520af258}{\index{Matlab\-Manager@{Matlab\-Manager}!Matlab\-Manager@{Matlab\-Manager}}
+\index{Matlab\-Manager@{Matlab\-Manager}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Matlab\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Matlab\-Manager\-::\-Matlab\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a319d996a8872d9cdba8cf335520af258}
+
+
+Definition at line 40 of file Matlab\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a319d996a8872d9cdba8cf335520af258_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_matlab_manager_a55151e4e7f68cad7a8b18c93e9f0e0b1}{\index{Matlab\-Manager@{Matlab\-Manager}!Advance\-Time\-Step@{Advance\-Time\-Step}}
+\index{Advance\-Time\-Step@{Advance\-Time\-Step}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Advance\-Time\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void Matlab\-Manager\-::\-Advance\-Time\-Step (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_matlab_manager_a55151e4e7f68cad7a8b18c93e9f0e0b1}
+
+
+Definition at line 340 of file Matlab\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a55151e4e7f68cad7a8b18c93e9f0e0b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a55151e4e7f68cad7a8b18c93e9f0e0b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_matlab_manager_ab741bd4f6545e11dd7dd28548c5229dd}{\index{Matlab\-Manager@{Matlab\-Manager}!Get\-Voltage@{Get\-Voltage}}
+\index{Get\-Voltage@{Get\-Voltage}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Get\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matlab\-Manager\-::\-T\-Voltage} Matlab\-Manager\-::\-Get\-Voltage (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Client\-Name} \&}]{client\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_matlab_manager_ab741bd4f6545e11dd7dd28548c5229dd}
+
+
+Definition at line 290 of file Matlab\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_ab741bd4f6545e11dd7dd28548c5229dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_matlab_manager_afc7fd3eb3469eb7be2af5b857e6f45e1}{\index{Matlab\-Manager@{Matlab\-Manager}!Get\-Wattage@{Get\-Wattage}}
+\index{Get\-Wattage@{Get\-Wattage}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Get\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matlab\-Manager\-::\-T\-Wattage} Matlab\-Manager\-::\-Get\-Wattage (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Client\-Name} \&}]{client\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_matlab_manager_afc7fd3eb3469eb7be2af5b857e6f45e1}
+
+
+Definition at line 240 of file Matlab\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_afc7fd3eb3469eb7be2af5b857e6f45e1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_matlab_manager_a1c967acc77ef8db3113e83a5325b5729}{\index{Matlab\-Manager@{Matlab\-Manager}!Is\-Client\-Present@{Is\-Client\-Present}}
+\index{Is\-Client\-Present@{Is\-Client\-Present}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Is\-Client\-Present}]{\setlength{\rightskip}{0pt plus 5cm}bool Matlab\-Manager\-::\-Is\-Client\-Present (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Client\-Name} \&}]{client\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_matlab_manager_a1c967acc77ef8db3113e83a5325b5729}
+
+
+Definition at line 144 of file Matlab\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a1c967acc77ef8db3113e83a5325b5729_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_matlab_manager_a7219113b7bc0744fe8faa94d599fe826}{\index{Matlab\-Manager@{Matlab\-Manager}!Process\-Data@{Process\-Data}}
+\index{Process\-Data@{Process\-Data}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Process\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Matlab\-Manager\-::\-Process\-Data (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buffer, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{class_matlab_manager_a7219113b7bc0744fe8faa94d599fe826}
+
+
+Definition at line 56 of file Matlab\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a7219113b7bc0744fe8faa94d599fe826_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a7219113b7bc0744fe8faa94d599fe826_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_matlab_manager_ad5ff9f0aacdecada53a107e83b9e3712}{\index{Matlab\-Manager@{Matlab\-Manager}!Set\-Client@{Set\-Client}}
+\index{Set\-Client@{Set\-Client}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Set\-Client}]{\setlength{\rightskip}{0pt plus 5cm}void Matlab\-Manager\-::\-Set\-Client (
+\begin{DoxyParamCaption}
+\item[{{\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$}]{client}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_matlab_manager_ad5ff9f0aacdecada53a107e83b9e3712}
+
+
+Definition at line 79 of file Matlab\-Manager.\-h.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_ad5ff9f0aacdecada53a107e83b9e3712_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_ad5ff9f0aacdecada53a107e83b9e3712_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_matlab_manager_a2967a226a9c6a9ed22998cad67afed3c}{\index{Matlab\-Manager@{Matlab\-Manager}!Set\-Wattage@{Set\-Wattage}}
+\index{Set\-Wattage@{Set\-Wattage}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Set\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}void Matlab\-Manager\-::\-Set\-Wattage (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Client\-Name} \&}]{client\-Name, }
+\item[{const {\bf T\-Wattage}}]{wattage}
+\end{DoxyParamCaption}
+)}}\label{class_matlab_manager_a2967a226a9c6a9ed22998cad67afed3c}
+
+
+Definition at line 194 of file Matlab\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a2967a226a9c6a9ed22998cad67afed3c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matlab_manager_a2967a226a9c6a9ed22998cad67afed3c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_matlab_manager_adf11a697c41ba15207a66f8d2b567b75}{\index{Matlab\-Manager@{Matlab\-Manager}!Get\-Matlab\-Manager@{Get\-Matlab\-Manager}}
+\index{Get\-Matlab\-Manager@{Get\-Matlab\-Manager}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{Get\-Matlab\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matlab\-Manager}\& Get\-Matlab\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_matlab_manager_adf11a697c41ba15207a66f8d2b567b75}
+
+
+Definition at line 13 of file Matlab\-Manager.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_matlab_manager_a216ee97a37b033d6a02893206e1793e0}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client@{m\-\_\-client}}
+\index{m\-\_\-client@{m\-\_\-client}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Connected\-Client}$\ast$ Matlab\-Manager\-::m\-\_\-client\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a216ee97a37b033d6a02893206e1793e0}
+
+
+Definition at line 64 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a97e67367dd6bf4b6976bcd2237277d46}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Presence\-Semaphore@{m\-\_\-client\-Presence\-Semaphore}}
+\index{m\-\_\-client\-Presence\-Semaphore@{m\-\_\-client\-Presence\-Semaphore}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-client\-Presence\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Matlab\-Manager\-::m\-\_\-client\-Presence\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a97e67367dd6bf4b6976bcd2237277d46}
+
+
+Definition at line 66 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_acf28415517fd10ff8105e5ac80280a63}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Present\-Information@{m\-\_\-client\-Present\-Information}}
+\index{m\-\_\-client\-Present\-Information@{m\-\_\-client\-Present\-Information}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-client\-Present\-Information}]{\setlength{\rightskip}{0pt plus 5cm}bool Matlab\-Manager\-::m\-\_\-client\-Present\-Information\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_acf28415517fd10ff8105e5ac80280a63}
+
+
+Definition at line 70 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_abf48a413742f5d98d4a13c68b60d9e83}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Voltage\-Information@{m\-\_\-client\-Voltage\-Information}}
+\index{m\-\_\-client\-Voltage\-Information@{m\-\_\-client\-Voltage\-Information}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-client\-Voltage\-Information}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Voltage} Matlab\-Manager\-::m\-\_\-client\-Voltage\-Information\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_abf48a413742f5d98d4a13c68b60d9e83}
+
+
+Definition at line 72 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a18a1ab2e178279313daf7a0790b91f04}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Voltage\-Semaphore@{m\-\_\-client\-Voltage\-Semaphore}}
+\index{m\-\_\-client\-Voltage\-Semaphore@{m\-\_\-client\-Voltage\-Semaphore}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-client\-Voltage\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Matlab\-Manager\-::m\-\_\-client\-Voltage\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a18a1ab2e178279313daf7a0790b91f04}
+
+
+Definition at line 68 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_af4c255ddf41fda74a77367a17520d21f}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Wattage\-Information@{m\-\_\-client\-Wattage\-Information}}
+\index{m\-\_\-client\-Wattage\-Information@{m\-\_\-client\-Wattage\-Information}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-client\-Wattage\-Information}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Wattage} Matlab\-Manager\-::m\-\_\-client\-Wattage\-Information\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_af4c255ddf41fda74a77367a17520d21f}
+
+
+Definition at line 71 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a476eb9e68029520e9032f58672b7829e}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-client\-Wattage\-Semaphore@{m\-\_\-client\-Wattage\-Semaphore}}
+\index{m\-\_\-client\-Wattage\-Semaphore@{m\-\_\-client\-Wattage\-Semaphore}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-client\-Wattage\-Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore Matlab\-Manager\-::m\-\_\-client\-Wattage\-Semaphore\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a476eb9e68029520e9032f58672b7829e}
+
+
+Definition at line 67 of file Matlab\-Manager.\-h.
+
+\hypertarget{class_matlab_manager_a2eea12132471953cf6cdb6effb7233f9}{\index{Matlab\-Manager@{Matlab\-Manager}!m\-\_\-server@{m\-\_\-server}}
+\index{m\-\_\-server@{m\-\_\-server}!MatlabManager@{Matlab\-Manager}}
+\subsubsection[{m\-\_\-server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Server} Matlab\-Manager\-::m\-\_\-server\hspace{0.3cm}{\ttfamily [private]}}}\label{class_matlab_manager_a2eea12132471953cf6cdb6effb7233f9}
+
+
+Definition at line 63 of file Matlab\-Manager.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\hyperlink{_matlab_manager_8h}{Matlab\-Manager.\-h}\item 
+S2\-Sim/\hyperlink{_matlab_manager_8cpp}{Matlab\-Manager.\-cpp}\end{DoxyCompactItemize}

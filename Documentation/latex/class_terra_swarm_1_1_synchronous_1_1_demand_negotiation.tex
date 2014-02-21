@@ -1,0 +1,279 @@
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{\section{Terra\-Swarm\-:\-:Synchronous\-:\-:Demand\-Negotiation Class Reference}
+\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+}
+
+
+{\ttfamily \#include $<$Demand\-Negotiation.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302d}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da3a190a1e60e673508e7d0b752edada78}{Success} = ( T\-Check\-Result )true, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da172b152bb4bc982cf5d623de5a1e696d}{Fail} = ( T\-Check\-Result )false
+ \}
+\item 
+typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_abf70719cd7b70d3eeecb1949bc2157a3}{T\-Check\-Result}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{T\-Number\-Of\-Data\-Points}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{T\-Data\-Point}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a305449b096b0a75cc403222653b241a4}{$\sim$\-Demand\-Negotiation} (void)
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_abf70719cd7b70d3eeecb1949bc2157a3}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a1ebc766e094f58150ff5d1fa78031294}{Check\-Message} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{T\-Number\-Of\-Data\-Points} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_af0694c36ab00a1dadf8bb8f1b3c7c159}{Get\-Number\-Of\-Data\-Points} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{T\-Data\-Point} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2}{Get\-Data\-Points} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Demand\-Negotiation} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a99ffac24b0af7f388d29eb47d3c19f33}{Get\-New\-Demand\-Negotiation} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{T\-Number\-Of\-Data\-Points} number\-Of\-Data\-Points, \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{T\-Data\-Point} $\ast$data\-Points)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a6c276b43db55c33b12b96bf8103aeccc}{Message\-Type} = 0x0003, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a19ff4bbd69f6d5e53a2c8ec3c7e6c582}{Message\-Id} = 0x0004
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3}{Field\-Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a177cce271c67adfe880026f2991ddd24}{Number\-Of\-Data\-Points\-Size} = sizeof( T\-Number\-Of\-Data\-Points ), 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a98cb806c46ea5332ce3f6e2bc2c77b86}{Data\-Point\-Size} = sizeof( T\-Data\-Point )
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bf}{Field\-Index\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfafbea2a0f9ecc4bd089bb5fae8be2777b}{Number\-Of\-Data\-Points\-Index} = Message\-Header\-:\-:Message\-Header\-Size, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfa87d6d357dd529ff7f9503d69dd044a5b}{Data\-Start\-Index} = Number\-Of\-Data\-Points\-Index + Number\-Of\-Data\-Points\-Size
+ \}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfafbea2a0f9ecc4bd089bb5fae8be2777b}{Number\-Of\-Data\-Points\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a177cce271c67adfe880026f2991ddd24}{Number\-Of\-Data\-Points\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a86cc2804c82d511a7b9e037d041236bd}{T\-Number\-Of\-Data\-Points\-Accessor}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a9477added06c203f17f43cbfbd651fc4}{Demand\-Negotiation} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Demand\-Negotiation.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_abf70719cd7b70d3eeecb1949bc2157a3}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!T\-Check\-Result@{T\-Check\-Result}}
+\index{T\-Check\-Result@{T\-Check\-Result}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_abf70719cd7b70d3eeecb1949bc2157a3}
+
+
+Definition at line 30 of file Demand\-Negotiation.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!T\-Data\-Point@{T\-Data\-Point}}
+\index{T\-Data\-Point@{T\-Data\-Point}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{T\-Data\-Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Data\-Point}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a6660353fa0a65775070bba8571a76e3d}
+
+
+Definition at line 38 of file Demand\-Negotiation.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}}
+\index{T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{T\-Number\-Of\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Number\-Of\-Data\-Points}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_aeaaae7fc1861d9af2bff4c9dcb4d89ac}
+
+
+Definition at line 37 of file Demand\-Negotiation.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a86cc2804c82d511a7b9e037d041236bd}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!T\-Number\-Of\-Data\-Points\-Accessor@{T\-Number\-Of\-Data\-Points\-Accessor}}
+\index{T\-Number\-Of\-Data\-Points\-Accessor@{T\-Number\-Of\-Data\-Points\-Accessor}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{T\-Number\-Of\-Data\-Points\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Number\-Of\-Data\-Points\-Index}, {\bf Number\-Of\-Data\-Points\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-T\-Number\-Of\-Data\-Points\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a86cc2804c82d511a7b9e037d041236bd}
+
+
+Definition at line 53 of file Demand\-Negotiation.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Check\-Result\-Values@{Check\-Result\-Values}}
+\index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Success@{Success}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da3a190a1e60e673508e7d0b752edada78}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da3a190a1e60e673508e7d0b752edada78}
+}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Fail@{Fail}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da172b152bb4bc982cf5d623de5a1e696d}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a62e3d42f7a50e61a19ac2bc6349c302da172b152bb4bc982cf5d623de5a1e696d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 31 of file Demand\-Negotiation.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bf}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Field\-Index\-Values@{Field\-Index\-Values}}
+\index{Field\-Index\-Values@{Field\-Index\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bf}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Number\-Of\-Data\-Points\-Index@{Number\-Of\-Data\-Points\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Number\-Of\-Data\-Points\-Index@{Number\-Of\-Data\-Points\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfafbea2a0f9ecc4bd089bb5fae8be2777b}{Number\-Of\-Data\-Points\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfafbea2a0f9ecc4bd089bb5fae8be2777b}
+}]\index{Data\-Start\-Index@{Data\-Start\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Data\-Start\-Index@{Data\-Start\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfa87d6d357dd529ff7f9503d69dd044a5b}{Data\-Start\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a28b34eef9d480a2368260c99ecc487bfa87d6d357dd529ff7f9503d69dd044a5b}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 47 of file Demand\-Negotiation.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Field\-Size\-Values@{Field\-Size\-Values}}
+\index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Number\-Of\-Data\-Points\-Size@{Number\-Of\-Data\-Points\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Number\-Of\-Data\-Points\-Size@{Number\-Of\-Data\-Points\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a177cce271c67adfe880026f2991ddd24}{Number\-Of\-Data\-Points\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a177cce271c67adfe880026f2991ddd24}
+}]\index{Data\-Point\-Size@{Data\-Point\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Data\-Point\-Size@{Data\-Point\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a98cb806c46ea5332ce3f6e2bc2c77b86}{Data\-Point\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a4e1d77efc7d917053f43b4e7faf6dfa3a98cb806c46ea5332ce3f6e2bc2c77b86}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 41 of file Demand\-Negotiation.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Header\-Values@{Header\-Values}}
+\index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Message\-Type@{Message\-Type}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Message\-Type@{Message\-Type}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a6c276b43db55c33b12b96bf8103aeccc}{Message\-Type}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a6c276b43db55c33b12b96bf8103aeccc}
+}]\index{Message\-Id@{Message\-Id}!Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Message\-Id@{Message\-Id}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a19ff4bbd69f6d5e53a2c8ec3c7e6c582}{Message\-Id}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_afbf936743aecc68e9e53598ed8146e21a19ff4bbd69f6d5e53a2c8ec3c7e6c582}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 23 of file Demand\-Negotiation.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a9477added06c203f17f43cbfbd651fc4}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Demand\-Negotiation@{Demand\-Negotiation}}
+\index{Demand\-Negotiation@{Demand\-Negotiation}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Demand\-Negotiation}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Demand\-Negotiation (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a9477added06c203f17f43cbfbd651fc4}
+
+
+Definition at line 14 of file Demand\-Negotiation.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a305449b096b0a75cc403222653b241a4}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!$\sim$\-Demand\-Negotiation@{$\sim$\-Demand\-Negotiation}}
+\index{$\sim$\-Demand\-Negotiation@{$\sim$\-Demand\-Negotiation}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{$\sim$\-Demand\-Negotiation}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::$\sim$\-Demand\-Negotiation (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a305449b096b0a75cc403222653b241a4}
+
+
+Definition at line 18 of file Demand\-Negotiation.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a1ebc766e094f58150ff5d1fa78031294}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Check\-Message@{Check\-Message}}
+\index{Check\-Message@{Check\-Message}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Check\-Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Demand\-Negotiation\-::\-T\-Check\-Result} Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Check\-Message (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a1ebc766e094f58150ff5d1fa78031294}
+
+
+Definition at line 42 of file Demand\-Negotiation.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Get\-Data\-Points@{Get\-Data\-Points}}
+\index{Get\-Data\-Points@{Get\-Data\-Points}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Get\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Demand\-Negotiation\-::\-T\-Data\-Point} $\ast$ Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Get\-Data\-Points (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2}
+
+
+Definition at line 61 of file Demand\-Negotiation.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_ab99ce665f0822299184ff34cf5e674d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a99ffac24b0af7f388d29eb47d3c19f33}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Get\-New\-Demand\-Negotiation@{Get\-New\-Demand\-Negotiation}}
+\index{Get\-New\-Demand\-Negotiation@{Get\-New\-Demand\-Negotiation}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Get\-New\-Demand\-Negotiation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Demand\-Negotiation} $\ast$ Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Get\-New\-Demand\-Negotiation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message\-Header\-::\-T\-Sender\-Id}}]{sender\-Id, }
+\item[{const {\bf Message\-Header\-::\-T\-Receiver\-Id}}]{receiver\-Id, }
+\item[{const {\bf T\-Number\-Of\-Data\-Points}}]{number\-Of\-Data\-Points, }
+\item[{{\bf T\-Data\-Point} $\ast$}]{data\-Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_a99ffac24b0af7f388d29eb47d3c19f33}
+
+
+Definition at line 24 of file Demand\-Negotiation.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_af0694c36ab00a1dadf8bb8f1b3c7c159}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}!Get\-Number\-Of\-Data\-Points@{Get\-Number\-Of\-Data\-Points}}
+\index{Get\-Number\-Of\-Data\-Points@{Get\-Number\-Of\-Data\-Points}!TerraSwarm::Synchronous::DemandNegotiation@{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}}
+\subsubsection[{Get\-Number\-Of\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Demand\-Negotiation\-::\-T\-Number\-Of\-Data\-Points} Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation\-::\-Get\-Number\-Of\-Data\-Points (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_af0694c36ab00a1dadf8bb8f1b3c7c159}
+
+
+Definition at line 53 of file Demand\-Negotiation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation_af0694c36ab00a1dadf8bb8f1b3c7c159_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_demand_negotiation_8h}{Demand\-Negotiation.\-h}\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_demand_negotiation_8cpp}{Demand\-Negotiation.\-cpp}\end{DoxyCompactItemize}

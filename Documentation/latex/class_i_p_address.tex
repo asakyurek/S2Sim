@@ -1,0 +1,352 @@
+\hypertarget{class_i_p_address}{\section{I\-P\-Address Class Reference}
+\label{class_i_p_address}\index{I\-P\-Address@{I\-P\-Address}}
+}
+
+
+{\ttfamily \#include $<$I\-P\-Address.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address}
+\item 
+typedef unsigned short \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port}
+\item 
+typedef socklen\-\_\-t \hyperlink{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}{T\-Socket\-Size}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_p_address_a1333231aa0a638d7d730a5c89ae868c9}{I\-P\-Address} (void)
+\item 
+\hyperlink{class_i_p_address_a9b64b50f64853fd06487c77e0baaaf4a}{I\-P\-Address} (const \hyperlink{class_i_p_address}{I\-P\-Address} \&copy)
+\item 
+\hyperlink{class_i_p_address_a877ef12fd67c5064b7188a95e570a28b}{$\sim$\-I\-P\-Address} (void)
+\item 
+\hyperlink{class_i_p_address}{I\-P\-Address} \& \hyperlink{class_i_p_address_adebc20befea4d99f6ffd058d999480b2}{operator=} (const \hyperlink{class_i_p_address}{I\-P\-Address} \&rhs)
+\item 
+bool \hyperlink{class_i_p_address_acaa3d485fedf874453d3fd0ab7e93a64}{operator==} (const \hyperlink{class_i_p_address}{I\-P\-Address} \&rhs) const 
+\item 
+void \hyperlink{class_i_p_address_ade47d25d834bfb952fcf7fb2867db21e}{Set\-Address} (const \hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address} address)
+\item 
+\hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address} \hyperlink{class_i_p_address_a00ed9d09c9ec8f1d9568466683606e55}{Get\-Address} (void) const 
+\item 
+void \hyperlink{class_i_p_address_a5908d6242879f0e45685f8b0734dafa7}{Set\-Port} (const \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port} port)
+\item 
+\hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port} \hyperlink{class_i_p_address_a92d27804d27e1fef93afd0137fe4eb08}{Get\-Port} (void) const 
+\item 
+\hyperlink{class_i_p_address_ac7a02f2b922b3b3c929ae3ad079ac8e9}{operator sockaddr $\ast$} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}{T\-Socket\-Size} \hyperlink{class_i_p_address_abdbc7cc25dc15d9e85ceb2e1d3125e22}{Get\-Socket\-Size} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef sockaddr\-\_\-in \hyperlink{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}{T\-Address\-Struct}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{T\-Address} \& \hyperlink{class_i_p_address_a0c90b37a86811781d4422c0dd2d5b6b5}{Get\-Address} (void)
+\item 
+\hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{T\-Port} \& \hyperlink{class_i_p_address_a5c8a6aeae1105603538c2661c68fd6bb}{Get\-Port} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}{T\-Address\-Struct} \hyperlink{class_i_p_address_aaafe20f26b2569a5ac9cd3b61b5c0c50}{m\-\_\-address}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file I\-P\-Address.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}{\index{I\-P\-Address@{I\-P\-Address}!T\-Address@{T\-Address}}
+\index{T\-Address@{T\-Address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{T\-Address}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf I\-P\-Address\-::\-T\-Address}}}\label{class_i_p_address_a36831f63346275f44e8747d77a2a5d51}
+
+
+Definition at line 33 of file I\-P\-Address.\-h.
+
+\hypertarget{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}{\index{I\-P\-Address@{I\-P\-Address}!T\-Address\-Struct@{T\-Address\-Struct}}
+\index{T\-Address\-Struct@{T\-Address\-Struct}!IPAddress@{I\-P\-Address}}
+\subsubsection[{T\-Address\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}typedef sockaddr\-\_\-in {\bf I\-P\-Address\-::\-T\-Address\-Struct}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_a45062a631f57459b18c10c1c8fe310bf}
+
+
+Definition at line 30 of file I\-P\-Address.\-h.
+
+\hypertarget{class_i_p_address_a51188195685c31d4258c0a078cc37154}{\index{I\-P\-Address@{I\-P\-Address}!T\-Port@{T\-Port}}
+\index{T\-Port@{T\-Port}!IPAddress@{I\-P\-Address}}
+\subsubsection[{T\-Port}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf I\-P\-Address\-::\-T\-Port}}}\label{class_i_p_address_a51188195685c31d4258c0a078cc37154}
+
+
+Definition at line 34 of file I\-P\-Address.\-h.
+
+\hypertarget{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}{\index{I\-P\-Address@{I\-P\-Address}!T\-Socket\-Size@{T\-Socket\-Size}}
+\index{T\-Socket\-Size@{T\-Socket\-Size}!IPAddress@{I\-P\-Address}}
+\subsubsection[{T\-Socket\-Size}]{\setlength{\rightskip}{0pt plus 5cm}typedef socklen\-\_\-t {\bf I\-P\-Address\-::\-T\-Socket\-Size}}}\label{class_i_p_address_a28c76ca7e5d4aa86d2caf0b742a23cdb}
+
+
+Definition at line 35 of file I\-P\-Address.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_i_p_address_a1333231aa0a638d7d730a5c89ae868c9}{\index{I\-P\-Address@{I\-P\-Address}!I\-P\-Address@{I\-P\-Address}}
+\index{I\-P\-Address@{I\-P\-Address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{I\-P\-Address}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-Address\-::\-I\-P\-Address (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_i_p_address_a1333231aa0a638d7d730a5c89ae868c9}
+
+
+Definition at line 10 of file I\-P\-Address.\-cpp.
+
+\hypertarget{class_i_p_address_a9b64b50f64853fd06487c77e0baaaf4a}{\index{I\-P\-Address@{I\-P\-Address}!I\-P\-Address@{I\-P\-Address}}
+\index{I\-P\-Address@{I\-P\-Address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{I\-P\-Address}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-Address\-::\-I\-P\-Address (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\-P\-Address} \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{class_i_p_address_a9b64b50f64853fd06487c77e0baaaf4a}
+
+
+Definition at line 16 of file I\-P\-Address.\-cpp.
+
+\hypertarget{class_i_p_address_a877ef12fd67c5064b7188a95e570a28b}{\index{I\-P\-Address@{I\-P\-Address}!$\sim$\-I\-P\-Address@{$\sim$\-I\-P\-Address}}
+\index{$\sim$\-I\-P\-Address@{$\sim$\-I\-P\-Address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{$\sim$\-I\-P\-Address}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-Address\-::$\sim$\-I\-P\-Address (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_i_p_address_a877ef12fd67c5064b7188a95e570a28b}
+
+
+Definition at line 21 of file I\-P\-Address.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i_p_address_a0c90b37a86811781d4422c0dd2d5b6b5}{\index{I\-P\-Address@{I\-P\-Address}!Get\-Address@{Get\-Address}}
+\index{Get\-Address@{Get\-Address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{Get\-Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-Address\-::\-T\-Address} \& I\-P\-Address\-::\-Get\-Address (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_a0c90b37a86811781d4422c0dd2d5b6b5}
+
+
+Definition at line 53 of file I\-P\-Address.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_p_address_a0c90b37a86811781d4422c0dd2d5b6b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_i_p_address_a00ed9d09c9ec8f1d9568466683606e55}{\index{I\-P\-Address@{I\-P\-Address}!Get\-Address@{Get\-Address}}
+\index{Get\-Address@{Get\-Address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{Get\-Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-Address\-::\-T\-Address} I\-P\-Address\-::\-Get\-Address (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_i_p_address_a00ed9d09c9ec8f1d9568466683606e55}
+
+
+Definition at line 63 of file I\-P\-Address.\-cpp.
+
+\hypertarget{class_i_p_address_a5c8a6aeae1105603538c2661c68fd6bb}{\index{I\-P\-Address@{I\-P\-Address}!Get\-Port@{Get\-Port}}
+\index{Get\-Port@{Get\-Port}!IPAddress@{I\-P\-Address}}
+\subsubsection[{Get\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-Address\-::\-T\-Port} \& I\-P\-Address\-::\-Get\-Port (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_a5c8a6aeae1105603538c2661c68fd6bb}
+
+
+Definition at line 85 of file I\-P\-Address.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_p_address_a5c8a6aeae1105603538c2661c68fd6bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_i_p_address_a92d27804d27e1fef93afd0137fe4eb08}{\index{I\-P\-Address@{I\-P\-Address}!Get\-Port@{Get\-Port}}
+\index{Get\-Port@{Get\-Port}!IPAddress@{I\-P\-Address}}
+\subsubsection[{Get\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-Address\-::\-T\-Port} I\-P\-Address\-::\-Get\-Port (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_i_p_address_a92d27804d27e1fef93afd0137fe4eb08}
+
+
+Definition at line 79 of file I\-P\-Address.\-cpp.
+
+\hypertarget{class_i_p_address_abdbc7cc25dc15d9e85ceb2e1d3125e22}{\index{I\-P\-Address@{I\-P\-Address}!Get\-Socket\-Size@{Get\-Socket\-Size}}
+\index{Get\-Socket\-Size@{Get\-Socket\-Size}!IPAddress@{I\-P\-Address}}
+\subsubsection[{Get\-Socket\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf T\-Socket\-Size} I\-P\-Address\-::\-Get\-Socket\-Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_i_p_address_abdbc7cc25dc15d9e85ceb2e1d3125e22}
+
+
+Definition at line 73 of file I\-P\-Address.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_p_address_abdbc7cc25dc15d9e85ceb2e1d3125e22_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_i_p_address_ac7a02f2b922b3b3c929ae3ad079ac8e9}{\index{I\-P\-Address@{I\-P\-Address}!operator sockaddr $\ast$@{operator sockaddr $\ast$}}
+\index{operator sockaddr $\ast$@{operator sockaddr $\ast$}!IPAddress@{I\-P\-Address}}
+\subsubsection[{operator sockaddr $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-Address\-::operator sockaddr $\ast$ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_i_p_address_ac7a02f2b922b3b3c929ae3ad079ac8e9}
+
+
+Definition at line 90 of file I\-P\-Address.\-cpp.
+
+\hypertarget{class_i_p_address_adebc20befea4d99f6ffd058d999480b2}{\index{I\-P\-Address@{I\-P\-Address}!operator=@{operator=}}
+\index{operator=@{operator=}!IPAddress@{I\-P\-Address}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-Address} \& I\-P\-Address\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\-P\-Address} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_i_p_address_adebc20befea4d99f6ffd058d999480b2}
+
+
+Definition at line 26 of file I\-P\-Address.\-cpp.
+
+\hypertarget{class_i_p_address_acaa3d485fedf874453d3fd0ab7e93a64}{\index{I\-P\-Address@{I\-P\-Address}!operator==@{operator==}}
+\index{operator==@{operator==}!IPAddress@{I\-P\-Address}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool I\-P\-Address\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\-P\-Address} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{class_i_p_address_acaa3d485fedf874453d3fd0ab7e93a64}
+
+
+Definition at line 37 of file I\-P\-Address.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_p_address_acaa3d485fedf874453d3fd0ab7e93a64_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_i_p_address_ade47d25d834bfb952fcf7fb2867db21e}{\index{I\-P\-Address@{I\-P\-Address}!Set\-Address@{Set\-Address}}
+\index{Set\-Address@{Set\-Address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{Set\-Address}]{\setlength{\rightskip}{0pt plus 5cm}void I\-P\-Address\-::\-Set\-Address (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Address}}]{address}
+\end{DoxyParamCaption}
+)}}\label{class_i_p_address_ade47d25d834bfb952fcf7fb2867db21e}
+
+
+Definition at line 47 of file I\-P\-Address.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_p_address_ade47d25d834bfb952fcf7fb2867db21e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_p_address_ade47d25d834bfb952fcf7fb2867db21e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_i_p_address_a5908d6242879f0e45685f8b0734dafa7}{\index{I\-P\-Address@{I\-P\-Address}!Set\-Port@{Set\-Port}}
+\index{Set\-Port@{Set\-Port}!IPAddress@{I\-P\-Address}}
+\subsubsection[{Set\-Port}]{\setlength{\rightskip}{0pt plus 5cm}void I\-P\-Address\-::\-Set\-Port (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Port}}]{port}
+\end{DoxyParamCaption}
+)}}\label{class_i_p_address_a5908d6242879f0e45685f8b0734dafa7}
+
+
+Definition at line 73 of file I\-P\-Address.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_i_p_address_a5908d6242879f0e45685f8b0734dafa7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_p_address_a5908d6242879f0e45685f8b0734dafa7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_i_p_address_aaafe20f26b2569a5ac9cd3b61b5c0c50}{\index{I\-P\-Address@{I\-P\-Address}!m\-\_\-address@{m\-\_\-address}}
+\index{m\-\_\-address@{m\-\_\-address}!IPAddress@{I\-P\-Address}}
+\subsubsection[{m\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Address\-Struct} I\-P\-Address\-::m\-\_\-address\hspace{0.3cm}{\ttfamily [private]}}}\label{class_i_p_address_aaafe20f26b2569a5ac9cd3b61b5c0c50}
+
+
+Definition at line 38 of file I\-P\-Address.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Socket\-Library/\hyperlink{_i_p_address_8h}{I\-P\-Address.\-h}\item 
+S2\-Sim/\-Socket\-Library/\hyperlink{_i_p_address_8cpp}{I\-P\-Address.\-cpp}\end{DoxyCompactItemize}

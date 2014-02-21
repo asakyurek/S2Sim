@@ -1,0 +1,18 @@
+<map id="TCPConnectedClient::SendData" name="TCPConnectedClient::SendData">
+<area shape="rect" href="$class_client_manager.html#a6d544b4d20cd3b906b6a033c8d70e4a5" title="Processes an asynchronous client connection request. " alt="" coords="576,95,808,140"/>
+<area shape="rect" href="$class_client_manager.html#adb64a2ee5d0eb7b1a4bdedcd0e3b92f5" title="ClientManager::SetCurrent\lPrice" alt="" coords="259,99,472,144"/>
+<area shape="rect" href="$class_client_manager.html#ae297765312b5f2f93f7b8ec700ad2fbb" title="ClientManager::PriceProposal" alt="" coords="249,168,481,195"/>
+<area shape="rect" href="$class_control_manager.html#a0d5212df17307aef87d42add3aa6cc7a" title="Starts the decision process by sending necessary information to External Controller. " alt="" coords="243,357,488,384"/>
+<area shape="rect" href="$class_control_manager.html#aa4398a05586d9b711aa6101334deefe1" title="ControlManager::ClientPrice\lRequest" alt="" coords="253,219,477,264"/>
+<area shape="rect" href="$class_control_manager.html#a5b551f560431d0bb0bcf6c338bac8eb3" title="ControlManager::ClientDemand\lNegotiation" alt="" coords="240,288,491,333"/>
+<area shape="rect" href="$class_matlab_manager.html#a1c967acc77ef8db3113e83a5325b5729" title="MatlabManager::IsClientPresent" alt="" coords="241,408,489,435"/>
+<area shape="rect" href="$class_matlab_manager.html#a2967a226a9c6a9ed22998cad67afed3c" title="MatlabManager::SetWattage" alt="" coords="252,459,479,485"/>
+<area shape="rect" href="$class_matlab_manager.html#afc7fd3eb3469eb7be2af5b857e6f45e1" title="MatlabManager::GetWattage" alt="" coords="251,509,480,536"/>
+<area shape="rect" href="$class_matlab_manager.html#ab741bd4f6545e11dd7dd28548c5229dd" title="MatlabManager::GetVoltage" alt="" coords="253,560,477,587"/>
+<area shape="rect" href="$class_matlab_manager.html#a55151e4e7f68cad7a8b18c93e9f0e0b1" title="MatlabManager::AdvanceTimeStep" alt="" coords="228,611,503,637"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="881,228,1145,255"/>
+<area shape="rect" href="$class_system_manager.html#a87443d7e75b0f170535d315c27237253" title="SystemManager::AdvanceTimeStep" alt="" coords="552,459,832,485"/>
+<area shape="rect" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="984,459,1043,485"/>
+<area shape="rect" href="$class_client_manager.html#a841299387a1dcd268266a3c0cfe2a95c" title="Processes the price signal request. " alt="" coords="585,219,799,264"/>
+<area shape="rect" href="$class_client_manager.html#ad8841acd386513f41ab0872c67593ff4" title="Processes the demand negotiation response. " alt="" coords="567,288,817,333"/>
+</map>

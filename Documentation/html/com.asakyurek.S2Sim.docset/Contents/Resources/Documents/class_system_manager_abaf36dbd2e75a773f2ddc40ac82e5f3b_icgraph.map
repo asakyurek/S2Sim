@@ -1,0 +1,4 @@
+<map id="SystemManager::RegisterData" name="SystemManager::RegisterData">
+<area shape="rect" href="$class_client_manager.html#a1dd815fe845945ae8966b3a3f449ba0e" title="Processes the consumption information. " alt="" coords="293,5,560,32"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="609,5,873,32"/>
+</map>

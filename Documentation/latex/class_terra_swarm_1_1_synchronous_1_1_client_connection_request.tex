@@ -1,0 +1,183 @@
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request}{\section{Terra\-Swarm\-:\-:Synchronous\-:\-:Client\-Connection\-Request Class Reference}
+\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+}
+
+
+{\ttfamily \#include $<$Client\-Connection\-Request.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93d}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93da20fdb875e0dbe807b95684298bac22bc}{Success} = ( T\-Check\-Result )true, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93da78a023654a74eef1adaae15475a5fa3f}{Fail} = ( T\-Check\-Result )false
+ \}
+\item 
+typedef std\-::string \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a7d85ca6773adf2b3b32cfbff9706f882}{T\-Client\-Name}
+\item 
+typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_af97d7c46396bc29dd8a2628f32a434f2}{T\-Check\-Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a810bd205bf787cbdbf931501666d2445}{$\sim$\-Client\-Connection\-Request} (void)
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_af97d7c46396bc29dd8a2628f32a434f2}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_ac50add84d52e10fcaf148444c09e7145}{Check\-Message} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a7d85ca6773adf2b3b32cfbff9706f882}{T\-Client\-Name} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a94838790aca6aa864fd95b85bddfeaeb}{Get\-Client\-Name} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request}{Client\-Connection\-Request} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a73614eb55926c474741df4d752a34331}{Get\-New\-Client\-Connection\-Request} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a7d85ca6773adf2b3b32cfbff9706f882}{T\-Client\-Name} \&client\-Name)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3abd99d038acc6de976f899ab9fc50595d}{Message\-Type} = 0x0001, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3a53c5286b4426b73ea18df2b4e03948ff}{Message\-Id} = 0x0004
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a807ffa63107a4e1147eebde79ed61f68}{Client\-Connection\-Request} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 59 of file Client\-Connection\-Request.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_af97d7c46396bc29dd8a2628f32a434f2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!T\-Check\-Result@{T\-Check\-Result}}
+\index{T\-Check\-Result@{T\-Check\-Result}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_af97d7c46396bc29dd8a2628f32a434f2}
+
+
+Definition at line 70 of file Client\-Connection\-Request.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a7d85ca6773adf2b3b32cfbff9706f882}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!T\-Client\-Name@{T\-Client\-Name}}
+\index{T\-Client\-Name@{T\-Client\-Name}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{T\-Client\-Name}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::string {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-T\-Client\-Name}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a7d85ca6773adf2b3b32cfbff9706f882}
+
+
+Definition at line 69 of file Client\-Connection\-Request.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Check\-Result\-Values@{Check\-Result\-Values}}
+\index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Success@{Success}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93da20fdb875e0dbe807b95684298bac22bc}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93da20fdb875e0dbe807b95684298bac22bc}
+}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Fail@{Fail}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93da78a023654a74eef1adaae15475a5fa3f}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a784811f86bbc4a1f1232bdbb579db93da78a023654a74eef1adaae15475a5fa3f}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 71 of file Client\-Connection\-Request.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Header\-Values@{Header\-Values}}
+\index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Message\-Type@{Message\-Type}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Message\-Type@{Message\-Type}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3abd99d038acc6de976f899ab9fc50595d}{Message\-Type}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3abd99d038acc6de976f899ab9fc50595d}
+}]\index{Message\-Id@{Message\-Id}!Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Message\-Id@{Message\-Id}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3a53c5286b4426b73ea18df2b4e03948ff}{Message\-Id}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_aea4a8b2edd6730c9b592394868d059e3a53c5286b4426b73ea18df2b4e03948ff}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 62 of file Client\-Connection\-Request.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a807ffa63107a4e1147eebde79ed61f68}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Client\-Connection\-Request@{Client\-Connection\-Request}}
+\index{Client\-Connection\-Request@{Client\-Connection\-Request}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{Client\-Connection\-Request}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-Client\-Connection\-Request (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a807ffa63107a4e1147eebde79ed61f68}
+
+
+Definition at line 62 of file Client\-Connection\-Request.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a810bd205bf787cbdbf931501666d2445}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!$\sim$\-Client\-Connection\-Request@{$\sim$\-Client\-Connection\-Request}}
+\index{$\sim$\-Client\-Connection\-Request@{$\sim$\-Client\-Connection\-Request}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{$\sim$\-Client\-Connection\-Request}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::$\sim$\-Client\-Connection\-Request (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a810bd205bf787cbdbf931501666d2445}
+
+
+Definition at line 66 of file Client\-Connection\-Request.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_ac50add84d52e10fcaf148444c09e7145}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Check\-Message@{Check\-Message}}
+\index{Check\-Message@{Check\-Message}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{Check\-Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\-Connection\-Request\-::\-T\-Check\-Result} Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-Check\-Message (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_ac50add84d52e10fcaf148444c09e7145}
+
+
+Definition at line 88 of file Client\-Connection\-Request.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a94838790aca6aa864fd95b85bddfeaeb}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Get\-Client\-Name@{Get\-Client\-Name}}
+\index{Get\-Client\-Name@{Get\-Client\-Name}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{Get\-Client\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\-Connection\-Request\-::\-T\-Client\-Name} Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-Get\-Client\-Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a94838790aca6aa864fd95b85bddfeaeb}
+
+
+Definition at line 99 of file Client\-Connection\-Request.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a94838790aca6aa864fd95b85bddfeaeb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a73614eb55926c474741df4d752a34331}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}!Get\-New\-Client\-Connection\-Request@{Get\-New\-Client\-Connection\-Request}}
+\index{Get\-New\-Client\-Connection\-Request@{Get\-New\-Client\-Connection\-Request}!TerraSwarm::Synchronous::ClientConnectionRequest@{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}}
+\subsubsection[{Get\-New\-Client\-Connection\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\-Connection\-Request} $\ast$ Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request\-::\-Get\-New\-Client\-Connection\-Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message\-Header\-::\-T\-Sender\-Id}}]{sender\-Id, }
+\item[{const {\bf Message\-Header\-::\-T\-Receiver\-Id}}]{receiver\-Id, }
+\item[{const {\bf T\-Client\-Name} \&}]{client\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_client_connection_request_a73614eb55926c474741df4d752a34331}
+
+
+Definition at line 72 of file Client\-Connection\-Request.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_client_connection_request_8h}{Client\-Connection\-Request.\-h}\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_client_connection_request_8cpp}{Client\-Connection\-Request.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{_connection_manager_8cpp}{\section{S2\-Sim/\-Connection\-Manager.cpp File Reference}
+\label{_connection_manager_8cpp}\index{S2\-Sim/\-Connection\-Manager.\-cpp@{S2\-Sim/\-Connection\-Manager.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Connection\-Manager.\-h\char`\"{}}\\*
+Include dependency graph for Connection\-Manager.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_connection_manager}{Connection\-Manager} \& \hyperlink{_connection_manager_8cpp_ab88124ce7a3bf1d2892d0e9763d1af30}{Get\-Connection\-Manager} (void)
+\item 
+void \hyperlink{_connection_manager_8cpp_a510f5a0926d162b7f546fcf5b8f054e8}{Connection\-Notification\-Handler} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$accepted\-Client)
+\item 
+void \hyperlink{_connection_manager_8cpp_a2e30244a123626dc9199117c06d257ab}{Connection\-Receive\-Handler} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client, void $\ast$buffer, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em Wrapper callback method for reception notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_connection_manager_8cpp_a510f5a0926d162b7f546fcf5b8f054e8}{\index{Connection\-Manager.\-cpp@{Connection\-Manager.\-cpp}!Connection\-Notification\-Handler@{Connection\-Notification\-Handler}}
+\index{Connection\-Notification\-Handler@{Connection\-Notification\-Handler}!ConnectionManager.cpp@{Connection\-Manager.\-cpp}}
+\subsubsection[{Connection\-Notification\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\-Notification\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$}]{accepted\-Client}
+\end{DoxyParamCaption}
+)}}\label{_connection_manager_8cpp_a510f5a0926d162b7f546fcf5b8f054e8}
+
+
+Definition at line 18 of file Connection\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8cpp_a510f5a0926d162b7f546fcf5b8f054e8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8cpp_a510f5a0926d162b7f546fcf5b8f054e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_connection_manager_8cpp_a2e30244a123626dc9199117c06d257ab}{\index{Connection\-Manager.\-cpp@{Connection\-Manager.\-cpp}!Connection\-Receive\-Handler@{Connection\-Receive\-Handler}}
+\index{Connection\-Receive\-Handler@{Connection\-Receive\-Handler}!ConnectionManager.cpp@{Connection\-Manager.\-cpp}}
+\subsubsection[{Connection\-Receive\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\-Receive\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$}]{client, }
+\item[{void $\ast$}]{buffer, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{_connection_manager_8cpp_a2e30244a123626dc9199117c06d257ab}
+
+
+Wrapper callback method for reception notification. 
+
+This method is called to notify that a data has been received. This method relays the information directly to \hyperlink{class_connection_manager}{Connection\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & Client information of the sender. \\
+\hline
+{\em buffer} & Buffer containing the message. \\
+\hline
+{\em size} & Size of the message. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Connection\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8cpp_a2e30244a123626dc9199117c06d257ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8cpp_a2e30244a123626dc9199117c06d257ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_connection_manager_8cpp_ab88124ce7a3bf1d2892d0e9763d1af30}{\index{Connection\-Manager.\-cpp@{Connection\-Manager.\-cpp}!Get\-Connection\-Manager@{Get\-Connection\-Manager}}
+\index{Get\-Connection\-Manager@{Get\-Connection\-Manager}!ConnectionManager.cpp@{Connection\-Manager.\-cpp}}
+\subsubsection[{Get\-Connection\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\-Manager}\& Get\-Connection\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_connection_manager_8cpp_ab88124ce7a3bf1d2892d0e9763d1af30}
+Friend method for singleton implementation.
+
+\begin{DoxyReturn}{Returns}
+Returns the reference to the \hyperlink{class_connection_manager}{Connection\-Manager}. 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Connection\-Manager.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8cpp_ab88124ce7a3bf1d2892d0e9763d1af30_icgraph}
+\end{center}
+\end{figure}
+
+

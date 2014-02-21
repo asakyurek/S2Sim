@@ -1,0 +1,303 @@
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{\section{Terra\-Swarm\-:\-:Synchronous\-:\-:Set\-Current\-Price Class Reference}
+\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+}
+
+
+{\ttfamily \#include $<$Set\-Current\-Price.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827}{Success} = ( T\-Check\-Result )true, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b}{Fail} = ( T\-Check\-Result )false
+ \}
+\item 
+typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aeed4ef4c867719626ede15e2f8718436}{T\-Check\-Result}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{T\-Price}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ab9188b1b4eeed0a333ec879acac1cc30}{$\sim$\-Set\-Current\-Price} (void)
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aeed4ef4c867719626ede15e2f8718436}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a01c2cf6549b92e8066d2f57b753ce8b2}{Check\-Message} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{T\-Price} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aafd75de81420798be1243a02cd8ab7a2}{Get\-Price} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a35a5775c7987c4b1882edfa730f36e7b}{Get\-Interval\-Begin} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a267e167ab05f6dd602a202fcc5d7efdf}{Get\-Interval\-End} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price}{Set\-Current\-Price} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a4f796519e90280eb712adabec444493e}{Get\-New\-Set\-Current\-Price} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{T\-Price} price, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} interval\-Begin, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{T\-Interval} interval\-End)
+\item 
+static \hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{T\-Data\-Size} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a32e1cebec60aa525dbb32025b4201b43}{Get\-Size} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9b}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9ba465058dd25ba7ae05bc5285a2d3708b1}{Message\-Type} = 0x0003, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9baa56dbab91fc6a488f2a629b3278a7580}{Message\-Id} = 0x0002
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5d}{Field\-Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75}{Price\-Size} = sizeof( T\-Price ), 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5}{Interval\-Begin\-Size} = sizeof( T\-Interval ), 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691}{Interval\-End\-Size} = sizeof( T\-Interval ), 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6e935dcdc8159878532d28b745c005c8}{Total\-Size} = ( Price\-Size + Interval\-Begin\-Size + Interval\-End\-Size )
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58}{Field\-Index\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c}{Price\-Index} = Message\-Header\-:\-:Message\-Header\-Size, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d}{Interval\-Begin\-Index} = Price\-Index + Price\-Size, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c}{Interval\-End\-Index} = Interval\-Begin\-Index + Interval\-Begin\-Size
+ \}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c}{Price\-Index}, \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75}{Price\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a950c013f39e20f890173e81a716e3b6b}{T\-Price\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d}{Interval\-Begin\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5}{Interval\-Begin\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2d095e9cd5341bca06b121f115875bcc}{T\-Interval\-Begin\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c}{Interval\-End\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691}{Interval\-End\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ada50db521ec8f4351b11c9e7a55191f6}{T\-Interval\-End\-Accessor}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1d8f82415c6d84a85176ee9f233288dd}{Set\-Current\-Price} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Set\-Current\-Price.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aeed4ef4c867719626ede15e2f8718436}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Check\-Result@{T\-Check\-Result}}
+\index{T\-Check\-Result@{T\-Check\-Result}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aeed4ef4c867719626ede15e2f8718436}
+
+
+Definition at line 29 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Interval@{T\-Interval}}
+\index{T\-Interval@{T\-Interval}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{T\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}
+
+
+Definition at line 37 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2d095e9cd5341bca06b121f115875bcc}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Interval\-Begin\-Accessor@{T\-Interval\-Begin\-Accessor}}
+\index{T\-Interval\-Begin\-Accessor@{T\-Interval\-Begin\-Accessor}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{T\-Interval\-Begin\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Interval\-Begin\-Index}, {\bf Interval\-Begin\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval\-Begin\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2d095e9cd5341bca06b121f115875bcc}
+
+
+Definition at line 56 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ada50db521ec8f4351b11c9e7a55191f6}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Interval\-End\-Accessor@{T\-Interval\-End\-Accessor}}
+\index{T\-Interval\-End\-Accessor@{T\-Interval\-End\-Accessor}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{T\-Interval\-End\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Interval\-End\-Index}, {\bf Interval\-End\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval\-End\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ada50db521ec8f4351b11c9e7a55191f6}
+
+
+Definition at line 57 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Price@{T\-Price}}
+\index{T\-Price@{T\-Price}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{T\-Price}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}
+
+
+Definition at line 36 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a950c013f39e20f890173e81a716e3b6b}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!T\-Price\-Accessor@{T\-Price\-Accessor}}
+\index{T\-Price\-Accessor@{T\-Price\-Accessor}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{T\-Price\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Price\-Index}, {\bf Price\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a950c013f39e20f890173e81a716e3b6b}
+
+
+Definition at line 55 of file Set\-Current\-Price.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Check\-Result\-Values@{Check\-Result\-Values}}
+\index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Success@{Success}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a15e21f3992df9723770d59fa064c3827}
+}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Fail@{Fail}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a0234ba20aa9372d9aaee3948bd008909a67c062540d8320b92b10a0f371dbc32b}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 30 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Field\-Index\-Values@{Field\-Index\-Values}}
+\index{Field\-Index\-Values@{Field\-Index\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Price\-Index@{Price\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Price\-Index@{Price\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c}{Price\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a5885a64cfebb23b330bc57406aeca87c}
+}]\index{Interval\-Begin\-Index@{Interval\-Begin\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Interval\-Begin\-Index@{Interval\-Begin\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d}{Interval\-Begin\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58ad2470cb4012d8a03a476f2c0a7ed837d}
+}]\index{Interval\-End\-Index@{Interval\-End\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Interval\-End\-Index@{Interval\-End\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c}{Interval\-End\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1e2f6ce793cf79b121b76b6903e9df58a2a78676d8ac8e4de4e131d71736f086c}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 48 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Field\-Size\-Values@{Field\-Size\-Values}}
+\index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Price\-Size@{Price\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Price\-Size@{Price\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75}{Price\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6d42507cf32e815416954a4126721a75}
+}]\index{Interval\-Begin\-Size@{Interval\-Begin\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Interval\-Begin\-Size@{Interval\-Begin\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5}{Interval\-Begin\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da53a8281758edfad40d43fba9a81dc5c5}
+}]\index{Interval\-End\-Size@{Interval\-End\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Interval\-End\-Size@{Interval\-End\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691}{Interval\-End\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da289d263a3891286fe193d5c69ad33691}
+}]\index{Total\-Size@{Total\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Total\-Size@{Total\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6e935dcdc8159878532d28b745c005c8}{Total\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a8e183f6b467bff2559f766835197fb5da6e935dcdc8159878532d28b745c005c8}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 40 of file Set\-Current\-Price.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9b}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Header\-Values@{Header\-Values}}
+\index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Message\-Type@{Message\-Type}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Message\-Type@{Message\-Type}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9ba465058dd25ba7ae05bc5285a2d3708b1}{Message\-Type}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9ba465058dd25ba7ae05bc5285a2d3708b1}
+}]\index{Message\-Id@{Message\-Id}!Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Message\-Id@{Message\-Id}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9baa56dbab91fc6a488f2a629b3278a7580}{Message\-Id}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a940712bcf18dc80c00b4d79fe18edf9baa56dbab91fc6a488f2a629b3278a7580}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 22 of file Set\-Current\-Price.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1d8f82415c6d84a85176ee9f233288dd}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Set\-Current\-Price@{Set\-Current\-Price}}
+\index{Set\-Current\-Price@{Set\-Current\-Price}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Set\-Current\-Price}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Set\-Current\-Price (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a1d8f82415c6d84a85176ee9f233288dd}
+
+
+Definition at line 14 of file Set\-Current\-Price.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ab9188b1b4eeed0a333ec879acac1cc30}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!$\sim$\-Set\-Current\-Price@{$\sim$\-Set\-Current\-Price}}
+\index{$\sim$\-Set\-Current\-Price@{$\sim$\-Set\-Current\-Price}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{$\sim$\-Set\-Current\-Price}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::$\sim$\-Set\-Current\-Price (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_ab9188b1b4eeed0a333ec879acac1cc30}
+
+
+Definition at line 18 of file Set\-Current\-Price.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a01c2cf6549b92e8066d2f57b753ce8b2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Check\-Message@{Check\-Message}}
+\index{Check\-Message@{Check\-Message}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Check\-Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\-Current\-Price\-::\-T\-Check\-Result} Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Check\-Message (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a01c2cf6549b92e8066d2f57b753ce8b2}
+
+
+Definition at line 41 of file Set\-Current\-Price.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a35a5775c7987c4b1882edfa730f36e7b}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Interval\-Begin@{Get\-Interval\-Begin}}
+\index{Get\-Interval\-Begin@{Get\-Interval\-Begin}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Get\-Interval\-Begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\-Current\-Price\-::\-T\-Interval} Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Get\-Interval\-Begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a35a5775c7987c4b1882edfa730f36e7b}
+
+
+Definition at line 60 of file Set\-Current\-Price.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a267e167ab05f6dd602a202fcc5d7efdf}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Interval\-End@{Get\-Interval\-End}}
+\index{Get\-Interval\-End@{Get\-Interval\-End}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Get\-Interval\-End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\-Current\-Price\-::\-T\-Interval} Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Get\-Interval\-End (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a267e167ab05f6dd602a202fcc5d7efdf}
+
+
+Definition at line 68 of file Set\-Current\-Price.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a4f796519e90280eb712adabec444493e}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-New\-Set\-Current\-Price@{Get\-New\-Set\-Current\-Price}}
+\index{Get\-New\-Set\-Current\-Price@{Get\-New\-Set\-Current\-Price}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Get\-New\-Set\-Current\-Price}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\-Current\-Price} $\ast$ Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Get\-New\-Set\-Current\-Price (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message\-Header\-::\-T\-Sender\-Id}}]{sender\-Id, }
+\item[{const {\bf Message\-Header\-::\-T\-Receiver\-Id}}]{receiver\-Id, }
+\item[{const {\bf T\-Price}}]{price, }
+\item[{const {\bf T\-Interval}}]{interval\-Begin, }
+\item[{const {\bf T\-Interval}}]{interval\-End}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a4f796519e90280eb712adabec444493e}
+
+
+Definition at line 24 of file Set\-Current\-Price.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aafd75de81420798be1243a02cd8ab7a2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Price@{Get\-Price}}
+\index{Get\-Price@{Get\-Price}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Get\-Price}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\-Current\-Price\-::\-T\-Price} Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Get\-Price (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aafd75de81420798be1243a02cd8ab7a2}
+
+
+Definition at line 52 of file Set\-Current\-Price.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a32e1cebec60aa525dbb32025b4201b43}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}!Get\-Size@{Get\-Size}}
+\index{Get\-Size@{Get\-Size}!TerraSwarm::Synchronous::SetCurrentPrice@{Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price}}
+\subsubsection[{Get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Data\-Size} Terra\-Swarm\-::\-Synchronous\-::\-Set\-Current\-Price\-::\-Get\-Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a32e1cebec60aa525dbb32025b4201b43}
+
+
+Definition at line 76 of file Set\-Current\-Price.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_set_current_price_8h}{Set\-Current\-Price.\-h}\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_set_current_price_8cpp}{Set\-Current\-Price.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="GetMatlabManager" name="GetMatlabManager">
+<area shape="rect" href="$class_client_manager.html#a6d544b4d20cd3b906b6a033c8d70e4a5" title="Processes an asynchronous client connection request. " alt="" coords="221,5,453,51"/>
+<area shape="rect" href="$class_control_manager.html#a0d5212df17307aef87d42add3aa6cc7a" title="ControlManager::MakeDecision" alt="" coords="215,75,460,101"/>
+<area shape="rect" href="$class_system_manager.html#a87443d7e75b0f170535d315c27237253" title="SystemManager::AdvanceTimeStep" alt="" coords="509,125,789,152"/>
+<area shape="rect" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="915,164,973,191"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html#aa340f269e04280ce987b3a8325f27580" title="MatlabNotificationHandler" alt="" coords="839,240,1049,267"/>
+<area shape="rect" href="$_matlab_manager_8h.html#adde5ef25c1ac7d9ccf067e4bc4894675" title="MatlabReceiveHandler" alt="" coords="245,277,429,304"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="517,15,781,41"/>
+<area shape="rect" href="$class_matlab_manager.html#a319d996a8872d9cdba8cf335520af258" title="MatlabManager::MatlabManager" alt="" coords="1099,240,1355,267"/>
+<area shape="rect" href="$class_matlab_manager.html#ad5ff9f0aacdecada53a107e83b9e3712" title="MatlabManager::SetClient" alt="" coords="545,277,753,304"/>
+</map>

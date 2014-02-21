@@ -1,0 +1,4 @@
+<map id="ControlManager::ClientPriceRequest" name="ControlManager::ClientPriceRequest">
+<area shape="rect" href="$class_client_manager.html#a841299387a1dcd268266a3c0cfe2a95c" title="Processes the price signal request. " alt="" coords="279,5,492,51"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="543,15,807,41"/>
+</map>

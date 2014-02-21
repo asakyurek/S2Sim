@@ -1,0 +1,8 @@
+<map id="ClientManager::ConnectionBroken" name="ClientManager::ConnectionBroken">
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="332,5,444,32"/>
+<area shape="rect" href="$_control_manager_8cpp.html#a63bfd4667c9c70297f25ae5e5176818e" title="Returns the only instance of ControlManager. " alt="" coords="307,56,469,83"/>
+<area shape="rect" href="$class_control_manager.html#ac3c913a01fe2e5e5467ad3d140c8e9a2" title="ControlManager::UnRegister\lClient" alt="" coords="276,107,500,152"/>
+<area shape="rect" href="$_connection_manager_8cpp.html#ab88124ce7a3bf1d2892d0e9763d1af30" title="GetConnectionManager" alt="" coords="291,176,485,203"/>
+<area shape="rect" href="$class_connection_manager.html#afc67553cf1eff6ab251a5dd2a313e863" title="ConnectionManager::\lDeleteClient" alt="" coords="300,227,476,272"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="549,176,629,203"/>
+</map>

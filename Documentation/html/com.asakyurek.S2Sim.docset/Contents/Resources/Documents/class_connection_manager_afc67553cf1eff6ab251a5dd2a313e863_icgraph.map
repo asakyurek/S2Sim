@@ -1,0 +1,5 @@
+<map id="ConnectionManager::DeleteClient" name="ConnectionManager::DeleteClient">
+<area shape="rect" href="$class_client_manager.html#a4fa8fc5731587276f5e6be92563474fa" title="Handles the broken connection case. " alt="" coords="239,5,457,51"/>
+<area shape="rect" href="$class_client_manager.html#a6d544b4d20cd3b906b6a033c8d70e4a5" title="Processes an asynchronous client connection request. " alt="" coords="232,75,464,120"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="513,84,777,111"/>
+</map>

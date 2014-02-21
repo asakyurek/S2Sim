@@ -1,0 +1,4 @@
+<map id="ControlManager::ClientDemandNegotiation" name="ControlManager::ClientDemandNegotiation">
+<area shape="rect" href="$class_client_manager.html#ad8841acd386513f41ab0872c67593ff4" title="Processes the demand negotiation response. " alt="" coords="308,5,559,51"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="609,15,873,41"/>
+</map>

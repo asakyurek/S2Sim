@@ -1,0 +1,158 @@
+\hypertarget{_control_manager_8h}{\section{S2\-Sim/\-Control\-Manager.h File Reference}
+\label{_control_manager_8h}\index{S2\-Sim/\-Control\-Manager.\-h@{S2\-Sim/\-Control\-Manager.\-h}}
+}
+{\ttfamily \#include \char`\"{}System\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Threaded\-T\-C\-P\-Server.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Matlab\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Threaded\-T\-C\-P\-Connected\-Client.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Connection\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Client\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Log\-Print.\-h\char`\"{}}\\*
+Include dependency graph for Control\-Manager.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_control_manager_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_control_manager_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_control_manager}{Control\-Manager}
+\begin{DoxyCompactList}\small\item\em Manager the connection with the External Controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_control_manager}{Control\-Manager} \& \hyperlink{_control_manager_8h_a63bfd4667c9c70297f25ae5e5176818e}{Get\-Control\-Manager} (void)
+\begin{DoxyCompactList}\small\item\em Returns the only instance of \hyperlink{class_control_manager}{Control\-Manager}. \end{DoxyCompactList}\item 
+void \hyperlink{_control_manager_8h_a48ac1e0480d4e37f209d5c437cd28b94}{Control\-Notification\-Handler} (\hyperlink{class_t_c_p_connected_client}{T\-C\-P\-Connected\-Client} $\ast$accepted\-Client)
+\begin{DoxyCompactList}\small\item\em Wrapper callback method for connection notification. \end{DoxyCompactList}\item 
+void \hyperlink{_control_manager_8h_a295ee31280dd699294f5787580750ce4}{Control\-Receive\-Handler} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client, void $\ast$buffer, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em Wrapper callback method for reception notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines the \hyperlink{class_control_manager}{Control\-Manager} class. \begin{DoxyDate}{Date}
+Oct 27, 2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\-: Alper Sinan Akyurek 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{_control_manager_8h_source}{Control\-Manager.\-h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_control_manager_8h_a48ac1e0480d4e37f209d5c437cd28b94}{\index{Control\-Manager.\-h@{Control\-Manager.\-h}!Control\-Notification\-Handler@{Control\-Notification\-Handler}}
+\index{Control\-Notification\-Handler@{Control\-Notification\-Handler}!ControlManager.h@{Control\-Manager.\-h}}
+\subsubsection[{Control\-Notification\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Control\-Notification\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf T\-C\-P\-Connected\-Client} $\ast$}]{accepted\-Client}
+\end{DoxyParamCaption}
+)}}\label{_control_manager_8h_a48ac1e0480d4e37f209d5c437cd28b94}
+
+
+Wrapper callback method for connection notification. 
+
+This method is called to notify that a new external controller connection is accepted. The information is relayed directly to \hyperlink{class_control_manager}{Control\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accepted\-Client} & Information about the newly accepted external controller. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_control_manager_8h_a295ee31280dd699294f5787580750ce4}{\index{Control\-Manager.\-h@{Control\-Manager.\-h}!Control\-Receive\-Handler@{Control\-Receive\-Handler}}
+\index{Control\-Receive\-Handler@{Control\-Receive\-Handler}!ControlManager.h@{Control\-Manager.\-h}}
+\subsubsection[{Control\-Receive\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Control\-Receive\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$}]{client, }
+\item[{void $\ast$}]{buffer, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{_control_manager_8h_a295ee31280dd699294f5787580750ce4}
+
+
+Wrapper callback method for reception notification. 
+
+This method is called to notify that a new data is received from the external controller. The data is relayed directly to \hyperlink{class_control_manager}{Control\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & Connection information of the external controller. \\
+\hline
+{\em buffer} & Buffer containing the received data. \\
+\hline
+{\em size} & Size of the received data. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Control\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_control_manager_8h_a295ee31280dd699294f5787580750ce4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_control_manager_8h_a295ee31280dd699294f5787580750ce4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_control_manager_8h_a63bfd4667c9c70297f25ae5e5176818e}{\index{Control\-Manager.\-h@{Control\-Manager.\-h}!Get\-Control\-Manager@{Get\-Control\-Manager}}
+\index{Get\-Control\-Manager@{Get\-Control\-Manager}!ControlManager.h@{Control\-Manager.\-h}}
+\subsubsection[{Get\-Control\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Control\-Manager}\& Get\-Control\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_control_manager_8h_a63bfd4667c9c70297f25ae5e5176818e}
+
+
+Returns the only instance of \hyperlink{class_control_manager}{Control\-Manager}. 
+
+\begin{DoxyReturn}{Returns}
+Only instance of \hyperlink{class_control_manager}{Control\-Manager}.
+\end{DoxyReturn}
+Friend method for singleton implementation.
+
+\begin{DoxyReturn}{Returns}
+Returns the reference to the \hyperlink{class_control_manager}{Control\-Manager}. 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Control\-Manager.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_control_manager_8h_a63bfd4667c9c70297f25ae5e5176818e_icgraph}
+\end{center}
+\end{figure}
+
+

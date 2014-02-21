@@ -1,0 +1,4 @@
+<map id="SystemManager::GetSystemTime" name="SystemManager::GetSystemTime">
+<area shape="rect" href="$class_client_manager.html#a6d544b4d20cd3b906b6a033c8d70e4a5" title="Processes an asynchronous client connection request. " alt="" coords="317,5,549,51"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="599,15,863,41"/>
+</map>

@@ -1,0 +1,135 @@
+\hypertarget{_connection_manager_8h}{\section{S2\-Sim/\-Connection\-Manager.h File Reference}
+\label{_connection_manager_8h}\index{S2\-Sim/\-Connection\-Manager.\-h@{S2\-Sim/\-Connection\-Manager.\-h}}
+}
+{\ttfamily \#include \char`\"{}Client\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Threaded\-T\-C\-P\-Server.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Threaded\-T\-C\-P\-Connected\-Client.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Log\-Print.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for Connection\-Manager.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_connection_manager}{Connection\-Manager}
+\begin{DoxyCompactList}\small\item\em Manages connections to all clients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_connection_manager_8h_a2e30244a123626dc9199117c06d257ab}{Connection\-Receive\-Handler} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client, void $\ast$buffer, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em Wrapper callback method for reception notification. \end{DoxyCompactList}\item 
+void \hyperlink{_connection_manager_8h_aab0367f08e68877e70fa31469b44a69a}{Connection\-Notification\-Handler} (\hyperlink{class_t_c_p_connected_client}{T\-C\-P\-Connected\-Client} $\ast$accepted\-Client)
+\begin{DoxyCompactList}\small\item\em Wrapper callback method for connection notification. \end{DoxyCompactList}\item 
+\hyperlink{class_connection_manager}{Connection\-Manager} \& \hyperlink{_connection_manager_8h_ab88124ce7a3bf1d2892d0e9763d1af30}{Get\-Connection\-Manager} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_connection_manager_8h_aab0367f08e68877e70fa31469b44a69a}{\index{Connection\-Manager.\-h@{Connection\-Manager.\-h}!Connection\-Notification\-Handler@{Connection\-Notification\-Handler}}
+\index{Connection\-Notification\-Handler@{Connection\-Notification\-Handler}!ConnectionManager.h@{Connection\-Manager.\-h}}
+\subsubsection[{Connection\-Notification\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\-Notification\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf T\-C\-P\-Connected\-Client} $\ast$}]{accepted\-Client}
+\end{DoxyParamCaption}
+)}}\label{_connection_manager_8h_aab0367f08e68877e70fa31469b44a69a}
+
+
+Wrapper callback method for connection notification. 
+
+This method is called to notify that a new connection is established. This method relays the notification directly to the \hyperlink{class_connection_manager}{Connection\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accepted\-Client} & Information about the newly accepted client. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_connection_manager_8h_a2e30244a123626dc9199117c06d257ab}{\index{Connection\-Manager.\-h@{Connection\-Manager.\-h}!Connection\-Receive\-Handler@{Connection\-Receive\-Handler}}
+\index{Connection\-Receive\-Handler@{Connection\-Receive\-Handler}!ConnectionManager.h@{Connection\-Manager.\-h}}
+\subsubsection[{Connection\-Receive\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\-Receive\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$}]{client, }
+\item[{void $\ast$}]{buffer, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{_connection_manager_8h_a2e30244a123626dc9199117c06d257ab}
+
+
+Wrapper callback method for reception notification. 
+
+This method is called to notify that a data has been received. This method relays the information directly to \hyperlink{class_connection_manager}{Connection\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & Client information of the sender. \\
+\hline
+{\em buffer} & Buffer containing the message. \\
+\hline
+{\em size} & Size of the message. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Connection\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8h_a2e30244a123626dc9199117c06d257ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8h_a2e30244a123626dc9199117c06d257ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_connection_manager_8h_ab88124ce7a3bf1d2892d0e9763d1af30}{\index{Connection\-Manager.\-h@{Connection\-Manager.\-h}!Get\-Connection\-Manager@{Get\-Connection\-Manager}}
+\index{Get\-Connection\-Manager@{Get\-Connection\-Manager}!ConnectionManager.h@{Connection\-Manager.\-h}}
+\subsubsection[{Get\-Connection\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\-Manager}\& Get\-Connection\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_connection_manager_8h_ab88124ce7a3bf1d2892d0e9763d1af30}
+Friend method for singleton implementation.
+
+\begin{DoxyReturn}{Returns}
+Returns the reference to the \hyperlink{class_connection_manager}{Connection\-Manager}. 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Connection\-Manager.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_connection_manager_8h_ab88124ce7a3bf1d2892d0e9763d1af30_icgraph}
+\end{center}
+\end{figure}
+
+

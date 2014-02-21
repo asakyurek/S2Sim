@@ -1,0 +1,9 @@
+<map id="GetConnectionManager" name="GetConnectionManager">
+<area shape="rect" href="$class_client_manager.html#a4fa8fc5731587276f5e6be92563474fa" title="Handles the broken connection case. " alt="" coords="255,5,473,51"/>
+<area shape="rect" href="$class_client_manager.html#a6d544b4d20cd3b906b6a033c8d70e4a5" title="Processes an asynchronous client connection request. " alt="" coords="248,75,480,120"/>
+<area shape="rect" href="$_connection_manager_8cpp.html#a510f5a0926d162b7f546fcf5b8f054e8" title="ConnectionNotificationHandler" alt="" coords="539,169,784,196"/>
+<area shape="rect" href="$_connection_manager_8h.html#a2e30244a123626dc9199117c06d257ab" title="Wrapper callback method for reception notification. " alt="" coords="255,195,473,221"/>
+<area shape="rect" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="335,245,393,272"/>
+<area shape="rect" href="$class_client_manager.html#abf05d2ac88337dfd02e0b7986ee1e18c" title="Called when a message is received. " alt="" coords="529,84,793,111"/>
+<area shape="rect" href="$class_connection_manager.html#a7928f3e95b4e88b01c11eaf3e8089ee7" title="ConnectionManager::\lConnectionManager" alt="" coords="844,160,1020,205"/>
+</map>

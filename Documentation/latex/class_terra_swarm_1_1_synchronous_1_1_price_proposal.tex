@@ -1,0 +1,303 @@
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal}{\section{Terra\-Swarm\-:\-:Synchronous\-:\-:Price\-Proposal Class Reference}
+\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+}
+
+
+{\ttfamily \#include $<$Price\-Proposal.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5}{Check\-Result\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5ac810ff36c431d78082d6734fe1f78025}{Success} = ( T\-Check\-Result )true, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5a3ab8a257a8c21581a5377bf17c20e1cd}{Fail} = ( T\-Check\-Result )false
+ \}
+\item 
+typedef bool \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab5aef6a74a44439eb880f7dbff610b57}{T\-Check\-Result}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a663093d390a30942a07eee3681ff8fe2}{T\-Price}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a37e6344d030c7695bb9cb341648928ee}{T\-Interval}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_aadf58e38bb170e8e84b611b444022393}{$\sim$\-Price\-Proposal} (void)
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab5aef6a74a44439eb880f7dbff610b57}{T\-Check\-Result} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_af3e0454c5d8e4b83fc0fc2c1b0838e96}{Check\-Message} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a663093d390a30942a07eee3681ff8fe2}{T\-Price} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ad8e9ec2676e1cce4e77cf3fff3bf5797}{Get\-Price} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a37e6344d030c7695bb9cb341648928ee}{T\-Interval} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a935112fee62baf6ca05eeb523bd4faf9}{Get\-Interval\-Begin} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a37e6344d030c7695bb9cb341648928ee}{T\-Interval} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a922bd8c1cbc702f1224b1e6dce6beb3d}{Get\-Interval\-End} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal}{Price\-Proposal} $\ast$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a6936d20aa34398a5f32a78b98e9af1d1}{Get\-New\-Price\-Proposal} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{Message\-Header\-::\-T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{Message\-Header\-::\-T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a663093d390a30942a07eee3681ff8fe2}{T\-Price} price, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a37e6344d030c7695bb9cb341648928ee}{T\-Interval} interval\-Begin, const \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a37e6344d030c7695bb9cb341648928ee}{T\-Interval} interval\-End)
+\item 
+static \hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{T\-Data\-Size} \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_abbb9ecb920cda08184eed9225600f47e}{Get\-Size} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcb}{Header\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcba3dc295e632080af4b40c9cae3fedb652}{Message\-Type} = 0x0003, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcba25ac9ca714a292c6464dac12d0218784}{Message\-Id} = 0x0003
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0b}{Field\-Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0bad6e9c96f5e6fdabf253684805f19dfd5}{Price\-Size} = sizeof( T\-Price ), 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba2482e22b3b67744f6bb178b36cdc1b91}{Interval\-Begin\-Size} = sizeof( T\-Interval ), 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba1481cf2a5350361d2fbc2f166ede8c19}{Interval\-End\-Size} = sizeof( T\-Interval ), 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba0b3fff38e992055c068ed344b9e956de}{Total\-Size} = ( Price\-Size + Interval\-Begin\-Size + Interval\-End\-Size )
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8}{Field\-Index\-Values} \{ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8a7c993b52da3545f122e21da28f769e64}{Price\-Index} = Message\-Header\-:\-:Message\-Header\-Size, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abadfb7fce0950c70240c2687de80a253}{Interval\-Begin\-Index} = Price\-Index + Price\-Size, 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abbbf6c709acc6b1a4b2cf07f3145bccf}{Interval\-End\-Index} = Interval\-Begin\-Index + Interval\-Begin\-Size
+ \}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8a7c993b52da3545f122e21da28f769e64}{Price\-Index}, \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0bad6e9c96f5e6fdabf253684805f19dfd5}{Price\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a3f7f933da487e691a7d29c0227e1a9c6}{T\-Price\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abadfb7fce0950c70240c2687de80a253}{Interval\-Begin\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba2482e22b3b67744f6bb178b36cdc1b91}{Interval\-Begin\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a4a52f34f0b7c60bfc0ca8656cd9c3c5d}{T\-Interval\-Begin\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abbbf6c709acc6b1a4b2cf07f3145bccf}{Interval\-End\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba1481cf2a5350361d2fbc2f166ede8c19}{Interval\-End\-Size} $>$ \hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ad36cac35c047c96d50ecfb29504e9fd6}{T\-Interval\-End\-Accessor}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a463100bd56cb523af80b7e35e1d2dbe5}{Price\-Proposal} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Price\-Proposal.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab5aef6a74a44439eb880f7dbff610b57}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!T\-Check\-Result@{T\-Check\-Result}}
+\index{T\-Check\-Result@{T\-Check\-Result}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{T\-Check\-Result}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-T\-Check\-Result}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab5aef6a74a44439eb880f7dbff610b57}
+
+
+Definition at line 29 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a37e6344d030c7695bb9cb341648928ee}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!T\-Interval@{T\-Interval}}
+\index{T\-Interval@{T\-Interval}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{T\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-T\-Interval}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a37e6344d030c7695bb9cb341648928ee}
+
+
+Definition at line 37 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a4a52f34f0b7c60bfc0ca8656cd9c3c5d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!T\-Interval\-Begin\-Accessor@{T\-Interval\-Begin\-Accessor}}
+\index{T\-Interval\-Begin\-Accessor@{T\-Interval\-Begin\-Accessor}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{T\-Interval\-Begin\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Interval\-Begin\-Index}, {\bf Interval\-Begin\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-T\-Interval\-Begin\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a4a52f34f0b7c60bfc0ca8656cd9c3c5d}
+
+
+Definition at line 56 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ad36cac35c047c96d50ecfb29504e9fd6}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!T\-Interval\-End\-Accessor@{T\-Interval\-End\-Accessor}}
+\index{T\-Interval\-End\-Accessor@{T\-Interval\-End\-Accessor}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{T\-Interval\-End\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Interval\-End\-Index}, {\bf Interval\-End\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-T\-Interval\-End\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ad36cac35c047c96d50ecfb29504e9fd6}
+
+
+Definition at line 57 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a663093d390a30942a07eee3681ff8fe2}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!T\-Price@{T\-Price}}
+\index{T\-Price@{T\-Price}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{T\-Price}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-T\-Price}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a663093d390a30942a07eee3681ff8fe2}
+
+
+Definition at line 36 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a3f7f933da487e691a7d29c0227e1a9c6}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!T\-Price\-Accessor@{T\-Price\-Accessor}}
+\index{T\-Price\-Accessor@{T\-Price\-Accessor}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{T\-Price\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Price\-Index}, {\bf Price\-Size}$>$ {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-T\-Price\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a3f7f933da487e691a7d29c0227e1a9c6}
+
+
+Definition at line 55 of file Price\-Proposal.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Check\-Result\-Values@{Check\-Result\-Values}}
+\index{Check\-Result\-Values@{Check\-Result\-Values}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Check\-Result\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Check\-Result\-Values}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Success@{Success}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Success@{Success}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5ac810ff36c431d78082d6734fe1f78025}{Success}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5ac810ff36c431d78082d6734fe1f78025}
+}]\index{Fail@{Fail}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Fail@{Fail}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5a3ab8a257a8c21581a5377bf17c20e1cd}{Fail}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_afd8478709e56657c81455a26ce72ccf5a3ab8a257a8c21581a5377bf17c20e1cd}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 30 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Field\-Index\-Values@{Field\-Index\-Values}}
+\index{Field\-Index\-Values@{Field\-Index\-Values}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Price\-Index@{Price\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Price\-Index@{Price\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8a7c993b52da3545f122e21da28f769e64}{Price\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8a7c993b52da3545f122e21da28f769e64}
+}]\index{Interval\-Begin\-Index@{Interval\-Begin\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Interval\-Begin\-Index@{Interval\-Begin\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abadfb7fce0950c70240c2687de80a253}{Interval\-Begin\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abadfb7fce0950c70240c2687de80a253}
+}]\index{Interval\-End\-Index@{Interval\-End\-Index}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Interval\-End\-Index@{Interval\-End\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abbbf6c709acc6b1a4b2cf07f3145bccf}{Interval\-End\-Index}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a32c76156dee2511c9aa14a90995639c8abbbf6c709acc6b1a4b2cf07f3145bccf}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 48 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0b}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Field\-Size\-Values@{Field\-Size\-Values}}
+\index{Field\-Size\-Values@{Field\-Size\-Values}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Price\-Size@{Price\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Price\-Size@{Price\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0bad6e9c96f5e6fdabf253684805f19dfd5}{Price\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0bad6e9c96f5e6fdabf253684805f19dfd5}
+}]\index{Interval\-Begin\-Size@{Interval\-Begin\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Interval\-Begin\-Size@{Interval\-Begin\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba2482e22b3b67744f6bb178b36cdc1b91}{Interval\-Begin\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba2482e22b3b67744f6bb178b36cdc1b91}
+}]\index{Interval\-End\-Size@{Interval\-End\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Interval\-End\-Size@{Interval\-End\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba1481cf2a5350361d2fbc2f166ede8c19}{Interval\-End\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba1481cf2a5350361d2fbc2f166ede8c19}
+}]\index{Total\-Size@{Total\-Size}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Total\-Size@{Total\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba0b3fff38e992055c068ed344b9e956de}{Total\-Size}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ab2ea7dd828cca1f7635018608f595f0ba0b3fff38e992055c068ed344b9e956de}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 40 of file Price\-Proposal.\-h.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcb}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Header\-Values@{Header\-Values}}
+\index{Header\-Values@{Header\-Values}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Header\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Header\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Message\-Type@{Message\-Type}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Message\-Type@{Message\-Type}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcba3dc295e632080af4b40c9cae3fedb652}{Message\-Type}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcba3dc295e632080af4b40c9cae3fedb652}
+}]\index{Message\-Id@{Message\-Id}!Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Message\-Id@{Message\-Id}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcba25ac9ca714a292c6464dac12d0218784}{Message\-Id}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a14b7d0d8b5050be599045136920effcba25ac9ca714a292c6464dac12d0218784}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 22 of file Price\-Proposal.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a463100bd56cb523af80b7e35e1d2dbe5}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Price\-Proposal@{Price\-Proposal}}
+\index{Price\-Proposal@{Price\-Proposal}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Price\-Proposal}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Price\-Proposal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a463100bd56cb523af80b7e35e1d2dbe5}
+
+
+Definition at line 14 of file Price\-Proposal.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_aadf58e38bb170e8e84b611b444022393}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!$\sim$\-Price\-Proposal@{$\sim$\-Price\-Proposal}}
+\index{$\sim$\-Price\-Proposal@{$\sim$\-Price\-Proposal}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{$\sim$\-Price\-Proposal}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::$\sim$\-Price\-Proposal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_aadf58e38bb170e8e84b611b444022393}
+
+
+Definition at line 18 of file Price\-Proposal.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_af3e0454c5d8e4b83fc0fc2c1b0838e96}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Check\-Message@{Check\-Message}}
+\index{Check\-Message@{Check\-Message}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Check\-Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Price\-Proposal\-::\-T\-Check\-Result} Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Check\-Message (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_af3e0454c5d8e4b83fc0fc2c1b0838e96}
+
+
+Definition at line 41 of file Price\-Proposal.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a935112fee62baf6ca05eeb523bd4faf9}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Get\-Interval\-Begin@{Get\-Interval\-Begin}}
+\index{Get\-Interval\-Begin@{Get\-Interval\-Begin}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Get\-Interval\-Begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Price\-Proposal\-::\-T\-Interval} Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Get\-Interval\-Begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a935112fee62baf6ca05eeb523bd4faf9}
+
+
+Definition at line 60 of file Price\-Proposal.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a922bd8c1cbc702f1224b1e6dce6beb3d}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Get\-Interval\-End@{Get\-Interval\-End}}
+\index{Get\-Interval\-End@{Get\-Interval\-End}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Get\-Interval\-End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Price\-Proposal\-::\-T\-Interval} Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Get\-Interval\-End (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a922bd8c1cbc702f1224b1e6dce6beb3d}
+
+
+Definition at line 68 of file Price\-Proposal.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a6936d20aa34398a5f32a78b98e9af1d1}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Get\-New\-Price\-Proposal@{Get\-New\-Price\-Proposal}}
+\index{Get\-New\-Price\-Proposal@{Get\-New\-Price\-Proposal}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Get\-New\-Price\-Proposal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Price\-Proposal} $\ast$ Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Get\-New\-Price\-Proposal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message\-Header\-::\-T\-Sender\-Id}}]{sender\-Id, }
+\item[{const {\bf Message\-Header\-::\-T\-Receiver\-Id}}]{receiver\-Id, }
+\item[{const {\bf T\-Price}}]{price, }
+\item[{const {\bf T\-Interval}}]{interval\-Begin, }
+\item[{const {\bf T\-Interval}}]{interval\-End}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_a6936d20aa34398a5f32a78b98e9af1d1}
+
+
+Definition at line 24 of file Price\-Proposal.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ad8e9ec2676e1cce4e77cf3fff3bf5797}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Get\-Price@{Get\-Price}}
+\index{Get\-Price@{Get\-Price}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Get\-Price}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Price\-Proposal\-::\-T\-Price} Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Get\-Price (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_ad8e9ec2676e1cce4e77cf3fff3bf5797}
+
+
+Definition at line 52 of file Price\-Proposal.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_synchronous_1_1_price_proposal_abbb9ecb920cda08184eed9225600f47e}{\index{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}!Get\-Size@{Get\-Size}}
+\index{Get\-Size@{Get\-Size}!TerraSwarm::Synchronous::PriceProposal@{Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal}}
+\subsubsection[{Get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Data\-Size} Terra\-Swarm\-::\-Synchronous\-::\-Price\-Proposal\-::\-Get\-Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_synchronous_1_1_price_proposal_abbb9ecb920cda08184eed9225600f47e}
+
+
+Definition at line 76 of file Price\-Proposal.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_price_proposal_8h}{Price\-Proposal.\-h}\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_price_proposal_8cpp}{Price\-Proposal.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="ThreadedTCPClient" name="ThreadedTCPClient">
+<area shape="rect" href="$class_t_c_p_client.html" title="TCPClient" alt="" coords="81,183,172,209"/>
+<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SOCK_STREAM \&gt;" alt="" coords="5,103,248,129"/>
+<area shape="rect" href="$class_socket_base.html" title="SocketBase\&lt; SocketType \&gt;" alt="" coords="16,7,237,33"/>
+<area shape="rect" href="$class_thread_base.html" title="ThreadBase" alt="" coords="196,183,303,209"/>
+</map>

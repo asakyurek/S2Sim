@@ -1,0 +1,7 @@
+<map id="ConnectionReceiveHandler" name="ConnectionReceiveHandler">
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="535,45,615,72"/>
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="519,205,631,232"/>
+<area shape="rect" href="$_connection_manager_8cpp.html#ab88124ce7a3bf1d2892d0e9763d1af30" title="GetConnectionManager" alt="" coords="275,125,469,152"/>
+<area shape="rect" href="$class_connection_manager.html#a64473b0369ab91daf3a2da6b8ef576d0" title="Broken connection handler. " alt="" coords="284,227,460,272"/>
+<area shape="rect" href="$class_connection_manager.html#a4657b51054ad28143f1bddd1f5cc282c" title="New message processor. " alt="" coords="284,5,460,51"/>
+</map>

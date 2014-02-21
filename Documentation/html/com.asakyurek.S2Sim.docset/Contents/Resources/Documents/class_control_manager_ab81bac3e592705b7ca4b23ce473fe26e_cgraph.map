@@ -1,0 +1,22 @@
+<map id="ControlManager::ControlManager" name="ControlManager::ControlManager">
+<area shape="rect" href="$class_t_c_p_server.html#a8d5ad30ba42960a84973b57f74a853fa" title="TCPServer::SetPort" alt="" coords="348,81,503,108"/>
+<area shape="rect" href="$class_threaded_t_c_p_server.html#ac201656ab22b4ad07115d78cf8b7dd89" title="ThreadedTCPServer::\lSetNotificationCallback" alt="" coords="329,184,521,229"/>
+<area shape="rect" href="$_control_manager_8cpp.html#a5f09b25cf454170e17d1aa3c2707273a" title="ControlNotificationHandler" alt="" coords="317,273,533,300"/>
+<area shape="rect" href="$class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" title="IPAddress::SetAddress" alt="" coords="600,5,776,32"/>
+<area shape="rect" href="$class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" title="IPAddress::SetPort" alt="" coords="613,56,763,83"/>
+<area shape="rect" href="$class_t_c_p_server.html#a85bb8272c9599d98bcb28e4156a755fb" title="TCPServer::SetAddress" alt="" coords="596,107,780,133"/>
+<area shape="rect" href="$class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" title="IPAddress::GetAddress" alt="" coords="875,5,1053,32"/>
+<area shape="rect" href="$class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" title="IPAddress::GetPort" alt="" coords="889,56,1039,83"/>
+<area shape="rect" href="$class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" title="IPAddress::GetSocketSize" alt="" coords="863,107,1065,133"/>
+<area shape="rect" href="$class_t_c_p_server.html#a2d424428c9107b8b40905f0aefc7d30b" title="TCPServer::Listen" alt="" coords="615,157,761,184"/>
+<area shape="rect" href="$class_thread_base.html#aaea6437d738ac97e3427bbe466f850f8" title="ThreadBase::StartThread" alt="" coords="587,208,789,235"/>
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="1459,351,1539,377"/>
+<area shape="rect" href="$_control_manager_8cpp.html#a63bfd4667c9c70297f25ae5e5176818e" title="GetControlManager" alt="" coords="1169,313,1332,340"/>
+<area shape="rect" href="$class_control_manager.html#a67d548535b36a78e315a0aa5f9f8e6c8" title="ControlManager::SetClient" alt="" coords="581,369,795,396"/>
+<area shape="rect" href="$class_threaded_t_c_p_connected_client.html#ae8f981925319c228443e0ef78ef0ae67" title="ThreadedTCPConnectedClient\l::SetNotificationCallback" alt="" coords="843,360,1085,405"/>
+<area shape="rect" href="$_control_manager_8h.html#a295ee31280dd699294f5787580750ce4" title="ControlReceiveHandler" alt="" coords="869,429,1059,456"/>
+<area shape="rect" href="$class_control_manager.html#a2dc55da1b01fd175b3d885c68b8a7524" title="ControlManager::ProcessData" alt="" coords="1133,429,1368,456"/>
+<area shape="rect" href="$_log_print_8h.html#a46ea30a62534f8ce32cd39454e459b23" title="WarningPrint" alt="" coords="1443,401,1555,428"/>
+<area shape="rect" href="$_log_print_8h.html#af783a2ea2c57c5f51f905a24f3f5a835" title="ErrorPrint" alt="" coords="1456,452,1541,479"/>
+<area shape="rect" href="$_system_manager_8cpp.html#a97e64f74d188d41051488578800d20cd" title="GetSystemManager" alt="" coords="1417,503,1580,529"/>
+</map>

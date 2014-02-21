@@ -1,0 +1,7 @@
+<map id="Callback" name="Callback">
+<area shape="rect" href="$class_callback_implementation.html" title="CallbackImplementation\l\&lt; TObj, TIn1, TIn2, TIn3,\l TIn4 \&gt;" alt="" coords="168,5,368,67"/>
+<area shape="rect" href="$class_callback_implementation_3_01_t_obj_00_01_empty_class_00_01_empty_class_00_01_empty_class_00_01_empty_class_01_4.html" title="CallbackImplementation\l\&lt; TObj, EmptyClass, EmptyClass,\l EmptyClass, EmptyClass \&gt;" alt="" coords="140,91,396,152"/>
+<area shape="rect" href="$class_callback_implementation_3_01_t_obj_00_01_t_in1_00_01_empty_class_00_01_empty_class_00_01_empty_class_01_4.html" title="CallbackImplementation\l\&lt; TObj, TIn1, EmptyClass,\l EmptyClass, EmptyClass \&gt;" alt="" coords="161,176,375,237"/>
+<area shape="rect" href="$class_callback_implementation_3_01_t_obj_00_01_t_in1_00_01_t_in2_00_01_empty_class_00_01_empty_class_01_4.html" title="CallbackImplementation\l\&lt; TObj, TIn1, TIn2, EmptyClass,\l EmptyClass \&gt;" alt="" coords="145,261,391,323"/>
+<area shape="rect" href="$class_callback_implementation_3_01_t_obj_00_01_t_in1_00_01_t_in2_00_01_t_in3_00_01_empty_class_01_4.html" title="CallbackImplementation\l\&lt; TObj, TIn1, TIn2, TIn3,\l EmptyClass \&gt;" alt="" coords="168,347,368,408"/>
+</map>

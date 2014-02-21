@@ -1,0 +1,483 @@
+\hypertarget{class_terra_swarm_1_1_message_header}{\section{Terra\-Swarm\-:\-:Message\-Header Class Reference}
+\label{class_terra_swarm_1_1_message_header}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}
+}
+
+
+{\ttfamily \#include $<$Message\-Header.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_message_header_aa1066aaf03d8443ecda7e4c9b8e60fce}{Size\-Values} \{ \hyperlink{class_terra_swarm_1_1_message_header_aa1066aaf03d8443ecda7e4c9b8e60fcea421e8aff7e21d86fb408624a2963e8b9}{Message\-Header\-Size}
+ \}
+\item 
+typedef unsigned short \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{T\-Id}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{T\-Id} \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{T\-Sender\-Id}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{T\-Id} \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{T\-Receiver\-Id}
+\item 
+typedef unsigned short \hyperlink{class_terra_swarm_1_1_message_header_a6eaf3733d65fa5eaac0c223da4f5670c}{T\-Message\-Type}
+\item 
+typedef unsigned short \hyperlink{class_terra_swarm_1_1_message_header_acc3ebce9679077b0e438532be7c7bf6d}{T\-Message\-Id}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_terra_swarm_1_1_message_header_a6328694eb125adbac38c7e50d5fd40e1}{Prepare\-Outgoing\-Message} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{T\-Receiver\-Id} receiver\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_a6eaf3733d65fa5eaac0c223da4f5670c}{T\-Message\-Type} message\-Type, const \hyperlink{class_terra_swarm_1_1_message_header_acc3ebce9679077b0e438532be7c7bf6d}{T\-Message\-Id} message\-Id, const \hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{T\-Data\-Size} data\-Size)
+\item 
+\hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{T\-Sender\-Id} \hyperlink{class_terra_swarm_1_1_message_header_abd4750b2bab3760208f7016c5fe24f38}{Get\-Sender\-Id} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{T\-Receiver\-Id} \hyperlink{class_terra_swarm_1_1_message_header_a83dd1c28d2523cee08b418bda8372234}{Get\-Receiver\-Id} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_message_header_a6eaf3733d65fa5eaac0c223da4f5670c}{T\-Message\-Type} \hyperlink{class_terra_swarm_1_1_message_header_a70949a1f6ad6a41333c3a46d0166451c}{Get\-Message\-Type} (void) const 
+\item 
+\hyperlink{class_terra_swarm_1_1_message_header_acc3ebce9679077b0e438532be7c7bf6d}{T\-Message\-Id} \hyperlink{class_terra_swarm_1_1_message_header_a9233350f349d3de319c55ca92b3170de}{Get\-Message\-Id} (void) const 
+\item 
+\hyperlink{namespace_terra_swarm_a092e6ec9739175076ae3106783f5c1b6}{T\-Data\-Size} \hyperlink{class_terra_swarm_1_1_message_header_a77ce27ba8283537c9cbf3c447abbc512}{Get\-Data\-Size} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_terra_swarm_1_1_message_header}{Message\-Header} $\ast$ \hyperlink{class_terra_swarm_1_1_message_header_adfe790bb186f34e505d4ca699f7aa06b}{Get\-New\-Message\-Header} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_message_header_acc3f58a1107fca3a112e3b68b80be3bf}{Start\-Of\-Message\-Values} \{ \hyperlink{class_terra_swarm_1_1_message_header_acc3f58a1107fca3a112e3b68b80be3bfa4f866bfd6f54d1a723c05eea30a17e6d}{Start\-Of\-Message\-Default\-Value} = ( T\-Start\-Of\-Message )0x12345678
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484}{Header\-Field\-Size\-Values} \{ \\*
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a66c01670e26436cba7028bb19c238cef}{Start\-Of\-Message\-Size} = ( T\-Data\-Size )sizeof( T\-Start\-Of\-Message ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a9c06599a19b72607a6244f5d30a7bc0a}{Id\-Size} = ( T\-Data\-Size )sizeof( T\-Id ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a51b6e5f4bb02d1e98de93c3de237bf3c}{Sender\-Id\-Size} = Id\-Size, 
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484aa9ca8b3cb72a1ff173d84c8ca71f96d5}{Receiver\-Id\-Size} = Id\-Size, 
+\\*
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ab930e6de45a4e449f3a576e38ba4d3a5}{Sequence\-Number\-Size} = ( T\-Data\-Size )sizeof( T\-Sequence\-Number ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ad45da22415ac87cda0dc06e3e6047947}{Message\-Type\-Size} = ( T\-Data\-Size )sizeof( T\-Message\-Type ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a9008a5ec8c433f7c7f74c1c150581ea2}{Message\-Id\-Size} = ( T\-Data\-Size )sizeof( T\-Message\-Id ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a3ef403fe13fcd865a980e28ad63dac48}{Data\-Size\-Size} = ( T\-Data\-Size )sizeof( T\-Data\-Size )
+ \}
+\item 
+enum \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372a}{Header\-Field\-Index\-Values} \{ \\*
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa74b66ff4fa355a80faf96e67ce47f679}{Start\-Of\-Message\-Index} = ( T\-Byte\-Index )0, 
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa468f5b005cd4374790f76469c53b6708}{Sender\-Id\-Index} = ( T\-Byte\-Index )( Start\-Of\-Message\-Index + Start\-Of\-Message\-Size ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aabe5cfb032e70c35d03586a7d16d66490}{Receiver\-Id\-Index} = ( T\-Byte\-Index )( Sender\-Id\-Index + Sender\-Id\-Size ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa56286e86c6b2fb61f58f34c4fed8c28e}{Sequence\-Number\-Index} = ( T\-Byte\-Index )( Receiver\-Id\-Index + Receiver\-Id\-Size ), 
+\\*
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa636e016fbe208240bd9d92af77fd747a}{Message\-Type\-Index} = ( T\-Byte\-Index )( Sequence\-Number\-Index + Sequence\-Number\-Size ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa683b7a06a5ebe8befe0dcae6701c3003}{Message\-Id\-Index} = ( T\-Byte\-Index )( Message\-Type\-Index + Message\-Type\-Size ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa8bf63201f7bd66a6757cefa82db24548}{Data\-Size\-Index} = ( T\-Byte\-Index )( Message\-Id\-Index + Message\-Id\-Size ), 
+\hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa0306ff2262dbf1c9df9328c28c2adc8d}{Data\-Index} = ( T\-Byte\-Index )( Data\-Size\-Index + Data\-Size\-Size )
+ \}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_message_header_a2cf24e4a2eb361223ae61052630dfe24}{T\-Start\-Of\-Message}
+\item 
+typedef unsigned int \hyperlink{class_terra_swarm_1_1_message_header_a0d92af0bc15cc856a21975d1f3813eb5}{T\-Sequence\-Number}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa74b66ff4fa355a80faf96e67ce47f679}{Start\-Of\-Message\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a66c01670e26436cba7028bb19c238cef}{Start\-Of\-Message\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_header_a791ee152a9a2709c7479737dfdddfa2f}{T\-Start\-Of\-Message\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa468f5b005cd4374790f76469c53b6708}{Sender\-Id\-Index}, \hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a51b6e5f4bb02d1e98de93c3de237bf3c}{Sender\-Id\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_header_aa4003ec191b4bf2a4e38cc289bb10e70}{T\-Sender\-Id\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aabe5cfb032e70c35d03586a7d16d66490}{Receiver\-Id\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484aa9ca8b3cb72a1ff173d84c8ca71f96d5}{Receiver\-Id\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_header_a9725379883f5e9451d235fb4bd1c8ee3}{T\-Receiver\-Id\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa56286e86c6b2fb61f58f34c4fed8c28e}{Sequence\-Number\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ab930e6de45a4e449f3a576e38ba4d3a5}{Sequence\-Number\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_header_afd4ad43e1cb866a290b7d124af9661f6}{T\-Sequence\-Number\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa636e016fbe208240bd9d92af77fd747a}{Message\-Type\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ad45da22415ac87cda0dc06e3e6047947}{Message\-Type\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_header_ae21a1eeb66f61c557c12f05440aa6f5b}{T\-Message\-Type\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa683b7a06a5ebe8befe0dcae6701c3003}{Message\-Id\-Index}, \\*
+\hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a9008a5ec8c433f7c7f74c1c150581ea2}{Message\-Id\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_header_a269de9ac839cc588d65fad2e27f6dcbb}{T\-Message\-Id\-Accessor}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_network_byte_accessor}{Network\-Byte\-Accessor}\\*
+$<$ \hyperlink{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa8bf63201f7bd66a6757cefa82db24548}{Data\-Size\-Index}, \hyperlink{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a3ef403fe13fcd865a980e28ad63dac48}{Data\-Size\-Size} $>$ \hyperlink{class_terra_swarm_1_1_message_header_aed583369adabf273cabc86e379229537}{T\-Data\-Size\-Accessor}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terra_swarm_1_1_message_header_a3a3365d5965976b4ff944e90bcc57d10}{Message\-Header} (void)
+\item 
+{\footnotesize template$<$typename Accessor $>$ }\\Accessor $\ast$ \hyperlink{class_terra_swarm_1_1_message_header_adf08e6517af2015ca25f0cadeaf90126}{Access} (void)
+\item 
+{\footnotesize template$<$typename Accessor $>$ }\\const Accessor $\ast$ \hyperlink{class_terra_swarm_1_1_message_header_aaa0d3fbe9cd0e0c63384810e57c246f1}{Access} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_terra_swarm_1_1_message_header_a0d92af0bc15cc856a21975d1f3813eb5}{T\-Sequence\-Number} \hyperlink{class_terra_swarm_1_1_message_header_a963b8a46a389a741f86471dbd722cae2}{Get\-Next\-Sequence\-Number} (const \hyperlink{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{T\-Sender\-Id} sender\-Id, const \hyperlink{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{T\-Receiver\-Id} receiver\-Id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Message\-Header.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_terra_swarm_1_1_message_header_aed583369adabf273cabc86e379229537}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Data\-Size\-Accessor@{T\-Data\-Size\-Accessor}}
+\index{T\-Data\-Size\-Accessor@{T\-Data\-Size\-Accessor}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Data\-Size\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Data\-Size\-Index}, {\bf Data\-Size\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Data\-Size\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_aed583369adabf273cabc86e379229537}
+
+
+Definition at line 67 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Id@{T\-Id}}
+\index{T\-Id@{T\-Id}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Id}}}\label{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}
+
+
+Definition at line 19 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_acc3ebce9679077b0e438532be7c7bf6d}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Message\-Id@{T\-Message\-Id}}
+\index{T\-Message\-Id@{T\-Message\-Id}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Message\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Message\-Id}}}\label{class_terra_swarm_1_1_message_header_acc3ebce9679077b0e438532be7c7bf6d}
+
+
+Definition at line 23 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a269de9ac839cc588d65fad2e27f6dcbb}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Message\-Id\-Accessor@{T\-Message\-Id\-Accessor}}
+\index{T\-Message\-Id\-Accessor@{T\-Message\-Id\-Accessor}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Message\-Id\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Message\-Id\-Index}, {\bf Message\-Id\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Message\-Id\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a269de9ac839cc588d65fad2e27f6dcbb}
+
+
+Definition at line 66 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a6eaf3733d65fa5eaac0c223da4f5670c}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Message\-Type@{T\-Message\-Type}}
+\index{T\-Message\-Type@{T\-Message\-Type}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Message\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Message\-Type}}}\label{class_terra_swarm_1_1_message_header_a6eaf3733d65fa5eaac0c223da4f5670c}
+
+
+Definition at line 22 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_ae21a1eeb66f61c557c12f05440aa6f5b}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Message\-Type\-Accessor@{T\-Message\-Type\-Accessor}}
+\index{T\-Message\-Type\-Accessor@{T\-Message\-Type\-Accessor}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Message\-Type\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Message\-Type\-Index}, {\bf Message\-Type\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Message\-Type\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_ae21a1eeb66f61c557c12f05440aa6f5b}
+
+
+Definition at line 65 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Receiver\-Id@{T\-Receiver\-Id}}
+\index{T\-Receiver\-Id@{T\-Receiver\-Id}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Receiver\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Id} {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Receiver\-Id}}}\label{class_terra_swarm_1_1_message_header_aa3260702b182b6f88ddbdd3416e98df0}
+
+
+Definition at line 21 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a9725379883f5e9451d235fb4bd1c8ee3}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Receiver\-Id\-Accessor@{T\-Receiver\-Id\-Accessor}}
+\index{T\-Receiver\-Id\-Accessor@{T\-Receiver\-Id\-Accessor}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Receiver\-Id\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Receiver\-Id\-Index}, {\bf Receiver\-Id\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Receiver\-Id\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a9725379883f5e9451d235fb4bd1c8ee3}
+
+
+Definition at line 63 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Sender\-Id@{T\-Sender\-Id}}
+\index{T\-Sender\-Id@{T\-Sender\-Id}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Sender\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Id} {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Sender\-Id}}}\label{class_terra_swarm_1_1_message_header_a516b36855e2aad7cfbf8770f1b42784f}
+
+
+Definition at line 20 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_aa4003ec191b4bf2a4e38cc289bb10e70}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Sender\-Id\-Accessor@{T\-Sender\-Id\-Accessor}}
+\index{T\-Sender\-Id\-Accessor@{T\-Sender\-Id\-Accessor}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Sender\-Id\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Sender\-Id\-Index}, {\bf Sender\-Id\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Sender\-Id\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_aa4003ec191b4bf2a4e38cc289bb10e70}
+
+
+Definition at line 62 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a0d92af0bc15cc856a21975d1f3813eb5}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Sequence\-Number@{T\-Sequence\-Number}}
+\index{T\-Sequence\-Number@{T\-Sequence\-Number}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Sequence\-Number}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Sequence\-Number}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a0d92af0bc15cc856a21975d1f3813eb5}
+
+
+Definition at line 32 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_afd4ad43e1cb866a290b7d124af9661f6}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Sequence\-Number\-Accessor@{T\-Sequence\-Number\-Accessor}}
+\index{T\-Sequence\-Number\-Accessor@{T\-Sequence\-Number\-Accessor}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Sequence\-Number\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Sequence\-Number\-Index}, {\bf Sequence\-Number\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Sequence\-Number\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_afd4ad43e1cb866a290b7d124af9661f6}
+
+
+Definition at line 64 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a2cf24e4a2eb361223ae61052630dfe24}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Start\-Of\-Message@{T\-Start\-Of\-Message}}
+\index{T\-Start\-Of\-Message@{T\-Start\-Of\-Message}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Start\-Of\-Message}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Start\-Of\-Message}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a2cf24e4a2eb361223ae61052630dfe24}
+
+
+Definition at line 26 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a791ee152a9a2709c7479737dfdddfa2f}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!T\-Start\-Of\-Message\-Accessor@{T\-Start\-Of\-Message\-Accessor}}
+\index{T\-Start\-Of\-Message\-Accessor@{T\-Start\-Of\-Message\-Accessor}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{T\-Start\-Of\-Message\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Network\-Byte\-Accessor}$<${\bf Start\-Of\-Message\-Index}, {\bf Start\-Of\-Message\-Size}$>$ {\bf Terra\-Swarm\-::\-Message\-Header\-::\-T\-Start\-Of\-Message\-Accessor}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a791ee152a9a2709c7479737dfdddfa2f}
+
+
+Definition at line 61 of file Message\-Header.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372a}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Header\-Field\-Index\-Values@{Header\-Field\-Index\-Values}}
+\index{Header\-Field\-Index\-Values@{Header\-Field\-Index\-Values}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Header\-Field\-Index\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Message\-Header\-::\-Header\-Field\-Index\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Start\-Of\-Message\-Index@{Start\-Of\-Message\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Start\-Of\-Message\-Index@{Start\-Of\-Message\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa74b66ff4fa355a80faf96e67ce47f679}{Start\-Of\-Message\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa74b66ff4fa355a80faf96e67ce47f679}
+}]\index{Sender\-Id\-Index@{Sender\-Id\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Sender\-Id\-Index@{Sender\-Id\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa468f5b005cd4374790f76469c53b6708}{Sender\-Id\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa468f5b005cd4374790f76469c53b6708}
+}]\index{Receiver\-Id\-Index@{Receiver\-Id\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Receiver\-Id\-Index@{Receiver\-Id\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aabe5cfb032e70c35d03586a7d16d66490}{Receiver\-Id\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aabe5cfb032e70c35d03586a7d16d66490}
+}]\index{Sequence\-Number\-Index@{Sequence\-Number\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Sequence\-Number\-Index@{Sequence\-Number\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa56286e86c6b2fb61f58f34c4fed8c28e}{Sequence\-Number\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa56286e86c6b2fb61f58f34c4fed8c28e}
+}]\index{Message\-Type\-Index@{Message\-Type\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Message\-Type\-Index@{Message\-Type\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa636e016fbe208240bd9d92af77fd747a}{Message\-Type\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa636e016fbe208240bd9d92af77fd747a}
+}]\index{Message\-Id\-Index@{Message\-Id\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Message\-Id\-Index@{Message\-Id\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa683b7a06a5ebe8befe0dcae6701c3003}{Message\-Id\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa683b7a06a5ebe8befe0dcae6701c3003}
+}]\index{Data\-Size\-Index@{Data\-Size\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Data\-Size\-Index@{Data\-Size\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa8bf63201f7bd66a6757cefa82db24548}{Data\-Size\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa8bf63201f7bd66a6757cefa82db24548}
+}]\index{Data\-Index@{Data\-Index}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Data\-Index@{Data\-Index}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa0306ff2262dbf1c9df9328c28c2adc8d}{Data\-Index}\label{class_terra_swarm_1_1_message_header_a2a96f83a96cfee0465da982814cb372aa0306ff2262dbf1c9df9328c28c2adc8d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 49 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Header\-Field\-Size\-Values@{Header\-Field\-Size\-Values}}
+\index{Header\-Field\-Size\-Values@{Header\-Field\-Size\-Values}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Header\-Field\-Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Message\-Header\-::\-Header\-Field\-Size\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Start\-Of\-Message\-Size@{Start\-Of\-Message\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Start\-Of\-Message\-Size@{Start\-Of\-Message\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a66c01670e26436cba7028bb19c238cef}{Start\-Of\-Message\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a66c01670e26436cba7028bb19c238cef}
+}]\index{Id\-Size@{Id\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Id\-Size@{Id\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a9c06599a19b72607a6244f5d30a7bc0a}{Id\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a9c06599a19b72607a6244f5d30a7bc0a}
+}]\index{Sender\-Id\-Size@{Sender\-Id\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Sender\-Id\-Size@{Sender\-Id\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a51b6e5f4bb02d1e98de93c3de237bf3c}{Sender\-Id\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a51b6e5f4bb02d1e98de93c3de237bf3c}
+}]\index{Receiver\-Id\-Size@{Receiver\-Id\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Receiver\-Id\-Size@{Receiver\-Id\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484aa9ca8b3cb72a1ff173d84c8ca71f96d5}{Receiver\-Id\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484aa9ca8b3cb72a1ff173d84c8ca71f96d5}
+}]\index{Sequence\-Number\-Size@{Sequence\-Number\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Sequence\-Number\-Size@{Sequence\-Number\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ab930e6de45a4e449f3a576e38ba4d3a5}{Sequence\-Number\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ab930e6de45a4e449f3a576e38ba4d3a5}
+}]\index{Message\-Type\-Size@{Message\-Type\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Message\-Type\-Size@{Message\-Type\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ad45da22415ac87cda0dc06e3e6047947}{Message\-Type\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484ad45da22415ac87cda0dc06e3e6047947}
+}]\index{Message\-Id\-Size@{Message\-Id\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Message\-Id\-Size@{Message\-Id\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a9008a5ec8c433f7c7f74c1c150581ea2}{Message\-Id\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a9008a5ec8c433f7c7f74c1c150581ea2}
+}]\index{Data\-Size\-Size@{Data\-Size\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Data\-Size\-Size@{Data\-Size\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a3ef403fe13fcd865a980e28ad63dac48}{Data\-Size\-Size}\label{class_terra_swarm_1_1_message_header_a189acad5bd9f60fe47b3381da62d3484a3ef403fe13fcd865a980e28ad63dac48}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 37 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_aa1066aaf03d8443ecda7e4c9b8e60fce}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Size\-Values@{Size\-Values}}
+\index{Size\-Values@{Size\-Values}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Size\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Message\-Header\-::\-Size\-Values}}}\label{class_terra_swarm_1_1_message_header_aa1066aaf03d8443ecda7e4c9b8e60fce}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Message\-Header\-Size@{Message\-Header\-Size}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Message\-Header\-Size@{Message\-Header\-Size}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_aa1066aaf03d8443ecda7e4c9b8e60fcea421e8aff7e21d86fb408624a2963e8b9}{Message\-Header\-Size}\label{class_terra_swarm_1_1_message_header_aa1066aaf03d8443ecda7e4c9b8e60fcea421e8aff7e21d86fb408624a2963e8b9}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 70 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_acc3f58a1107fca3a112e3b68b80be3bf}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Start\-Of\-Message\-Values@{Start\-Of\-Message\-Values}}
+\index{Start\-Of\-Message\-Values@{Start\-Of\-Message\-Values}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Start\-Of\-Message\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Terra\-Swarm\-::\-Message\-Header\-::\-Start\-Of\-Message\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_acc3f58a1107fca3a112e3b68b80be3bf}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Start\-Of\-Message\-Default\-Value@{Start\-Of\-Message\-Default\-Value}!Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}}\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Start\-Of\-Message\-Default\-Value@{Start\-Of\-Message\-Default\-Value}}\item[{\em 
+\hypertarget{class_terra_swarm_1_1_message_header_acc3f58a1107fca3a112e3b68b80be3bfa4f866bfd6f54d1a723c05eea30a17e6d}{Start\-Of\-Message\-Default\-Value}\label{class_terra_swarm_1_1_message_header_acc3f58a1107fca3a112e3b68b80be3bfa4f866bfd6f54d1a723c05eea30a17e6d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 27 of file Message\-Header.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_terra_swarm_1_1_message_header_a3a3365d5965976b4ff944e90bcc57d10}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Message\-Header@{Message\-Header}}
+\index{Message\-Header@{Message\-Header}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Message\-Header}]{\setlength{\rightskip}{0pt plus 5cm}Terra\-Swarm\-::\-Message\-Header\-::\-Message\-Header (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a3a3365d5965976b4ff944e90bcc57d10}
+
+
+Definition at line 13 of file Message\-Header.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_terra_swarm_1_1_message_header_adf08e6517af2015ca25f0cadeaf90126}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Access@{Access}}
+\index{Access@{Access}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Access}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Accessor $>$ Accessor$\ast$ Terra\-Swarm\-::\-Message\-Header\-::\-Access (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_adf08e6517af2015ca25f0cadeaf90126}
+
+
+Definition at line 85 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_aaa0d3fbe9cd0e0c63384810e57c246f1}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Access@{Access}}
+\index{Access@{Access}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Access}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Accessor $>$ const Accessor$\ast$ Terra\-Swarm\-::\-Message\-Header\-::\-Access (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_aaa0d3fbe9cd0e0c63384810e57c246f1}
+
+
+Definition at line 91 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a77ce27ba8283537c9cbf3c447abbc512}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Get\-Data\-Size@{Get\-Data\-Size}}
+\index{Get\-Data\-Size@{Get\-Data\-Size}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Get\-Data\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Data\-Size} Terra\-Swarm\-::\-Message\-Header\-::\-Get\-Data\-Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_message_header_a77ce27ba8283537c9cbf3c447abbc512}
+
+
+Definition at line 140 of file Message\-Header.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_message_header_a77ce27ba8283537c9cbf3c447abbc512_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_terra_swarm_1_1_message_header_a9233350f349d3de319c55ca92b3170de}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Get\-Message\-Id@{Get\-Message\-Id}}
+\index{Get\-Message\-Id@{Get\-Message\-Id}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Get\-Message\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Message\-Id} Terra\-Swarm\-::\-Message\-Header\-::\-Get\-Message\-Id (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_message_header_a9233350f349d3de319c55ca92b3170de}
+
+
+Definition at line 132 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a70949a1f6ad6a41333c3a46d0166451c}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Get\-Message\-Type@{Get\-Message\-Type}}
+\index{Get\-Message\-Type@{Get\-Message\-Type}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Get\-Message\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Message\-Type} Terra\-Swarm\-::\-Message\-Header\-::\-Get\-Message\-Type (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_message_header_a70949a1f6ad6a41333c3a46d0166451c}
+
+
+Definition at line 124 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_adfe790bb186f34e505d4ca699f7aa06b}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Get\-New\-Message\-Header@{Get\-New\-Message\-Header}}
+\index{Get\-New\-Message\-Header@{Get\-New\-Message\-Header}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Get\-New\-Message\-Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message\-Header} $\ast$ Terra\-Swarm\-::\-Message\-Header\-::\-Get\-New\-Message\-Header (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_terra_swarm_1_1_message_header_adfe790bb186f34e505d4ca699f7aa06b}
+
+
+Definition at line 18 of file Message\-Header.\-cpp.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a963b8a46a389a741f86471dbd722cae2}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Get\-Next\-Sequence\-Number@{Get\-Next\-Sequence\-Number}}
+\index{Get\-Next\-Sequence\-Number@{Get\-Next\-Sequence\-Number}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Get\-Next\-Sequence\-Number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message\-Header\-::\-T\-Sequence\-Number} Terra\-Swarm\-::\-Message\-Header\-::\-Get\-Next\-Sequence\-Number (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Sender\-Id}}]{sender\-Id, }
+\item[{const {\bf T\-Receiver\-Id}}]{receiver\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_terra_swarm_1_1_message_header_a963b8a46a389a741f86471dbd722cae2}
+
+
+Definition at line 41 of file Message\-Header.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_message_header_a963b8a46a389a741f86471dbd722cae2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_terra_swarm_1_1_message_header_a83dd1c28d2523cee08b418bda8372234}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Get\-Receiver\-Id@{Get\-Receiver\-Id}}
+\index{Get\-Receiver\-Id@{Get\-Receiver\-Id}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Get\-Receiver\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Receiver\-Id} Terra\-Swarm\-::\-Message\-Header\-::\-Get\-Receiver\-Id (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_message_header_a83dd1c28d2523cee08b418bda8372234}
+
+
+Definition at line 116 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_abd4750b2bab3760208f7016c5fe24f38}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Get\-Sender\-Id@{Get\-Sender\-Id}}
+\index{Get\-Sender\-Id@{Get\-Sender\-Id}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Get\-Sender\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Sender\-Id} Terra\-Swarm\-::\-Message\-Header\-::\-Get\-Sender\-Id (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_terra_swarm_1_1_message_header_abd4750b2bab3760208f7016c5fe24f38}
+
+
+Definition at line 108 of file Message\-Header.\-h.
+
+\hypertarget{class_terra_swarm_1_1_message_header_a6328694eb125adbac38c7e50d5fd40e1}{\index{Terra\-Swarm\-::\-Message\-Header@{Terra\-Swarm\-::\-Message\-Header}!Prepare\-Outgoing\-Message@{Prepare\-Outgoing\-Message}}
+\index{Prepare\-Outgoing\-Message@{Prepare\-Outgoing\-Message}!TerraSwarm::MessageHeader@{Terra\-Swarm\-::\-Message\-Header}}
+\subsubsection[{Prepare\-Outgoing\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void Terra\-Swarm\-::\-Message\-Header\-::\-Prepare\-Outgoing\-Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Sender\-Id}}]{sender\-Id, }
+\item[{const {\bf T\-Receiver\-Id}}]{receiver\-Id, }
+\item[{const {\bf T\-Message\-Type}}]{message\-Type, }
+\item[{const {\bf T\-Message\-Id}}]{message\-Id, }
+\item[{const {\bf T\-Data\-Size}}]{data\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_terra_swarm_1_1_message_header_a6328694eb125adbac38c7e50d5fd40e1}
+
+
+Definition at line 25 of file Message\-Header.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terra_swarm_1_1_message_header_a6328694eb125adbac38c7e50d5fd40e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_message_header_8h}{Message\-Header.\-h}\item 
+S2\-Sim/\-Terraswarm\-Library/\hyperlink{_message_header_8cpp}{Message\-Header.\-cpp}\end{DoxyCompactItemize}

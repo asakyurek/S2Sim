@@ -1,0 +1,179 @@
+\hypertarget{class_threaded_t_c_p_server}{\section{Threaded\-T\-C\-P\-Server Class Reference}
+\label{class_threaded_t_c_p_server}\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}}
+}
+
+
+{\ttfamily \#include $<$Threaded\-T\-C\-P\-Server.\-h$>$}
+
+
+
+Inheritance diagram for Threaded\-T\-C\-P\-Server\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_threaded_t_c_p_server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Threaded\-T\-C\-P\-Server\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_threaded_t_c_p_server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}{T\-Notification} )(\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_threaded_t_c_p_server_a824edd681a2fd81d259efd22de63058d}{Threaded\-T\-C\-P\-Server} (void)
+\item 
+virtual \hyperlink{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}{$\sim$\-Threaded\-T\-C\-P\-Server} (void)  throw ()
+\item 
+void \hyperlink{class_threaded_t_c_p_server_ac201656ab22b4ad07115d78cf8b7dd89}{Set\-Notification\-Callback} (\hyperlink{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}{T\-Notification} notification)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Execution\-Body} (void $\ast$input)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}{T\-Notification} \hyperlink{class_threaded_t_c_p_server_acb1fa272e38dbd62673d5279a3e94345}{m\-\_\-notification}
+\item 
+bool \hyperlink{class_threaded_t_c_p_server_aae68c31d87e830f67907edba35eceec3}{m\-\_\-started}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Threaded\-T\-C\-P\-Server.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!T\-Notification@{T\-Notification}}
+\index{T\-Notification@{T\-Notification}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
+\subsubsection[{T\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}typedef void( $\ast$ Threaded\-T\-C\-P\-Server\-::\-T\-Notification)({\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$)}}\label{class_threaded_t_c_p_server_a01f9e29f617f3452bbf1cdc33acdf905}
+
+
+Definition at line 18 of file Threaded\-T\-C\-P\-Server.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_threaded_t_c_p_server_a824edd681a2fd81d259efd22de63058d}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}}
+\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
+\subsubsection[{Threaded\-T\-C\-P\-Server}]{\setlength{\rightskip}{0pt plus 5cm}Threaded\-T\-C\-P\-Server\-::\-Threaded\-T\-C\-P\-Server (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_threaded_t_c_p_server_a824edd681a2fd81d259efd22de63058d}
+
+
+Definition at line 10 of file Threaded\-T\-C\-P\-Server.\-cpp.
+
+\hypertarget{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!$\sim$\-Threaded\-T\-C\-P\-Server@{$\sim$\-Threaded\-T\-C\-P\-Server}}
+\index{$\sim$\-Threaded\-T\-C\-P\-Server@{$\sim$\-Threaded\-T\-C\-P\-Server}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
+\subsubsection[{$\sim$\-Threaded\-T\-C\-P\-Server}]{\setlength{\rightskip}{0pt plus 5cm}Threaded\-T\-C\-P\-Server\-::$\sim$\-Threaded\-T\-C\-P\-Server (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_threaded_t_c_p_server_a151262ca95d024a3da46d8906bfcacfc}
+
+
+Definition at line 14 of file Threaded\-T\-C\-P\-Server.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!Execution\-Body@{Execution\-Body}}
+\index{Execution\-Body@{Execution\-Body}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
+\subsubsection[{Execution\-Body}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Threaded\-T\-C\-P\-Server\-::\-Execution\-Body (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}
+
+
+Implements \hyperlink{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{Thread\-Base}.
+
+
+
+Definition at line 20 of file Threaded\-T\-C\-P\-Server.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_threaded_t_c_p_server_ac201656ab22b4ad07115d78cf8b7dd89}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!Set\-Notification\-Callback@{Set\-Notification\-Callback}}
+\index{Set\-Notification\-Callback@{Set\-Notification\-Callback}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
+\subsubsection[{Set\-Notification\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Threaded\-T\-C\-P\-Server\-::\-Set\-Notification\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf T\-Notification}}]{notification}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_threaded_t_c_p_server_ac201656ab22b4ad07115d78cf8b7dd89}
+
+
+Definition at line 32 of file Threaded\-T\-C\-P\-Server.\-h.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_threaded_t_c_p_server_ac201656ab22b4ad07115d78cf8b7dd89_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_threaded_t_c_p_server_ac201656ab22b4ad07115d78cf8b7dd89_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_threaded_t_c_p_server_acb1fa272e38dbd62673d5279a3e94345}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!m\-\_\-notification@{m\-\_\-notification}}
+\index{m\-\_\-notification@{m\-\_\-notification}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
+\subsubsection[{m\-\_\-notification}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Notification} Threaded\-T\-C\-P\-Server\-::m\-\_\-notification\hspace{0.3cm}{\ttfamily [private]}}}\label{class_threaded_t_c_p_server_acb1fa272e38dbd62673d5279a3e94345}
+
+
+Definition at line 24 of file Threaded\-T\-C\-P\-Server.\-h.
+
+\hypertarget{class_threaded_t_c_p_server_aae68c31d87e830f67907edba35eceec3}{\index{Threaded\-T\-C\-P\-Server@{Threaded\-T\-C\-P\-Server}!m\-\_\-started@{m\-\_\-started}}
+\index{m\-\_\-started@{m\-\_\-started}!ThreadedTCPServer@{Threaded\-T\-C\-P\-Server}}
+\subsubsection[{m\-\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}bool Threaded\-T\-C\-P\-Server\-::m\-\_\-started\hspace{0.3cm}{\ttfamily [private]}}}\label{class_threaded_t_c_p_server_aae68c31d87e830f67907edba35eceec3}
+
+
+Definition at line 25 of file Threaded\-T\-C\-P\-Server.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Socket\-Library/\hyperlink{_threaded_t_c_p_server_8h}{Threaded\-T\-C\-P\-Server.\-h}\item 
+S2\-Sim/\-Socket\-Library/\hyperlink{_threaded_t_c_p_server_8cpp}{Threaded\-T\-C\-P\-Server.\-cpp}\end{DoxyCompactItemize}

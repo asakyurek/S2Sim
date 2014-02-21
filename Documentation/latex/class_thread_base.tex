@@ -1,0 +1,533 @@
+\hypertarget{class_thread_base}{\section{Thread\-Base Class Reference}
+\label{class_thread_base}\index{Thread\-Base@{Thread\-Base}}
+}
+
+
+{\ttfamily \#include $<$Posix\-Thread\-Base.\-h$>$}
+
+
+
+Inheritance diagram for Thread\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_thread_base__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_thread_base_1_1_input_structure}{Input\-Structure}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{Started\-Values} \{ \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started} = ( T\-Started )true, 
+\hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started} = ( T\-Started )false, 
+\hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started} = ( T\-Started )true, 
+\hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started} = ( T\-Started )false
+ \}
+\item 
+enum \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{Started\-Values} \{ \hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started} = ( T\-Started )true, 
+\hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started} = ( T\-Started )false, 
+\hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started} = ( T\-Started )true, 
+\hyperlink{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started} = ( T\-Started )false
+ \}
+\item 
+typedef size\-\_\-t \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size}
+\item 
+typedef bool \hyperlink{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{T\-Started}
+\item 
+typedef size\-\_\-t \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size}
+\item 
+typedef bool \hyperlink{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{T\-Started}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}{Thread\-Base} (void)
+\item 
+\hyperlink{class_thread_base_a9e152f859a8ae5a8d76672f0b53da5c7}{Thread\-Base} (void $\ast$input)
+\item 
+virtual \hyperlink{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}{$\sim$\-Thread\-Base} (void)
+\item 
+\hyperlink{class_thread_base_a50bd80044eb3845856abef9535f1903c}{Thread\-Base} (const \hyperlink{class_thread_base}{Thread\-Base} \&copy)
+\item 
+void \hyperlink{class_thread_base_add14648bdc8059dd8db41166130921dd}{Set\-Stack\-Size} (const \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} stack\-Size)
+\item 
+\hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} \hyperlink{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{Get\-Stack\-Size} (void) const 
+\item 
+void \hyperlink{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{Start\-Thread} (void $\ast$input)
+\item 
+\hyperlink{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}{Thread\-Base} (void)
+\item 
+virtual \hyperlink{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}{$\sim$\-Thread\-Base} (void)
+\item 
+\hyperlink{class_thread_base_a50bd80044eb3845856abef9535f1903c}{Thread\-Base} (const \hyperlink{class_thread_base}{Thread\-Base} \&copy)
+\item 
+void \hyperlink{class_thread_base_add14648bdc8059dd8db41166130921dd}{Set\-Stack\-Size} (const \hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} stack\-Size)
+\item 
+\hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} \hyperlink{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{Get\-Stack\-Size} (void) const 
+\item 
+void \hyperlink{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{Start\-Thread} (void $\ast$input)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef pthread\-\_\-t \hyperlink{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}{T\-Thread\-Id}
+\item 
+typedef pthread\-\_\-attr\-\_\-t \hyperlink{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}{T\-Thread\-Attribute}
+\item 
+typedef D\-W\-O\-R\-D \hyperlink{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}{T\-Thread\-Id}
+\item 
+typedef H\-A\-N\-D\-L\-E \hyperlink{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}{T\-Thread\-Handle}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{class_thread_base_a844dd13473fee9283197b3905a81da45}{Execute\-Thread} (void $\ast$input)
+\item 
+virtual void $\ast$ \hyperlink{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{Execution\-Body} (void $\ast$)=0
+\item 
+void $\ast$ \hyperlink{class_thread_base_a844dd13473fee9283197b3905a81da45}{Execute\-Thread} (void $\ast$input)
+\item 
+virtual void $\ast$ \hyperlink{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{Execution\-Body} (void $\ast$)=0
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{T\-Started} \hyperlink{class_thread_base_a5e2958ae98b989268d1e2be629789d64}{m\-\_\-started}
+\item 
+\hyperlink{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}{T\-Thread\-Id} \hyperlink{class_thread_base_ae8574271bdcbfd80cbdde64c77bc7148}{m\-\_\-thread\-Id}
+\item 
+\hyperlink{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}{T\-Thread\-Attribute} \hyperlink{class_thread_base_ad0d98c6f93707aef346cc66d8de78729}{m\-\_\-thread\-Attribute}
+\item 
+\hyperlink{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}{T\-Thread\-Handle} \hyperlink{class_thread_base_a4f279b94eef423109969f69fadd9e674}{m\-\_\-thread\-Handle}
+\item 
+\hyperlink{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{T\-Stack\-Size} \hyperlink{class_thread_base_a9c8b3446d099074f0f1608e5246e137d}{m\-\_\-stack\-Size}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{Posix\-Thread\-Cover} (void $\ast$)
+\item 
+D\-W\-O\-R\-D W\-I\-N\-A\-P\-I \hyperlink{class_thread_base_a790b21ad102d0b813d14e54f4fbf4460}{Windows\-Thread\-Cover} (L\-P\-V\-O\-I\-D)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Posix\-Thread\-Base.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{\index{Thread\-Base@{Thread\-Base}!T\-Stack\-Size@{T\-Stack\-Size}}
+\index{T\-Stack\-Size@{T\-Stack\-Size}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t {\bf Thread\-Base\-::\-T\-Stack\-Size}}}\label{class_thread_base_af45bd74387b409e15989f7eddbaf3718}
+
+
+Definition at line 35 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_af45bd74387b409e15989f7eddbaf3718}{\index{Thread\-Base@{Thread\-Base}!T\-Stack\-Size@{T\-Stack\-Size}}
+\index{T\-Stack\-Size@{T\-Stack\-Size}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t {\bf Thread\-Base\-::\-T\-Stack\-Size}}}\label{class_thread_base_af45bd74387b409e15989f7eddbaf3718}
+
+
+Definition at line 35 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{\index{Thread\-Base@{Thread\-Base}!T\-Started@{T\-Started}}
+\index{T\-Started@{T\-Started}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Started}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Thread\-Base\-::\-T\-Started}}}\label{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}
+
+
+Definition at line 36 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}{\index{Thread\-Base@{Thread\-Base}!T\-Started@{T\-Started}}
+\index{T\-Started@{T\-Started}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Started}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf Thread\-Base\-::\-T\-Started}}}\label{class_thread_base_ad8b410e3bc7320addea3c5b56ff6c985}
+
+
+Definition at line 36 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Attribute@{T\-Thread\-Attribute}}
+\index{T\-Thread\-Attribute@{T\-Thread\-Attribute}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Thread\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}typedef pthread\-\_\-attr\-\_\-t {\bf Thread\-Base\-::\-T\-Thread\-Attribute}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_adea5ffdf2c74b95dbfee5148248f93b8}
+
+
+Definition at line 23 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Handle@{T\-Thread\-Handle}}
+\index{T\-Thread\-Handle@{T\-Thread\-Handle}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Thread\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}typedef H\-A\-N\-D\-L\-E {\bf Thread\-Base\-::\-T\-Thread\-Handle}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_ad87b599650c2062b6ff7e54934da7e2b}
+
+
+Definition at line 23 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Id@{T\-Thread\-Id}}
+\index{T\-Thread\-Id@{T\-Thread\-Id}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef D\-W\-O\-R\-D {\bf Thread\-Base\-::\-T\-Thread\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a76da3758dcb9858188c493eb9b811f3d}
+
+
+Definition at line 22 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}{\index{Thread\-Base@{Thread\-Base}!T\-Thread\-Id@{T\-Thread\-Id}}
+\index{T\-Thread\-Id@{T\-Thread\-Id}!ThreadBase@{Thread\-Base}}
+\subsubsection[{T\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef pthread\-\_\-t {\bf Thread\-Base\-::\-T\-Thread\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_af8ec97aa7d89f9a4605a1c6c60777d5d}
+
+
+Definition at line 22 of file Posix\-Thread\-Base.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{\index{Thread\-Base@{Thread\-Base}!Started\-Values@{Started\-Values}}
+\index{Started\-Values@{Started\-Values}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Started\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Thread\-Base\-::\-Started\-Values}}}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
+}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
+}]\index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
+}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 37 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}{\index{Thread\-Base@{Thread\-Base}!Started\-Values@{Started\-Values}}
+\index{Started\-Values@{Started\-Values}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Started\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Thread\-Base\-::\-Started\-Values}}}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
+}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
+}]\index{is\-Started@{is\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Started@{is\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}{is\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a7f7568154f1d8cb41784eb6ab0bad8ab}
+}]\index{is\-Not\-Started@{is\-Not\-Started}!Thread\-Base@{Thread\-Base}}\index{Thread\-Base@{Thread\-Base}!is\-Not\-Started@{is\-Not\-Started}}\item[{\em 
+\hypertarget{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}{is\-Not\-Started}\label{class_thread_base_a6676ad16581b715cf6d59180fd990cf1a5bc1ddd745f1071c077af32b57f587fb}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 37 of file Windows\-Thread\-Base.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
+\index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Base\-::\-Thread\-Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}
+
+
+Definition at line 57 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a9e152f859a8ae5a8d76672f0b53da5c7}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
+\index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Base\-::\-Thread\-Base (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a9e152f859a8ae5a8d76672f0b53da5c7}
+
+
+Definition at line 63 of file Posix\-Thread\-Base.\-h.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_thread_base_a9e152f859a8ae5a8d76672f0b53da5c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}{\index{Thread\-Base@{Thread\-Base}!$\sim$\-Thread\-Base@{$\sim$\-Thread\-Base}}
+\index{$\sim$\-Thread\-Base@{$\sim$\-Thread\-Base}!ThreadBase@{Thread\-Base}}
+\subsubsection[{$\sim$\-Thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual Thread\-Base\-::$\sim$\-Thread\-Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}
+
+
+Definition at line 70 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a50bd80044eb3845856abef9535f1903c}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
+\index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Base\-::\-Thread\-Base (
+\begin{DoxyParamCaption}
+\item[{const {\bf Thread\-Base} \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a50bd80044eb3845856abef9535f1903c}
+
+
+Definition at line 78 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
+\index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Base\-::\-Thread\-Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a95aa3532d57d742e9591b37c4aff1bc7}
+
+
+Definition at line 58 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}{\index{Thread\-Base@{Thread\-Base}!$\sim$\-Thread\-Base@{$\sim$\-Thread\-Base}}
+\index{$\sim$\-Thread\-Base@{$\sim$\-Thread\-Base}!ThreadBase@{Thread\-Base}}
+\subsubsection[{$\sim$\-Thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual Thread\-Base\-::$\sim$\-Thread\-Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_thread_base_a4afe68df229298e2c2920d34ce612e0e}
+
+
+Definition at line 65 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a50bd80044eb3845856abef9535f1903c}{\index{Thread\-Base@{Thread\-Base}!Thread\-Base@{Thread\-Base}}
+\index{Thread\-Base@{Thread\-Base}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Thread\-Base}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Base\-::\-Thread\-Base (
+\begin{DoxyParamCaption}
+\item[{const {\bf Thread\-Base} \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a50bd80044eb3845856abef9535f1903c}
+
+
+Definition at line 73 of file Windows\-Thread\-Base.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_thread_base_a844dd13473fee9283197b3905a81da45}{\index{Thread\-Base@{Thread\-Base}!Execute\-Thread@{Execute\-Thread}}
+\index{Execute\-Thread@{Execute\-Thread}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Execute\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Thread\-Base\-::\-Execute\-Thread (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_thread_base_a844dd13473fee9283197b3905a81da45}
+
+
+Definition at line 49 of file Posix\-Thread\-Base.\-h.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_thread_base_a844dd13473fee9283197b3905a81da45_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_thread_base_a844dd13473fee9283197b3905a81da45}{\index{Thread\-Base@{Thread\-Base}!Execute\-Thread@{Execute\-Thread}}
+\index{Execute\-Thread@{Execute\-Thread}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Execute\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Thread\-Base\-::\-Execute\-Thread (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_thread_base_a844dd13473fee9283197b3905a81da45}
+
+
+Definition at line 50 of file Windows\-Thread\-Base.\-h.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_thread_base_a844dd13473fee9283197b3905a81da45_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{\index{Thread\-Base@{Thread\-Base}!Execution\-Body@{Execution\-Body}}
+\index{Execution\-Body@{Execution\-Body}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Execution\-Body}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Thread\-Base\-::\-Execution\-Body (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}}\label{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}
+
+
+Implemented in \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}{Threaded\-T\-C\-P\-Client}, \hyperlink{class_threaded_t_c_p_connected_client_a019445fcc5fc83ad40583d3772c88a8b}{Threaded\-T\-C\-P\-Connected\-Client}, \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Threaded\-T\-C\-P\-Server}, and \hyperlink{class_my_thread_a481693b2ddb2f41e0181d1f9b7de0a21}{My\-Thread}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}{\index{Thread\-Base@{Thread\-Base}!Execution\-Body@{Execution\-Body}}
+\index{Execution\-Body@{Execution\-Body}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Execution\-Body}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Thread\-Base\-::\-Execution\-Body (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}}\label{class_thread_base_a2cbbb5fb63f5e92d32085b6e874b6f29}
+
+
+Implemented in \hyperlink{class_threaded_t_c_p_client_a1cd1c985635fe8f87c444d3b78fcaefb}{Threaded\-T\-C\-P\-Client}, \hyperlink{class_threaded_t_c_p_connected_client_a019445fcc5fc83ad40583d3772c88a8b}{Threaded\-T\-C\-P\-Connected\-Client}, \hyperlink{class_threaded_t_c_p_server_a1e706ece4845443580b2e9c98f178083}{Threaded\-T\-C\-P\-Server}, and \hyperlink{class_my_thread_a481693b2ddb2f41e0181d1f9b7de0a21}{My\-Thread}.
+
+\hypertarget{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{\index{Thread\-Base@{Thread\-Base}!Get\-Stack\-Size@{Get\-Stack\-Size}}
+\index{Get\-Stack\-Size@{Get\-Stack\-Size}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Get\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Stack\-Size} Thread\-Base\-::\-Get\-Stack\-Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}
+
+
+Definition at line 92 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}{\index{Thread\-Base@{Thread\-Base}!Get\-Stack\-Size@{Get\-Stack\-Size}}
+\index{Get\-Stack\-Size@{Get\-Stack\-Size}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Get\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Stack\-Size} Thread\-Base\-::\-Get\-Stack\-Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_a39e2186d3cf4ddf6b9aa533d59f56546}
+
+
+Definition at line 96 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_add14648bdc8059dd8db41166130921dd}{\index{Thread\-Base@{Thread\-Base}!Set\-Stack\-Size@{Set\-Stack\-Size}}
+\index{Set\-Stack\-Size@{Set\-Stack\-Size}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Set\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\-Base\-::\-Set\-Stack\-Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Stack\-Size}}]{stack\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_add14648bdc8059dd8db41166130921dd}
+
+
+Definition at line 81 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_add14648bdc8059dd8db41166130921dd}{\index{Thread\-Base@{Thread\-Base}!Set\-Stack\-Size@{Set\-Stack\-Size}}
+\index{Set\-Stack\-Size@{Set\-Stack\-Size}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Set\-Stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\-Base\-::\-Set\-Stack\-Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Stack\-Size}}]{stack\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_add14648bdc8059dd8db41166130921dd}
+
+
+Definition at line 85 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{\index{Thread\-Base@{Thread\-Base}!Start\-Thread@{Start\-Thread}}
+\index{Start\-Thread@{Start\-Thread}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Start\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\-Base\-::\-Start\-Thread (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}
+
+
+Definition at line 103 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}{\index{Thread\-Base@{Thread\-Base}!Start\-Thread@{Start\-Thread}}
+\index{Start\-Thread@{Start\-Thread}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Start\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\-Base\-::\-Start\-Thread (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_thread_base_aaea6437d738ac97e3427bbe466f850f8}
+
+
+Definition at line 109 of file Posix\-Thread\-Base.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_thread_base_aaea6437d738ac97e3427bbe466f850f8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}{\index{Thread\-Base@{Thread\-Base}!Posix\-Thread\-Cover@{Posix\-Thread\-Cover}}
+\index{Posix\-Thread\-Cover@{Posix\-Thread\-Cover}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Posix\-Thread\-Cover}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Posix\-Thread\-Cover (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_thread_base_a2567acd55e8bbdbf8ac90a8f77bb4943}
+\hypertarget{class_thread_base_a790b21ad102d0b813d14e54f4fbf4460}{\index{Thread\-Base@{Thread\-Base}!Windows\-Thread\-Cover@{Windows\-Thread\-Cover}}
+\index{Windows\-Thread\-Cover@{Windows\-Thread\-Cover}!ThreadBase@{Thread\-Base}}
+\subsubsection[{Windows\-Thread\-Cover}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D W\-I\-N\-A\-P\-I Windows\-Thread\-Cover (
+\begin{DoxyParamCaption}
+\item[{L\-P\-V\-O\-I\-D}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_thread_base_a790b21ad102d0b813d14e54f4fbf4460}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_thread_base_a9c8b3446d099074f0f1608e5246e137d}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-stack\-Size@{m\-\_\-stack\-Size}}
+\index{m\-\_\-stack\-Size@{m\-\_\-stack\-Size}!ThreadBase@{Thread\-Base}}
+\subsubsection[{m\-\_\-stack\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Stack\-Size} Thread\-Base\-::m\-\_\-stack\-Size\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a9c8b3446d099074f0f1608e5246e137d}
+
+
+Definition at line 47 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a5e2958ae98b989268d1e2be629789d64}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-started@{m\-\_\-started}}
+\index{m\-\_\-started@{m\-\_\-started}!ThreadBase@{Thread\-Base}}
+\subsubsection[{m\-\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Started} Thread\-Base\-::m\-\_\-started\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a5e2958ae98b989268d1e2be629789d64}
+
+
+Definition at line 44 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_ad0d98c6f93707aef346cc66d8de78729}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-thread\-Attribute@{m\-\_\-thread\-Attribute}}
+\index{m\-\_\-thread\-Attribute@{m\-\_\-thread\-Attribute}!ThreadBase@{Thread\-Base}}
+\subsubsection[{m\-\_\-thread\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Thread\-Attribute} Thread\-Base\-::m\-\_\-thread\-Attribute\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_ad0d98c6f93707aef346cc66d8de78729}
+
+
+Definition at line 46 of file Posix\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_a4f279b94eef423109969f69fadd9e674}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-thread\-Handle@{m\-\_\-thread\-Handle}}
+\index{m\-\_\-thread\-Handle@{m\-\_\-thread\-Handle}!ThreadBase@{Thread\-Base}}
+\subsubsection[{m\-\_\-thread\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Thread\-Handle} Thread\-Base\-::m\-\_\-thread\-Handle\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_a4f279b94eef423109969f69fadd9e674}
+
+
+Definition at line 46 of file Windows\-Thread\-Base.\-h.
+
+\hypertarget{class_thread_base_ae8574271bdcbfd80cbdde64c77bc7148}{\index{Thread\-Base@{Thread\-Base}!m\-\_\-thread\-Id@{m\-\_\-thread\-Id}}
+\index{m\-\_\-thread\-Id@{m\-\_\-thread\-Id}!ThreadBase@{Thread\-Base}}
+\subsubsection[{m\-\_\-thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Thread\-Id} Thread\-Base\-::m\-\_\-thread\-Id\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_base_ae8574271bdcbfd80cbdde64c77bc7148}
+
+
+Definition at line 45 of file Posix\-Thread\-Base.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Thread\-Library/\hyperlink{_posix_thread_base_8h}{Posix\-Thread\-Base.\-h}\item 
+S2\-Sim/\-Thread\-Library/\hyperlink{_windows_thread_base_8h}{Windows\-Thread\-Base.\-h}\end{DoxyCompactItemize}

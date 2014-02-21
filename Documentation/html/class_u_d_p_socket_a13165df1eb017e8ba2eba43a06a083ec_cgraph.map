@@ -1,0 +1,8 @@
+<map id="UDPSocket::SetPort" name="UDPSocket::SetPort">
+<area shape="rect" href="$class_i_p_address.html#ade47d25d834bfb952fcf7fb2867db21e" title="IPAddress::SetAddress" alt="" coords="225,5,401,32"/>
+<area shape="rect" href="$class_i_p_address.html#a5908d6242879f0e45685f8b0734dafa7" title="IPAddress::SetPort" alt="" coords="239,56,388,83"/>
+<area shape="rect" href="$class_u_d_p_socket.html#a28960551bca2099a03ad6fa39ef28065" title="UDPSocket::SetIPAddress" alt="" coords="213,107,413,133"/>
+<area shape="rect" href="$class_i_p_address.html#a0c90b37a86811781d4422c0dd2d5b6b5" title="IPAddress::GetAddress" alt="" coords="473,5,652,32"/>
+<area shape="rect" href="$class_i_p_address.html#a5c8a6aeae1105603538c2661c68fd6bb" title="IPAddress::GetPort" alt="" coords="488,56,637,83"/>
+<area shape="rect" href="$class_i_p_address.html#abdbc7cc25dc15d9e85ceb2e1d3125e22" title="IPAddress::GetSocketSize" alt="" coords="461,107,664,133"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="S2Sim/TerraswarmLibrary/MessageHeader.h" name="S2Sim/TerraswarmLibrary/MessageHeader.h">
+<area shape="rect" href="$_client_manager_8h.html" title="S2Sim/ClientManager.h" alt="" coords="788,295,977,321"/>
+<area shape="rect" href="$_client_connection_request_8h.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionRequest.h" alt="" coords="21,192,245,237"/>
+<area shape="rect" href="$_message_ender_8h.html" title="S2Sim/TerraswarmLibrary\l/MessageEnder.h" alt="" coords="875,99,1077,144"/>
+<area shape="rect" href="$_client_connection_response_8h.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionResponse.h" alt="" coords="269,192,504,237"/>
+<area shape="rect" href="$_client_data_8h.html" title="S2Sim/TerraswarmLibrary\l/ClientData.h" alt="" coords="579,192,781,237"/>
+<area shape="rect" href="$_demand_negotiation_8h.html" title="S2Sim/TerraswarmLibrary\l/DemandNegotiation.h" alt="" coords="805,192,1008,237"/>
+<area shape="rect" href="$_get_price_8h.html" title="S2Sim/TerraswarmLibrary\l/GetPrice.h" alt="" coords="1259,192,1461,237"/>
+<area shape="rect" href="$_price_proposal_8h.html" title="S2Sim/TerraswarmLibrary\l/PriceProposal.h" alt="" coords="1485,192,1688,237"/>
+<area shape="rect" href="$_set_current_price_8h.html" title="S2Sim/TerraswarmLibrary\l/SetCurrentPrice.h" alt="" coords="1712,192,1915,237"/>
+<area shape="rect" href="$_message_header_8cpp.html" title="S2Sim/TerraswarmLibrary\l/MessageHeader.cpp" alt="" coords="1253,99,1456,144"/>
+<area shape="rect" href="$_client_manager_8cpp.html" title="S2Sim/ClientManager.cpp" alt="" coords="381,380,589,407"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="S2Sim/ConnectionManager.h" alt="" coords="613,380,845,407"/>
+<area shape="rect" href="$_control_manager_8h.html" title="S2Sim/ControlManager.h" alt="" coords="629,457,829,484"/>
+<area shape="rect" href="$_system_manager_8h.html" title="S2Sim/SystemManager.h" alt="" coords="857,535,1057,561"/>
+<area shape="rect" href="$main_8cpp.html" title="S2Sim/main.cpp" alt="" coords="457,689,596,716"/>
+<area shape="rect" href="$_connection_manager_8cpp.html" title="S2Sim/ConnectionManager.cpp" alt="" coords="191,457,439,484"/>
+<area shape="rect" href="$_control_manager_8cpp.html" title="S2Sim/ControlManager.cpp" alt="" coords="615,535,833,561"/>
+<area shape="rect" href="$_matlab_manager_8h.html" title="S2Sim/MatlabManager.h" alt="" coords="859,612,1056,639"/>
+<area shape="rect" href="$_system_manager_8cpp.html" title="S2Sim/SystemManager.cpp" alt="" coords="616,612,835,639"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html" title="S2Sim/MatlabManager.cpp" alt="" coords="851,689,1064,716"/>
+<area shape="rect" href="$_client_connection_request_8cpp.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionRequest.cpp" alt="" coords="5,285,245,331"/>
+<area shape="rect" href="$_message_ender_8cpp.html" title="S2Sim/TerraswarmLibrary\l/MessageEnder.cpp" alt="" coords="1032,192,1235,237"/>
+<area shape="rect" href="$_client_connection_response_8cpp.html" title="S2Sim/TerraswarmLibrary\l/ClientConnectionResponse.cpp" alt="" coords="269,285,520,331"/>
+<area shape="rect" href="$_client_data_8cpp.html" title="S2Sim/TerraswarmLibrary\l/ClientData.cpp" alt="" coords="561,285,764,331"/>
+<area shape="rect" href="$_demand_negotiation_8cpp.html" title="S2Sim/TerraswarmLibrary\l/DemandNegotiation.cpp" alt="" coords="1001,285,1204,331"/>
+<area shape="rect" href="$_get_price_8cpp.html" title="S2Sim/TerraswarmLibrary\l/GetPrice.cpp" alt="" coords="1259,285,1461,331"/>
+<area shape="rect" href="$_price_proposal_8cpp.html" title="S2Sim/TerraswarmLibrary\l/PriceProposal.cpp" alt="" coords="1485,285,1688,331"/>
+<area shape="rect" href="$_set_current_price_8cpp.html" title="S2Sim/TerraswarmLibrary\l/SetCurrentPrice.cpp" alt="" coords="1712,285,1915,331"/>
+</map>

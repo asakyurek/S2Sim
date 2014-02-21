@@ -1,0 +1,12 @@
+<map id="S2Sim/MatlabManager.h" name="S2Sim/MatlabManager.h">
+<area shape="rect" href="$_client_manager_8h.html" title="S2Sim/ClientManager.h" alt="" coords="185,84,375,111"/>
+<area shape="rect" href="$_control_manager_8h.html" title="S2Sim/ControlManager.h" alt="" coords="436,239,636,265"/>
+<area shape="rect" href="$_system_manager_8h.html" title="S2Sim/SystemManager.h" alt="" coords="15,316,215,343"/>
+<area shape="rect" href="$main_8cpp.html" title="S2Sim/main.cpp" alt="" coords="647,316,785,343"/>
+<area shape="rect" href="$_matlab_manager_8cpp.html" title="S2Sim/MatlabManager.cpp" alt="" coords="804,84,1017,111"/>
+<area shape="rect" href="$_client_manager_8cpp.html" title="S2Sim/ClientManager.cpp" alt="" coords="420,161,628,188"/>
+<area shape="rect" href="$_connection_manager_8h.html" title="S2Sim/ConnectionManager.h" alt="" coords="164,161,396,188"/>
+<area shape="rect" href="$_connection_manager_8cpp.html" title="S2Sim/ConnectionManager.cpp" alt="" coords="164,239,412,265"/>
+<area shape="rect" href="$_control_manager_8cpp.html" title="S2Sim/ControlManager.cpp" alt="" coords="404,316,623,343"/>
+<area shape="rect" href="$_system_manager_8cpp.html" title="S2Sim/SystemManager.cpp" alt="" coords="5,393,224,420"/>
+</map>

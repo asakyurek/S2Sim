@@ -1,0 +1,8 @@
+<map id="ClientManager::ProcessDemandNegotiation" name="ClientManager::ProcessDemandNegotiation">
+<area shape="rect" href="$_log_print_8h.html#a7e0c5f42cad5bc3a44134fb9c9a7a052" title="LogPrint" alt="" coords="703,23,783,49"/>
+<area shape="rect" href="$_control_manager_8cpp.html#a63bfd4667c9c70297f25ae5e5176818e" title="Returns the only instance of ControlManager. " alt="" coords="352,48,515,75"/>
+<area shape="rect" href="$class_control_manager.html#a5b551f560431d0bb0bcf6c338bac8eb3" title="ControlManager::ClientDemand\lNegotiation" alt="" coords="308,99,559,144"/>
+<area shape="rect" href="$class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#af0694c36ab00a1dadf8bb8f1b3c7c159" title="TerraSwarm::Synchronous\l::DemandNegotiation::GetNumber\lOfDataPoints" alt="" coords="608,193,877,255"/>
+<area shape="rect" href="$class_terra_swarm_1_1_synchronous_1_1_demand_negotiation.html#ab99ce665f0822299184ff34cf5e674d2" title="TerraSwarm::Synchronous\l::DemandNegotiation::GetData\lPoints" alt="" coords="311,219,556,280"/>
+<area shape="rect" href="$class_t_c_p_connected_client.html#a7c3a1d1172f3880b48d35ffbf255712d" title="TCPConnectedClient\l::SendData" alt="" coords="657,99,828,144"/>
+</map>

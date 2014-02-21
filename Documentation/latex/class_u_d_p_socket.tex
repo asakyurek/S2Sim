@@ -1,0 +1,200 @@
+\hypertarget{class_u_d_p_socket}{\section{U\-D\-P\-Socket Class Reference}
+\label{class_u_d_p_socket}\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}}
+}
+
+
+{\ttfamily \#include $<$U\-D\-P\-Socket.\-h$>$}
+
+
+
+Inheritance diagram for U\-D\-P\-Socket\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{class_u_d_p_socket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\-D\-P\-Socket\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{class_u_d_p_socket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_u_d_p_socket_a237d16ccc7a9c4aefa81f69774748791}{U\-D\-P\-Socket} (void)
+\item 
+\hyperlink{class_u_d_p_socket_aa5c869eca5bab38df89f09ac79f54afb}{$\sim$\-U\-D\-P\-Socket} (void)
+\item 
+void \hyperlink{class_u_d_p_socket_a28960551bca2099a03ad6fa39ef28065}{Set\-I\-P\-Address} (\hyperlink{class_i_p_address}{I\-P\-Address} \&address)
+\item 
+void \hyperlink{class_u_d_p_socket_a13165df1eb017e8ba2eba43a06a083ec}{Set\-Port} (const \hyperlink{class_i_p_address_a51188195685c31d4258c0a078cc37154}{I\-P\-Address\-::\-T\-Port} port)
+\item 
+\hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_u_d_p_socket_ab78ab0104e1fafc5feb1b3459e537e32}{Send\-Data} (const \hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} length, \hyperlink{class_i_p_address}{I\-P\-Address} \&destination)
+\item 
+\hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} \hyperlink{class_u_d_p_socket_a4f70d5a5bf2bb16fdd897355bb80741b}{Receive\-Data} (\hyperlink{class_socket_base_a1557d64029a25c20b4c306b80efcc143}{T\-Buffer} buffer, const \hyperlink{class_socket_base_ac414903631491453b96e71c06c2c2e72}{T\-Number\-Of\-Bytes} reception\-Length, \hyperlink{class_i_p_address}{I\-P\-Address} \&destination\-Address)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_socket_base}{Socket\-Base}$<$ S\-O\-C\-K\-\_\-\-D\-G\-R\-A\-M $>$ \hyperlink{class_u_d_p_socket_abdd3401d1e8ac4129eb799d02e6db28b}{T\-Base\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file U\-D\-P\-Socket.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_u_d_p_socket_abdd3401d1e8ac4129eb799d02e6db28b}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!T\-Base\-Type@{T\-Base\-Type}}
+\index{T\-Base\-Type@{T\-Base\-Type}!UDPSocket@{U\-D\-P\-Socket}}
+\subsubsection[{T\-Base\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Socket\-Base}$<$S\-O\-C\-K\-\_\-\-D\-G\-R\-A\-M$>$ {\bf U\-D\-P\-Socket\-::\-T\-Base\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_u_d_p_socket_abdd3401d1e8ac4129eb799d02e6db28b}
+
+
+Definition at line 36 of file U\-D\-P\-Socket.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_u_d_p_socket_a237d16ccc7a9c4aefa81f69774748791}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!U\-D\-P\-Socket@{U\-D\-P\-Socket}}
+\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!UDPSocket@{U\-D\-P\-Socket}}
+\subsubsection[{U\-D\-P\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}U\-D\-P\-Socket\-::\-U\-D\-P\-Socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_u_d_p_socket_a237d16ccc7a9c4aefa81f69774748791}
+
+
+Definition at line 10 of file U\-D\-P\-Socket.\-cpp.
+
+\hypertarget{class_u_d_p_socket_aa5c869eca5bab38df89f09ac79f54afb}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!$\sim$\-U\-D\-P\-Socket@{$\sim$\-U\-D\-P\-Socket}}
+\index{$\sim$\-U\-D\-P\-Socket@{$\sim$\-U\-D\-P\-Socket}!UDPSocket@{U\-D\-P\-Socket}}
+\subsubsection[{$\sim$\-U\-D\-P\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}U\-D\-P\-Socket\-::$\sim$\-U\-D\-P\-Socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_u_d_p_socket_aa5c869eca5bab38df89f09ac79f54afb}
+
+
+Definition at line 14 of file U\-D\-P\-Socket.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_u_d_p_socket_a4f70d5a5bf2bb16fdd897355bb80741b}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!Receive\-Data@{Receive\-Data}}
+\index{Receive\-Data@{Receive\-Data}!UDPSocket@{U\-D\-P\-Socket}}
+\subsubsection[{Receive\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-D\-P\-Socket\-::\-T\-Number\-Of\-Bytes} U\-D\-P\-Socket\-::\-Receive\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf T\-Buffer}}]{buffer, }
+\item[{const {\bf T\-Number\-Of\-Bytes}}]{reception\-Length, }
+\item[{{\bf I\-P\-Address} \&}]{destination\-Address}
+\end{DoxyParamCaption}
+)}}\label{class_u_d_p_socket_a4f70d5a5bf2bb16fdd897355bb80741b}
+
+
+Definition at line 25 of file U\-D\-P\-Socket.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_d_p_socket_a4f70d5a5bf2bb16fdd897355bb80741b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_u_d_p_socket_ab78ab0104e1fafc5feb1b3459e537e32}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!Send\-Data@{Send\-Data}}
+\index{Send\-Data@{Send\-Data}!UDPSocket@{U\-D\-P\-Socket}}
+\subsubsection[{Send\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-D\-P\-Socket\-::\-T\-Number\-Of\-Bytes} U\-D\-P\-Socket\-::\-Send\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Buffer}}]{buffer, }
+\item[{const {\bf T\-Number\-Of\-Bytes}}]{length, }
+\item[{{\bf I\-P\-Address} \&}]{destination}
+\end{DoxyParamCaption}
+)}}\label{class_u_d_p_socket_ab78ab0104e1fafc5feb1b3459e537e32}
+
+
+Definition at line 19 of file U\-D\-P\-Socket.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_d_p_socket_ab78ab0104e1fafc5feb1b3459e537e32_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_u_d_p_socket_a28960551bca2099a03ad6fa39ef28065}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!Set\-I\-P\-Address@{Set\-I\-P\-Address}}
+\index{Set\-I\-P\-Address@{Set\-I\-P\-Address}!UDPSocket@{U\-D\-P\-Socket}}
+\subsubsection[{Set\-I\-P\-Address}]{\setlength{\rightskip}{0pt plus 5cm}void U\-D\-P\-Socket\-::\-Set\-I\-P\-Address (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-P\-Address} \&}]{address}
+\end{DoxyParamCaption}
+)}}\label{class_u_d_p_socket_a28960551bca2099a03ad6fa39ef28065}
+
+
+Definition at line 32 of file U\-D\-P\-Socket.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_d_p_socket_a28960551bca2099a03ad6fa39ef28065_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_d_p_socket_a28960551bca2099a03ad6fa39ef28065_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_u_d_p_socket_a13165df1eb017e8ba2eba43a06a083ec}{\index{U\-D\-P\-Socket@{U\-D\-P\-Socket}!Set\-Port@{Set\-Port}}
+\index{Set\-Port@{Set\-Port}!UDPSocket@{U\-D\-P\-Socket}}
+\subsubsection[{Set\-Port}]{\setlength{\rightskip}{0pt plus 5cm}void U\-D\-P\-Socket\-::\-Set\-Port (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\-P\-Address\-::\-T\-Port}}]{port}
+\end{DoxyParamCaption}
+)}}\label{class_u_d_p_socket_a13165df1eb017e8ba2eba43a06a083ec}
+
+
+Definition at line 38 of file U\-D\-P\-Socket.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_d_p_socket_a13165df1eb017e8ba2eba43a06a083ec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\-Socket\-Library/\hyperlink{_u_d_p_socket_8h}{U\-D\-P\-Socket.\-h}\item 
+S2\-Sim/\-Socket\-Library/\hyperlink{_u_d_p_socket_8cpp}{U\-D\-P\-Socket.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,372 @@
+\hypertarget{class_system_manager}{\section{System\-Manager Class Reference}
+\label{class_system_manager}\index{System\-Manager@{System\-Manager}}
+}
+
+
+{\ttfamily \#include $<$System\-Manager.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_system_manager_a073873362e7861f8a0368bb62144d4ca}{System\-Mode\-Values} \{ \hyperlink{class_system_manager_a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e}{Simulation\-Mode} = ( T\-System\-Mode )0x0001, 
+\hyperlink{class_system_manager_a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357}{Real\-Time\-Mode} = ( T\-System\-Mode )0x0002
+ \}
+\item 
+typedef unsigned int \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time}
+\item 
+typedef unsigned short \hyperlink{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{T\-System\-Mode}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{Message\-Header\-::\-T\-Id} \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id}
+\item 
+typedef \\*
+\hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_connection_request_a50a16fcfef8eb10d5191b6eaf0723a92}{Asynchronous\-::\-Client\-Connection\-Request\-::\-T\-Client\-Name} \hyperlink{class_system_manager_a2d2818eaeb5787ef4f4d009ff343d195}{T\-Client\-Name}
+\item 
+typedef \\*
+\hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_ac733720fed15e940f991de44f1bb514e}{Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point}
+\item 
+typedef \\*
+\hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data_a690994afd0ba9b8eeb56ae679a5c64e8}{Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points} \hyperlink{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}{T\-Number\-Of\-Data\-Points}
+\item 
+typedef unsigned int \hyperlink{class_system_manager_ad7c10914fe99b3f09350a10028f25300}{T\-Voltage}
+\item 
+typedef \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} \hyperlink{class_system_manager_a924f6502f78c31bbf5f462f9554d4fc5}{T\-Wattage}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} \hyperlink{class_system_manager_aebfc7fab136f01836e07228474e4326f}{Get\-System\-Time} (void) const 
+\item 
+\hyperlink{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{T\-System\-Mode} \hyperlink{class_system_manager_ab9f52e613fdbdc4690be79179b7357e6}{Get\-System\-Mode} (void) const 
+\item 
+void \hyperlink{class_system_manager_abaf36dbd2e75a773f2ddc40ac82e5f3b}{Register\-Data} (const \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id} client\-Id, const \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} start\-Time, const \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} resolution, const \hyperlink{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}{T\-Number\-Of\-Data\-Points} number\-Of\-Data\-Points, \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} $\ast$data\-Points)
+\item 
+void \hyperlink{class_system_manager_ae96634f0635ad6c5e98620eb70ef7fbe}{Register\-Data} (const \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id} client\-Id, \hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} data\-Point)
+\item 
+void \hyperlink{class_system_manager_a87443d7e75b0f170535d315c27237253}{Advance\-Time\-Step} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ \hyperlink{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{T\-Client\-Id}, \\*
+\hyperlink{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{T\-Data\-Point} $>$ \hyperlink{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}{T\-Data\-Map}
+\item 
+typedef std\-::map$<$ \hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time}, \\*
+\hyperlink{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}{T\-Data\-Map} $>$ \hyperlink{class_system_manager_aae66953e62823ae14519c7e9b3925864}{T\-System\-Map}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_system_manager_a7654b10e671b56945ff0958781e07a6f}{System\-Manager} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{T\-System\-Time} \hyperlink{class_system_manager_af5a7fec3622669af269cbcf7b1b2af22}{m\-\_\-system\-Time}
+\item 
+\hyperlink{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{T\-System\-Mode} \hyperlink{class_system_manager_a25bf998fe8f48168e2ad4c3dfd3bad91}{m\-\_\-system\-Mode}
+\item 
+\hyperlink{class_system_manager_aae66953e62823ae14519c7e9b3925864}{T\-System\-Map} \hyperlink{class_system_manager_a74a1b7e836ad95da039de9eb367544c3}{m\-\_\-system\-Map}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_system_manager}{System\-Manager} \& \hyperlink{class_system_manager_a97e64f74d188d41051488578800d20cd}{Get\-System\-Manager} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file System\-Manager.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}{\index{System\-Manager@{System\-Manager}!T\-Client\-Id@{T\-Client\-Id}}
+\index{T\-Client\-Id@{T\-Client\-Id}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-Client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Message\-Header\-::\-T\-Id} {\bf System\-Manager\-::\-T\-Client\-Id}}}\label{class_system_manager_af957fc0ff78c4c38085c26ac0d81064e}
+
+
+Definition at line 40 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_a2d2818eaeb5787ef4f4d009ff343d195}{\index{System\-Manager@{System\-Manager}!T\-Client\-Name@{T\-Client\-Name}}
+\index{T\-Client\-Name@{T\-Client\-Name}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-Client\-Name}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Connection\-Request\-::\-T\-Client\-Name} {\bf System\-Manager\-::\-T\-Client\-Name}}}\label{class_system_manager_a2d2818eaeb5787ef4f4d009ff343d195}
+
+
+Definition at line 41 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}{\index{System\-Manager@{System\-Manager}!T\-Data\-Map@{T\-Data\-Map}}
+\index{T\-Data\-Map@{T\-Data\-Map}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-Data\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf T\-Client\-Id}, {\bf T\-Data\-Point}$>$ {\bf System\-Manager\-::\-T\-Data\-Map}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_ac003793cd03c1af317bf30b11e8c0a5a}
+
+
+Definition at line 49 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}{\index{System\-Manager@{System\-Manager}!T\-Data\-Point@{T\-Data\-Point}}
+\index{T\-Data\-Point@{T\-Data\-Point}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-Data\-Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Data\-Point} {\bf System\-Manager\-::\-T\-Data\-Point}}}\label{class_system_manager_a177b09f79bd2cef44160fb4d8ea77996}
+
+
+Definition at line 42 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}{\index{System\-Manager@{System\-Manager}!T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}}
+\index{T\-Number\-Of\-Data\-Points@{T\-Number\-Of\-Data\-Points}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-Number\-Of\-Data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Asynchronous\-::\-Client\-Data\-::\-T\-Number\-Of\-Data\-Points} {\bf System\-Manager\-::\-T\-Number\-Of\-Data\-Points}}}\label{class_system_manager_a9cb6753ad6cd26b6ad46c194f38bee77}
+
+
+Definition at line 43 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_aae66953e62823ae14519c7e9b3925864}{\index{System\-Manager@{System\-Manager}!T\-System\-Map@{T\-System\-Map}}
+\index{T\-System\-Map@{T\-System\-Map}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-System\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf T\-System\-Time}, {\bf T\-Data\-Map}$>$ {\bf System\-Manager\-::\-T\-System\-Map}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_aae66953e62823ae14519c7e9b3925864}
+
+
+Definition at line 50 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}{\index{System\-Manager@{System\-Manager}!T\-System\-Mode@{T\-System\-Mode}}
+\index{T\-System\-Mode@{T\-System\-Mode}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-System\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf System\-Manager\-::\-T\-System\-Mode}}}\label{class_system_manager_aa32b3f50b8882c8aa7a9ca88ab7a43dd}
+
+
+Definition at line 33 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_a9743ff4f23e7d957f5932780d8070099}{\index{System\-Manager@{System\-Manager}!T\-System\-Time@{T\-System\-Time}}
+\index{T\-System\-Time@{T\-System\-Time}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-System\-Time}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf System\-Manager\-::\-T\-System\-Time}}}\label{class_system_manager_a9743ff4f23e7d957f5932780d8070099}
+
+
+Definition at line 32 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_ad7c10914fe99b3f09350a10028f25300}{\index{System\-Manager@{System\-Manager}!T\-Voltage@{T\-Voltage}}
+\index{T\-Voltage@{T\-Voltage}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf System\-Manager\-::\-T\-Voltage}}}\label{class_system_manager_ad7c10914fe99b3f09350a10028f25300}
+
+
+Definition at line 45 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_a924f6502f78c31bbf5f462f9554d4fc5}{\index{System\-Manager@{System\-Manager}!T\-Wattage@{T\-Wattage}}
+\index{T\-Wattage@{T\-Wattage}!SystemManager@{System\-Manager}}
+\subsubsection[{T\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf T\-Data\-Point} {\bf System\-Manager\-::\-T\-Wattage}}}\label{class_system_manager_a924f6502f78c31bbf5f462f9554d4fc5}
+
+
+Definition at line 46 of file System\-Manager.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_system_manager_a073873362e7861f8a0368bb62144d4ca}{\index{System\-Manager@{System\-Manager}!System\-Mode\-Values@{System\-Mode\-Values}}
+\index{System\-Mode\-Values@{System\-Mode\-Values}!SystemManager@{System\-Manager}}
+\subsubsection[{System\-Mode\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf System\-Manager\-::\-System\-Mode\-Values}}}\label{class_system_manager_a073873362e7861f8a0368bb62144d4ca}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Simulation\-Mode@{Simulation\-Mode}!System\-Manager@{System\-Manager}}\index{System\-Manager@{System\-Manager}!Simulation\-Mode@{Simulation\-Mode}}\item[{\em 
+\hypertarget{class_system_manager_a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e}{Simulation\-Mode}\label{class_system_manager_a073873362e7861f8a0368bb62144d4caa55cdecfd6754c9496bbe9560aa6f181e}
+}]\index{Real\-Time\-Mode@{Real\-Time\-Mode}!System\-Manager@{System\-Manager}}\index{System\-Manager@{System\-Manager}!Real\-Time\-Mode@{Real\-Time\-Mode}}\item[{\em 
+\hypertarget{class_system_manager_a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357}{Real\-Time\-Mode}\label{class_system_manager_a073873362e7861f8a0368bb62144d4caac1092623b7154136da8721ebf7402357}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 34 of file System\-Manager.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_system_manager_a7654b10e671b56945ff0958781e07a6f}{\index{System\-Manager@{System\-Manager}!System\-Manager@{System\-Manager}}
+\index{System\-Manager@{System\-Manager}!SystemManager@{System\-Manager}}
+\subsubsection[{System\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}System\-Manager\-::\-System\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_a7654b10e671b56945ff0958781e07a6f}
+
+
+Definition at line 19 of file System\-Manager.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_system_manager_a87443d7e75b0f170535d315c27237253}{\index{System\-Manager@{System\-Manager}!Advance\-Time\-Step@{Advance\-Time\-Step}}
+\index{Advance\-Time\-Step@{Advance\-Time\-Step}!SystemManager@{System\-Manager}}
+\subsubsection[{Advance\-Time\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void System\-Manager\-::\-Advance\-Time\-Step (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_system_manager_a87443d7e75b0f170535d315c27237253}
+
+
+Definition at line 63 of file System\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_manager_a87443d7e75b0f170535d315c27237253_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_manager_a87443d7e75b0f170535d315c27237253_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_system_manager_ab9f52e613fdbdc4690be79179b7357e6}{\index{System\-Manager@{System\-Manager}!Get\-System\-Mode@{Get\-System\-Mode}}
+\index{Get\-System\-Mode@{Get\-System\-Mode}!SystemManager@{System\-Manager}}
+\subsubsection[{Get\-System\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Mode} System\-Manager\-::\-Get\-System\-Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_system_manager_ab9f52e613fdbdc4690be79179b7357e6}
+
+
+Definition at line 69 of file System\-Manager.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_manager_ab9f52e613fdbdc4690be79179b7357e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_system_manager_aebfc7fab136f01836e07228474e4326f}{\index{System\-Manager@{System\-Manager}!Get\-System\-Time@{Get\-System\-Time}}
+\index{Get\-System\-Time@{Get\-System\-Time}!SystemManager@{System\-Manager}}
+\subsubsection[{Get\-System\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Time} System\-Manager\-::\-Get\-System\-Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_system_manager_aebfc7fab136f01836e07228474e4326f}
+
+
+Definition at line 63 of file System\-Manager.\-h.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_manager_aebfc7fab136f01836e07228474e4326f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_system_manager_abaf36dbd2e75a773f2ddc40ac82e5f3b}{\index{System\-Manager@{System\-Manager}!Register\-Data@{Register\-Data}}
+\index{Register\-Data@{Register\-Data}!SystemManager@{System\-Manager}}
+\subsubsection[{Register\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void System\-Manager\-::\-Register\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Client\-Id}}]{client\-Id, }
+\item[{const {\bf T\-System\-Time}}]{start\-Time, }
+\item[{const {\bf T\-System\-Time}}]{resolution, }
+\item[{const {\bf T\-Number\-Of\-Data\-Points}}]{number\-Of\-Data\-Points, }
+\item[{{\bf T\-Data\-Point} $\ast$}]{data\-Points}
+\end{DoxyParamCaption}
+)}}\label{class_system_manager_abaf36dbd2e75a773f2ddc40ac82e5f3b}
+
+
+Definition at line 27 of file System\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_manager_abaf36dbd2e75a773f2ddc40ac82e5f3b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_manager_abaf36dbd2e75a773f2ddc40ac82e5f3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_system_manager_ae96634f0635ad6c5e98620eb70ef7fbe}{\index{System\-Manager@{System\-Manager}!Register\-Data@{Register\-Data}}
+\index{Register\-Data@{Register\-Data}!SystemManager@{System\-Manager}}
+\subsubsection[{Register\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void System\-Manager\-::\-Register\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Client\-Id}}]{client\-Id, }
+\item[{{\bf T\-Data\-Point}}]{data\-Point}
+\end{DoxyParamCaption}
+)}}\label{class_system_manager_ae96634f0635ad6c5e98620eb70ef7fbe}
+
+
+Definition at line 53 of file System\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_system_manager_ae96634f0635ad6c5e98620eb70ef7fbe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_system_manager_a97e64f74d188d41051488578800d20cd}{\index{System\-Manager@{System\-Manager}!Get\-System\-Manager@{Get\-System\-Manager}}
+\index{Get\-System\-Manager@{Get\-System\-Manager}!SystemManager@{System\-Manager}}
+\subsubsection[{Get\-System\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf System\-Manager}\& Get\-System\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_system_manager_a97e64f74d188d41051488578800d20cd}
+
+
+Definition at line 13 of file System\-Manager.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_system_manager_a74a1b7e836ad95da039de9eb367544c3}{\index{System\-Manager@{System\-Manager}!m\-\_\-system\-Map@{m\-\_\-system\-Map}}
+\index{m\-\_\-system\-Map@{m\-\_\-system\-Map}!SystemManager@{System\-Manager}}
+\subsubsection[{m\-\_\-system\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Map} System\-Manager\-::m\-\_\-system\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_a74a1b7e836ad95da039de9eb367544c3}
+
+
+Definition at line 56 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_a25bf998fe8f48168e2ad4c3dfd3bad91}{\index{System\-Manager@{System\-Manager}!m\-\_\-system\-Mode@{m\-\_\-system\-Mode}}
+\index{m\-\_\-system\-Mode@{m\-\_\-system\-Mode}!SystemManager@{System\-Manager}}
+\subsubsection[{m\-\_\-system\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Mode} System\-Manager\-::m\-\_\-system\-Mode\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_a25bf998fe8f48168e2ad4c3dfd3bad91}
+
+
+Definition at line 54 of file System\-Manager.\-h.
+
+\hypertarget{class_system_manager_af5a7fec3622669af269cbcf7b1b2af22}{\index{System\-Manager@{System\-Manager}!m\-\_\-system\-Time@{m\-\_\-system\-Time}}
+\index{m\-\_\-system\-Time@{m\-\_\-system\-Time}!SystemManager@{System\-Manager}}
+\subsubsection[{m\-\_\-system\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-System\-Time} System\-Manager\-::m\-\_\-system\-Time\hspace{0.3cm}{\ttfamily [private]}}}\label{class_system_manager_af5a7fec3622669af269cbcf7b1b2af22}
+
+
+Definition at line 53 of file System\-Manager.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\hyperlink{_system_manager_8h}{System\-Manager.\-h}\item 
+S2\-Sim/\hyperlink{_system_manager_8cpp}{System\-Manager.\-cpp}\end{DoxyCompactItemize}

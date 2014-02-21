@@ -1,0 +1,725 @@
+\hypertarget{class_client_manager}{\section{Client\-Manager Class Reference}
+\label{class_client_manager}\index{Client\-Manager@{Client\-Manager}}
+}
+
+
+Manages the connection with a client.  
+
+
+
+
+{\ttfamily \#include $<$Client\-Manager.\-h$>$}
+
+
+
+Collaboration diagram for Client\-Manager\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \\*
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_a2ed14f2a90070d19a70183bb63e7708e}{Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price} \hyperlink{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{T\-Price}
+\item 
+typedef \\*
+\hyperlink{class_terra_swarm_1_1_synchronous_1_1_set_current_price_aa87902078a0788d13ef70b899d83f4d3}{Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval} \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_client_manager_ad012b20c788f625e98e09e849744a8d9}{Client\-Manager} (void)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_client_manager_acdcd9f65fd1f9c819e9d8a8130e661ca}{Client\-Manager} (\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$client)
+\begin{DoxyCompactList}\small\item\em Constructs the client manager with a connection. \end{DoxyCompactList}\item 
+\hyperlink{class_client_manager_aa99b4fc6e351914f367db37ea83d1e65}{Client\-Manager} (const \hyperlink{class_client_manager}{Client\-Manager} \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_client_manager_abac29dfed67c8b8354cf07267fd5515b}{$\sim$\-Client\-Manager} (void)
+\begin{DoxyCompactList}\small\item\em Destructor, deletes the connection. \end{DoxyCompactList}\item 
+\hyperlink{class_client_manager}{Client\-Manager} \& \hyperlink{class_client_manager_a1b3ae7dda1e6d1a2939c3eb6a1b9cbd1}{operator=} (const \hyperlink{class_client_manager}{Client\-Manager} \&copy)
+\begin{DoxyCompactList}\small\item\em Copies the contents of another client manager. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_a4fa8fc5731587276f5e6be92563474fa}{Connection\-Broken} (void)
+\begin{DoxyCompactList}\small\item\em Handles the broken connection case. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_abf05d2ac88337dfd02e0b7986ee1e18c}{Message\-Received} (void $\ast$data, const size\-\_\-t data\-Size)
+\begin{DoxyCompactList}\small\item\em Called when a message is received. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_adb64a2ee5d0eb7b1a4bdedcd0e3b92f5}{Set\-Current\-Price} (const \hyperlink{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{T\-Price} price, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} begin\-Interval, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} end\-Interval)
+\item 
+void \hyperlink{class_client_manager_ae297765312b5f2f93f7b8ec700ad2fbb}{Price\-Proposal} (const \hyperlink{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{T\-Price} price, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} begin\-Interval, const \hyperlink{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{T\-Interval} end\-Interval)
+\item 
+bool \hyperlink{class_client_manager_a626b9383b2b2b7924a1f1e183800fe72}{Is\-Synchronous} (void) const 
+\item 
+bool \hyperlink{class_client_manager_ab3f0c2bb301ba8d1218d703e5446baf3}{Is\-Asynchronous} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40b}{Client\-Type\-Values} \{ \hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40ba5efa5897435cfd442d637beea251c85a}{Asynchronous\-Client} = ( T\-Client\-Type )0x01, 
+\hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40bada4fe5ba56979f1deaf93b69d0a8fcae}{Synchronous\-Client} = ( T\-Client\-Type )0x02
+ \}
+\item 
+typedef unsigned char \hyperlink{class_client_manager_a223aecacabe855f08e4675b12403dfa4}{T\-Client\-Type}
+\item 
+typedef \hyperlink{class_terra_swarm_1_1_message_header_ab55de822fadad758edcd8f36bd07676e}{Message\-Header\-::\-T\-Id} \hyperlink{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{T\-Id}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_client_manager_a6d544b4d20cd3b906b6a033c8d70e4a5}{Process\-Client\-Connection\-Request} (\hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_connection_request}{Asynchronous\-::\-Client\-Connection\-Request} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Processes an asynchronous client connection request. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_aeaa1090897b231a37c7e61b4f95067d1}{Process\-Client\-Connection\-Request} (\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request}{Synchronous\-::\-Client\-Connection\-Request} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Processes an synchronous client connection request. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_a1dd815fe845945ae8966b3a3f449ba0e}{Process\-Client\-Data} (\hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Asynchronous\-::\-Client\-Data} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Processes the consumption information. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_a1d7fd8ecff3bc921273e2928693e4c7d}{Process\-Client\-Data} (\hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_data}{Synchronous\-::\-Client\-Data} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Processes the consumption information. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_a841299387a1dcd268266a3c0cfe2a95c}{Process\-Get\-Price} (\hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Synchronous\-::\-Get\-Price} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Processes the price signal request. \end{DoxyCompactList}\item 
+void \hyperlink{class_client_manager_ad8841acd386513f41ab0872c67593ff4}{Process\-Demand\-Negotiation} (\hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Synchronous\-::\-Demand\-Negotiation} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Processes the demand negotiation response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_threaded_t_c_p_connected_client}{Threaded\-T\-C\-P\-Connected\-Client} $\ast$ \hyperlink{class_client_manager_a86ae04f2ac9f2988559a023d877f78e4}{m\-\_\-client}
+\item 
+\hyperlink{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{T\-Id} \hyperlink{class_client_manager_a1216ffa88107c33825adafe63fea2263}{m\-\_\-client\-Id}
+\item 
+\hyperlink{class_client_manager_a223aecacabe855f08e4675b12403dfa4}{T\-Client\-Type} \hyperlink{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{m\-\_\-client\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{T\-Id} \hyperlink{class_client_manager_a4f044df4d9f43367135f9d01841ec326}{next\-Client\-Id} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages the connection with a client. 
+
+This class manages the connection to a single client including message processing and message construction. 
+
+Definition at line 33 of file Client\-Manager.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_client_manager_a223aecacabe855f08e4675b12403dfa4}{\index{Client\-Manager@{Client\-Manager}!T\-Client\-Type@{T\-Client\-Type}}
+\index{T\-Client\-Type@{T\-Client\-Type}!ClientManager@{Client\-Manager}}
+\subsubsection[{T\-Client\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf Client\-Manager\-::\-T\-Client\-Type}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a223aecacabe855f08e4675b12403dfa4}
+Defines the client type 
+
+Definition at line 39 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}{\index{Client\-Manager@{Client\-Manager}!T\-Id@{T\-Id}}
+\index{T\-Id@{T\-Id}!ClientManager@{Client\-Manager}}
+\subsubsection[{T\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Message\-Header\-::\-T\-Id} {\bf Client\-Manager\-::\-T\-Id}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a531e5e7eb779e8ce3c47b8eabd8e9b17}
+Type of the Unique I\-D of the client in the system. 
+
+Definition at line 55 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_a429cc3229a8121c83655945ebaec18a6}{\index{Client\-Manager@{Client\-Manager}!T\-Interval@{T\-Interval}}
+\index{T\-Interval@{T\-Interval}!ClientManager@{Client\-Manager}}
+\subsubsection[{T\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Synchronous\-::\-Set\-Current\-Price\-::\-T\-Interval} {\bf Client\-Manager\-::\-T\-Interval}}}\label{class_client_manager_a429cc3229a8121c83655945ebaec18a6}
+Type used to represent a time interval. 
+
+Definition at line 65 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}{\index{Client\-Manager@{Client\-Manager}!T\-Price@{T\-Price}}
+\index{T\-Price@{T\-Price}!ClientManager@{Client\-Manager}}
+\subsubsection[{T\-Price}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Synchronous\-::\-Set\-Current\-Price\-::\-T\-Price} {\bf Client\-Manager\-::\-T\-Price}}}\label{class_client_manager_ae957a71b432eb6d9d39b0f397cd89874}
+Type used to represent a price signal. 
+
+Definition at line 61 of file Client\-Manager.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_client_manager_ac12239be9a30847f677a32910822d40b}{\index{Client\-Manager@{Client\-Manager}!Client\-Type\-Values@{Client\-Type\-Values}}
+\index{Client\-Type\-Values@{Client\-Type\-Values}!ClientManager@{Client\-Manager}}
+\subsubsection[{Client\-Type\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Client\-Manager\-::\-Client\-Type\-Values}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_ac12239be9a30847f677a32910822d40b}
+There are two client types.
+\begin{DoxyItemize}
+\item Asynchronous client that connects, delivers its data and disconnects.
+\item Synchronous client that connects and delivers data in a time synchronous way. 
+\end{DoxyItemize}\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Asynchronous\-Client@{Asynchronous\-Client}!Client\-Manager@{Client\-Manager}}\index{Client\-Manager@{Client\-Manager}!Asynchronous\-Client@{Asynchronous\-Client}}\item[{\em 
+\hypertarget{class_client_manager_ac12239be9a30847f677a32910822d40ba5efa5897435cfd442d637beea251c85a}{Asynchronous\-Client}\label{class_client_manager_ac12239be9a30847f677a32910822d40ba5efa5897435cfd442d637beea251c85a}
+}]Asynchronous client type. \index{Synchronous\-Client@{Synchronous\-Client}!Client\-Manager@{Client\-Manager}}\index{Client\-Manager@{Client\-Manager}!Synchronous\-Client@{Synchronous\-Client}}\item[{\em 
+\hypertarget{class_client_manager_ac12239be9a30847f677a32910822d40bada4fe5ba56979f1deaf93b69d0a8fcae}{Synchronous\-Client}\label{class_client_manager_ac12239be9a30847f677a32910822d40bada4fe5ba56979f1deaf93b69d0a8fcae}
+}]Synchronous client type. \end{description}
+\end{Desc}
+
+
+Definition at line 46 of file Client\-Manager.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_client_manager_ad012b20c788f625e98e09e849744a8d9}{\index{Client\-Manager@{Client\-Manager}!Client\-Manager@{Client\-Manager}}
+\index{Client\-Manager@{Client\-Manager}!ClientManager@{Client\-Manager}}
+\subsubsection[{Client\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Client\-Manager\-::\-Client\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_ad012b20c788f625e98e09e849744a8d9}
+
+
+Default constructor. 
+
+Initializes the variables. 
+
+Definition at line 12 of file Client\-Manager.\-cpp.
+
+\hypertarget{class_client_manager_acdcd9f65fd1f9c819e9d8a8130e661ca}{\index{Client\-Manager@{Client\-Manager}!Client\-Manager@{Client\-Manager}}
+\index{Client\-Manager@{Client\-Manager}!ClientManager@{Client\-Manager}}
+\subsubsection[{Client\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Client\-Manager\-::\-Client\-Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf Threaded\-T\-C\-P\-Connected\-Client} $\ast$}]{client}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_acdcd9f65fd1f9c819e9d8a8130e661ca}
+
+
+Constructs the client manager with a connection. 
+
+This constructor initializes the class and sets the connection handle to the accepted connection. 
+\begin{DoxyParams}{Parameters}
+{\em client} & Pointer to the accepted T\-C\-P connection. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file Client\-Manager.\-cpp.
+
+\hypertarget{class_client_manager_aa99b4fc6e351914f367db37ea83d1e65}{\index{Client\-Manager@{Client\-Manager}!Client\-Manager@{Client\-Manager}}
+\index{Client\-Manager@{Client\-Manager}!ClientManager@{Client\-Manager}}
+\subsubsection[{Client\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Client\-Manager\-::\-Client\-Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Client\-Manager} \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_aa99b4fc6e351914f367db37ea83d1e65}
+
+
+Copy constructor. 
+
+Copies the contents of another client manager. Written to enable usage within stdlib containers. 
+\begin{DoxyParams}{Parameters}
+{\em copy} & Client manager to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Client\-Manager.\-cpp.
+
+\hypertarget{class_client_manager_abac29dfed67c8b8354cf07267fd5515b}{\index{Client\-Manager@{Client\-Manager}!$\sim$\-Client\-Manager@{$\sim$\-Client\-Manager}}
+\index{$\sim$\-Client\-Manager@{$\sim$\-Client\-Manager}!ClientManager@{Client\-Manager}}
+\subsubsection[{$\sim$\-Client\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Client\-Manager\-::$\sim$\-Client\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_abac29dfed67c8b8354cf07267fd5515b}
+
+
+Destructor, deletes the connection. 
+
+The destructor deletes the accepted connection since it is not managed anymore.\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]This should be replaced by a reference counting memory manager. \end{DoxyRefDesc}
+
+
+Definition at line 34 of file Client\-Manager.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_client_manager_a4fa8fc5731587276f5e6be92563474fa}{\index{Client\-Manager@{Client\-Manager}!Connection\-Broken@{Connection\-Broken}}
+\index{Connection\-Broken@{Connection\-Broken}!ClientManager@{Client\-Manager}}
+\subsubsection[{Connection\-Broken}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Connection\-Broken (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_a4fa8fc5731587276f5e6be92563474fa}
+
+
+Handles the broken connection case. 
+
+If the connection with the client is broken, the stored information should be deleted. This function is called by \hyperlink{class_client_manager_a86ae04f2ac9f2988559a023d877f78e4}{Client\-Manager\-::m\-\_\-client}. 
+
+Definition at line 58 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a4fa8fc5731587276f5e6be92563474fa_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_ab3f0c2bb301ba8d1218d703e5446baf3}{\index{Client\-Manager@{Client\-Manager}!Is\-Asynchronous@{Is\-Asynchronous}}
+\index{Is\-Asynchronous@{Is\-Asynchronous}!ClientManager@{Client\-Manager}}
+\subsubsection[{Is\-Asynchronous}]{\setlength{\rightskip}{0pt plus 5cm}bool Client\-Manager\-::\-Is\-Asynchronous (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_client_manager_ab3f0c2bb301ba8d1218d703e5446baf3}
+Method to check for Asynchronous Client type. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{m\-\_\-client\-Type}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Returns whether the client is asynchronous. 
+\end{DoxyReturn}
+
+
+Definition at line 252 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_a626b9383b2b2b7924a1f1e183800fe72}{\index{Client\-Manager@{Client\-Manager}!Is\-Synchronous@{Is\-Synchronous}}
+\index{Is\-Synchronous@{Is\-Synchronous}!ClientManager@{Client\-Manager}}
+\subsubsection[{Is\-Synchronous}]{\setlength{\rightskip}{0pt plus 5cm}bool Client\-Manager\-::\-Is\-Synchronous (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_client_manager_a626b9383b2b2b7924a1f1e183800fe72}
+Method to check for Synchronous Client type. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{m\-\_\-client\-Type}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Returns whether the client is synchronous. 
+\end{DoxyReturn}
+
+
+Definition at line 241 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_abf05d2ac88337dfd02e0b7986ee1e18c}{\index{Client\-Manager@{Client\-Manager}!Message\-Received@{Message\-Received}}
+\index{Message\-Received@{Message\-Received}!ClientManager@{Client\-Manager}}
+\subsubsection[{Message\-Received}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Message\-Received (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{const size\-\_\-t}]{data\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_abf05d2ac88337dfd02e0b7986ee1e18c}
+
+
+Called when a message is received. 
+
+This function is called by m\-\_\-client when a message is received. It checks for all possible message types and calls the necessary processing method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the received data. \\
+\hline
+{\em data\-Size} & Size of the received data. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_abf05d2ac88337dfd02e0b7986ee1e18c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_a1b3ae7dda1e6d1a2939c3eb6a1b9cbd1}{\index{Client\-Manager@{Client\-Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!ClientManager@{Client\-Manager}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\-Manager} \& Client\-Manager\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Client\-Manager} \&}]{copy}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_a1b3ae7dda1e6d1a2939c3eb6a1b9cbd1}
+
+
+Copies the contents of another client manager. 
+
+Overloads the equal operator and copies the content of another client manager.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Instance to be copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a reference to itself. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Client\-Manager.\-cpp.
+
+\hypertarget{class_client_manager_ae297765312b5f2f93f7b8ec700ad2fbb}{\index{Client\-Manager@{Client\-Manager}!Price\-Proposal@{Price\-Proposal}}
+\index{Price\-Proposal@{Price\-Proposal}!ClientManager@{Client\-Manager}}
+\subsubsection[{Price\-Proposal}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Price\-Proposal (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Price}}]{price, }
+\item[{const {\bf T\-Interval}}]{begin\-Interval, }
+\item[{const {\bf T\-Interval}}]{end\-Interval}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_ae297765312b5f2f93f7b8ec700ad2fbb}
+Sends a price proposal to the client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em price} & Proposed price. \\
+\hline
+{\em begin\-Interval} & Indicates the beginning time for the proposed price. \\
+\hline
+{\em end\-Interval} & Indicates the ending time for the proposed price. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 250 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_ae297765312b5f2f93f7b8ec700ad2fbb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_a6d544b4d20cd3b906b6a033c8d70e4a5}{\index{Client\-Manager@{Client\-Manager}!Process\-Client\-Connection\-Request@{Process\-Client\-Connection\-Request}}
+\index{Process\-Client\-Connection\-Request@{Process\-Client\-Connection\-Request}!ClientManager@{Client\-Manager}}
+\subsubsection[{Process\-Client\-Connection\-Request}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Process\-Client\-Connection\-Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Asynchronous\-::\-Client\-Connection\-Request} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a6d544b4d20cd3b906b6a033c8d70e4a5}
+
+
+Processes an asynchronous client connection request. 
+
+This function processes a received asynchronous client connection request. There are multiple steps in the acceptance procedure\-:
+\begin{DoxyItemize}
+\item Checking with Open\-D\-S\-S whether the object actually exists.
+\item If the object exists, an acceptance message is sent back.
+\item Next client id is incremented.
+\item The client is registered to the \hyperlink{class_control_manager}{Control\-Manager}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Received message structure in \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_connection_request}{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Connection\-Request}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 108 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a6d544b4d20cd3b906b6a033c8d70e4a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a6d544b4d20cd3b906b6a033c8d70e4a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_aeaa1090897b231a37c7e61b4f95067d1}{\index{Client\-Manager@{Client\-Manager}!Process\-Client\-Connection\-Request@{Process\-Client\-Connection\-Request}}
+\index{Process\-Client\-Connection\-Request@{Process\-Client\-Connection\-Request}!ClientManager@{Client\-Manager}}
+\subsubsection[{Process\-Client\-Connection\-Request}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Process\-Client\-Connection\-Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Synchronous\-::\-Client\-Connection\-Request} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_aeaa1090897b231a37c7e61b4f95067d1}
+
+
+Processes an synchronous client connection request. 
+
+This function processes a received synchronous client connection request. There are multiple steps in the acceptance procedure\-:
+\begin{DoxyItemize}
+\item Checking with Open\-D\-S\-S whether the object actually exists.
+\item If the object exists, an acceptance message is sent back.
+\item Next client id is incremented.
+\item The client is registered to the \hyperlink{class_control_manager}{Control\-Manager}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Received message structure in \hyperlink{class_terra_swarm_1_1_synchronous_1_1_client_connection_request}{Terra\-Swarm\-::\-Synchronous\-::\-Client\-Connection\-Request}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 163 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_aeaa1090897b231a37c7e61b4f95067d1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_a1dd815fe845945ae8966b3a3f449ba0e}{\index{Client\-Manager@{Client\-Manager}!Process\-Client\-Data@{Process\-Client\-Data}}
+\index{Process\-Client\-Data@{Process\-Client\-Data}!ClientManager@{Client\-Manager}}
+\subsubsection[{Process\-Client\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Process\-Client\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Asynchronous\-::\-Client\-Data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a1dd815fe845945ae8966b3a3f449ba0e}
+
+
+Processes the consumption information. 
+
+This function processes the received consumption information of the asynchronous client. The data is registered to the \hyperlink{class_system_manager}{System\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Received message structure in \hyperlink{class_terra_swarm_1_1_asynchronous_1_1_client_data}{Terra\-Swarm\-::\-Asynchronous\-::\-Client\-Data}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 150 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a1dd815fe845945ae8966b3a3f449ba0e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a1dd815fe845945ae8966b3a3f449ba0e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_a1d7fd8ecff3bc921273e2928693e4c7d}{\index{Client\-Manager@{Client\-Manager}!Process\-Client\-Data@{Process\-Client\-Data}}
+\index{Process\-Client\-Data@{Process\-Client\-Data}!ClientManager@{Client\-Manager}}
+\subsubsection[{Process\-Client\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Process\-Client\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Synchronous\-::\-Client\-Data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a1d7fd8ecff3bc921273e2928693e4c7d}
+
+
+Processes the consumption information. 
+
+This function processes the received consumption information of the synchronous client. The data is registered to the \hyperlink{class_system_manager}{System\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Received message structure in Terra\-Swarm\-Synchronous\-::\-Client\-Data. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 204 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a1d7fd8ecff3bc921273e2928693e4c7d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_ad8841acd386513f41ab0872c67593ff4}{\index{Client\-Manager@{Client\-Manager}!Process\-Demand\-Negotiation@{Process\-Demand\-Negotiation}}
+\index{Process\-Demand\-Negotiation@{Process\-Demand\-Negotiation}!ClientManager@{Client\-Manager}}
+\subsubsection[{Process\-Demand\-Negotiation}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Process\-Demand\-Negotiation (
+\begin{DoxyParamCaption}
+\item[{{\bf Synchronous\-::\-Demand\-Negotiation} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_ad8841acd386513f41ab0872c67593ff4}
+
+
+Processes the demand negotiation response. 
+
+The client sends a demand negotiation response to the simulator. This response is sent to \hyperlink{class_control_manager}{Control\-Manager}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Received message structure in \hyperlink{class_terra_swarm_1_1_synchronous_1_1_demand_negotiation}{Terra\-Swarm\-::\-Synchronous\-::\-Demand\-Negotiation}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_ad8841acd386513f41ab0872c67593ff4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_ad8841acd386513f41ab0872c67593ff4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_a841299387a1dcd268266a3c0cfe2a95c}{\index{Client\-Manager@{Client\-Manager}!Process\-Get\-Price@{Process\-Get\-Price}}
+\index{Process\-Get\-Price@{Process\-Get\-Price}!ClientManager@{Client\-Manager}}
+\subsubsection[{Process\-Get\-Price}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Process\-Get\-Price (
+\begin{DoxyParamCaption}
+\item[{{\bf Synchronous\-::\-Get\-Price} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a841299387a1dcd268266a3c0cfe2a95c}
+
+
+Processes the price signal request. 
+
+The price signal request by the synchronous client is sent to \hyperlink{class_control_manager}{Control\-Manager}. 
+\begin{DoxyParams}{Parameters}
+{\em data} & Received message structure in \hyperlink{class_terra_swarm_1_1_synchronous_1_1_get_price}{Terra\-Swarm\-::\-Synchronous\-::\-Get\-Price}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 214 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a841299387a1dcd268266a3c0cfe2a95c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_a841299387a1dcd268266a3c0cfe2a95c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_manager_adb64a2ee5d0eb7b1a4bdedcd0e3b92f5}{\index{Client\-Manager@{Client\-Manager}!Set\-Current\-Price@{Set\-Current\-Price}}
+\index{Set\-Current\-Price@{Set\-Current\-Price}!ClientManager@{Client\-Manager}}
+\subsubsection[{Set\-Current\-Price}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-Manager\-::\-Set\-Current\-Price (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Price}}]{price, }
+\item[{const {\bf T\-Interval}}]{begin\-Interval, }
+\item[{const {\bf T\-Interval}}]{end\-Interval}
+\end{DoxyParamCaption}
+)}}\label{class_client_manager_adb64a2ee5d0eb7b1a4bdedcd0e3b92f5}
+Sends a price signal to the client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em price} & Indicates the price. \\
+\hline
+{\em begin\-Interval} & Indicates the beginning time for the price. \\
+\hline
+{\em end\-Interval} & Indicates the ending time for the price. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 234 of file Client\-Manager.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_manager_adb64a2ee5d0eb7b1a4bdedcd0e3b92f5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_client_manager_a86ae04f2ac9f2988559a023d877f78e4}{\index{Client\-Manager@{Client\-Manager}!m\-\_\-client@{m\-\_\-client}}
+\index{m\-\_\-client@{m\-\_\-client}!ClientManager@{Client\-Manager}}
+\subsubsection[{m\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Threaded\-T\-C\-P\-Connected\-Client}$\ast$ Client\-Manager\-::m\-\_\-client\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a86ae04f2ac9f2988559a023d877f78e4}
+Pointer to the T\-C\-P Client connection managing class instance. This variable is used for all communication purposes. 
+
+Definition at line 75 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_a1216ffa88107c33825adafe63fea2263}{\index{Client\-Manager@{Client\-Manager}!m\-\_\-client\-Id@{m\-\_\-client\-Id}}
+\index{m\-\_\-client\-Id@{m\-\_\-client\-Id}!ClientManager@{Client\-Manager}}
+\subsubsection[{m\-\_\-client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Id} Client\-Manager\-::m\-\_\-client\-Id\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_a1216ffa88107c33825adafe63fea2263}
+Actual assigned Unique I\-D of the managed client. 
+
+Definition at line 79 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}{\index{Client\-Manager@{Client\-Manager}!m\-\_\-client\-Type@{m\-\_\-client\-Type}}
+\index{m\-\_\-client\-Type@{m\-\_\-client\-Type}!ClientManager@{Client\-Manager}}
+\subsubsection[{m\-\_\-client\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Client\-Type} Client\-Manager\-::m\-\_\-client\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{class_client_manager_af40c31ade3f23b705bce2a8b3d311ce6}
+Type of the managed client. \begin{DoxySeeAlso}{See Also}
+\{\hyperlink{class_client_manager_ac12239be9a30847f677a32910822d40b}{Client\-Manager\-::\-Client\-Type\-Values}\} 
+\end{DoxySeeAlso}
+
+
+Definition at line 83 of file Client\-Manager.\-h.
+
+\hypertarget{class_client_manager_a4f044df4d9f43367135f9d01841ec326}{\index{Client\-Manager@{Client\-Manager}!next\-Client\-Id@{next\-Client\-Id}}
+\index{next\-Client\-Id@{next\-Client\-Id}!ClientManager@{Client\-Manager}}
+\subsubsection[{next\-Client\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\-Manager\-::\-T\-Id} Client\-Manager\-::next\-Client\-Id = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_client_manager_a4f044df4d9f43367135f9d01841ec326}
+Static variable that holds the next Unique I\-D. Incremented at each new connection. Returns to 0 if all values have been used. 
+
+Definition at line 71 of file Client\-Manager.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S2\-Sim/\hyperlink{_client_manager_8h}{Client\-Manager.\-h}\item 
+S2\-Sim/\hyperlink{_client_manager_8cpp}{Client\-Manager.\-cpp}\end{DoxyCompactItemize}
