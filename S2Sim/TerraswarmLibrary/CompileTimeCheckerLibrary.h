@@ -9,9 +9,11 @@
 #define COMPILETIMECHECKERLIBRARY_H_
 
 /**
- *  @tparam expression This is a boolean expression that can be evaluated in compile time.
-    @tparam Reason This can be the name of any class that will be used for debug information only.
+ *  
     This class has two specializations. If the expression is true, the static Check() function will be public and compilation will continue.
+ 
+    @tparam expression This is a boolean expression that can be evaluated in compile time.
+    @tparam Reason This can be the name of any class that will be used for debug information only.
  */
 template <bool expression, typename Reason = class NoReason>
 class CompileCheck
@@ -59,7 +61,9 @@ class CompileCheck<false, Reason>
 };
 
 /**
- *  @tparam checkedType A type that will be checked for size.
+ *  This class checks the size of a type with the given size and gives a compile error with the reason parameter is the check fails.
+ 
+    @tparam checkedType A type that will be checked for size.
     @tparam checkedSize The size that the type should have.
     @tparam Reason Any class name that will be used for debug information only.
  */

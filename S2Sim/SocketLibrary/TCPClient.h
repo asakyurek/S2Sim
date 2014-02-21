@@ -11,6 +11,9 @@
 #include "SocketBase.h"
 #include "IPAddress.h"
 
+/**
+ *  This class defines a TCP client that can connect to a TCP server and communicate. All OS related utilities are abstracted.
+ */
 class TCPClient : public SocketBase<SOCK_STREAM>
 {
     public:

@@ -25,9 +25,9 @@
 #endif
 
 /**
- *  @tparam SocketType Type of the socket for UDP, TCP or other types.
+ * This class is an abstraction over the OS socket and defines a base class for socket opening and closing utilities.
  
-    This class is an abstraction over the OS socket and defines a base class for socket opening and closing utilities.
+    @tparam SocketType Type of the socket for UDP, TCP or other types.
  */
 template <int SocketType>
 class SocketBase
