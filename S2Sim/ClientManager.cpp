@@ -1,8 +1,8 @@
-/*
- * ClientManager.cpp
- *
- *  Created on: Oct 13, 2013
- *      Author: Alper
+/**
+ * @file ClientManager.cpp
+ *  Source file for the ClientManager class.
+ *  @date Oct 13, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ClientManager.h"
@@ -42,6 +42,7 @@ ClientManager&
 ClientManager::operator = ( const ClientManager & copy )
 {
     LOG_FUNCTION_START();
+    /* Check for self assignment */
     if ( this == &copy )
     {
         return ( *this );

@@ -1,8 +1,8 @@
-/*
- * LogPrint.cpp
- *
- *  Created on: Oct 28, 2013
- *      Author: Alper
+/**
+ * @file LogPrint.cpp
+ * Defines logging related parameters.
+ *  @date Oct 28, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "LogPrint.h"

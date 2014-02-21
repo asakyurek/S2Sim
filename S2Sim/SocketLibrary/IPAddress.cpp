@@ -1,8 +1,8 @@
-/*
- * IPAddress.cpp
- *
- *  Created on: Jan 21, 2014
- *      Author: asakyurek
+/**
+ * @file IPAddress.cpp
+ * Implements the IPAddress class.
+ *  @date Jan 21, 2014
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "IPAddress.h"

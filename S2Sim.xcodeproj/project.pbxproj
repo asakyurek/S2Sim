@@ -67,8 +67,6 @@
 		80E3002E18B0058700C4C1BB /* ThreadBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadBase.h; sourceTree = "<group>"; };
 		80E3002F18B0058700C4C1BB /* ThreadImplementation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadImplementation.cpp; sourceTree = "<group>"; };
 		80E3003018B0058700C4C1BB /* WindowsThreadBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsThreadBase.h; sourceTree = "<group>"; };
-		80E3008218B009B500C4C1BB /* Callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Callback.h; sourceTree = "<group>"; };
-		80E3008318B009B500C4C1BB /* CallbackImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackImplementation.h; sourceTree = "<group>"; };
 		80E3008418B009B500C4C1BB /* ClientManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClientManager.cpp; sourceTree = "<group>"; };
 		80E3008518B009B500C4C1BB /* ClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientManager.h; sourceTree = "<group>"; };
 		80E3008618B009B500C4C1BB /* ConnectionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionManager.cpp; sourceTree = "<group>"; };
@@ -153,8 +151,6 @@
 		80E3FF9918B004DA00C4C1BB /* S2Sim */ = {
 			isa = PBXGroup;
 			children = (
-				80E3008218B009B500C4C1BB /* Callback.h */,
-				80E3008318B009B500C4C1BB /* CallbackImplementation.h */,
 				80E3008418B009B500C4C1BB /* ClientManager.cpp */,
 				80E3008518B009B500C4C1BB /* ClientManager.h */,
 				80E3008618B009B500C4C1BB /* ConnectionManager.cpp */,

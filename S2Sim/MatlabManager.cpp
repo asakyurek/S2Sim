@@ -1,8 +1,8 @@
-/*
- * MatlabManager.cpp
- *
- *  Created on: Oct 13, 2013
- *      Author: Alper
+/**
+ * @file MatlabManager.cpp
+ * Implements the MatlabManager class.
+ *  @date Oct 13, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "MatlabManager.h"
@@ -57,7 +57,10 @@ MatlabManager::ProcessData( void* buffer, size_t size )
 {
     LOG_FUNCTION_START();
     LogPrint( "Processing data of size: " , size );
-    if ( size <= 0 )
+    
+    int remainingSize = ( int )size;
+
+    if ( remainingSize <= 0 )
     {
         WarningPrint( "OpenDSS MATLAB Manager disconnected" );
         delete this->m_client;
@@ -65,8 +68,6 @@ MatlabManager::ProcessData( void* buffer, size_t size )
         LOG_FUNCTION_END();
         return;
     }
-    
-    int remainingSize = ( int )size;
     
     while ( remainingSize > 0 )
     {

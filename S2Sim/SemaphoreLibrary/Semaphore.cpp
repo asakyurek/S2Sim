@@ -1,8 +1,8 @@
-/*
- * Semaphore.cpp
- *
- *  Created on: Jan 20, 2014
- *      Author: asakyurek
+/**
+ * @file Semaphore.cpp
+ * Implements the Semaphore class under Windows 32/64bit and POSIX enables OSes.
+ *  @date Jan 20, 2014
+ *  @author Alper Sinan Akyurek
  */
 
 #include "Semaphore.h"

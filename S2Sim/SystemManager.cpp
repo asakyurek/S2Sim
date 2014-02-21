@@ -1,8 +1,8 @@
-/*
- * SystemManager.cpp
- *
- *  Created on: Oct 25, 2013
- *      Author: Alper
+/**
+ * @file SystemManager.cpp
+ * Implements the SystemManager class.
+ *  @date Oct 25, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "SystemManager.h"

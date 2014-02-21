@@ -1,8 +1,8 @@
-/*
- * SocketBase.h
- *
- *  Created on: Jun 21, 2013
- *      Author: Alper
+/**
+ * @file SocketBase.h
+ * Defines the SocketBase template class.
+ *  @date Jun 21, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #ifndef SOCKETBASE_H_
@@ -24,77 +24,104 @@
 #include <assert.h>
 #endif
 
+/**
+ *  @tparam SocketType Type of the socket for UDP, TCP or other types.
+ 
+    This class is an abstraction over the OS socket and defines a base class for socket opening and closing utilities.
+ */
 template <int SocketType>
 class SocketBase
 {
     public:
-        /* Type Definitions */
-        typedef unsigned int TErrorCode;
-        enum ErrorCodeValues
-        {
-            NoError = 0
-        };
-
+    /**
+     *  Defines the type for number of bytes.
+     */
         typedef size_t TNumberOfBytes;
+    
+    /**
+     *  Defines the type for a buffer pointer.
+     */
         typedef void* TBuffer;
 
-    public:
-        /* Function Definitions */
-
-    public:
-        /* Member Definitions */
-
     protected:
-        /* Type Definitions */
+    /**
+     *  Defines the type of a Socket handle.
+     */
         typedef int SOCKET;
+    
+    /**
+     *  Redefines the socket handle type for multiplatform purposes.
+     */
         typedef SOCKET TSocketId;
 
+    /**
+     *  Special values for the TSocketId.
+     */
         enum SocketIdValues
         {
-            InvalidSocketId = ( TSocketId )( -1 )
+            InvalidSocketId = ( TSocketId )( -1 ) /**< Defines an invalid socket handle */
         };
 
     protected:
-        /* Function Definitions */
+    /**
+     *  Constructor that receives a handle as input. It does not open a new socket.
+     *
+     *  @param socketId Handle of a socket.
+     */
         SocketBase( const TSocketId socketId ) : m_socketId( socketId ){}
+    
+    /**
+     *  Copies the handle of another socket.
+     *
+     *  @param copy Socket to be copied.
+     */
         SocketBase( const SocketBase<SocketType> & copy ) : m_socketId( copy.m_socketId ){}
-        SocketBase( void ) throw ( TErrorCode );
-        ~SocketBase( void ) throw ( TErrorCode );
+    
+    /**
+     *  Sets the handle to the invalid value.
+     */
+        SocketBase( void );
+    
+    /**
+     *  Closes the socket handle.
+     */
+        ~SocketBase( void );
 
     protected:
-        /* Member Definitions */
+    /**
+     *  Handle to the socket used for OS utilities.
+     */
         TSocketId m_socketId;
 
     private:
-        /* Type Definitions */
-
-    private:
-        /* Function Definitions */
+    /**
+     *  Opens a new socket and sets its reusable options.
+     */
         void
-        OpenSocket( void ) throw ( TErrorCode );
+        OpenSocket( void );
 
+    /**
+     *  Closes the socket handle.
+     */
         void
-        CloseSocket( void ) throw ( TErrorCode );
-
-    private:
-        /* Member Definitions */
+        CloseSocket( void );
 };
 
 template <int SocketType>
-SocketBase<SocketType>::SocketBase( void ) throw ( TErrorCode ) : m_socketId( InvalidSocketId )
+SocketBase<SocketType>::SocketBase( void ) : m_socketId( InvalidSocketId )
 {
     this->OpenSocket();
 }
 
 template <int SocketType>
-SocketBase<SocketType>::~SocketBase( void ) throw ( TErrorCode )
+SocketBase<SocketType>::~SocketBase( void )
 {
     this->CloseSocket();
 }
 
 template <int SocketType>
 void
-SocketBase<SocketType>::OpenSocket( void ) throw ( TErrorCode )
+SocketBase<SocketType>::OpenSocket( void )
 {
     this->m_socketId = socket( AF_INET, SocketType, 0 );
     if ( this->m_socketId <= 0 )
@@ -114,7 +141,7 @@ SocketBase<SocketType>::OpenSocket( void ) throw ( TErrorCode )
 
 template <int SocketType>
 void
-SocketBase<SocketType>::CloseSocket( void ) throw ( TErrorCode )
+SocketBase<SocketType>::CloseSocket( void )
 {
 #if defined(_WIN32) || defined(_WIN64)
     closesocket( this->m_socketId );

@@ -1,8 +1,8 @@
-/*
- * ControlManager.cpp
- *
- *  Created on: Oct 27, 2013
- *      Author: Alper
+/**
+ * @file ControlManager.cpp
+ * This file implements the ControlManager class.
+ * @date Oct 27, 2013
+ * @author: Alper Sinan Akyurek
  */
 
 #include "ControlManager.h"
@@ -44,7 +44,9 @@ void
 ControlManager::ProcessData( void* data, const size_t size )
 {
     LOG_FUNCTION_START();
-    if ( size <= 0 )
+    int remainingSize = ( int )size;
+    
+    if ( remainingSize <= 0 )
     {
         WarningPrint( "External Controller connection dropped" );
         delete this->m_client;
@@ -52,7 +54,6 @@ ControlManager::ProcessData( void* data, const size_t size )
         LOG_FUNCTION_END();
         return;
     }
-    int remainingSize = ( int )size;
 
     while ( remainingSize > 0 )
     {

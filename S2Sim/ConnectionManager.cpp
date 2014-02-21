@@ -1,8 +1,8 @@
 /*
- * ConnectionManager.cpp
- *
- *  Created on: Oct 13, 2013
- *      Author: Alper
+ * @file ConnectionManager.cpp
+ * This file implements the ConnectionManager class.
+ *  @date Oct 13, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ConnectionManager.h"
