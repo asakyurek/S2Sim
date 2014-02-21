@@ -1,8 +1,8 @@
-/*
- * ThreadedTCPServer.cpp
- *
- *  Created on: Jan 22, 2014
- *      Author: asakyurek
+/**
+ * @file ThreadedTCPServer.cpp
+ * Implements the ThreadedTCPServer class.
+ *  @date Jan 22, 2014
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ThreadedTCPServer.h"

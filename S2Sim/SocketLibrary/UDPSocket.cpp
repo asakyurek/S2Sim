@@ -1,8 +1,8 @@
-/*
- * UDPSocket.cpp
- *
- *  Created on: Jun 21, 2013
- *      Author: Alper
+/**
+ * @file UDPSocket.cpp
+ * Implements the UDPSocket class.
+ *  @date Jun 21, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "UDPSocket.h"

@@ -1,8 +1,8 @@
-/*
- * TCPClient.cpp
- *
- *  Created on: Jan 21, 2014
- *      Author: asakyurek
+/**
+ * @file TCPClient.cpp
+ * Implements the TCPClient class.
+ *  @date Jan 21, 2014
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "TCPClient.h"

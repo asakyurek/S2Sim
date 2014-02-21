@@ -1,18 +1,11 @@
-/*
- * ThreadedTCPConnectedClient.cpp
- *
- *  Created on: Jan 22, 2014
- *      Author: asakyurek
+/**
+ * @file ThreadedTCPConnectedClient.cpp
+ * Implements the ThreadedTCPConnectedClient class.
+ *  @date Jan 22, 2014
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ThreadedTCPConnectedClient.h"
-
-/*ThreadedTCPConnectedClient::ThreadedTCPConnectedClient( void ) : m_notification( NULL ),
-                                                                 m_started( false ),
-                                                                 m_allowingSemaphore( 0 )
-{
-    this->StartThread( NULL );
-}*/
 
 ThreadedTCPConnectedClient::ThreadedTCPConnectedClient( const TSocketId socketId, IPAddress & clientAddress ) : TCPConnectedClient( socketId, clientAddress ),
                                                                                                                 m_notification( NULL ),

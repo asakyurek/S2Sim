@@ -1,8 +1,8 @@
-/*
- * TCPServer.cpp
- *
- *  Created on: Jan 21, 2014
- *      Author: asakyurek
+/**
+ * @file TCPServer.cpp
+ * Implements the TCPServer class.
+ *  @date Jan 21, 2014
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "TCPServer.h"

@@ -1,18 +1,19 @@
-/*
- * TCPConnectedClient.cpp
- *
- *  Created on: Jan 21, 2014
- *      Author: asakyurek
+/**
+ * @file TCPConnectedClient.cpp
+ * Implements the TCPConnectedClient class.
+ *  @data Jan 21, 2014
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "TCPConnectedClient.h"
 
 TCPConnectedClient::TCPConnectedClient( const TSocketId socketId,
-                                        IPAddress& clientAddress ) : SocketBase( socketId ), m_clientAddress( clientAddress )
+                                        IPAddress& clientAddress ) : SocketBase<SOCK_STREAM>( socketId ),
+                                                                     m_clientAddress( clientAddress )
 {
 }
 
-TCPConnectedClient::TCPConnectedClient( const TCPConnectedClient & copy ) : SocketBase( copy ), m_clientAddress( copy.m_clientAddress )
+TCPConnectedClient::TCPConnectedClient( const TCPConnectedClient & copy ) : SocketBase<SOCK_STREAM>( copy ), m_clientAddress( copy.m_clientAddress )
 {
 }
 

@@ -1,18 +1,18 @@
-/*
- * ThreadedTCPClient.cpp
- *
- *  Created on: Jan 22, 2014
- *      Author: asakyurek
+/**
+ * @file ThreadedTCPClient.cpp
+ * Implements the ThreadedTCPClient class.
+ *  @date Jan 22, 2014
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ThreadedTCPClient.h"
 
-ThreadedTCPClient::ThreadedTCPClient( void ) : m_notification( NULL ), m_started( false ), m_allowingSemaphore( 0 )
+ThreadedTCPClient::ThreadedTCPClient( void ) : m_notification( NULL ), m_started( true ), m_allowingSemaphore( 0 )
 {
     this->StartThread( NULL );
 }
 
-ThreadedTCPClient::ThreadedTCPClient( const TCPClient & client ) : TCPClient( client ), m_notification( NULL ), m_started( false ), m_allowingSemaphore( 0 )
+ThreadedTCPClient::ThreadedTCPClient( const TCPClient & client ) : TCPClient( client ), m_notification( NULL ), m_started( true ), m_allowingSemaphore( 0 )
 {
     this->StartThread( NULL );
 }
