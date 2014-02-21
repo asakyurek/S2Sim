@@ -1,8 +1,8 @@
-/*
- * DemandNegotiation.cpp
- *
- *  Created on: Oct 31, 2013
- *      Author: Alper
+/**
+ * @file DemandNegotiation.cpp
+ * Implements the DemandNegotiation class.
+ *  @date Oct 31, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "DemandNegotiation.h"

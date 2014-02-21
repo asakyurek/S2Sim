@@ -1,6 +1,6 @@
-/*
- * ClientData.cpp
- *
+/**
+ * @file ClientData.cpp
+ * Implements the Async and Synchronous ClientData classes and messages.
  *  Created on: Oct 13, 2013
  *      Author: Alper
  */

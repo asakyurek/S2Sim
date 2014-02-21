@@ -1,8 +1,8 @@
-/*
- * MessageEnder.cpp
- *
- *  Created on: Oct 13, 2013
- *      Author: Alper
+/**
+ * @file MessageEnder.cpp
+ * Implements a MessageEnder class.
+ *  @date Oct 13, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "MessageEnder.h"

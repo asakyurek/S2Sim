@@ -1,8 +1,8 @@
-/*
- * PriceProposal.cpp
- *
- *  Created on: Oct 31, 2013
- *      Author: Alper
+/**
+ * @file PriceProposal.cpp
+ * Implements the PriceProposal class.
+ *  @date Oct 31, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "PriceProposal.h"

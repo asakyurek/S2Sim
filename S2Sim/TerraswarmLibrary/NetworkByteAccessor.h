@@ -1,8 +1,8 @@
-/*
- * NetworkByteAccessor.h
- *
- *  Created on: Oct 8, 2013
- *      Author: Alper
+/**
+ * @file NetworkByteAccessor.h
+ * Defines the NetworkByteAccessor class for byte order conversion and easier data access.
+ *  @date Oct 8, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #ifndef NETWORKBYTEACCESSOR_H_
@@ -19,22 +19,56 @@
 
 namespace TerraSwarm
 {
+    /**
+     *  Index of a byte in memory.
+     */
     typedef unsigned int TByteIndex;
+    
+    /**
+     *  Size of a data in memory.
+     */
     typedef unsigned int TDataSize;
 
+    /**
+     *  Template class to automatically convert byte order and help access ordered bytes in the memory. This class is especially useful for message processing and preparing.
+     
+        @tparam byteIndex Index of the bytes that are to be manipulated/accessed.
+        @tparam dataSize Number of bytes to be manipulated/accessed.
+     */
     template <TByteIndex byteIndex, TDataSize dataSize>
     class NetworkByteAccessor
     {
         private:
+        /**
+         *  Template class that uses the correct conversion function according to the size of the data. The default specialization is for any size not equal to 1,2 or 4.
+         *
+         *  @tparam TInput Type of the field that is to be accessed.
+            @tparam size Size of TInput, done automatically.
+         */
             template <typename TInput, TDataSize size = sizeof( TInput )>
             class EndianConverter
             {
                 public:
+                /**
+                 *  Converts the network byte order to host byte order.
+                 *
+                 *  @param value Values to be converted.
+                 *
+                 *  @return Converted result.
+                 */
                     static TInput
                     NetworkToHost( const TInput & value )
                     {
                         return ( value );
                     }
+                
+                /**
+                 *  Converts the host byte order to the network byte order.
+                 *
+                 *  @param value Value to be converted.
+                 *
+                 *  @return Converted value.
+                 */
                     static TInput
                     HostToNetwork( const TInput & value )
                     {
@@ -42,6 +76,9 @@ namespace TerraSwarm
                     }
             };
 
+        /**
+         *  Template specialization for a type with size 1 (char). No conversion is performed.
+         */
             template <typename TInput>
             class EndianConverter<TInput, 1>
             {
@@ -58,6 +95,9 @@ namespace TerraSwarm
                     }
             };
 
+        /**
+         *  Template specialization for a type with size 2 (short). Short conversion is performed.
+         */
             template <typename TInput>
             class EndianConverter<TInput, 2>
             {
@@ -74,6 +114,9 @@ namespace TerraSwarm
                     }
             };
 
+        /**
+         *  Template specialization for a type with size 4 (int). Integer conversion is performed.
+         */
             template <typename TInput>
             class EndianConverter<TInput, 4>
             {
@@ -91,6 +134,13 @@ namespace TerraSwarm
             };
 
         public:
+        /**
+         *  Writes a value to the given address index with correct byte order. In addition, it checks for the size of the input type for mistakes in compile time.
+         *
+         *  @param input Value to be written.
+         *
+         *  @return Actually written value.
+         */
             template <typename TInput>
             TInput
             Write( const TInput input )
@@ -102,6 +152,13 @@ namespace TerraSwarm
                 return ( value );
             }
 
+        /**
+         *  Same as Write() to simplify code writing.
+         *
+         *  @param input Value to be written.
+         *
+         *  @return Actually written value.
+         */
             template <typename TInput>
             TInput
             operator =( const TInput input )
@@ -109,6 +166,13 @@ namespace TerraSwarm
                 return ( this->Write( input ) );
             }
 
+        /**
+         *  Reads a value from the given address index with correct byte order. In addition, this function checks for the size of the input for mistakes inc ompile time.
+         *
+         *  @param value Reference to the value to be written to.
+         *
+         *  @return The value read from the address index.
+         */
             template <typename TInput>
             TInput
             Read( TInput & value ) const

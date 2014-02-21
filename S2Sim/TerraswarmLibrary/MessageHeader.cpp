@@ -1,8 +1,8 @@
-/*
- * MessageHeader.cpp
- *
- *  Created on: Oct 13, 2013
- *      Author: Alper
+/**
+ * @file MessageHeader.cpp
+ * Implements the MessageHeader class.
+ *  @date Oct 13, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "MessageHeader.h"

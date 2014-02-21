@@ -1,8 +1,8 @@
-/*
- * ClientConnectionRequest.cpp
- *
- *  Created on: Oct 13, 2013
- *      Author: Alper
+/**
+ * @file ClientConnectionRequest.cpp
+ * Implements the ClientConnectionRequest class.
+ *  @date Oct 13, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ClientConnectionRequest.h"

@@ -1,8 +1,8 @@
-/*
- * ClientConnectionResponse.cpp
- *
- *  Created on: Oct 13, 2013
- *      Author: Alper
+/**
+ * @file ClientConnectionResponse.cpp
+ * Implements the Async and Synchronous ClientConnectionResponse message and classes.
+ *  @date Oct 13, 2013
+ *  @author: Alper Sinan Akyurek
  */
 
 #include "ClientConnectionResponse.h"
