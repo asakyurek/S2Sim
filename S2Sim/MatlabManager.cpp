@@ -31,8 +31,7 @@ MatlabReceiveHandler( ThreadedTCPConnectedClient* client,
                       ThreadedTCPConnectedClient::TNumberOfBytes  size )
 {
     LOG_FUNCTION_START();
-    LogPrint( "OpenDSS MATLAB Controller data received" );
-    LogPrint( "Data Size: ", size );
+    LogPrint( "OpenDSS MATLAB Controller data received. Data size: ", size );
     GetMatlabManager().ProcessData( buffer, size );
     LOG_FUNCTION_END();
 }

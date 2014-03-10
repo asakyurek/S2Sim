@@ -74,7 +74,7 @@
 		80E3008818B009B500C4C1BB /* ControlManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlManager.cpp; sourceTree = "<group>"; };
 		80E3008918B009B500C4C1BB /* ControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlManager.h; sourceTree = "<group>"; };
 		80E3008A18B009B500C4C1BB /* LogPrint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogPrint.cpp; sourceTree = "<group>"; };
-		80E3008B18B009B500C4C1BB /* LogPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogPrint.h; sourceTree = "<group>"; };
+		80E3008B18B009B500C4C1BB /* LogPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogPrint.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		80E3008C18B009B500C4C1BB /* MatlabManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatlabManager.cpp; sourceTree = "<group>"; };
 		80E3008D18B009B500C4C1BB /* MatlabManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatlabManager.h; sourceTree = "<group>"; };
 		80E3008E18B009B500C4C1BB /* SystemManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemManager.cpp; sourceTree = "<group>"; };

@@ -15,10 +15,11 @@
 #include "ConnectionManager.h"
 #include "ControlManager.h"
 #include "SystemManager.h"
+#include "LogPrint.h"
 
 int
 main( int argc, char **argv )
-{
+{    
     LOG_FUNCTION_START();
     LogPrint( "S2Sim Started" );
     
@@ -27,14 +28,14 @@ main( int argc, char **argv )
     GetControlManager();
     GetSystemManager();
     
-    unsigned int iterationNumber = 0;
+    auto iterationNumber = 0;
     
     GetControlManager().WaitUntilReady();
     //int starting;
     //std::cin >> starting;
     while ( 1 )
     {
-        //usleep(1);
+        usleep(1);
         GetSystemManager().AdvanceTimeStep();
         ++iterationNumber;
         LogPrint( "Time: ", iterationNumber );

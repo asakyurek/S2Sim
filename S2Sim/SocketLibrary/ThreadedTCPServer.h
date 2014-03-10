@@ -11,6 +11,7 @@
 #include "ThreadBase.h"
 #include "TCPServer.h"
 #include "ThreadedTCPConnectedClient.h"
+#include "LogPrint.h"
 
 /**
  *  Defines the threaded version of TCPServer that accepts clients in another thread in the background. When a connection is established, the user will be notified through a callback function.
@@ -63,10 +64,10 @@ class ThreadedTCPServer : public TCPServer, private ThreadBase
         void
         SetNotificationCallback( TNotification notification )
         {
-            static bool isFirstCall = true;
-            if ( !isFirstCall )
+            LOG_FUNCTION_START();
+            if ( this->m_notification != nullptr && this->m_started )
             {
-                std::cerr << "Multiple notification callbacks not allowed" << std::endl;
+                ErrorPrint( "Multiple notification callbacks not allowed" );
             }
             this->m_notification = notification;
             if ( this->m_notification != NULL )
@@ -75,7 +76,7 @@ class ThreadedTCPServer : public TCPServer, private ThreadBase
                 this->Listen();
                 this->StartThread( NULL );
             }
-            isFirstCall = false;
+            LOG_FUNCTION_END();
         }
 };
 
