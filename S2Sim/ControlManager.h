@@ -17,6 +17,8 @@
 #include "ClientManager.h"
 #include "LogPrint.h"
 
+#include <mutex>
+
 using namespace TerraSwarm;
 
 class ConnectionManager;
@@ -157,9 +159,9 @@ class ControlManager
         ThreadedTCPConnectedClient* m_client;
     
     /**
-     *  Semaphore that is released when the frame is finished by the external controller. It stops all synchronous control until the next frame starts. This handles the process synchronization with the External Controller in a local way.
+     *  Timed mutex that forces the syncrhonization between the caller and the External Controller manager.
      */
-        Semaphore m_readySemaphore;
+        std::timed_mutex m_readyMutex;
     
     /**
      *  Map containing the unique id to object name mapping.
@@ -229,7 +231,7 @@ class ControlManager
         WaitUntilReady( void )
         {
             LOG_FUNCTION_START();
-            this->m_readySemaphore.TakeSemaphore();
+            this->m_readyMutex.lock();
             LOG_FUNCTION_END();
         }
 

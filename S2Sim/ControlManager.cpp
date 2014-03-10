@@ -32,7 +32,7 @@ ControlReceiveHandler( ThreadedTCPConnectedClient* client, void* buffer, size_t 
     LOG_FUNCTION_END();
 }
 
-ControlManager::ControlManager( void ) : m_client( NULL ), m_readySemaphore( 0, ( char* )"ControlReadySemaphore" )
+ControlManager::ControlManager( void ) : m_client( NULL )
 {
     LOG_FUNCTION_START();
     this->m_server.SetPort( 26997 );
@@ -67,7 +67,7 @@ ControlManager::ProcessData( void* data, const size_t size )
     {
         remainingSize -= sizeof( TMessageType );
         LogPrint( "Decision Finished control message received. Releasing ready semaphore" );
-        this->m_readySemaphore.ReleaseSemaphore();
+        this->m_readyMutex.unlock();
         LogPrint( "Ready semaphore released" );
     }
     else if ( messageType == SetPriceType )
