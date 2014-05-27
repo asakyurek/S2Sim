@@ -89,5 +89,21 @@ ConnectionManager::DeleteClient( ClientManager* clientManager )
     this->m_reversedClientList.erase( clientManager );
     LogPrint( "Deleting Client Manager" );
     delete clientManager;
-    LOG_FUNCTION_END()
+    LOG_FUNCTION_END();
+}
+
+ConnectionManager::TNumberOfClients
+ConnectionManager::GetNumberOfSynchronousClients( void ) const
+{
+    LOG_FUNCTION_START();
+    TNumberOfClients numberOfSynchronousClients = 0;
+    for ( auto clientIterator = this->m_clientList.begin(); clientIterator != this->m_clientList.end(); ++clientIterator )
+    {
+        if ( clientIterator->second->IsSynchronous() )
+        {
+            ++numberOfSynchronousClients;
+        }
+    }
+    LOG_FUNCTION_END();
+    return ( numberOfSynchronousClients );
 }

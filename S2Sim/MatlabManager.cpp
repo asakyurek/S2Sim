@@ -37,15 +37,15 @@ MatlabReceiveHandler( ThreadedTCPConnectedClient* client,
 }
 
 MatlabManager::MatlabManager( void ) : m_client( NULL ),
-                                       m_clientPresenceSemaphore( 0 ),
-                                       m_clientWattageSemaphore( 0 ),
-                                       m_clientVoltageSemaphore( 0 ),
                                        m_clientPresentInformation( false ),
                                        m_clientWattageInformation( 0 ),
                                        m_clientVoltageInformation( 0 )
 {
     LOG_FUNCTION_START();
     LogPrint( "OpenDSS MATLAB Manager alive" );
+    this->m_clientVoltageMutex.lock();
+    this->m_clientWattageMutex.lock();
+    this->m_clientPresenceMutex.lock();
     this->m_server.SetPort( 26998 );
     this->m_server.SetNotificationCallback( &MatlabNotificationHandler );
     LOG_FUNCTION_END();
@@ -98,7 +98,7 @@ MatlabManager::ProcessData( void* buffer, size_t size )
             this->m_clientPresentInformation = false;
         }
         LogPrint( "Releasing Client Presence Semaphore" );
-        this->m_clientPresenceSemaphore.ReleaseSemaphore();
+        this->m_clientPresenceMutex.unlock();
     }
     else if ( messageType == ClientWattageResultType )
     {
@@ -114,7 +114,7 @@ MatlabManager::ProcessData( void* buffer, size_t size )
         this->m_clientWattageInformation = wattageResult;
 
         LogPrint( "Releasing Client Wattage Semaphore" );
-        this->m_clientWattageSemaphore.ReleaseSemaphore();
+        this->m_clientWattageMutex.unlock();
     }
     else if ( messageType == ClientVoltageResultType )
     {
@@ -129,7 +129,7 @@ MatlabManager::ProcessData( void* buffer, size_t size )
         LogPrint( "OpenDSS says: Client Voltage = ", this->m_clientVoltageInformation );
 
         LogPrint( "Releasing Client Voltage Semaphore" );
-        this->m_clientVoltageSemaphore.ReleaseSemaphore();
+        this->m_clientVoltageMutex.unlock();
     }
     else
     {
@@ -183,9 +183,9 @@ MatlabManager::IsClientPresent( const std::string & clientName )
     }
     delete[] buffer;
 
-    LogPrint( "Waiting for Client Presence Semaphore" );
-    this->m_clientPresenceSemaphore.TakeSemaphore();
-    LogPrint( "Client Presence Semaphore taken" );
+    LogPrint( "Waiting for Client Presence Mutex" );
+    this->m_clientPresenceMutex.lock();
+    LogPrint( "Client Presence Mutex taken" );
     LOG_FUNCTION_END();
     return ( this->m_clientPresentInformation );
 }
@@ -278,9 +278,9 @@ MatlabManager::GetWattage( const TClientName & clientName )
     }
     delete[] buffer;
 
-    LogPrint( "Waiting for Client Wattage Semaphore" );
-    this->m_clientWattageSemaphore.TakeSemaphore();
-    LogPrint( "Client Wattage Semaphore taken" );
+    LogPrint( "Waiting for Client Wattage Mutex" );
+    this->m_clientWattageMutex.lock();
+    LogPrint( "Client Wattage Mutex taken" );
 
     LOG_FUNCTION_END();
     return ( this->m_clientWattageInformation );
@@ -328,9 +328,9 @@ MatlabManager::GetVoltage( const TClientName & clientName )
     }
     delete[] buffer;
 
-    LogPrint( "Waiting for Client Voltage Semaphore" );
-    this->m_clientVoltageSemaphore.TakeSemaphore();
-    LogPrint( "Client Voltage Semaphore taken" );
+    LogPrint( "Waiting for Client Voltage Mutex" );
+    this->m_clientVoltageMutex.lock();
+    LogPrint( "Client Voltage Mutex taken" );
 
     LOG_FUNCTION_END();
     return ( this->m_clientVoltageInformation );
@@ -348,7 +348,7 @@ MatlabManager::AdvanceTimeStep( void )
         return;
     }
 
-    int bufferSize = sizeof( int ) + sizeof( TMessageType );
+    size_t bufferSize = sizeof( int ) + sizeof( TMessageType );
     char* buffer = new char[bufferSize];
     char* currentAddress = buffer;
     int messageLength = htonl( bufferSize );

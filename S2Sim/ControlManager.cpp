@@ -35,6 +35,7 @@ ControlReceiveHandler( ThreadedTCPConnectedClient* client, void* buffer, size_t 
 ControlManager::ControlManager( void ) : m_client( NULL )
 {
     LOG_FUNCTION_START();
+    this->m_readyMutex.lock();
     this->m_server.SetPort( 26997 );
     this->m_server.SetNotificationCallback( &ControlNotificationHandler );
     LOG_FUNCTION_END();
@@ -72,32 +73,40 @@ ControlManager::ProcessData( void* data, const size_t size )
     }
     else if ( messageType == SetPriceType )
     {
-        remainingSize -= sizeof( TMessageType ) + sizeof( TClientId ) + sizeof( TClientId ) + sizeof( TPrice );
+        remainingSize -= sizeof( TMessageType ) + sizeof( TClientId ) + sizeof( TClientId ) + sizeof( TNumberOfPricePoints );
         LogPrint( "Set Price control message received" );
         TClientId clientId;
         memcpy( &clientId, currentAddress, sizeof( TClientId ) );
         currentAddress += sizeof( TClientId );
         TClientId convertedClientId = ntohs( clientId );
-
-        TClientId clientIdDummy;
-        memcpy( &clientIdDummy, currentAddress, sizeof( TClientId ) );
         currentAddress += sizeof( TClientId );
+        
+        TNumberOfPricePoints numberOfPricePoints;
+        memcpy( &numberOfPricePoints, currentAddress, sizeof( TNumberOfPricePoints ) );
+        currentAddress += sizeof( TNumberOfPricePoints );
+        TNumberOfPricePoints convertedNumberOfPricePoints = ntohl( numberOfPricePoints );
 
-        TPrice price;
-        memcpy( &price, currentAddress, sizeof( TPrice ) );
-        currentAddress += sizeof( TPrice );
-        TPrice convertedPrice = ntohl( price );
+        TPrice* priceData = new TPrice[convertedNumberOfPricePoints];
+        memcpy( priceData, currentAddress, sizeof( TPrice ) * convertedNumberOfPricePoints );
+        currentAddress += sizeof( TPrice ) * convertedNumberOfPricePoints;
+        remainingSize -= sizeof( TPrice ) * convertedNumberOfPricePoints;
+        
+        for ( TNumberOfPricePoints i = 0; i < convertedNumberOfPricePoints; ++i )
+        {
+            priceData[i] = ntohl( priceData[i] );
+        }
 
-        LogPrint( "Price of Client ", convertedClientId, " set to ", convertedPrice );
+        LogPrint( "Price of Client ", convertedClientId, " set" );
         if ( this->m_clientManagerMap.find( convertedClientId ) == this->m_clientManagerMap.end() )
         {
             ErrorPrint( "Client Id ", convertedClientId, " not found!" );
             LOG_FUNCTION_END();
             return;
         }
-        this->m_clientManagerMap[convertedClientId]->SetCurrentPrice( convertedPrice,
-                                                                      GetSystemManager().GetSystemTime(),
-                                                                      GetSystemManager().GetSystemTime() + 1 );
+        this->m_clientManagerMap[convertedClientId]->SetCurrentPrice( GetSystemManager().GetSystemTime(),
+                                                                      convertedNumberOfPricePoints,
+                                                                      priceData );
+        delete[] priceData;
     }
     else if ( messageType == SendPriceProposalType )
     {
@@ -176,6 +185,7 @@ ControlManager::MakeDecision( void )
     SystemManager::TSystemTime convertedSystemTime = htonl( GetSystemManager().GetSystemTime() );
     memcpy( currentPointer, &convertedSystemTime, sizeof( SystemManager::TSystemTime ) );
     currentPointer += sizeof( SystemManager::TSystemTime );
+    this->m_clientMapLock.lock();
     for ( TClientManagerMap::iterator i = this->m_clientManagerMap.begin(); i != this->m_clientManagerMap.end(); i++ )
     {
         if ( i->second->IsSynchronous() )
@@ -193,6 +203,7 @@ ControlManager::MakeDecision( void )
             currentPointer += sizeof( TVoltage );
         }
     }
+    this->m_clientMapLock.unlock();
     LogPrint( "Send Voltage Information of synchronous clients to External Controller" );
     this->m_client->SendData( buffer, dataSize );
     delete[] buffer;

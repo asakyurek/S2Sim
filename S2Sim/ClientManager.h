@@ -15,6 +15,8 @@
 #include "PriceProposal.h"
 #include "ClientData.h"
 #include "GetPrice.h"
+#include "SystemTimePrompt.h"
+#include "SystemVersionPrompt.h"
 #include "DemandNegotiation.h"
 #include "ConnectionManager.h"
 #include "MatlabManager.h"
@@ -59,6 +61,12 @@ class ClientManager
      *  Type used to represent a price signal.
      */
         typedef Synchronous::SetCurrentPrice::TPrice TPrice;
+    
+    /**
+     *  Type used to represent number of price values.
+     */
+        typedef Synchronous::SetCurrentPrice::TNumberOfPricePoints TNumberOfPriceValues;
+    
     /**
      *  Type used to represent a time interval.
      */
@@ -126,10 +134,20 @@ class ClientManager
      *
      *  This function processes the received consumption information of the synchronous client. The data is registered to the SystemManager.
      *
-     *  @param data Received message structure in TerraSwarmSynchronous::ClientData.
+     *  @param data Received message structure in TerraSwarm::Synchronous::ClientData.
      */
         void
         ProcessClientData( Synchronous::ClientData* data );
+    
+    /**
+     *  @brief Processes the consumption information.
+     *
+     *  This function processes the received consumption information and possible predicted consumption informations from the synchronous client. The data is registered to the SystemManager.
+     *
+     *  @param data Received message structure in TerraSwarm::Synchronous::ClientExtendedData.
+     */
+        void
+        ProcessClientExtendedData( Synchronous::ClientExtendedData* data );
 
     /**
      *  @brief Processes the price signal request.
@@ -149,6 +167,26 @@ class ClientManager
      */
         void
         ProcessDemandNegotiation( Synchronous::DemandNegotiation* data );
+    
+    /**
+     *  @brief Processes the system version prompt.
+     *
+     *  The client sends a system version prompt to get the current system version.
+     *
+     *  @param data Received message structure in TerraSwarm::SystemVersionPrompt.
+     */
+        void
+        ProcessSystemVersionPrompt( SystemVersionPrompt* data );
+    
+    /**
+     *  @brief Processes the system time prompt.
+     *
+     *  The client sends a system time prompt to get the current system time.
+     *
+     *  @param data Received message structure in TerraSwarm::SystemTimePrompt.
+     */
+        void
+        ProcessSystemTimePrompt( SystemTimePrompt* data );
 
     public:
     /**
@@ -215,12 +253,12 @@ class ClientManager
     /**
      *  Sends a price signal to the client.
      *
-     *  @param price         Indicates the price.
+     *  @param priceValues   Indicates the price values for the intervals.
      *  @param beginInterval Indicates the beginning time for the price.
-     *  @param endInterval   Indicates the ending time for the price.
+     *  @param numberOfPriceValues   Indicates the number of price values.
      */
         void
-        SetCurrentPrice( const TPrice price, const TInterval beginInterval, const TInterval endInterval );
+        SetCurrentPrice( const TInterval beginInterval, const TNumberOfPriceValues numberOfPriceValues, TPrice* priceValues );
 
     /**
      *  Sends a price proposal to the client.

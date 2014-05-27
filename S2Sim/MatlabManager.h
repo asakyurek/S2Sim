@@ -9,6 +9,7 @@
 #define MATLABMANAGER_H_
 
 #include <iostream>
+#include <mutex>
 #include "Semaphore.h"
 
 #include "ThreadedTCPServer.h"
@@ -118,19 +119,19 @@ class MatlabManager
         ThreadedTCPConnectedClient* m_client;
 
     /**
-     *  Semaphore used to signal that the presence check result is received.
+     *  Mutex used to signal that the presence check result is received.
      */
-        Semaphore m_clientPresenceSemaphore;
+        std::mutex m_clientPresenceMutex;
     
     /**
-     *  Semaphore used to signal that the wattage get result is received.
+     *  Mutex used to signal that the wattage get result is received.
      */
-        Semaphore m_clientWattageSemaphore;
+        std::mutex m_clientWattageMutex;
     
     /**
-     *  Semaphore used to signal that the voltage get result is received.
+     *  Mutex used to signal that the voltage get result is received.
      */
-        Semaphore m_clientVoltageSemaphore;
+        std::mutex m_clientVoltageMutex;
 
     /**
      *  Temporary storage for the client presence information.

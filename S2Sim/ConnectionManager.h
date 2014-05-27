@@ -155,6 +155,14 @@ class ConnectionManager
         {
             return ( this->m_clientList.size() );
         }
+    
+    /**
+     *  Returns the number of synchronous clients connected.
+     *
+     *  @return Number of synchronous connected clients.
+     */
+        TNumberOfClients
+        GetNumberOfSynchronousClients( void ) const;
 };
 
 ConnectionManager &

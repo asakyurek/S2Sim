@@ -102,6 +102,11 @@ class ControlManager
      *  Defines the type for the price feedback signal.
      */
         typedef Asynchronous::ClientData::TDataPoint TPrice;
+    
+    /**
+     *  Defines the number of price points in the signal.
+     */
+        typedef Synchronous::SetCurrentPrice::TNumberOfPricePoints TNumberOfPricePoints;
 
     /**
      *  Redefines the general data type for rapid development.
@@ -117,7 +122,7 @@ class ControlManager
     /**
      *  Defines the type for size of a data chunk.
      */
-        typedef size_t TDataSize;
+        typedef unsigned int TDataSize;
     
     /**
      *  Defines the message type field used in the communication for message processing.
@@ -172,6 +177,11 @@ class ControlManager
      *  Map containing the unique id to ClientManager mapping.
      */
         TClientManagerMap m_clientManagerMap;
+    
+    /**
+     *  Mutex protecting the m_clientIdMap and m_clientManagerMap members.
+     */
+        std::mutex m_clientMapLock;
 
     private:
     /**
@@ -247,8 +257,10 @@ class ControlManager
         {
             LOG_FUNCTION_START();
             LogPrint( "Client ", clientName, " registered on Id: ", clientId );
+            this->m_clientMapLock.lock();
             this->m_clientIdMap.insert( std::make_pair( clientId, clientName ) );
             this->m_clientManagerMap.insert( std::make_pair( clientId, clientManager ) );
+            this->m_clientMapLock.unlock();
             LOG_FUNCTION_END();
         }
 
@@ -262,8 +274,10 @@ class ControlManager
         {
             LOG_FUNCTION_START();
             LogPrint( "Unregistering client ", clientId );
+            this->m_clientMapLock.lock();
             this->m_clientIdMap.erase( clientId );
             this->m_clientManagerMap.erase( clientId );
+            this->m_clientMapLock.unlock();
             LOG_FUNCTION_END();
         }
 

@@ -9,6 +9,8 @@
 #define SYSTEMMANAGER_H_
 
 #include <map>
+#include <mutex>
+#include <memory>
 #include "ClientManager.h"
 #include "MatlabManager.h"
 #include "ControlManager.h"
@@ -55,6 +57,11 @@ class SystemManager
         typedef unsigned short TSystemMode;
     
     /**
+     *  Defines the system time step size in seconds.
+     */
+        typedef unsigned int TSystemTimeStep;
+    
+    /**
      *  Defines the values for the TSystemMode type.
      */
         enum SystemModeValues
@@ -95,9 +102,39 @@ class SystemManager
 
     private:
     /**
+     *  Structure holding the client information for each interval and client.
+     */
+        struct ClientInformation
+        {
+            /**
+             *  Real consumption of the client within the interval.
+             */
+            TWattage realConsumption;
+            
+            /**
+             *  Predicted consumption for the client for the next intervals.
+             */
+            std::shared_ptr<TWattage> predictedConsumption;
+            
+            /**
+             *  Default constructor for std::map compatibility.
+             */
+            ClientInformation( void ){}
+            
+            /**
+             *  Copy constructor for std::map compatibility.
+             *
+             *  @param copy Copied instance.
+             */
+            ClientInformation( const ClientInformation & copy ) : realConsumption( copy.realConsumption ),
+                                                                  predictedConsumption( copy.predictedConsumption )
+            {}
+        };
+    
+    /**
      *  Defines the mapping from ClientId->Consumption.
      */
-        typedef std::map<TClientId, TDataPoint> TDataMap;
+        typedef std::map<TClientId, ClientInformation> TDataMap;
     
     /**
      *  Defines the mappting from Time->(ClientId->Consumption).
@@ -114,11 +151,31 @@ class SystemManager
      *  The current working mode of the system.
      */
         TSystemMode m_systemMode;
+    
+    /**
+     *  The current system time step size.
+     */
+        TSystemTimeStep m_systemTimeStep;
 
     /**
      *  This variable contains the consumption information for all clients for the future. It is a mapping from time->Client/Data. This allows us to get the consumption of any client at any time. This simplifies the asynchronous client consumption drastically.
      */
         TSystemMap m_systemMap;
+    
+    /**
+     *  Mutex protecting the data map.
+     */
+        std::mutex m_systemDataLock;
+    
+    /**
+     *  Timed mutex waiting for the consumption information of all clients.
+     */
+        std::timed_mutex m_clientTimedMutex;
+    
+    /**
+     *  Defines the time to wait for the data of clients.
+     */
+        TSystemTime m_clientTimeout;
 
     private:
     /**
@@ -148,6 +205,17 @@ class SystemManager
         {
             return ( this->m_systemMode );
         }
+    
+    /**
+     *  Returns the current system time step size.
+     *
+     *  @return Current system time step size.
+     */
+        TSystemTimeStep
+        GetSystemTimeStep( void ) const
+        {
+            return ( this->m_systemTimeStep );
+        }
 
     /**
      *  @brief Used to register multiple consumption information.
@@ -165,7 +233,7 @@ class SystemManager
                       const TSystemTime startTime,
                       const TSystemTime resolution,
                       const TNumberOfDataPoints numberOfDataPoints,
-                      TDataPoint* dataPoints );
+                      std::shared_ptr<TDataPoint> dataPoints );
 
     /**
      *  @brief Used to register a single consumption information for the next time step.
@@ -178,6 +246,21 @@ class SystemManager
         void
         RegisterData( const TClientId clientId,
                       TDataPoint dataPoint );
+    
+    /**
+     *  @brief Used to register a single consumption information for the next time step.
+     
+     The method is mostly used for synchronous consumption registration. The consumption for the next time interval is registered.
+     *
+     *  @param clientId  Unique client id of the consumer.
+     *  @param numberOfDataPoints Number of consumption points.
+     *  @param dataPoints Consumption for the next time interval and the predicted consumptions.
+     */
+        void
+        RegisterData( const TClientId clientId,
+                      const TNumberOfDataPoints numberOfDataPoints,
+                      std::shared_ptr<TDataPoint> dataPoints );
+
 
     /**
      *  @brief Main time iteration of the system.
@@ -192,6 +275,14 @@ class SystemManager
      */
         void
         AdvanceTimeStep( void );
+    
+    /**
+     *  @brief Sets the system mode and changes the client timeout value.
+     *
+     *  @param systemMode New value of the system mode.
+     */
+        void
+        SetSystemMode( const TSystemMode systemMode );
 
 };
 

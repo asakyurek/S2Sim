@@ -101,6 +101,20 @@ ClientManager::MessageReceived( void* data, const size_t dataSize )
         LogPrint( "Demand Negotiation Received. Processing..." );
         this->ProcessDemandNegotiation( ( Synchronous::DemandNegotiation* )data );
     }
+    else if ( ( ( Synchronous::ClientExtendedData* )data )->CheckMessage() )
+    {
+        LogPrint( "Synchronous Client Extended Data Received. Processing..." );
+    }
+    else if ( ( ( SystemTimePrompt* )data )->CheckMessage() )
+    {
+        LogPrint( "System Time Prompt Received. Processing..." );
+        this->ProcessSystemTimePrompt( ( SystemTimePrompt* )data );
+    }
+    else if ( ( ( SystemVersionPrompt* )data )->CheckMessage() )
+    {
+        LogPrint( "System Version Prompt Received. Processing..." );
+        this->ProcessSystemVersionPrompt( ( SystemVersionPrompt* )data );
+    }
     LOG_FUNCTION_END();
 }
 
@@ -160,6 +174,29 @@ ClientManager::ProcessClientData( Asynchronous::ClientData* data )
 }
 
 void
+ClientManager::ProcessSystemTimePrompt( SystemTimePrompt *data )
+{
+    LOG_FUNCTION_START();
+    LogPrint( "Processing System Time Prompt" );
+    SystemTimeResponse::TSystemTime systemTime = GetSystemManager().GetSystemTime();
+    SystemTimeResponse* responseData = SystemTimeResponse::GetNewSystemTimeResponse( 0x0000, 0xFFFF, systemTime );
+    this->m_client->SendData( responseData, responseData->GetSize() );
+    delete[] ( ( char* )responseData );
+    LOG_FUNCTION_END();
+}
+
+void
+ClientManager::ProcessSystemVersionPrompt( SystemVersionPrompt *data )
+{
+    LOG_FUNCTION_START();
+    LogPrint( "Processing System Version Prompt" );
+    SystemVersionResponse* responseData = SystemVersionResponse::GetNewSystemVersionResponse( 0x0000, 0xFFFF, 1, 2 );
+    this->m_client->SendData( responseData, responseData->GetSize() );
+    delete[] ( ( char* )responseData );
+    LOG_FUNCTION_END();
+}
+
+void
 ClientManager::ProcessClientConnectionRequest( Synchronous::ClientConnectionRequest* data )
 {
     LOG_FUNCTION_START();
@@ -182,6 +219,7 @@ ClientManager::ProcessClientConnectionRequest( Synchronous::ClientConnectionRequ
     }
     SystemManager::TSystemMode systemMode = GetSystemManager().GetSystemMode();
     SystemManager::TSystemTime systemTime = GetSystemManager().GetSystemTime();
+    SystemManager::TSystemTimeStep systemTimeStep = GetSystemManager().GetSystemTimeStep();
     ConnectionManager::TNumberOfClients numberOfClients = GetConnectionManager().GetNumberOfClients();
 
     Synchronous::ClientConnectionResponse* responseData = Synchronous::ClientConnectionResponse::GetNewClientConnectionResponse( 0x0000,
@@ -189,7 +227,8 @@ ClientManager::ProcessClientConnectionRequest( Synchronous::ClientConnectionRequ
                                                                                                                                  requestResult,
                                                                                                                                  systemTime,
                                                                                                                                  numberOfClients,
-                                                                                                                                 systemMode );
+                                                                                                                                 systemMode,
+                                                                                                                                 systemTimeStep );
     this->m_client->SendData( responseData, ( int )Synchronous::ClientConnectionResponse::GetSize() );
     delete[] ( ( char* )responseData );
     if ( requestResult == Synchronous::ClientConnectionResponse::RequestObjectIdNotFound )
@@ -207,6 +246,17 @@ ClientManager::ProcessClientData( Synchronous::ClientData* data )
     LogPrint( "Synchronous Client Data received from: ", this->m_clientId );
     Synchronous::ClientData::TDataPoint dataPoint = data->GetDataPoint();
     GetSystemManager().RegisterData( this->m_clientId, dataPoint );
+    LOG_FUNCTION_END();
+}
+
+void
+ClientManager::ProcessClientExtendedData( Synchronous::ClientExtendedData* data )
+{
+    LOG_FUNCTION_START();
+    LogPrint( "Synchronous Client Data received from: ", this->m_clientId );
+    Synchronous::ClientExtendedData::TNumberOfDataPoints numberOfDataPoints = data->GetNumberOfDataPoints();
+    std::shared_ptr<Synchronous::ClientExtendedData::TDataPoint> dataPoints = data->GetDataPoints();
+    GetSystemManager().RegisterData( this->m_clientId, numberOfDataPoints, dataPoints );
     LOG_FUNCTION_END();
 }
 
@@ -231,17 +281,17 @@ ClientManager::ProcessDemandNegotiation( Synchronous::DemandNegotiation* data )
 }
 
 void
-ClientManager::SetCurrentPrice( const TPrice price, const TInterval beginInterval, const TInterval endInterval )
+ClientManager::SetCurrentPrice( const TInterval beginInterval, const TNumberOfPriceValues numberOfPriceValues, TPrice* priceValues )
 {
     LOG_FUNCTION_START();
-    LogPrint( "Price for client ", this->m_clientId, " is set to: ", price, " from: ", beginInterval, " until: ", endInterval );
+    LogPrint( "Price for client ", this->m_clientId, " is set to: ", priceValues[0], " from time: ", beginInterval, ". Number of: ", numberOfPriceValues );
     Synchronous::SetCurrentPrice* message = Synchronous::SetCurrentPrice::GetNewSetCurrentPrice( 0x0000,
                                                                                                  this->m_clientId,
-                                                                                                 price,
                                                                                                  beginInterval,
-                                                                                                 endInterval );
+                                                                                                 numberOfPriceValues,
+                                                                                                 priceValues );
 
-    this->m_client->SendData( message, Synchronous::SetCurrentPrice::GetSize() );
+    this->m_client->SendData( message, message->GetSize() );
     delete[] ( ( char* )message );
     LOG_FUNCTION_END();
 }
