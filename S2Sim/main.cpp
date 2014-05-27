@@ -31,12 +31,18 @@ main( int argc, char **argv )
     auto iterationNumber = 0;
     
     GetControlManager().WaitUntilReady();
-    //int starting;
-    //std::cin >> starting;
     while ( 1 )
     {
-        usleep(1);
-        GetSystemManager().AdvanceTimeStep();
+        try
+        {
+            GetSystemManager().AdvanceTimeStep();
+        }
+        catch ( ... )
+        {
+            ErrorPrint( "System Error, Exiting" );
+            break;
+        }
+        
         ++iterationNumber;
         LogPrint( "Time: ", iterationNumber );
     }
