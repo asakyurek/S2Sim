@@ -9,17 +9,17 @@
 
 ThreadedTCPConnectedClient::ThreadedTCPConnectedClient( const TSocketId socketId, IPAddress & clientAddress ) : TCPConnectedClient( socketId, clientAddress ),
                                                                                                                 m_notification( NULL ),
-                                                                                                                m_started( true ),
-                                                                                                                m_allowingSemaphore( 0 )
+                                                                                                                m_started( true )
 {
+    this->m_allowingMutex.lock();
     this->StartThread( NULL );
 }
 
 ThreadedTCPConnectedClient::ThreadedTCPConnectedClient( const TCPConnectedClient & client ) : TCPConnectedClient( client ),
                                                                                               m_notification( NULL ),
-                                                                                              m_started( true ),
-                                                                                              m_allowingSemaphore( 0 )
+                                                                                              m_started( true )
 {
+    this->m_allowingMutex.lock();
     this->StartThread( NULL );
 }
 
@@ -33,13 +33,13 @@ ThreadedTCPConnectedClient::ExecutionBody( void* input )
 {
     while ( this->m_started )
     {
-        this->m_allowingSemaphore.TakeSemaphore();
+        this->m_allowingMutex.lock();
         const TNumberOfBytes bufferSize = 100000;
         char buffer[bufferSize];
         memset( buffer, 0x00, bufferSize );
         TNumberOfBytes receivedBytes = this->ReceiveData( buffer, bufferSize );
         this->m_notification( this, buffer, receivedBytes );
-        this->m_allowingSemaphore.ReleaseSemaphore();
+        this->m_allowingMutex.unlock();
     }
     return ( NULL );
 }

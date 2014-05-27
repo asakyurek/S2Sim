@@ -32,6 +32,23 @@
 template <int SocketType>
 class SocketBase
 {
+    private:
+#if defined(_WIN32) || defined(_WIN64)
+        class WindowsStarter
+        {
+            public:
+                WindowsStarter( void )
+                {
+                    WSAData wsaData;
+                    WSAStartup( MAKEWORD( 2, 0 ), &wsaData );
+                }
+                ~WindowsStarter( void )
+                {
+                    WSACleanup();
+                }
+        };
+#endif
+    
     public:
     /**
      *  Defines the type for number of bytes.
@@ -110,6 +127,9 @@ class SocketBase
 template <int SocketType>
 SocketBase<SocketType>::SocketBase( void ) : m_socketId( InvalidSocketId )
 {
+#if defined(_WIN32) || defined(_WIN64)
+    static WindowsStarter windowsStarterInstance;
+#endif
     this->OpenSocket();
 }
 
@@ -128,6 +148,8 @@ SocketBase<SocketType>::OpenSocket( void )
     {
         std::cerr << "Invalid Socket" << std::endl;
     }
+
+#if defined( __linux__ ) || defined ( __APPLE__ )
     int value = 1;
     if ( 0 != setsockopt( this->m_socketId, SOL_SOCKET, SO_REUSEADDR, &value, sizeof( value ) ) )
     {
@@ -137,6 +159,7 @@ SocketBase<SocketType>::OpenSocket( void )
     {
         std::cerr << "Socket Option Not Set! Error: " << errno << std::endl;
     }
+#endif
 }
 
 template <int SocketType>

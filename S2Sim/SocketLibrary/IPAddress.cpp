@@ -9,13 +9,13 @@
 
 IPAddress::IPAddress( void )
 {
-    bzero( &this->m_address, sizeof( this->m_address ) );
+    memset( &this->m_address, 0x00, sizeof( this->m_address ) );
     this->m_address.sin_family = AF_INET;
 }
 
 IPAddress::IPAddress( const IPAddress & copy )
 {
-    bcopy( &copy.m_address, &this->m_address, sizeof( this->m_address ) );
+    memcpy( &this->m_address, &copy.m_address, sizeof( this->m_address ) );
 }
 
 IPAddress::~IPAddress( void )
@@ -29,7 +29,7 @@ IPAddress::operator = ( const IPAddress& rhs )
     {
         return ( *this );
     }
-    bcopy( &rhs.m_address, &this->m_address, sizeof( this->m_address ) );
+    memcpy( &this->m_address, &rhs.m_address, sizeof( this->m_address ) );
     return ( *this );
 }
 

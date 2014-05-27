@@ -10,7 +10,7 @@
 
 #include "TCPConnectedClient.h"
 #include "ThreadBase.h"
-#include "Semaphore.h"
+#include <mutex>
 
 /**
  *  Manages the connection to an accepted client on the server side and receives data in a separate thread in the background.
@@ -48,9 +48,9 @@ class ThreadedTCPConnectedClient : public TCPConnectedClient, private ThreadBase
         bool m_started;
         
         /**
-         *  This semaphore is released only if there is a legitimate callback function.
+         *  This mutex is unlocked only if there is a legitimate callback function.
          */
-        Semaphore m_allowingSemaphore;
+        std::mutex m_allowingMutex;
 
     public:
     /**
@@ -80,12 +80,12 @@ class ThreadedTCPConnectedClient : public TCPConnectedClient, private ThreadBase
         {
             if ( this->m_notification != NULL )
             {
-                this->m_allowingSemaphore.TakeSemaphore();
+                this->m_allowingMutex.lock();
             }
             this->m_notification = notification;
             if ( this->m_notification != NULL )
             {
-                this->m_allowingSemaphore.ReleaseSemaphore();
+                this->m_allowingMutex.unlock();
             }
         }
 };

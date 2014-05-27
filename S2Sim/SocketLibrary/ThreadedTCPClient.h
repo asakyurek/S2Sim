@@ -8,9 +8,10 @@
 #ifndef THREADEDTCPCLIENT_H_
 #define THREADEDTCPCLIENT_H_
 
+#include <mutex>
+
 #include "TCPClient.h"
 #include "ThreadBase.h"
-#include "Semaphore.h"
 
 /**
  *  This is a TCP client class that receives data in a separate thread in the background. In order to use the class, a notification callback needs to be set that will be called when a data is received.
@@ -48,9 +49,9 @@ class ThreadedTCPClient : public TCPClient, private ThreadBase
         bool m_started;
     
     /**
-     *  This semaphore is released only if there is a legitimate callback function.
+     *  This mutex is unlocked only if there is a legitimate callback function.
      */
-        Semaphore m_allowingSemaphore;
+        std::mutex m_allowingMutex;
 
     public:
     /**
@@ -78,12 +79,12 @@ class ThreadedTCPClient : public TCPClient, private ThreadBase
         {
             if ( this->m_notification != NULL )
             {
-                this->m_allowingSemaphore.TakeSemaphore();
+                this->m_allowingMutex.lock();
             }
             this->m_notification = notification;
             if ( this->m_notification != NULL )
             {
-                this->m_allowingSemaphore.ReleaseSemaphore();
+                this->m_allowingMutex.unlock();
             }
         }
 };

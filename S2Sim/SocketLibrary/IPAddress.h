@@ -39,7 +39,11 @@ class IPAddress
     /**
      *  IP Address value.
      */
+#if defined(_WIN32) || defined(_WIN64)
+        typedef unsigned long int TAddress;
+#elif defined( __linux__ ) || defined ( __APPLE__ )
         typedef unsigned int TAddress;
+#endif
     
     /**
      *  Port value.
@@ -49,7 +53,11 @@ class IPAddress
     /**
      *  Size of the socket structure.
      */
+#if defined(_WIN32) || defined(_WIN64)
+        typedef unsigned int TSocketSize;
+#elif defined( __linux__ ) || defined ( __APPLE__ )
         typedef socklen_t TSocketSize;
+#endif
 
     private:
     /**
