@@ -11,6 +11,7 @@
 #include "MessageHeader.h"
 #include "MessageEnder.h"
 #include <string.h>
+#include <memory>
 
 namespace TerraSwarm
 {
@@ -174,7 +175,7 @@ namespace TerraSwarm
              *
              *  @return Pointer to the beginning of data points.
              */
-                TDataPoint*
+                std::shared_ptr<TDataPoint>
                 GetDataPoints( void ) const;
         };
 
@@ -282,6 +283,123 @@ namespace TerraSwarm
                 GetDataPoint( void ) const;
         };
 
+        /**
+         *  Synchronous Client Data message from the client to indicate its consumption for a time interval.
+         */
+        class ClientExtendedData
+        {
+            private:
+            /**
+             *  Message Header Values.
+             */
+            enum HeaderValues
+            {
+                MessageType = 0x0003,
+                MessageId = 0x0006
+            };
+            
+            public:
+            /**
+             *  Defines the message check result type.
+             */
+            typedef bool TCheckResult;
+            
+            /**
+             *  Defines the values for TCheckResult.
+             */
+            enum CheckResultValues
+            {
+                Success = ( TCheckResult )true, /**< Message is of correct type and id. **/
+                Fail = ( TCheckResult )false /**< Message has incorrect type or id. **/
+            };
+            
+            /**
+             *  Defines the type for a general data point, consumption in this case.
+             */
+            typedef unsigned int TDataPoint;
+            
+            /**
+             *  Defines the number of data points within the message.
+             */
+            typedef unsigned int TNumberOfDataPoints;
+            
+            private:
+            /**
+             *  Size of the fields within the message.
+             */
+            enum FieldSizeValues
+            {
+                DataPointSize = sizeof( TDataPoint ),
+                NumberOfDataPointsSize = sizeof( TNumberOfDataPoints )
+            };
+            
+            /**
+             *  Index of the fields within the message.
+             */
+            enum FieldIndexValues
+            {
+                NumberOfDataPointsIndex = MessageHeader::MessageHeaderSize,
+                DataStartIndex = NumberOfDataPointsIndex + NumberOfDataPointsSize
+            };
+            
+            /**
+             *  Accessor helper for the NumberOfDataPoints field.
+             */
+            typedef NetworkByteAccessor<NumberOfDataPointsIndex, NumberOfDataPointsSize> TNumberOfDataPointsAccessor;
+            
+        private:
+            /**
+             *  Private constructor to force the usage of the static construction method.
+             */
+            ClientExtendedData( void );
+            
+        public:
+            /**
+             *  Deallocates the memory.
+             */
+            ~ClientExtendedData( void );
+            
+            /**
+             *  Constructs a new ClientData message and allocates the necessary memory for it. @warning Deallocation is the responsibility of the user.
+             *
+             *  @param senderId   Id of the sender.
+             *  @param receiverId Id of the receiver.
+             *  @param numberOfDataPoints Number of data points in the message.
+             *  @param dataPoints  Consumption of the user for the next time interval and, if exists, prediction for the later intervals.
+             *
+             *  @return Newly allocated ClientData message.
+             */
+            static ClientExtendedData*
+            GetNewClientData( const MessageHeader::TSenderId senderId,
+                             const MessageHeader::TReceiverId receiverId,
+                             const TNumberOfDataPoints numberOfDataPoints,
+                             TDataPoint* dataPoints );
+            
+            /**
+             *  Checks whether the current memory contains a ClientExtendedData message.
+             *
+             *  @return Result of the check.
+             */
+            TCheckResult
+            CheckMessage( void ) const;
+            
+            /**
+             *  Reads the number of data points in the message.
+             *
+             *  @return Nuber of Data points value.
+             */
+            TNumberOfDataPoints
+            GetNumberOfDataPoints( void ) const;
+            
+            /**
+             *  Copies the data points in a new allocated memory. @warning Deallocation is the responsibility of the user.
+             *
+             *  @return Array containing the data points.
+             */
+            std::shared_ptr<TDataPoint>
+            GetDataPoints( void ) const;
+        };
+        
     } /* namespace Synchronous */
 } /* namespace TerraSwarm */
 #endif /* CLIENTDATA_H_ */

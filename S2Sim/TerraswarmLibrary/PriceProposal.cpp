@@ -17,7 +17,7 @@ namespace TerraSwarm
 
         PriceProposal::~PriceProposal( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         PriceProposal*

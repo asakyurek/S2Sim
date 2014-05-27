@@ -17,7 +17,7 @@ namespace TerraSwarm
 
         GetPrice::~GetPrice( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         GetPrice*

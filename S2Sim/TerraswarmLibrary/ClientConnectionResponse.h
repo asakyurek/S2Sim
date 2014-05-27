@@ -274,6 +274,11 @@ namespace TerraSwarm
                 typedef unsigned short TSystemMode;
             
             /**
+             *  Defines the simulation time steps in seconds.
+             */
+                typedef unsigned int TSystemTimeStep;
+            
+            /**
              *  Defines the values for the TSystemMode type.
              */
                 enum SystemModeValues
@@ -292,7 +297,8 @@ namespace TerraSwarm
                     SystemTimeSize = sizeof( TSystemTime ),
                     NumberOfClientsSize = sizeof( TNumberOfClients ),
                     SystemModeSize = sizeof( TSystemMode ),
-                    TotalSize = ( RequestResultSize + SystemTimeSize + NumberOfClientsSize + SystemModeSize )
+                    SystemTimeStepSize = sizeof( TSystemTimeStep ),
+                    TotalSize = ( RequestResultSize + SystemTimeSize + NumberOfClientsSize + SystemModeSize + SystemTimeStepSize )
                 };
 
             /**
@@ -303,7 +309,8 @@ namespace TerraSwarm
                     RequestResultIndex = MessageHeader::MessageHeaderSize,
                     SystemTimeIndex = RequestResultIndex + RequestResultSize,
                     NumberOfClientsIndex = SystemTimeIndex + SystemTimeSize,
-                    SystemModeIndex = NumberOfClientsIndex + NumberOfClientsSize
+                    SystemModeIndex = NumberOfClientsIndex + NumberOfClientsSize,
+                    SystemTimeStepIndex = SystemModeIndex + SystemModeSize
                 };
 
             /**
@@ -325,6 +332,11 @@ namespace TerraSwarm
              *  Accessor helper for the SystemMode field.
              */
                 typedef NetworkByteAccessor<SystemModeIndex, SystemModeSize> TSystemModeAccessor;
+            
+            /**
+             *  Accessor helper for the SystemTimeStep field.
+             */
+                typedef NetworkByteAccessor<SystemTimeStepIndex, SystemTimeStepSize> TSystemTimeStepAccessor;
 
             private:
             /**
@@ -347,6 +359,7 @@ namespace TerraSwarm
              *  @param systemTime      Current system time.
              *  @param numberOfClients Current number of clients.
              *  @param systemMode      Current system working mode.
+             *  @param systemTimeStep  Current system time step size.
              *
              *  @return Newly allocated message pointer.
              */
@@ -356,7 +369,8 @@ namespace TerraSwarm
                                                 const TRequestResult requestResult,
                                                 const TSystemTime systemTime,
                                                 const TNumberOfClients numberOfClients,
-                                                const TSystemMode systemMode );
+                                                const TSystemMode systemMode,
+                                                const TSystemTimeStep systemTimeStep );
 
             /**
              *  Checks whether the current memory holds a ClientConnectionResponse message.
@@ -397,6 +411,14 @@ namespace TerraSwarm
              */
                 TSystemMode
                 GetSystemMode( void ) const;
+            
+            /**
+             *  Reads the SystemTimeStep field.
+             *
+             * @return The current system time step size.
+             */
+                TSystemTimeStep
+                GetSystemTimeStep( void ) const;
 
             /**
              *  Returns the size of a ClientConnectionResponse message.

@@ -18,7 +18,7 @@ namespace TerraSwarm
 
         ClientConnectionResponse::~ClientConnectionResponse( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         ClientConnectionResponse*
@@ -100,7 +100,7 @@ namespace TerraSwarm
 
         ClientConnectionResponse::~ClientConnectionResponse( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         ClientConnectionResponse*
@@ -109,7 +109,8 @@ namespace TerraSwarm
                                                                   const TRequestResult requestResult,
                                                                   const TSystemTime systemTime,
                                                                   const TNumberOfClients numberOfClients,
-                                                                  const TSystemMode systemMode )
+                                                                  const TSystemMode systemMode,
+                                                                  const TSystemTimeStep systemTimeStep )
         {
             TDataSize totalDataSize = MessageHeader::MessageHeaderSize + TotalSize + MessageEnder::EndOfMessageSize;
             char* newMemory = new char[totalDataSize];
@@ -118,6 +119,7 @@ namespace TerraSwarm
             ( ( TSystemTimeAccessor* )newMemory )->Write( systemTime );
             ( ( TNumberOfClientsAccessor* )newMemory )->Write( numberOfClients );
             ( ( TSystemModeAccessor* )newMemory )->Write( systemMode );
+            ( ( TSystemTimeStepAccessor* )newMemory )->Write( systemTimeStep );
             ( ( MessageEnder* )newMemory )->SetEndOfMessageField();
             return ( ( ClientConnectionResponse* )newMemory );
         }
@@ -162,6 +164,14 @@ namespace TerraSwarm
         {
             TSystemMode value;
             ( ( TSystemModeAccessor* )this )->Read( value );
+            return ( value );
+        }
+        
+        ClientConnectionResponse::TSystemTimeStep
+        ClientConnectionResponse::GetSystemTimeStep( void ) const
+        {
+            TSystemTimeStep value;
+            ( ( TSystemTimeStepAccessor* )this )->Read( value );
             return ( value );
         }
 

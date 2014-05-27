@@ -17,7 +17,7 @@ namespace TerraSwarm
 
         DemandNegotiation::~DemandNegotiation( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         DemandNegotiation*

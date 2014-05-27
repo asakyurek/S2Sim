@@ -55,6 +55,11 @@ namespace TerraSwarm
              *  Type for time interval.
              */
                 typedef unsigned int TInterval;
+            
+            /**
+             *  Type for number of price points.
+             */
+                typedef unsigned int TNumberOfPricePoints;
 
             private:
             /**
@@ -62,10 +67,9 @@ namespace TerraSwarm
              */
                 enum FieldSizeValues
                 {
-                    PriceSize = sizeof( TPrice ),
                     IntervalBeginSize = sizeof( TInterval ),
-                    IntervalEndSize = sizeof( TInterval ),
-                    TotalSize = ( PriceSize + IntervalBeginSize + IntervalEndSize )
+                    NumberOfPricePointsSize = sizeof( TNumberOfPricePoints ),
+                    PriceSize = sizeof( TPrice )
                 };
 
             /**
@@ -73,25 +77,20 @@ namespace TerraSwarm
              */
                 enum FieldIndexValues
                 {
-                    PriceIndex = MessageHeader::MessageHeaderSize,
-                    IntervalBeginIndex = PriceIndex + PriceSize,
-                    IntervalEndIndex = IntervalBeginIndex + IntervalBeginSize
+                    IntervalBeginIndex = MessageHeader::MessageHeaderSize,
+                    NumberOfPricePointsIndex = IntervalBeginIndex + IntervalBeginSize,
+                    PricePointsIndex = NumberOfPricePointsIndex + NumberOfPricePointsSize,
                 };
 
             /**
-             *  Accessor helper for the Price field.
+             *  Accessor helper for the Number of Price Points field.
              */
-                typedef NetworkByteAccessor<PriceIndex, PriceSize> TPriceAccessor;
+                typedef NetworkByteAccessor<NumberOfPricePointsIndex, NumberOfPricePointsSize> TNumberOfPricePointsAccessor;
             
             /**
              *  Accessor helper for the IntervalBegin field.
              */
                 typedef NetworkByteAccessor<IntervalBeginIndex, IntervalBeginSize> TIntervalBeginAccessor;
-            
-            /**
-             *  Accessor helper for the IntervalEnd field.
-             */
-                typedef NetworkByteAccessor<IntervalEndIndex, IntervalEndSize> TIntervalEndAccessor;
 
             private:
             /**
@@ -112,16 +111,17 @@ namespace TerraSwarm
              *  @param receiverId    Id of the receiver.
              *  @param price         Price signal to be set.
              *  @param intervalBegin Beginning of the price interval.
-             *  @param intervalEnd   Ending of the price interval.
+             *  @param numberOfPricePoints Number of price points sent within the message.
+             *  @param pricePoints   Price points sent to the client.
              *
              *  @return Returns a new allocated message.
              */
                 static SetCurrentPrice*
                 GetNewSetCurrentPrice( const MessageHeader::TSenderId senderId,
                                        const MessageHeader::TReceiverId receiverId,
-                                       const TPrice price,
                                        const TInterval intervalBegin,
-                                       const TInterval intervalEnd );
+                                       const TNumberOfPricePoints numberOfPricePoints,
+                                       TPrice* pricePoints );
 
             /**
              *  Checks whether the current memory contains a SetCurrentPrice message.
@@ -136,7 +136,7 @@ namespace TerraSwarm
              *
              *  @return Price value in the message.
              */
-                TPrice
+                TPrice*
                 GetPrice( void ) const;
             
             /**
@@ -148,20 +148,20 @@ namespace TerraSwarm
                 GetIntervalBegin( void ) const;
 
             /**
-             *  Reads the IntervalEnd field in the message.
+             *  Reads the NumberOfPricePoints field in the message.
              *
-             *  @return Value of IntervalEnd in the message.
+             *  @return Value of NumberOfPricePoints in the message.
              */
                 TInterval
-                GetIntervalEnd( void ) const;
-
+                GetNumberOfPricePoints( void ) const;
+            
             /**
-             *  Returns the size of a SetCurrentPrice message.
-             *
-             *  @return <#return value description#>
+             *  Returns the size of the message.
+             *  
+             *  @return Size of the current message.
              */
-                static TDataSize
-                GetSize( void );
+                TDataSize
+                GetSize() const;
         };
 
     } /* namespace Synchronous */

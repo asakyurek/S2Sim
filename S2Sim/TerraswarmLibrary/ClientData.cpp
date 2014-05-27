@@ -18,7 +18,7 @@ namespace TerraSwarm
 
         ClientData::~ClientData( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         ClientData*
@@ -80,13 +80,13 @@ namespace TerraSwarm
             return ( value );
         }
 
-        ClientData::TDataPoint*
+        std::shared_ptr<ClientData::TDataPoint>
         ClientData::GetDataPoints( void ) const
         {
             TNumberOfDataPoints numberOfDataPoints = this->GetNumberOfDataPoints();
             TDataPoint* dataPoints = new TDataPoint[numberOfDataPoints];
             memcpy( dataPoints, ( ( char* )this ) + DataStartIndex, numberOfDataPoints * DataPointSize );
-            return ( dataPoints );
+            return ( std::shared_ptr<TDataPoint>( dataPoints, []( TDataPoint* p ) { delete[] p; } ) );
         }
 
     } /* namespace Asynchronous */
@@ -100,7 +100,7 @@ namespace TerraSwarm
 
         ClientData::~ClientData( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         ClientData*
@@ -135,6 +135,60 @@ namespace TerraSwarm
             TDataPoint value;
             ( ( TDataPointAccessor* )this )->Read( value );
             return ( value );
+        }
+        
+        ClientExtendedData::ClientExtendedData( void )
+        {
+        }
+        
+        ClientExtendedData::~ClientExtendedData( void )
+        {
+            //delete[] ( ( char* )this );
+        }
+        
+        ClientExtendedData*
+        ClientExtendedData::GetNewClientData( const MessageHeader::TSenderId senderId,
+                                              const MessageHeader::TReceiverId receiverId,
+                                              const TNumberOfDataPoints numberOfDataPoints,
+                                              TDataPoint* dataPoints )
+        {
+            TDataSize totalDataSize = MessageHeader::MessageHeaderSize +
+            DataPointSize +
+            MessageEnder::EndOfMessageSize;
+            char* newMemory = new char[totalDataSize];
+            ( ( MessageHeader* )newMemory )->PrepareOutgoingMessage( senderId, receiverId, MessageType, MessageId, totalDataSize );
+            ( ( TNumberOfDataPointsAccessor* )newMemory )->Write( numberOfDataPoints );
+            memcpy( ( DataStartIndex + newMemory ), dataPoints, numberOfDataPoints * DataPointSize );
+            ( ( MessageEnder* )newMemory )->SetEndOfMessageField();
+            return ( ( ClientExtendedData* )newMemory );
+        }
+        
+        ClientExtendedData::TCheckResult
+        ClientExtendedData::CheckMessage( void ) const
+        {
+            if ( ( ( MessageHeader* )this )->GetMessageType() == MessageType &&
+                ( ( MessageHeader* )this )->GetMessageId() == MessageId )
+            {
+                return ( Success );
+            }
+            return ( Fail );
+        }
+        
+        ClientExtendedData::TNumberOfDataPoints
+        ClientExtendedData::GetNumberOfDataPoints( void ) const
+        {
+            TNumberOfDataPoints value;
+            ( ( TNumberOfDataPointsAccessor* )this )->Read( value );
+            return ( value );
+        }
+        
+        std::shared_ptr<ClientExtendedData::TDataPoint>
+        ClientExtendedData::GetDataPoints( void ) const
+        {
+            TNumberOfDataPoints numberOfDataPoints = this->GetNumberOfDataPoints();
+            TDataPoint* dataPoints = new TDataPoint[numberOfDataPoints];
+            memcpy( dataPoints, ( ( ( char* )this) + DataStartIndex ), numberOfDataPoints * DataPointSize );
+            return ( std::shared_ptr<TDataPoint>( dataPoints, []( TDataPoint* p ) { delete[] p; } ) );
         }
 
     } /* namespace Synchronous */

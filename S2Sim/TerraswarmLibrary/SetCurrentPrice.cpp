@@ -17,22 +17,23 @@ namespace TerraSwarm
 
         SetCurrentPrice::~SetCurrentPrice( void )
         {
-            delete[] ( ( char* )this );
+            //delete[] ( ( char* )this );
         }
 
         SetCurrentPrice*
         SetCurrentPrice::GetNewSetCurrentPrice( const MessageHeader::TSenderId senderId,
                                                 const MessageHeader::TReceiverId receiverId,
-                                                const TPrice price,
                                                 const TInterval intervalBegin,
-                                                const TInterval intervalEnd )
+                                                const TNumberOfPricePoints numberOfPricePoints,
+                                                TPrice* pricePoints )
         {
-            TDataSize totalDataSize = MessageHeader::MessageHeaderSize + TotalSize + MessageEnder::EndOfMessageSize;
+            TDataSize dataSize = IntervalBeginSize + NumberOfPricePointsSize + numberOfPricePoints * PriceSize;
+            TDataSize totalDataSize = MessageHeader::MessageHeaderSize + dataSize + MessageEnder::EndOfMessageSize;
             char* newMemory = new char[totalDataSize];
-            ( ( MessageHeader* )newMemory )->PrepareOutgoingMessage( senderId, receiverId, MessageType, MessageId, TotalSize );
-            ( ( TPriceAccessor* )newMemory )->Write( price );
+            ( ( MessageHeader* )newMemory )->PrepareOutgoingMessage( senderId, receiverId, MessageType, MessageId, dataSize );
             ( ( TIntervalBeginAccessor* )newMemory )->Write( intervalBegin );
-            ( ( TIntervalEndAccessor* )newMemory )->Write( intervalEnd );
+            ( ( TNumberOfPricePointsAccessor* )newMemory )->Write( numberOfPricePoints );
+            memcpy( ( newMemory + PricePointsIndex ), pricePoints, PriceSize * numberOfPricePoints );
             ( ( MessageEnder* )newMemory )->SetEndOfMessageField();
             return ( ( SetCurrentPrice* )newMemory );
         }
@@ -48,12 +49,13 @@ namespace TerraSwarm
             return ( Fail );
         }
 
-        SetCurrentPrice::TPrice
+        SetCurrentPrice::TPrice*
         SetCurrentPrice::GetPrice( void ) const
         {
-            TPrice value;
-            ( ( TPriceAccessor* )this )->Read( value );
-            return ( value );
+            TNumberOfPricePoints numberOfPricePoints = this->GetNumberOfPricePoints();
+            TPrice* values = new TPrice[numberOfPricePoints];
+            memcpy( values, ( this + PricePointsIndex ), PriceSize * numberOfPricePoints );
+            return ( values );
         }
 
         SetCurrentPrice::TInterval
@@ -64,18 +66,18 @@ namespace TerraSwarm
             return ( value );
         }
 
-        SetCurrentPrice::TInterval
-        SetCurrentPrice::GetIntervalEnd( void ) const
+        SetCurrentPrice::TNumberOfPricePoints
+        SetCurrentPrice::GetNumberOfPricePoints( void ) const
         {
-            TInterval value;
-            ( ( TIntervalEndAccessor* )this )->Read( value );
+            TNumberOfPricePoints value;
+            ( ( TNumberOfPricePointsAccessor* )this )->Read( value );
             return ( value );
         }
-
+        
         TDataSize
-        SetCurrentPrice::GetSize( void )
+        SetCurrentPrice::GetSize( void ) const
         {
-            return ( MessageHeader::MessageHeaderSize + TotalSize + MessageEnder::EndOfMessageSize );
+            return ( MessageHeader::MessageHeaderSize + IntervalBeginSize + NumberOfPricePointsSize + this->GetNumberOfPricePoints() * PriceSize + MessageEnder::EndOfMessageSize );
         }
     } /* namespace Synchronous */
 } /* namespace TerraSwarm */
