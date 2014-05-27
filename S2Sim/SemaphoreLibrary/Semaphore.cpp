@@ -11,17 +11,17 @@
 
 Semaphore::Semaphore( const TValue value )
 {
-    this->m_handle = CreateSemaphore( NULL, value, 32767, NULL );
+    this->m_handle = ::CreateSemaphore( NULL, value, 32767, NULL );
 }
 
 Semaphore::Semaphore( const TValue value, const TName name )
 {
-    this->m_handle = CreateSemaphore( NULL, value, 32767, name );
+    this->m_handle = ::CreateSemaphore( NULL, value, 32767, name );
 }
 
 Semaphore::~Semaphore( void )
 {
-    CloseHandle( this->m_handle );
+    ::CloseHandle( this->m_handle );
 }
 
 Semaphore::Semaphore( const Semaphore & copy ) : m_handle( copy.m_handle )
@@ -31,7 +31,7 @@ Semaphore::Semaphore( const Semaphore & copy ) : m_handle( copy.m_handle )
 bool
 Semaphore::TakeSemaphore( void )
 {
-    DWORD result = WaitForSingleObject( this->m_handle, INFINITE )
+    DWORD result = ::WaitForSingleObject( this->m_handle, INFINITE );
     if ( result == WAIT_TIMEOUT )
     {
         return ( false );
@@ -42,7 +42,7 @@ Semaphore::TakeSemaphore( void )
 bool
 Semaphore::TryToTakeSemaphore(void)
 {
-    DWORD result = WaitForSingleObject( this->m_handle, 0 )
+    DWORD result = ::WaitForSingleObject( this->m_handle, 0 );
     if ( result == WAIT_TIMEOUT )
     {
         return ( false );
@@ -53,7 +53,7 @@ Semaphore::TryToTakeSemaphore(void)
 void
 Semaphore::ReleaseSemaphore( void )
 {
-    ReleaseSemaphore( this->m_handle, 1, NULL );
+    ::ReleaseSemaphore( this->m_handle, 1, NULL );
 }
 
 #else
