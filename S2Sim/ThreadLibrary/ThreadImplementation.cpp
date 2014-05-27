@@ -24,7 +24,7 @@ PosixThreadCover( void* threadInput )
 #if defined( _WIN32 ) || defined( _WIN64 )
 
 DWORD WINAPI
-WindowsThreadCover( LPVOID )
+WindowsThreadCover( LPVOID threadInput )
 {
     ThreadBase::InputStructure* input = ( ThreadBase::InputStructure* )threadInput;
     ThreadBase* classPointer = input->m_classPointer;
