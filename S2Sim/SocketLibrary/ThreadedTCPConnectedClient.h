@@ -9,13 +9,14 @@
 #define THREADEDTCPCONNECTEDCLIENT_H_
 
 #include "TCPConnectedClient.h"
-#include "ThreadBase.h"
 #include <mutex>
+#include <thread>
+#include "LogPrint.h"
 
 /**
  *  Manages the connection to an accepted client on the server side and receives data in a separate thread in the background.
  */
-class ThreadedTCPConnectedClient : public TCPConnectedClient, private ThreadBase
+class ThreadedTCPConnectedClient : public TCPConnectedClient
 {
     public:
     /**
@@ -28,15 +29,16 @@ class ThreadedTCPConnectedClient : public TCPConnectedClient, private ThreadBase
 
     private:
     /**
-     *  The execution body of the thread. The thread waits for a semaphore, which is released only once when the notification callback is set. If the semaphore is taken, the thread will start receiving data from the server.
-     *
-     *  @param input Not used.
-     *
-     *  @return Not used. NULL.
+     *  The execution body of the thread. The thread waits for a mutex, which is released only once when the notification callback is set. If the mutex is taken, the thread will start receiving data from the server.
      */
-        void* ExecutionBody( void* input );
+        void ExecutionBody( void );
 
     private:
+        /**
+         *  Thread object executed separately.
+         */
+        std::thread m_thread;
+    
         /**
          *  Notification callback to be called.
          */
@@ -68,26 +70,21 @@ class ThreadedTCPConnectedClient : public TCPConnectedClient, private ThreadBase
     /**
      *  Stops the execution of the thread.
      */
-        ~ThreadedTCPConnectedClient( void ) throw();
+        ~ThreadedTCPConnectedClient( void );
 
     /**
-     *  Sets the notification callback function. If the semaphore was already released, it is taken back. If the new callback is legit, it is released again.
+     *  Sets the notification callback function. If the mutex was already released, it is taken back. If the new callback is legit, it is released again.
      *
      *  @param notification Notification callback function.
      */
         void
-        SetNotificationCallback( TNotification notification )
-        {
-            if ( this->m_notification != NULL )
-            {
-                this->m_allowingMutex.lock();
-            }
-            this->m_notification = notification;
-            if ( this->m_notification != NULL )
-            {
-                this->m_allowingMutex.unlock();
-            }
-        }
+        SetNotificationCallback( TNotification notification );
+    
+    /**
+     *  Stops the thread at the earliest time possible.
+     */
+        void
+        StopThread( void );
 };
 
 #endif /* THREADEDTCPCONNECTEDCLIENT_H_ */
