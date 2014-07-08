@@ -8,6 +8,9 @@
 #ifndef CLIENTMANAGER_H_
 #define CLIENTMANAGER_H_
 
+#include <fstream>
+#include <thread>
+
 #include "MessageHeader.h"
 #include "ClientConnectionRequest.h"
 #include "ClientConnectionResponse.h"
@@ -50,13 +53,27 @@ class ClientManager
             AsynchronousClient = ( TClientType )0x01, /**< Asynchronous client type. */
             SynchronousClient = ( TClientType )0x02 /**< Synchronous client type. */
         };
+    
+    /**
+     *  Defines whether the client is registered or not.
+     */
+        typedef bool TIsRegistered;
+    
+    /**
+     *  Defines the values for the TIsRegistered type.
+     */
+        enum IsRegisteredValues
+        {
+            IsRegistered = true,
+            IsNotRegistered = false
+        };
 
+    public:
     /**
      *  Type of the Unique ID of the client in the system.
      */
         typedef MessageHeader::TId TId;
-
-    public:
+    
     /**
      *  Type used to represent a price signal.
      */
@@ -71,12 +88,23 @@ class ClientManager
      *  Type used to represent a time interval.
      */
         typedef Synchronous::SetCurrentPrice::TInterval TInterval;
+    
+    /**
+     *  Redefines the type for object name for rapid development.
+     */
+        typedef Asynchronous::ClientConnectionRequest::TClientName TClientName;
 
     private:
     /**
      *  Static variable that holds the next Unique ID. Incremented at each new connection. Returns to 0 if all values have been used.
      */
         static TId nextClientId;
+    
+    /**
+     *  States whether the client is registered at the Control Manager.
+     */
+        TIsRegistered m_isRegistered;
+    
     /**
      *  Pointer to the TCP Client connection managing class instance. This variable is used for all communication purposes.
      */
@@ -89,6 +117,10 @@ class ClientManager
      *  Type of the managed client. @see{ClientManager::ClientTypeValues}
      */
         TClientType m_clientType;
+    /**
+     *  Name of the managed client.
+     */
+        TClientName m_clientName;
 
     private:
     /**
@@ -291,6 +323,30 @@ class ClientManager
         {
             return ( this->m_clientType == AsynchronousClient );
         }
+    
+    /**
+     *  Prints the client information for the website.
+     *  @param outputFile Stream to be written to.
+     */
+        void
+        PrintClientInformation( std::ofstream & outputFile ) const;
+    
+    /**
+     *  Returns the client id being managed.
+     *
+     *  @return Id of the client being managed.
+     */
+        TId
+        GetClientId( void ) const
+        {
+            return ( this->m_clientId );
+        }
+    
+    /**
+     *  Stops the thread and deletes itself. This has to be called from a separate thread.
+     */
+        void
+        StopClientAndClean( void );
 };
 
 #endif /* CLIENTMANAGER_H_ */
