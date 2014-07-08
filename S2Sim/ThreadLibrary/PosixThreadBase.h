@@ -10,6 +10,8 @@
 
 #include <pthread.h>
 
+#include "LogPrint.h"
+
 class ThreadBase;
 
 /**
