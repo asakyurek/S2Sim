@@ -15,6 +15,8 @@
 
 #include <map>
 #include <algorithm>
+#include <fstream>
+#include <vector>
 
 class ClientManager;
 
@@ -55,32 +57,47 @@ class ConnectionManager
     friend ConnectionManager &
     GetConnectionManager( void );
 
-    private:
+    public:
     /**
      *  Type representing the Unique Id of the client.
      */
         typedef TerraSwarm::MessageHeader::TId TClientId;
-
-    /**
-     *  Type mapping TCP client connection pointers to their respective managers.
-     */
-        typedef std::map<ThreadedTCPConnectedClient*,ClientManager*> TClientList;
     
-    /**
-     *  Type mapping the client managers to their respective TCP client connections.
-     */
-        typedef std::map<ClientManager*,ThreadedTCPConnectedClient*> TReversedClientList;
-    
-    /**
-     *  Type mapping the client unique id's to respective managers.
-     */
-        typedef std::map<TClientId, ClientManager*> TClientIdList;
-
-    public:
     /**
      *  Represents the type for number of clients.
      */
         typedef TClientId TNumberOfClients;
+    
+    private:
+    /**
+     *  Pointer to a client manager object.
+     */
+        typedef ClientManager* TClientManagerPointer;
+    
+    /**
+     *  Type mapping TCP client connection pointers to their respective managers.
+     */
+        typedef std::map<ThreadedTCPConnectedClient*,TClientManagerPointer> TClientList;
+    
+    /**
+     *  Type mapping the client managers to their respective TCP client connections.
+     */
+        typedef std::map<TClientManagerPointer,ThreadedTCPConnectedClient*> TReversedClientList;
+    
+    /**
+     *  Type mapping the client unique id's to respective managers.
+     */
+        typedef std::map<TClientId, TClientManagerPointer> TClientIdList;
+    
+    /**
+     *  Counter type that counts the number of not received messages.
+     */
+        typedef unsigned char TKeepAliveCounter;
+    
+    /**
+     *  Map, keeping the number of not received messages by each client.
+     */
+        typedef std::map<TClientId, TKeepAliveCounter> TKeepAliveMap;
 
     private:
     /**
@@ -97,6 +114,16 @@ class ConnectionManager
      *  Instance of the TCP server.
      */
         ThreadedTCPServer m_server;
+    
+    /**
+     *  Mutex to protect access to the lists.
+     */
+        std::recursive_mutex m_listProtectionMutex;
+    
+    /**
+     *  Contains the keep alive counters for clients.
+     */
+        TKeepAliveMap m_keepAliveMap;
 
     private:
     /**
@@ -143,7 +170,7 @@ class ConnectionManager
      *  @param clientManager ClientManager to be deleted.
      */
         void
-        DeleteClient( ClientManager* clientManager );
+        DeleteClient( TClientManagerPointer clientManager );
 
     /**
      *  Returns the current number of clients connected.
@@ -162,7 +189,21 @@ class ConnectionManager
      *  @return Number of synchronous connected clients.
      */
         TNumberOfClients
-        GetNumberOfSynchronousClients( void ) const;
+        GetNumberOfSynchronousClients( void );
+    
+    /**
+     *  Updates the alive clients, increases the injured ones, kills the dead ones.
+     *
+     *  @param aliveClients List of alive clients.
+     */
+        void
+        UpdateAliveClients( const std::vector<TClientId> & aliveClients );
+    
+    /**
+     *  Prints the current list of clients for the website connection.
+     */
+        void
+        PrintClientList( void );
 };
 
 ConnectionManager &
