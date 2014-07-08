@@ -16,7 +16,7 @@ PosixThreadCover( void* threadInput )
     ThreadBase* classPointer = input->m_classPointer;
     void* mainInput = input->m_mainInput;
     delete input;
-    return ( classPointer->ExecutionBody( mainInput ) );
+    return ( classPointer->ExecuteThread( mainInput ) );
 }
 
 #endif
