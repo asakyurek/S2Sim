@@ -182,12 +182,23 @@ class ControlManager
      *  Mutex protecting the m_clientIdMap and m_clientManagerMap members.
      */
         std::mutex m_clientMapLock;
+    
+    /**
+     *  Mutex protecting the client thread object from deletion.
+     */
+        std::mutex m_clientThreadMutex;
 
     private:
     /**
      *  Private constructor for singleton implementation.
      */
         ControlManager( void );
+    
+    /**
+     *  Deletes the TCP thread safely.
+     */
+        void
+        DeleteClientThread( void );
 
     public:
     /**
@@ -200,7 +211,11 @@ class ControlManager
         {
             LOG_FUNCTION_START();
             this->m_client = client;
-            this->m_client->SetNotificationCallback( &ControlReceiveHandler );
+            if ( this->m_client != nullptr )
+            {
+                this->m_client->SetNotificationCallback( &ControlReceiveHandler );
+                this->m_clientThreadMutex.unlock();
+            }
             LOG_FUNCTION_END();
         }
 
@@ -275,8 +290,14 @@ class ControlManager
             LOG_FUNCTION_START();
             LogPrint( "Unregistering client ", clientId );
             this->m_clientMapLock.lock();
-            this->m_clientIdMap.erase( clientId );
-            this->m_clientManagerMap.erase( clientId );
+            if ( this->m_clientIdMap.find( clientId ) != this->m_clientIdMap.end() )
+            {
+                this->m_clientIdMap.erase( clientId );
+            }
+            if ( this->m_clientManagerMap.find( clientId ) != this->m_clientManagerMap.end() )
+            {
+                this->m_clientManagerMap.erase( clientId );
+            }
             this->m_clientMapLock.unlock();
             LOG_FUNCTION_END();
         }
