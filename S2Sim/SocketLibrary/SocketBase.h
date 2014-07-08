@@ -155,6 +155,8 @@ SocketBase<SocketType>::OpenSocket( void )
     {
         std::cerr << "Socket Option Not Set! Error: " << errno << std::endl;
     }
+#endif
+#if defined ( __APPLE__ )
     if ( 0 != setsockopt( this->m_socketId, SOL_SOCKET, SO_REUSEPORT, &value, sizeof( value ) ) )
     {
         std::cerr << "Socket Option Not Set! Error: " << errno << std::endl;
