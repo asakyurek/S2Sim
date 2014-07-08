@@ -48,6 +48,7 @@ SystemManager::RegisterData( const TClientId clientId,
     for ( TSystemTime currentTime = realStartTime; currentTime < endTime; ++currentTime )
     {
         this->m_systemMap[currentTime][clientId].realConsumption = dataPointer[(currentTime - startTime)/resolution];
+        this->m_systemMap[currentTime][clientId].numberOfDataPoints = 1;
     }
     this->m_systemDataLock.unlock();
     LOG_FUNCTION_END();
@@ -58,9 +59,10 @@ SystemManager::RegisterData( const TClientId clientId,
                              TDataPoint dataPoint )
 {
     LOG_FUNCTION_START();
-    LogPrint( "Registering Synchronous Data for Client ", clientId, " as: ", dataPoint );
+    LogPrint( "Registering Synchronous Data for Client ", clientId, " as: ", dataPoint, " time: ", this->m_systemTime );
     this->m_systemDataLock.lock();
     this->m_systemMap[this->m_systemTime][clientId].realConsumption = dataPoint;
+    this->m_systemMap[this->m_systemTime][clientId].numberOfDataPoints = 1;
     this->m_systemDataLock.unlock();
     
     if ( this->m_systemMap[this->m_systemTime].size() == GetConnectionManager().GetNumberOfSynchronousClients() )
@@ -81,7 +83,17 @@ SystemManager::RegisterData( const TClientId clientId,
     this->m_systemDataLock.lock();
     TDataPoint* dataPointer = dataPoints.get();
     this->m_systemMap[this->m_systemTime][clientId].realConsumption = dataPointer[0];
-    this->m_systemMap[this->m_systemTime][clientId].predictedConsumption = dataPoints;
+    this->m_systemMap[this->m_systemTime][clientId].numberOfDataPoints = numberOfDataPoints;
+    
+    /* Set the predictions and the receeding horizons. */
+    TSystemTime selectedTime = this->m_systemTime + 1;
+    for ( TDataPoint timeIndex = 1; timeIndex < numberOfDataPoints; ++timeIndex )
+    {
+        this->m_systemMap[selectedTime][clientId].realConsumption = dataPointer[0];
+        this->m_systemMap[selectedTime][clientId].predictedConsumption = dataPointer[timeIndex];
+        this->m_systemMap[selectedTime][clientId].numberOfDataPoints = numberOfDataPoints - timeIndex;
+        ++selectedTime;
+    }
     this->m_systemDataLock.unlock();
     
     if ( this->m_systemMap[this->m_systemTime].size() == GetConnectionManager().GetNumberOfSynchronousClients() )
@@ -98,17 +110,29 @@ SystemManager::AdvanceTimeStep( void )
     LOG_FUNCTION_START();
     
     LogPrint( "Waiting for clients for: ", this->m_clientTimeout );
-    this->m_clientTimedMutex.try_lock_for( std::chrono::seconds( this->m_clientTimeout ) );
-    
-    LogPrint( "Start preparation for next time step by deleting previous step" );
+    bool lockResult = this->m_clientTimedMutex.try_lock_for( std::chrono::seconds( this->m_clientTimeout ) );
+    GetConnectionManager().PrintClientList();
+    LogPrint( "Start preparation for time: ",this->m_systemTime , " by deleting previous step" );
     this->m_systemDataLock.lock();
     if ( this->m_systemMap.find( this->m_systemTime - 1 ) != this->m_systemMap.end() )
     {
         this->m_systemMap.erase( this->m_systemTime - 1 );
     }
     TDataMap currentDataMap = this->m_systemMap[this->m_systemTime];
-    this->m_systemDataLock.unlock();
     
+    std::vector<TClientId> clientList;
+    if ( !lockResult )
+    {
+        for ( auto clientIterator = currentDataMap.begin(); clientIterator != currentDataMap.end(); ++clientIterator )
+        {
+            LogPrint( clientIterator->first, " is alive" );
+            clientList.push_back( clientIterator->first );
+        }
+        
+        GetConnectionManager().UpdateAliveClients( clientList );
+    }
+    
+    this->m_systemDataLock.unlock();
     
     LogPrint( "Send consumption information to OpenDSS" );
     for ( TDataMap::iterator client = currentDataMap.begin();
@@ -121,10 +145,11 @@ SystemManager::AdvanceTimeStep( void )
     }
     LogPrint( "Advance time on OpenDSS" );
     GetMatlabManager().AdvanceTimeStep();
-    ++this->m_systemTime;
 
     LogPrint( "Invoke External Controller for a Decision" );
     GetControlManager().MakeDecision();
+    ++this->m_systemTime;
+    
     GetControlManager().WaitUntilReady();
     LogPrint( "Current time frame finished" );
     
@@ -148,3 +173,75 @@ SystemManager::SetSystemMode( const TSystemMode systemMode )
         ErrorPrint( "Unknown System Mode: ", systemMode );
     }
 }
+
+void
+SystemManager::SetConsumptionsToPredictionTime( const TSystemTime predictionTime )
+{
+    this->m_systemDataLock.lock();
+    TDataMap currentDataMap = this->m_systemMap[predictionTime];
+    this->m_systemDataLock.unlock();
+    
+    LogPrint( "Send prediction information to OpenDSS for time ", predictionTime );
+    
+    if ( predictionTime == this->m_systemTime )
+    {
+        for ( TDataMap::iterator client = currentDataMap.begin();
+             client != currentDataMap.end();
+             ++client )
+        {
+            GetMatlabManager().SetWattage( GetControlManager().GetClientName( client->first ), client->second.realConsumption );
+        }
+    }
+    else
+    {
+        for ( TDataMap::iterator client = currentDataMap.begin();
+             client != currentDataMap.end();
+             ++client )
+        {
+            GetMatlabManager().SetWattage( GetControlManager().GetClientName( client->first ), client->second.predictedConsumption );
+        }
+    }
+    LogPrint( "Advance time on OpenDSS" );
+    GetMatlabManager().AdvanceTimeStep();
+    
+}
+
+SystemManager::TDataPoint
+SystemManager::GetCurrentConsumption( const TClientId clientId )
+{
+    return ( this->m_systemMap[this->m_systemTime][clientId].realConsumption );
+}
+
+SystemManager::TDataPoint
+SystemManager::GetPredictionConsumption( const TClientId clientId, const TSystemTime interval )
+{
+    if ( this->m_systemMap.find( this->m_systemTime ) != this->m_systemMap.end() )
+    {
+        if ( this->m_systemMap[this->m_systemTime].find( clientId ) != this->m_systemMap[this->m_systemTime].end() )
+        {
+            return ( this->m_systemMap[this->m_systemTime + interval][clientId].predictedConsumption );
+        }
+    }
+    return ( -1 );
+}
+
+SystemManager::TNumberOfDataPoints
+SystemManager::GetNumberOfConsumptions( const TClientId clientId )
+{
+    if ( this->m_systemMap.find( this->m_systemTime ) != this->m_systemMap.end() )
+    {
+        if ( this->m_systemMap[this->m_systemTime].find( clientId ) != this->m_systemMap[this->m_systemTime].end() )
+        {
+            return ( this->m_systemMap[this->m_systemTime][clientId].numberOfDataPoints );
+        }
+    }
+    return ( 0 );
+}
+
+void
+SystemManager::CheckSystemKeepAlive( void )
+{
+    
+}
+
+

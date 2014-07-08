@@ -114,7 +114,12 @@ class SystemManager
             /**
              *  Predicted consumption for the client for the next intervals.
              */
-            std::shared_ptr<TWattage> predictedConsumption;
+            TWattage predictedConsumption;
+            
+            /**
+             *  Number of data intervals including and after this interval.
+             */
+            TNumberOfDataPoints numberOfDataPoints;
             
             /**
              *  Default constructor for std::map compatibility.
@@ -127,7 +132,8 @@ class SystemManager
              *  @param copy Copied instance.
              */
             ClientInformation( const ClientInformation & copy ) : realConsumption( copy.realConsumption ),
-                                                                  predictedConsumption( copy.predictedConsumption )
+                                                                  predictedConsumption( copy.predictedConsumption ),
+                                                                  numberOfDataPoints( copy.numberOfDataPoints )
             {}
         };
     
@@ -182,6 +188,12 @@ class SystemManager
      *  Private constructor for singleton implementation.
      */
         SystemManager( void );
+    
+    /**
+     *  Checks the client keep alive situations and disconnects if necessary.
+     */
+        void
+        CheckSystemKeepAlive( void );
 
     public:
     /**
@@ -283,7 +295,44 @@ class SystemManager
      */
         void
         SetSystemMode( const TSystemMode systemMode );
+    
+    /**
+     *  @brief Returns the consumption of the client in the current interval.
+     *
+     *  @param clientId Id of the requested client.
+     *  @return Consumption in the current interval.
+     */
+        TDataPoint
+        GetCurrentConsumption( const TClientId clientId );
+    
+    /**
+     *  @brief Returns the predicted consumption of the client in the desired interval.
+     *
+     *  @param clientId Id of the requested client.
+     *  @param interval Time in reference to the current time.
+     *  @return Consumption in the current interval.
+     */
+        TDataPoint
+        GetPredictionConsumption( const TClientId clientId, const TSystemTime interval );
 
+    
+    /**
+     *  @brief Returns the prediction horizon of the client.
+     *
+     *  @param clientId Id of the requested client.
+     *  @return Number of data points including the current interval.
+     */
+        TNumberOfDataPoints
+        GetNumberOfConsumptions( const TClientId clientId );
+
+    /**
+     *  @brief Sets the consumption to the prediction values on Matlab Manager to get the deviations.
+     *
+     *  @param predictionTime System time to be predicted.
+     */
+        void
+        SetConsumptionsToPredictionTime( const TSystemTime predictionTime );
+    
 };
 
 #endif /* SYSTEMMANAGER_H_ */
