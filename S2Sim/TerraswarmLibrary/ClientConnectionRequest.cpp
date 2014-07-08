@@ -18,7 +18,6 @@ namespace TerraSwarm
 
         ClientConnectionRequest::~ClientConnectionRequest( void )
         {
-            //delete[] ( ( char* )this );
         }
 
         ClientConnectionRequest*
@@ -65,7 +64,6 @@ namespace TerraSwarm
 
         ClientConnectionRequest::~ClientConnectionRequest( void )
         {
-            //delete[] ( ( char* )this );
         }
 
         ClientConnectionRequest*
