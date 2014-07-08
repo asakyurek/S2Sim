@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804356A61910738F0080EA61 /* SystemTimePrompt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804356A41910738F0080EA61 /* SystemTimePrompt.cpp */; };
+		804356A91910786E0080EA61 /* SystemVersionPrompt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804356A71910786E0080EA61 /* SystemVersionPrompt.cpp */; };
 		80E3003518B0058700C4C1BB /* Semaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80E3FFAE18B0058700C4C1BB /* Semaphore.cpp */; };
 		80E3005018B0058700C4C1BB /* IPAddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80E3FFD318B0058700C4C1BB /* IPAddress.cpp */; };
 		80E3005118B0058700C4C1BB /* TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80E3FFD618B0058700C4C1BB /* TCPClient.cpp */; };
@@ -50,6 +52,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		804356A41910738F0080EA61 /* SystemTimePrompt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemTimePrompt.cpp; sourceTree = "<group>"; };
+		804356A51910738F0080EA61 /* SystemTimePrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemTimePrompt.h; sourceTree = "<group>"; };
+		804356A71910786E0080EA61 /* SystemVersionPrompt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemVersionPrompt.cpp; sourceTree = "<group>"; };
+		804356A81910786E0080EA61 /* SystemVersionPrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemVersionPrompt.h; sourceTree = "<group>"; };
 		80E3000F18B0058700C4C1BB /* DemandNegotiation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DemandNegotiation.cpp; sourceTree = "<group>"; };
 		80E3001018B0058700C4C1BB /* DemandNegotiation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemandNegotiation.h; sourceTree = "<group>"; };
 		80E3001118B0058700C4C1BB /* GetPrice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetPrice.cpp; sourceTree = "<group>"; };
@@ -229,6 +235,10 @@
 				80E3001B18B0058700C4C1BB /* PriceProposal.h */,
 				80E3001C18B0058700C4C1BB /* SetCurrentPrice.cpp */,
 				80E3001D18B0058700C4C1BB /* SetCurrentPrice.h */,
+				804356A41910738F0080EA61 /* SystemTimePrompt.cpp */,
+				804356A51910738F0080EA61 /* SystemTimePrompt.h */,
+				804356A71910786E0080EA61 /* SystemVersionPrompt.cpp */,
+				804356A81910786E0080EA61 /* SystemVersionPrompt.h */,
 			);
 			path = TerraswarmLibrary;
 			sourceTree = "<group>";
@@ -285,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E3008118B0058700C4C1BB /* ThreadImplementation.cpp in Sources */,
+				804356A91910786E0080EA61 /* SystemVersionPrompt.cpp in Sources */,
 				80E3007318B0058700C4C1BB /* DemandNegotiation.cpp in Sources */,
 				80E3005718B0058700C4C1BB /* UDPSocket.cpp in Sources */,
 				80E3005618B0058700C4C1BB /* ThreadedTCPServer.cpp in Sources */,
@@ -307,6 +318,7 @@
 				80E3005818B0058700C4C1BB /* ClientConnectionRequest.cpp in Sources */,
 				80E3005018B0058700C4C1BB /* IPAddress.cpp in Sources */,
 				80E3007418B0058700C4C1BB /* GetPrice.cpp in Sources */,
+				804356A61910738F0080EA61 /* SystemTimePrompt.cpp in Sources */,
 				80E3007618B0058700C4C1BB /* MessageEnder.cpp in Sources */,
 				80E3009018B009B500C4C1BB /* ClientManager.cpp in Sources */,
 				80E3009118B009B500C4C1BB /* ConnectionManager.cpp in Sources */,
@@ -388,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GENERATE_PROFILING_CODE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,6 +409,12 @@
 					/Users/asakyurek/Documents/S2Sim/S2Sim/S2Sim/TerraswarmLibrary/Debug,
 					/Users/asakyurek/Documents/S2Sim/S2Sim/S2Sim/ThreadLibrary/Debug,
 				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wl,-stack_size",
+					"-Wl,1000000",
+				);
+				OTHER_LDFLAGS = "-Wl,-stack_size,1000000";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -404,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GENERATE_PROFILING_CODE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,6 +433,12 @@
 					/Users/asakyurek/Documents/S2Sim/S2Sim/S2Sim/ThreadLibrary/Debug,
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wl,-stack_size",
+					"-Wl,1000000",
+				);
+				OTHER_LDFLAGS = "-Wl,-stack_size,1000000";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
