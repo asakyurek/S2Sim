@@ -8,7 +8,7 @@
 #ifndef THREADEDTCPSERVER_H_
 #define THREADEDTCPSERVER_H_
 
-#include "ThreadBase.h"
+#include <thread>
 #include "TCPServer.h"
 #include "ThreadedTCPConnectedClient.h"
 #include "LogPrint.h"
@@ -16,7 +16,7 @@
 /**
  *  Defines the threaded version of TCPServer that accepts clients in another thread in the background. When a connection is established, the user will be notified through a callback function.
  */
-class ThreadedTCPServer : public TCPServer, private ThreadBase
+class ThreadedTCPServer : public TCPServer
 {
     public:
     /**
@@ -27,14 +27,15 @@ class ThreadedTCPServer : public TCPServer, private ThreadBase
     private:
     /**
      *  The execution body of the thread. The thread will start accepting connections.
-     *
-     *  @param input Not used.
-     *
-     *  @return Not used. NULL.
      */
-        void* ExecutionBody( void* input );
+        void ExecutionBody( void );
 
     private:
+    /**
+     *  Thread object.
+     */
+        std::thread m_thread;
+    
     /**
      *  Callback function.
      */
@@ -62,22 +63,7 @@ class ThreadedTCPServer : public TCPServer, private ThreadBase
      *  @param notification Callback to the notification function.
      */
         void
-        SetNotificationCallback( TNotification notification )
-        {
-            LOG_FUNCTION_START();
-            if ( this->m_notification != nullptr && this->m_started )
-            {
-                ErrorPrint( "Multiple notification callbacks not allowed" );
-            }
-            this->m_notification = notification;
-            if ( this->m_notification != NULL )
-            {
-                this->m_started = true;
-                this->Listen();
-                this->StartThread( NULL );
-            }
-            LOG_FUNCTION_END();
-        }
+        SetNotificationCallback( TNotification notification );
 };
 
 #endif /* THREADEDTCPSERVER_H_ */
