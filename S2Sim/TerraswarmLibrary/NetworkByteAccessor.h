@@ -13,6 +13,7 @@
 #include <winsock2.h>
 #elif ( defined(__linux__) || defined(__APPLE__) )
 #include <sys/socket.h>
+#include <netinet/in.h>
 #endif
 
 #include "CompileTimeCheckerLibrary.h"
