@@ -57,6 +57,11 @@ class LogManager
         typedef std::map<std::thread::id, TCallLevel> TThreadMap;
     
     /**
+     *  Alive map per thread.
+     */
+        typedef std::map<std::thread::id, bool> TThreadAliveMap;
+    
+    /**
      *  Type for the recursive mutex for log protection.
      */
         typedef std::recursive_mutex TMutex;
@@ -96,6 +101,11 @@ class LogManager
      *  Maps the thread id's to the stack level of the threads.
      */
         TThreadMap m_threadMap;
+    
+    /**
+     *  Maps the thread id's to the alive or dead status of the threads.
+     */
+        TThreadAliveMap m_threadAliveMap;
     
     /**
      *  Mutex for log and output stream protection.
@@ -274,7 +284,7 @@ class LogManager
     /**
      *  Returns whether the function name will be printed.
      *
-     *  @return <#return value description#>
+     *  @return Returns whether the function name is printed.
      */
         TFunctionPrint GetFunctionPrint( void )
         {
@@ -307,6 +317,11 @@ class LogManager
      *  @return String containing indentation dots.
      */
         std::string GetIndentString( void );
+    
+    /**
+     *  A thread uses this function as its last words.
+     */
+        void ThreadIsDying( void );
 };
 
 /**
