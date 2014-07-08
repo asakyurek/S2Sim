@@ -10,7 +10,6 @@
 
 #include <iostream>
 #include <mutex>
-#include "Semaphore.h"
 
 #include "ThreadedTCPServer.h"
 #include "ThreadedTCPConnectedClient.h"
@@ -74,7 +73,11 @@ class MatlabManager
             ClientWattageResultType = ( TMessageType )0x00000005, /**< Response of the OpenDSS controller to the client consumption get request. */
             AdvanceTimeStepType = ( TMessageType )0x00000006, /**< Sent to the OpenDSS controller to indicate the end of a time step. */
             ClientGetVoltageType = ( TMessageType )0x00000007, /**< Sent to the OpenDSS controller to get the terminal voltage of an object. */
-            ClientVoltageResultType = ( TMessageType )0x00000008 /**< Response of the OpenDSS controller to the voltage get request. */
+            ClientVoltageResultType = ( TMessageType )0x00000008, /**< Response of the OpenDSS controller to the voltage get request. */
+            ClientGetVoltageDeviationType = ( TMessageType )0x00000009, /**< Sent to the OpenDSS controller to get the terminal voltage deviation of an object. */
+            ClientVoltageDeviationResultType = ( TMessageType )0x0000000A, /**< Response of the OpenDSS controller to the voltage deviation get request. */
+            ClientGetVoltageDeviationAndConsumptionType = ( TMessageType )0x0000000B, /**< Sent to OpenDSS controller to get the deviation and consumption of an object. */
+            ClientVoltageDeviationAndConsumptionResultType = ( TMessageType )0x0000000C, /**< Response of the OpenDSS controller to the deviation and consumption of an object. */
         };
 
     /**
@@ -132,6 +135,21 @@ class MatlabManager
      *  Mutex used to signal that the voltage get result is received.
      */
         std::mutex m_clientVoltageMutex;
+    
+    /**
+     *  Mutex used to signal that the voltage deviation get result is received.
+     */
+        std::mutex m_clientVoltageDeviationMutex;
+    
+    /**
+     *  Mutex used to signal that the voltage deviation and consumption get result is received.
+     */
+        std::mutex m_clientVoltageDeviationAndConsumptionMutex;
+    
+    /**
+     *  Mutex used to protect the TCP thread instance.
+     */
+        std::mutex m_clientThreadMutex;
 
     /**
      *  Temporary storage for the client presence information.
@@ -147,24 +165,39 @@ class MatlabManager
      *  Temporary storage for the client voltage information.
      */
         TVoltage m_clientVoltageInformation;
+    
+    /**
+     *  Temporary storage for the client voltage deviation information.
+     */
+        TVoltage m_clientVoltageDeviationInformation;
 
     private:
     /**
      *  Private constructor to implement the singleton.
      */
         MatlabManager( void );
+    
+    /**
+     *  Deletes the TCP thread safely.
+     */
+        void
+        DeleteClientThread( void );
 
     public:
     /**
      *  Sets the OpenDSS controller connection information.
      *
-     *  @param client <#client description#>
+     *  @param client TCP connection handler.
      */
         void
         SetClient( ThreadedTCPConnectedClient* client )
         {
             this->m_client = client;
-            this->m_client->SetNotificationCallback( &MatlabReceiveHandler );
+            if ( this->m_client != nullptr )
+            {
+                this->m_client->SetNotificationCallback( &MatlabReceiveHandler );
+                this->m_clientThreadMutex.unlock();
+            }
         }
 
     /**
@@ -205,6 +238,26 @@ class MatlabManager
      */
         TVoltage
         GetVoltage( const TClientName & clientName );
+    
+    /**
+     *  Gets the terminal voltage deviation of an object by communicating with OpenDSS controller. It may block the function call.
+     *
+     *  @param clientName Name of the object.
+     *
+     *  @return Terminal voltage deviation of the client.
+     */
+        TVoltage
+        GetVoltageDeviation( const TClientName & clientName );
+    
+    /**
+     *  Gets the terminal voltage deviation and consumption of an object by communicating with OpenDSS controller. It may block the function call.
+     *
+     *  @param clientName Name of the object.
+     *
+     *  @return Terminal voltage deviation and consumption of the client.
+     */
+        std::pair<TVoltage, TWattage>
+        GetVoltageDeviationAndConsumption( const TClientName & clientName );
 
     /**
      *  Sends a signal to OpenDSS controller to indicate the end of a time step.
