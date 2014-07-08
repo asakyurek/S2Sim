@@ -9,13 +9,14 @@
 
 ClientManager::TId ClientManager::nextClientId = 1;
 
-ClientManager::ClientManager( void ) : m_client( NULL ), m_clientId( 0 ), m_clientType( 0 )
+ClientManager::ClientManager( void ) : m_isRegistered( IsNotRegistered ), m_client( nullptr ), m_clientId( 0 ), m_clientType( 0 )
 {
     LOG_FUNCTION_START();
     LOG_FUNCTION_END();
 }
 
-ClientManager::ClientManager( ThreadedTCPConnectedClient* client ) : m_client( client ),
+ClientManager::ClientManager( ThreadedTCPConnectedClient* client ) : m_isRegistered( IsNotRegistered ),
+                                                                     m_client( client ),
                                                                      m_clientId( 0 ),
                                                                      m_clientType( 0 )
 {
@@ -23,7 +24,8 @@ ClientManager::ClientManager( ThreadedTCPConnectedClient* client ) : m_client( c
     LOG_FUNCTION_END();
 }
 
-ClientManager::ClientManager( const ClientManager& copy ) : m_client( copy.m_client ),
+ClientManager::ClientManager( const ClientManager& copy ) : m_isRegistered( copy.m_isRegistered ),
+                                                            m_client( copy.m_client ),
                                                             m_clientId( copy.m_clientId ),
                                                             m_clientType( copy.m_clientType )
 {
@@ -34,7 +36,15 @@ ClientManager::ClientManager( const ClientManager& copy ) : m_client( copy.m_cli
 ClientManager::~ClientManager( void )
 {
     LOG_FUNCTION_START();
-    delete this->m_client;
+    if ( this->m_client != nullptr )
+    {
+        delete this->m_client;
+    }
+    if ( this->m_isRegistered == IsRegistered )
+    {
+        GetControlManager().UnRegisterClient( this->m_clientId );
+        this->m_isRegistered = IsNotRegistered;
+    }
     LOG_FUNCTION_END();
 }
 
@@ -47,6 +57,7 @@ ClientManager::operator = ( const ClientManager & copy )
     {
         return ( *this );
     }
+    this->m_isRegistered = copy.m_isRegistered;
     this->m_client = copy.m_client;
     this->m_clientId = copy.m_clientId;
     this->m_clientType = copy.m_clientType;
@@ -59,8 +70,14 @@ ClientManager::ConnectionBroken( void )
 {
     LOG_FUNCTION_START();
     WarningPrint( "Client Connection broken for: ", this->m_clientId );
-    GetControlManager().UnRegisterClient( this->m_clientId );
-    WarningPrint( "Deregistered Client, deleting..." );
+    
+    if ( this->m_isRegistered == IsRegistered )
+    {
+        GetControlManager().UnRegisterClient( this->m_clientId );
+        this->m_isRegistered = IsNotRegistered;
+        WarningPrint( "Deregistered Client, deleting..." );
+    }
+    
     GetConnectionManager().DeleteClient( this );
     WarningPrint( "Client deleted" );
     LOG_FUNCTION_END();
@@ -130,8 +147,10 @@ ClientManager::ProcessClientConnectionRequest( Asynchronous::ClientConnectionReq
         requestResult = Asynchronous::ClientConnectionResponse::RequestAccepted;
         this->m_clientType = AsynchronousClient;
         this->m_clientId = this->nextClientId;
+        this->m_clientName = data->GetClientName();
         LogPrint( "Registering client to the control manager" );
         GetControlManager().RegisterClient( this->m_clientId, data->GetClientName(), this );
+        this->m_isRegistered = IsRegistered;
         ++this->nextClientId;
     }
     else
@@ -165,8 +184,8 @@ ClientManager::ProcessClientData( Asynchronous::ClientData* data )
 {
     LOG_FUNCTION_START();
     LogPrint( "Processing asynchronous client data" );
-    Asynchronous::ClientData::TStartTime startTime = data->GetStartTime()/(15*30);
-    Asynchronous::ClientData::TTimeResolution timeResolution = data->GetTimeResolution()/(15*30);
+    Asynchronous::ClientData::TStartTime startTime = data->GetStartTime();
+    Asynchronous::ClientData::TTimeResolution timeResolution = data->GetTimeResolution();
     Asynchronous::ClientData::TNumberOfDataPoints numberOfDataPoints = data->GetNumberOfDataPoints();
     LogPrint( "Client ", this->m_clientId, " sent ", numberOfDataPoints, " starting at time: ", startTime, " with resolution: ", timeResolution );
     GetSystemManager().RegisterData( this->m_clientId, startTime, timeResolution, numberOfDataPoints, data->GetDataPoints() );
@@ -182,6 +201,8 @@ ClientManager::ProcessSystemTimePrompt( SystemTimePrompt *data )
     SystemTimeResponse* responseData = SystemTimeResponse::GetNewSystemTimeResponse( 0x0000, 0xFFFF, systemTime );
     this->m_client->SendData( responseData, responseData->GetSize() );
     delete[] ( ( char* )responseData );
+    LogPrint( "Deleting this temporary time asking client");
+    GetConnectionManager().DeleteClient( this );
     LOG_FUNCTION_END();
 }
 
@@ -190,9 +211,11 @@ ClientManager::ProcessSystemVersionPrompt( SystemVersionPrompt *data )
 {
     LOG_FUNCTION_START();
     LogPrint( "Processing System Version Prompt" );
-    SystemVersionResponse* responseData = SystemVersionResponse::GetNewSystemVersionResponse( 0x0000, 0xFFFF, 1, 2 );
+    SystemVersionResponse* responseData = SystemVersionResponse::GetNewSystemVersionResponse( 0x0000, 0xFFFF, 1, 3 );
     this->m_client->SendData( responseData, responseData->GetSize() );
     delete[] ( ( char* )responseData );
+    LogPrint( "Deleting this temporary version asking client");
+    GetConnectionManager().DeleteClient( this );
     LOG_FUNCTION_END();
 }
 
@@ -208,8 +231,10 @@ ClientManager::ProcessClientConnectionRequest( Synchronous::ClientConnectionRequ
         requestResult = Synchronous::ClientConnectionResponse::RequestAccepted;
         this->m_clientType = SynchronousClient;
         this->m_clientId = this->nextClientId;
+        this->m_clientName = data->GetClientName();
         LogPrint( "Registering client to the control manager" );
         GetControlManager().RegisterClient( this->m_clientId, data->GetClientName(), this );
+        this->m_isRegistered = IsRegistered;
         ++this->nextClientId;
     }
     else
@@ -284,7 +309,7 @@ void
 ClientManager::SetCurrentPrice( const TInterval beginInterval, const TNumberOfPriceValues numberOfPriceValues, TPrice* priceValues )
 {
     LOG_FUNCTION_START();
-    LogPrint( "Price for client ", this->m_clientId, " is set to: ", priceValues[0], " from time: ", beginInterval, ". Number of: ", numberOfPriceValues );
+    LogPrint( "Price for client ", this->m_clientId, " is set to: ", ntohl( priceValues[0] ), " from time: ", beginInterval, ". Number of: ", numberOfPriceValues );
     Synchronous::SetCurrentPrice* message = Synchronous::SetCurrentPrice::GetNewSetCurrentPrice( 0x0000,
                                                                                                  this->m_clientId,
                                                                                                  beginInterval,
@@ -310,4 +335,22 @@ ClientManager::PriceProposal( const TPrice price, const TInterval beginInterval,
     this->m_client->SendData( message, Synchronous::PriceProposal::GetSize() );
     delete[] ( ( char* )message );
     LOG_FUNCTION_END();
+}
+
+void
+ClientManager::PrintClientInformation( std::ofstream & outputFile ) const
+{
+    std::string clientTypeString = "Asynchronous";
+    if ( this->m_clientType == SynchronousClient )
+    {
+        clientTypeString = "Synchronous";
+    }
+    outputFile << this->m_clientId << " " << this->m_clientName << " " << clientTypeString << std::endl;
+}
+
+void
+ClientManager::StopClientAndClean( void )
+{
+    this->m_client->StopThread();
+    delete this;
 }
